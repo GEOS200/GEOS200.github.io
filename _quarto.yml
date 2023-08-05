@@ -1,13 +1,29 @@
 project:
   type: website
+  output-dir: docs
+
 
 website:
-  title: "GEOS 200"
+  title: "Atmospheric Environments"
   navbar:
     left:
       - href: index.qmd
-        text: Home
-      - about.qmd
+        text: Syllabus
+      # - href: Modules/moduleInfo.qmd
+      #   text: Lectures
+    right:
+      - icon: github
+        href: https://github.com/GEOS270
+        aria-label: Quarto GitHub
+
+  sidebar:
+    - title: "Syllabus"
+      style: "docked"
+      background: light
+      collapse-level: 1
+      contents:
+      - index.qmd
+      - acknowledgement.qmd
 
 format:
   html:
