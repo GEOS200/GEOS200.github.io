@@ -139,7 +139,6 @@ Name|{{< var instructor.name >}}
 Pronouns|{{< var instructor.pronouns >}}
 Email|{{< var instructor.email >}}
 Office Hours|{{< var instructor.office >}}
-Zoom Office Hours|{{< var instructor.zoom_office >}} 
 
 
 ::: 
