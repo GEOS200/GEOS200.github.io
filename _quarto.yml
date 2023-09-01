@@ -11,7 +11,7 @@ website:
         text: Syllabus
       - href: lectures.qmd
         text: Lectures
-      - href: labs.qmd
+      - href: LabAssignments.qmd
         text: Lab Assignments
     right:
       - icon: github
@@ -33,7 +33,7 @@ website:
       background: light
       collapse-level: 1
       contents:
-      - href: labs.qmd
+      - href: LabAssignments.qmd
         text: General Info
       - href: https://geos200.github.io/LabAssignments/1.html
         text: Lab 1
