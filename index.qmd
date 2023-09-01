@@ -29,7 +29,7 @@ This course focuses on the physical principles of weather and climate. We cover 
 
  |
 -----|:-----
-Lecture|{{< var keyInfo.lecture_time >}} in room {{< var keyInfo.lecture_room >}}
+Lecture|{{< var keyInfo.lecture_time >}} <br> {{< var keyInfo.lecture_room >}}
 Remote Attendance|[Via zoom]({{< var keyInfo.zoom >}})
 Lecture Recordings|View [here]({{< var keyInfo.recordings >}}) 
 TopHat Join Code|{{< var keyInfo.tophat_code >}} 
@@ -41,7 +41,9 @@ Piazza Page|Find it [here]({{< var keyInfo.piazza_link >}})
 
 The course consists of twenty-six 90-minute lectures (with a participation component via TopHat), five lecture review quizzes, seven laboratory exercises, and a final exam.  Important deadlines are listed in @tbl-schedule below.
 
-Lectures will be held in-person (unless UBC guidelines change). If you are unable to attend in person, lectures will be hybrid and recorded so you can participate remotely or watch them later. 
+Lectures will be held in-person. If you are unable to attend in person, lectures will be also be streamed/recorded via zoom you can participate remotely or watch them later.
+
+* **Note**: streaming/recording are a courtesy.  I make no guarantees about the quality of streamed/recorded lectures.  For the best experience, you are encouraged to attend in person.
 
 Labs will also be held in-person. If you are unable to attend a lab, please advise your TA as soon as possible. Once you are enrolled in a lab section (see table below), you must stick to that section throughout the semester.
 
