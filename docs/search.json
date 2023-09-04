@@ -7,25 +7,200 @@
     "text": "The University of British Columbia and the city of Vancouver are on the traditional, ancestral, and unceded territory of the Coast Salish Peoples. Specifically the UBC Vancouver campus is on xʷməθkʷəy̓əm (Musqueam) land.\n\nThere are nearly 200 First Nations spread through BC, and many more across the continent.\n\nIt is essential to recognize Indigenous territories and Indigenous sovereignty, especially within the context of geography courses.\nTo learn more about the Indigenous people, culture, and languages where you live and around the world, check out native-land.ca.\n\n\n\n\n\nMap Source\n\n\n\n\n\nWhy Do an Acknowledgement?\nA land acknowledgement is meant to convey a deep rooted cultural connection to the land and the historical and present day injustices and violence enacted on Indigenous communities through colonialism. For centuries, settler societies have perpetuated a genocide against Indigenous people across the globe. In many ways this genocide is still ongoing here in British Columbia and across Canada. There has been concerted effort by the government, religious organizations, and educational institutions to erase Indigenous culture and identity which as marginalized these communities in Canadian Society.\n\nAn acknowledgement is one small way to help with that, but it cannot be treated as a formality. It is a time to reflect and build understanding.\n\n\n\nWhat does it mean?\n\n\nTraditional and Ancestral Recognize by whom the lands were traditionally used and/or occupied and the cultures have been handed down from generation to generation. The area around UBC was used by many different people, including the xʷməθkʷəy̓əm, əl̓ilwətaɁɬ, and Skwxwú7mesh-ulh Nations.\nThese people are are part of a broader linguistic / cultural group of Coast Salish speaking people. The xʷməθkʷəy̓əm and əl̓ilwətaɁɬ speak dialects of Hul’q’umi’num’ / Halq’eméylem / hən̓q̓əmin̓əm̓ and the Skwxwú7mesh-ulh speak Sḵwx̱wú7mesh sníchim.\n\n\n\n\n\n\n\nUnceded: Refers to land that was not turned over to the government by a treaty or other agreement. Over 95% of the land in BC, and many lands elsewhere in the world were never ceded by treaty. Without treaties, these lands remain the sovereign territory of the First Nations that call them home. Yet at the same time, the lands have been claimed by Canada and these First Nations living on these lands lack a framework to express their sovereignty. This by no means absolves the Canadian government of their crimes where lands were “ceded” by treaty. Treaties were more frequently reached by coercion than negotiation. The RCMP was created specifically to force indigenous people off their lands by any means necessary."
   },
   {
+    "objectID": "Assignments/Lab1.html",
+    "href": "Assignments/Lab1.html",
+    "title": "Lab 1: The UBC Climatological Station",
+    "section": "",
+    "text": "This Lab Assignment is Due: Sept 22 2023\nThis assignment is worth 14.5 points."
+  },
+  {
+    "objectID": "Assignments/Lab1.html#history-and-scope-of-the-station",
+    "href": "Assignments/Lab1.html#history-and-scope-of-the-station",
+    "title": "Lab 1: The UBC Climatological Station",
+    "section": "History and Scope of the Station",
+    "text": "History and Scope of the Station\nThe UBC Climatological Station was established in 1957 at UBC Point Grey Campus west of the Agronomy Barn on Agronomy Road. By 1961 the UBC Climatological Station had achieved the necessary standards to be classed as an Ordinary Climatological Station by the Environment Canada Climatological Network (Hare and Thomas, 1979). In the early 1970s, campus development forced its relocation further south, to the Totem Research Station (Figure 2). The station is located 100m a.s.l. with an open exposure to the majority of the climatic elements.\n\n\n\n\n\n\nFigure 2: Location of Totem Climate Station\n\n\n\nStandardization\nAny site of a climatological station must meet basic criteria before its data will be accepted by Environment Canada. For example, the surroundings must be reasonably flat, there should be no major obstacles to airflow, no significant obstruction to the horizon, no extraneous sources of heat, vapor or dust and the surface should consist of short grass. Similarly, the instrumentation must conform to Environment Canada standards. The data gathered from a climatological station are to be related to large-scale air mass and regional characteristics not the microclimate of the site. Insistence on these points assures users of site and instrument standardization so that different stations can be compared within expected limits of accuracy."
+  },
+  {
+    "objectID": "Assignments/Lab1.html#climate-variables-measured",
+    "href": "Assignments/Lab1.html#climate-variables-measured",
+    "title": "Lab 1: The UBC Climatological Station",
+    "section": "Climate Variables Measured",
+    "text": "Climate Variables Measured\nThe station is equipped with an electronic data logger, which makes automatic measurements of climate variables every ten seconds, and half-hour average values are then calculated and stored in the memory of the data-logger. The table below (Table 1) lists the variables measured at the UBC Climatological Station. This is followed by discussion of some specific variables measured at the station and some example data from different time periods.\n\n\nTable 1: Automatic measurements recorded every 10 seconds at the UBC Climatological Station\n\n\n\n\n\n\n\n\nVariable\nInstrument\nLevel\nUnits\n\n\n\n\nShort-wave Radiation\nPyranometer\n1 m height A-frame (incoming and outgoing)\nW m2\n\n\nLong-wave Radiation\nPyrgeometer\n1 m height A-frame (incoming and outgoing)\nW m2\n\n\nAir temperature\nThermistor\n1.3 m height\n°C\n\n\nHumidity\nThin-film capacitive sensor\n1.3 m height\n%\n\n\nSoil temperature\nThermocouples\n10, 20, and 40 cm depths\n°C\n\n\nWind speed / direction\nPropeller anemometer\n10m height\nm s-1\n\n\nSnow depth\nSonic ranging sensor\n1.3 m height\ncm\n\n\nPrecipitation\nTipping bucket rain gauge\n1 m height\nmm\n\n\n\n\n\nRadiation\nFigure 3 (a) shows a pyranometer, which is used to measure the short-wave (SW) radiation at the station. Shortwave radiation is also know as solar radiation, because it is the primary wavelength of radiation emitted from the Sun. The pyranometer contains a small black absorber disk inside a glass dome whose radiative properties allow only radiation with wavelengths (\\(\\mu\\)) between 0.3 and 3 \\(\\mu m\\) to pass through. As radiation reaches the absorber disk, it will warm up and create a temperature difference to the rest of the body of the instrument whose temperature varies only slowly. The difference can be directly related to short-wave receipt. Figure 4 shows an example of incoming SW measured at the totem field climate station.\nFigure 3 (b) shows a pyrgeometer, which is used to measure the thermal radiation, also know as long-wave (LW) radiation. It works in a similar way as a pyranometer, except it measures wavelengths between 4.5 and 100 µm. Figure 3 (c) shows how sets of pyranometers and pyrgeometers, one of each pointing upward toward the sky and downward toward the ground, are used to measure both incoming and outgoing short-wave and long-wave radiation respectively. We’ll take a more in depth look at radiation in lab 2.\n\n\n\n\n\n\n\n(a) Pyranometer\n\n\n\n\n\n\n\n(b) Pyrgeometer\n\n\n\n\n\n\n\n\n\n(c) Typical radiation measurement setup\n\n\n\n\nFigure 3: Instrumentation used to measure radiation\n\n\n\n\n\n\n\nFigure 4: Incoming solar radiation measured at Totem Field during the 2021 Heatdome.\n\n\n\n\n\nAir & Soil Temperature\nAir temperature and humidity are measured in a Stevenson screen Figure 5 designed to protect the instruments from liquid water (rain/snow) and shade them from solar radiation, but permit free air circulation.\n\n\n\nFigure 5: Stevenson Screen\n\n\nSoil temperatures are measured using Copper/Constantan thermocouples. These are wires made up of two different metals that carry a small electrical signal. The transfer of electricity between the two metals is dependent upon temperature, and from that we can calculate temperature for whatever medium the thermocouple is in contact with.\n\n\n\n\n\nFigure 6: Temperature data from Totem Field during the 2021 Heatdome.\n\n\n\n\n\nPrecipitation\nRainfall is measured using a tipping bucket Figure 7 (b), which works by funneling precipitation into small seesaw-like counter Figure 7. The depth of new snowfall and the total depth of the snow lying on the ground was historically measured with a meter stick. It is now measured using an automated sonic snow depth sensor Figure 7 (c).\n\nLiquid water equivalent of the snow is typically estimated using a 10:1 ratio\n\n10 mm of snow ≈ 1 mm of rainfall\n\nHowever, this is just an average, and accuracy of this estimate can vary drastically depending on the type of snow.\n\nIn Vancouver, we typically get “wet, heavy snow” which has a much higher liquid water equivalent, with a ratio closer to 5:1. Using the standard 10:1 ratio for a typical Vancouver snowfall would underestimate liquid precipitation.\n“Powder”, the light, fluffy snow common in dry mountainous areas that makes for great skiing has a much lower liquid water equivalent, with a ratio closer to 20:1.\n\n\n\n\n\n\n\n\n\n(a) Inside a Tipping bucket\n\n\n\n\n\n\n\n(b) Tipping bucket\n\n\n\n\n\n\n\n(c) Snow depth sensor\n\n\n\n\nFigure 7: Instrumentation used to measure precipitation (rain and snow).\n\n\nFigure 7 (b) shows Precipitation data from Totem field during November 2021, when an Atmospheric River caused widespread flooding across the region.\n\n\n\n\n\nFigure 8: Precipitation data from Totem Field during the 2021 Atmospheric River event.\n\n\n\n\n\nWind Speed\nWind speed (horizontal) and direction are measured on a prop vane anemometer Figure 9 (a). The sensor is mounted at 10 m above the surface to avoid the effects of local obstacles such as the instrument shelters Figure 1. Figure 9 (a) shows mean annual wind speeds measured at Totem Field.\n\nProp vane anemometers are cheap and function well in most weather conditions, however the mechanical components can degrade over time. Figure 9 (b) shows a sonic anemometer, which has no moving parts and measures horizontal and vertical wind wind speeds by timing pulses of sound sent between transducer heads.\n\n\n\n\n\n\n\n\n(a) Propeller anemometer\n\n\n\n\n\n\n\n(b) Snow depth sensor\n\n\n\n\nFigure 9: Other sensors at Totem Field\n\n\n\n\n\n\n\nFigure 10: Mean annual wind speed at Totem Station."
+  },
+  {
+    "objectID": "Assignments/Lab1.html#questions",
+    "href": "Assignments/Lab1.html#questions",
+    "title": "Lab 1: The UBC Climatological Station",
+    "section": "Questions",
+    "text": "Questions\n\nQuestion 1 (1 points):\nIs the climatological station suitably located to provide climatic data representative of the UBC campus and surrounding areas? Discuss why or why not. You can pan around and zoom in/out on Figure 2 to help you answer this question.\n\n\nQuestion 2 (1 points): Looking at Figure 4, why does incoming radiation drop to zero at night? Why do you think there might have been less incoming radiation on July 1st compared to the previous days?\n\n\nQuestion 3 (1 points): Why is a Stevenson screen is built with slatted walls, a double roof, and white paint?\n\n\nQuestion 4 (1 points):\nHow do air and soil temperatures compare to one another during the 2021 Heatdome event shown in Figure 6? Which variable (air or soil temperature at 10/20/40 cm) has the largest range on a daily basis? Which has the smallest range?\n\n\nQuestion 5 (0.5 points): Using the standard 10:1 ratio for “Powder” snow in a dry mountainous region would ______ liquid precipitation.\n\n\nQuestion 6 (0.5 points): Based on Figure 9 (a), do you think the wind data from the last few years at totem field is accurate? Why or why not?"
+  },
+  {
+    "objectID": "Assignments/Lab1.html#questions-1",
+    "href": "Assignments/Lab1.html#questions-1",
+    "title": "Lab 1: The UBC Climatological Station",
+    "section": "Questions",
+    "text": "Questions\n\nQuestion 7 (2 points): Compare the UBC climatological station at totem field with the one on top of the Earth, Ocean, and Atmospheric sciences building. You can zoom out to location the station on Figure 2 for more context, look at the website and webcams for the EOAS station. Do you think conditions at the rooftop site are representative of the conditions in the surrounding area? Would it meet the standards Environment Canada requires discussed in Section 1.1.1?"
+  },
+  {
+    "objectID": "Assignments/Lab1.html#climate-normals",
+    "href": "Assignments/Lab1.html#climate-normals",
+    "title": "Lab 1: The UBC Climatological Station",
+    "section": "Climate Normals",
+    "text": "Climate Normals\nTo look at the general conditions of a given location, we often use something called “Climate Normals”. These are 30-year averages of temperature and precipitation, in decadal blocks, eg. 1961 to 1990, or 1991 to 2020. They can give you an general overview of the seasonal conditions at a location.\n\n\n\n\n\nFigure 11: Climate normals for the Totem field weather station."
+  },
+  {
+    "objectID": "Assignments/Lab1.html#annual-trends",
+    "href": "Assignments/Lab1.html#annual-trends",
+    "title": "Lab 1: The UBC Climatological Station",
+    "section": "Annual Trends",
+    "text": "Annual Trends\nAnother way to assess long-term patterns is to look at deviations from the mean conditions. For any variable (\\(x\\)), we can calculate the mean (\\(\\bar{x}\\)) and standard deviation (\\(\\sigma\\)) for \\(N\\) years of data:\n\\[\n\\bar{x} =  \\sum_{n=1}^{N} x_n\n\\tag{1}\\]\n\\[\n\\sigma =  \\frac{\\sum_{n=1}^{N} x_n - \\bar{x}}{N}\n\\tag{2}\\]\nMean air temperature at Totem Station since 1960 is 10.2 °C, with a standard deviation of 0.6 °C. Likewise, mean annual precipitation at Totem Station since 1960 is 1130.8 mm, with a standard deviation of 229 mm. With these values, we can then Z-score normalize our data, the result will no longer be in the units of the original variable. Instead, it will show us how far away any given observation (e.g., Year) is from the mean. This is also helpful because it lets us make a more direct comparison between variables that are in different units, eg. see Figure 12.\n\n\n\n\n\nFigure 12: Z-score normalized air temperature and precipitation data for the Totem Field climate station."
+  },
+  {
+    "objectID": "Assignments/Lab1.html#questions-2",
+    "href": "Assignments/Lab1.html#questions-2",
+    "title": "Lab 1: The UBC Climatological Station",
+    "section": "Questions",
+    "text": "Questions\n\nQuestion 8 (2 points): Inspect the Figure 11 plot below, and toggle through the different periods (1961-1990 thru 1991-2020). On average, which periods are the coldest and warmest at Totem Field respectively? Is there any noticeable change in average monthly air temperatures from the earliest period to the the latest? If so in which months and by how much?\n\n\nQuestion 9 (0.5 points):\nHow does the total November Precipitation from 2021 shown in Figure 7 (b) compare to a “typical” November as defined using the 1990-2020 climate normals shown in Figure 11?\n\n\nQuestion 10 (3 points):\nClimate normals for stations across Canada can be found here. You can search for stations by name, province/territory, or proximity to specific locations. For the most recent period available, pick two stations: one from Quebec, and one from Nunavut, and find their climate normal graphs. Compare the seasonality of monthly average temperatures and total precipitation to the the climate normals covering the same time period from Totem Station, discuss the similarities/differences you see. Take screenshots of the climate normal graphs and include them in your answer.\n\n\nQuestion 11 (1 points): What does Figure 12 tell you about Air Temperatures at UBC over the last 60 years?\n\n\nQuestion 12 (1 points): What does Figure 12 tell you about Precipitation at UBC over the last 60 years?"
+  },
+  {
+    "objectID": "Assignments/Lab2.html",
+    "href": "Assignments/Lab2.html",
+    "title": "Lab 2: Radiation",
+    "section": "",
+    "text": "This Lab Assignment is Due: Oct 6 2023\nThis assignment is worth 14 points.\nThis assignment is worth 14 points."
+  },
+  {
+    "objectID": "Assignments/Lab2.html#net-radiation",
+    "href": "Assignments/Lab2.html#net-radiation",
+    "title": "Lab 2: Radiation",
+    "section": "Net Radiation",
+    "text": "Net Radiation\nThese four components together constitute Net All-Wave Radiation (\\(R_n\\)), which is defined the sum of all radiation components Equation 1. \\[\nR_n = (SW \\downarrow - SW\\uparrow) + (LW\\downarrow - LW\\uparrow)\n\\tag{1}\\]\nShort-wave (aka solar) radiation is emitted from the sun. Climate of an ecosystem is largely determined by the amount of incoming short wave radiation (\\(SW \\downarrow\\)) that reaches the ecosystem and the proportion of that radiation that is absorbed (\\(a\\)) by the plant, soil and water surfaces versus the portion that is reflected (\\(\\alpha\\)) by the surface.\n\nWhen \\(SW \\downarrow\\) that is absorbed by the earth’s surface, it is re-emitted by the surface as long-wave radiation (\\(LW \\uparrow\\)), aka (aka thermal radiation). Figure 1 highlights the difference between short-wave radiation (emitted by the sun) and long-wave radiation (emitted by the earth).\n\nA portion of \\(SW \\downarrow\\) is reflected by the earths surface back towards the sky, this is known as outgoing, or reflected short-wave radiation (\\(SW \\uparrow\\)).\nNet Radiation can describe how much energy is entering or leaving a given area. Incoming short-wave \\((\\downarrow SW)\\) is measured by a pyranometer pointing up to the sky and short-wave radiation outgoing (reflected) from the underlying surface \\((\\uparrow SW)\\) is measured by a pyranometer pointed at the ground. Likewise, incoming long-wave radiation \\((\\downarrow LW)\\) is measured by a pyrgeometer pointing up to the sky and outgoing (emitted) long-wave radiation \\((\\uparrow LW)\\) is measured by a pyrgeometer pointing at the ground. Knowing the four radiation components, we can then calculate net radiation \\((R_n)\\). Net radiation can tell us how much energy is entering (positive) or leaving (negative) the site at any given time. If net \\((R_n)\\) is a large positive number, that indicates significant energy input, which would cause the land surface at the site to warm up. Conversely, if \\((R_n)\\) is negative, that means the site is loosing energy (cooling off).\n\n\n\nFigure 1: Simplified comparison of short wave and long wave radiation as they relate to the emissions from the Sun and the Earth.\n\n\nTropical climates are hot because they receive ample \\(SW \\downarrow\\) all year long. Polar climates are cold because they receive very little \\(SW \\downarrow\\) over the course of a year, and much of the \\(SW \\downarrow\\) they do receive is reflected as \\(SW \\uparrow\\) by snowy surfaces.\n\n\n\nFigure 2: Relative spectral irradiance of sunlight, a Tungsten incandescent land (2700°C) and a fluorescent lamp"
+  },
+  {
+    "objectID": "Assignments/Lab2.html#theory",
+    "href": "Assignments/Lab2.html#theory",
+    "title": "Lab 2: Radiation",
+    "section": "Theory",
+    "text": "Theory\nAll radiation striking a surface or an object must be either absorbed, transmitted, or reflected:\n\\[\na_\\lambda + \\tau_\\lambda + \\alpha_\\lambda = 1\n\\tag{2}\\]\nThe coefficients of absorption (absorptivity \\(a_\\lambda\\)), transmission (transmissivity \\(\\tau_\\lambda\\)), and reflection (reflectivity \\(\\alpha_\\lambda\\)) are not the same for all kinds of radiation. Their values depend on the wavelength \\(\\lambda\\) of the incident radiation (e.g., difference between wavelengths from a fluorescent and incandescent lamp). When talking specifically about \\(\\alpha_{SW}\\) (reflected short wave radiation), we can also define the term albedo, the coefficient of reflection for short wave radiation:\n\\[\nalbedo = \\alpha_{SW} = \\frac{\\uparrow SW}{\\downarrow SW}\n\\tag{3}\\]\nGiven the definition for albedo (\\(\\alpha_{SW}\\)), we can also re-define \\(SW\\uparrow = \\alpha_{SW} SW\\uparrow\\) and therefore, rewrite Equation 1 as:\n\\[\nR_n = (1-\\alpha_{SW})SW\\downarrow + (LW\\downarrow - LW\\uparrow)\n\\tag{4}\\]\n\nNote: This definition works because the earth’s surface is not a source of short-wave radiation; it can reflect \\(SW\\), but it does not emit \\(SW\\).\n\n\n\n\nFigure 3: Spectral absorptivity, reflectivity and transmissivity of a poplar leaf\n\n\nTo describe a radiation source, we can plot its spectrum. Spectra for solar radiation and radiation from a fluorescent lamp and an incandescent tungsten filament lamp are shown in Figure 2. In this diagram, the spectra have been adjusted to equal peak heights.\nPlant leaves have interesting radiative properties that are part of the plants’ adaptation to their environments. The coefficients of reflection, transmission and absorption are strongly dependent on wavelength as shown by a typical example in Figure 3. Energy is strongly absorbed in the visible region where radiation is active in photosynthesis. In the near infrared region (NIR) radiation is more strongly reflected and transmitted. The reflectivity and absorptivity of soils and animal coats are also dependent on wavelength.\nUnits of wavelength are often given in micrometers (1 \\(\\mu m\\) = 10-6 m). Radiation energy flux density can be measured by sensors that produce electrical signals. In this laboratory the selenium photocell produces a voltage that is proportional to the flux of shortwave radiation striking the sensor. The sensor is not sensitive to longwave radiation. The selenium photocell has its maximum (peak) response at \\(\\lambda\\) = 0.5 \\(\\mu m\\)."
+  },
+  {
+    "objectID": "Assignments/Lab2.html#experimental-procedures",
+    "href": "Assignments/Lab2.html#experimental-procedures",
+    "title": "Lab 2: Radiation",
+    "section": "Experimental Procedures",
+    "text": "Experimental Procedures\n\nTurn the multimeter to the 300 mV position. Turn on the fluorescent lamp directly above your first soil sample. Hold the switch for at least 3-5 seconds to make sure the lamp switches on properly.\nMeasure the amount of short-wave radiation striking one soil surface by placing the photocell horizontally and 0.5 cm above the soil surface. Make sure that the darker (sensitive) side of the sensor is facing upwards. Write down the voltage reading from the meter.\nTurn the photocell over and hold it with the sensitive side downwards horizontally about 2 cm above your soil surface. If the sensor is held too close to the surface, it will “see” too much of its own shadow. Read the voltage from the meter.\nCalculate the coefficient of reflection \\(\\alpha_F\\) for the fluorescent lamp-soil combination:\nExchange the fluorescent lamp for the incandescent lamp. It is suggested to keep room lights switched off during measurements involving incandescent lamps. Why? Measure the coefficient of reflection I for the incandescent lamp-soil combination:\nRepeat this procedure for all soil samples and the white and black calf hide. Calculate coefficients of reflection \\(\\alpha_F\\) and \\(\\alpha_I\\) as well as absorption \\(A_F\\) and \\(A_I\\) for all samples. Note, here:\nMeasure incident, reflected and transmitted light of a green leaf - separately for both light sources. In addition to the measurements above, without moving the leaf, place the radiation sensor under the leaf with the negative side upwards. Calculate the coefficients of transmission by:\nRepeat the procedure for a yellow or brown autumnal leaf. Calculate the coefficients of reflection F and I, transmission τF and τI and absorption aF and aI for the fluorescent and incandescent radiation on the leaf."
+  },
+  {
+    "objectID": "Assignments/Lab2.html#questions",
+    "href": "Assignments/Lab2.html#questions",
+    "title": "Lab 2: Radiation",
+    "section": "Questions",
+    "text": "Questions\n\nQuestion 1 Report results in the Spectral absorptivity, reflectivity and transmissivity table and comment on possible errors in the measurements. Copy this table into your lab report word document. Note you should have calculated \\(a_\\lambda\\) and \\(\\alpha_\\lambda\\) for all soil samples, the white and black hide under fluorescent and incandescent light \\(a_\\lambda\\), \\(\\tau_\\lambda\\), and \\(\\alpha_\\lambda\\) for both leaves - everything separately for the fluorescent and incandescent light. (3 points):\n\n\nQuestion 2 Explain any differences you found between your measurements of the reflection, transmission and absorption coefficients of the green leaf using fluorescent and incandescent lamps (refer to Figure 2 and Figure 3) (2 points):\n\n\nQuestion 3 What features of the spectral characteristics of green leaves account for their green color? (Refer to Figure 3)?\n(1 points):\n\n\nQuestion 4 What pigment is responsible for the green color of leaves? What is the important function of this pigment?\n(1 points):\n\n\nQuestion 5 What pigment is responsible for the green color of leaves? What is the important function of this pigment?\n(0.5 points):\n\n\nQuestion 6 Why is it beneficial to a plant to have a small absorption coefficient between 0.7 \\(\\mu m\\) and 3 \\(\\mu m\\)?\n(1 points):\n\n\nQuestion 7 From the measurements of \\(\\alpha_\\lambda\\) and \\(a_\\lambda\\) of the soil samples, what is the effect of organic matter and water content on these radiative properties?\n(1 points):\n\n\nQuestion 8 What is meant by the term ‘albedo’?\n(0.5 points):"
+  },
+  {
+    "objectID": "Assignments/Lab2.html#questions-1",
+    "href": "Assignments/Lab2.html#questions-1",
+    "title": "Lab 2: Radiation",
+    "section": "Questions",
+    "text": "Questions\n\nQuestion 9 The flux of radiation emitted by the Sun is ~ 3.86 ×1026 W. Given the Sun’s radius to be 7 ×108 m, find the average flux density in W m-2 of solar (short-wave) radiation leaving its surface. Use the symbol KS for this output. (1 points):\n\n\nQuestion 10 The flux density of solar radiation reaching the Earth can be viewed as that on a spherical shell concentric about the Sun whose radius is the mean distance between the Earth and the Sun (= 1.5 × 1011 m). Calculate the value of this flux density. Hint: the flux of radiation by the Sun passes through the area of this shell. Use the symbol KE for this input to the Earth.\n(1 points):\n\n\nQuestion 11 What is another name for this energy input?\n(0.5 points):"
+  },
+  {
+    "objectID": "Assignments/Lab3.html",
+    "href": "Assignments/Lab3.html",
+    "title": "Lab 3: Atmospheric Humidity",
+    "section": "",
+    "text": "This Lab Assignment is Due: Oct 20 2023\nThis assignment is worth 9 points."
+  },
+  {
+    "objectID": "Assignments/Lab3.html#theory",
+    "href": "Assignments/Lab3.html#theory",
+    "title": "Lab 3: Atmospheric Humidity",
+    "section": "Theory",
+    "text": "Theory\nThe most common type of instrument used to measure humidity is the psychrometer. This consists simply of a pair of thermometers, one of which has a wetted wick enclosing the sensor. The wet-bulb is cooled by evaporation to a temperature that depends on the atmospheric vapor density.\nThe water vapor density \\(\\rho_v\\) (= absolute humidity) can be calculated from measurements of wet- and dry-bulb temperatures using the relationship:\n\\[\n\\rho_v = \\rho^*_{vw}(T_w) - \\gamma(T-T_w)\n\\tag{1}\\]\nThese and other symbols in this exercise are defined in Table 5.1. The density of water vapor in the atmosphere \\(\\rho_v(T)\\), is the basic measure of atmospheric moisture. It is the mass of water vapor in unit volume of air (Units: kg m-3 but often given in g m-3 to make more sensibly sized numbers).\nOther ways of expressing the amount of moisture are used and each has particular usefulness in certain applications. The total amount of water that the atmosphere can hold without condensation depends only on temperature. This quantity, called the saturation vapor density ^*_v(T), is given for a range of temperatures in Table 2. The ratio of actual vapor density to the maximum possible (i.e. the saturation vapor density) when expressed as a percentage is called the relative humidity:\n\\[\nRH = \\frac{\\rho_v}{\\rho^*_v(T)}\n\\tag{2}\\]\nFor some calculations of evaporation rate, the difference between the maximum and the actual vapor density is useful. This is called the vapor density deficit:\n\\[\nVDD = \\rho^*_v(T) - \\rho_v\n\\tag{3}\\]\nWe may express the water vapor content of air by finding the temperature to which a parcel of air could be cooled at constant atmospheric pressure before condensation commences. This temperature is called the dew point temperature \\(T_d\\). Note: that for a saturated parcel the dewpoint temperature is the temperature of the parcel. For any water vapor density, \\(T_d\\) can be found by using Table 2 in reverse. For example, air with a vapor density of 7.8 g m-3 has a \\(T_d\\) of 7°C.\nWater vapor content of the air can be expressed in terms of the partial pressure exerted by the water vapor, or water vapor pressure, \\(e\\). This is related to vapor density by the gas law as follows:\n\\[\ne = \\rho_v R_v T\n\\tag{4}\\]\nWhere R_v is the gas constant for water vapor (4.62 ×10-4 kPa m3 g-1 K-1) and T is the absolute temperature (K). Using units of g m-3 for \\(\\rho_v(T)\\) results in units of kPa (kilopascals) for \\(e\\).\nSaturation vapor pressure, \\(e*(T)\\): Consider a parcel at temperature \\(T\\). Unless the parcel is currently saturated, the parcel could hold more water vapor than it currently does. The partial pressure exerted by the water vapor is given by \\(e\\), whereas the partial pressure that would be exerted by the water vapor if the parcel were saturated, is e*, which is a function of temperature: i.e., \\(e*(T)\\). (Units: kPa).\nVapor pressure deficit, VPD: Vapor pressure deficit represents the difference between the actual and saturation vapor pressures of a parcel at temperature T:\n\\[\nVPD = e*(T) - e\n\\tag{5}\\]\n\nNote: that the smaller the VPD, the closer the parcel is to saturation. (Units: kPa)"
+  },
+  {
+    "objectID": "Assignments/Lab3.html#psychrometer",
+    "href": "Assignments/Lab3.html#psychrometer",
+    "title": "Lab 3: Atmospheric Humidity",
+    "section": "Psychrometer",
+    "text": "Psychrometer\nTo make measurements of water vapor content of the air, you will use the Assmann aspirated psychrometer. Examine the psychrometer and notice the wick on the wet-bulb thermometer. Use distilled water to wet the wick thoroughly. Wind up the clockwork ventilation fan. Take the instrument outdoors and measure the wet- and dry bulb temperatures. Read measurements every 15 s for 3 or 4 minutes until the thermometer reaches equilibrium. Use the equilibrium values for further calculations.\nReturn to the laboratory, re-wet the wick and re-wind the psychrometer. Repeat the measurements of wet- and dry-bulb temperature. The water vapor density in the air in the classroom and outdoors can now be calculated (see 5.4, Question 1)."
+  },
+  {
+    "objectID": "Assignments/Lab4.html",
+    "href": "Assignments/Lab4.html",
+    "title": "Lab 4: Atmospheric Stability & The Planetary Boundary Layer",
+    "section": "",
+    "text": "This Lab Assignment is Due: Nov 10 2023\nThis assignment is worth 15.5 points."
+  },
+  {
+    "objectID": "Assignments/Lab4.html#materials-required",
+    "href": "Assignments/Lab4.html#materials-required",
+    "title": "Lab 4: Atmospheric Stability & The Planetary Boundary Layer",
+    "section": "Materials Required:",
+    "text": "Materials Required:\n\n\n\n\n\n\nTable 1: Observations of temperature and dewpoint temperature with height (m) above the surface\n\n\n\\(Height (m)\\)\n\\(T (^{\\circ} C)\\)\n\\(T_d (^{\\circ} C)\\)\n\n\n\n\n0\n22.0\n10.0\n\n\n250\n18.1\n7.8\n\n\n500\n15.4\n6.5\n\n\n750\n12.4\n5.4\n\n\n1000\n11.6\n4.3\n\n\n1200\n10.3\n3.2\n\n\n1500\n9.4\n2.5\n\n\n1700\n8.3\n1.9\n\n\n2000\n7.0\n-0.4\n\n\n2500\n2.2\n-3.1\n\n\n3000\n-2.2\n-6.2\n\n\n3600\n-7.9\n-12.1\n\n\n4200\n-13.0\n-17.5\n\n\n4900\n-17.7\n-22.0\n\n\n5600\n-22.6\n-26.2\n\n\n6400\n-22.0\n-29.3\n\n\n7200\n-22.0\n-33.0\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 1: Observations of temperature and dewpoint temperature with height (m) above the surface"
+  },
+  {
+    "objectID": "Assignments/Lab4.html#questions",
+    "href": "Assignments/Lab4.html#questions",
+    "title": "Lab 4: Atmospheric Stability & The Planetary Boundary Layer",
+    "section": "Questions",
+    "text": "Questions\n\nQuestion 1 (7 points): Using Excel and the data provided in Table 1; plot the profile temperature (T) and dewpoint temperature (Td), as well as the saturated adiabatic lapse rate (SALR) and the dry adiabatic lapse rate (DALR). Use height as the y axis, and temperature as the x axis.\nNote: \\(DALR = 10^{\\circ}C km^{-1}\\) and \\(SALR = 6^{\\circ}C km^{-1}\\)\n\n\nQuestion 2 (4 points): For each line segment of the profile (i.e., each row of the table above) determine the stability, and label it on the profile as stable, conditionally unstable, neutral or unstable. Hint: consider each ELR line segment and compare to the slopes of ELR and DALR.\n\n\nQuestion 3 (2 points): Are there any levels where clouds would be present? Explain."
+  },
+  {
+    "objectID": "Assignments/Lab4.html#theory",
+    "href": "Assignments/Lab4.html#theory",
+    "title": "Lab 4: Atmospheric Stability & The Planetary Boundary Layer",
+    "section": "Theory",
+    "text": "Theory\nThe environmental lapse rate (ELR) is the actual rate of air temperature decrease or increase with height in the atmosphere, i.e. as measured by thermometers at different heights. The daily average ELR is typically about 0.006 K m-1 but may vary considerably.\nThe dry adiabatic lapse rate (Γd) is the temperature change of a dry (unsaturated) air parcel as the parcel moves up for down in the atmosphere. This is a process lapse rate. The parcel is assumed not to mix with the environment but allowed to change its volume - it is said to behave adiabatically. Γd is a constant with a value of 0.01 K m-1.\nIf you look at the difference between those two lapse rates - ELR vs. Γd - you can assess the static stability of a particular air layer:\nELR > Γd: unstable. For an air parcel, a slight upward displacement will result in a continuous rise of the parcel because the parcel will become warmer and less dense than the surrounding air at the same height and therefore possesses buoyancy. Conversely, if the air parcel is displaced below, it will become cooler and more dense than the surrounding air at the same height, and it will tend to continue sinking. In an unstable layer, vertical movements are enhanced.\nELR = Γd: neutral. There will be no tendency for a parcel to rise or sink after it is displaced either above or below because it cools or warms at exactly the same rate as the surrounding air. Therefore, the parcel will come to rest after the displacing force is removed.\nELR < Γd: stable. If an air parcel is displaced upwards, it will become cooler and more dense than the surrounding air and tend to sink back to its original location. If displaced below, it will find itself warmer and tend to rise back up to its original location. In a stable layer, vertical movements are suppressed. In very stable conditions, smoke and other air pollutants accumulate and often cause respiratory problems.\nTo facilitate comparison between the ELR and the dry adiabatic lapse rate, atmospheric scientists prefer to convert environmental (measured) temperatures T at a particular height z to potential temperatures θ by:\n\\[\n\\theta(z) = T(z) + \\Gamma_d z                           \n\\tag{1}\\]\nNote: θ(z) is the potential temperature at height z and T(z) is the temperature at height z. No need to multiply them by z.\nPotential temperatures have the advantage that we can easily determine the stability of a layer on a graph: a decreasing potential temperature with height indicates an unstable layer, a constant potential temperature with height indicates a neutral layer, and an increasing potential temperature with height indicates a stable layer. This is true because the dry adiabatic lapse rate, Γd, plots as a vertical line on a graph of potential temperature vs. height (by definition).\nThe layer of air closest to the Earth’s surface - the planetary boundary layer (PBL) - changes its vertical temperature distribution often throughout the 24-hour diurnal cycle because here air temperature is strongly affected by surface conditions. The PBL is modified during the day by radiative heating of the surface, which generates buoyancy and warms up the lower atmosphere, resulting in typically unstable conditions close to the ground. The daytime boundary layer is termed the mixed layer whose depth h* may be defined as the height to which buoyant dry air parcels rise adiabatically.\nAt night, radiative cooling of the ground surface indicates that the atmosphere close to the ground will cool down as well, and the near-surface air becomes stable. Therefore, the mixed layer is largely destroyed at night and is replaced at low-level by a stable inversion layer.\n7.3 Calculations"
+  },
+  {
+    "objectID": "Assignments/Lab4.html#questions-1",
+    "href": "Assignments/Lab4.html#questions-1",
+    "title": "Lab 4: Atmospheric Stability & The Planetary Boundary Layer",
+    "section": "Questions",
+    "text": "Questions\n\nQuestion 4 (1 points):\nTable 3 shows temperature data from a balloon launch. Plot these results in excel (or graph paper) with heights ranging from 0 to 2000 m on the y- axis, and temperatures from -4 to 20 \\(^{\\circ }\\) C on the x-axis.\n\n\nQuestion 5 (0.5 points):\nWhat is the name of the profile you have drawn?\n\n\nQuestion 6 (1 points):\nWhat is the name given to the type of temperature profile between 500 and 750 m, and what is the numerical value of the lapse rate in this portion of the profile (Please include units)\n\n\n\n\n1.2 \\(^{\\circ} C / 100 m\\)\n\nAlso accept if given in K instead of C or in Km instead of m (provided conversion is correct)\n\nQ3. What is the name given to the type of temperature profile between 500 and 750 m, and what is the numerical value of the lapse rate in this portion of the profile (Please include units) [1]\nQ4. Smoke from a smouldering slash fire is 3K warmer than the surface air; to what height will the smoke rise? Assume the smoke and the air remain non-saturated and do not mix with the surroundings. [1]\nQ5. Qualitatively (i.e., describe in your own words), how would your answer be changed if the smoke were saturated with water vapour? Assume that the SALR = 6°C/km. [0.5]\nQ6. To what temperature would the dry smoke have to be raised at the surface before it could penetrate to 2000m? Hint: use your method for 3 in reverse starting with measured temperature at 2000 m. [1]\nQ7. Classify portions of the profile that are stable and unstable. Hint: Consider the steepness of segments of you graph you plotted in Q1 compared to DALR (the dry adiabatic lapse rate). [1]\nPart B - Potential temperature\nFigure 7.1 Profiles of potential temperatures θ for 5 different times of day on August 8, 1978\nFigure 7.1 includes vertical profiles of potential temperature θmeasured over Vancouver during a period when the weather was clear and dominated by a large anticyclone (high pressure area). The observations were made using an electrical thermometer attached to helium-filled balloons. The readings were originally monitored as environmental temperatures T and later converted to potential temperatures θ, as plotted.\nQ8. What is the environmental temperature of the air at 400 m above the surface at 0900 h? Use equation 7.1 and solve for T(z) and refer to Figure 7.1. [1]\nPart C - A local wind circulation\nFigure 7.2: (a) Location of the Airport and Sunset Observation sites in Vancouver. (b) Near surface air temperature T at the Airport and Sunset sites. Also included is the water surface temperature for Georgia Strait. All values refer to conditions on August 8, 1978.\nFigure 7.3 Wind direction and wind speed at the 30m level at the Sunset Site on August 8, 1978.\nFigure 7.4 Vertical profiles of wind direction and wind speed at the Sunset Site on August 8, 1978 at about 1300 PST. Note the y-axis units are m x10.\nFigures 7.2 to 7.4 give observations of a number of meteorological variables for the same day as the profiles in Fig 7.1. Fig 7.2a shows the location of the observing sites and their geographic setting. Fig 7.2b gives the near surface air temperatures for the Vancouver airport and the Sunset site and the water surface temperature for Georgia Straight. Water surface temperature is observed at a point, but can be taken as a general value for the area of Georgia Straight (off Vancouver), due to vigorous tidal mixing in the Straight. Fig 7.3 gives the wind speed and direction at the 30m level at the Sunset site and Fig 7.4 shows vertical profiles of the same variables from the Sunset site gained from theodolite-tracking of temperature balloons. The wind direction is expressed in degrees of a circle with both 360° and 0° at North. Wind direction always refers to the direction from which the wind is blowing.\nQ9. Take time to study the information contained in Fig 7.2 to 7.4. Then write an account of the conditions depicted, highlighting the evidence which leads to the conclusion that the day was probably characterized by a land and sea breeze circulation system. Include in your answer some suggestions as to the times of onset of the breezes and the vertical extent of the sea breeze. Make sure to discuss the onset of the sea and land breeze, the depth and vertical extent of the breeze during the day, and a general description of a land/sea breeze circulation and how it relates to Figs 7.2-7.4. [3]"
+  },
+  {
+    "objectID": "Assignments/Lab5.html",
+    "href": "Assignments/Lab5.html",
+    "title": "Lab 5: Energy Balance of Ecosystems",
+    "section": "",
+    "text": "This Lab Assignment is Due: Nov 24 2023\nThis assignment is worth 0 points.\n\n1 Objectives:\n\nDefine terms used in the energy equation.\nKnow how to convert between QE (latent heat flux) and E (evapotranspiration).\nExplain the Bowen ratio () and how to estimate QE if  is known.\n\nTheory: The surface energy balance is a fundamental budget approach that describes the energy exchange at surface-atmosphere interfaces. It is based on the conservation equation of energy that says that energy can neither be created or destroyed by any ordinary means. The surface energy balance is essential to estimate evaporative water loss, cooling rates, growing conditions, frost damage, and many other important processes in natural and managed ecosystems.\nThe energy balance concept can be expressed as:\nEnergy Inputs = Energy Outputs + Energy Storage\nThe energy balance of an ecosystem is shown diagrammatically in the figure below. Positive values of the net radiation, Q* mean that the net flow of radiant energy is into the system (i.e., Q* is directed towards the surface); negative values mean the converse (i.e., Q* is directed away from the surface). This convention is used because Q* is regarded as an input to the system. Positive values of the sensible heat density, QH, the latent heat flux density, QE, and the soil heat flux density, QG, mean that energy is flowing out of the system (i.e., away from the surface); negative values mean the converse (i.e., towards the surface). This is because QH, QE and QG are regarded as outputs from the system.\nFigure 8.1 Schematic of the energy balance of an ecosystem.\nPositive values of the energy storage within the system, mean that the system is accumulating energy; negative values mean that the system is losing energy. Energy may be stored as sensible and latent heat in the canopy air QS, and chemical energy (photosynthesis) QP in the plants. Energy storage as a result of horizontal energy transport (advection) can occur in tall crops (e.g., orchards) and forests, particularly near their borders. The energy balance equation for a crop volume assuming no horizontal energy divergence may, therefore, be written as: (8.1) The energy balance approach is often used to estimate the evaporative water loss, E from ecosystems such as crops and forests. The latent heat flux density QE is the energy used to evaporate water in the stomata (transpiration) and evaporate water in the soil near the soil surface (evaporation from the soil). The sum of transpiration and evaporation from the soil is evapotranspiration.\nNet radiation is measured directly by a net radiometer which is usually located 1 to 3 metres above a crop (i.e., shorter vegetation) or 10 m above a forest (i.e., taller vegetation). It may be either a single-differential-thermopile net radiometer with upward- and downward-facing polyethylene domes that transmit shortwave and longwave radiation (as you saw at Totem field) or a four-way net radiometer consisting of upward- and downward-facing pyranometers and pyrgeometers (as shown in Lecture slides).\nSoil heat flux density QG is measured by soil heat flux plates usually placed 2 to 5 cm below the soil surface. Thermometers and humidity sensors are used to determine the sensible and latent energy storage within a canopy Qs. Leaf chambers (cuvettes) can be used to measure net CO2 uptake by leaves or the eddy-covariance approach can be used to measure the CO2 uptake by the canopy as a whole. Biochemical energy storage QP can be calculated from the CO2 uptake rate. Canopy energy storage Qs is often neglected because it is generally small compared to Q*.\nThe latent and sensible heat flux densities are the most difficult terms in 8.1 to determine. Although there are a few ways to estimate these terms, today they are often measured directly using the eddy covariance technique.\nThe latent heat flux density QE can be used to calculate the evapotranspiration rate, E in m s-1 (typically converted to mm h-1) is calculated from: (8.2) where Lv is the latent heat of vaporization of water (assume a constant of 2,448,000 J kg-1) and water is the density of water (1000 kg m-3). Note that QE = 680 W m-2 is equivalent to E = 1 mm h-1, i.e., the evaporation of a layer of water 1 mm deep in one hour.\nThe Bowen ratio  is defined as: (8.3)\nIf  is known, QE can be calculated as (assuming QP is negligible): (8.4) Calculations and Questions: [9 marks]\nQ1. Show that a latent heat flux density of 680 W m-2 is equivalent to an evaporation rate of 1 mm h-1. [0.5]\nQ2. Based on measurements collected at a restored peatland site in Burns Bog (the site BB2 in this map), what is the value of the net all-wave radiation at noon on July 29th, 2022. If all this energy were used in evapotranspiration, what would the evapotranspiration rate be? Make sure to show your calculations to receive full marks and report E in mm/h. [1.5]\nQ3. How does this compare to the actual measured evapotranspiration rate derived from measurements of QE? Make sure to show your calculations to receive full marks and report E in mm/h. [1]\nQ4. Compare the daytime values of  for Table 8.1 and 8.2. What difference does this imply in the proportion of net radiation (Q*) that was used in evapotranspiration for the hay crop and Douglas-fir stand? [1]\nTable 8.2 contains the necessary data to calculate the daily energy balance of a young Douglas-fir forest at the UBC Research Forest at Haney, BC. Also included are values of short-wave irradiance K.\nQ5. Calculate and fill in the missing 1-h values of QH and QE in W m-2. Note that the data is also provided in the spreadsheet provided on Canvas. [1]\nQ6. Calculate 1-h values of evapotranspiration (mm of water evaporated). Note the conversion relation indicated previously. During what hours did evapotranspiration occur on July 18? Did dew fall occur? If so, during what hours did it occur? How much occurred? [2]\nQ7. What fraction of Q* for the day was used in evapotranspiration? What was the Bowen ratio for the day? Hint: Use the total QE and the total QH. [2]\n  Table 8.1 Three-hour average values of energy balance measurements for a grass/clover hay crop in Pitt Meadows, B.C. on July 25, 1976 (Black and Goldstein, 1977)\nTable 8.2 Hourly energy balance analysis for an 11-year old Douglas-fir stand (8 m high, 2.4 x 2.4 m spacing) on the UBC Research Forest at Haney, B.C. for July 18, 1970 (McNaughton and Black, 1973)"
+  },
+  {
+    "objectID": "Assignments/Lab6.html",
+    "href": "Assignments/Lab6.html",
+    "title": "Lab 6: Role of Soil Respiration in Climate Change",
+    "section": "",
+    "text": "This Lab Assignment is Due: Dec 8 2023\nThis assignment is worth 0 points.\n\n\nTable 1: Symbols, constants and units\n\n\n\n\n\n\n\n\nSymbol\nName\nunits\nnotes\n\n\n\n\nTs\nSoil temperature\noC (or K)\nmeasured\n\n\nTref\nReference soil temperature\noC (or K)\nmeasured\n\n\nV\nVolume of chamber\n0.00065363 m3\nconstant\n\n\nA\nArea of ground covered by chamber\n0.007854 m2\nconstant\n\n\nQ10\nEcosystem respiration\nDimensionless\nEquation 8.4\n\n\nρ\nMolar density of air\n40 mol m-3\nconstant\n\n\nGEP\nGross ecosystem photosynthesis\nµmol m-2 s-1\nEquation 8.1\n\n\nNEP\nNet ecosystem productivity\nµmol m-2 s-1\nEquation 8.2\n\n\nNEE\nNet ecosystem exchange\nµmol m-2 s-1\nEquation 8.1\n\n\nRe\nEcosystem respiration\nµmol m-2 s-1\n\n\n\nRs\nSoil respiration\nµmol m-2 s-1\nEquation 8.3\n\n\nRsh\nHeterotrophic respiration\nµmol m-2 s-1\n\n\n\nRsa\nAutotrophic respiration\nµmol m-2 s-1\n\n\n\nF\nSoil CO2 efflux\nµmol m-2 s-1\nEquation 8.5\n\n\n\n\n\n1 Theory\nThe net exchange of carbon dioxide (CO2) between terrestrial ecosystems and the atmosphere, called net ecosystem exchange NEE, is the difference between ecosystem respiration Re and gross ecosystem photosynthesis GEP, i.e., (8.1) When NEE is positive (i.e., Re > GEP), the atmosphere gains CO2 and when it’s negative (Re < GEP) the ecosystem gains CO2. Thus, net ecosystem productivity NEP is (8.2) Soil respiration (Rs), which can account for as much as 80% of Re, results in the efflux of CO2 from the soil. Rs is composed of the CO2 produced by microbial decomposition of soil organic matter (SOM) (heterotrophic respiration, Rsh) and by root respiration (autotrophic respiration, Rsa), i.e., (8.3) The autotrophic respiration of stems, branches and leaves accounts for the remainder of Re.\nTemperature T, followed by soil moisture, is the most important environmental factor affecting Rs (and all its components). It increases exponentially with T, which is often expressed as (8.4) where Rref is Rs at a reference temperature Tref, usually 10 °C, and Q10 is the relative increase in Rs (or Re) for a 10 K increase in T. Q10 is about 2 in many biological processes but is frequently found to be as much as 3 for Re and Rs. As an example of using Eq. 8.4, assuming Q10 = 2 and Tref = 10 °C, when T = 20 °C, Rs = Rref2[(20-10)/10] = 2 Rref. Can you show that for T = 30 °C, Rs would be 4 times that at Tref?\nThis sensitivity, which is particularly important in predicting the effects of global warming, depends on the quality (i.e., labile or recalcitrant) and quantity of substrate and thus productivity and soil temperature and moisture. The soil is the largest terrestrial carbon pool. It is particularly vulnerable to warming and its potential loss may result in a `positive feedback’ effect, i.e., increased atmospheric CO2, which could lead to further global warming as a result of the greenhouse effect (Cox et al. 2000). In addition to T and soil moisture, Rsh depends on SOM content and its recalcitrance.\nA widely used method of measuring Rs is the closed or static chamber method. In this method, the rate of increase in CO2 concentration in a chamber placed on the soil surface is used to determine the soil CO2 efflux (Livingston and Hutchinson, 1995). This is a good measure of Rs because very little of the respired CO2 accumulates in the soil. Thus, Rs can be calculated using (8.5) where  is the molar density of air (40 mol m-3), V is the volume of the chamber (m3), A is the area of the ground covered by the chamber (m2), and r is the rate of increase in CO2 concentration (µmol mol-1 s-1 or ppm s-1), which is calculated by (8.6) Using these units in Eq. 8.5 gives Rs in units of µmol m-2 s-1. The CO2 concentration in the chamber is measured with an infrared gas analyzer (IRGA). If the chamber is kept on the soil for less than 2 minutes, r is almost constant. This means the rise in chamber CO2 concentration does not significantly suppress CO2 efflux. Because CO2 concentration changes during the measurement, the measurement apparatus is described as a non-steady-state system.\nObjectives: • To measure Rs of agricultural (bare) fertilized and unfertilized soils. • To determine the sensitivity of Rs, by comparing the magnitude of Rs from agricultural (bare) fertilized and unfertilized soils.\nThe soils were collected from the Delta region, which are Gleysolic soils with silty clay loam texture. One soil was fertilized with urea fertilizer (46-0-0). both soils have been watered equally to obtain a soil volumetric water content close to field capacity (~25-35%).\nExperimental procedure 1. Allow the instructor/assistant to bring up the soil greenhouse gas software. 2. Plug in your Vaisala GMP252 Carbon dioxide probe into an electrical socket. 3. Wait 1-2 minutes for the sensor to start measuring, and for the screen to appear on the projector screen. 4. Ensure that the Vaisala GMP252 Carbon dioxide probe’s opening is facing the table. Allow the probe a sufficient amount of time to equilibrate to atmospheric conditions – this can be recognized by a flat reading approximately 400-500 ppm for 2-3 minutes. This typically can take 4-5 minutes from startup of the probe. 5. Insert one thermometer approximately 5 cm into the soil. 6. At the top of the measurement sheet record the soil treatment you are working on. 7. Using the display screen a. Using the rubber end of the pencil you can gently tap on the display to perform certain functions. i. Resize the graph – tapping in the top left-hand corner\n\nRestart the graph – tapping in the top right-hand corner\nObtain an estimate flux – tapping at the start of the increase in the CO2 graph will allow you to select a point. It will then generate a line and slope automatically using a 60 second time interval. This slope is an approximate value for the flux of CO2.\n\n\nOnce the probe has equilibrated, you can gently pick the sensor up and place it onto the soil gas collar that has already been inserted into the soil.\nSet up a timer on your smartphone or a stopwatch, start the timer and record the initial ppm of CO2. Record all data (in this step and below) in the ‘Soil Respiration Data Collection Sheet-2022 WT1.xlsx’ spreadsheet.\nEvery 30 seconds, record the concentration of carbon dioxide (ppm) displayed on the CO2 sensor screen for 180 seconds (3 minutes). Put this data into the excel sheet.\nAfter the 180 seconds: Using the eraser end of the pencil, gently tap on the screen at the start of the increase in CO2 concentration where there is a relatively straight line. This will give you an approximate CO2 flux. Record this value in the “Slope on display” row in the excel sheet. You can tap on the top left hand of the screen to resize the curve if needed, and refresh the screen by tapping on the top right-hand side.\nOnce you have found the slope, remove the sensor from the soil collar. Gently wave it around to get airflow around the sensor for a few seconds.\nFlip the sensor back over so that the probe is facing down towards the table again for 2-3 minutes until it reaches a constant measurement. Note: the equilibrated concentration of CO2 could change due to the amount of people in the room respiring.\nRecord in excel the soil temperature from the thermometer.\nUse the TDR to measure soil volumetric water content (VWC %) around the soil gas collar. Ensure that the measurement mode is set to the correct soil type for your experiment. Take 3 or 4 measurements around the collar and use the average soil water content as water may not be evenly distributed throughout the soil. Record this in the excel sheets.\nRepeat steps 7-15 on each of the soils 3 times in order to obtain an average gas flux measurement.\n\nCalculations and Questions: [9 marks]\nQ1. Plot the change in ppm versus time(s) for each of your soils (and replicates), and calculate the slope ΔCO2/Δt (ppm CO2 s-1). Plots should preferably be done using excel, and don’t forget to label the x- and y-axes (with units) and include a figure caption. The ΔCO2/Δt can be calculated from a linear trend line fitted to the data (see example from TA). [2]\nQ2. For each soil, convert the measured CO2 increase (ppm CO2 s-1) to flux density, Rs (µmol m-2 s-1) using equation 8.5. Obtain values for ρ, V and A from the table above. [2]\nQ3. Which soil, unfertilized or fertilized, has the highest value of Rs. How can you explain any potential differences in Rs between the two soils. Make sure to include at least one citation from a peer-reviewed paper in your explanation [2]\nQ4. Would you expect respiration in layers deeper in the soil to be higher or lower than the values you measured for these surface samples? Why? [1]\nQ5. How would you expect Rs from the unfertilized soil to change with warming? Why? What is meant by a climate feedback effect? Distinguish between and positive and negative feedback. [2]"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Syllabus",
     "section": "",
-    "text": "GEOS 200 / APBI 244: 2023 W1 with Dr. June skeeter\nThis course focuses on the physical principles of weather and climate. We cover thermal, moisture and wind dynamics from the scale of ecosystems up to the globe. We also explore daily weather systems and climate change. We discuss large scale weather and climate processes relevant to applications in forestry and agriculture. This term we will cover:"
+    "text": "GEOS 200 / APBI 244: 2023 W1\nwith Dr. June skeeter"
   },
   {
-    "objectID": "index.html#evaluation",
-    "href": "index.html#evaluation",
+    "objectID": "index.html#your-instructor",
+    "href": "index.html#your-instructor",
     "title": "Syllabus",
-    "section": "Evaluation",
-    "text": "Evaluation\nLab exercises and the final exam will make up the largest portions of your grade, followed the lecture review quizzes and lecture participation will make up the remaining portion of your grade. There will also be a few extra credit opportunities over the course of the term.\n\n\nWarning in read.table(file = file, header = header, sep = sep, quote = quote, :\nincomplete final line found by readTableHeader on 'sheets/GradeBreakdown.csv'\n\n\n\n\nTable 2: Components of your final grade\n\n\n\n\n\n\n\nPoints Distribution\nPoints\nPercent of Final Grade\n\n\n\n\nParticipation\n50 pts\n5%\n\n\nLecture Review Quizzes\n5 quizzes, 50 pts each\n25%\n\n\nLab Assignments\n7 Labs, 50 pts each\n35%\n\n\nFinal Exam\n350\n35%"
+    "section": "Your Instructor",
+    "text": "Your Instructor\n\n\n\n\n\n\n\nName\nDr. June skeeter\n\n\nPronouns\nThey/Them/Theirs\n\n\nEmail\njune.skeeter@ubc.ca\n\n\nOffice Hours\nMondays 10:00-11:00 via Zoom or in person (Room 127, Geography Bldg) by appointment.\n\n\n\n\n\nMy name is June. I am a geographer, researcher, and educator who has been living as an uninvited guest on unceded Coast Salish Territory since 2015. I received a PhD in geography from UBC in 2022 and am now working for the UBC Micrometeorology group. I study greenhouse gas exchange in wetland ecosystems and associated feedback mechanisms that influence the earth’s climate system. My principal aims this semester are to give you a broad overview to the dynamics governing of weather and climate and to provide you with a supportive learning environment."
   },
   {
-    "objectID": "index.html#lecture",
-    "href": "index.html#lecture",
+    "objectID": "index.html#learning-outcomes",
+    "href": "index.html#learning-outcomes",
     "title": "Syllabus",
-    "section": "Lecture",
-    "text": "Lecture\n\nQuizzes\n\n\nParticipation\nI encourage you to attend lectures and labs as best as you are able (either in-person on synchronously online). Even if you cannot attend lectures in-person, I expect all student to actively participate in the class. Active participation means that you come to class prepared having read all the materials assigned for each lecture and/or stay up to date on watching lectures and readings even if you are unable to attend lectures. When attending lectures (either in-person on synchronously online), I encourage you to actively participate in discussions and class activities to create an engaging and dynamic learning environment.\nLectures are held in person Wednesday & Friday, 9:30 - 11:00 in room Friedman Building, Room 153 with a remote attendance option available on on zoom. Recordings will be made available here for convenience, but lecture participation points are only available during keyInfo.\nLecture participation will be gauged using TopHat. The course Join Code is: .\n\nTopHat questions can only be answered during the lecture session\n\nThey will be available to in person and remote attendees\nThey can be answered via mobile device or laptop\n\nQuestions will be marked based on participation (50%) and correctness (50%)\n\nAnonymized answers will be reviewed in lecture to help gauge comprehension\n\n\nExtra credit will offered at multiple points through the term.\n\nThe course also has a piazza page which can be used to ask/answer questions about assignments and course materials. Students who are active and helpful on the piazza page will be offered extra participation credit at the end of term.\n\n\n\nLab Assignments\nLaboratory exercises are designed to complement the lecture materials and are a mandatory part of the course. The accompanying laboratory exercises provide hands-on experiences explaining physical principles and introducing biometeorological instrumentation.\nLate labs: there will be a deduction of 10%/day for late assignments\nCollaboration on labs is encouraged. However, you should think about the problems yourself before discussing them with others. Also, write-ups must be done independently. (In practice, this means that it is OK for other people to explain their solutions to you, but you must not be looking at other people’s solutions as you write your own.)\nQuizzes are available to you from 7am to 11:59pm on the day they are listed in the course schedule above and on Canvas. You will have 20 minutes to complete the quiz once you start it on Canvas. Quizzes are open book, but please make sure to follow the guidelines below on Academic Honesty.\nThe final exam will be an in-person final scheduled during the scheduled exam period. The final exam will be closed-book.\n\n\nFinal Exam\nThe final exam will be will be cumulative, drawing from both lecture and lab material. It will consist of a flowchart question illustrating how to complete a GIS task, essays/short answers, and miscellaneous fill in the blanks, matching, multiple choice, etc. type questions. It will be asynchronous over Canvas and is scheduled for TBD. More info will be available closer to the exam date."
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\n\nUnderstand the physical and biological processes that determine the microclimate of a surface.\nExplain how microclimates vary in time & space (vertically and horizontally).\nDescribe interactions between the biosphere and the atmosphere, and to understand how surface-atmosphere feedbacks respond to environmental change.\nKnow the basic principles of widely used biometeorological instrumentation.\nAnalyze and interpret data from measurement systems that are used to monitor near-surface climate and surface radiation and energy balances.\nProvide examples how the principles of biometeorology have practical application to society."
+  },
+  {
+    "objectID": "index.html#course-details",
+    "href": "index.html#course-details",
+    "title": "Syllabus",
+    "section": "Course Details",
+    "text": "Course Details\nThe course consists of a lecture and lab components with a cumulative final exam. There will be two 90-minute lectures per week with lecture participation assessed via iClicker and Quiz, 12 lecture review quizzes. There will be Lab, 12 laboratory exercises that can be completed durring your lab section. Lab attendance is not mandatory, but it is strongly recommended as it is the best time to get help from your TA. The weight of each course component towards your final grade is shown in Table 1 and important deadlines are listed in Table 2.\n\nEvaluation\nLab exercises and the final exam will make up the largest portions of your grade, followed the lecture review quizzes and lecture participation will make up the remaining portion of your grade. There will also be a few extra credit opportunities over the course of the term.\n\n\n\n\nTable 1: Components of your final grade\n\n\nPoints Distribution\nPercent of Final Grade\n\n\n\n\nParticipation\n5%\n\n\nLecture Review Quizzes\n25%\n\n\nLab Assignments\n35%\n\n\nFinal Exam\n35%\n\n\n\n\n\n\n\n\nDeadlines\n\n\n\n\nTable 2: Important Dates\n\n\n\n\n\n\n\n\nAssignment\nNumber\nTopic\nDue Date\n\n\n\n\nLab\n1\nUBC Climate Data\nSept 22 2023\n\n\nLab\n2\nRadiation\nOct 6 2023\n\n\nLab\n3\nHumidity\nOct 20 2023\n\n\nLab\n4\nAtmospheric Stability & The Planetary Boundary Layer\nNov 10 2023\n\n\nLab\n5\nEnergy Balance Equations\nNov 24 2023\n\n\nLab\n6\nSoil Respiration\nDec 8 2023\n\n\nQuiz\n1\n-\nSept 27 2023\n\n\nQuiz\n2\n-\nOct 11 2023\n\n\nQuiz\n3\n-\nNov 1 2023\n\n\nQuiz\n4\n-\nNov 22 2023\n\n\nQuiz\n5\n-\nDec 6 2023\n\n\nExam\n-\nCumulative (All Course Materials)\nTBD\n\n\n\n\n\n\n\n\nLab Assignments\nLaboratory exercises are designed to complement the lecture materials and are a mandatory part of the course. The accompanying laboratory exercises provide hands-on experiences explaining physical principles and introducing biometeorological instrumentation.\nLate labs: there will be a deduction of 10%/day for late assignments\nCollaboration on labs is encouraged. However, you should think about the problems yourself before discussing them with others. Also, write-ups must be done independently. (In practice, this means that it is OK for other people to explain their solutions to you, but you must not be looking at other people’s solutions as you write your own.)\nQuizzes are available to you from 7am to 11:59pm on the day they are listed in the course schedule above and on Canvas. You will have 20 minutes to complete the quiz once you start it on Canvas. Quizzes are open book, but please make sure to follow the guidelines below on Academic Honesty.\nThe final exam will be an in-person final scheduled during the scheduled exam period. The final exam will be closed-book.\n\n\nFinal Exam\nThe final exam will be will be cumulative, drawing from both lecture and lab material. It will consist of a flowchart question illustrating how to complete a GIS task, essays/short answers, and miscellaneous fill in the blanks, matching, multiple choice, etc. type questions. It will be asynchronous over Canvas and is scheduled for TBD. More info will be available closer to the exam date."
   },
   {
     "objectID": "index.html#feedback-deadlines",
@@ -63,52 +238,339 @@
     "text": "Academic Integrity\nThe academic enterprise is founded on honesty, civility, and integrity. As members of this enterprise, all students are expected to know, understand, and follow the codes of conduct regarding academic integrity. At the most basic level, this means submitting only original work done by you and acknowledging all sources of information or ideas and attributing them to others as required. This also means you should not cheat, copy, or mislead others about what is your work. Violations of academic integrity (i.e., misconduct) lead to the breakdown of the academic enterprise, and therefore serious consequences arise and harsh sanctions are imposed.\nPlagiarism and cheating will be taken very seriously. The first incident of plagiarism/copying/cheating will result in a zero for the assignment. Further incidents will be reported to the President’s Advisory Committee on Student Discipline in addition to a zero. A more detailed description of academic integrity, including the University’s policies and procedures, may be found here\nThough you may work together with your classmates on the assignments and help each other, ALL STUDENTS MUST SUBMIT THEIR OWN ORIGINAL WORK. This means that your maps must be your own, and your answers must be in your own words. Failure to submit your own work can result in failing the assignment or worse, so please be careful. See the Academic Integrity section of the Syllabus for more information."
   },
   {
-    "objectID": "LabAssignments.html",
-    "href": "LabAssignments.html",
+    "objectID": "Labs.html",
+    "href": "Labs.html",
     "title": "General Info",
     "section": "",
-    "text": "Labs will be held weekly (excluding the first week of term) in room 102A of the Macmillan building. Times for each lab section and information for the corresponding TAs are listed at the bottom of this page. You must be registered for a lab section in order to complete the course."
+    "text": "Labs will be held weekly (excluding the first week of term) in room 102A of the Macmillan building. Times for each lab section and information for the corresponding TAs are listed at the bottom of this page. You must be registered for a lab section in order to complete the course, and you may only attend the lab session you are registered for, if you must attend an alternate lab time, you need to get prior permission from the TA running that section."
   },
   {
-    "objectID": "LabAssignments.html#lab-materials",
-    "href": "LabAssignments.html#lab-materials",
+    "objectID": "Labs.html#lab-materials",
+    "href": "Labs.html#lab-materials",
     "title": "General Info",
     "section": "Lab materials",
     "text": "Lab materials\nAll equipment necessary to conduct laboratory experiments will be provided; however, it is the responsibility of the student to bring to each class the laboratory instructions (a paper copy or online version), an adequate. Copies of the lecture notes / slides may be useful."
   },
   {
-    "objectID": "LabAssignments.html#formatting",
-    "href": "LabAssignments.html#formatting",
+    "objectID": "Labs.html#formatting",
+    "href": "Labs.html#formatting",
     "title": "General Info",
     "section": "Formatting",
     "text": "Formatting\nLaboratory reports should be written concisely and uploaded as a Word Document of PDF to Canvas. Number and sort your answers in accordance with questions in lab manual. All questions should be attempted and answered in the order of the lab manual. Answers should be presented in tables where possible. For selected exercises, empty templates are provided on the course web-page. No need to repeat questions. Procedures and equipment should also not be reported. Any calculations with important results should be clearly indicated. In some cases an analysis of errors is appropriate. Please always indicate units and follow the SI for units and scientific notation (see Lecture 1). The report’s header should list the course number, your name, your UBC student number, your TA’s name, and the number and title of the lab."
   },
   {
-    "objectID": "LabAssignments.html#due-date",
-    "href": "LabAssignments.html#due-date",
+    "objectID": "Labs.html#due-date",
+    "href": "Labs.html#due-date",
     "title": "General Info",
     "section": "Due date",
     "text": "Due date\nAll reports should be submitted on Canvas by the due date. Late lab reports will be penalized 10% per day. Lab reports will not be accepted once graded reports have been returned to the class. In cases where a student fails to submit a report due to sickness, they should contact the current TA before the deadline to discuss options."
   },
   {
-    "objectID": "LabAssignments.html#grading-of-reports",
-    "href": "LabAssignments.html#grading-of-reports",
+    "objectID": "Labs.html#grading-of-reports",
+    "href": "Labs.html#grading-of-reports",
     "title": "General Info",
     "section": "Grading of reports",
     "text": "Grading of reports\nTAs are responsible for grading all lab report, which vary between 8.5 to 15 points each depending on the lab. All eight labs together contribute 40% to the course’s final grade. The break-down of the marking in each lab is indicated in square brackets following each question. It will often be necessary to consult the reading material, lecture slides and notes, or other sources in order to provide good answers to these questions. Top marks will generally be assigned only where perceptive and appropriate interpretative comments are presented in addition to all observations and answers specifically requested."
   },
   {
-    "objectID": "LabAssignments.html#your-tas",
-    "href": "LabAssignments.html#your-tas",
+    "objectID": "Labs.html#lab-times",
+    "href": "Labs.html#lab-times",
+    "title": "General Info",
+    "section": "Lab Times",
+    "text": "Lab Times\n\n\n\n\n\nSection\nTime\nTA\n\n\n\n\nL1A\nTue 11:00-13:00\nMegan\n\n\nL1B\nTue 13:00-15:00\nMegan\n\n\nL1C\nThu 9:00-11:00\nTzu-Yi\n\n\nL1D\nWed 11:00-13:00\nZoe\n\n\nL1E\nWed 13:00-15:00\nZoe\n\n\nL1F\nFri 12:00-14:00\nTzu-Yi"
+  },
+  {
+    "objectID": "Labs.html#lab-schedule",
+    "href": "Labs.html#lab-schedule",
+    "title": "General Info",
+    "section": "Lab Schedule",
+    "text": "Lab Schedule\n\n\n\n\n\n\n\n\n\n\n\n\nDates\nTuesday(L1A & L1B)\nWednesday(L1D & L1E)\nThursday(L1C)\nFriday(L1F)\n\n\n\n\nSep 05 - Sep 08\n–\n–\n–\n–\n\n\nSep 12 - Sep 15\nLab 1\nLab 1\nLab 1\nLab 1\n\n\nSep 19 - Sep 22\nLab 1\nLab 1\nLab 1\nLab 1\n\n\nSep 26 - Sep 29\nLab 2\nLab 2\nLab 2\nLab 2\n\n\nOct 03 - Oct 06\nLab 2\nLab 2\nLab 2\nLab 2\n\n\nOct 10 - Oct 13\nLab 3\nLab 3\n–\nLab 3\n\n\nOct 17 - Oct 20\nLab 3\nLab 3\nLab 3\nLab 3\n\n\nOct 24 - Oct 27\nLab 4\nLab 4\nLab 3\nLab 4\n\n\nOct 31 - Nov 03\nLab 4\nLab 4\nLab 4\nLab 4\n\n\nNov 07 - Nov 10\nLab 5\nLab 5\nLab 4\nLab 5\n\n\nNov 14 - Nov 17\n–\n–\nLab 5\nLab 5\n\n\nNov 21 - Nov 24\nLab 5\nLab 5\nLab 5\nLab 6\n\n\nNov 28 - Dec 01\nLab 6\nLab 6\nLab 6\nLab 6\n\n\nDec 05 - Dec 08\nLab 6\nLab 6\nLab 6\n–"
+  },
+  {
+    "objectID": "Labs.html#your-tas",
+    "href": "Labs.html#your-tas",
     "title": "General Info",
     "section": "Your TAs",
     "text": "Your TAs\n\n\n\n\n\n\n\nName\nZoe\n\n\nPronouns\nShe/Her/Hers\n\n\nEmail\nhehanzha@student.ubc.ca\n\n\nOffice\nGeography room 207\n\n\n\n\n\nI received a BSc in Environmental Science from the University of British Columbia in 2022. My undergraduate thesis research investigated the impacts of fire on greenhouse gas (GHG) fluxes (CO2, CH4, and N2O) within different burned zones of a bog. The methodology incorporated chamber measurements and gas chromatography for the analysis. Currently, as a second-year MSc student, I am examining the impacts of seedling removal — a post-fire management practice — on the GHG fluxes (CO2 and CH4) within the 2016 burned zone of the Burns Bog, Delta, BC. This research utilizes a smart chamber with a portable analyzer. Additionally, I am interested in quantifying the net carbon exchange at the ecosystem scale using eddy covariance techniques and understanding carbon dynamics across varying ecosystem types.\n\n\n\n\n\n\n\n\nName\nTzu-Yi\n\n\nPronouns\nShe/Her/Hers\n\n\nEmail\ntzuyilu@student.ubc.ca\n\n\nOffice\nGeography room 207\n\n\n\n\n\nMy name is Tzu-Yi. I am a fourth-year PhD candidate collaborating under the guidance of Dr. Sara Knox in Geography. I am interested in understanding the key processes underlying the carbon cycle between the atmosphere and coastal wetland ecosystem. Moreover, I am dedicated to quantifying how greenhouse gas fluxes in coastal wetlands contribute to regional and global carbon cycles. Currently, my research has been conducted in both the Delta and Richmond regions of British Columbia, measuring continuous carbon dioxide (CO2) and methane (CH4) exchanges in tidal marshes. I’m delighted to be a part of this exciting course as one of the TAs in GEOS200. Learning is a collaborative journey, and I’m glad to support you every step of the way.\n\n\n\n\n\n\n\n\nName\nMegan\n\n\nPronouns\nShe/Her/Hers\n\n\nEmail\nmelkin@student.ubc.ca\n\n\nOffice\nN/A\n\n\n\n\n\nMy name is Megan and I am in my final year of Geographical Science at UBC. I have been working this past year on co-op with Environment and Climate Change Canada and am excited to be back in the classroom! My main areas of study are GIS, Geomorphology, and Urban Meteorology. Some of my hobbies include mountain biking, climbing, and swimming and I am very fortunate to call BC my home."
   },
   {
-    "objectID": "lectures.html",
-    "href": "lectures.html",
-    "title": "Lectures",
+    "objectID": "Lectures.html",
+    "href": "Lectures.html",
+    "title": "Overview",
     "section": "",
-    "text": "Will Fill IN Later"
+    "text": "Dates\nWednesday\nFriday\n\n\n\n\nSep-06 to Sep-08\nIntroduction\nEnergy\n\n\nSep-13 to Sep-15\nRadiation Laws\nShortwave Radiation\n\n\nSep-20 to Sep-22\nSurface geometry and albedo\nRadiation transfer in plant canopies\n\n\nSep-27 to Sep-29\nLong-wave radiationLecture Quiz 1\nRadiation budget of Planet Earth\n\n\nOct-04 to Oct-06\nNet radiation of land surfaces.\nHeat and temperature\n\n\nOct-11 to Oct-13\nHeat conductionLecture Quiz 2\nThermal admittance.\n\n\nOct-18 to Oct-20\nAtmospheric Humidity.\nLaminar boundary layers\n\n\nOct-25 to Oct-27\nImage of an apple orchard\nAnimal microclimate: basic principles, wind chill and thermal regulation\n\n\nNov-01 to Nov-03\nLapse rates and stabilityLecture Quiz 3\nLocal winds\n\n\nNov-08 to Nov-10\nTurbulence and convection\nTurbulent exchange\n\n\nNov-15 to Nov-17\n–\nWind breaks and windthrow\n\n\nNov-22 to Nov-24\nFrost protectionLecture Quiz 4\nEnergy balance of ecosystems\n\n\nNov-29 to Dec-01\nEddy covariance measurements of evapotranspiration\nRain over a Scottish catchment\n\n\nDec-06 to Dec-08\nMeasuring CO2 fluxes over a rice fieldLecture Quiz 5\n–\n\n\n\n\n\nI encourage you to attend lectures and labs as best as you are able (either in-person on synchronously online). Even if you cannot attend lectures in-person, I expect all student to actively participate in the class. Active participation means that you come to class prepared having read all the materials assigned for each lecture and/or stay up to date on watching lectures and readings even if you are unable to attend lectures. When attending lectures (either in-person on synchronously online), I encourage you to actively participate in discussions and class activities to create an engaging and dynamic learning environment.\nLectures are held in person Wednesday & Friday, 9:30 - 11:00 in room Friedman Building, Room 153 with a remote attendance option available on on zoom. Recordings will be made available here for convenience, but lecture participation points are only available during keyInfo.\nLecture participation will be gauged using TopHat. The course Join Code is: ?var:keyInfo.tophat_code.\n\nTopHat questions can only be answered during the lecture session\n\nThey will be available to in person and remote attendees\nThey can be answered via mobile device or laptop\n\nQuestions will be marked based on participation (50%) and correctness (50%)\n\nAnonymized answers will be reviewed in lecture to help gauge comprehension\n\n\nExtra credit will offered at multiple points through the term."
+  },
+  {
+    "objectID": "Slides/Lecture0.html#atmospheric-environments",
+    "href": "Slides/Lecture0.html#atmospheric-environments",
+    "title": "Atmospheric Environments",
+    "section": "Atmospheric Environments",
+    "text": "Atmospheric Environments\n\n\nGEOS 200/APBI 244"
+  },
+  {
+    "objectID": "Slides/Lecture0.html#objectives",
+    "href": "Slides/Lecture0.html#objectives",
+    "title": "Atmospheric Environments",
+    "section": "Objectives",
+    "text": "Objectives\n\n\n\nWelcome by instructor\nMeet your teaching team\nIntroduction to GEOS 200/APBI 244\nIntroduction to the Canvas page\nQuestions?\nThe scientific approach\nStandardization, units and conventions"
+  },
+  {
+    "objectID": "Slides/Lecture0.html#introduction-to-geos-200apbi-244",
+    "href": "Slides/Lecture0.html#introduction-to-geos-200apbi-244",
+    "title": "Atmospheric Environments",
+    "section": "Introduction to GEOS 200/APBI 244",
+    "text": "Introduction to GEOS 200/APBI 244\n\n\n\nThis course covers the physical principles underlying weather and climates.\nWe will explore thermal, moisture and wind climates from the scale of plants to the globe.\nWe will also investigate daily weather systems and climate change.\nWe will discuss large scale weather and climate processes relevant to applications in forestry and agriculture."
+  },
+  {
+    "objectID": "Slides/Lecture0.html#observing-climate-change",
+    "href": "Slides/Lecture0.html#observing-climate-change",
+    "title": "Atmospheric Environments",
+    "section": "Observing climate change",
+    "text": "Observing climate change"
+  },
+  {
+    "objectID": "Slides/Lecture0.html#is-there-a-required-textbook-in-this-course",
+    "href": "Slides/Lecture0.html#is-there-a-required-textbook-in-this-course",
+    "title": "Atmospheric Environments",
+    "section": "Is there a required textbook in this course?",
+    "text": "Is there a required textbook in this course?\n\n\n\nYou do NOT need to buy a textbook.\nThere are slides available and reading material can be downloaded from the website. Lectures will also be recorded.\nFor those who like to have access to a text there are free online texts available as well as cheap used 2nd year meteorology texts such as Ahrens: Meteorology Today.\nI will also provide reference textbooks in the GIC."
+  },
+  {
+    "objectID": "Slides/Lecture0.html#understanding-climates-and-climatology",
+    "href": "Slides/Lecture0.html#understanding-climates-and-climatology",
+    "title": "Atmospheric Environments",
+    "section": "Understanding climates and climatology",
+    "text": "Understanding climates and climatology"
+  },
+  {
+    "objectID": "Slides/Lecture0.html#measuring-climate",
+    "href": "Slides/Lecture0.html#measuring-climate",
+    "title": "Atmospheric Environments",
+    "section": "Measuring climate?",
+    "text": "Measuring climate?\n\n\n\nOne of the first concepts we will\nlearn in the labs is how we\nstudy the atmosphere using\nstandard climate stations.\nThe first lab the week of Sep 12th, 2022 (Week 2) will not be held in MacMillan 102A, but rather at the UBC Climate Station located in the south-end of the Totem field."
+  },
+  {
+    "objectID": "Slides/Lecture0.html#first-lab",
+    "href": "Slides/Lecture0.html#first-lab",
+    "title": "Atmospheric Environments",
+    "section": "First lab",
+    "text": "First lab\n\n\n\nWe meet directly at the Entrance Gate of Totem Field (Plant Science\nField Station, West Mall 2613) at the regular lab start times."
+  },
+  {
+    "objectID": "Slides/Lecture0.html#the-si-system",
+    "href": "Slides/Lecture0.html#the-si-system",
+    "title": "Atmospheric Environments",
+    "section": "The SI System",
+    "text": "The SI System\n\n\n\nThe SI (Système International d’Unités or International System of Units) is the official unit system in science and therefore mandatory in climatology. This system uses a small number of base units from which other derived units can be obtained."
+  },
+  {
+    "objectID": "Slides/Lecture0.html#si-base-units",
+    "href": "Slides/Lecture0.html#si-base-units",
+    "title": "Atmospheric Environments",
+    "section": "SI base units",
+    "text": "SI base units\n\n\n\nThe unit for thermodynamic temperature is Kelvin (K, but not °K). Temperatures may be also indicated in degree Celsius (°C). However, temperature-differences must be referred to as Kelvin (K).\n\n\n\n\n\n{} {#tbl-Lecture0_12_3}\n\n\nX0\nX1\nX2\n\n\n\n\nSI base unit\nQuantity\nSymbol\n\n\nMeter\nLength\nm\n\n\nKilogram\nMass\nKg\n\n\nSecond\nTime\ns\n\n\nKelvin\nThermodynamic Temperature\nK\n\n\nAmpere\nElectric current\nA\n\n\nMole\nAmount of a substance\nmol\n\n\nCandela\nLuminous intensity\ncd"
+  },
+  {
+    "objectID": "Slides/Lecture0.html#scientific-notation",
+    "href": "Slides/Lecture0.html#scientific-notation",
+    "title": "Atmospheric Environments",
+    "section": "Scientific notation",
+    "text": "Scientific notation\n\n\n\n\n\n\n\n{} {#tbl-Lecture0_13_2}\n\n\nX0\nX1\nX2\n\n\n\n\nScientific notation\nPrefix\nSymbol\n\n\n1012\ntera\nT\n\n\n10+9\ngiga\nG\n\n\n106\nmega\nM\n\n\n103\nkilo\nk\n\n\n102\nhecto\nh\n\n\n100\n\n\n\n\n10-1\ndeci\nd\n\n\n10-2\ncenit\nc\n\n\n10-3\nmilli\nm\n\n\n10-6\nmicro\n\n\n\n10-9\nnano\nn\n\n\n10-12\npico\np"
+  },
+  {
+    "objectID": "Slides/Lecture0.html#reference-systems-for-wind",
+    "href": "Slides/Lecture0.html#reference-systems-for-wind",
+    "title": "Atmospheric Environments",
+    "section": "Reference systems for wind",
+    "text": "Reference systems for wind"
+  },
+  {
+    "objectID": "Slides/Lecture0.html#angle-definitions-and-wind-direction",
+    "href": "Slides/Lecture0.html#angle-definitions-and-wind-direction",
+    "title": "Atmospheric Environments",
+    "section": "Angle definitions and wind direction",
+    "text": "Angle definitions and wind direction\n\n\n\nWinds are named after the direction from which the air is moving.\nExample: if the wind direction is 45 degrees, wind is from Northeast.\n\n\n\n\n\n\n\nBack to Homepage"
+  },
+  {
+    "objectID": "Slides/Lecture1.html#energy",
+    "href": "Slides/Lecture1.html#energy",
+    "title": "Atmospheric Environments",
+    "section": "Energy",
+    "text": "Energy\n\n\nWater vapour condensation and the energy released when forming clouds is an important climate process (Photo: A. Christen)"
+  },
+  {
+    "objectID": "Slides/Lecture1.html#learning-objectives",
+    "href": "Slides/Lecture1.html#learning-objectives",
+    "title": "Atmospheric Environments",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\n\n\n\nUnderstand which forms of energy are important for understanding the climate system.\nExplain the difference between heat and temperature.\nDescribe the mechanisms by which energy is transported.\nUnderstand how we account for energy and mass conversions in the atmosphere."
+  },
+  {
+    "objectID": "Slides/Lecture1.html#which-forms-of-energy-are-important",
+    "href": "Slides/Lecture1.html#which-forms-of-energy-are-important",
+    "title": "Atmospheric Environments",
+    "section": "Which forms of energy are important",
+    "text": "Which forms of energy are important\nin the atmosphere?"
+  },
+  {
+    "objectID": "Slides/Lecture1.html#forms-of-energy-in-the-atmosphere",
+    "href": "Slides/Lecture1.html#forms-of-energy-in-the-atmosphere",
+    "title": "Atmospheric Environments",
+    "section": "Forms of energy in the atmosphere",
+    "text": "Forms of energy in the atmosphere\n\n\n\nRadiant energy – electromagnetic waves (Sun, hot fire, clouds, walls of tent).\nSensible heat – thermal energy we can feel (warm air).\nLatent heat – due to phase changes of a substance, especially water (cooling we feel after getting out of the swimming pool).\nChemical energy – fixed in conversion of CO2 to carbohydrate (CH2O) (photosynthesis).\nKinetic – due to motion (winds).\nGeopotential – due to position in gravitational field."
+  },
+  {
+    "objectID": "Slides/Lecture1.html#heat-vs.-temperature",
+    "href": "Slides/Lecture1.html#heat-vs.-temperature",
+    "title": "Atmospheric Environments",
+    "section": "Heat vs. temperature",
+    "text": "Heat vs. temperature\n\n\n\nHeat is the total thermal energy content of a body. Expressed as energy, often also per unit mass or per unit volume of a substance. (i.e. J, or J kg-1 or J m-3) . Remember that:\nEnergy is the ability to do work, and work is done when unit force acts over unit distance: 1 N x 1 m = 1 Joule (J)\nTemperature is the ability of a body to transfer thermal energy to another body. It is a measure of the random kinetic energy or the average thermal energy of its molecules (in K or C)."
+  },
+  {
+    "objectID": "Slides/Lecture1.html#temperature-scales-compared",
+    "href": "Slides/Lecture1.html#temperature-scales-compared",
+    "title": "Atmospheric Environments",
+    "section": "Temperature scales compared",
+    "text": "Temperature scales compared\n\n\nSeveral scales have been invented: Fahrenheit, Celsius, Kelvin… According to SI we should use Kelvin (K) or Celsius (°C, for absolute temperatures only)."
+  },
+  {
+    "objectID": "Slides/Lecture1.html#the-three-states-of-water-photo-a.-christen",
+    "href": "Slides/Lecture1.html#the-three-states-of-water-photo-a.-christen",
+    "title": "Atmospheric Environments",
+    "section": "The three states of water (Photo: A. Christen)",
+    "text": "The three states of water (Photo: A. Christen)"
+  },
+  {
+    "objectID": "Slides/Lecture1.html#state-changes-of-water",
+    "href": "Slides/Lecture1.html#state-changes-of-water",
+    "title": "Atmospheric Environments",
+    "section": "State changes of water",
+    "text": "State changes of water"
+  },
+  {
+    "objectID": "Slides/Lecture1.html#state-changes-of-water-1",
+    "href": "Slides/Lecture1.html#state-changes-of-water-1",
+    "title": "Atmospheric Environments",
+    "section": "State changes of water",
+    "text": "State changes of water"
+  },
+  {
+    "objectID": "Slides/Lecture1.html#latent-heat",
+    "href": "Slides/Lecture1.html#latent-heat",
+    "title": "Atmospheric Environments",
+    "section": "Latent heat",
+    "text": "Latent heat"
+  },
+  {
+    "objectID": "Slides/Lecture1.html#latent-heat-1",
+    "href": "Slides/Lecture1.html#latent-heat-1",
+    "title": "Atmospheric Environments",
+    "section": "Latent heat",
+    "text": "Latent heat"
+  },
+  {
+    "objectID": "Slides/Lecture1.html#kj-kg-1",
+    "href": "Slides/Lecture1.html#kj-kg-1",
+    "title": "Atmospheric Environments",
+    "section": "kJ kg-1",
+    "text": "kJ kg-1\n\n\nTemperature\nValues at 0°C\nLatent heat of water\nLatent heat of vaporization\n\n\n\n\n{} {#tbl-Lecture1_14_2}\n\n\nX0\nX1\nX2\nX3\n\n\n\n\nSI derived unit\nSymbol\nValue\nUnits\n\n\nLatent heat of vaporization\nLv\n2501\nkJ kg-1\n\n\nLatent heat of fusion\nLf\n334\nkJ kg-1\n\n\nLatent heat of sublimation\nLs\n2835\nkJ kg-1\n\n\n\n\n\n\n\n\n\n\nFigure 1: ?(caption)"
+  },
+  {
+    "objectID": "Slides/Lecture1.html#thunderstorm-cell-photo-a.-christen",
+    "href": "Slides/Lecture1.html#thunderstorm-cell-photo-a.-christen",
+    "title": "Atmospheric Environments",
+    "section": "Thunderstorm cell (Photo: A. Christen)",
+    "text": "Thunderstorm cell (Photo: A. Christen)\n\n\nLatent heat of vaporization\nRadar image of a thunderstorm over Vancouver (Environment Canada)\n\nConversion from latent to sensible heat in a storm cloud is equivalent to the energy evolved from a small nuclear bomb.\nThis is simply based on the amount of latent heat picked up at the surface through evaporation released as water vapour condenses back into liquid water or freezes into ice."
+  },
+  {
+    "objectID": "Slides/Lecture1.html#why-spray-liquid-water-on-a-tree",
+    "href": "Slides/Lecture1.html#why-spray-liquid-water-on-a-tree",
+    "title": "Atmospheric Environments",
+    "section": "Why spray liquid water on a tree?",
+    "text": "Why spray liquid water on a tree?\n\n\nFine mist irrigation by sprinklers used to reduce frost damage (from Ahrens, 2000, ‘Meteorology Today’)."
+  },
+  {
+    "objectID": "Slides/Lecture1.html#fine-mist-irrigation-by-sprinklers-used-to-reduce-frost-damage-from-ahrens-2000-meteorology-today.",
+    "href": "Slides/Lecture1.html#fine-mist-irrigation-by-sprinklers-used-to-reduce-frost-damage-from-ahrens-2000-meteorology-today.",
+    "title": "Atmospheric Environments",
+    "section": "Fine mist irrigation by sprinklers used to reduce frost damage (from Ahrens, 2000, ‘Meteorology Today’).",
+    "text": "Fine mist irrigation by sprinklers used to reduce frost damage (from Ahrens, 2000, ‘Meteorology Today’).\n\n\nLatent heat of fusion\n\nSprayed liquid water releases latent heat of fusion as it becomes ice\nthis prevents a damaging drop in temperature of almonds"
+  },
+  {
+    "objectID": "Slides/Lecture1.html#black-and-christen",
+    "href": "Slides/Lecture1.html#black-and-christen",
+    "title": "Atmospheric Environments",
+    "section": "Black and Christen",
+    "text": "Black and Christen\n\n\nEnergy transfer in the atmosphere"
+  },
+  {
+    "objectID": "Slides/Lecture1.html#free-convection-of-heat-from-hot-ground",
+    "href": "Slides/Lecture1.html#free-convection-of-heat-from-hot-ground",
+    "title": "Atmospheric Environments",
+    "section": "Free* convection of heat from hot ground",
+    "text": "Free* convection of heat from hot ground\n\n\n\nThere are free and forced types of convection. An example of the latter is air movement caused by a fan or the wind."
+  },
+  {
+    "objectID": "Slides/Lecture1.html#can-you-think-of-an-example",
+    "href": "Slides/Lecture1.html#can-you-think-of-an-example",
+    "title": "Atmospheric Environments",
+    "section": "Can you think of an example?",
+    "text": "Can you think of an example?\n\n\nFluxes and flux densities - direction"
+  },
+  {
+    "objectID": "Slides/Lecture1.html#black-and-christen-1",
+    "href": "Slides/Lecture1.html#black-and-christen-1",
+    "title": "Atmospheric Environments",
+    "section": "Black and Christen",
+    "text": "Black and Christen\n\n\nFluxes and flux densities - direction"
+  },
+  {
+    "objectID": "Slides/Lecture1.html#fluxes-and-flux-densities---direction",
+    "href": "Slides/Lecture1.html#fluxes-and-flux-densities---direction",
+    "title": "Atmospheric Environments",
+    "section": "Fluxes and flux densities - direction",
+    "text": "Fluxes and flux densities - direction"
+  },
+  {
+    "objectID": "Slides/Lecture1.html#conservation-of-energy-and-mass",
+    "href": "Slides/Lecture1.html#conservation-of-energy-and-mass",
+    "title": "Atmospheric Environments",
+    "section": "Conservation of energy and mass",
+    "text": "Conservation of energy and mass\n\n\n\nOne of the most powerful laws used in analyzing organism-environment interaction is this law of conservation.\nNeither mass nor energy can be created or destroyed by any ordinary means.\nThe application is similar to reconciling your chequing account i.e. you can construct a budget or balance to account for all inflows and outflows of heat and mass."
+  },
+  {
+    "objectID": "Slides/Lecture1.html#energy-balance-of-a-vegetated-surface",
+    "href": "Slides/Lecture1.html#energy-balance-of-a-vegetated-surface",
+    "title": "Atmospheric Environments",
+    "section": "Energy balance of a vegetated surface",
+    "text": "Energy balance of a vegetated surface"
+  },
+  {
+    "objectID": "Slides/Lecture1.html#energy-conservation",
+    "href": "Slides/Lecture1.html#energy-conservation",
+    "title": "Atmospheric Environments",
+    "section": "Energy conservation",
+    "text": "Energy conservation\n\n\nEnergy conservation means that it is continually being converted from one form to another, but none is lost."
+  },
+  {
+    "objectID": "Slides/Lecture1.html#energy-conservation-1",
+    "href": "Slides/Lecture1.html#energy-conservation-1",
+    "title": "Atmospheric Environments",
+    "section": "Energy conservation",
+    "text": "Energy conservation"
+  },
+  {
+    "objectID": "Slides/Lecture1.html#radiation-budget",
+    "href": "Slides/Lecture1.html#radiation-budget",
+    "title": "Atmospheric Environments",
+    "section": "Radiation budget",
+    "text": "Radiation budget\n\n\nWater balance\nWater storage\nDrainage\nRunoff\nCarbon balance\n\nShort-wave irradiance\nShort-wave reflectance\nLong-wave irradiance\nLong-wave emittance and reflectance\n  Net   radiation  =  Sensible  heat  + Latent heat         +  Soil heat    +\n                                                           (Evaporation) \n\nEnergy balance\nPrecipitation\n\nRespiration\n\nNet CO2 flux\nConnectivity of energy and mass"
+  },
+  {
+    "objectID": "Slides/Lecture1.html#energy---summary",
+    "href": "Slides/Lecture1.html#energy---summary",
+    "title": "Atmospheric Environments",
+    "section": "Energy - summary",
+    "text": "Energy - summary\n\n\n\nDifference between flux and flux density - flux density is energy transport per unit area per unit time (W m-2)\nEnergy and mass transfer mechanisms - radiation, conduction, and convection\nUnderstand the concept of energy and mass balances and their connectivity - Neither mass nor energy can be created or destroyed by any ordinary means, just converted from one form to another.\n\n\n\n\n\n\n\nBack to Homepage"
   }
 ]

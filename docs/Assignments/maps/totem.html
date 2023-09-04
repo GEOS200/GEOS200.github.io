@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8' />
+    <title></title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.31.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.31.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    #map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    </style>
+</head>
+
+<body>
+    <style>
+    #menu {
+        position: absolute;
+        background: #fff;
+        padding: 10px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    </style>
+    <div id='map'></div>
+    <div id='menu'>
+        <input id='basic' type='radio' name='rtoggle' value='basic'>
+        <label for='basic'>Streets</label>
+        <input id='outdoors' type='radio' name='rtoggle' value='outdoors'>
+        <label for='outdoors'>Topo Map</label>
+        <input id='satellite-streets' type='radio' name='rtoggle' value='satellite-streets'  checked='checked'>
+        <label for='satellite-streets'>Satellite</label>
+    </div>
+    <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoidWJjbWljcm9tZXQiLCJhIjoiY2xmMnJzYzlnMGFsYTNxcW1kYWhubjBiaSJ9.rhIOVatxQoS4M__qIFv6Pg';
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/satellite-streets-v9',
+        zoom: 15,
+        center: [-123.249015, 49.255435],
+        hash: true
+    });
+
+    var customLayers = [
+        {
+            source: {
+            'type': 'geojson',
+            'data': {
+                'type': 'FeatureCollection',
+                'features': [{
+                    'type': 'Feature',
+                    'geometry': {
+                    'type': 'Point',
+                    'coordinates': [-123.249015, 49.255435]
+                    },
+                    'properties': {
+                        'title': 'Totem Station'
+                    }   
+                }]
+            }
+            },
+            layer: {
+                id: 'totem',
+                source: 'totem',
+                'type': 'circle',
+                'paint': {
+                    'circle-radius': 10,
+                    'circle-color': '#f5bf42',
+                    "circle-stroke-width": 1,
+                    "circle-stroke-color": 'black'
+                    },
+            }
+        },
+        {
+            source: {
+            'type': 'geojson',
+            'data': {
+                'type': 'FeatureCollection',
+                'features': [
+                {
+                    'type': 'Feature',
+                    'geometry': {
+                    'type': 'Point',
+                    'coordinates': [-123.249015, 49.255435]
+                    },
+                    'properties': {
+                        'title': 'Totem Station'
+                    }   
+                }
+                ]
+            }
+            },
+            layer: {
+                id: 'totem_poi',
+                source: 'totem_poi',
+                'type': 'symbol',
+                'layout': {
+                'text-field': 'Totem Station',
+                'text-font': [
+                    'Open Sans Semibold',
+                    'Arial Unicode MS Bold'
+                    ],
+                'text-offset': [0, -1.75],
+                'text-anchor': 'top',
+                'text-size': 20
+                },
+                'paint': {
+                    'text-halo-width': 1,
+                    'text-halo-color': 'white'
+                }
+            }
+        },
+        
+        {
+            source: {
+            'type': 'geojson',
+            'data': {
+                'type': 'FeatureCollection',
+                'features': [
+                    {
+                    'type': 'Feature',
+                    'geometry': {
+                    'type': 'Point',
+                    'coordinates': [-123.252200, 49.263300]
+                    },
+                    'properties': {
+                        'title': 'EOAS Station'
+                    }   
+                    }
+                ]
+                }
+            },
+            layer: {
+                id: 'EOAS',
+                source: 'EOAS',
+                'type': 'circle',
+                'paint': {
+                    'circle-radius': 10,
+                    'circle-color': '#4e22b5',
+                    "circle-stroke-width": 1,
+                    "circle-stroke-color": 'black'
+                    },
+            }
+        },
+        {
+            source: {
+            'type': 'geojson',
+            'data': {
+                'type': 'FeatureCollection',
+                'features': [
+                    {
+                    'type': 'Feature',
+                    'geometry': {
+                    'type': 'Point',
+                    'coordinates': [-123.252200, 49.263300]
+                    },
+                    'properties': {
+                        'title': 'EOAS Station'
+                    }   
+                    }
+                ]
+                }
+            },
+            layer: {
+                id: 'EOAS_poi',
+                source: 'EOAS_poi',
+                'type': 'symbol',
+                'layout': {
+                'text-field': 'EOAS Station',
+                'text-font': [
+                    'Open Sans Semibold',
+                    'Arial Unicode MS Bold'
+                    ],
+                'text-offset': [0, -1.75],
+                'text-anchor': 'top',
+                'text-size': 20
+                },
+                'paint': {
+                    'text-halo-width': 1,
+                    'text-halo-color': 'white'
+                }
+            }
+        }
+    
+    
+    ]
+
+    map.on('style.load', function() {
+        // Always add the same custom soruces and layers after a style change
+        
+        for (var i = 0; i < customLayers.length; i++) {
+            var me = customLayers[i]
+            map.addSource(me.layer.source, me.source);
+            map.addLayer(me.layer, 'totem')
+        }
+    });
+
+    var layerList = document.getElementById('menu');
+    var inputs = layerList.getElementsByTagName('input');
+
+    function switchLayer(layer) {
+        var layerId = layer.target.id;
+        map.setStyle('mapbox://styles/mapbox/' + layerId + '-v9');
+    }
+
+    for (var i = 0; i < inputs.length; i++) {
+        inputs[i].onclick = switchLayer;
+
+    }
+    </script>
+</body>
+
+</html>

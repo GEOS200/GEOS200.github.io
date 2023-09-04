@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.313">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Atmospheric Environments - Lab 6: Role of Soil Respiration in Climate Change</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Atmospheric Environments</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html">
+ <span class="menu-text">Syllabus</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../Lectures.html">
+ <span class="menu-text">Lectures</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../Labs.html">
+ <span class="menu-text">Lab Assignments</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/GEOS200"><i class="bi bi-github" role="img" aria-label="Quarto GitHub">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#theory" id="toc-theory" class="nav-link active" data-scroll-target="#theory"><span class="toc-section-number">1</span>  Theory</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Lab 6: Role of Soil Respiration in Climate Change</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p>This Lab Assignment is Due: <strong>Dec 8 2023</strong></p>
+<p>This assignment is worth <strong>0 points</strong>.</p>
+<div id="tbl-symbols" class="anchored">
+<table class="table">
+<caption>Table&nbsp;1: Symbols, constants and units</caption>
+<colgroup>
+<col style="width: 5%">
+<col style="width: 45%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Symbol</th>
+<th>Name</th>
+<th>units</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Ts</td>
+<td>Soil temperature</td>
+<td>oC (or K)</td>
+<td>measured</td>
+</tr>
+<tr class="even">
+<td>Tref</td>
+<td>Reference soil temperature</td>
+<td>oC (or K)</td>
+<td>measured</td>
+</tr>
+<tr class="odd">
+<td>V</td>
+<td>Volume of chamber</td>
+<td>0.00065363 m3</td>
+<td>constant</td>
+</tr>
+<tr class="even">
+<td>A</td>
+<td>Area of ground covered by chamber</td>
+<td>0.007854 m2</td>
+<td>constant</td>
+</tr>
+<tr class="odd">
+<td>Q10</td>
+<td>Ecosystem respiration</td>
+<td>Dimensionless</td>
+<td>Equation 8.4</td>
+</tr>
+<tr class="even">
+<td>ρ</td>
+<td>Molar density of air</td>
+<td>40 mol m-3</td>
+<td>constant</td>
+</tr>
+<tr class="odd">
+<td>GEP</td>
+<td>Gross ecosystem photosynthesis</td>
+<td>µmol m-2 s-1</td>
+<td>Equation 8.1</td>
+</tr>
+<tr class="even">
+<td>NEP</td>
+<td>Net ecosystem productivity</td>
+<td>µmol m-2 s-1</td>
+<td>Equation 8.2</td>
+</tr>
+<tr class="odd">
+<td>NEE</td>
+<td>Net ecosystem exchange</td>
+<td>µmol m-2 s-1</td>
+<td>Equation 8.1</td>
+</tr>
+<tr class="even">
+<td>Re</td>
+<td>Ecosystem respiration</td>
+<td>µmol m-2 s-1</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Rs</td>
+<td>Soil respiration</td>
+<td>µmol m-2 s-1</td>
+<td>Equation 8.3</td>
+</tr>
+<tr class="even">
+<td>Rsh</td>
+<td>Heterotrophic respiration</td>
+<td>µmol m-2 s-1</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Rsa</td>
+<td>Autotrophic respiration</td>
+<td>µmol m-2 s-1</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>F</td>
+<td>Soil CO2 efflux</td>
+<td>µmol m-2 s-1</td>
+<td>Equation 8.5</td>
+</tr>
+</tbody>
+</table>
+</div>
+<section id="theory" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Theory</h1>
+<p>The net exchange of carbon dioxide (CO2) between terrestrial ecosystems and the atmosphere, called net ecosystem exchange NEE, is the difference between ecosystem respiration Re and gross ecosystem photosynthesis GEP, i.e., (8.1) When NEE is positive (i.e., Re &gt; GEP), the atmosphere gains CO2 and when it’s negative (Re &lt; GEP) the ecosystem gains CO2. Thus, net ecosystem productivity NEP is (8.2) Soil respiration (Rs), which can account for as much as 80% of Re, results in the efflux of CO2 from the soil. Rs is composed of the CO2 produced by microbial decomposition of soil organic matter (SOM) (heterotrophic respiration, Rsh) and by root respiration (autotrophic respiration, Rsa), i.e., (8.3) The autotrophic respiration of stems, branches and leaves accounts for the remainder of Re.</p>
+<p>Temperature T, followed by soil moisture, is the most important environmental factor affecting Rs (and all its components). It increases exponentially with T, which is often expressed as (8.4) where Rref is Rs at a reference temperature Tref, usually 10 °C, and Q10 is the relative increase in Rs (or Re) for a 10 K increase in T. Q10 is about 2 in many biological processes but is frequently found to be as much as 3 for Re and Rs. As an example of using Eq. 8.4, assuming Q10 = 2 and Tref = 10 °C, when T = 20 °C, Rs = Rref2[(20-10)/10] = 2 Rref. Can you show that for T = 30 °C, Rs would be 4 times that at Tref?</p>
+<p>This sensitivity, which is particularly important in predicting the effects of global warming, depends on the quality (i.e., labile or recalcitrant) and quantity of substrate and thus productivity and soil temperature and moisture. The soil is the largest terrestrial carbon pool. It is particularly vulnerable to warming and its potential loss may result in a `positive feedback’ effect, i.e., increased atmospheric CO2, which could lead to further global warming as a result of the greenhouse effect (Cox et al.&nbsp;2000). In addition to T and soil moisture, Rsh depends on SOM content and its recalcitrance.</p>
+<p>A widely used method of measuring Rs is the closed or static chamber method. In this method, the rate of increase in CO2 concentration in a chamber placed on the soil surface is used to determine the soil CO2 efflux (Livingston and Hutchinson, 1995). This is a good measure of Rs because very little of the respired CO2 accumulates in the soil. Thus, Rs can be calculated using (8.5) where  is the molar density of air (40 mol m-3), V is the volume of the chamber (m3), A is the area of the ground covered by the chamber (m2), and r is the rate of increase in CO2 concentration (µmol mol-1 s-1 or ppm s-1), which is calculated by (8.6) Using these units in Eq. 8.5 gives Rs in units of µmol m-2 s-1. The CO2 concentration in the chamber is measured with an infrared gas analyzer (IRGA). If the chamber is kept on the soil for less than 2 minutes, r is almost constant. This means the rise in chamber CO2 concentration does not significantly suppress CO2 efflux. Because CO2 concentration changes during the measurement, the measurement apparatus is described as a non-steady-state system.</p>
+<p>Objectives: • To measure Rs of agricultural (bare) fertilized and unfertilized soils. • To determine the sensitivity of Rs, by comparing the magnitude of Rs from agricultural (bare) fertilized and unfertilized soils.</p>
+<p>The soils were collected from the Delta region, which are Gleysolic soils with silty clay loam texture. One soil was fertilized with urea fertilizer (46-0-0). both soils have been watered equally to obtain a soil volumetric water content close to field capacity (~25-35%).</p>
+<p>Experimental procedure 1. Allow the instructor/assistant to bring up the soil greenhouse gas software. 2. Plug in your Vaisala GMP252 Carbon dioxide probe into an electrical socket. 3. Wait 1-2 minutes for the sensor to start measuring, and for the screen to appear on the projector screen. 4. Ensure that the Vaisala GMP252 Carbon dioxide probe’s opening is facing the table. Allow the probe a sufficient amount of time to equilibrate to atmospheric conditions – this can be recognized by a flat reading approximately 400-500 ppm for 2-3 minutes. This typically can take 4-5 minutes from startup of the probe. 5. Insert one thermometer approximately 5 cm into the soil. 6. At the top of the measurement sheet record the soil treatment you are working on. 7. Using the display screen a. Using the rubber end of the pencil you can gently tap on the display to perform certain functions. i. Resize the graph – tapping in the top left-hand corner</p>
+<ol start="2" type="i">
+<li><p>Restart the graph – tapping in the top right-hand corner</p></li>
+<li><p>Obtain an estimate flux – tapping at the start of the increase in the CO2 graph will allow you to select a point. It will then generate a line and slope automatically using a 60 second time interval. This slope is an approximate value for the flux of CO2.</p></li>
+</ol>
+<ol start="8" type="1">
+<li>Once the probe has equilibrated, you can gently pick the sensor up and place it onto the soil gas collar that has already been inserted into the soil.</li>
+<li>Set up a timer on your smartphone or a stopwatch, start the timer and record the initial ppm of CO2. Record all data (in this step and below) in the ‘Soil Respiration Data Collection Sheet-2022 WT1.xlsx’ spreadsheet.</li>
+<li>Every 30 seconds, record the concentration of carbon dioxide (ppm) displayed on the CO2 sensor screen for 180 seconds (3 minutes). Put this data into the excel sheet.</li>
+<li>After the 180 seconds: Using the eraser end of the pencil, gently tap on the screen at the start of the increase in CO2 concentration where there is a relatively straight line. This will give you an approximate CO2 flux. Record this value in the “Slope on display” row in the excel sheet. You can tap on the top left hand of the screen to resize the curve if needed, and refresh the screen by tapping on the top right-hand side.</li>
+<li>Once you have found the slope, remove the sensor from the soil collar. Gently wave it around to get airflow around the sensor for a few seconds.</li>
+<li>Flip the sensor back over so that the probe is facing down towards the table again for 2-3 minutes until it reaches a constant measurement. Note: the equilibrated concentration of CO2 could change due to the amount of people in the room respiring.</li>
+<li>Record in excel the soil temperature from the thermometer.</li>
+<li>Use the TDR to measure soil volumetric water content (VWC %) around the soil gas collar. Ensure that the measurement mode is set to the correct soil type for your experiment. Take 3 or 4 measurements around the collar and use the average soil water content as water may not be evenly distributed throughout the soil. Record this in the excel sheets.</li>
+<li>Repeat steps 7-15 on each of the soils 3 times in order to obtain an average gas flux measurement.</li>
+</ol>
+<p>Calculations and Questions: [9 marks]</p>
+<p>Q1. Plot the change in ppm versus time(s) for each of your soils (and replicates), and calculate the slope ΔCO2/Δt (ppm CO2 s-1). Plots should preferably be done using excel, and don’t forget to label the x- and y-axes (with units) and include a figure caption. The ΔCO2/Δt can be calculated from a linear trend line fitted to the data (see example from TA). [2]</p>
+<p>Q2. For each soil, convert the measured CO2 increase (ppm CO2 s-1) to flux density, Rs (µmol m-2 s-1) using equation 8.5. Obtain values for ρ, V and A from the table above. [2]</p>
+<p>Q3. Which soil, unfertilized or fertilized, has the highest value of Rs. How can you explain any potential differences in Rs between the two soils. Make sure to include at least one citation from a peer-reviewed paper in your explanation [2]</p>
+<p>Q4. Would you expect respiration in layers deeper in the soil to be higher or lower than the values you measured for these surface samples? Why? [1]</p>
+<p>Q5. How would you expect Rs from the unfertilized soil to change with warming? Why? What is meant by a climate feedback effect? Distinguish between and positive and negative feedback. [2]</p>
+<div class="cell">
+
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

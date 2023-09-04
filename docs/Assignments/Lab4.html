@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.313">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Atmospheric Environments - Lab 4: Atmospheric Stability &amp; The Planetary Boundary Layer</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script src="../site_libs/htmlwidgets-1.6.1/htmlwidgets.js"></script>
+<script src="../site_libs/plotly-binding-4.10.0/plotly.js"></script>
+<script src="../site_libs/typedarray-0.1/typedarray.min.js"></script>
+<script src="../site_libs/jquery-3.5.1/jquery.min.js"></script>
+<link href="../site_libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet">
+<script src="../site_libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
+<link href="../site_libs/plotly-htmlwidgets-css-2.5.1/plotly-htmlwidgets.css" rel="stylesheet">
+<script src="../site_libs/plotly-main-2.5.1/plotly-latest.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Atmospheric Environments</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html">
+ <span class="menu-text">Syllabus</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../Lectures.html">
+ <span class="menu-text">Lectures</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../Labs.html">
+ <span class="menu-text">Lab Assignments</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/GEOS200"><i class="bi bi-github" role="img" aria-label="Quarto GitHub">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#objectives" id="toc-objectives" class="nav-link active" data-scroll-target="#objectives">Objectives</a>
+  <ul class="collapse">
+  <li><a href="#materials-required" id="toc-materials-required" class="nav-link" data-scroll-target="#materials-required">Materials Required:</a></li>
+  <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions">Questions</a></li>
+  </ul></li>
+  <li><a href="#objectives-1" id="toc-objectives-1" class="nav-link" data-scroll-target="#objectives-1"><span class="toc-section-number">1</span>  Objectives:</a>
+  <ul class="collapse">
+  <li><a href="#theory" id="toc-theory" class="nav-link" data-scroll-target="#theory">Theory</a></li>
+  </ul></li>
+  <li><a href="#part-a---static-stability" id="toc-part-a---static-stability" class="nav-link" data-scroll-target="#part-a---static-stability"><span class="toc-section-number">2</span>  Part A - Static stability</a>
+  <ul class="collapse">
+  <li><a href="#questions-1" id="toc-questions-1" class="nav-link" data-scroll-target="#questions-1">Questions</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Lab 4: Atmospheric Stability &amp; The Planetary Boundary Layer</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p>This Lab Assignment is Due: <strong>Nov 10 2023</strong></p>
+<p>This assignment is worth <strong>15.5 points</strong>.</p>
+<section id="objectives" class="level1 unnumbered">
+<h1 class="unnumbered">Objectives</h1>
+<ul>
+<li>Understand the concept related to the vertical structure of the atmosphere, in particular, how temperature changes with height</li>
+<li>Understand the concept related to the vertical structure of the atmosphere</li>
+<li>Understand the difference between the two types of lapse rates - environmental lapse rate (ELR) and the process lapse rate</li>
+<li>Understand and concept of static stability and distinguish between different types of stability within a particular air layer</li>
+</ul>
+<section id="materials-required" class="level2">
+<h2 class="anchored" data-anchor-id="materials-required">Materials Required:</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-profile" class="anchored">
+<table class="table table-sm table-striped">
+<caption>Table&nbsp;1: Observations of temperature and dewpoint temperature with height (m) above the surface</caption>
+<thead>
+<tr class="header">
+<th style="text-align: right;"><span class="math inline">\(Height (m)\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(T (^{\circ} C)\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(T_d (^{\circ} C)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">22.0</td>
+<td style="text-align: right;">10.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">250</td>
+<td style="text-align: right;">18.1</td>
+<td style="text-align: right;">7.8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">500</td>
+<td style="text-align: right;">15.4</td>
+<td style="text-align: right;">6.5</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">750</td>
+<td style="text-align: right;">12.4</td>
+<td style="text-align: right;">5.4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">1000</td>
+<td style="text-align: right;">11.6</td>
+<td style="text-align: right;">4.3</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">1200</td>
+<td style="text-align: right;">10.3</td>
+<td style="text-align: right;">3.2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">1500</td>
+<td style="text-align: right;">9.4</td>
+<td style="text-align: right;">2.5</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">1700</td>
+<td style="text-align: right;">8.3</td>
+<td style="text-align: right;">1.9</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2000</td>
+<td style="text-align: right;">7.0</td>
+<td style="text-align: right;">-0.4</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2500</td>
+<td style="text-align: right;">2.2</td>
+<td style="text-align: right;">-3.1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3000</td>
+<td style="text-align: right;">-2.2</td>
+<td style="text-align: right;">-6.2</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">3600</td>
+<td style="text-align: right;">-7.9</td>
+<td style="text-align: right;">-12.1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">4200</td>
+<td style="text-align: right;">-13.0</td>
+<td style="text-align: right;">-17.5</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4900</td>
+<td style="text-align: right;">-17.7</td>
+<td style="text-align: right;">-22.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5600</td>
+<td style="text-align: right;">-22.6</td>
+<td style="text-align: right;">-26.2</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6400</td>
+<td style="text-align: right;">-22.0</td>
+<td style="text-align: right;">-29.3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7200</td>
+<td style="text-align: right;">-22.0</td>
+<td style="text-align: right;">-33.0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:50%;">
+<div class="cell">
+<div id="fig-profile" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-7372fc8f64c8d0d00748" style="width:100%;height:650px;"></div>
+<script type="application/json" data-for="htmlwidget-7372fc8f64c8d0d00748">{"x":{"visdat":{"61246a666a81":["function () ","plotlyVisDat"]},"cur_data":"61246a666a81","attrs":{"61246a666a81":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"name":"Air Temperature","mode":"lines","type":"scatter","line":{"color":"#f56042","width":1.5},"inherit":true},"61246a666a81.1":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"name":"Dewpoint","mode":"lines","type":"scatter","line":{"color":"#7b42f5","width":1.5},"inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":100,"r":10},"title":"Temperature and Dewpoint with Height Above Sea Level","xaxis":{"domain":[0,1],"automargin":true,"title":"&deg; C"},"yaxis":{"domain":[0,1],"automargin":true,"overlaying":"y","side":"right","title":"meters"},"legend":{"x":0.6,"y":0.9},"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[22,18.1,15.4,12.4,11.6,10.3,9.4,8.3,7,2.2,-2.2,-7.9,-13,-17.7,-22.6,-22,-22],"y":[0,250,500,750,1000,1200,1500,1700,2000,2500,3000,3600,4200,4900,5600,6400,7200],"name":"Air Temperature","mode":"lines","type":"scatter","line":{"color":"#f56042","width":1.5},"marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[10,7.8,6.5,5.4,4.3,3.2,2.5,1.9,-0.4,-3.1,-6.2,-12.1,-17.5,-22,-26.2,-29.3,-33],"y":[0,250,500,750,1000,1200,1500,1700,2000,2500,3000,3600,4200,4900,5600,6400,7200],"name":"Dewpoint","mode":"lines","type":"scatter","line":{"color":"#7b42f5","width":1.5},"marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1: Observations of temperature and dewpoint temperature with height (m) above the surface</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="questions" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="questions">Questions</h2>
+<div id="exr-plot" class="theorem exercise">
+<p><span class="theorem-title"><strong>Question 1 </strong></span><strong>(7 points):</strong> Using Excel and the data provided in <a href="#tbl-profile">Table&nbsp;1</a>; plot the profile temperature (T) and dewpoint temperature (Td), as well as the saturated adiabatic lapse rate (SALR) and the dry adiabatic lapse rate (DALR). Use height as the y axis, and temperature as the x axis.</p>
+<p><strong>Note:</strong> <span class="math inline">\(DALR = 10^{\circ}C km^{-1}\)</span> and <span class="math inline">\(SALR = 6^{\circ}C km^{-1}\)</span></p>
+</div>
+<div id="exr-stability" class="theorem exercise">
+<p><span class="theorem-title"><strong>Question 2 </strong></span><strong>(4 points):</strong> For each line segment of the profile (i.e., each row of the table above) determine the stability, and label it on the profile as stable, conditionally unstable, neutral or unstable. Hint: consider each ELR line segment and compare to the slopes of ELR and DALR.</p>
+</div>
+<div id="exr-clouds" class="theorem exercise">
+<p><span class="theorem-title"><strong>Question 3 </strong></span><strong>(2 points):</strong> Are there any levels where clouds would be present? Explain.</p>
+</div>
+</section>
+</section>
+<section id="objectives-1" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Objectives:</h1>
+<ul>
+<li>Understand the concept related to the vertical structure of the atmosphere</li>
+<li>Understand the difference between the two types of lapse rates - environmental lapse rate (ELR) and the process lapse rate</li>
+<li>Understand and concept of static stability and distinguish between different types of stability within a particular air layer</li>
+</ul>
+<p>This laboratory will acquaint you with some fundamental features of the atmospheric boundary layer; particularly, the concept of static stability, the diurnal development of the thermal structure and depth of the mixed layer, and the nature of local wind systems formed at the boundary between contrasting surface thermal environments.</p>
+<p>The vertical distribution of air temperature in the atmosphere exerts a strong control on vertical air movement and hence has a significant impact on mixing of energy and mass. This is of essential importance in applications such as air pollution, forest fires, dispersion of pollen etc. This laboratory exercise will acquaint you with the quantitative concept of static stability and you will learn how stability changes throughout a typical day. It will further provide you with an example of a local wind system, driven by commonly-found horizontal gradients in the vertical distribution of air temperature.</p>
+<div id="tbl-symbols" class="anchored">
+<table class="table">
+<caption>Table&nbsp;2: Symbols and constants used in this lab</caption>
+<colgroup>
+<col style="width: 5%">
+<col style="width: 35%">
+<col style="width: 30%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Symbol</th>
+<th>Name</th>
+<th>Method of calculation</th>
+<th>Value and units</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ELR</td>
+<td>Environmental lapse rate</td>
+<td>Measurement</td>
+<td>K m-1</td>
+</tr>
+<tr class="even">
+<td>Γd</td>
+<td>Dry adiabatic lapse rate</td>
+<td>Constant 0.01</td>
+<td>K m-1</td>
+</tr>
+<tr class="odd">
+<td>z</td>
+<td>Height above ground</td>
+<td></td>
+<td>m</td>
+</tr>
+<tr class="even">
+<td>h*</td>
+<td>Height of the mixed layer</td>
+<td>Read from graphs</td>
+<td>m</td>
+</tr>
+<tr class="odd">
+<td>T</td>
+<td>Actual (environmental) air temperature</td>
+<td>Measurement</td>
+<td>K or °C</td>
+</tr>
+<tr class="even">
+<td>θ</td>
+<td>Potential air temperature</td>
+<td>Equation 7.1</td>
+<td>K or °C</td>
+</tr>
+</tbody>
+</table>
+</div>
+<section id="theory" class="level2">
+<h2 class="anchored" data-anchor-id="theory">Theory</h2>
+<p>The environmental lapse rate (ELR) is the actual rate of air temperature decrease or increase with height in the atmosphere, i.e.&nbsp;as measured by thermometers at different heights. The daily average ELR is typically about 0.006 K m-1 but may vary considerably.</p>
+<p>The dry adiabatic lapse rate (Γd) is the temperature change of a dry (unsaturated) air parcel as the parcel moves up for down in the atmosphere. This is a process lapse rate. The parcel is assumed not to mix with the environment but allowed to change its volume - it is said to behave adiabatically. Γd is a constant with a value of 0.01 K m-1.</p>
+<p>If you look at the difference between those two lapse rates - ELR vs.&nbsp;Γd - you can assess the static stability of a particular air layer:</p>
+<p>ELR &gt; Γd: unstable. For an air parcel, a slight upward displacement will result in a continuous rise of the parcel because the parcel will become warmer and less dense than the surrounding air at the same height and therefore possesses buoyancy. Conversely, if the air parcel is displaced below, it will become cooler and more dense than the surrounding air at the same height, and it will tend to continue sinking. In an unstable layer, vertical movements are enhanced.</p>
+<p>ELR = Γd: neutral. There will be no tendency for a parcel to rise or sink after it is displaced either above or below because it cools or warms at exactly the same rate as the surrounding air. Therefore, the parcel will come to rest after the displacing force is removed.</p>
+<p>ELR &lt; Γd: stable. If an air parcel is displaced upwards, it will become cooler and more dense than the surrounding air and tend to sink back to its original location. If displaced below, it will find itself warmer and tend to rise back up to its original location. In a stable layer, vertical movements are suppressed. In very stable conditions, smoke and other air pollutants accumulate and often cause respiratory problems.</p>
+<p>To facilitate comparison between the ELR and the dry adiabatic lapse rate, atmospheric scientists prefer to convert environmental (measured) temperatures T at a particular height z to potential temperatures θ by:</p>
+<p><span id="eq-potential-temperature"><span class="math display">\[
+\theta(z) = T(z) + \Gamma_d z                           
+\tag{1}\]</span></span></p>
+<p>Note: θ(z) is the potential temperature at height z and T(z) is the temperature at height z. No need to multiply them by z.</p>
+<p>Potential temperatures have the advantage that we can easily determine the stability of a layer on a graph: a decreasing potential temperature with height indicates an unstable layer, a constant potential temperature with height indicates a neutral layer, and an increasing potential temperature with height indicates a stable layer. This is true because the dry adiabatic lapse rate, Γd, plots as a vertical line on a graph of potential temperature vs.&nbsp;height (by definition).</p>
+<p>The layer of air closest to the Earth’s surface - the planetary boundary layer (PBL) - changes its vertical temperature distribution often throughout the 24-hour diurnal cycle because here air temperature is strongly affected by surface conditions. The PBL is modified during the day by radiative heating of the surface, which generates buoyancy and warms up the lower atmosphere, resulting in typically unstable conditions close to the ground. The daytime boundary layer is termed the mixed layer whose depth h* may be defined as the height to which buoyant dry air parcels rise adiabatically.</p>
+<p>At night, radiative cooling of the ground surface indicates that the atmosphere close to the ground will cool down as well, and the near-surface air becomes stable. Therefore, the mixed layer is largely destroyed at night and is replaced at low-level by a stable inversion layer.</p>
+<p>7.3 Calculations</p>
+</section>
+</section>
+<section id="part-a---static-stability" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Part A - Static stability</h1>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-morningBalloon" class="anchored">
+<table class="table table-sm table-striped">
+<caption>Table&nbsp;3: Air temperature observed during a morning balloon ascent through the PBL</caption>
+<thead>
+<tr class="header">
+<th style="text-align: right;"><span class="math inline">\(z (m)\)</span></th>
+<th style="text-align: right;">$T (^{}C)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">11.5</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">250</td>
+<td style="text-align: right;">8.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">500</td>
+<td style="text-align: right;">6.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">750</td>
+<td style="text-align: right;">9.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">1000</td>
+<td style="text-align: right;">4.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">1250</td>
+<td style="text-align: right;">2.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">1500</td>
+<td style="text-align: right;">0.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">1750</td>
+<td style="text-align: right;">-1.5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2000</td>
+<td style="text-align: right;">-2.5</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<section id="questions-1" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="questions-1">Questions</h2>
+<div id="exr-ELR" class="theorem exercise">
+<p><span class="theorem-title"><strong>Question 4 </strong></span><strong>(1 points):</strong><br>
+<a href="#tbl-morningBalloon">Table&nbsp;3</a> shows temperature data from a balloon launch. Plot these results in excel (or graph paper) with heights ranging from 0 to 2000 m on the y- axis, and temperatures from -4 to 20 <span class="math inline">\(^{\circ }\)</span> C on the x-axis.</p>
+</div>
+<div id="exr-ELR2" class="theorem exercise">
+<p><span class="theorem-title"><strong>Question 5 </strong></span><strong>(0.5 points):</strong><br>
+What is the name of the profile you have drawn?</p>
+</div>
+<div id="exr-ELR3" class="theorem exercise">
+<p><span class="theorem-title"><strong>Question 6 </strong></span><strong>(1 points):</strong><br>
+What is the name given to the type of temperature profile between 500 and 750 m, and what is the numerical value of the lapse rate in this portion of the profile (Please include units)</p>
+</div>
+<div class="cell">
+
+</div>
+<p>1.2 <span class="math inline">\(^{\circ} C / 100 m\)</span></p>
+<ul>
+<li>Also accept if given in K instead of C or in Km instead of m (provided conversion is correct)</li>
+</ul>
+<p>Q3. What is the name given to the type of temperature profile between 500 and 750 m, and what is the numerical value of the lapse rate in this portion of the profile (Please include units) [1]</p>
+<p>Q4. Smoke from a smouldering slash fire is 3K warmer than the surface air; to what height will the smoke rise? Assume the smoke and the air remain non-saturated and do not mix with the surroundings. [1]</p>
+<p>Q5. Qualitatively (i.e., describe in your own words), how would your answer be changed if the smoke were saturated with water vapour? Assume that the SALR = 6°C/km. [0.5]</p>
+<p>Q6. To what temperature would the dry smoke have to be raised at the surface before it could penetrate to 2000m? Hint: use your method for 3 in reverse starting with measured temperature at 2000 m. [1]</p>
+<p>Q7. Classify portions of the profile that are stable and unstable. Hint: Consider the steepness of segments of you graph you plotted in Q1 compared to DALR (the dry adiabatic lapse rate). [1]</p>
+<p>Part B - Potential temperature</p>
+<p>Figure 7.1 Profiles of potential temperatures θ for 5 different times of day on August 8, 1978</p>
+<p>Figure 7.1 includes vertical profiles of potential temperature θmeasured over Vancouver during a period when the weather was clear and dominated by a large anticyclone (high pressure area). The observations were made using an electrical thermometer attached to helium-filled balloons. The readings were originally monitored as environmental temperatures T and later converted to potential temperatures θ, as plotted.</p>
+<p>Q8. What is the environmental temperature of the air at 400 m above the surface at 0900 h? Use equation 7.1 and solve for T(z) and refer to Figure 7.1. [1]</p>
+<p>Part C - A local wind circulation</p>
+<p>Figure 7.2: (a) Location of the Airport and Sunset Observation sites in Vancouver. (b) Near surface air temperature T at the Airport and Sunset sites. Also included is the water surface temperature for Georgia Strait. All values refer to conditions on August 8, 1978.</p>
+<p>Figure 7.3 Wind direction and wind speed at the 30m level at the Sunset Site on August 8, 1978.</p>
+<p>Figure 7.4 Vertical profiles of wind direction and wind speed at the Sunset Site on August 8, 1978 at about 1300 PST. Note the y-axis units are m x10.</p>
+<p>Figures 7.2 to 7.4 give observations of a number of meteorological variables for the same day as the profiles in Fig 7.1. Fig 7.2a shows the location of the observing sites and their geographic setting. Fig 7.2b gives the near surface air temperatures for the Vancouver airport and the Sunset site and the water surface temperature for Georgia Straight. Water surface temperature is observed at a point, but can be taken as a general value for the area of Georgia Straight (off Vancouver), due to vigorous tidal mixing in the Straight. Fig 7.3 gives the wind speed and direction at the 30m level at the Sunset site and Fig 7.4 shows vertical profiles of the same variables from the Sunset site gained from theodolite-tracking of temperature balloons. The wind direction is expressed in degrees of a circle with both 360° and 0° at North. Wind direction always refers to the direction from which the wind is blowing.</p>
+<p>Q9. Take time to study the information contained in Fig 7.2 to 7.4. Then write an account of the conditions depicted, highlighting the evidence which leads to the conclusion that the day was probably characterized by a land and sea breeze circulation system. Include in your answer some suggestions as to the times of onset of the breezes and the vertical extent of the sea breeze. Make sure to discuss the onset of the sea and land breeze, the depth and vertical extent of the breeze during the day, and a general description of a land/sea breeze circulation and how it relates to Figs 7.2-7.4. [3]</p>
+<div class="cell">
+
+</div>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.313">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Atmospheric Environments - Lab 3: Atmospheric Humidity</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Atmospheric Environments</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html">
+ <span class="menu-text">Syllabus</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../Lectures.html">
+ <span class="menu-text">Lectures</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../Labs.html">
+ <span class="menu-text">Lab Assignments</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/GEOS200"><i class="bi bi-github" role="img" aria-label="Quarto GitHub">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#objectives" id="toc-objectives" class="nav-link active" data-scroll-target="#objectives">Objectives</a></li>
+  <li><a href="#measuring-atmospheric-humidity" id="toc-measuring-atmospheric-humidity" class="nav-link" data-scroll-target="#measuring-atmospheric-humidity"><span class="toc-section-number">1</span>  Measuring Atmospheric Humidity</a>
+  <ul class="collapse">
+  <li><a href="#theory" id="toc-theory" class="nav-link" data-scroll-target="#theory">Theory</a></li>
+  </ul></li>
+  <li><a href="#experimental-procedure" id="toc-experimental-procedure" class="nav-link" data-scroll-target="#experimental-procedure"><span class="toc-section-number">2</span>  Experimental procedure</a>
+  <ul class="collapse">
+  <li><a href="#psychrometer" id="toc-psychrometer" class="nav-link" data-scroll-target="#psychrometer">Psychrometer</a></li>
+  </ul></li>
+  <li><a href="#lab-questions" id="toc-lab-questions" class="nav-link" data-scroll-target="#lab-questions"><span class="toc-section-number">3</span>  Lab questions</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Lab 3: Atmospheric Humidity</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p>This Lab Assignment is Due: <strong>Oct 20 2023</strong></p>
+<p>This assignment is worth <strong>9 points</strong>.</p>
+<section id="objectives" class="level1 unnumbered">
+<h1 class="unnumbered">Objectives</h1>
+<ul>
+<li>Differentiate between the ways moisture is represented in the atmosphere, specifically, dew point temperature, absolute humidity, vapor pressure, saturation vapor pressure, relative humidity and vapor pressure deficit.</li>
+<li>Using equations, describe the relationship between different measures of atmospheric humidity</li>
+</ul>
+<p>This assignment is worth <strong>9 points</strong>.</p>
+</section>
+<section id="measuring-atmospheric-humidity" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Measuring Atmospheric Humidity</h1>
+<p>This laboratory is intended to give you some familiarity with these various expressions for atmospheric water content. We compare measurements of vapor density, vapor pressure, relative humidity, dew point temperature and vapor density deficit inside the classroom with measurements outdoors.</p>
+<p>Water vapor constitutes only a very small part of our atmosphere, yet it is extremely important. The rate of evaporation of water from a surface depends on atmospheric humidity. Thus the rate at which a field soil dries or the rate at which a crop or forest consumes water which must be replaced by precipitation or irrigation, depends in part on the atmospheric humidity. Evaporation from the lungs and of perspiration from the skin is an important mechanism in the maintenance of constant internal temperature in mammals and birds. The efficiency of the evaporative cooling depends on evaporation rate which, in turn, depends partly on the atmospheric humidity.</p>
+<div id="tbl-symbols" class="anchored">
+<table class="table">
+<caption>Table&nbsp;1: Symbols and constants used in this lab</caption>
+<colgroup>
+<col style="width: 5%">
+<col style="width: 35%">
+<col style="width: 30%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Symbol</th>
+<th>Name</th>
+<th>Method of Calculation</th>
+<th>Units</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(C\)</span></td>
+<td>Heat capacity of air (at 20 <span class="math inline">\(^{\circ}\)</span> C)</td>
+<td>Constant</td>
+<td>1210 J m<span class="math inline">\(^{-3}\)</span> K<span class="math inline">\(^{-1}\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(e\)</span></td>
+<td>Vapor pressure</td>
+<td><a href="#eq-VPD">Equation&nbsp;5</a></td>
+<td>kPa</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(e^* (T)\)</span></td>
+<td>Saturation vapor pressure at temperature T</td>
+<td><a href="#tbl-saturation">Table&nbsp;2</a></td>
+<td>kPa</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(L_v\)</span></td>
+<td>Latent heat of vaporization (at 20 <span class="math inline">\(^{\circ}\)</span> C)</td>
+<td>Constant</td>
+<td>2450 J g<span class="math inline">\(^{-1}\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(RH\)</span></td>
+<td>Relative humidity</td>
+<td><a href="#eq-RH">Equation&nbsp;2</a></td>
+<td>%</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(R_v\)</span></td>
+<td>Gas constant for water vapor</td>
+<td>Constant</td>
+<td>4.62 x 10<span class="math inline">\(^{-4}\)</span> kPa m<span class="math inline">\(^3\)</span> g<span class="math inline">\(^{-1}\)</span> K<span class="math inline">\(^{-1}\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(T\)</span></td>
+<td>Temperature</td>
+<td>Measurement</td>
+<td><span class="math inline">\(^{\circ}\)</span> C or K</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(T_d\)</span></td>
+<td>Dew-point temperature</td>
+<td><a href="#tbl-saturation">Table&nbsp;2</a></td>
+<td><span class="math inline">\(^{\circ}\)</span> C or K</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(T_w\)</span></td>
+<td>Wet-bulb temperature</td>
+<td>Measurement</td>
+<td><span class="math inline">\(^{\circ}\)</span> C or K</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(VDD\)</span></td>
+<td>Vapor density defect</td>
+<td><a href="#eq-VDD">Equation&nbsp;3</a></td>
+<td><span class="math inline">\(^{\circ}\)</span> C or K</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\gamma\)</span></td>
+<td>Psychrometric constant (at 20 <span class="math inline">\(^{\circ}\)</span> C)</td>
+<td>Constant</td>
+<td>0.495 g m <span class="math inline">\(^{-3}\)</span> K <span class="math inline">\({^-1}\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\rho_v\)</span></td>
+<td>Vapor density</td>
+<td><a href="#eq-VD">Equation&nbsp;1</a></td>
+<td>gm <span class="math inline">\(^{-1}\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\rho^*_v(T)\)</span></td>
+<td>Saturation vapor density at temperature <span class="math inline">\(T\)</span></td>
+<td><a href="#tbl-saturation">Table&nbsp;2</a></td>
+<td>gm <span class="math inline">\(^{-1}\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\rho^*_{vw}(T_w)\)</span></td>
+<td>Saturation vapor density at temperature <span class="math inline">\(T_w\)</span></td>
+<td><a href="#tbl-saturation">Table&nbsp;2</a></td>
+<td>gm <span class="math inline">\(^{-1}\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-saturation" class="anchored">
+<table class="table table-sm table-striped">
+<caption>Table&nbsp;2: Saturation vapor density <span class="math inline">\(\rho^*_v\)</span> and saturation vapor pressure <span class="math inline">\(e^*\)</span> as a function of temperature <span class="math inline">\(T\)</span>. This table can also be used to determine <span class="math inline">\(\rho^*_{vw}\)</span> corresponding to a given <span class="math inline">\(T_w\)</span></caption>
+<colgroup>
+<col style="width: 12%">
+<col style="width: 8%">
+<col style="width: 4%">
+<col style="width: 12%">
+<col style="width: 8%">
+<col style="width: 4%">
+<col style="width: 12%">
+<col style="width: 8%">
+<col style="width: 4%">
+<col style="width: 12%">
+<col style="width: 8%">
+<col style="width: 4%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;"><span class="math inline">\(T (^{\circ} C)\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(\rho^*_v\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(e^*\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(T (^{\circ} C)\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(\rho^*_v\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(e^*\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(T (^{\circ} C)\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(\rho^*_v\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(e^*\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(T (^{\circ} C)\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(\rho^*_v\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(e^*\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">-4</td>
+<td style="text-align: right;">3.7</td>
+<td style="text-align: right;">0.46</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8.3</td>
+<td style="text-align: right;">1.07</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">17.3</td>
+<td style="text-align: right;">2.34</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: right;">33.9</td>
+<td style="text-align: right;">4.76</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">-3</td>
+<td style="text-align: right;">3.9</td>
+<td style="text-align: right;">0.49</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">8.8</td>
+<td style="text-align: right;">1.15</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">18.4</td>
+<td style="text-align: right;">2.49</td>
+<td style="text-align: right;">33</td>
+<td style="text-align: right;">35.7</td>
+<td style="text-align: right;">5.03</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">-2</td>
+<td style="text-align: right;">4.2</td>
+<td style="text-align: right;">0.53</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">9.4</td>
+<td style="text-align: right;">1.23</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">19.4</td>
+<td style="text-align: right;">2.64</td>
+<td style="text-align: right;">34</td>
+<td style="text-align: right;">37.6</td>
+<td style="text-align: right;">5.32</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">-1</td>
+<td style="text-align: right;">4.5</td>
+<td style="text-align: right;">0.57</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">10.0</td>
+<td style="text-align: right;">1.31</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">20.6</td>
+<td style="text-align: right;">2.81</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">39.7</td>
+<td style="text-align: right;">5.62</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">4.9</td>
+<td style="text-align: right;">0.61</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">10.7</td>
+<td style="text-align: right;">1.40</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">21.8</td>
+<td style="text-align: right;">2.98</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: right;">31.8</td>
+<td style="text-align: right;">5.94</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">5.2</td>
+<td style="text-align: right;">0.66</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">11.4</td>
+<td style="text-align: right;">1.50</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">23.1</td>
+<td style="text-align: right;">3.17</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: right;">44.0</td>
+<td style="text-align: right;">6.28</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">5.6</td>
+<td style="text-align: right;">0.71</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">12.1</td>
+<td style="text-align: right;">1.60</td>
+<td style="text-align: right;">26</td>
+<td style="text-align: right;">24.4</td>
+<td style="text-align: right;">3.36</td>
+<td style="text-align: right;">38</td>
+<td style="text-align: right;">46.3</td>
+<td style="text-align: right;">6.63</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">6.0</td>
+<td style="text-align: right;">0.76</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">12.8</td>
+<td style="text-align: right;">1.80</td>
+<td style="text-align: right;">27</td>
+<td style="text-align: right;">25.8</td>
+<td style="text-align: right;">3.57</td>
+<td style="text-align: right;">39</td>
+<td style="text-align: right;">48.7</td>
+<td style="text-align: right;">6.99</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">6.4</td>
+<td style="text-align: right;">0.81</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">13.6</td>
+<td style="text-align: right;">1.82</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">27.3</td>
+<td style="text-align: right;">3.78</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">51.2</td>
+<td style="text-align: right;">7.38</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6.8</td>
+<td style="text-align: right;">0.87</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">14.5</td>
+<td style="text-align: right;">1.94</td>
+<td style="text-align: right;">29</td>
+<td style="text-align: right;">28.8</td>
+<td style="text-align: right;">4.01</td>
+<td style="text-align: right;">41</td>
+<td style="text-align: right;">53.8</td>
+<td style="text-align: right;">7.78</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7.3</td>
+<td style="text-align: right;">0.94</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">15.4</td>
+<td style="text-align: right;">2.06</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">30.4</td>
+<td style="text-align: right;">4.24</td>
+<td style="text-align: right;">42</td>
+<td style="text-align: right;">56.6</td>
+<td style="text-align: right;">8.20</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7.8</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">16.3</td>
+<td style="text-align: right;">2.20</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">32.1</td>
+<td style="text-align: right;">4.49</td>
+<td style="text-align: right;">43</td>
+<td style="text-align: right;">59.4</td>
+<td style="text-align: right;">8.64</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<section id="theory" class="level2">
+<h2 class="anchored" data-anchor-id="theory">Theory</h2>
+<p>The most common type of instrument used to measure humidity is the psychrometer. This consists simply of a pair of thermometers, one of which has a wetted wick enclosing the sensor. The wet-bulb is cooled by evaporation to a temperature that depends on the atmospheric vapor density.</p>
+<p>The water vapor density <span class="math inline">\(\rho_v\)</span> (= absolute humidity) can be calculated from measurements of wet- and dry-bulb temperatures using the relationship:</p>
+<p><span id="eq-VD"><span class="math display">\[
+\rho_v = \rho^*_{vw}(T_w) - \gamma(T-T_w)
+\tag{1}\]</span></span></p>
+<p>These and other symbols in this exercise are defined in Table 5.1. The density of water vapor in the atmosphere <span class="math inline">\(\rho_v(T)\)</span>, is the basic measure of atmospheric moisture. It is the mass of water vapor in unit volume of air (Units: kg m-3 but often given in g m-3 to make more sensibly sized numbers).</p>
+<p>Other ways of expressing the amount of moisture are used and each has particular usefulness in certain applications. The total amount of water that the atmosphere can hold without condensation depends only on temperature. This quantity, called the saturation vapor density ^*_v(T), is given for a range of temperatures in <a href="#tbl-saturation">Table&nbsp;2</a>. The ratio of actual vapor density to the maximum possible (i.e.&nbsp;the saturation vapor density) when expressed as a percentage is called the relative humidity:</p>
+<p><span id="eq-RH"><span class="math display">\[
+RH = \frac{\rho_v}{\rho^*_v(T)}
+\tag{2}\]</span></span></p>
+<p>For some calculations of evaporation rate, the difference between the maximum and the actual vapor density is useful. This is called the vapor density deficit:</p>
+<p><span id="eq-VDD"><span class="math display">\[
+VDD = \rho^*_v(T) - \rho_v
+\tag{3}\]</span></span></p>
+<p>We may express the water vapor content of air by finding the temperature to which a parcel of air could be cooled at constant atmospheric pressure before condensation commences. This temperature is called the dew point temperature <span class="math inline">\(T_d\)</span>. Note: that for a saturated parcel the dewpoint temperature is the temperature of the parcel. For any water vapor density, <span class="math inline">\(T_d\)</span> can be found by using <a href="#tbl-saturation">Table&nbsp;2</a> in reverse. For example, air with a vapor density of 7.8 g m-3 has a <span class="math inline">\(T_d\)</span> of 7°C.</p>
+<p>Water vapor content of the air can be expressed in terms of the partial pressure exerted by the water vapor, or water vapor pressure, <span class="math inline">\(e\)</span>. This is related to vapor density by the gas law as follows:</p>
+<p><span id="eq-VPD"><span class="math display">\[
+e = \rho_v R_v T
+\tag{4}\]</span></span></p>
+<p>Where R_v is the gas constant for water vapor (4.62 ×10-4 kPa m3 g-1 K-1) and T is the absolute temperature (K). Using units of g m-3 for <span class="math inline">\(\rho_v(T)\)</span> results in units of kPa (kilopascals) for <span class="math inline">\(e\)</span>.</p>
+<p>Saturation vapor pressure, <span class="math inline">\(e*(T)\)</span>: Consider a parcel at temperature <span class="math inline">\(T\)</span>. Unless the parcel is currently saturated, the parcel could hold more water vapor than it currently does. The partial pressure exerted by the water vapor is given by <span class="math inline">\(e\)</span>, whereas the partial pressure that would be exerted by the water vapor if the parcel were saturated, is e*, which is a function of temperature: i.e., <span class="math inline">\(e*(T)\)</span>. (Units: kPa).</p>
+<p>Vapor pressure deficit, VPD: Vapor pressure deficit represents the difference between the actual and saturation vapor pressures of a parcel at temperature T:</p>
+<p><span id="eq-VPD"><span class="math display">\[
+VPD = e*(T) - e
+\tag{5}\]</span></span></p>
+<ul>
+<li><em>Note</em>: that the smaller the VPD, the closer the parcel is to saturation. (Units: kPa)</li>
+</ul>
+</section>
+</section>
+<section id="experimental-procedure" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Experimental procedure</h1>
+<p>This is the experimental procedure, describing how we obtain measurements of the water vapor content of the air.</p>
+<section id="psychrometer" class="level2">
+<h2 class="anchored" data-anchor-id="psychrometer">Psychrometer</h2>
+<p>To make measurements of water vapor content of the air, you will use the Assmann aspirated psychrometer. Examine the psychrometer and notice the wick on the wet-bulb thermometer. Use distilled water to wet the wick thoroughly. Wind up the clockwork ventilation fan. Take the instrument outdoors and measure the wet- and dry bulb temperatures. Read measurements every 15 s for 3 or 4 minutes until the thermometer reaches equilibrium. Use the equilibrium values for further calculations.</p>
+<p>Return to the laboratory, re-wet the wick and re-wind the psychrometer. Repeat the measurements of wet- and dry-bulb temperature. The water vapor density in the air in the classroom and outdoors can now be calculated (see 5.4, Question 1).</p>
+</section>
+</section>
+<section id="lab-questions" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Lab questions</h1>
+<div id="exr-measurements" class="theorem exercise">
+<p><span class="theorem-title"><strong>Question 1 </strong></span>Calculate from your measurements with the Assmann psychrometer: <span class="math inline">\(\rho_v(T)\)</span>, <span class="math inline">\(e\)</span>, <span class="math inline">\(RH\)</span>, <span class="math inline">\(VDD\)</span>, <span class="math inline">\(VPD\)</span> and <span class="math inline">\(T_d\)</span> for both indoors and outdoors.<br>
+<strong>(3 points):</strong></p>
+</div>
+<div id="exr-experiment" class="theorem exercise">
+<p><span class="theorem-title"><strong>Question 2 </strong></span>Suppose in an experiment measuring the humidity outdoors, it is convenient to suck in a sample of cool air through a tube into a warm laboratory. The sample warmed to room temperature allowing its pressure to remain constant. What happens to its volume? Which of the measures of humidity (<span class="math inline">\(\rho_v(T)\)</span>, <span class="math inline">\(e\)</span>, <span class="math inline">\(RH\)</span>, <span class="math inline">\(VDD\)</span> and <span class="math inline">\(T_d\)</span>) will be the same when determined on this warmed sample as would be obtained by measurement with a psychrometer outdoors and how would each measure of humidity differ? <em>Hint:</em> remember pressure is constant, but temperature, and therefore volume, changes. <strong>(2 points):</strong></p>
+</div>
+<div id="exr-equal" class="theorem exercise">
+<p><span class="theorem-title"><strong>Question 3 </strong></span>Were your measured vapor densities indoors and outdoors equal? Is this reasonable? Explain why. <strong>(1 points):</strong></p>
+</div>
+<div id="exr-hygrometer" class="theorem exercise">
+<p><span class="theorem-title"><strong>Question 4 </strong></span>A high-precision method for measuring water vapor content of the air uses a dew-point hygrometer. In this instrument a mirror is cooled until condensation causes fogging on the mirror and this is detected by a photodetector that records the scattering of a beam of light shining on the mirror. At that time, the temperature of the mirror is recorded. What temperature would be recorded if the air vapor pressure is 1.60 kPa? <strong>(1 points):</strong></p>
+</div>
+<div id="exr-winter" class="theorem exercise">
+<p><span class="theorem-title"><strong>Question 5 </strong></span>A cool winter Canadian air mass with a temperature of -4°C and a relative humidity of 91% meets a warm air mass sweeping northward from Texas with a temperature of 17°C and a relative humidity of 17%. In the mixing process will the southern border of the Canadian air gain or lose water vapor content? Explain. <strong>(2 points):</strong></p>
+</div>
+<div class="cell">
+
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
