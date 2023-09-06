@@ -1,0 +1,123 @@
+---
+title: "Additional Resources"
+---
+
+{{< include _imports.qmd >}}
+
+
+# The SI System
+
+The SI (Système International d’Unités or International System of Units) is the official unit system in science and therefore mandatory in climatology. This system uses a small number of base units from which other derived units can be obtained.  The SI base units are listed in @tbl-si-Base and should be used whenever applicable in this course.
+
+* The unit for temperature is Kelvin (K, *not* $^{\circ} K$). Temperatures may be also indicated in degree Celsius ( $^{\circ} C$ ). However, temperature-differences should be referred to as Kelvin (K).  The conversion is listed in @eq-Kelvin-to-Celsius.  Note how one Kelvin is equivalent to one degree Celsius, but the units have different zero points.
+  * 0 K represents **absolute zero**, which is the **lowest possible temperature**: i.e., a complete lack of energy in a system.
+    * Kelvin is on a ratio scale: it starts at a fixed, meaningful zero value and can only take positive values.  This allows for relative comparisons between values: 
+      * e.ge., 100 K is "twice as hot" as 50 K
+  * $^{\circ} C$ is the freezing point of fresh water at 1 atm (mean atmospheric pressure at sea level).
+    * Celsius is on an interval scale > it has an arbitrary zero value and can take positive or negative values.  This **prevents** relative comparisons between values: 
+      * e.ge., 100 $^{\circ} C$ **is not** "twice as hot" as 50 $^{\circ} C$
+
+```{r}
+#| label: tbl-si-Base
+#| tbl-cap: "SI Base Units."
+#| tbl-colwidths: [25,35,40]
+
+
+SI <- read.csv(file = '_Data/SI_Units.csv', check.names = FALSE)
+
+kable(SI)
+
+```
+
+# Scientific Notation
+
+Scientific notation can be used to modify SI base units and make very large/small numbers more readable by presenting them more concisely.
+
+```{r}
+#| label: tbl-times
+#| tbl-cap: "Meeting day/time by lab section."
+#| tbl-colwidths: [25,35,40]
+
+
+SN <- read.csv(file = '_Data/ScientificNotation.csv', check.names = FALSE)
+
+kable(SN)
+
+```
+
+# Wind References
+
+
+* Winds are named after the direction from which the air is moving.
+* Example: if the wind direction is 45 degrees, wind is from Northeast.
+
+![](images/Wind_Components.png)
+
+![](images/Wind_Refernece.png)
+
+
+# Important Symbols
+
+These are list of symbols that will be used to represent key variables in the course.
+
+
+```{r}
+#| label: tbl-symbols
+#| tbl-cap: "Definitions of symbols."
+#| tbl-colwidths: [25,35,40]
+
+
+Sy <- read.csv(file = '_Data/Symbols.csv', check.names = FALSE)
+
+kable(Sy[,1:3])
+
+```
+
+# Constants
+
+
+```{r}
+#| label: tbl-constants
+#| tbl-cap: "Definitions of constants."
+#| tbl-colwidths: [25,35,40]
+
+
+Sy <- read.csv(file = '_Data/Constants.csv', check.names = FALSE)
+
+kable(Sy[,1:3])
+
+```
+
+```{r}
+#| label: tbl-saturation
+#| tbl-cap: "Saturation vapor density $\\rho^*_v$ and saturation vapor pressure $e^*$ as a function of temperature $T$.  This table can also be used to determine  $\\rho^*_{vw}$ corresponding to a given $T_w$"
+
+Data <- read.csv(file = '_Data/Saturation.csv',sep=',')
+
+col_Names <- c("$T (^{\\circ} C)$","$\\rho^*_v$","$e^*$")
+
+kable(Data, col.names = col_Names)
+
+```
+
+
+# Important Equations and Helpful Conversions
+
+A list of important equations used in the course.
+
+* Note these are listed in no particular order
+
+{{< include _Equations/EquationList.qmd >}}
+
+
+
+$$
+e = \rho_v R_v T
+$${#eq-Vapor-Pressure}
+
+$$
+^{\circ} C = K - 273.15
+$${#eq-Kelvin-to-Celsius}
+
+
+# Constants

@@ -147,7 +147,6 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>This Lab Assignment is Due: <strong>Oct 20 2023</strong></p>
 <p>This assignment is worth <strong>9 points</strong>.</p>
 <section id="objectives" class="level1 unnumbered">
 <h1 class="unnumbered">Objectives</h1>
@@ -161,141 +160,124 @@ ul.task-list li input[type="checkbox"] {
 <h1 data-number="1"><span class="header-section-number">1</span> Measuring Atmospheric Humidity</h1>
 <p>This laboratory is intended to give you some familiarity with these various expressions for atmospheric water content. We compare measurements of vapor density, vapor pressure, relative humidity, dew point temperature and vapor density deficit inside the classroom with measurements outdoors.</p>
 <p>Water vapor constitutes only a very small part of our atmosphere, yet it is extremely important. The rate of evaporation of water from a surface depends on atmospheric humidity. Thus the rate at which a field soil dries or the rate at which a crop or forest consumes water which must be replaced by precipitation or irrigation, depends in part on the atmospheric humidity. Evaporation from the lungs and of perspiration from the skin is an important mechanism in the maintenance of constant internal temperature in mammals and birds. The efficiency of the evaporative cooling depends on evaporation rate which, in turn, depends partly on the atmospheric humidity.</p>
+<div class="cell">
+<div class="cell-output-display">
 <div id="tbl-symbols" class="anchored">
-<table class="table">
-<caption>Table&nbsp;1: Symbols and constants used in this lab</caption>
+<table class="table table-sm table-striped">
+<caption>Table&nbsp;1: Definitions of symbols.</caption>
 <colgroup>
-<col style="width: 5%">
+<col style="width: 25%">
 <col style="width: 35%">
-<col style="width: 30%">
-<col style="width: 30%">
+<col style="width: 40%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>Symbol</th>
-<th>Name</th>
-<th>Method of Calculation</th>
-<th>Units</th>
+<th style="text-align: left;">Symbol</th>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Definition</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span class="math inline">\(C\)</span></td>
-<td>Heat capacity of air (at 20 <span class="math inline">\(^{\circ}\)</span> C)</td>
-<td>Constant</td>
-<td>1210 J m<span class="math inline">\(^{-3}\)</span> K<span class="math inline">\(^{-1}\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(T\)</span></td>
+<td style="text-align: left;">Temperature</td>
+<td style="text-align: left;">Quantitatification of the heat present in an object</td>
 </tr>
 <tr class="even">
-<td><span class="math inline">\(e\)</span></td>
-<td>Vapor pressure</td>
-<td><a href="#eq-VPD">Equation&nbsp;5</a></td>
-<td>kPa</td>
+<td style="text-align: left;"><span class="math inline">\(RH\)</span></td>
+<td style="text-align: left;">Relative Humidity</td>
+<td style="text-align: left;">The percent of absolute humidity relative to the maximum possible humidity at that temperature</td>
 </tr>
 <tr class="odd">
-<td><span class="math inline">\(e^* (T)\)</span></td>
-<td>Saturation vapor pressure at temperature T</td>
-<td><a href="#tbl-saturation">Table&nbsp;2</a></td>
-<td>kPa</td>
+<td style="text-align: left;"><span class="math inline">\(P_a\)</span></td>
+<td style="text-align: left;">Air pressure</td>
+<td style="text-align: left;">Force applied perpendicular to the surface of an object</td>
 </tr>
 <tr class="even">
-<td><span class="math inline">\(L_v\)</span></td>
-<td>Latent heat of vaporization (at 20 <span class="math inline">\(^{\circ}\)</span> C)</td>
-<td>Constant</td>
-<td>2450 J g<span class="math inline">\(^{-1}\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(e\)</span></td>
+<td style="text-align: left;">Vapor pressure</td>
+<td style="text-align: left;"><a href="#eq-Vapor-Pressure">Equation&nbsp;4</a></td>
 </tr>
 <tr class="odd">
-<td><span class="math inline">\(RH\)</span></td>
-<td>Relative humidity</td>
-<td><a href="#eq-RH">Equation&nbsp;2</a></td>
-<td>%</td>
+<td style="text-align: left;"><span class="math inline">\(T_w\)</span></td>
+<td style="text-align: left;">Wet-bulb temperature</td>
+<td style="text-align: left;">The temperature of adiabatic saturation; read by a ventilated thermometer covered in water at ambient temperature</td>
 </tr>
 <tr class="even">
-<td><span class="math inline">\(R_v\)</span></td>
-<td>Gas constant for water vapor</td>
-<td>Constant</td>
-<td>4.62 x 10<span class="math inline">\(^{-4}\)</span> kPa m<span class="math inline">\(^3\)</span> g<span class="math inline">\(^{-1}\)</span> K<span class="math inline">\(^{-1}\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(VDD\)</span></td>
+<td style="text-align: left;">Vapor density defect</td>
+<td style="text-align: left;"><a href="#eq-Vapor-Density-Deficit">Equation&nbsp;3</a></td>
 </tr>
 <tr class="odd">
-<td><span class="math inline">\(T\)</span></td>
-<td>Temperature</td>
-<td>Measurement</td>
-<td><span class="math inline">\(^{\circ}\)</span> C or K</td>
+<td style="text-align: left;"><span class="math inline">\(VPD\)</span></td>
+<td style="text-align: left;">Vapor pressure defect</td>
+<td style="text-align: left;"><a href="#eq-Vapor-Pressure-Deficit">Equation&nbsp;5</a></td>
 </tr>
 <tr class="even">
-<td><span class="math inline">\(T_d\)</span></td>
-<td>Dew-point temperature</td>
-<td><a href="#tbl-saturation">Table&nbsp;2</a></td>
-<td><span class="math inline">\(^{\circ}\)</span> C or K</td>
+<td style="text-align: left;"><span class="math inline">\(\rho_v\)</span></td>
+<td style="text-align: left;">Vapor density</td>
+<td style="text-align: left;"><a href="#eq-Vapor-Density">Equation&nbsp;1</a></td>
 </tr>
 <tr class="odd">
-<td><span class="math inline">\(T_w\)</span></td>
-<td>Wet-bulb temperature</td>
-<td>Measurement</td>
-<td><span class="math inline">\(^{\circ}\)</span> C or K</td>
+<td style="text-align: left;"><span class="math inline">\(T_d\)</span></td>
+<td style="text-align: left;">Dew-point temperature</td>
+<td style="text-align: left;"><a href="#tbl-saturation">Table&nbsp;3</a></td>
 </tr>
 <tr class="even">
-<td><span class="math inline">\(VDD\)</span></td>
-<td>Vapor density defect</td>
-<td><a href="#eq-VDD">Equation&nbsp;3</a></td>
-<td><span class="math inline">\(^{\circ}\)</span> C or K</td>
+<td style="text-align: left;"><span class="math inline">\(\rho^*_v(T)\)</span></td>
+<td style="text-align: left;">Saturation vapor density at temperature <span class="math inline">\(T\)</span></td>
+<td style="text-align: left;"><a href="#tbl-saturation">Table&nbsp;3</a></td>
 </tr>
 <tr class="odd">
-<td><span class="math inline">\(\gamma\)</span></td>
-<td>Psychrometric constant (at 20 <span class="math inline">\(^{\circ}\)</span> C)</td>
-<td>Constant</td>
-<td>0.495 g m <span class="math inline">\(^{-3}\)</span> K <span class="math inline">\({^-1}\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(\rho^*_{vw}(T_w)\)</span></td>
+<td style="text-align: left;">Saturation vapor density at temperature <span class="math inline">\(T_w\)</span></td>
+<td style="text-align: left;"><a href="#tbl-saturation">Table&nbsp;3</a></td>
 </tr>
 <tr class="even">
-<td><span class="math inline">\(\rho_v\)</span></td>
-<td>Vapor density</td>
-<td><a href="#eq-VD">Equation&nbsp;1</a></td>
-<td>gm <span class="math inline">\(^{-1}\)</span></td>
-</tr>
-<tr class="odd">
-<td><span class="math inline">\(\rho^*_v(T)\)</span></td>
-<td>Saturation vapor density at temperature <span class="math inline">\(T\)</span></td>
-<td><a href="#tbl-saturation">Table&nbsp;2</a></td>
-<td>gm <span class="math inline">\(^{-1}\)</span></td>
-</tr>
-<tr class="even">
-<td><span class="math inline">\(\rho^*_{vw}(T_w)\)</span></td>
-<td>Saturation vapor density at temperature <span class="math inline">\(T_w\)</span></td>
-<td><a href="#tbl-saturation">Table&nbsp;2</a></td>
-<td>gm <span class="math inline">\(^{-1}\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(e^* (T)\)</span></td>
+<td style="text-align: left;">Saturation vapor pressure at temperature T</td>
+<td style="text-align: left;">Maximum possible vapor pressure for a parcel of air at temperature T <a href="#tbl-saturation">Table&nbsp;3</a></td>
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-constants" class="anchored">
+<table class="table table-sm table-striped">
+<caption>Table&nbsp;2: Definitions of constants.</caption>
+<colgroup>
+<col style="width: 25%">
+<col style="width: 35%">
+<col style="width: 40%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Symbol</th>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(\gamma\)</span></td>
+<td style="text-align: left;">Psychrometric constant (at 20 <span class="math inline">\(^{\circ}\)</span> C)</td>
+<td style="text-align: left;">0.495 g m <span class="math inline">\(^{-3}\)</span> K <span class="math inline">\({^-1}\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
 <div id="tbl-saturation" class="anchored">
 <table class="table table-sm table-striped">
-<caption>Table&nbsp;2: Saturation vapor density <span class="math inline">\(\rho^*_v\)</span> and saturation vapor pressure <span class="math inline">\(e^*\)</span> as a function of temperature <span class="math inline">\(T\)</span>. This table can also be used to determine <span class="math inline">\(\rho^*_{vw}\)</span> corresponding to a given <span class="math inline">\(T_w\)</span></caption>
-<colgroup>
-<col style="width: 12%">
-<col style="width: 8%">
-<col style="width: 4%">
-<col style="width: 12%">
-<col style="width: 8%">
-<col style="width: 4%">
-<col style="width: 12%">
-<col style="width: 8%">
-<col style="width: 4%">
-<col style="width: 12%">
-<col style="width: 8%">
-<col style="width: 4%">
-</colgroup>
+<caption>Table&nbsp;3: Saturation vapor density <span class="math inline">\(\rho^*_v\)</span> and saturation vapor pressure <span class="math inline">\(e^*\)</span> as a function of temperature <span class="math inline">\(T\)</span>. This table can also be used to determine <span class="math inline">\(\rho^*_{vw}\)</span> corresponding to a given <span class="math inline">\(T_w\)</span></caption>
 <thead>
 <tr class="header">
-<th style="text-align: right;"><span class="math inline">\(T (^{\circ} C)\)</span></th>
-<th style="text-align: right;"><span class="math inline">\(\rho^*_v\)</span></th>
-<th style="text-align: right;"><span class="math inline">\(e^*\)</span></th>
-<th style="text-align: right;"><span class="math inline">\(T (^{\circ} C)\)</span></th>
-<th style="text-align: right;"><span class="math inline">\(\rho^*_v\)</span></th>
-<th style="text-align: right;"><span class="math inline">\(e^*\)</span></th>
-<th style="text-align: right;"><span class="math inline">\(T (^{\circ} C)\)</span></th>
-<th style="text-align: right;"><span class="math inline">\(\rho^*_v\)</span></th>
-<th style="text-align: right;"><span class="math inline">\(e^*\)</span></th>
 <th style="text-align: right;"><span class="math inline">\(T (^{\circ} C)\)</span></th>
 <th style="text-align: right;"><span class="math inline">\(\rho^*_v\)</span></th>
 <th style="text-align: right;"><span class="math inline">\(e^*\)</span></th>
@@ -306,166 +288,238 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: right;">-4</td>
 <td style="text-align: right;">3.7</td>
 <td style="text-align: right;">0.46</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">8.3</td>
-<td style="text-align: right;">1.07</td>
-<td style="text-align: right;">20</td>
-<td style="text-align: right;">17.3</td>
-<td style="text-align: right;">2.34</td>
-<td style="text-align: right;">32</td>
-<td style="text-align: right;">33.9</td>
-<td style="text-align: right;">4.76</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">-3</td>
 <td style="text-align: right;">3.9</td>
 <td style="text-align: right;">0.49</td>
-<td style="text-align: right;">9</td>
-<td style="text-align: right;">8.8</td>
-<td style="text-align: right;">1.15</td>
-<td style="text-align: right;">21</td>
-<td style="text-align: right;">18.4</td>
-<td style="text-align: right;">2.49</td>
-<td style="text-align: right;">33</td>
-<td style="text-align: right;">35.7</td>
-<td style="text-align: right;">5.03</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">-2</td>
 <td style="text-align: right;">4.2</td>
 <td style="text-align: right;">0.53</td>
-<td style="text-align: right;">10</td>
-<td style="text-align: right;">9.4</td>
-<td style="text-align: right;">1.23</td>
-<td style="text-align: right;">22</td>
-<td style="text-align: right;">19.4</td>
-<td style="text-align: right;">2.64</td>
-<td style="text-align: right;">34</td>
-<td style="text-align: right;">37.6</td>
-<td style="text-align: right;">5.32</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">-1</td>
 <td style="text-align: right;">4.5</td>
 <td style="text-align: right;">0.57</td>
-<td style="text-align: right;">11</td>
-<td style="text-align: right;">10.0</td>
-<td style="text-align: right;">1.31</td>
-<td style="text-align: right;">23</td>
-<td style="text-align: right;">20.6</td>
-<td style="text-align: right;">2.81</td>
-<td style="text-align: right;">35</td>
-<td style="text-align: right;">39.7</td>
-<td style="text-align: right;">5.62</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">4.9</td>
 <td style="text-align: right;">0.61</td>
-<td style="text-align: right;">12</td>
-<td style="text-align: right;">10.7</td>
-<td style="text-align: right;">1.40</td>
-<td style="text-align: right;">24</td>
-<td style="text-align: right;">21.8</td>
-<td style="text-align: right;">2.98</td>
-<td style="text-align: right;">36</td>
-<td style="text-align: right;">31.8</td>
-<td style="text-align: right;">5.94</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">5.2</td>
 <td style="text-align: right;">0.66</td>
-<td style="text-align: right;">13</td>
-<td style="text-align: right;">11.4</td>
-<td style="text-align: right;">1.50</td>
-<td style="text-align: right;">25</td>
-<td style="text-align: right;">23.1</td>
-<td style="text-align: right;">3.17</td>
-<td style="text-align: right;">37</td>
-<td style="text-align: right;">44.0</td>
-<td style="text-align: right;">6.28</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">2</td>
 <td style="text-align: right;">5.6</td>
 <td style="text-align: right;">0.71</td>
-<td style="text-align: right;">14</td>
-<td style="text-align: right;">12.1</td>
-<td style="text-align: right;">1.60</td>
-<td style="text-align: right;">26</td>
-<td style="text-align: right;">24.4</td>
-<td style="text-align: right;">3.36</td>
-<td style="text-align: right;">38</td>
-<td style="text-align: right;">46.3</td>
-<td style="text-align: right;">6.63</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">3</td>
 <td style="text-align: right;">6.0</td>
 <td style="text-align: right;">0.76</td>
-<td style="text-align: right;">15</td>
-<td style="text-align: right;">12.8</td>
-<td style="text-align: right;">1.80</td>
-<td style="text-align: right;">27</td>
-<td style="text-align: right;">25.8</td>
-<td style="text-align: right;">3.57</td>
-<td style="text-align: right;">39</td>
-<td style="text-align: right;">48.7</td>
-<td style="text-align: right;">6.99</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">4</td>
 <td style="text-align: right;">6.4</td>
 <td style="text-align: right;">0.81</td>
-<td style="text-align: right;">16</td>
-<td style="text-align: right;">13.6</td>
-<td style="text-align: right;">1.82</td>
-<td style="text-align: right;">28</td>
-<td style="text-align: right;">27.3</td>
-<td style="text-align: right;">3.78</td>
-<td style="text-align: right;">40</td>
-<td style="text-align: right;">51.2</td>
-<td style="text-align: right;">7.38</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">6.8</td>
 <td style="text-align: right;">0.87</td>
-<td style="text-align: right;">17</td>
-<td style="text-align: right;">14.5</td>
-<td style="text-align: right;">1.94</td>
-<td style="text-align: right;">29</td>
-<td style="text-align: right;">28.8</td>
-<td style="text-align: right;">4.01</td>
-<td style="text-align: right;">41</td>
-<td style="text-align: right;">53.8</td>
-<td style="text-align: right;">7.78</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">6</td>
 <td style="text-align: right;">7.3</td>
 <td style="text-align: right;">0.94</td>
-<td style="text-align: right;">18</td>
-<td style="text-align: right;">15.4</td>
-<td style="text-align: right;">2.06</td>
-<td style="text-align: right;">30</td>
-<td style="text-align: right;">30.4</td>
-<td style="text-align: right;">4.24</td>
-<td style="text-align: right;">42</td>
-<td style="text-align: right;">56.6</td>
-<td style="text-align: right;">8.20</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">7</td>
 <td style="text-align: right;">7.8</td>
 <td style="text-align: right;">1.00</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8.3</td>
+<td style="text-align: right;">1.07</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">8.8</td>
+<td style="text-align: right;">1.15</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">9.4</td>
+<td style="text-align: right;">1.23</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">10.0</td>
+<td style="text-align: right;">1.31</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">10.7</td>
+<td style="text-align: right;">1.40</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">11.4</td>
+<td style="text-align: right;">1.50</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">12.1</td>
+<td style="text-align: right;">1.60</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">12.8</td>
+<td style="text-align: right;">1.70</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">13.6</td>
+<td style="text-align: right;">1.82</td>
+</tr>
+<tr class="even">
 <td style="text-align: right;">19</td>
 <td style="text-align: right;">16.3</td>
 <td style="text-align: right;">2.20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">14.5</td>
+<td style="text-align: right;">1.94</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">15.4</td>
+<td style="text-align: right;">2.06</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">17.3</td>
+<td style="text-align: right;">2.34</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">18.4</td>
+<td style="text-align: right;">2.49</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">19.4</td>
+<td style="text-align: right;">2.64</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">20.6</td>
+<td style="text-align: right;">2.81</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">21.8</td>
+<td style="text-align: right;">2.98</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">23.1</td>
+<td style="text-align: right;">3.17</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">26</td>
+<td style="text-align: right;">24.4</td>
+<td style="text-align: right;">3.36</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">27</td>
+<td style="text-align: right;">25.8</td>
+<td style="text-align: right;">3.57</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">27.3</td>
+<td style="text-align: right;">3.78</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">29</td>
+<td style="text-align: right;">28.8</td>
+<td style="text-align: right;">4.01</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">30.4</td>
+<td style="text-align: right;">4.24</td>
+</tr>
+<tr class="even">
 <td style="text-align: right;">31</td>
 <td style="text-align: right;">32.1</td>
 <td style="text-align: right;">4.49</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">32</td>
+<td style="text-align: right;">33.9</td>
+<td style="text-align: right;">4.76</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">33</td>
+<td style="text-align: right;">35.7</td>
+<td style="text-align: right;">5.03</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">34</td>
+<td style="text-align: right;">37.6</td>
+<td style="text-align: right;">5.32</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">39.7</td>
+<td style="text-align: right;">5.62</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">36</td>
+<td style="text-align: right;">41.8</td>
+<td style="text-align: right;">5.94</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">37</td>
+<td style="text-align: right;">44.0</td>
+<td style="text-align: right;">6.28</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">38</td>
+<td style="text-align: right;">46.3</td>
+<td style="text-align: right;">6.63</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">39</td>
+<td style="text-align: right;">48.7</td>
+<td style="text-align: right;">6.99</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">51.2</td>
+<td style="text-align: right;">7.38</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">41</td>
+<td style="text-align: right;">53.8</td>
+<td style="text-align: right;">7.78</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">42</td>
+<td style="text-align: right;">56.6</td>
+<td style="text-align: right;">8.20</td>
+</tr>
+<tr class="even">
 <td style="text-align: right;">43</td>
 <td style="text-align: right;">59.4</td>
 <td style="text-align: right;">8.64</td>
@@ -479,27 +533,27 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="theory">Theory</h2>
 <p>The most common type of instrument used to measure humidity is the psychrometer. This consists simply of a pair of thermometers, one of which has a wetted wick enclosing the sensor. The wet-bulb is cooled by evaporation to a temperature that depends on the atmospheric vapor density.</p>
 <p>The water vapor density <span class="math inline">\(\rho_v\)</span> (= absolute humidity) can be calculated from measurements of wet- and dry-bulb temperatures using the relationship:</p>
-<p><span id="eq-VD"><span class="math display">\[
+<p><span id="eq-Vapor-Density"><span class="math display">\[
 \rho_v = \rho^*_{vw}(T_w) - \gamma(T-T_w)
 \tag{1}\]</span></span></p>
 <p>These and other symbols in this exercise are defined in Table 5.1. The density of water vapor in the atmosphere <span class="math inline">\(\rho_v(T)\)</span>, is the basic measure of atmospheric moisture. It is the mass of water vapor in unit volume of air (Units: kg m-3 but often given in g m-3 to make more sensibly sized numbers).</p>
-<p>Other ways of expressing the amount of moisture are used and each has particular usefulness in certain applications. The total amount of water that the atmosphere can hold without condensation depends only on temperature. This quantity, called the saturation vapor density ^*_v(T), is given for a range of temperatures in <a href="#tbl-saturation">Table&nbsp;2</a>. The ratio of actual vapor density to the maximum possible (i.e.&nbsp;the saturation vapor density) when expressed as a percentage is called the relative humidity:</p>
-<p><span id="eq-RH"><span class="math display">\[
+<p>Other ways of expressing the amount of moisture are used and each has particular usefulness in certain applications. The total amount of water that the atmosphere can hold without condensation depends only on temperature. This quantity, called the saturation vapor density ^*_v(T), is given for a range of temperatures in <a href="#tbl-saturation">Table&nbsp;3</a>. The ratio of actual vapor density to the maximum possible (i.e.&nbsp;the saturation vapor density) when expressed as a percentage is called the relative humidity:</p>
+<p><span id="eq-Relative-Humidity"><span class="math display">\[
 RH = \frac{\rho_v}{\rho^*_v(T)}
 \tag{2}\]</span></span></p>
 <p>For some calculations of evaporation rate, the difference between the maximum and the actual vapor density is useful. This is called the vapor density deficit:</p>
-<p><span id="eq-VDD"><span class="math display">\[
+<p><span id="eq-Vapor-Density-Deficit"><span class="math display">\[
 VDD = \rho^*_v(T) - \rho_v
 \tag{3}\]</span></span></p>
-<p>We may express the water vapor content of air by finding the temperature to which a parcel of air could be cooled at constant atmospheric pressure before condensation commences. This temperature is called the dew point temperature <span class="math inline">\(T_d\)</span>. Note: that for a saturated parcel the dewpoint temperature is the temperature of the parcel. For any water vapor density, <span class="math inline">\(T_d\)</span> can be found by using <a href="#tbl-saturation">Table&nbsp;2</a> in reverse. For example, air with a vapor density of 7.8 g m-3 has a <span class="math inline">\(T_d\)</span> of 7°C.</p>
+<p>We may express the water vapor content of air by finding the temperature to which a parcel of air could be cooled at constant atmospheric pressure before condensation commences. This temperature is called the dew point temperature <span class="math inline">\(T_d\)</span>. Note: that for a saturated parcel the dewpoint temperature is the temperature of the parcel. For any water vapor density, <span class="math inline">\(T_d\)</span> can be found by using <a href="#tbl-saturation">Table&nbsp;3</a> in reverse. For example, air with a vapor density of 7.8 g m-3 has a <span class="math inline">\(T_d\)</span> of 7°C.</p>
 <p>Water vapor content of the air can be expressed in terms of the partial pressure exerted by the water vapor, or water vapor pressure, <span class="math inline">\(e\)</span>. This is related to vapor density by the gas law as follows:</p>
-<p><span id="eq-VPD"><span class="math display">\[
+<p><span id="eq-Vapor-Pressure"><span class="math display">\[
 e = \rho_v R_v T
 \tag{4}\]</span></span></p>
 <p>Where R_v is the gas constant for water vapor (4.62 ×10-4 kPa m3 g-1 K-1) and T is the absolute temperature (K). Using units of g m-3 for <span class="math inline">\(\rho_v(T)\)</span> results in units of kPa (kilopascals) for <span class="math inline">\(e\)</span>.</p>
 <p>Saturation vapor pressure, <span class="math inline">\(e*(T)\)</span>: Consider a parcel at temperature <span class="math inline">\(T\)</span>. Unless the parcel is currently saturated, the parcel could hold more water vapor than it currently does. The partial pressure exerted by the water vapor is given by <span class="math inline">\(e\)</span>, whereas the partial pressure that would be exerted by the water vapor if the parcel were saturated, is e*, which is a function of temperature: i.e., <span class="math inline">\(e*(T)\)</span>. (Units: kPa).</p>
 <p>Vapor pressure deficit, VPD: Vapor pressure deficit represents the difference between the actual and saturation vapor pressures of a parcel at temperature T:</p>
-<p><span id="eq-VPD"><span class="math display">\[
+<p><span id="eq-Vapor-Pressure-Deficit"><span class="math display">\[
 VPD = e*(T) - e
 \tag{5}\]</span></span></p>
 <ul>
