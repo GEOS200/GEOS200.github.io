@@ -32,14 +32,14 @@
     "href": "Assignments/Lab1.html#questions",
     "title": "Lab 1: The UBC Climate Station",
     "section": "Questions",
-    "text": "Questions\n\nQuestion 1\n1.5 points\nIs the climatological station suitably located to provide climatic data representative of the UBC campus and surrounding areas? Discuss why or why not. You can pan around and zoom in/out on Figure 2 to help you answer this question.\n\n\nQuestion 2\n1 points\nWhy is a Stevenson screen built with slatted walls, a double roof, and white paint?\n\n\nQuestion 3\n1 points\nHow do air and soil temperatures compare to one another during the 2021 Heatdome event shown in Figure 5? Which variable (air or soil temperature at 10/20/40 cm) has the largest range on a daily basis? Which has the smallest range?\n\n\nQuestion 4\n0.5 points\nUsing the standard 10:1 ratio for “Powder” snow in a dry mountainous region would ______ liquid precipitation.\n\n\nQuestion 5\n1 points\nBased on Figure 9, do you think the wind data from the last few years at totem field is accurate? Why or why not?"
+    "text": "Questions\n\nQuestion 1 (2 points)\nIs the climatological station suitably located to provide climatic data representative of the UBC campus and surrounding areas? Discuss why or why not. You can pan around and zoom in/out on Figure 2 to help you answer this question.\n\n\nQuestion 2 (0.5 points)\nMultiple Choice: select the correct answer(s) from those listed\nA Stevenson screen is built a double roof and white paint in order to:\n\nA. Shield the thermistor from sensible heat\nB. Shield the thermistor from radiation\nC. Shield the thermistor from latent heat\nD. Shield the thermistor from wind (kinetic energy)\nE. All of the above\n\n\n\nQuestion 3 (1 points)\nHow do air and soil temperatures compare to one another during the 2021 Heatdome event shown in Figure 5? Which variable (air or soil temperature at 10/20/40 cm) has the largest range on a daily basis? Which has the smallest range?\n\n\nQuestion 4 (0.5 points)\nFill in the blanks: indicate the words/phrases that complete the statement.\nUsing the standard 10:1 ratio for “Powder” snow in a dry mountainous region would ______ liquid precipitation.\n\n\nQuestion 5 (1 points)\nBased on Figure 9, do you think the wind data from the last few years at totem field is accurate? Why or why not?"
   },
   {
     "objectID": "Assignments/Lab1.html#questions-1",
     "href": "Assignments/Lab1.html#questions-1",
     "title": "Lab 1: The UBC Climate Station",
     "section": "Questions",
-    "text": "Questions\n\nQuestion 6\n1.5 points\nCompare the UBC climatological station at totem field with the one on top of the Earth, Ocean, and Atmospheric sciences building. You can zoom out to location the station on Figure 2 for more context, look at the website and webcams for the EOAS station. Do you think conditions at the rooftop site are representative of the conditions in the surrounding area? Would it meet the standards Environment Canada requires discussed above?"
+    "text": "Questions\n\nQuestion 6 (1.5 points)\nCompare the UBC climatological station at totem field with the one on top of the Earth, Ocean, and Atmospheric sciences building. You can zoom out to location the station on Figure 2 for more context, look at the website and webcams for the EOAS station. Do you think conditions at the rooftop site are representative of the conditions in the surrounding area? Would it meet the standards Environment Canada requires discussed above?"
   },
   {
     "objectID": "Assignments/Lab1.html#long-term-trends",
@@ -60,7 +60,7 @@
     "href": "Assignments/Lab1.html#questions-2",
     "title": "Lab 1: The UBC Climate Station",
     "section": "Questions",
-    "text": "Questions\n\nQuestion 7\n2 points\nWhat does Figure 10 tell you about yearly air temperatures and precipitation at UBC over the last 60 years?\n\n\nQuestion 8\n2 points\nInspect the Figure 11 plot below, and toggle through the different periods (1961-1990 thru 1991-2020). On average, which periods are the coldest and warmest at Totem Field respectively? Is there any noticeable change in average monthly air temperatures from the earliest period to the the latest? If so in which months and by how much?\n\n\nQuestion 9\n0.5 points\nHow does the total November Precipitation from 2021 shown in Figure 6 (b) compare to a “typical” November as defined using the 1990-2020 climate normals shown in Figure 11?\n\n\nQuestion 10\n4 points\nClimate normals for stations across Canada can be found here. You can search for stations by name, province/territory, or proximity to specific locations. For the most recent period available, pick two stations: one from Quebec, and one from Nunavut, and find their climate normal graphs. Compare the seasonality of monthly average temperatures and total precipitation to the the climate normals covering the same time period for Totem Station, discuss the similarities/differences you see. Take screenshots of the climate normal graphs and include them in your answer."
+    "text": "Questions\n\nQuestion 7 (2 points)\nWhat does Figure 10 tell you about yearly air temperatures and precipitation at UBC over the last 60 years?\n\n\nQuestion 8 (2 points)\nInspect Figure 11; and toggle through the different periods (1961-1990 thru 1991-2020). On average, which periods are the coldest and warmest at Totem Field respectively? Is there any noticeable change in average monthly air temperatures from the earliest period to the the latest? If so in which months and by how much?\n\n\nQuestion 9 (0.5 points)\nHow does the total November Precipitation from 2021 shown in Figure 6 (b) compare to a “typical” November as defined using the 1990-2020 climate normals shown in Figure 11?\n\n\nQuestion 10 (4 points)\nClimate normals for stations across Canada can be found here. You can search for stations by name, province/territory, or proximity to specific locations. For the most recent period available, pick two stations: one from Quebec, and one from Nunavut, and find their climate normal graphs. Compare the seasonality of monthly average temperatures and total precipitation to the the climate normals covering the same time period for Totem Station, discuss the similarities/differences you see. Take screenshots of the climate normal graphs and include them in your answer."
   },
   {
     "objectID": "index.html",
@@ -186,7 +186,7 @@
     "href": "Resources.html",
     "title": "Additional Resources",
     "section": "",
-    "text": "The SI (Système International d’Unités or International System of Units) is the official unit system in science and therefore mandatory in climatology. This system uses a small number of base units from which other derived units can be obtained. The SI base units are listed in Table 1 and should be used whenever applicable in this course.\n\nThe unit for temperature is Kelvin (K, not \\(^{\\circ} K\\)). Temperatures may be also indicated in degree Celsius ( \\(^{\\circ} C\\) ). However, temperature-differences should be referred to as Kelvin (K). The conversion is listed in Equation 12. Note how one Kelvin is equivalent to one degree Celsius, but the units have different zero points.\n\n0 K represents absolute zero, which is the lowest possible temperature: i.e., a complete lack of energy in a system.\n\nKelvin is on a ratio scale: it starts at a fixed, meaningful zero value and can only take positive values. This allows for relative comparisons between values:\n\ne.ge., 100 K is “twice as hot” as 50 K\n\n\n\\(^{\\circ} C\\) is the freezing point of fresh water at 1 atm (mean atmospheric pressure at sea level).\n\nCelsius is on an interval scale > it has an arbitrary zero value and can take positive or negative values. This prevents relative comparisons between values:\n\ne.ge., 100 \\(^{\\circ} C\\) is not “twice as hot” as 50 \\(^{\\circ} C\\)\n\n\n\n\n\n\n\n\nTable 1: SI Base Units.\n\n\n\n\n\n\n\nSI base unit\nSymbol\nQuantity\n\n\n\n\nMeter\nm\nLength\n\n\nKilogram\nKg\nMass\n\n\nSecond\ns\nTime\n\n\nKelvin\nK\nThermodynamic Temperature\n\n\nAmpere\nA\nElectric current\n\n\nMole\nmol\nAmount of a substance\n\n\nCandela\ncd\nLuminous intensity"
+    "text": "The SI (Système International d’Unités or International System of Units) is the official unit system in science and therefore mandatory in climatology. This system uses a small number of base units from which other derived units can be obtained. The SI base units are listed in Table 1 and should be used whenever applicable in this course.\n\nThe unit for temperature is Kelvin (K, not \\(^{\\circ} K\\)). Temperatures may be also indicated in degree Celsius ( \\(^{\\circ} C\\) ). However, temperature-differences should be referred to as Kelvin (K). The conversion is listed in Equation 16. Note how one Kelvin is equivalent to one degree Celsius, but the units have different zero points.\n\n0 K represents absolute zero, which is the lowest possible temperature: i.e., a complete lack of energy in a system.\n\nKelvin is on a ratio scale: it starts at a fixed, meaningful zero value and can only take positive values. This allows for relative comparisons between values:\n\ne.ge., 100 K is “twice as hot” as 50 K\n\n\n\\(^{\\circ} C\\) is the freezing point of fresh water at 1 atm (mean atmospheric pressure at sea level).\n\nCelsius is on an interval scale > it has an arbitrary zero value and can take positive or negative values. This prevents relative comparisons between values:\n\ne.ge., 100 \\(^{\\circ} C\\) is not “twice as hot” as 50 \\(^{\\circ} C\\)\n\n\n\n\n\n\n\n\nTable 1: SI Base Units.\n\n\n\n\n\n\n\nSI base unit\nSymbol\nQuantity\n\n\n\n\nMeter\nm\nLength\n\n\nKilogram\nKg\nMass\n\n\nSecond\ns\nTime\n\n\nKelvin\nK\nThermodynamic Temperature\n\n\nAmpere\nA\nElectric current\n\n\nMole\nmol\nAmount of a substance\n\n\nCandela\ncd\nLuminous intensity"
   },
   {
     "objectID": "Resources.html#albedo",
@@ -196,74 +196,109 @@
     "text": "Albedo\n\\[\nalbedo = \\alpha_{SW} = \\frac{\\uparrow SW}{\\downarrow SW}\n\\tag{1}\\]"
   },
   {
+    "objectID": "Resources.html#ideal-gas-law",
+    "href": "Resources.html#ideal-gas-law",
+    "title": "Additional Resources",
+    "section": "Ideal Gas Law",
+    "text": "Ideal Gas Law\n\\[\nPV=nRT\n\\tag{2}\\]"
+  },
+  {
     "objectID": "Resources.html#net-radiation",
     "href": "Resources.html#net-radiation",
     "title": "Additional Resources",
     "section": "Net Radiation",
-    "text": "Net Radiation\n\\[\nR_n = (SW \\downarrow - SW \\uparrow) + (LW \\downarrow - LW \\uparrow)\n\\tag{2}\\]"
+    "text": "Net Radiation\n\\[\nR_n = (SW \\downarrow - SW \\uparrow) + (LW \\downarrow - LW \\uparrow)\n\\tag{3}\\]"
   },
   {
     "objectID": "Resources.html#radiation-balance",
     "href": "Resources.html#radiation-balance",
     "title": "Additional Resources",
     "section": "Radiation Balance",
-    "text": "Radiation Balance\n\\[\na_\\lambda + \\tau_\\lambda + \\alpha_\\lambda = 1\n\\tag{3}\\]"
+    "text": "Radiation Balance\n\\[\na_\\lambda + \\tau_\\lambda + \\alpha_\\lambda = 1\n\\tag{4}\\]"
   },
   {
     "objectID": "Resources.html#relative-humidity",
     "href": "Resources.html#relative-humidity",
     "title": "Additional Resources",
     "section": "Relative Humidity",
-    "text": "Relative Humidity\n\\[\nRH = \\frac{\\rho_v}{\\rho^*_v(T)}\n\\tag{4}\\]"
+    "text": "Relative Humidity\n\\[\nRH = \\frac{\\rho_v}{\\rho^*_v(T)}\n\\tag{5}\\]"
+  },
+  {
+    "objectID": "Resources.html#mean",
+    "href": "Resources.html#mean",
+    "title": "Additional Resources",
+    "section": "Mean",
+    "text": "Mean\n\\[\n\\bar{x} =  \\sum_{n=1}^{N} \\frac{x_n}{N}\n\\tag{6}\\]"
+  },
+  {
+    "objectID": "Resources.html#standard-deviation",
+    "href": "Resources.html#standard-deviation",
+    "title": "Additional Resources",
+    "section": "Standard Deviation",
+    "text": "Standard Deviation\n\\[\n\\sigma =  \\frac{\\sum_{n=1}^{N} x_n - \\bar{x}}{N}\n\\tag{7}\\]"
+  },
+  {
+    "objectID": "Resources.html#z-score-normalization",
+    "href": "Resources.html#z-score-normalization",
+    "title": "Additional Resources",
+    "section": "z Score Normalization",
+    "text": "z Score Normalization\n\\[\nz = \\frac{x-\\bar{x}}{\\sigma}\n\\tag{8}\\]"
   },
   {
     "objectID": "Resources.html#stefan-boltzman-law",
     "href": "Resources.html#stefan-boltzman-law",
     "title": "Additional Resources",
     "section": "Stefan Boltzman Law",
-    "text": "Stefan Boltzman Law\n\\[\nLW\\uparrow = \\sigma T^4\n\\tag{5}\\]"
+    "text": "Stefan Boltzman Law\n\\[\nLW\\uparrow = \\sigma T^4\n\\tag{9}\\]"
   },
   {
     "objectID": "Resources.html#stefan-boltzman-law-grey-body",
     "href": "Resources.html#stefan-boltzman-law-grey-body",
     "title": "Additional Resources",
     "section": "Stefan Boltzman Law Grey Body",
-    "text": "Stefan Boltzman Law Grey Body\n\\[\nLW\\uparrow = \\epsilon\\sigma T^4 + (1-\\epsilon) LW\\downarrow\n\\tag{6}\\]"
+    "text": "Stefan Boltzman Law Grey Body\n\\[\nLW\\uparrow = \\epsilon\\sigma T^4 + (1-\\epsilon) LW\\downarrow\n\\tag{10}\\]"
   },
   {
     "objectID": "Resources.html#vapor-density-deficit",
     "href": "Resources.html#vapor-density-deficit",
     "title": "Additional Resources",
     "section": "Vapor Density Deficit",
-    "text": "Vapor Density Deficit\n\\[\nVDD = \\rho^*_v(T) - \\rho_v\n\\tag{7}\\]"
+    "text": "Vapor Density Deficit\n\\[\nVDD = \\rho^*_v(T) - \\rho_v\n\\tag{11}\\]"
   },
   {
     "objectID": "Resources.html#vapor-density",
     "href": "Resources.html#vapor-density",
     "title": "Additional Resources",
     "section": "Vapor Density",
-    "text": "Vapor Density\n\\[\n\\rho_v = \\rho^*_{vw}(T_w) - \\gamma(T-T_w)\n\\tag{8}\\]"
+    "text": "Vapor Density\n\\[\n\\rho_v = \\rho^*_{vw}(T_w) - \\gamma(T-T_w)\n\\tag{12}\\]"
   },
   {
     "objectID": "Resources.html#vapor-pressure-deficit",
     "href": "Resources.html#vapor-pressure-deficit",
     "title": "Additional Resources",
     "section": "Vapor Pressure Deficit",
-    "text": "Vapor Pressure Deficit\n\\[\nVPD = e*(T) - e\n\\tag{9}\\]"
+    "text": "Vapor Pressure Deficit\n\\[\nVPD = e*(T) - e\n\\tag{13}\\]"
   },
   {
     "objectID": "Resources.html#vapor-pressure",
     "href": "Resources.html#vapor-pressure",
     "title": "Additional Resources",
     "section": "Vapor Pressure",
-    "text": "Vapor Pressure\n\\[\ne = \\rho_v R_v T\n\\tag{10}\\]\n\\[\ne = \\rho_v R_v T\n\\tag{11}\\]\n\\[\n^{\\circ} C = K - 273.15\n\\tag{12}\\]"
+    "text": "Vapor Pressure\n\\[\ne = \\rho_v R_v T\n\\tag{14}\\]\n\\[\ne = \\rho_v R_v T\n\\tag{15}\\]\n\\[\n^{\\circ} C = K - 273.15\n\\tag{16}\\]"
   },
   {
     "objectID": "Slides/Lecture1.html#learning-objectives",
     "href": "Slides/Lecture1.html#learning-objectives",
     "title": "Atmospheric Environments",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\n\n\n\nUnderstand which forms of energy are important for driving the climate system.\nExplain the difference between heat and temperature.\nDescribe the mechanisms by which energy is transported.\nUnderstand how we account for energy and mass conversions in the atmosphere."
+    "text": "Learning Objectives\n\nUnderstand which forms of energy are important for driving the climate system.\nExplain the difference between heat and temperature.\nDescribe the mechanisms by which energy is transported.\nUnderstand how we account for energy and mass conversions in the atmosphere."
+  },
+  {
+    "objectID": "Slides/Lecture1.html#iclicker",
+    "href": "Slides/Lecture1.html#iclicker",
+    "title": "Atmospheric Environments",
+    "section": "iClicker",
+    "text": "iClicker\nWe’ll try using I clicker today:\n\nUse the join code: PXPZ\nOr follow this link: https://join.iclicker.com/PXPZ\n\nIf these options don’t work, go to:\n\nstudent.iclicker.com\nThen search for Atmospheric Environments"
   },
   {
     "objectID": "Slides/Lecture1.html#which-forms-of-energy-are-important-in-the-atmosphere",
@@ -271,6 +306,13 @@
     "title": "Atmospheric Environments",
     "section": "Which forms of energy are important in the atmosphere?",
     "text": "Which forms of energy are important in the atmosphere?"
+  },
+  {
+    "objectID": "Slides/Lecture1.html#test-poll",
+    "href": "Slides/Lecture1.html#test-poll",
+    "title": "Atmospheric Environments",
+    "section": "Test Poll",
+    "text": "Test Poll\nI am able to join and answer:\n\nA - Yes\nB - No"
   },
   {
     "objectID": "Slides/Lecture1.html#forms-of-energy-in-the-atmosphere",
@@ -308,11 +350,18 @@
     "text": "Three States of Water\n\n\nHere is an example of the three states of water: LIQUID, ICE, GAS (Vapour)."
   },
   {
+    "objectID": "Slides/Lecture1.html#states-of-water-iclicker",
+    "href": "Slides/Lecture1.html#states-of-water-iclicker",
+    "title": "Atmospheric Environments",
+    "section": "States of Water (iClicker)",
+    "text": "States of Water (iClicker)\nWhich of the following are not states of water?\n\nA: Ice\nB: Liquid\nC: Vapor (gas)\nD: Air"
+  },
+  {
     "objectID": "Slides/Lecture1.html#state-changes-of-water",
     "href": "Slides/Lecture1.html#state-changes-of-water",
     "title": "Atmospheric Environments",
     "section": "State changes of water",
-    "text": "State changes of water\n\n\n\n\n\n\n\n\nThe next 4 slides will show the changes of phase of water and the SIX processes that are possible. \u000bAlso shown are the amounts of energy per kilogram of water associated with each phase change."
+    "text": "State changes of water\n  \n\n\n\n\n\n\n\n\nThe next 4 slides will show the changes of phase of water and the SIX processes that are possible. Also shown are the amounts of energy per kilogram of water associated with each phase change."
   },
   {
     "objectID": "Slides/Lecture1.html#state-changes-of-water-1",
@@ -326,7 +375,7 @@
     "href": "Slides/Lecture1.html#latent-heat",
     "title": "Atmospheric Environments",
     "section": "Latent heat",
-    "text": "Latent heat\n\n\n\n\n\n\n\n\nThe main point here is that because energy is required to change phase we talk about this type of energy use as LATENT HEAT. \u000bNOTICE the large amounts of energy associated with Evaporation and Condensation, compared to melting and freezing. \u000bIn evaporation larges amounts of heat are required and are the reason you feel cold (heat taken from your body) when water evaporates from your body after coming out of a swimming pool. \u000bSimilarly, when water vapour condenses into a liquid, large amounts of heat are released into the atmosphere. This is of course a way for energy to be from the tropics to mid latitudes."
+    "text": "Latent heat\n  \n\n\n\n\n\n\n\n\nThe main point here is that because energy is required to change phase we talk about this type of energy use as LATENT HEAT.NOTICE the large amounts of energy associated with Evaporation and Condensation, compared to melting and freezing. In evaporation larges amounts of heat are required and are the reason you feel cold (heat taken from your body) when water evaporates from your body after coming out of a swimming pool. Similarly, when water vapour condenses into a liquid, large amounts of heat are released into the atmosphere. This is of course a way for energy to be from the tropics to mid latitudes."
   },
   {
     "objectID": "Slides/Lecture1.html#latent-heat-1",
@@ -368,14 +417,14 @@
     "href": "Slides/Lecture1.html#energy-transfer-in-the-atmosphere",
     "title": "Atmospheric Environments",
     "section": "Energy transfer in the atmosphere",
-    "text": "Energy transfer in the atmosphere\n\n\nHere we continue with the definition of basic physical processes that you are hopefully very \u000bfamiliar with. Examples would be: \u000bRadiation: light coming from the sun \u000bConduction: heat transferred from molecule to molecule as you would see in the soil or a rod that is heated in a campfile \u000bConvection: heat transferred by a moving fluid such as in a boiling pot, milk poured into a cup of coffee or cumulus clouds in the atmosphere."
+    "text": "Energy transfer in the atmosphere\n\n\nHere we continue with the definition of basic physical processes that you are hopefully very familiar with. Examples would be: Radiation: light coming from the sun Conduction: heat transferred from molecule to molecule as you would see in the soil or a rod that is heated in a campfile Convection: heat transferred by a moving fluid such as in a boiling pot, milk poured into a cup of coffee or cumulus clouds in the atmosphere."
   },
   {
     "objectID": "Slides/Lecture1.html#convection",
     "href": "Slides/Lecture1.html#convection",
     "title": "Atmospheric Environments",
     "section": "Convection",
-    "text": "Convection\nThere are free and forced types of convection. An example of the latter is air movement caused by a fan or the wind.\n\n\n\n\n\nFree convection of heat from hot ground\n\n\n\n\n\n\n\n\nNOTE: CONVECTION is associated with vertical motion in the atmosphere while ADVECTION refers to horizontal motion. \u000bFree convection is when air rises of its own accord because it is warmer and less dense than the surrounding air. \u000bForced convection is when air is forced up and over a barrier such as a hill."
+    "text": "Convection\nThere are free and forced types of convection. An example of the latter is air movement caused by a fan or the wind.\n\n\n\n\n\nFree convection of heat from hot ground\n\n\n\n\n\n\n\n\nNOTE: CONVECTION is associated with vertical motion in the atmosphere while ADVECTION refers to horizontal motion. Free convection is when air rises of its own accord because it is warmer and less dense than the surrounding air. Forced convection is when air is forced up and over a barrier such as a hill."
   },
   {
     "objectID": "Slides/Lecture1.html#fluxes-and-flux-densities",
