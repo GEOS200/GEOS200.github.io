@@ -151,21 +151,29 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#important-equations-and-helpful-conversions" id="toc-important-equations-and-helpful-conversions" class="nav-link" data-scroll-target="#important-equations-and-helpful-conversions">Important Equations and Helpful Conversions</a>
   <ul class="collapse">
   <li><a href="#albedo" id="toc-albedo" class="nav-link" data-scroll-target="#albedo">Albedo</a></li>
+  <li><a href="#water-balance" id="toc-water-balance" class="nav-link" data-scroll-target="#water-balance">Water Balance</a></li>
+  <li><a href="#energy-of-photon" id="toc-energy-of-photon" class="nav-link" data-scroll-target="#energy-of-photon">Energy of Photon</a></li>
+  <li><a href="#frequency" id="toc-frequency" class="nav-link" data-scroll-target="#frequency">Frequency</a></li>
   <li><a href="#ideal-gas-law" id="toc-ideal-gas-law" class="nav-link" data-scroll-target="#ideal-gas-law">Ideal Gas Law</a></li>
+  <li><a href="#kelvin" id="toc-kelvin" class="nav-link" data-scroll-target="#kelvin">Kelvin</a></li>
+  <li><a href="#kirchhoffs-law" id="toc-kirchhoffs-law" class="nav-link" data-scroll-target="#kirchhoffs-law">Kirchhoffs Law</a></li>
   <li><a href="#net-radiation" id="toc-net-radiation" class="nav-link" data-scroll-target="#net-radiation">Net Radiation</a></li>
+  <li><a href="#planks-law" id="toc-planks-law" class="nav-link" data-scroll-target="#planks-law">Planks Law</a></li>
   <li><a href="#radiation-balance" id="toc-radiation-balance" class="nav-link" data-scroll-target="#radiation-balance">Radiation Balance</a></li>
   <li><a href="#relative-humidity" id="toc-relative-humidity" class="nav-link" data-scroll-target="#relative-humidity">Relative Humidity</a></li>
   <li><a href="#mean" id="toc-mean" class="nav-link" data-scroll-target="#mean">Mean</a></li>
   <li><a href="#standard-deviation" id="toc-standard-deviation" class="nav-link" data-scroll-target="#standard-deviation">Standard Deviation</a></li>
   <li><a href="#z-score-normalization" id="toc-z-score-normalization" class="nav-link" data-scroll-target="#z-score-normalization">z Score Normalization</a></li>
-  <li><a href="#stefan-boltzman-law" id="toc-stefan-boltzman-law" class="nav-link" data-scroll-target="#stefan-boltzman-law">Stefan Boltzman Law</a></li>
+  <li><a href="#stefan-boltzman-law-grey-body-adjusted" id="toc-stefan-boltzman-law-grey-body-adjusted" class="nav-link" data-scroll-target="#stefan-boltzman-law-grey-body-adjusted">Stefan Boltzman Law Grey Body Adjusted</a></li>
   <li><a href="#stefan-boltzman-law-grey-body" id="toc-stefan-boltzman-law-grey-body" class="nav-link" data-scroll-target="#stefan-boltzman-law-grey-body">Stefan Boltzman Law Grey Body</a></li>
+  <li><a href="#stefan-boltzman-law" id="toc-stefan-boltzman-law" class="nav-link" data-scroll-target="#stefan-boltzman-law">Stefan Boltzman Law</a></li>
   <li><a href="#vapor-density-deficit" id="toc-vapor-density-deficit" class="nav-link" data-scroll-target="#vapor-density-deficit">Vapor Density Deficit</a></li>
   <li><a href="#vapor-density" id="toc-vapor-density" class="nav-link" data-scroll-target="#vapor-density">Vapor Density</a></li>
   <li><a href="#vapor-pressure-deficit" id="toc-vapor-pressure-deficit" class="nav-link" data-scroll-target="#vapor-pressure-deficit">Vapor Pressure Deficit</a></li>
   <li><a href="#vapor-pressure" id="toc-vapor-pressure" class="nav-link" data-scroll-target="#vapor-pressure">Vapor Pressure</a></li>
+  <li><a href="#water-balance-1" id="toc-water-balance-1" class="nav-link" data-scroll-target="#water-balance-1">Water Balance</a></li>
+  <li><a href="#weins-law" id="toc-weins-law" class="nav-link" data-scroll-target="#weins-law">Weins Law</a></li>
   </ul></li>
-  <li><a href="#constants-1" id="toc-constants-1" class="nav-link" data-scroll-target="#constants-1">Constants</a></li>
   </ul>
 </nav>
     </div>
@@ -193,7 +201,7 @@ ul.task-list li input[type="checkbox"] {
 <h1>The SI System</h1>
 <p>The SI (Système International d’Unités or International System of Units) is the official unit system in science and therefore mandatory in climatology. This system uses a small number of base units from which other derived units can be obtained. The SI base units are listed in <a href="#tbl-si-Base">Table&nbsp;1</a> and should be used whenever applicable in this course.</p>
 <ul>
-<li>The unit for temperature is Kelvin (K, <em>not</em> <span class="math inline">\(^{\circ} K\)</span>). Temperatures may be also indicated in degree Celsius ( <span class="math inline">\(^{\circ} C\)</span> ). However, temperature-differences should be referred to as Kelvin (K). The conversion is listed in <a href="#eq-Kelvin-to-Celsius">Equation&nbsp;16</a>. Note how one Kelvin is equivalent to one degree Celsius, but the units have different zero points.
+<li>The unit for temperature is Kelvin (K, <em>not</em> <span class="math inline">\(^{\circ} K\)</span>). Temperatures may be also indicated in degree Celsius ( <span class="math inline">\(^{\circ} C\)</span> ). However, temperature-differences should be referred to as Kelvin (K). The conversion is listed in <strong>?@eq-Kelvin-to-Celsius</strong>. Note how one Kelvin is equivalent to one degree Celsius, but the units have different zero points.
 <ul>
 <li>0 K represents <strong>absolute zero</strong>, which is the <strong>lowest possible temperature</strong>: i.e., a complete lack of energy in a system.
 <ul>
@@ -210,7 +218,11 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 </ul></li>
 </ul></li>
+<li>You can use the following equation to convert between Celsius and Kelvin:</li>
 </ul>
+<p><span id="eq-Kelvin"><span class="math display">\[
+T(K) = T(\deg C) + 273.15
+\tag{1}\]</span></span></p>
 <div class="cell">
 <div class="cell-output-display">
 <div id="tbl-si-Base" class="anchored">
@@ -455,7 +467,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="even">
 <td style="text-align: left;"><span class="math inline">\(e\)</span></td>
 <td style="text-align: left;">Vapor pressure</td>
-<td style="text-align: left;"><a href="#eq-Vapor-Pressure">Equation&nbsp;15</a></td>
+<td style="text-align: left;"><a href="#eq-Vapor-Pressure">Equation&nbsp;22</a></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><span class="math inline">\(T_w\)</span></td>
@@ -465,17 +477,17 @@ ul.task-list li input[type="checkbox"] {
 <tr class="even">
 <td style="text-align: left;"><span class="math inline">\(VDD\)</span></td>
 <td style="text-align: left;">Vapor density defect</td>
-<td style="text-align: left;"><a href="#eq-Vapor-Density-Deficit">Equation&nbsp;11</a></td>
+<td style="text-align: left;"><a href="#eq-Vapor-Density-Deficit">Equation&nbsp;19</a></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><span class="math inline">\(VPD\)</span></td>
 <td style="text-align: left;">Vapor pressure defect</td>
-<td style="text-align: left;"><a href="#eq-Vapor-Pressure-Deficit">Equation&nbsp;13</a></td>
+<td style="text-align: left;"><a href="#eq-Vapor-Pressure-Deficit">Equation&nbsp;21</a></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><span class="math inline">\(\rho_v\)</span></td>
 <td style="text-align: left;">Vapor density</td>
-<td style="text-align: left;"><a href="#eq-Vapor-Density">Equation&nbsp;12</a></td>
+<td style="text-align: left;"><a href="#eq-Vapor-Density">Equation&nbsp;20</a></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><span class="math inline">\(T_d\)</span></td>
@@ -493,7 +505,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left;"><a href="#tbl-saturation">Table&nbsp;5</a></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span class="math inline">\(e^* (T)\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(e^*(T)\)</span></td>
 <td style="text-align: left;">Saturation vapor pressure at temperature T</td>
 <td style="text-align: left;">Maximum possible vapor pressure for a parcel of air at temperature T <a href="#tbl-saturation">Table&nbsp;5</a></td>
 </tr>
@@ -519,7 +531,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th style="text-align: left;">Symbol</th>
 <th style="text-align: left;">Name</th>
-<th style="text-align: left;">Value</th>
+<th style="text-align: left;">Definition</th>
 </tr>
 </thead>
 <tbody>
@@ -542,6 +554,26 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left;"><span class="math inline">\(\gamma\)</span></td>
 <td style="text-align: left;">Psychrometric constant (at 20 <span class="math inline">\(^{\circ}\)</span> C)</td>
 <td style="text-align: left;">0.495 g m <span class="math inline">\(^{-3}\)</span> K <span class="math inline">\({^-1}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(\sigma_b\)</span></td>
+<td style="text-align: left;">Stefan-Boltzman constant</td>
+<td style="text-align: left;">5.67 x 10<span class="math inline">\(^{-8}\)</span> W m<span class="math inline">\(^{-2}\)</span> K<span class="math inline">\(^{-1}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(c\)</span></td>
+<td style="text-align: left;">Speed of Light</td>
+<td style="text-align: left;">299792458 m s<span class="math inline">\(^{-1}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(h\)</span></td>
+<td style="text-align: left;">Planks constant</td>
+<td style="text-align: left;">6.62607015*10<span class="math inline">\(^{−34}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(b\)</span></td>
+<td style="text-align: left;">Wein’s dsiplacement constant</td>
+<td style="text-align: left;">2898 <span class="math inline">\(\mu m K\)</span></td>
 </tr>
 </tbody>
 </table>
@@ -817,97 +849,142 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="albedo">Albedo</h2>
 <p><span id="eq-Albedo"><span class="math display">\[
 albedo = \alpha_{SW} = \frac{\uparrow SW}{\downarrow SW}
-\tag{1}\]</span></span></p>
+\tag{2}\]</span></span></p>
+</section>
+<section id="water-balance" class="level2">
+<h2 class="anchored" data-anchor-id="water-balance">Water Balance</h2>
+<p><span id="eq-Water-Balance"><span class="math display">\[
+R_n=H+LE+G+E*
+\tag{3}\]</span></span></p>
+</section>
+<section id="energy-of-photon" class="level2">
+<h2 class="anchored" data-anchor-id="energy-of-photon">Energy of Photon</h2>
+<p><span id="eq-Energy-of-Photon"><span class="math display">\[
+e = hv
+\tag{4}\]</span></span></p>
+</section>
+<section id="frequency" class="level2">
+<h2 class="anchored" data-anchor-id="frequency">Frequency</h2>
+<p><span id="eq-Frequency"><span class="math display">\[
+v=\frac{c}{\lambda}
+\tag{5}\]</span></span></p>
 </section>
 <section id="ideal-gas-law" class="level2">
 <h2 class="anchored" data-anchor-id="ideal-gas-law">Ideal Gas Law</h2>
 <p><span id="eq-Ideal-Gas-Law"><span class="math display">\[
 PV=nRT
-\tag{2}\]</span></span></p>
+\tag{6}\]</span></span></p>
+</section>
+<section id="kelvin" class="level2">
+<h2 class="anchored" data-anchor-id="kelvin">Kelvin</h2>
+<p><span id="eq-Kelvin"><span class="math display">\[
+T(K) = T(\deg C) + 273.15
+\tag{7}\]</span></span></p>
+</section>
+<section id="kirchhoffs-law" class="level2">
+<h2 class="anchored" data-anchor-id="kirchhoffs-law">Kirchhoffs Law</h2>
+<p><span id="eq-Kirchhoffs-Law"><span class="math display">\[
+a_lambda = \epsilon_\lambda
+\tag{8}\]</span></span></p>
 </section>
 <section id="net-radiation" class="level2">
 <h2 class="anchored" data-anchor-id="net-radiation">Net Radiation</h2>
 <p><span id="eq-Net-Radiation"><span class="math display">\[
 R_n = (SW \downarrow - SW \uparrow) + (LW \downarrow - LW \uparrow)
-\tag{3}\]</span></span></p>
+\tag{9}\]</span></span></p>
+</section>
+<section id="planks-law" class="level2">
+<h2 class="anchored" data-anchor-id="planks-law">Planks Law</h2>
+<p><span id="eq-Planks-Law"><span class="math display">\[
+E = \frac{2*h*c}{\lambda^{5}}*\frac{1}{e^{\frac{h*c}{\lambda*\sigma_b*T}}-1}
+\tag{10}\]</span></span></p>
 </section>
 <section id="radiation-balance" class="level2">
 <h2 class="anchored" data-anchor-id="radiation-balance">Radiation Balance</h2>
 <p><span id="eq-Radiation-Balance"><span class="math display">\[
 a_\lambda + \tau_\lambda + \alpha_\lambda = 1
-\tag{4}\]</span></span></p>
+\tag{11}\]</span></span></p>
 </section>
 <section id="relative-humidity" class="level2">
 <h2 class="anchored" data-anchor-id="relative-humidity">Relative Humidity</h2>
 <p><span id="eq-Relative-Humidity"><span class="math display">\[
 RH = \frac{\rho_v}{\rho^*_v(T)}
-\tag{5}\]</span></span></p>
+\tag{12}\]</span></span></p>
 </section>
 <section id="mean" class="level2">
 <h2 class="anchored" data-anchor-id="mean">Mean</h2>
 <p><span id="eq-Mean"><span class="math display">\[
 \bar{x} =  \sum_{n=1}^{N} \frac{x_n}{N}
-\tag{6}\]</span></span></p>
+\tag{13}\]</span></span></p>
 </section>
 <section id="standard-deviation" class="level2">
 <h2 class="anchored" data-anchor-id="standard-deviation">Standard Deviation</h2>
 <p><span id="eq-Standard-Deviation"><span class="math display">\[
 \sigma =  \frac{\sum_{n=1}^{N} x_n - \bar{x}}{N}
-\tag{7}\]</span></span></p>
+\tag{14}\]</span></span></p>
 </section>
 <section id="z-score-normalization" class="level2">
 <h2 class="anchored" data-anchor-id="z-score-normalization">z Score Normalization</h2>
 <p><span id="eq-z-Score-Normalization"><span class="math display">\[
 z = \frac{x-\bar{x}}{\sigma}
-\tag{8}\]</span></span></p>
+\tag{15}\]</span></span></p>
 </section>
-<section id="stefan-boltzman-law" class="level2">
-<h2 class="anchored" data-anchor-id="stefan-boltzman-law">Stefan Boltzman Law</h2>
-<p><span id="eq-Stefan-Boltzman-Law"><span class="math display">\[
-LW\uparrow = \sigma T^4
-\tag{9}\]</span></span></p>
+<section id="stefan-boltzman-law-grey-body-adjusted" class="level2">
+<h2 class="anchored" data-anchor-id="stefan-boltzman-law-grey-body-adjusted">Stefan Boltzman Law Grey Body Adjusted</h2>
+<p><span id="eq-Stefan-Boltzman-Law-Grey-Body-Adjusted"><span class="math display">\[
+E_g = \epsilon\sigma_b T^4 + (1-\epsilon) * (SW\downarrow+LW\downarrow)
+\tag{16}\]</span></span></p>
 </section>
 <section id="stefan-boltzman-law-grey-body" class="level2">
 <h2 class="anchored" data-anchor-id="stefan-boltzman-law-grey-body">Stefan Boltzman Law Grey Body</h2>
 <p><span id="eq-Stefan-Boltzman-Law-Grey-Body"><span class="math display">\[
-LW\uparrow = \epsilon\sigma T^4 + (1-\epsilon) LW\downarrow
-\tag{10}\]</span></span></p>
+E_g = \epsilon\sigma_b T^4
+\tag{17}\]</span></span></p>
+</section>
+<section id="stefan-boltzman-law" class="level2">
+<h2 class="anchored" data-anchor-id="stefan-boltzman-law">Stefan Boltzman Law</h2>
+<p><span id="eq-Stefan-Boltzman-Law"><span class="math display">\[
+E_b = \sigma_b T^4
+\tag{18}\]</span></span></p>
 </section>
 <section id="vapor-density-deficit" class="level2">
 <h2 class="anchored" data-anchor-id="vapor-density-deficit">Vapor Density Deficit</h2>
 <p><span id="eq-Vapor-Density-Deficit"><span class="math display">\[
 VDD = \rho^*_v(T) - \rho_v
-\tag{11}\]</span></span></p>
+\tag{19}\]</span></span></p>
 </section>
 <section id="vapor-density" class="level2">
 <h2 class="anchored" data-anchor-id="vapor-density">Vapor Density</h2>
 <p><span id="eq-Vapor-Density"><span class="math display">\[
 \rho_v = \rho^*_{vw}(T_w) - \gamma(T-T_w)
-\tag{12}\]</span></span></p>
+\tag{20}\]</span></span></p>
 </section>
 <section id="vapor-pressure-deficit" class="level2">
 <h2 class="anchored" data-anchor-id="vapor-pressure-deficit">Vapor Pressure Deficit</h2>
 <p><span id="eq-Vapor-Pressure-Deficit"><span class="math display">\[
 VPD = e*(T) - e
-\tag{13}\]</span></span></p>
+\tag{21}\]</span></span></p>
 </section>
 <section id="vapor-pressure" class="level2">
 <h2 class="anchored" data-anchor-id="vapor-pressure">Vapor Pressure</h2>
 <p><span id="eq-Vapor-Pressure"><span class="math display">\[
 e = \rho_v R_v T
-\tag{14}\]</span></span></p>
-<p><span id="eq-Vapor-Pressure"><span class="math display">\[
-e = \rho_v R_v T
-\tag{15}\]</span></span></p>
-<p><span id="eq-Kelvin-to-Celsius"><span class="math display">\[
-^{\circ} C = K - 273.15
-\tag{16}\]</span></span></p>
+\tag{22}\]</span></span></p>
 </section>
+<section id="water-balance-1" class="level2">
+<h2 class="anchored" data-anchor-id="water-balance-1">Water Balance</h2>
+<p><span id="eq-Water-Balance"><span class="math display">\[
+P=ET+\delta S+Q
+\tag{23}\]</span></span></p>
 </section>
-<section id="constants-1" class="level1">
-<h1>Constants</h1>
+<section id="weins-law" class="level2">
+<h2 class="anchored" data-anchor-id="weins-law">Weins Law</h2>
+<p><span id="eq-Weins-Law"><span class="math display">\[
+\lambda_{max} = \frac{b}{T}
+\tag{24}\]</span></span></p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
