@@ -231,711 +231,781 @@
     "text": "Albedo\n\\[\nalbedo = \\alpha_{SW} = \\frac{\\uparrow SW}{\\downarrow SW}\n\\tag{2}\\]"
   },
   {
+    "objectID": "Resources.html#cosine-law-of-illumination",
+    "href": "Resources.html#cosine-law-of-illumination",
+    "title": "Additional Resources",
+    "section": "Cosine Law of Illumination",
+    "text": "Cosine Law of Illumination\n\\[\nR_s = R_p cos(\\theta)\n\\tag{3}\\]"
+  },
+  {
     "objectID": "Resources.html#water-balance",
     "href": "Resources.html#water-balance",
     "title": "Additional Resources",
     "section": "Water Balance",
-    "text": "Water Balance\n\\[\nR_n=H+LE+G+E*\n\\tag{3}\\]"
+    "text": "Water Balance\n\\[\nR_n=H+LE+G+E*\n\\tag{4}\\]"
   },
   {
     "objectID": "Resources.html#energy-of-photon",
     "href": "Resources.html#energy-of-photon",
     "title": "Additional Resources",
     "section": "Energy of Photon",
-    "text": "Energy of Photon\n\\[\ne = hv\n\\tag{4}\\]"
+    "text": "Energy of Photon\n\\[\ne = hv\n\\tag{5}\\]"
   },
   {
     "objectID": "Resources.html#frequency",
     "href": "Resources.html#frequency",
     "title": "Additional Resources",
     "section": "Frequency",
-    "text": "Frequency\n\\[\nv=\\frac{c}{\\lambda}\n\\tag{5}\\]"
+    "text": "Frequency\n\\[\nv=\\frac{c}{\\lambda}\n\\tag{6}\\]"
   },
   {
     "objectID": "Resources.html#ideal-gas-law",
     "href": "Resources.html#ideal-gas-law",
     "title": "Additional Resources",
     "section": "Ideal Gas Law",
-    "text": "Ideal Gas Law\n\\[\nPV=nRT\n\\tag{6}\\]"
+    "text": "Ideal Gas Law\n\\[\nPV=nRT\n\\tag{7}\\]"
   },
   {
     "objectID": "Resources.html#kelvin",
     "href": "Resources.html#kelvin",
     "title": "Additional Resources",
     "section": "Kelvin",
-    "text": "Kelvin\n\\[\nT(K) = T(\\deg C) + 273.15\n\\tag{7}\\]"
+    "text": "Kelvin\n\\[\nT(K) = T(\\deg C) + 273.15\n\\tag{8}\\]"
   },
   {
     "objectID": "Resources.html#kirchhoffs-law",
     "href": "Resources.html#kirchhoffs-law",
     "title": "Additional Resources",
     "section": "Kirchhoffs Law",
-    "text": "Kirchhoffs Law\n\\[\na_lambda = \\epsilon_\\lambda\n\\tag{8}\\]"
+    "text": "Kirchhoffs Law\n\\[\na_lambda = \\epsilon_\\lambda\n\\tag{9}\\]"
   },
   {
     "objectID": "Resources.html#net-radiation",
     "href": "Resources.html#net-radiation",
     "title": "Additional Resources",
     "section": "Net Radiation",
-    "text": "Net Radiation\n\\[\nR_n = (SW \\downarrow - SW \\uparrow) + (LW \\downarrow - LW \\uparrow)\n\\tag{9}\\]"
+    "text": "Net Radiation\n\\[\nR_n = (SW \\downarrow - SW \\uparrow) + (LW \\downarrow - LW \\uparrow)\n\\tag{10}\\]"
   },
   {
     "objectID": "Resources.html#planks-law",
     "href": "Resources.html#planks-law",
     "title": "Additional Resources",
     "section": "Planks Law",
-    "text": "Planks Law\n\\[\nE = \\frac{2*h*c}{\\lambda^{5}}*\\frac{1}{e^{\\frac{h*c}{\\lambda*\\sigma_b*T}}-1}\n\\tag{10}\\]"
+    "text": "Planks Law\n\\[\nE = \\frac{2*h*c}{\\lambda^{5}}*\\frac{1}{e^{\\frac{h*c}{\\lambda*\\sigma_b*T}}-1}\n\\tag{11}\\]"
   },
   {
     "objectID": "Resources.html#radiation-balance",
     "href": "Resources.html#radiation-balance",
     "title": "Additional Resources",
     "section": "Radiation Balance",
-    "text": "Radiation Balance\n\\[\na_\\lambda + \\tau_\\lambda + \\alpha_\\lambda = 1\n\\tag{11}\\]"
+    "text": "Radiation Balance\n\\[\na_\\lambda + \\tau_\\lambda + \\alpha_\\lambda = 1\n\\tag{12}\\]"
   },
   {
     "objectID": "Resources.html#relative-humidity",
     "href": "Resources.html#relative-humidity",
     "title": "Additional Resources",
     "section": "Relative Humidity",
-    "text": "Relative Humidity\n\\[\nRH = \\frac{\\rho_v}{\\rho^*_v(T)}\n\\tag{12}\\]"
+    "text": "Relative Humidity\n\\[\nRH = \\frac{\\rho_v}{\\rho^*_v(T)}\n\\tag{13}\\]"
   },
   {
     "objectID": "Resources.html#mean",
     "href": "Resources.html#mean",
     "title": "Additional Resources",
     "section": "Mean",
-    "text": "Mean\n\\[\n\\bar{x} =  \\sum_{n=1}^{N} \\frac{x_n}{N}\n\\tag{13}\\]"
+    "text": "Mean\n\\[\n\\bar{x} =  \\sum_{n=1}^{N} \\frac{x_n}{N}\n\\tag{14}\\]"
   },
   {
     "objectID": "Resources.html#standard-deviation",
     "href": "Resources.html#standard-deviation",
     "title": "Additional Resources",
     "section": "Standard Deviation",
-    "text": "Standard Deviation\n\\[\n\\sigma =  \\frac{\\sum_{n=1}^{N} x_n - \\bar{x}}{N}\n\\tag{14}\\]"
+    "text": "Standard Deviation\n\\[\n\\sigma =  \\frac{\\sum_{n=1}^{N} x_n - \\bar{x}}{N}\n\\tag{15}\\]"
   },
   {
     "objectID": "Resources.html#z-score-normalization",
     "href": "Resources.html#z-score-normalization",
     "title": "Additional Resources",
     "section": "z Score Normalization",
-    "text": "z Score Normalization\n\\[\nz = \\frac{x-\\bar{x}}{\\sigma}\n\\tag{15}\\]"
+    "text": "z Score Normalization\n\\[\nz = \\frac{x-\\bar{x}}{\\sigma}\n\\tag{16}\\]"
   },
   {
     "objectID": "Resources.html#stefan-boltzman-law-grey-body-adjusted",
     "href": "Resources.html#stefan-boltzman-law-grey-body-adjusted",
     "title": "Additional Resources",
     "section": "Stefan Boltzman Law Grey Body Adjusted",
-    "text": "Stefan Boltzman Law Grey Body Adjusted\n\\[\nE_g = \\epsilon\\sigma_b T^4 + (1-\\epsilon) * (SW\\downarrow+LW\\downarrow)\n\\tag{16}\\]"
+    "text": "Stefan Boltzman Law Grey Body Adjusted\n\\[\nE_g = \\epsilon\\sigma_b T^4 + (1-\\epsilon) * (SW\\downarrow+LW\\downarrow)\n\\tag{17}\\]"
   },
   {
     "objectID": "Resources.html#stefan-boltzman-law-grey-body",
     "href": "Resources.html#stefan-boltzman-law-grey-body",
     "title": "Additional Resources",
     "section": "Stefan Boltzman Law Grey Body",
-    "text": "Stefan Boltzman Law Grey Body\n\\[\nE_g = \\epsilon\\sigma_b T^4\n\\tag{17}\\]"
+    "text": "Stefan Boltzman Law Grey Body\n\\[\nE_g = \\epsilon\\sigma_b T^4\n\\tag{18}\\]"
   },
   {
     "objectID": "Resources.html#stefan-boltzman-law",
     "href": "Resources.html#stefan-boltzman-law",
     "title": "Additional Resources",
     "section": "Stefan Boltzman Law",
-    "text": "Stefan Boltzman Law\n\\[\nE_b = \\sigma_b T^4\n\\tag{18}\\]"
+    "text": "Stefan Boltzman Law\n\\[\nE_b = \\sigma_b T^4\n\\tag{19}\\]"
+  },
+  {
+    "objectID": "Resources.html#total-irradiance",
+    "href": "Resources.html#total-irradiance",
+    "title": "Additional Resources",
+    "section": "Total Irradiance",
+    "text": "Total Irradiance\n\\[\nSW\\downarrow = SW\\downarrow_s + SW\\downarrow_d\n\\tag{20}\\]"
   },
   {
     "objectID": "Resources.html#vapor-density-deficit",
     "href": "Resources.html#vapor-density-deficit",
     "title": "Additional Resources",
     "section": "Vapor Density Deficit",
-    "text": "Vapor Density Deficit\n\\[\nVDD = \\rho^*_v(T) - \\rho_v\n\\tag{19}\\]"
+    "text": "Vapor Density Deficit\n\\[\nVDD = \\rho^*_v(T) - \\rho_v\n\\tag{21}\\]"
   },
   {
     "objectID": "Resources.html#vapor-density",
     "href": "Resources.html#vapor-density",
     "title": "Additional Resources",
     "section": "Vapor Density",
-    "text": "Vapor Density\n\\[\n\\rho_v = \\rho^*_{vw}(T_w) - \\gamma(T-T_w)\n\\tag{20}\\]"
+    "text": "Vapor Density\n\\[\n\\rho_v = \\rho^*_{vw}(T_w) - \\gamma(T-T_w)\n\\tag{22}\\]"
   },
   {
     "objectID": "Resources.html#vapor-pressure-deficit",
     "href": "Resources.html#vapor-pressure-deficit",
     "title": "Additional Resources",
     "section": "Vapor Pressure Deficit",
-    "text": "Vapor Pressure Deficit\n\\[\nVPD = e*(T) - e\n\\tag{21}\\]"
+    "text": "Vapor Pressure Deficit\n\\[\nVPD = e*(T) - e\n\\tag{23}\\]"
   },
   {
     "objectID": "Resources.html#vapor-pressure",
     "href": "Resources.html#vapor-pressure",
     "title": "Additional Resources",
     "section": "Vapor Pressure",
-    "text": "Vapor Pressure\n\\[\ne = \\rho_v R_v T\n\\tag{22}\\]"
+    "text": "Vapor Pressure\n\\[\ne = \\rho_v R_v T\n\\tag{24}\\]"
   },
   {
     "objectID": "Resources.html#water-balance-1",
     "href": "Resources.html#water-balance-1",
     "title": "Additional Resources",
     "section": "Water Balance",
-    "text": "Water Balance\n\\[\nP=ET+\\delta S+Q\n\\tag{23}\\]"
+    "text": "Water Balance\n\\[\nP=ET+\\delta S+Q\n\\tag{25}\\]"
   },
   {
     "objectID": "Resources.html#weins-law",
     "href": "Resources.html#weins-law",
     "title": "Additional Resources",
     "section": "Weins Law",
-    "text": "Weins Law\n\\[\n\\lambda_{max} = \\frac{b}{T}\n\\tag{24}\\]"
+    "text": "Weins Law\n\\[\n\\lambda_{max} = \\frac{b}{T}\n\\tag{26}\\]"
   },
   {
     "objectID": "Slides/Lecture1.html#learning-objectives",
     "href": "Slides/Lecture1.html#learning-objectives",
-    "title": "Atmospheric Environments",
+    "title": "Energy",
     "section": "Learning Objectives",
     "text": "Learning Objectives\n\nUnderstand which forms of energy are important for driving the climate system.\nExplain the difference between heat and temperature.\nDescribe the mechanisms by which energy is transported.\nUnderstand how we account for energy and mass conversions in the atmosphere."
   },
   {
     "objectID": "Slides/Lecture1.html#iclicker",
     "href": "Slides/Lecture1.html#iclicker",
-    "title": "Atmospheric Environments",
+    "title": "Energy",
     "section": "iClicker",
     "text": "iClicker\nWe’ll try using I clicker today:\n\nUse the join code: PXPZ\nOr follow this link: https://join.iclicker.com/PXPZ\n\nIf these options don’t work, go to:\n\nstudent.iclicker.com\nThen search for Atmospheric Environments ## iClicker\n\nWe’ll try using I clicker today:\n\nUse the join code: PXPZ\nOr follow this link: https://join.iclicker.com/PXPZ\n\nIf these options don’t work, go to:\n\nstudent.iclicker.com\nThen search for Atmospheric Environments"
   },
   {
     "objectID": "Slides/Lecture1.html#which-forms-of-energy-are-important-in-the-atmosphere",
     "href": "Slides/Lecture1.html#which-forms-of-energy-are-important-in-the-atmosphere",
-    "title": "Atmospheric Environments",
+    "title": "Energy",
     "section": "Which forms of energy are important in the atmosphere?",
     "text": "Which forms of energy are important in the atmosphere?"
   },
   {
     "objectID": "Slides/Lecture1.html#test-poll",
     "href": "Slides/Lecture1.html#test-poll",
-    "title": "Atmospheric Environments",
+    "title": "Energy",
     "section": "Test Poll",
     "text": "Test Poll\nI am able to join and answer:\n\nA - Yes\nB - No"
   },
   {
     "objectID": "Slides/Lecture1.html#test-poll-1",
     "href": "Slides/Lecture1.html#test-poll-1",
-    "title": "Atmospheric Environments",
+    "title": "Energy",
     "section": "Test Poll",
     "text": "Test Poll\nI am able to join and answer:\n\nA - Yes\nB - No"
   },
   {
     "objectID": "Slides/Lecture1.html#forms-of-energy-in-the-atmosphere",
     "href": "Slides/Lecture1.html#forms-of-energy-in-the-atmosphere",
-    "title": "Atmospheric Environments",
+    "title": "Energy",
     "section": "Forms of energy in the atmosphere",
     "text": "Forms of energy in the atmosphere\n\nRadiation: electromagnetic waves (e.g., sunlight)\nSensible heat: thermal energy we can feel (e.g., warm air, cold ice)\nLatent heat: phase changes of a water (e.g., evaporation, condensation)\nChemical energy: bonds of atoms (e.g., photosynthesis)\nKinetic: from motion (e.g., winds)\nGeopotential: position in gravitational field\n\n\nThis is an important slide and worth memorizing. Remember “sensible heat” is heat that can be “sensed” or felt. We can measure sensible heat with a thermometer. Latent means “hidden” and therefore is associated with the energy used to change phases of water."
   },
   {
     "objectID": "Slides/Lecture1.html#heat-vs.-temperature",
     "href": "Slides/Lecture1.html#heat-vs.-temperature",
-    "title": "Atmospheric Environments",
+    "title": "Energy",
     "section": "Heat vs. Temperature",
     "text": "Heat vs. Temperature\n\n\nHeat is energy. Total thermal energy content of a body.\n\nSum of kinetic and potential energy\n\n\nTemperature a (relative) measure of thermal energy.\n\nAverage random kinetic energy\n\nThe ability of a body to transfer thermal energy\n\n\n\n\n\nThe difference between HEAT and TEMPERATURE is important and a little subtle. To illustrate this, can you think of a situation where heat is added but temperature does not change?? Perhaps the one you know best is when water reaches boiling point in a pot on the stove - its temperature stays at 100oC but heat continues to be added. Note the K in the slide stands for temperature in Kelvins."
   },
   {
     "objectID": "Slides/Lecture1.html#heat-vs.-temperature-1",
     "href": "Slides/Lecture1.html#heat-vs.-temperature-1",
-    "title": "Atmospheric Environments",
+    "title": "Energy",
     "section": "Heat vs. Temperature",
     "text": "Heat vs. Temperature\n\n\nHeat is energy. Total thermal energy content of a body.\n\nTravels from hotter to colder objects\nCan do work\nOften expressed in Joules (J)\n\nJ = 1 N x 1 m\nNewton (N) = 1 kg m s-2\n\n\n\nTemperature a (relative) measure of thermal energy.\n\nIncreases/decreases when heat is added/removed\nCannot do work"
   },
   {
     "objectID": "Slides/Lecture1.html#temperature-scales-compared",
     "href": "Slides/Lecture1.html#temperature-scales-compared",
-    "title": "Atmospheric Environments",
+    "title": "Energy",
     "section": "Temperature scales compared",
     "text": "Temperature scales compared\n\n\nSeveral scales have been invented:\n\nFahrenheit, Celsius, Kelvin…\nAccording to the SI system\n\nWe should use Kelvin (K)\nor Celsius (°C)\n\nFor absolute temperatures only\n\n\nConversion:\n\n\\[\nT(K) = T(\\deg C) + 273.15\n\\qquad(1)\\]\n\n\n\n\n\nTemperature scales have changed over time and really only developed in response to the ability to blow glass tubes (in Italy) in which some kind of thermally responsive liquid could be contained (e.g. mercury, alcohol). We will use the absolute temperature scale (K) a lot in this course. For example a sunny 20 C day in Vancouver would be 293.15 K"
   },
   {
     "objectID": "Slides/Lecture1.html#three-states-of-water",
     "href": "Slides/Lecture1.html#three-states-of-water",
-    "title": "Atmospheric Environments",
+    "title": "Energy",
     "section": "Three States of Water",
     "text": "Three States of Water\n\n\nHere is an example of the three states of water: LIQUID, ICE, GAS (Vapour)."
   },
   {
     "objectID": "Slides/Lecture1.html#states-of-water-iclicker",
     "href": "Slides/Lecture1.html#states-of-water-iclicker",
-    "title": "Atmospheric Environments",
+    "title": "Energy",
     "section": "States of Water (iClicker)",
     "text": "States of Water (iClicker)\nWhich of the following are not states of water? ## States of Water (iClicker)\nWhich of the following are not states of water?\n\nA: Ice\nB: Liquid\nC: Vapor (gas)\nD: Air\nA: Ice\nB: Liquid\nC: Vapor (gas)\nD: Air"
   },
   {
     "objectID": "Slides/Lecture1.html#state-changes-of-water",
     "href": "Slides/Lecture1.html#state-changes-of-water",
-    "title": "Atmospheric Environments",
+    "title": "Energy",
     "section": "State changes of water",
     "text": "State changes of water\n  \n  \n\n\n\n\n\n\n\n\nThe next 4 slides will show the changes of phase of water and the SIX processes that are possible. Also shown are the amounts of energy per kilogram of water associated with each phase change. The next 4 slides will show the changes of phase of water and the SIX processes that are possible. Also shown are the amounts of energy per kilogram of water associated with each phase change."
   },
   {
     "objectID": "Slides/Lecture1.html#state-changes-of-water-1",
     "href": "Slides/Lecture1.html#state-changes-of-water-1",
-    "title": "Atmospheric Environments",
+    "title": "Energy",
     "section": "State changes of water",
     "text": "State changes of water"
   },
   {
     "objectID": "Slides/Lecture1.html#latent-heat",
     "href": "Slides/Lecture1.html#latent-heat",
-    "title": "Atmospheric Environments",
+    "title": "Energy",
     "section": "Latent Heat",
     "text": "Latent Heat\n  \n\n\n\n\n\n\n\n\nThe main point here is that because energy is required to change phase we talk about this type of energy use as LATENT HEAT.NOTICE the large amounts of energy associated with Evaporation and Condensation, compared to melting and freezing. In evaporation larges amounts of heat are required and are the reason you feel cold (heat taken from your body) when water evaporates from your body after coming out of a swimming pool. Similarly, when water vapour condenses into a liquid, large amounts of heat are released into the atmosphere. This is of course a way for energy to be from the tropics to mid latitudes. The main point here is that because energy is required to change phase we talk about this type of energy use as LATENT HEAT.NOTICE the large amounts of energy associated with Evaporation and Condensation, compared to melting and freezing. In evaporation larges amounts of heat are required and are the reason you feel cold (heat taken from your body) when water evaporates from your body after coming out of a swimming pool. Similarly, when water vapour condenses into a liquid, large amounts of heat are released into the atmosphere. This is of course a way for energy to be from the tropics to mid latitudes."
   },
   {
     "objectID": "Slides/Lecture1.html#latent-heat-1",
     "href": "Slides/Lecture1.html#latent-heat-1",
-    "title": "Atmospheric Environments",
+    "title": "Energy",
     "section": "Latent Heat",
     "text": "Latent Heat"
   },
   {
     "objectID": "Slides/Lecture1.html#latent-heat-2",
     "href": "Slides/Lecture1.html#latent-heat-2",
-    "title": "Atmospheric Environments",
+    "title": "Energy",
     "section": "Latent Heat",
     "text": "Latent Heat\n\n\nThe energy (\\(kJ\\: kg^{-1}\\)) required for water to change states varies with temperature.\n\n\n\n\nTable 1: Energy associated with phase changes of water at 0\\(^{\\circ}C\\)\n\n\nPhase change\nValue\n\n\n\n\nEvaporation  Condensation\n2501 \\(kJ kg^{-1}\\)\n\n\nMelting  Freezing\n334 \\(kJ kg^{-1}\\)\n\n\nSublimation  Deposition\n2835 \\(kJ kg^{-1}\\)\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 1: Latent heat of evaporation / condensation at different temperatures\n\n\n\n\n\n\nThe amount of heat involved in these processes is given the term “latent heat of…..” as we see in the above table. Notice that the amounts of energy required are dependent on temperature."
   },
   {
     "objectID": "Slides/Lecture1.html#latent-heat-of-vaporization",
     "href": "Slides/Lecture1.html#latent-heat-of-vaporization",
-    "title": "Atmospheric Environments",
+    "title": "Energy",
     "section": "Latent heat of vaporization",
     "text": "Latent heat of vaporization\nConversion from latent to sensible heat in a storm cloud is equivalent to the energy released from a small nuclear bomb.\n\n\n\nBased on the amount of latent heat picked up at the surface through evaporation\n\nReleased as water vapor condenses back into liquid water or freezes into ice."
   },
   {
     "objectID": "Slides/Lecture1.html#why-spray-liquid-water-on-a-tree",
     "href": "Slides/Lecture1.html#why-spray-liquid-water-on-a-tree",
-    "title": "Atmospheric Environments",
+    "title": "Energy",
     "section": "Why spray liquid water on a tree?",
     "text": "Why spray liquid water on a tree?\n\n\nIts seems counter-intuitive, but fine mist irrigation by sprinklers is used to reduce frost damage.\n\n\n\n\n\nThis example is the first of many that we will look at where farmers/orchardists etc. take advantage of atmospheric processes in order to prevent damage to crops/animals etc.."
   },
   {
     "objectID": "Slides/Lecture1.html#why-spray-liquid-water-on-a-tree-1",
     "href": "Slides/Lecture1.html#why-spray-liquid-water-on-a-tree-1",
-    "title": "Atmospheric Environments",
+    "title": "Energy",
     "section": "Why spray liquid water on a tree?",
     "text": "Why spray liquid water on a tree?\n\n\nLatent heat of fusion:\n\nSprayed liquid water releases latent heat of fusion as it becomes ice\n\nPrevents a damaging drop in temperature of almonds\n\n\n\n\n\n\n\nThis example is the first of many that we will look at where farmers/orchardists etc. take advantage of atmospheric processes in order to prevent damage to crops/animals etc.."
   },
   {
     "objectID": "Slides/Lecture1.html#energy-transfer-in-the-atmosphere",
     "href": "Slides/Lecture1.html#energy-transfer-in-the-atmosphere",
-    "title": "Atmospheric Environments",
+    "title": "Energy",
     "section": "Energy transfer in the atmosphere",
     "text": "Energy transfer in the atmosphere\n\n\nHere we continue with the definition of basic physical processes that you are hopefully very familiar with. Examples would be: Radiation: light coming from the sun Conduction: heat transferred from molecule to molecule as you would see in the soil or a rod that is heated in a campfire Convection: heat transferred by a moving fluid such as in a boiling pot, milk poured into a cup of coffee or cumulus clouds in the atmosphere."
   },
   {
     "objectID": "Slides/Lecture1.html#convection",
     "href": "Slides/Lecture1.html#convection",
-    "title": "Atmospheric Environments",
+    "title": "Energy",
     "section": "Convection",
     "text": "Convection\nThere are free and forced types of convection.\n\n\n\nForced convection would be air movement caused by a fan or the wind.\n\n\n\n\n\nFree convection of heat from hot ground\n\n\n\n\n\nNOTE: CONVECTION is associated with vertical motion in the atmosphere while ADVECTION refers to horizontal motion. Free convection is when air rises of its own accord because it is warmer and less dense than the surrounding air. Forced convection is when air is forced up and over a barrier such as a hill. NOTE: CONVECTION is associated with vertical motion in the atmosphere while ADVECTION refers to horizontal motion. Free convection is when air rises of its own accord because it is warmer and less dense than the surrounding air. Forced convection is when air is forced up and over a barrier such as a hill."
   },
   {
     "objectID": "Slides/Lecture1.html#fluxes-and-flux-densities",
     "href": "Slides/Lecture1.html#fluxes-and-flux-densities",
-    "title": "Atmospheric Environments",
+    "title": "Energy",
     "section": "Fluxes and flux densities",
     "text": "Fluxes and flux densities\n\n\nHeat\n\nAka. Energy\n\nJ (Joules)\n\n\n  \n\n\nHeat Flux\n\nFlow rate of energy\n\nAka. Power\nW = J s-1\n\n\n\n\nHeat Flux Density\n\nNet transfer of energy\n\nFlow rate of energy per unit area\nW m-2 = J s-1 m-2"
   },
   {
     "objectID": "Slides/Lecture1.html#heat-flux-iclicker",
     "href": "Slides/Lecture1.html#heat-flux-iclicker",
-    "title": "Atmospheric Environments",
+    "title": "Energy",
     "section": "Heat Flux (iClicker)",
     "text": "Heat Flux (iClicker)\nHeat always travels from:\n\nA: Hotter to colder\nB: Colder to hotter\nC: Either A or B"
   },
   {
     "objectID": "Slides/Lecture1.html#fluxes-and-flux-densities-1",
     "href": "Slides/Lecture1.html#fluxes-and-flux-densities-1",
-    "title": "Atmospheric Environments",
+    "title": "Energy",
     "section": "Fluxes and flux densities",
     "text": "Fluxes and flux densities\nGenerally speaking: flux densities can be positive or negative.\n\n\n\nSum of positive and negative fluxes\nThe sign will depend on your reference point.\n\nHeat will always go from hotter to colder object\nBut many fluxes are bi-directional."
   },
   {
     "objectID": "Slides/Lecture1.html#net-radiation",
     "href": "Slides/Lecture1.html#net-radiation",
-    "title": "Atmospheric Environments",
+    "title": "Energy",
     "section": "Net Radiation",
     "text": "Net Radiation\n\n\n\nIncoming radiation (sunlight)\nMinus reflected & emitted radiation"
   },
   {
     "objectID": "Slides/Lecture1.html#net-ecosystem-exchange-of-co2",
     "href": "Slides/Lecture1.html#net-ecosystem-exchange-of-co2",
-    "title": "Atmospheric Environments",
+    "title": "Energy",
     "section": "Net Ecosystem Exchange (of CO2)",
     "text": "Net Ecosystem Exchange (of CO2)\n\n\n\nCarbon uptake (photosynthesis)\nMinus carbon emission (respiration)"
   },
   {
     "objectID": "Slides/Lecture1.html#conservation-of-energy-and-mass",
     "href": "Slides/Lecture1.html#conservation-of-energy-and-mass",
-    "title": "Atmospheric Environments",
+    "title": "Energy",
     "section": "Conservation of energy and mass",
     "text": "Conservation of energy and mass\nOne of the most powerful laws used in analyzing organism-environment interaction is this Law of Conservation.\n\nNeither mass nor energy can be created or destroyed by any ordinary means.\nThe application is similar to reconciling your checking account i.e. you can construct a budget or balance to account for all inflows and outflows of heat and mass."
   },
   {
     "objectID": "Slides/Lecture1.html#conservation-of-energy-and-mass-1",
     "href": "Slides/Lecture1.html#conservation-of-energy-and-mass-1",
-    "title": "Atmospheric Environments",
+    "title": "Energy",
     "section": "Conservation of energy and mass",
     "text": "Conservation of energy and mass\n\n\nEnergy is continually being converted from one form to another\n\nNone is lost.\n\n\n\n\n\nA typhoon transports energy away from the equator"
   },
   {
     "objectID": "Slides/Lecture1.html#energy-conservation",
     "href": "Slides/Lecture1.html#energy-conservation",
-    "title": "Atmospheric Environments",
+    "title": "Energy",
     "section": "Energy conservation",
     "text": "Energy conservation"
   },
   {
     "objectID": "Slides/Lecture1.html#energy-balance-of-a-vegetated-surface",
     "href": "Slides/Lecture1.html#energy-balance-of-a-vegetated-surface",
-    "title": "Atmospheric Environments",
+    "title": "Energy",
     "section": "Energy balance of a vegetated surface",
     "text": "Energy balance of a vegetated surface"
   },
   {
     "objectID": "Slides/Lecture1.html#summary",
     "href": "Slides/Lecture1.html#summary",
-    "title": "Atmospheric Environments",
+    "title": "Energy",
     "section": "Summary",
     "text": "Summary\n\nDifference between heat and temperature\n\nHeat does work - temperature does not\n\nWhat is latent heat?\n\nEnergy associated with phase change (of water)\n\nFlux vs. flux density\n\nFlux density is energy transport per unit area per unit time (W m-2)"
   },
   {
     "objectID": "Slides/Lecture1.html#summary-1",
     "href": "Slides/Lecture1.html#summary-1",
-    "title": "Atmospheric Environments",
+    "title": "Energy",
     "section": "Summary",
     "text": "Summary\n\nEnergy and mass transfer mechanisms\n\nRadiation, conduction, and convection\n\nUnderstand the concept of energy and mass balances and their connectivity\n\nNeither mass nor energy can be created or destroyed by any ordinary means, just converted from one form to another.\n\n\n\n\nBack to Homepage"
   },
   {
     "objectID": "Slides/Lecture2.html#learning-objectives",
     "href": "Slides/Lecture2.html#learning-objectives",
-    "title": "Atmospheric Environments",
+    "title": "Radiation Laws",
     "section": "Learning Objectives",
     "text": "Learning Objectives\n\nUnderstand exactly what is radiation and why it is relevant in biometeorology & climate science.\nDescribe the quantity and quality of radiative energy.\nKnow which physical laws can be used to predict quantity and characteristics of radiation emitted."
   },
   {
-    "objectID": "Slides/Lecture2.html#radiation-laws-1",
-    "href": "Slides/Lecture2.html#radiation-laws-1",
-    "title": "Atmospheric Environments",
+    "objectID": "Slides/Lecture2.html#radiation-laws",
+    "href": "Slides/Lecture2.html#radiation-laws",
+    "title": "Radiation Laws",
     "section": "Radiation Laws",
     "text": "Radiation Laws\n\n\n\n\n\nAn solar flare erupting on Sun as seen from SOHO (Solar and Heliospheric Observatory)\n\n\n\n\n\n\nSunlight passing through a forest canopy\n\n\n\n\n\nIn order to lay the groundwork and foundation for what is to come in the course we need to understand some basics regarding temperature and energy"
   },
   {
     "objectID": "Slides/Lecture2.html#radiation-is-emitted-from-all-matter",
     "href": "Slides/Lecture2.html#radiation-is-emitted-from-all-matter",
-    "title": "Atmospheric Environments",
+    "title": "Radiation Laws",
     "section": "Radiation is emitted from all matter",
     "text": "Radiation is emitted from all matter\nGEOB 200 / APBI 244 students emit radiation!\n\n\nWe have all seen thermal infra-red imagery! ALL OBJECTS above absolute zero temperature emit radiation. The amount of radiation, and the wavelengths of that radiation are a function primarily of TEMPERATURE."
   },
   {
     "objectID": "Slides/Lecture2.html#characteristics-of-radiation",
     "href": "Slides/Lecture2.html#characteristics-of-radiation",
-    "title": "Atmospheric Environments",
+    "title": "Radiation Laws",
     "section": "Characteristics of Radiation",
     "text": "Characteristics of Radiation\nIt is the emission of energy as electromagnetic waves or as moving particles.\n\nCan travel in a vacuum (space).\n\nTravels in straight lines at up to \\(c = 3 * 10^{8} m s^{-1}\\)\n\nTakes 8 min 20 s to travel from the Sun to the Earth."
   },
   {
     "objectID": "Slides/Lecture2.html#the-electromagnetic-spectrum",
     "href": "Slides/Lecture2.html#the-electromagnetic-spectrum",
-    "title": "Atmospheric Environments",
+    "title": "Radiation Laws",
     "section": "The electromagnetic spectrum",
     "text": "The electromagnetic spectrum\n\n\n\n\n\n\n\n\nThe radaition coming from the sun (solar radiation) is part of spectrum of electromagnetic radiation that includes X-rays, microwaves, radio waves etc. Our eyes are adapted to see a large portion of that solar radiation which we call “visible” light. Each colour that we see is associated with a particular wavelength of solar radiation. Green light for example has a wavelength of approximately 0.5 micrometers (millions of a meter)."
   },
   {
     "objectID": "Slides/Lecture2.html#radiant-flux-density",
     "href": "Slides/Lecture2.html#radiant-flux-density",
-    "title": "Atmospheric Environments",
+    "title": "Radiation Laws",
     "section": "Radiant flux density",
     "text": "Radiant flux density\n\n\n\n\n\n\n\n\n\n\nThis a reminder from the previous lecture. We will use the term Wm-2 extensively through this class. It denotes the amount of energy (in this case radiative energy) passing through a square meter every second."
   },
   {
     "objectID": "Slides/Lecture2.html#section",
     "href": "Slides/Lecture2.html#section",
-    "title": "Atmospheric Environments",
+    "title": "Radiation Laws",
     "section": "",
     "text": "Wave-like\n\nWavelength \\(\\lambda\\) (m) & frequency \\(ν=\\frac{c}{\\lambda}\\)\n\nc is the speed of light.\n\n\n\\[\nv=\\frac{c}{\\lambda}\n\\qquad(1)\\]\n\n\nParticle-like\n\nEnergy emitted in discrete packets (Photons)\nEnergy of a photon\nPlanck’s constant: \\(h = 6.63 * 10^{-34} J s\\)\n\n\\[\ne = hv\n\\qquad(2)\\]\n\n\n\nPhysicists tend to think of the behaviour of waves in two different ways. The first is to describe them as have a frequency and wavelength (just like waves in the ocean). The other is to view radiation of being like Particles, that is being discrete packets of energy or photons."
   },
   {
     "objectID": "Slides/Lecture2.html#energy-content-of-a-photon-iclicker",
     "href": "Slides/Lecture2.html#energy-content-of-a-photon-iclicker",
-    "title": "Atmospheric Environments",
+    "title": "Radiation Laws",
     "section": "Energy content of a photon (iClicker)",
     "text": "Energy content of a photon (iClicker)\nWhat is the energy content (\\(e\\)) of one photon of yellow light (\\({\\lambda} = 0.55 \\mu m\\))?\n\n\n\\(v=\\frac{c}{\\lambda}\\)\n\\(e=hv\\)\n\nNote:\n\n\\(c = 3 * 10^{8} m s^{-1}\\)\n\\(h = 6.63 * 10^{-34} J s\\)\n\\(1 \\mu m = 10^{-6} m\\)\n\n\n\n\nA: \\(3.6 x 10^{-19} J\\)\nB: \\(4.1 x 10^{45} W\\)\nC: \\(0.1 x 10^{-3} s^{-1}\\)\nD: \\(10.1 x 10^{5} m^{2}\\)"
   },
   {
     "objectID": "Slides/Lecture2.html#energy-content-of-a-photon-iclicker-1",
     "href": "Slides/Lecture2.html#energy-content-of-a-photon-iclicker-1",
-    "title": "Atmospheric Environments",
+    "title": "Radiation Laws",
     "section": "Energy content of a photon (iClicker)",
     "text": "Energy content of a photon (iClicker)\nWhat is the energy content (\\(e\\)) of one photon of yellow light (\\({\\lambda} = 0.55 \\mu m\\))?\n\n\n\\(v=\\frac{c}{\\lambda}\\)\n\\(e=hv\\)\n\nNote:\n\n\\(c = 3 * 10^{8} m s^{-1}\\)\n\\(h = 6.63 * 10^{-34} J s\\)\n\\(1 \\mu m = 10^{-6} m\\)\n\n\n\nA: \\(3.6 x 10^{-19} J\\)\n\\(v = \\frac{3 * 10^{8} m s^{-1}}{6.63 * 10-34 J s}\\)\n\\(v = 5.5 * 10^{14} s^{-1}\\)\n\\(e = 6.63 * 10^{-34} J s * 5.5 * 10^{14} s^{-1}\\)\n\\(e = 3.6 * 10^{-19} J\\)\n\n\n\nThis is not absolutely necessary but for those of you with a mathematical bent, here is an example calculation of frequency and energy associated with yellow light."
   },
   {
     "objectID": "Slides/Lecture2.html#why-does-it-mater",
     "href": "Slides/Lecture2.html#why-does-it-mater",
-    "title": "Atmospheric Environments",
+    "title": "Radiation Laws",
     "section": "Why does it mater?",
     "text": "Why does it mater?\nThe calculation is important for photosynthesis. Plants respond to the number of photons they absorb rather than simply to the total energy absorbed.\n\n\n\nPlants can only use photons in the visible range of the spectrum\n\nThis region is also called photosynthetically active radiation (PAR)\n\n\n\n\n\n\n\nWe will talk a lot about PAR later in the course. Keep this idea in mind"
   },
   {
     "objectID": "Slides/Lecture2.html#radiation-vs.-temperature",
     "href": "Slides/Lecture2.html#radiation-vs.-temperature",
-    "title": "Atmospheric Environments",
+    "title": "Radiation Laws",
     "section": "Radiation vs. Temperature",
     "text": "Radiation vs. Temperature"
   },
   {
     "objectID": "Slides/Lecture2.html#wiens-displacement-law",
     "href": "Slides/Lecture2.html#wiens-displacement-law",
-    "title": "Atmospheric Environments",
+    "title": "Radiation Laws",
     "section": "Wien’s displacement law",
     "text": "Wien’s displacement law\nThe wavelength of maximum emission (\\(\\lambda_{max}\\)) from an object is inversely proportional to the temperature T (in K) of its surface:\n\n\n\\[\n\\lambda_{max} = \\frac{b}{T}\n\\qquad(3)\\]\n\nA general approximation for a ‘blackbody’\nb ≈ 2898 μm K"
   },
   {
     "objectID": "Slides/Lecture2.html#wiens-displacement-law-1",
     "href": "Slides/Lecture2.html#wiens-displacement-law-1",
-    "title": "Atmospheric Environments",
+    "title": "Radiation Laws",
     "section": "Wien’s displacement law",
     "text": "Wien’s displacement law\nCan be used to determine T of an object without having to measure the flux density of emitted radiation.\n\n\n\nAs \\(T \\uparrow\\) >> \\(λ_{max} \\downarrow\\)\n\nA hot iron:\nDull red > bright red > orange > yellow > white\n\nWavelength of red is longer than that of yellow"
   },
   {
     "objectID": "Slides/Lecture2.html#short-wave-vs.-long-wave",
     "href": "Slides/Lecture2.html#short-wave-vs.-long-wave",
-    "title": "Atmospheric Environments",
+    "title": "Radiation Laws",
     "section": "Short-wave vs. Long-wave",
     "text": "Short-wave vs. Long-wave"
   },
   {
     "objectID": "Slides/Lecture2.html#short-wave-vs.-long-wave-1",
     "href": "Slides/Lecture2.html#short-wave-vs.-long-wave-1",
-    "title": "Atmospheric Environments",
+    "title": "Radiation Laws",
     "section": "Short-wave vs. Long-wave",
     "text": "Short-wave vs. Long-wave\nThe exact boundary will vary from source to source; \\(\\lambda = 3 \\mu m\\) will be where we draw the distinction.\n\n\n\nShort-wave:\n\nHigher energy radiation from the sun\n\nLong-wave:\n\nLower energy thermal radiation"
   },
   {
     "objectID": "Slides/Lecture2.html#your-peak-emissions-iclicker",
     "href": "Slides/Lecture2.html#your-peak-emissions-iclicker",
-    "title": "Atmospheric Environments",
+    "title": "Radiation Laws",
     "section": "Your peak emissions (iClicker)",
     "text": "Your peak emissions (iClicker)\nThe human body temperature is typically around 37 \\(^{\\circ}\\) C, which is 310.15 K. What would the wavelength (\\(\\lambda\\)) of a typical human’s peak emissions be (in \\(\\mu m\\)) following Wein’s Law?\n\n\\(\\lambda_{max} = \\frac{b}{T}\\)\n\\(b ≈ 2898 \\mu m K\\)\n\n\\(\\lambda_{max} = \\frac{2898 \\mu m K}{310.15 K} = 9.34 \\mu m\\)"
   },
   {
     "objectID": "Slides/Lecture2.html#stefan-boltzmann-law-blackbody",
     "href": "Slides/Lecture2.html#stefan-boltzmann-law-blackbody",
-    "title": "Atmospheric Environments",
+    "title": "Radiation Laws",
     "section": "Stefan-Boltzmann law: blackbody",
     "text": "Stefan-Boltzmann law: blackbody\nThe total energy emitted by a blackbody \\(Eb\\) (emittance) is proportional to fourth power of its absolute Temperature:\n\n\n\\[\nE_b = \\sigma_b T^4\n\\qquad(4)\\]\n\n\n\\(\\sigma_b = 5.67 * 10^{-8} W m^{-2}K^{-1}\\)\n\n\\(\\sigma_b\\) is easy to remember\n“5, 6, 7, 8”"
   },
   {
     "objectID": "Slides/Lecture2.html#grey-bodies",
     "href": "Slides/Lecture2.html#grey-bodies",
-    "title": "Atmospheric Environments",
+    "title": "Radiation Laws",
     "section": "Grey bodies",
     "text": "Grey bodies\nEmission from natural objects is given by adjusting the Stefan-Boltzman Law to account for surface emissivity (\\(\\epsilon\\)).\n\n\n\nEmissivity is the ratio of the actual emission to that of a blackbody (\\(\\epsilon\\) = 1.0).\n\n\\[\nE_g = \\epsilon\\sigma_b T^4\n\\qquad(5)\\]\n\n\n\n\n\nTable 1: Emissivity of natural surfaces\n\n\nSurface\nX epsilon\n\n\n\n\nSoil\n0.90 – 0.98\n\n\nGrass\n0.90 – 0.95\n\n\nCrops\n0.90 – 0.99\n\n\nForests\n0.97 – 0.99\n\n\nWater\n0.92 – 0.97\n\n\n\n\n\n\n\n\n\nA black body is one that absorbs all the EM radiation (light…) that strikes it. To stay in thermal equilibrium, it must emit radiation at the same rate as it absorbs it so a black body also radiates well"
   },
   {
     "objectID": "Slides/Lecture2.html#stefan-boltzman-applications",
     "href": "Slides/Lecture2.html#stefan-boltzman-applications",
-    "title": "Atmospheric Environments",
+    "title": "Radiation Laws",
     "section": "Stefan-Boltzman Applications",
     "text": "Stefan-Boltzman Applications\nThe the basis of remote sensing in thermal satellite sensors and infrared thermometer use it to measure the surface temperature of objects\n\n\n\n\n\n\n\n\nThis approach is an inversion of the Stefan-Boltzmann law. That is the instrument measures the energy emitted from your forehead (the energy heats a little sensor in the infrared thermometer) and then knowing your emissivity, you can derive the temperature of your body"
   },
   {
-    "objectID": "Slides/Lecture2.html#objects-dont-exist-in-isolation",
-    "href": "Slides/Lecture2.html#objects-dont-exist-in-isolation",
-    "title": "Atmospheric Environments",
-    "section": "Objects don’t exist in isolation",
-    "text": "Objects don’t exist in isolation\nThis still doesn’t account for the full picture, because we’ve ignored incoming radiation. Radiation can interact with an object in three ways:\n\n\n\nAbsorption \\(a\\)\nTransmission \\(\\tau\\)\nReflection \\(\\alpha\\)\n\n\n\\[\na_\\lambda + \\tau_\\lambda + \\alpha_\\lambda = 1\n\\qquad(6)\\]"
+    "objectID": "Slides/Lecture2.html#total-emissions",
+    "href": "Slides/Lecture2.html#total-emissions",
+    "title": "Radiation Laws",
+    "section": "Total Emissions",
+    "text": "Total Emissions\nBuilding on Wein and Stefan-Boltzman, we can use Plank’s law to calculate the total emissions from a body across the electromagnetic spectrum.\n\n\n\\[\nE = \\frac{2*h*c}{\\lambda^{5}}*\\frac{1}{e^{\\frac{h*c}{\\lambda*\\sigma_b*T}}-1}\n\\qquad(6)\\]\n\n\\(\\sigma_b = 5.67 * 10^{-8} W m^{-2}K^{-1}\\)\n\\(c = 3 * 10^{8} m s^{-1}\\)\n\\(h = 6.63 * 10^{-34} J s\\)"
+  },
+  {
+    "objectID": "Slides/Lecture2.html#total-emissions-1",
+    "href": "Slides/Lecture2.html#total-emissions-1",
+    "title": "Radiation Laws",
+    "section": "Total Emissions",
+    "text": "Total Emissions\nNote the log scale. At their respective peaks the Sun’s emissions are \\(10^{6}\\) greater than the Earth’s.\n\n\n\nThe Sun emits more radiation than the Earth\n\nAcross all wave lengths."
+  },
+  {
+    "objectID": "Slides/Lecture2.html#radiation-balance",
+    "href": "Slides/Lecture2.html#radiation-balance",
+    "title": "Radiation Laws",
+    "section": "Radiation Balance",
+    "text": "Radiation Balance\nRadiation (of wavelength \\(\\lambda\\)) can interact with an object in three ways:\n\n\n\nAbsorption \\(a_{\\lambda}\\)\nTransmission \\(\\tau_{\\lambda}\\)\nReflection \\(\\alpha_{\\lambda}\\)\n\n\n\\[\na_\\lambda + \\tau_\\lambda + \\alpha_\\lambda = 1\n\\qquad(7)\\]\n\n\n\nThese terms vary by object and by \\(\\lambda\\), but all radiation reaching an object must be absorbed, transmitted, or reflected."
+  },
+  {
+    "objectID": "Slides/Lecture2.html#absorption-spectra",
+    "href": "Slides/Lecture2.html#absorption-spectra",
+    "title": "Radiation Laws",
+    "section": "Absorption Spectra",
+    "text": "Absorption Spectra\n\nAbsorption Spectra of Gasses in the Atmosphere"
+  },
+  {
+    "objectID": "Slides/Lecture2.html#reflection-and-transmission",
+    "href": "Slides/Lecture2.html#reflection-and-transmission",
+    "title": "Radiation Laws",
+    "section": "Reflection and Transmission",
+    "text": "Reflection and Transmission\nWhatever isn’t absorbed, must be either reflected, or transmitted.\n\n\n\nLiquid water transmits visible light well\n\nIt absorbs very little visible radiation\nAnd it reflects very little too\n\n\n\n\n\n\nAbsorption Spectra of Liquid Water"
   },
   {
     "objectID": "Slides/Lecture2.html#accounting-for-reflectivity",
     "href": "Slides/Lecture2.html#accounting-for-reflectivity",
-    "title": "Atmospheric Environments",
+    "title": "Radiation Laws",
     "section": "Accounting for reflectivity",
-    "text": "Accounting for reflectivity\nAssuming the object isn’t transparent, we could extend Stefan-Boltzman further by accounting for reflectivity.\n\\[\nE_g = \\epsilon\\sigma_b T^4 + (1-\\epsilon) * (SW\\downarrow+LW\\downarrow)\n\\qquad(7)\\]"
+    "text": "Accounting for reflectivity\nAssuming the object isn’t transmissive (\\(\\tau \\approx 0\\)), which is the case for large objects like the earth across all but the longest wavelengths: \\(a_{\\lambda} + \\alpha_{\\lambda} = 1\\)\n\nWe can extend Stefan-Boltzman to account for reflectivity.\n\n\\[\nE_g = \\epsilon\\sigma_b T^4 + (1-\\epsilon) * (SW\\downarrow+LW\\downarrow)\n\\qquad(8)\\]"
   },
   {
-    "objectID": "Slides/Lecture2.html#total-emissions",
-    "href": "Slides/Lecture2.html#total-emissions",
-    "title": "Atmospheric Environments",
-    "section": "Total Emissions",
-    "text": "Total Emissions\nWe can use Plank’s law to calculate the total emissions from a body.\n\n\n\\[\nE = \\frac{2*h*c}{\\lambda^{5}}*\\frac{1}{e^{\\frac{h*c}{\\lambda*\\sigma_b*T}}-1}\n\\qquad(8)\\]\n\n\\(\\sigma_b = 5.67 * 10^{-8} W m^{-2}K^{-1}\\)\n\\(c = 3 * 10^{8} m s^{-1}\\)\n\\(h = 6.63 * 10^{-34} J s\\)"
+    "objectID": "Slides/Lecture2.html#net-radiation",
+    "href": "Slides/Lecture2.html#net-radiation",
+    "title": "Radiation Laws",
+    "section": "Net Radiation",
+    "text": "Net Radiation\nGiven this understanding, we can define Net Radiation (\\(R_n\\)) as the sum of all incoming (\\(\\downarrow\\)) and outgoing(\\(\\uparrow\\)) radiation components. We will specifically distinguish between short-wave (SW) and long-wave(LW) radiation.\n\\[\nR_n = (SW \\downarrow - SW \\uparrow) + (LW \\downarrow - LW \\uparrow)\n\\qquad(9)\\]"
   },
   {
     "objectID": "Slides/Lecture2.html#take-home-points",
     "href": "Slides/Lecture2.html#take-home-points",
-    "title": "Atmospheric Environments",
+    "title": "Radiation Laws",
     "section": "Take home points",
-    "text": "Take home points\n\nWhat is the difference between longwave and shortwave radiation?\nKnow the two basic radiation laws: Wien’s Law and Stefan Boltzmann Law.\n\nPlanks law is a bit more complex\n\nApply Stefan Boltzmann’s Law to measure surface temperatures from an objects emittance and vice versa.\n\n\n\nBack to Homepage"
+    "text": "Take home points\n\nWhat is the difference between long-wave and short-wave radiation?\nKnow the the basic radiation laws: Wien’s Law, Stefan Boltzmann Law, and Plank’s law\n\nThese are idealized for black bodies, but can be modified.\n\nRadiation can be: absorbed, transmitted, or reflected.\n\n\n\nBack to Homepage"
   },
   {
-    "objectID": "Slides/Lecture3.html#shortwave-radiation",
-    "href": "Slides/Lecture3.html#shortwave-radiation",
-    "title": "Atmospheric Environments",
-    "section": "Shortwave Radiation",
-    "text": "Shortwave Radiation\n\n\nTransmission, absorption and scattering of solar radiation in the atmosphere causes a variety of optical effects (Photo: A. Christen)\u000b\n\n\n\n\n\nOne of our applications in forest and agricultural climatology is the modelling and measurement of short-wave irradiance at the ground after passing through Earth’s atmosphere."
+    "objectID": "Slides/Lecture3.html#short-wave-radiation",
+    "href": "Slides/Lecture3.html#short-wave-radiation",
+    "title": "Short-wave Radiation",
+    "section": "Short-wave Radiation",
+    "text": "Short-wave Radiation\n\n\nTransmission, absorption and scattering (diffuse reflection) of solar radiation in the atmosphere causes a variety of optical effects.\n\n\n\n\n\nOne of our applications in forest and agricultural climatology is the modelling and measurement of short-wave irradiance at the ground after passing through Earth’s atmosphere."
   },
   {
     "objectID": "Slides/Lecture3.html#learning-objectives",
     "href": "Slides/Lecture3.html#learning-objectives",
-    "title": "Atmospheric Environments",
+    "title": "Short-wave Radiation",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\n\n\nWeb-site reading package: \u000bT. R. Oke ‘Boundary Layer Climates’, Chapter 1, \u000bsection 3(a), p. 8 - 13.\n\nDescribe the characteristics of the solar radiation reaching our planet.\nExplain what happens to the solar radiation as it passes through the atmosphere\nUnderstand the effects of slope on radiation receipt.\nKnow the difference between direct and diffuse short-wave radiation."
+    "text": "Learning Objectives\n\nDescribe the characteristics of the solar radiation reaching our planet.\nExplain what happens to the solar radiation as it passes through the atmosphere\nUnderstand the effects of slope on radiation receipt.\nKnow the difference between direct and diffuse short-wave radiation."
   },
   {
-    "objectID": "Slides/Lecture3.html#planks-law",
-    "href": "Slides/Lecture3.html#planks-law",
-    "title": "Atmospheric Environments",
-    "section": "Plank’s Law",
-    "text": "Plank’s Law\n\n\n\nPlanck’s law states the shape of the relation between E and  for a given T, i.e. a Planck curve\nA series of Planck curves at different T show Wien’s law - the peak of emission moves to smaller  at higher T."
+    "objectID": "Slides/Lecture3.html#solar-constant-i_0",
+    "href": "Slides/Lecture3.html#solar-constant-i_0",
+    "title": "Short-wave Radiation",
+    "section": "Solar constant \\(I_0\\)",
+    "text": "Solar constant \\(I_0\\)\nThe radiant flux density (irradiance) at the top of the atmosphere normal to the solar beam an at Earth’s mean distance from Sun.\n\n\n\nPresent observations suggest \\(I_0 \\approx 1361 W m{-2}\\)\n\n\n\n\n\n\nThe Nimbus satellite hosted the first instruments measuring the solar constant(NASA).\n\n\n\n\n\nThe “solar constant represents about the upper limit for solar energy in the Earth-atmosphere system. Imagine astronauts in the space station doing a space walk where they take a a board that is 1 meter by one meter and then measuring how much radiation falls on it when they point it directly at the sun. NOTE: the word “constant” here is a bit misleading. Of courses the distance from the earth varies because of the elliptical orbit of the earth around the sun. The differences are small however."
   },
   {
-    "objectID": "Slides/Lecture3.html#stefan-boltzmanns-law-gives-the-integral-of-the-energy-across-all-at-a-given-t-for-a-blackbody-i.e.-the-area-under-the-curve",
-    "href": "Slides/Lecture3.html#stefan-boltzmanns-law-gives-the-integral-of-the-energy-across-all-at-a-given-t-for-a-blackbody-i.e.-the-area-under-the-curve",
-    "title": "Atmospheric Environments",
-    "section": "Stefan Boltzmann’s law gives the integral of the energy across all  at a given T for a blackbody, i.e. the area under the curve",
-    "text": "Stefan Boltzmann’s law gives the integral of the energy across all  at a given T for a blackbody, i.e. the area under the curve\n\n\nRecap of radiation laws – Stefan Boltzmann’s Law\n\n\n\n\n\nRadiation Law #3 is Planck’s Law. I don’t give an equation for this law (and which defines the Planck curve) but there is one. \u000b\u000bGoing back to your high school calculus, if we INTEGRATE planck’s equation we end up with the area under the Planck curve which is the TOTAL amount of energy emitted and forms the equation for the Stefan-Bolzmann Law."
+    "objectID": "Slides/Lecture3.html#average-radiation-on-earth",
+    "href": "Slides/Lecture3.html#average-radiation-on-earth",
+    "title": "Short-wave Radiation",
+    "section": "Average radiation on Earth",
+    "text": "Average radiation on Earth\nThe solar constant is a “theoretical maximum”\n\n\n\nTrue at equator at solar noon\nActual value is lower everywhere else"
   },
   {
-    "objectID": "Slides/Lecture3.html#recap-of-radiation-laws-wiens-law",
-    "href": "Slides/Lecture3.html#recap-of-radiation-laws-wiens-law",
-    "title": "Atmospheric Environments",
-    "section": "Recap of radiation laws – Wien’s Law",
-    "text": "Recap of radiation laws – Wien’s Law\n\n\nThe wave length of peak emission is given by Wien’s Law.\n\n\n\n\n\nNote: if you go back to the previous lecture, you \u000bwill see that we define a in micrometers which \u000bgives us a number of approximately 3000."
+    "objectID": "Slides/Lecture3.html#attenuation-of-solar-radiation-iclicker",
+    "href": "Slides/Lecture3.html#attenuation-of-solar-radiation-iclicker",
+    "title": "Short-wave Radiation",
+    "section": "Attenuation of solar radiation (iClicker)",
+    "text": "Attenuation of solar radiation (iClicker)\nOn its path from the top of the atmosphere to the ground, solar radiation is reduced. Why?\n\nA - Reflected back to space by clouds\nB - Scattered by aerosols and droplets\nC - Absorbed by certain gases, droplets and aerosols\nD - All of the above"
   },
   {
-    "objectID": "Slides/Lecture3.html#yochanan-kushnir.",
-    "href": "Slides/Lecture3.html#yochanan-kushnir.",
-    "title": "Atmospheric Environments",
-    "section": "© Yochanan Kushnir.",
-    "text": "© Yochanan Kushnir."
-  },
-  {
-    "objectID": "Slides/Lecture3.html#solar-constant-i0",
-    "href": "Slides/Lecture3.html#solar-constant-i0",
-    "title": "Atmospheric Environments",
-    "section": "Solar constant I0",
-    "text": "Solar constant I0\n\n\nThe Nimbus satellite platforms hosted the first instruments measuring the solar constant and Earth’s radiation budget directly from space (NASA).\nThe Solar constant I0 is the solar radiant flux density (irradiance) at the top of the atmosphere normal to the solar beam an at Earth’s mean distance from Sun. Present observations suggest I0 ≈ 1366 W m-2.\n\n\n\n\n\n\nThe “solar constant represents about the upper limit for solar energy in the Earth-atmosphere system. Imagine astronauts in the space station doing a space walk where they take a a board that \u000bis 1 meter by one meter and then measuring how much radiation falls on it when they point it directly at the sun. NOTE: the word “constant” here is a bit misleading. Of courses the distance from the earth varies because of the elliptical orbit of the earth around the sun. The differences are small however."
-  },
-  {
-    "objectID": "Slides/Lecture3.html#photo-a.-christen",
-    "href": "Slides/Lecture3.html#photo-a.-christen",
-    "title": "Atmospheric Environments",
-    "section": "Photo: A. Christen",
-    "text": "Photo: A. Christen\n\n\nOn its path from the top of the atmosphere to the ground, solar radiation is reduced. Why?\n\n\n\n\n\nThink about this for a second or two before looking at the next slide. Thinks about the role of gases, particles, water droplets (clouds), ice crystals etc. in affecting radiation."
-  },
-  {
-    "objectID": "Slides/Lecture3.html#attenuation-of-solar-radiation-in-the-atmosphere",
-    "href": "Slides/Lecture3.html#attenuation-of-solar-radiation-in-the-atmosphere",
-    "title": "Atmospheric Environments",
-    "section": "Attenuation of solar radiation \u000bin the atmosphere",
-    "text": "Attenuation of solar radiation \u000bin the atmosphere\n\n\n\nOn its path from the top of the atmosphere to the ground, solar radiation is:\nreflected back to space by clouds\nscattered by aerosols and droplets\nabsorbed by certain gases, droplets and aerosols"
-  },
-  {
-    "objectID": "Slides/Lecture3.html#photo-a.-christen-1",
-    "href": "Slides/Lecture3.html#photo-a.-christen-1",
-    "title": "Atmospheric Environments",
-    "section": "Photo: A. Christen",
-    "text": "Photo: A. Christen\n\n\nReflection\n\nCloud tops are most significant. Clouds reflect 40 to 80% of the short-wave radiation incident upon them, the average is 55%*.\n\nWe call this the cloud albedo, hence the ratio of the amount of solar (short-wave) radiation reflected by a body to the amount incident upon it.\n\n\n\n\n\n\n\nReflection from clouds is really important! This is why the earth looks so bright from space. \u000bClouds viewed from the sides or above are also very white (an indicator that they are reflecting all wavelengths of visible light)."
+    "objectID": "Slides/Lecture3.html#reflection",
+    "href": "Slides/Lecture3.html#reflection",
+    "title": "Short-wave Radiation",
+    "section": "Reflection",
+    "text": "Reflection\nClouds reflect 40 to 80% of the short-wave radiation incident upon them, the average is 55%.\n\n\n\nWe call this the cloud albedo (\\(\\alpha\\)), hence the ratio of the amount of solar (short-wave) radiation reflected by a body to the amount incident upon it.\n\n\n\n\n\n\nReflection from clouds is really important! This is why the earth looks so bright from space. Clouds viewed from the sides or above are also very white (an indicator that they are reflecting all wavelengths of visible light)."
   },
   {
     "objectID": "Slides/Lecture3.html#absorption-in-the-atmosphere",
     "href": "Slides/Lecture3.html#absorption-in-the-atmosphere",
-    "title": "Atmospheric Environments",
+    "title": "Short-wave Radiation",
     "section": "Absorption in the atmosphere",
-    "text": "Absorption in the atmosphere\n\n\n\nThe atmosphere is a selective absorber of solar radiation.\nThe most significant absorbing substances are:\nWater vapour: important for λ > 0.8 μm, absorption bands are at 1.1, 1.45, 1.95 μm\nO2 and O3: important for λ < 0.3 μm\nCO2: important for λ > 2.5 μm\nThe atmosphere is quite transparent near λmax = 0.48 μm where the intensity of solar radiation is greatest.\n\n\n\n\n\n\nAs well as reflection of radiation from clouds, \u000bthe atmosphere also ABSORBS solar radiation."
+    "text": "Absorption in the atmosphere\nThe most significant absorbing substances are:\n\n\n\nH2O (vapor), CO2, O2, and O3\nThe atmosphere is quite transparent (\\(\\tau \\approx 1\\)) near \\(\\lambda_{max}\\) = 0.48 \\(\\mu m\\)\n\nIntensity of solar radiation is greatest here\n\n\n\n\n\n\nAbsorption Spectra of Gasses in the Atmosphere"
+  },
+  {
+    "objectID": "Slides/Lecture3.html#what-does-this-mean",
+    "href": "Slides/Lecture3.html#what-does-this-mean",
+    "title": "Short-wave Radiation",
+    "section": "What does this Mean?",
+    "text": "What does this Mean?"
+  },
+  {
+    "objectID": "Slides/Lecture3.html#optical-effects",
+    "href": "Slides/Lecture3.html#optical-effects",
+    "title": "Short-wave Radiation",
+    "section": "Optical Effects",
+    "text": "Optical Effects\n\n\n\n\n\n\n\nBlue light is most easily scattered\n\n\n\n\n\n\n\nAt sunset, more blue is scattered away\n\n\n\n\n\n\n\nSmoke scatters lots of light\n\n\n\n\nFigure 1: Scattering of light by the atmosphere\n\n\n\nThe next images show some of the optical effects of the atmosphere. Some of these are best seen when the sun in low in the sky (sunrise and sunset) and the sun’s rays are passing slantwise through the atmosphere (we call this a long “path-length”)"
   },
   {
     "objectID": "Slides/Lecture3.html#scattering",
     "href": "Slides/Lecture3.html#scattering",
-    "title": "Atmospheric Environments",
+    "title": "Short-wave Radiation",
     "section": "Scattering",
-    "text": "Scattering\n\n\nincreasing particle size\nIllustration: Georgia State University.\n\nScattering is a process like reflection in which incident light is diffused in all directions by the smallest gaseous molecules and aerosols (e.g. smoke). Scattering creates the blue sky color and red sunsets. If particles are larger (e.g. water droplets) the sky is hazy and whiter.\nTogether these processes reduce the solar radiation getting to the ground and diffuse the beam so that it arrives from all parts of the sky hemisphere.\n\n\n\n\n\n\nScattering is usually divided into two types: \u000bRayleigh scattering is caused by gas molecules and tends to scatter in all directions with the shortest wavelengths scattered most (hence blue light giving rise to the blue sky) \u000bMie scattering is associated with much large solid or liquid particles (water droplets, smoke, sea salt haze) scatter all wavelength equally and \u000bmostly in a forward direction. Because all wavelengths are scattered equally the result is a “white” appearance to the sky."
+    "text": "Scattering\nScattering (diffuse reflection) is when incident light is diffused in all directions by the small molecules.\n\n\n\nReduces solar radiation reaching the ground\nDiffuse the beam so that it arrives from all parts of the sky hemisphere.\n\n\n\n\n\nScattering by particle size"
+  },
+  {
+    "objectID": "Slides/Lecture3.html#scattering-1",
+    "href": "Slides/Lecture3.html#scattering-1",
+    "title": "Short-wave Radiation",
+    "section": "Scattering",
+    "text": "Scattering\n\nRayleigh: caused by gas molecules. Tends to scatter in all directions with a preference for shorter wavelengths\nMie: associated with larger solid or liquid particles. Scatters wavelength equally and mostly in a forward direction.\n\n\nScattering by particle size"
   },
   {
     "objectID": "Slides/Lecture3.html#transmission",
     "href": "Slides/Lecture3.html#transmission",
-    "title": "Atmospheric Environments",
+    "title": "Short-wave Radiation",
     "section": "Transmission",
-    "text": "Transmission\n\n\n\nTypical fractions of the solar getting through to the ground are:\n“Clean” atmosphere τ = 0.65-0.75\n“Dirty” atmosphere τ = 0.45-0.55\nIn Vancouver, a typical value is τ = 0.70\n\n\n\n\n\n\nIf light is not reflected, absorbed or scattered it must be transmitted to the ground. The Greek letter tau is used to denote the proportion of light reaching the ground compared to that at the outer edge of the atmosphere. In Vancouver \u000bwe typically have about 70% of solar radiation at the outer edge of the atmosphere reaching the ground."
+    "text": "Transmission\n\nTypical fractions of the solar getting through to the ground are:\n\n“Clean” atmosphere \\(\\tau\\) = 0.65-0.75\n“Dirty” atmosphere \\(\\tau\\) = 0.45-0.55\nIn Vancouver, a typical value is \\(\\tau\\) = 0.70"
   },
   {
-    "objectID": "Slides/Lecture3.html#impact-of-smoke-on-radiation-air-quality",
-    "href": "Slides/Lecture3.html#impact-of-smoke-on-radiation-air-quality",
-    "title": "Atmospheric Environments",
-    "section": "Impact of smoke on radiation & air quality",
-    "text": "Impact of smoke on radiation & air quality"
+    "objectID": "Slides/Lecture3.html#transmission-windows",
+    "href": "Slides/Lecture3.html#transmission-windows",
+    "title": "Short-wave Radiation",
+    "section": "Transmission Windows",
+    "text": "Transmission Windows\n\n\n\nMost visible radiation is transmitted\nSecond window lets thermal radiation escape\n\n\n\n\n\n\nSee Video: The “Atmospheric Window” is an important concept. You need to understand it. Simply put, the window part is analogy. It implies that in the 8-11 micrometer longwave (terrestrial) part of the radiation spectrum where there are no gases that absorb outgoing longwave radiation from the earth/atmosphere. Therefore this radiation is free to escape to space through these wavelengths. If this wasn’t the case, then the earth would continue to heat up over time. The role of “greenhouse” gases in the atmosphere is of course part of this story"
+  },
+  {
+    "objectID": "Slides/Lecture3.html#transmission-iclicker",
+    "href": "Slides/Lecture3.html#transmission-iclicker",
+    "title": "Short-wave Radiation",
+    "section": "Transmission (iClicker)",
+    "text": "Transmission (iClicker)"
+  },
+  {
+    "objectID": "Slides/Lecture3.html#smokey-skies-reduce-transmission",
+    "href": "Slides/Lecture3.html#smokey-skies-reduce-transmission",
+    "title": "Short-wave Radiation",
+    "section": "Smokey Skies Reduce Transmission",
+    "text": "Smokey Skies Reduce Transmission"
   },
   {
     "objectID": "Slides/Lecture3.html#cosine-law-of-illumination",
     "href": "Slides/Lecture3.html#cosine-law-of-illumination",
-    "title": "Atmospheric Environments",
+    "title": "Short-wave Radiation",
     "section": "Cosine law of illumination",
-    "text": "Cosine law of illumination\n\n\n\nThe cosine law of illumination describes how the incident radiant flux density (irradiance) of a beam decreases as the beam’s angle varies from overhead (normal) to a more slanted path relative to the surface.\nNotice that the same energy is spread over a larger surface area when a beam is tilted away from overhead (or the surface is tilted)\n\n\n\n\n\n\nThis is an important concept! Try it yourself at home with a flashlight. You can also shine it on a globe (or ball) to see the impact on Latitude \u000b(ie.e why the poles receive less radiation than the tropics."
+    "text": "Cosine law of illumination\nDescribes how incident radiant flux density (irradiance) of a beam decreases as the beam’s angle varies from overhead.\n\n\n\nThe same energy is spread over a larger surface area when a beam is tilted relative to the surface\n\n\n\n\n\n\nThis is an important concept! Try it yourself at home with a flashlight. You can also shine it on a globe (or ball) to see the impact on Latitude (ie.e why the poles receive less radiation than the tropics."
   },
   {
-    "objectID": "Slides/Lecture3.html#cosine-law-example-calculation",
-    "href": "Slides/Lecture3.html#cosine-law-example-calculation",
-    "title": "Atmospheric Environments",
-    "section": "Cosine law – example calculation",
-    "text": "Cosine law – example calculation\n\n\nOn the horizontal surface Qs = Qp, while on the sloping surface the Qs = Qp cos 30°. Therefore the ratio of the latter to the former is cos 30°, which is 0.87.\nCalculate the ratio of the flux density of radiation from a beam of light (e.g. flashlight or the solar beam) on a sloping surface to that on a horizontal surface if the slope angle is 30°:"
+    "objectID": "Slides/Lecture3.html#cosine-law-of-illumination-1",
+    "href": "Slides/Lecture3.html#cosine-law-of-illumination-1",
+    "title": "Short-wave Radiation",
+    "section": "Cosine law of illumination",
+    "text": "Cosine law of illumination\nFor a flat land surface \\(\\theta = latitude + solar declination\\)\n\n\n\nRanges from:\n\n+23.5 (summer solstice)\n-23.5 (winter solstice)\n\nOn the equinoxes, solar declination = 0\n\n\n\\[\na_\\lambda + \\tau_\\lambda + \\alpha_\\lambda = 1\n\\qquad(1)\\]"
+  },
+  {
+    "objectID": "Slides/Lecture3.html#cosine-law-of-illumination-2",
+    "href": "Slides/Lecture3.html#cosine-law-of-illumination-2",
+    "title": "Short-wave Radiation",
+    "section": "Cosine law of illumination",
+    "text": "Cosine law of illumination\nRadiation is distributed according to latitude and solar declination."
+  },
+  {
+    "objectID": "Slides/Lecture3.html#cosine-law-of-illumination-iclicker",
+    "href": "Slides/Lecture3.html#cosine-law-of-illumination-iclicker",
+    "title": "Short-wave Radiation",
+    "section": "Cosine law of illumination (iClicker)",
+    "text": "Cosine law of illumination (iClicker)\nCompare the the flux density of a beam of sunlight at solar noon on the autumnal equinox at the equator and at the Arctic Circle (66 \\(^{\\circ}\\) North latitude).\n\n\nNote:\n\n\\(R_s = R_p cos(\\theta)\\)\nAt the equator, the sun is directly overhead: \\(\\theta = 0\\)\nAt 66 \\(^{\\circ}\\) N latitude: \\(\\theta = 66\\)\n\n\nIrradiance at 66 \\(^{\\circ}\\) N would be:\n\nA \\(\\approx\\) 66% that at the equator\nB \\(\\approx\\) 40% that at the equator\nC \\(\\approx\\) 33% that at the equator"
   },
   {
     "objectID": "Slides/Lecture3.html#irradiance",
     "href": "Slides/Lecture3.html#irradiance",
-    "title": "Atmospheric Environments",
+    "title": "Short-wave Radiation",
     "section": "Irradiance",
-    "text": "Irradiance\n\n\n\nShortwave irradiance (K↓) is the integration of all radiative fluxes coming from the upper hemisphere per unit area\n(and is hence a radiative flux density in W m-2)."
+    "text": "Irradiance\nShortwave irradiance (\\(SW\\downarrow\\)) is the integration of all radiative fluxes coming from the upper hemisphere\n\n\n\nPer unit area\nHence a radiative flux density in W m-2"
   },
   {
-    "objectID": "Slides/Lecture3.html#direct-and-diffuse-irradiance",
-    "href": "Slides/Lecture3.html#direct-and-diffuse-irradiance",
-    "title": "Atmospheric Environments",
-    "section": "Direct and diffuse irradiance",
-    "text": "Direct and diffuse irradiance\n\n\n\nTwo types of solar radiation arrive at the Earth’s surface:\nDirect (S): comes directly in parallel rays from Sun.\nDiffuse (D): after scattering and reflection by the Earth’s atmosphere.\n\n\n\n\n\n\n\nWhen you look at the horizon on a sunny day you still see BLUE – that is short wavelength visible radiation being scattered toward you \u000b(Rayleigh scattering)"
+    "objectID": "Slides/Lecture3.html#direct-vs.-diffuse-irradiance",
+    "href": "Slides/Lecture3.html#direct-vs.-diffuse-irradiance",
+    "title": "Short-wave Radiation",
+    "section": "Direct vs. Diffuse Irradiance",
+    "text": "Direct vs. Diffuse Irradiance\nTwo types of solar radiation arrive at the Earth’s surface:\n\n\n\nDirect (s): comes directly in parallel rays from Sun.\nDiffuse (d): after scattering and reflection by the Earth’s atmosphere.\n\n\n\n\n\n\nWhen you look at the horizon on a sunny day you still see BLUE – that is short wavelength visible radiation being scattered toward you (Rayleigh scattering)"
   },
   {
     "objectID": "Slides/Lecture3.html#total-irradiance",
     "href": "Slides/Lecture3.html#total-irradiance",
-    "title": "Atmospheric Environments",
-    "section": "Total irradiance",
-    "text": "Total irradiance\n\n\nDirect irradiance\nDiffuse irradiance\nDirect and diffuse irradiance\n\n\n\n\n\nNOTE the symbol K used to describe shortwave \u000bradiation and the arrow to indicate whether the \u000bradiation is down toward the earth or up and \u000baway from the earth."
+    "title": "Short-wave Radiation",
+    "section": "Total Irradiance",
+    "text": "Total Irradiance\n\n\n\\[\nSW\\downarrow = SW\\downarrow_s + SW\\downarrow_d\n\\qquad(2)\\]\n\nNote the differing label convention in this figure. Some sources will use “K” for shortwave radiation. I don’t like that because its too similar to “Kelvin”, so I prefer to use “SW”.\n\n\n\n\n\n\n\nNOTE the symbol K used to describe shortwave radiation and the arrow to indicate whether the radiation is down toward the earth or up and away from the earth."
   },
   {
     "objectID": "Slides/Lecture3.html#direct-and-diffuse-radiation---example",
     "href": "Slides/Lecture3.html#direct-and-diffuse-radiation---example",
-    "title": "Atmospheric Environments",
+    "title": "Short-wave Radiation",
     "section": "Direct and diffuse radiation - example",
-    "text": "Direct and diffuse radiation - example\n\n\n\n\n\n\n\n\n\nVariation of incoming short-wave irradiance (K↓) \u000bon a very hazy day (10 August 1975) in Central \u000bIllinois (39ºN), including the distinction between \u000bdirect beam (S) and diffuse radiation (D)."
+    "text": "Direct and diffuse radiation - example"
+  },
+  {
+    "objectID": "Slides/Lecture3.html#direct-and-diffuse-radiation---example-1",
+    "href": "Slides/Lecture3.html#direct-and-diffuse-radiation---example-1",
+    "title": "Short-wave Radiation",
+    "section": "Direct and diffuse radiation - example",
+    "text": "Direct and diffuse radiation - example"
   },
   {
     "objectID": "Slides/Lecture3.html#graph-interpretation-summary",
     "href": "Slides/Lecture3.html#graph-interpretation-summary",
-    "title": "Atmospheric Environments",
+    "title": "Short-wave Radiation",
     "section": "Graph interpretation summary",
-    "text": "Graph interpretation summary\n\n\n\nThe diurnal (i.e. daily) symmetry.\nThe diffuse fraction is greater in the early morning and late evening (greater path length).\nThe diffuse fraction increases greatly when cloud arrives.\nThere is much greater variability with scattered clouds.\nAt times the input is even greater than without cloud – when the sensor is not in shade but receives extra reflection from the sides of clouds."
+    "text": "Graph interpretation summary\n\nThe diffuse fraction is greater in the early morning and late evening (greater path length).\n\n\n\n\nThe diffuse fraction increases with cloud cover\nVariability with scattered clouds\n\nie. “Partly cloudy”"
   },
   {
-    "objectID": "Slides/Lecture3.html#thermopile",
-    "href": "Slides/Lecture3.html#thermopile",
-    "title": "Atmospheric Environments",
-    "section": "Thermopile",
-    "text": "Thermopile\n\n\nSolar radiation (K↓ = S + D) is measured by a pyranometer. It has glass domes (transmit only short-wave radiation, prevent conduction / convection) and a thermopile (measures the temperature rise of the absorbing black surface).\nPyranometer\nTwo glass domes\nPhotos: A. Christen\n\n\n\n\n\nInside the double glass dome (to prevent convection and conduction) there is a black absorber disk (the sensing element), which is made of a black carbon with a high absorptivity. The temperature rise of the sensing element due to short-wave irradiance is measured relatively to the (more constant) body temperature of the pyranometer. A thermopile (array of thermocouples) measures the temperature difference, which creates a voltage and then is measured by the data logger. The black carbon would be also sensitive to long-wave radiation, but the glass dome filters out the long-wave emission. A double glass dome reduces heating of the inner dome (long-wave emission of the dome)."
+    "objectID": "Slides/Lecture3.html#pyranometer",
+    "href": "Slides/Lecture3.html#pyranometer",
+    "title": "Short-wave Radiation",
+    "section": "Pyranometer",
+    "text": "Pyranometer\nSolar radiation $\\(SW\\downarrow = SW\\downarrow_S + SW\\downarrow_D\\)) is measured by a pyranometer.\n\n\n\nGlass domes transmit \\(SW\\)\n\nPrevent conduction / convection\n\nA thermopile measures the temperature rise of the absorbing black surface\n\n\n\n\n\n\nInside the double glass dome (to prevent convection and conduction) there is a black absorber disk (the sensing element), which is made of a black carbon with a high absorptivity. The temperature rise of the sensing element due to short-wave irradiance is measured relatively to the (more constant) body temperature of the pyranometer. A thermopile (array of thermocouples) measures the temperature difference, which creates a voltage and then is measured by the data logger. The black carbon would be also sensitive to long-wave radiation, but the glass dome filters out the long-wave emission. A double glass dome reduces heating of the inner dome (long-wave emission of the dome)."
   },
   {
-    "objectID": "Slides/Lecture3.html#direct-and-diffuse-radiation---shade-ring",
-    "href": "Slides/Lecture3.html#direct-and-diffuse-radiation---shade-ring",
-    "title": "Atmospheric Environments",
-    "section": "Direct and diffuse radiation - shade ring",
-    "text": "Direct and diffuse radiation - shade ring\n\n\nThe shade ring follows the solar path and eliminates S so only D is measured by the pyranometer. Together with a non-shaded pyranometer this allows us to separate S and D."
+    "objectID": "Slides/Lecture3.html#measuring-diffuse-radiation",
+    "href": "Slides/Lecture3.html#measuring-diffuse-radiation",
+    "title": "Short-wave Radiation",
+    "section": "Measuring Diffuse Radiation",
+    "text": "Measuring Diffuse Radiation\nThe shade ring follows the solar path and eliminates direct radiation.\n\n\n\nOnly D is measured by the pyranometer\nPaired with a non-shaded pyranometer, we can separate S and D"
   },
   {
     "objectID": "Slides/Lecture3.html#take-home-points",
     "href": "Slides/Lecture3.html#take-home-points",
-    "title": "Atmospheric Environments",
+    "title": "Short-wave Radiation",
     "section": "Take home points",
-    "text": "Take home points\n\n\n\nShort-wave radiation = solar radiation.\nWhat is the meaning of the solar constant I0?\nOn its way through the atmosphere solar radiation is reflected, scattered, and absorbed by certain gas molecules, droplets and particles.\nThe magnitude of the short-wave irradiance at the ground is mainly determined by the angle of the beam (cosine law of illumination).\nWe distinguish between direct and diffuse shortwave irradiance.\n\n\n\n\n\n\n\nBack to Homepage"
+    "text": "Take home points\n\n\n\nShort-wave radiation = solar radiation.\nWhat is the meaning of the solar constant I0?\nSolar radiation is reflected, scattered, and absorbed by certain gas molecules, droplets and particles in the atmosphere.\nThe magnitude of the short-wave irradiance at the ground is mainly determined by the angle of the beam\n\nCosine law of illumination\n\nDistinguish between direct and diffuse \\(SW\\) irradiance.\n\n\n\n\n\n\n\nBack to Homepage"
   },
   {
     "objectID": "Slides/Lecture4.html#surface-geometry-and-albedo",

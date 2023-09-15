@@ -9,7 +9,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.2.313">
 
-  <title>Atmospheric Environments – lecture2</title>
+  <title>Atmospheric Environments - Radiation Laws</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -323,11 +323,13 @@
   <div class="reveal">
     <div class="slides">
 
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Radiation Laws</h1>
+  <p class="subtitle">The earth climate and ecosystems are driven by radiation emitted by the sun.</p>
 
-<section>
-<section id="radiation-laws" class="title-slide slide level1 center">
-<h1>Radiation Laws</h1>
-<p>The earth climate and ecosystems are driven by radiation emitted by the sun.</p>
+<div class="quarto-title-authors">
+</div>
+
 </section>
 <section id="learning-objectives" class="slide level2">
 <h2>Learning Objectives</h2>
@@ -337,7 +339,7 @@
 <li>Know which physical laws can be used to predict quantity and characteristics of radiation emitted.</li>
 </ul>
 </section>
-<section id="radiation-laws-1" class="slide level2">
+<section id="radiation-laws" class="slide level2">
 <h2>Radiation Laws</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
@@ -668,11 +670,11 @@ width: 75%;">
 <h2>Stefan-Boltzmann law: blackbody</h2>
 <p>The total energy emitted by a blackbody <span class="math inline">\(Eb\)</span> (emittance) is proportional to fourth power of its absolute Temperature:</p>
 <div class="columns">
-<div class="column" style="width:50%;">
+<div class="column" style="width:45%;">
 <p><span id="eq-Stefan-Boltzman-Law"><span class="math display">\[
 E_b = \sigma_b T^4
 \qquad(4)\]</span></span></p>
-</div><div class="column" style="width:50%;">
+</div><div class="column" style="width:55%;">
 <ul>
 <li><p><span class="math inline">\(\sigma_b = 5.67 * 10^{-8} W m^{-2}K^{-1}\)</span></p>
 <ul>
@@ -772,38 +774,14 @@ E_g = \epsilon\sigma_b T^4
           display:block!important;
       }</style></aside>
 </section>
-<section id="objects-dont-exist-in-isolation" class="slide level2">
-<h2>Objects don’t exist in isolation</h2>
-<p>This still doesn’t account for the full picture, because we’ve ignored incoming radiation. Radiation can interact with an object in three ways:</p>
-<div class="columns">
-<div class="column" style="width:30%;">
-<ul>
-<li>Absorption <span class="math inline">\(a\)</span></li>
-<li>Transmission <span class="math inline">\(\tau\)</span></li>
-<li>Reflection <span class="math inline">\(\alpha\)</span></li>
-</ul>
-</div><div class="column" style="width:70%;">
-<p><span id="eq-Radiation-Balance"><span class="math display">\[
-a_\lambda + \tau_\lambda + \alpha_\lambda = 1
-\qquad(6)\]</span></span></p>
-</div>
-</div>
-</section>
-<section id="accounting-for-reflectivity" class="slide level2">
-<h2>Accounting for reflectivity</h2>
-<p>Assuming the object isn’t transparent, we could extend Stefan-Boltzman further by accounting for reflectivity.</p>
-<p><span id="eq-Stefan-Boltzman-Law-Grey-Body-Adjusted"><span class="math display">\[
-E_g = \epsilon\sigma_b T^4 + (1-\epsilon) * (SW\downarrow+LW\downarrow)
-\qquad(7)\]</span></span></p>
-</section>
 <section id="total-emissions" class="slide level2 smaller">
 <h2>Total Emissions</h2>
-<p>We can use Plank’s law to calculate the total emissions from a body.</p>
+<p>Building on Wein and Stefan-Boltzman, we can use Plank’s law to calculate the total emissions from a body across the electromagnetic spectrum.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
 <p><span id="eq-Planks-Law"><span class="math display">\[
 E = \frac{2*h*c}{\lambda^{5}}*\frac{1}{e^{\frac{h*c}{\lambda*\sigma_b*T}}-1}
-\qquad(8)\]</span></span></p>
+\qquad(6)\]</span></span></p>
 <ul>
 <li><span class="math inline">\(\sigma_b = 5.67 * 10^{-8} W m^{-2}K^{-1}\)</span></li>
 <li><span class="math inline">\(c = 3 * 10^{8} m s^{-1}\)</span></li>
@@ -814,21 +792,100 @@ E = \frac{2*h*c}{\lambda^{5}}*\frac{1}{e^{\frac{h*c}{\lambda*\sigma_b*T}}-1}
 </div>
 </div>
 </section>
+<section id="total-emissions-1" class="slide level2 smaller">
+<h2>Total Emissions</h2>
+<p>Note the log scale. At their respective peaks the Sun’s emissions are <span class="math inline">\(10^{6}\)</span> greater than the Earth’s.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>The Sun emits more radiation than the Earth
+<ul>
+<li>Across <em>all</em> wave lengths.</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="../Assignments/images/Spectral_Curves.jpg"></p>
+</div>
+</div>
+</section>
+<section id="radiation-balance" class="slide level2">
+<h2>Radiation Balance</h2>
+<p>Radiation (of wavelength <span class="math inline">\(\lambda\)</span>) can interact with an object in three ways:</p>
+<div class="columns">
+<div class="column" style="width:30%;">
+<ul>
+<li>Absorption <span class="math inline">\(a_{\lambda}\)</span></li>
+<li>Transmission <span class="math inline">\(\tau_{\lambda}\)</span></li>
+<li>Reflection <span class="math inline">\(\alpha_{\lambda}\)</span></li>
+</ul>
+</div><div class="column" style="width:70%;">
+<p><span id="eq-Radiation-Balance"><span class="math display">\[
+a_\lambda + \tau_\lambda + \alpha_\lambda = 1
+\qquad(7)\]</span></span></p>
+</div>
+</div>
+<ul>
+<li>These terms vary by object and by <span class="math inline">\(\lambda\)</span>, but all radiation reaching an object must be absorbed, transmitted, or reflected.</li>
+</ul>
+</section>
+<section id="absorption-spectra" class="slide level2">
+<h2>Absorption Spectra</h2>
+
+<img data-src="images/AbsoprtionSpectraOfGasses.jpg" class="r-stretch quarto-figure-center"><p class="caption">Absorption Spectra of Gasses in the Atmosphere</p></section>
+<section id="reflection-and-transmission" class="slide level2">
+<h2>Reflection and Transmission</h2>
+<p>Whatever isn’t absorbed, must be either reflected, or transmitted.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Liquid water transmits visible light well
+<ul>
+<li>It absorbs very little visible radiation</li>
+<li>And it reflects very little too</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/Lecture2/Absorption_spectrum_of_liquid_water.png"></p>
+<p></p><figcaption>Absorption Spectra of Liquid Water</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="accounting-for-reflectivity" class="slide level2">
+<h2>Accounting for reflectivity</h2>
+<p>Assuming the object isn’t transmissive (<span class="math inline">\(\tau \approx 0\)</span>), which is the case for large objects like the earth across all but the longest wavelengths: <span class="math inline">\(a_{\lambda} + \alpha_{\lambda} = 1\)</span></p>
+<ul>
+<li>We can extend Stefan-Boltzman to account for reflectivity.</li>
+</ul>
+<p><span id="eq-Stefan-Boltzman-Law-Grey-Body-Adjusted"><span class="math display">\[
+E_g = \epsilon\sigma_b T^4 + (1-\epsilon) * (SW\downarrow+LW\downarrow)
+\qquad(8)\]</span></span></p>
+</section>
+<section id="net-radiation" class="slide level2">
+<h2>Net Radiation</h2>
+<p>Given this understanding, we can define Net Radiation (<span class="math inline">\(R_n\)</span>) as the sum of all incoming (<span class="math inline">\(\downarrow\)</span>) and outgoing(<span class="math inline">\(\uparrow\)</span>) radiation components. We will specifically distinguish between short-wave (SW) and long-wave(LW) radiation.</p>
+<p><span id="eq-Net-Radiation"><span class="math display">\[
+R_n = (SW \downarrow - SW \uparrow) + (LW \downarrow - LW \uparrow)
+\qquad(9)\]</span></span></p>
+</section>
 <section id="take-home-points" class="slide level2">
 <h2>Take home points</h2>
 <ul>
-<li>What is the difference between longwave and shortwave radiation?</li>
-<li>Know the two basic radiation laws: Wien’s Law and Stefan Boltzmann Law.
+<li>What is the difference between long-wave and short-wave radiation?</li>
+<li>Know the the basic radiation laws: Wien’s Law, Stefan Boltzmann Law, and Plank’s law
 <ul>
-<li>Planks law is a bit more complex</li>
+<li>These are idealized for black bodies, but can be modified.</li>
 </ul></li>
-<li>Apply Stefan Boltzmann’s Law to measure surface temperatures from an objects emittance and vice versa.</li>
+<li>Radiation can be: absorbed, transmitted, or reflected.</li>
 </ul>
 
 <div class="footer footer-default">
 <p><a href="../Lectures.html">Back to Homepage</a></p>
 </div>
-</section></section>
+</section>
     </div>
   </div>
 
