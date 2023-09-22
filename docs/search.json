@@ -1194,7 +1194,7 @@
     "href": "Slides/Lecture4.html#spectral-reflectivity-alpha_lambda-a-leaf-1",
     "title": "Surface Geometry and Albedo",
     "section": "Spectral Reflectivity \\(\\alpha_{\\lambda}\\) a Leaf",
-    "text": "Spectral Reflectivity \\(\\alpha_{\\lambda}\\) a Leaf\nIn the PAR region, \\(a_{\\lambda}\\) and \\(\\tau_{\\lambda}\\) are small making \\(a_{\\lambda}\\) large.\n\n\n\nIn the NIR region, the opposite is the case\n\nThe leaf gets rid of radiation that might cause it to get too warm\n\nThe small peaks in \\(a_{\\lambda}\\) and \\(\\tau_{\\lambda}\\) at 0.55 \\(\\mu m\\) account for the green color"
+    "text": "Spectral Reflectivity \\(\\alpha_{\\lambda}\\) a Leaf\nIn the PAR region, \\(\\alpha_{\\lambda}\\) and \\(\\tau_{\\lambda}\\) are small making \\(a_{\\lambda}\\) large.\n\n\n\nIn the NIR region, the opposite is the case\n\nThe leaf gets rid of radiation that might cause it to get too warm\n\nThe small peaks in \\(a_{\\lambda}\\) and \\(\\tau_{\\lambda}\\) at 0.55 \\(\\mu m\\) account for the green color"
   },
   {
     "objectID": "Slides/Lecture4.html#in-the-fall-leaves-change-color-why",
@@ -1426,5 +1426,159 @@
     "title": "Radiation transfer in plant canopies",
     "section": "Take home points",
     "text": "Take home points\n\n\n\nRadiative transfer through plant canopies can be approximated using Beer’s Law using the cumulative Leaf Area Index (L) instead of the distance, plus path length and a clumping factor.\nRadiation within plant canopies is not uniformly distributed in space, time (‘sunflecks’) and with regard to spectral characteristics.\nWe can use radiative transfer theory to infer the LAI of a stand if we measure short-wave radiation transmission.\n\n\n\n\n\n\n\nBack to Homepage"
+  },
+  {
+    "objectID": "Slides/Lecture6.html#long-wave-radiation",
+    "href": "Slides/Lecture6.html#long-wave-radiation",
+    "title": "Long-wave Radiation",
+    "section": "Long-wave radiation",
+    "text": "Long-wave radiation\n\nTrees on UBC Campus recorded in the thermal infrared using a thermal scanner shown in false colo"
+  },
+  {
+    "objectID": "Slides/Lecture6.html#learning-objectives",
+    "href": "Slides/Lecture6.html#learning-objectives",
+    "title": "Long-wave Radiation",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\n\n\n\nExplain the role of Long-wave radiation in the climate system.\nDescribed how absorption and emission are linked & understand Kirchhoff’s law of thermal radiation.\nExplain how we can measure Long-wave radiation.\n\n\n\n\n\n\n\n\nToday we are going to move away from the shortwave radiation coming from the sun. We will examine Long-wave radiation, which is the radiation emitted from everything within the earth-atmosphere system (including us!)."
+  },
+  {
+    "objectID": "Slides/Lecture6.html#what-is-long-wave-radiation",
+    "href": "Slides/Lecture6.html#what-is-long-wave-radiation",
+    "title": "Long-wave Radiation",
+    "section": "What is ‘Long-wave’ radiation?",
+    "text": "What is ‘Long-wave’ radiation?\n\n\nVisible\nEmittance (W m-2)\nStefan’s constant\nCool roofs Tree tops\nSurface emissivity (typically > 0.95)\nWarm backyard Cool flat roof\nWarm backyard Cool flat roof\nAbsolute surface temperature (K)\n\nWavelength range: 3 µm to 100 µm\nLong-wave radiation = far-infrared radiation = thermal infrared radiation (TIR)\nExchanged between sky, surface and all surrounding objects.\nObjects emit radiation (emittance) according to the Stefan-Boltzmann equation (see Lecture 3):"
+  },
+  {
+    "objectID": "Slides/Lecture6.html#long-wave-3-to-100-μm",
+    "href": "Slides/Lecture6.html#long-wave-3-to-100-μm",
+    "title": "Long-wave Radiation",
+    "section": "Long-wave ~3 to >100 μm",
+    "text": "Long-wave ~3 to >100 μm\n\n\nshortwave0.15 to ~3 μm\nReview ‘shortwave’ vs. ‘Long-wave’\nAt 300 K:λmax is 9.7 μm (~10 μm)\nAt 6000 K:λmax is 0.48 μm (~0.5 μm)"
+  },
+  {
+    "objectID": "Slides/Lecture6.html#radiation-laws-terminology",
+    "href": "Slides/Lecture6.html#radiation-laws-terminology",
+    "title": "Long-wave Radiation",
+    "section": "Radiation Laws & Terminology",
+    "text": "Radiation Laws & Terminology\n\n\n\nPlanck’s Law\nWiens Law\nStefan Boltzmann Law\nPAR 0.4-0.7 μm\nBeer’s Law\nKirchhoff’s Law\n\n\n\n\n\n\nYou should review these definitions from earlier material."
+  },
+  {
+    "objectID": "Slides/Lecture6.html#visible",
+    "href": "Slides/Lecture6.html#visible",
+    "title": "Long-wave Radiation",
+    "section": "Visible",
+    "text": "Visible\n\n\nLong-wave\nShortwave\nAn urban environment with buildings and trees recorded from a camera in the TIR during day (right) and in the visible part of the short-wave (left). Dark bluish colors refer to low radiative flux densities, yellow to white colors are strong radiative flux densities.\nCool roofs Tree tops\nShortwave photography vs Long-wave image\nWarm backyard Cool flat roof\nImages: FLIR / D. Scherer, Ecology Department, TU Berlin.\nWarm backyard Cool flat roof\n\n\n\n\n\n\nWe take advantage of thermal infra-red cameras (that “see” Long-wave radiation which is not visible to our eyes). Can you think of some examples??"
+  },
+  {
+    "objectID": "Slides/Lecture6.html#kirchhoffs-law",
+    "href": "Slides/Lecture6.html#kirchhoffs-law",
+    "title": "Long-wave Radiation",
+    "section": "Kirchhoff’s Law",
+    "text": "Kirchhoff’s Law\nEmissivity = Absorptivity\n\\[\na_{\\lambda} = \\epsilon_{\\lambda}\n\\qquad(1)\\]\n\n\nKirchhoff’s law\n\nAssuming no transmission the absorptivity of a body (aλ) equals its emissivity (ελ)\nA good absorber is a good emitter – also true that if a surface is a poor absorber it also doesn’t emit that kind of radiation.\n\n\n\n\n\n\nAnother Law to remember! It tells us that a particular wavelength, objects that absorb radiation well at that wavelength, are equally good emitters of radiation at that wavelength."
+  },
+  {
+    "objectID": "Slides/Lecture6.html#kirchhoffs-law.",
+    "href": "Slides/Lecture6.html#kirchhoffs-law.",
+    "title": "Long-wave Radiation",
+    "section": "Kirchhoff’s law.",
+    "text": "Kirchhoff’s law.\n\n\n\nBe sure to note that Kirchhoff’s law only applies if the wavelength considered is the same – do not mix them together.\nSince no bodies in the Earth-Atmosphere system are hot enough to emit solar radiation Kirchhoff’s law only has relevance to long-wave exchange in climatology."
+  },
+  {
+    "objectID": "Slides/Lecture6.html#the-atmosphere-is-a-selective-absorber-in-the-long-wave.",
+    "href": "Slides/Lecture6.html#the-atmosphere-is-a-selective-absorber-in-the-long-wave.",
+    "title": "Long-wave Radiation",
+    "section": "The atmosphere is a selective absorber in the Long-wave.",
+    "text": "The atmosphere is a selective absorber in the Long-wave.\nThe most significant absorbing gases are water vapour (the most important), CO2, O3, O2, N2O, and CH4 Aerosols (particles) and liquid water in cloud if present will be dominant.\n\n\n\n\n\n\n\n\nWe have seen this graph before but it is worth reviewing especially with respective to the important “Greenhouse” gases. Notice that there is very little absorption in the wavelength band known as the “atmospheric window”"
+  },
+  {
+    "objectID": "Slides/Lecture6.html#µm",
+    "href": "Slides/Lecture6.html#µm",
+    "title": "Long-wave Radiation",
+    "section": "8µm",
+    "text": "8µm\n\n\n13µm\nAtmospheric absorption and emission\n\n\n\n\n\nThis is an important graph that I will discuss in the VIDEO"
+  },
+  {
+    "objectID": "Slides/Lecture6.html#net-long-wave-radiation-flux-density",
+    "href": "Slides/Lecture6.html#net-long-wave-radiation-flux-density",
+    "title": "Long-wave Radiation",
+    "section": "Net Long-wave radiation flux density",
+    "text": "Net Long-wave radiation flux density\n(i.e. what is absorbed)\n\n\nThe absorbed long-wave radiation flux density (the long-wave net radiation L*) at the surface is the difference between the input from above L↓ and the output from emission and reflected L↓:"
+  },
+  {
+    "objectID": "Slides/Lecture6.html#emitted",
+    "href": "Slides/Lecture6.html#emitted",
+    "title": "Long-wave Radiation",
+    "section": "emitted",
+    "text": "emitted\n\n\nreflected\n\nNet Long-wave radiation flux density\n(i.e. what is absorbed)\n\nThe absorbed long-wave radiation flux density (the long-wave net radiation L*) at the surface is the difference between the input from the atmosphere above L↓ and the output from emission and reflected L↑:\n\n\n\n\n\nSee VIDEO"
+  },
+  {
+    "objectID": "Slides/Lecture6.html#surface",
+    "href": "Slides/Lecture6.html#surface",
+    "title": "Long-wave Radiation",
+    "section": "surface",
+    "text": "surface\n\n\nclouds\nleaves\ngases\naerosols\nLong-wave exchange"
+  },
+  {
+    "objectID": "Slides/Lecture6.html#test-your-knowledge",
+    "href": "Slides/Lecture6.html#test-your-knowledge",
+    "title": "Long-wave Radiation",
+    "section": "Test your knowledge",
+    "text": "Test your knowledge\n\n\nIs Long-wave radiation emitted by the surface generally greater than that emitted by the atmosphere? Does this have to be the case in a given region?  Assume that both the surface and atmosphere emit as blackbodies.  [Hint: is the surface usually warmer than the atmosphere?]"
+  },
+  {
+    "objectID": "Slides/Lecture6.html#low-clouds",
+    "href": "Slides/Lecture6.html#low-clouds",
+    "title": "Long-wave Radiation",
+    "section": "Low clouds",
+    "text": "Low clouds\n\n\nLow clouds\nFog\nL* = -1.48 MJ m-2 d-1\nDiurnal course\nCloudy sky in March\n\n\n\n\n\n\n\nNotice how clouds reduce significantly the loss of Long-wave energy from the surface. This is the reason why we don’t see very cold night temperature in winter when we have clouds overhead."
+  },
+  {
+    "objectID": "Slides/Lecture6.html#low-clouds-1",
+    "href": "Slides/Lecture6.html#low-clouds-1",
+    "title": "Long-wave Radiation",
+    "section": "Low clouds",
+    "text": "Low clouds\n\n\nLow clouds\nFog\nL* = -1.48 MJ m-2 d-1\nCloudy sky in March\nHow do clouds impact nighttime temperatures?\n\n\n\n\n\n\n\nNotice how clouds reduce significantly the loss of Long-wave energy from the surface. This is the reason why we don’t see very cold night temperature in winter when we have clouds overhead."
+  },
+  {
+    "objectID": "Slides/Lecture6.html#greenhouse-is-not-a-good-analogy-because-warming-in-greenhouses-largely-due-to-reduction-in-convective-heat-transfer-by-shelter-and-to-a-lesser-extent-due-to-increased-downward-long-wave-emission-from-the-glass.-in-the-atmosphere-convection-is-not-constrained",
+    "href": "Slides/Lecture6.html#greenhouse-is-not-a-good-analogy-because-warming-in-greenhouses-largely-due-to-reduction-in-convective-heat-transfer-by-shelter-and-to-a-lesser-extent-due-to-increased-downward-long-wave-emission-from-the-glass.-in-the-atmosphere-convection-is-not-constrained",
+    "title": "Long-wave Radiation",
+    "section": "‘Greenhouse’ is not a good analogy because warming in greenhouses largely due to reduction in convective heat transfer by shelter, and to a lesser extent due to increased downward Long-wave emission from the glass. In the Atmosphere convection is not constrained",
+    "text": "‘Greenhouse’ is not a good analogy because warming in greenhouses largely due to reduction in convective heat transfer by shelter, and to a lesser extent due to increased downward Long-wave emission from the glass. In the Atmosphere convection is not constrained\n\n\nGreenhouse (‘Atmosphere’) Effect\n\n\n\n\n\nACTUALLY – it turns out hat greenshouses derive their warming effect mostly from the effects of shelter rather than changing Long-wave losses."
+  },
+  {
+    "objectID": "Slides/Lecture6.html#view-factors",
+    "href": "Slides/Lecture6.html#view-factors",
+    "title": "Long-wave Radiation",
+    "section": "View factors",
+    "text": "View factors\n\n\n\nThe view of the sky from an object (sky view factor, sky) is\nsignificant in quantifying Long-wave exchange at night. This is\nbecause the sky is usually ‘cold’ and an effective heat sink\nRefers to the fraction of radiation leaving one object that is intercepted by another object\nOr the fraction of one object’s view (usually hemispherical) that is occupied by another object\n\n\n\n\n\n\nThe more open a site is (the more of the sky hemisphere is visible from a point at the surface) has an impact on the amount of Long-wave radiation that can be emitted to atmosphere (and hence cool the surface)"
+  },
+  {
+    "objectID": "Slides/Lecture6.html#sky-view-factor-sky-applications",
+    "href": "Slides/Lecture6.html#sky-view-factor-sky-applications",
+    "title": "Long-wave Radiation",
+    "section": "Sky view factor, sky applications",
+    "text": "Sky view factor, sky applications\n\n\nA clump of trees can keep livestock warm at night by reducing the animals’ sky view factor\n\n\n\n\n\n\n\nThis effect has really important applications!"
+  },
+  {
+    "objectID": "Slides/Lecture6.html#measuring-l",
+    "href": "Slides/Lecture6.html#measuring-l",
+    "title": "Long-wave Radiation",
+    "section": "Measuring L↓",
+    "text": "Measuring L↓\n\n\n\n\n\n\n\n\nThis is a pyrgeometer!"
+  },
+  {
+    "objectID": "Slides/Lecture6.html#measuring-l-and-l",
+    "href": "Slides/Lecture6.html#measuring-l-and-l",
+    "title": "Long-wave Radiation",
+    "section": "Measuring L↓ and L↑",
+    "text": "Measuring L↓ and L↑"
+  },
+  {
+    "objectID": "Slides/Lecture6.html#take-home-points",
+    "href": "Slides/Lecture6.html#take-home-points",
+    "title": "Long-wave Radiation",
+    "section": "Take home points",
+    "text": "Take home points\n\n\n\nLong-wave radiation is emitted from Atmosphere (gases, aerosols, droplets) and surface at ambient temperatures.\nKirchhoff’s Law states that for a certain wavelength the absorptivity aλ equals emissivity ελ.\nAbsorptivities and emissivities of most natural surface materials are high in the Long-wave, but not for gases.\nThe ‘atmospheric window’ is a region in the Long-wave where few gases interfere - often transparent.\n\n\n\n\n\n\n\nBack to Homepage"
   }
 ]
