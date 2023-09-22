@@ -650,12 +650,15 @@
 <h2>Cosine law of illumination</h2>
 <p>Flux density on a surface (<span class="math inline">\(R_s\)</span>) is proportional to the flux density perpendicular to a beam (<span class="math inline">\(R_p\)</span>) and the zenith (<span class="math inline">\(\theta\)</span>).</p>
 <ul>
-<li>For a flat land surface <span class="math inline">\(\theta\)</span> = latitude + solar declination</li>
+<li>For a flat land surface <strong>at solar noon</strong></li>
 </ul>
+<p><span id="eq-Solar-Zenith-at-Noon"><span class="math display">\[
+\theta = Latitude - Solar\:Declination
+\qquad(1)\]</span></span></p>
 <div class="columns">
 <div class="column" style="width:50%;">
 <ul>
-<li><span class="math inline">\(\theta\)</span> ranges from:
+<li>Solar Declination ranges from:
 <ul>
 <li>+23.5 (summer solstice)</li>
 <li>0 (equinoxes)</li>
@@ -665,7 +668,7 @@
 </div><div class="column" style="width:50%;">
 <p><span id="eq-Cosine-Law-of-Illumination"><span class="math display">\[
 R_s = R_p cos(\theta)
-\qquad(1)\]</span></span></p>
+\qquad(2)\]</span></span></p>
 <p><img data-src="images/Lecture3/Cosine_Angle.png"></p>
 </div>
 </div>
@@ -747,9 +750,9 @@ R_s = R_p cos(\theta)
 <h2>Total Irradiance</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><span id="eq-Total-Irradiance"><span class="math display">\[
-SW\downarrow = SW\downarrow_s + SW\downarrow_d
-\qquad(2)\]</span></span></p>
+<p><span id="eq-Solar-Irradiance"><span class="math display">\[
+SW\downarrow = SW\downarrow_S + SW\downarrow_D
+\qquad(3)\]</span></span></p>
 <div style="font-size: 50%;">
 <p><em>Note</em> the differing label convention in this figure. Some sources will use “K” for shortwave radiation. I don’t like that because its too similar to “Kelvin”, so I prefer to use “SW”.</p>
 </div>
@@ -814,7 +817,7 @@ SW\downarrow = SW\downarrow_s + SW\downarrow_d
 </section>
 <section id="pyranometer" class="slide level2">
 <h2>Pyranometer</h2>
-<p>Solar radiation $<span class="math inline">\(SW\downarrow = SW\downarrow_S + SW\downarrow_D\)</span>) is measured by a pyranometer.</p>
+<p>Solar irradiance <span class="math inline">\(SW\downarrow = SW\downarrow_S + SW\downarrow_D\)</span> is measured by a pyranometer.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
 <ul>

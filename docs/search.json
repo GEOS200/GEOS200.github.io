@@ -67,21 +67,49 @@
     "href": "Assignments/Lab2.html",
     "title": "Lab 2: Radiation",
     "section": "",
-    "text": "This assignment is worth 14 points."
+    "text": "This assignment is worth 15 points."
   },
   {
-    "objectID": "Assignments/Lab2.html#short-wave-long-wave-radiation",
-    "href": "Assignments/Lab2.html#short-wave-long-wave-radiation",
+    "objectID": "Assignments/Lab2.html#short-wave-vs.-long-wave-radiation",
+    "href": "Assignments/Lab2.html#short-wave-vs.-long-wave-radiation",
     "title": "Lab 2: Radiation",
-    "section": "Short-wave & Long-wave Radiation",
-    "text": "Short-wave & Long-wave Radiation\nIn meteorology, we broadly classify radiation by wavelength \\(\\lambda\\) as either short-wave (\\(SW\\)) or long-wave (\\(LW\\)). Units of wavelength are often given in micrometers (1 \\(\\mu m\\) = 10-6 m). The distinction is relative and you may see variability across the literature. We will define them as:\n\nShort-wave (\\(SW\\)): \\(\\lambda < 3 \\mu m\\)\nLong-wave (\\(LW\\)): \\(\\lambda >= 3 \\mu m\\)\n\nRecall from lecture1 2 3: radiation may interact with an object in one of three ways; it can be absorbed, transmitted, or reflected.\n\n\n\\[\na_\\lambda + \\tau_\\lambda + \\alpha_\\lambda = 1\n\\tag{1}\\]\n\nThe coefficients of absorption (\\(a_\\lambda\\)), transmission (\\(\\tau_\\lambda\\)), and reflection (\\(\\alpha_\\lambda\\)) vary depending on the wavelength \\(\\lambda\\) of the incident radiation and the properties of the object.\nPlant leaves have interesting radiative properties that are part of the plants’ adaptation to their environments. The coefficients of reflection, transmission and absorption are strongly dependent on wavelength as shown by a typical example in Figure 1.\n\nEnergy is strongly absorbed in the visible region where radiation is active in photosynthesis.\nIn the near infrared region (NIR) radiation is more strongly reflected and transmitted.\n\n\n\n\n\n\nFigure 1: Spectral absorptivity, reflectivity and transmissivity of a poplar leaf\n\n\n\n\nRecall from lecture1; the radiative output of an object is proportional to its temperature. The total radiative output can be approximated (for an idealized object) using the Stefan-Boltzman law:\n\\[\nE_b = \\sigma_b T^4\n\\tag{2}\\]\n\n\nTo describe a radiation source, we can plot its spectrum. Spectra for solar radiation and radiation from a fluorescent lamp and an incandescent tungsten filament lamp are shown in Figure 2.\n\nBecause the sun is very hot (\\(\\approx\\) 5800 K) it emits a large amount of radiation across a wide range of the wavelengths Figure 3.\n\nIt is important to note that: short-wave radiation makes up the overwhelming majority (99+%) of the sun’s radiative output\n\n\nBecause the earth is relatively cool (\\(\\approx\\) 288 K) it emits a smaller amount of radiation across a narrower range of wavelengths.\n\nIt is important to note that: the earth does not emit short-wave radiation because it is to cool.\n\n\n\n\n\n\nFigure 2: Observed spectral irradiance of sunlight, a Tungsten incandescent land (2700°C) and a fluorescent lamp. In this diagram, the spectra have been adjusted to equal peak heights.\n\n\n\n\n\n\n\n\n\n\n\n(a) Black-body spectral irradiance of the Sun and Earth (logarithmic scale).\n\n\n\n\n\n\n\n(b) Black-body spectral irradiance of the Sun and Earth.\n\n\n\n\nFigure 3: Idealized (Black-body) spectral irradiance of the Sun and Earth. Calculated using plank’s law see lecture assuming the objects operate as black bodies.\n\n\nFollowing equation Equation 1. A portion of incoming short-wave radiation (\\(SW \\downarrow\\)) that hits Earth is reflected by the surface back towards the sky as outgoing short-wave radiation (\\(SW \\uparrow\\)). We can define the term albedo to describe reflected short wave radiation (\\(\\alpha_SW\\)):\n\\[\nalbedo = \\alpha_{SW} = \\frac{\\uparrow SW}{\\downarrow SW}\n\\tag{3}\\]\nFollowing Equation 1, the earth can also absorb shortwave radiation (\\(a_{SW}\\)). The earth (as a whole) also does not transmit short-wave radiation (\\(\\tau_{SW}\\)). However objects on or near its surface, such as leaves can Figure 1. When dealing with an opaque object such as a the surface of the earth, we can define absorption as Equation 4, but when dealing with transparent objects such as leaves or water, we must define absorption as Equation 5:\n\\[\na_{\\lambda} = 1  - \\alpha_{\\lambda}\n\\tag{4}\\]\n\\[\na_{\\lambda} = 1  - \\alpha_{\\lambda} - \\tau_{\\lambda}\n\\tag{5}\\]\n\nNote Equation 1 and Equation 5 are equivalent to one another.\n\nFollowing Equation 4, any short-wave radiation that is not reelected by the Earth’s surface, will be absorbed. When short-wave radiation is absorbed, the energy is “transformed” from one form to another. Some of the energy goes towards phase changes of water, some of it goes into chemical reactions (e.g., photosynthesis), and a large portion of it is re-emitted as outgoing long-wave radiation (\\(LW\\uparrow\\)), aka. thermal radiation. Following\nCombining these Net All-Wave Radiation (\\(R_n\\)), as defined in Equation 6, is the sum of all incoming (\\(\\downarrow\\)) and outgoing (\\(\\uparrow\\)) short-wave (\\(SW\\)) and long-wave (\\(LW\\)) radiation. Net radiation can tell us how much energy is entering (positive) or leaving (negative) the site at any given time. If net \\((R_n)\\) is a large positive number, that indicates significant energy input, which would cause the land surface at the site to warm up. Conversely, if \\((R_n)\\) is negative, that means the site is loosing energy (cooling off).\n\\[\nR_n = (SW \\downarrow - SW \\uparrow) + (LW \\downarrow - LW \\uparrow)\n\\tag{6}\\]\nThe all-wave budget could also be considered to consist of a net short-wave budget, \\(SW* = SW\\downarrow - SW\\uparrow\\) and a long-wave budget \\(SW* = SW\\downarrow - SW\\uparrow\\) , i.e. \\(R_n = SW* + LW*\\). The sign convention adopted here is that individual fluxes have no sign (i.e., always positive) but net fluxes (those with an asterisk) are positive if they are a net energy gain for the surface, and negative if they are a net energy loss."
+    "section": "Short-wave vs. Long-wave Radiation",
+    "text": "Short-wave vs. Long-wave Radiation\nIn meteorology, we broadly classify radiation by wavelength \\(\\lambda\\) as either short-wave (\\(SW\\)) or long-wave (\\(LW\\)). Units of wavelength are often given in micrometers (1 \\(\\mu m\\) = 10-6 m). The distinction is relative and you may see variability across the literature. We will define them as:\n\nShort-wave (\\(SW\\)): \\(\\lambda < 3 \\mu m\\)\nLong-wave (\\(LW\\)): \\(\\lambda >= 3 \\mu m\\)"
+  },
+  {
+    "objectID": "Assignments/Lab2.html#radiation-balance",
+    "href": "Assignments/Lab2.html#radiation-balance",
+    "title": "Lab 2: Radiation",
+    "section": "Radiation Balance",
+    "text": "Radiation Balance\nRecall from lecture1 2 3: radiation may interact with an object in one of three ways; it can be absorbed, transmitted, or reflected.\n\n\n\\[\na_\\lambda + \\tau_\\lambda + \\alpha_\\lambda = 1\n\\tag{1}\\]\n\nThe coefficients of absorption (\\(a_\\lambda\\)), transmission (\\(\\tau_\\lambda\\)), and reflection (\\(\\alpha_\\lambda\\)) vary depending on the wavelength \\(\\lambda\\) of the incident radiation and the properties of the object.\nPlant leaves have interesting radiative properties that are part of the plants’ adaptation to their environments. The coefficients of reflection, transmission and absorption are strongly dependent on wavelength as shown by a typical example in Figure 1.\n\nEnergy is strongly absorbed in the visible region where radiation is active in photosynthesis.\nIn the near infrared region (NIR) radiation is more strongly reflected and transmitted.\n\n\n\n\n\n\nFigure 1: Spectral absorptivity, reflectivity and transmissivity of a poplar leaf"
+  },
+  {
+    "objectID": "Assignments/Lab2.html#radiative-output-of-the-sun",
+    "href": "Assignments/Lab2.html#radiative-output-of-the-sun",
+    "title": "Lab 2: Radiation",
+    "section": "Radiative Output of the Sun",
+    "text": "Radiative Output of the Sun\nRECALL:\n\n\n\n\n\n\n\nFlux\nFlux Density\n\n\n\n\nEnergy flow, Watts or W [i.e., Joules per second]\nEnergy flow divided by area (W m-2).\n\n\n\nRecall from lecture1; the radiative output of an object is proportional to its temperature. The radiative flux density can be approximated (for an idealized object) using the Stefan-Boltzman Law for a “Black Body”:\n\\[\nE_b = \\sigma_b T^4\n\\tag{2}\\]\nHowever, in reality, we must adjust the calculation to account for the emissivity coefficient (\\(\\epsilon\\)) of the object. The \\(\\epsilon\\) value represents the actual radiative output of a real object relative to the emission of an idealized Black-body at the same temperature. To do to this we can adjust and use the Stefan-Boltzman Law for a “Grey Body”:\n\\[\nE_g = \\epsilon\\sigma_b T^4\n\\tag{3}\\]\n\n\nTo describe a radiation source, we can plot its spectrum. Spectra for solar radiation and radiation from a fluorescent lamp and an incandescent tungsten filament lamp are shown in Figure 2.\n\nBecause the sun is very hot (\\(\\approx\\) 5800 K) it emits a large amount of radiation across a wide range of the wavelengths Figure 3.\n\nIt is important to note that: short-wave radiation makes up the overwhelming majority (99+%) of the sun’s radiative output\n\n\nBecause the earth is relatively cool (\\(\\approx\\) 288 K) it emits a smaller amount of radiation across a narrower range of wavelengths.\n\nIt is important to note that: the earth does not emit short-wave radiation because it is to cool.\n\n\n\n\n\n\nFigure 2: Observed spectral irradiance of sunlight, a Tungsten incandescent land (2700°C) and a fluorescent lamp. In this diagram, the spectra have been adjusted to equal peak heights.\n\n\n\n\n\n\n\n\n\n\n\n(a) Black-body spectral irradiance of the Sun and Earth (logarithmic scale).\n\n\n\n\n\n\n\n(b) Black-body spectral irradiance of the Sun and Earth.\n\n\n\n\nFigure 3: Idealized (Black-body) spectral irradiance of the Sun and Earth. Calculated using plank’s law see lecture assuming the objects operate as black bodies."
+  },
+  {
+    "objectID": "Assignments/Lab2.html#radiation-reaching-the-earth",
+    "href": "Assignments/Lab2.html#radiation-reaching-the-earth",
+    "title": "Lab 2: Radiation",
+    "section": "Radiation Reaching the Earth",
+    "text": "Radiation Reaching the Earth\nThankfully, on Earth, we are not subject to the full radiative output of the sun. The solar beam spreads out (dissipates) on the (approximately) 150 million km journey from the sun to the Earth. Satellite measurements indicate that the mean radiative flux density a the top of the atmosphere is 1361 W m-2; this value is known as the solar constant \\(I_0\\). Knowing the value of the solar constant, we can do some calculations to deduce the total radiative flux of the sun in W. The calculation is shown in the example below in Example 1 using R code. See the output at the bottom for the approximate value. Note: This is just an illustrative example to expose you to programmatic calculations using R. You do not need to know/learn R for this course.\nThe earth has a slightly eccentric orbit - it is elliptical (slightly oval shaped) and off center. This means that the distance between the earth and the sun vary slightly. The Earth is closest to the sun (147 million km) on the perihelion which occurs in early January and it is farthest from the sun (152 million km) on the aphelion in early July Figure 4 (a). Consequently, the true flux density of the solar beam at the top of Earth’s atmosphere will deviate slightly from the solar constant over the course of the year.\n\nExample 1  \n\n# Deriving solar radiative output from the solar constant.\n# Defining our variables\nSolar_Constant = 1361\n\n# Note - when writing code, we can use the \"e\" character as shorthand for scientific notation\n# 1.5e11 = 1.5 x 10^11\nRadius_of_Orbit = 1.5e11\n\n# Calculate the total area over which the solar beam is spread at the average distance between the earth and the sun\n# Area = 4πr2\nArea = 4*pi*Radius_of_Orbit**2\n\n# To convert the flux density (Solar_Constant) to a total Flux we multiply by area\nSolar_Flux = Solar_Constant*Area\n\n# This function formats a text (string) output the \"%s\" values are replaced with the variable(s) listed after the string\nOutput <- sprintf('Radiative Output (Flux) of the sun %s W',Solar_Flux)\n\n# This function prints us a cleanly formatted output\nwriteLines(Output)\n\nRadiative Output (Flux) of the sun 3.84813684138214e+26 W\n\n\n\n\n\n\n\n\n\n\n(a) Simplified diagram showing the seasonal changes in the Sun-Earth geometry.\n\n\n\n\n\n\n\n(b) Diagram showing the spreading of the solar beam with changing latitude\n\n\n\n\nFigure 4: Some key aspects of the geometry of the Sun-Earth system."
+  },
+  {
+    "objectID": "Assignments/Lab2.html#balancing-the-budget",
+    "href": "Assignments/Lab2.html#balancing-the-budget",
+    "title": "Lab 2: Radiation",
+    "section": "Balancing the Budget",
+    "text": "Balancing the Budget\nFollowing equation Equation 1. A portion of incoming short-wave radiation (\\(SW \\downarrow\\)) that hits Earth is reflected by the surface back towards the sky as outgoing short-wave radiation (\\(SW \\uparrow\\)). We can define the term albedo to describe reflected short wave radiation (\\(\\alpha_SW\\)):\n\\[\nalbedo = \\alpha_{SW} = \\frac{\\uparrow SW}{\\downarrow SW}\n\\tag{4}\\]\nFollowing Equation 1, the earth can also absorb shortwave radiation (\\(a_{SW}\\)). The earth (as a whole) also does not transmit short-wave radiation (\\(\\tau_{SW}\\)). However objects on or near its surface, such as leaves can Figure 1. When dealing with an opaque object such as a the surface of the earth, we can define absorption as Equation 5, but when dealing with transparent objects such as leaves or water, we must define absorption as Equation 6:\n\\[\na_{\\lambda} = 1  - \\alpha_{\\lambda}\n\\tag{5}\\]\n\\[\na_{\\lambda} = 1  - \\alpha_{\\lambda} - \\tau_{\\lambda}\n\\tag{6}\\]\n\nNote Equation 1 and Equation 6 are equivalent to one another.\n\nFollowing Equation 5, any short-wave radiation that is not reelected by the Earth’s surface, will be absorbed. When short-wave radiation is absorbed, the energy is “transformed” from one form to another. Some of the energy goes towards phase changes of water, some of it goes into chemical reactions (e.g., photosynthesis), and a large portion of it is re-emitted as outgoing long-wave radiation (\\(LW\\uparrow\\)), aka. thermal radiation. Following\nCombining these Net All-Wave Radiation (\\(R_n\\)), as defined in Equation 7, is the sum of all incoming (\\(\\downarrow\\)) and outgoing (\\(\\uparrow\\)) short-wave (\\(SW\\)) and long-wave (\\(LW\\)) radiation. Net radiation can tell us how much energy is entering (positive) or leaving (negative) the site at any given time. If net \\((R_n)\\) is a large positive number, that indicates significant energy input, which would cause the land surface at the site to warm up. Conversely, if \\((R_n)\\) is negative, that means the site is loosing energy (cooling off).\n\\[\nR_n = (SW \\downarrow - SW \\uparrow) + (LW \\downarrow - LW \\uparrow)\n\\tag{7}\\]\nThe all-wave budget could also be considered to consist of a net short-wave budget, \\(SW* = SW\\downarrow - SW\\uparrow\\) and a long-wave budget \\(SW* = SW\\downarrow - SW\\uparrow\\) , i.e. \\(R_n = SW* + LW*\\). The sign convention adopted here is that individual fluxes have no sign (i.e., always positive) but net fluxes (those with an asterisk) are positive if they are a net energy gain for the surface, and negative if they are a net energy loss."
   },
   {
     "objectID": "Assignments/Lab2.html#questions",
     "href": "Assignments/Lab2.html#questions",
     "title": "Lab 2: Radiation",
     "section": "Questions",
-    "text": "Questions\nThe following simple computations help to demonstrate the radiation relationships existing between the Sun (the Earth’s only source of energy) and the Earth and the Earth and Space. They explain the sizes of the radiation streams between these bodies and so doing illustrate the concept of a radiation budget.\nRECALL:\nFlux = Energy flow, Watts or W [i.e., Joules per second]\nFlux Density = Energy flow divided by area (W m-2).\n\nQuestion 1 (0.5 points)\nUse the Stefan-Botzman Law (Equation 2) to estimate the total radiative flux density of the sun, which has a surface temperature of approximately 5800 K.\n\n\nQuestion 2 (2 points)\n\nThe actual flux of radiation emitted by the Sun is ~ 3.86 ×1026 W. Given the Sun’s radius to be 7 × 108 m, find the average flux density in W m-2 of solar (short-wave) radiation leaving its surface. Hint: The area of a sphere: A=4πr2\nHow does this number compare to the value you calculated using Equation 2? What explains the difference? Hint See the lecture slides\n\n\n\nQuestion 3 (1 points)\nExtending the logic applied above, you can also use this approach to approximate the radiative flux density at the top of the Earth’s atmosphere. Simply substitute the mean radius of the Earth’s orbit (1.5 × 1011 m) for the radius of the sun in your above calculation."
+    "text": "Questions\nThe following simple computations help to demonstrate the radiation relationships existing between the Sun (the Earth’s only source of energy) and the Earth and the Earth and Space. They explain the sizes of the radiation streams between these bodies and so doing illustrate the concept of a radiation budget.\n\nQuestion 1 (1 points)\nUse the Stefan-Botzman Law for a Black-Body (Equation 2) to estimate the radiative flux density of the sun, which has a surface temperature of approximately 5800 K.\n\n\nQuestion 2 (2 points)\n\nThe radiative flux of the Sun is approximately 3.85 ×1026 W (see Example 1). Given the Sun’s radius to be 6.96 × 108 m, find the average flux density in W m-2 of solar (short-wave) radiation leaving the Sun’s surface. Hint: The area of a sphere: A=4πr2\nWhy is this number lower than what you got using the Equation 2?\n\n\n\nQuestion 3 (0.5 points)\nFollowing these calculations - what would the approximate emissivity (\\(\\epsilon\\)) of the sun be?\n\n\nQuestion 4 (1 points)\nThe value of the solar constant \\(I_0\\) is for the Earth’s mean distance from the sun. How would the distnace between the earth and the sun differ over the year? What would the approximate difference in radiate flux density at the top of the atmosphere be between the perihelion and aphelion respectively? Hint: see Figure 4 (a) & Example 1"
   },
   {
     "objectID": "Assignments/Lab2.html#experimental-procedures",
@@ -95,7 +123,7 @@
     "href": "Assignments/Lab2.html#questions-1",
     "title": "Lab 2: Radiation",
     "section": "Questions",
-    "text": "Questions\n\nQuestion 4 (3 points)\nReport results in the Spectral absorptivity, reflectivity and transmissivity table and comment on possible errors in the measurements. Copy this table into your lab report word document. Note you should have calculated \\(a_\\lambda\\) and \\(\\alpha_\\lambda\\) for all soil samples, the white and black hide under fluorescent and incandescent light \\(a_\\lambda\\), \\(\\tau_\\lambda\\), and \\(\\alpha_\\lambda\\) for both leaves - everything separately for the fluorescent and incandescent light.\n\n\nQuestion 5 (2 points)\nExplain any differences you found between your measurements of the reflection, transmission and absorption coefficients of the green leaf using fluorescent and incandescent lamps (refer to Figure 2 and Figure 1)\n\n\nQuestion 6 (1 points)\nWhat features of the spectral characteristics of green leaves account for their green color? (Refer to Figure 1)?\n\n\nQuestion 7 (0.5 points)\nFill in the blanks: indicate the words/phrases that complete the statement.\n________ is the pigment responsible for the green color of leaves? What is the important function of this pigment?\n\n\nQuestion 8 (1 points)\nWhy is it beneficial to a plant to have a small absorption coefficient between 0.7 \\(\\mu m\\) and 3 \\(\\mu m\\)?\n\n\nQuestion 9 (1 points)\nFrom the measurements of \\(\\alpha_\\lambda\\) and \\(a_\\lambda\\) of the soil samples, what is the effect of organic matter and water content on these radiative properties?"
+    "text": "Questions\n\nQuestion 5 (3 points)\nReport results in the Spectral absorptivity, reflectivity and transmissivity table and comment on possible errors in the measurements. Copy this table into your lab report word document. Note you should have calculated \\(a_\\lambda\\) and \\(\\alpha_\\lambda\\) for all soil samples, the white and black hide under fluorescent and incandescent light \\(a_\\lambda\\), \\(\\tau_\\lambda\\), and \\(\\alpha_\\lambda\\) for both leaves - everything separately for the fluorescent and incandescent light.\n\n\nQuestion 6 (2 points)\nExplain any differences you found between your measurements of the reflection, transmission and absorption coefficients of the green leaf using fluorescent and incandescent lamps (refer to Figure 2 and Figure 1)\n\n\nQuestion 7 (0.5 points)\nFill in the blank(s): indicate the words/phrases that complete the statement.\n________ is the pigment responsible for the green color of leaves? It is one of the primary pigments responsible for ________.\n\n\nQuestion 8 (1 points)\nFrom the measurements of \\(\\alpha_\\lambda\\) and \\(a_\\lambda\\) of the soil samples, what is the effect of organic matter and water content on these radiative properties?"
   },
   {
     "objectID": "index.html",
@@ -221,182 +249,217 @@
     "href": "Resources.html",
     "title": "Additional Resources",
     "section": "",
-    "text": "The SI (Système International d’Unités or International System of Units) is the official unit system in science and therefore mandatory in climatology. This system uses a small number of base units from which other derived units can be obtained. The SI base units are listed in Table 1 and should be used whenever applicable in this course.\n\nThe unit for temperature is Kelvin (K, not \\(^{\\circ} K\\)). Temperatures may be also indicated in degree Celsius ( \\(^{\\circ} C\\) ). However, temperature-differences should be referred to as Kelvin (K). The conversion is listed in ?@eq-Kelvin-to-Celsius. Note how one Kelvin is equivalent to one degree Celsius, but the units have different zero points.\n\n0 K represents absolute zero, which is the lowest possible temperature: i.e., a complete lack of energy in a system.\n\nKelvin is on a ratio scale: it starts at a fixed, meaningful zero value and can only take positive values. This allows for relative comparisons between values:\n\ne.ge., 100 K is “twice as hot” as 50 K\n\n\n\\(^{\\circ} C\\) is the freezing point of fresh water at 1 atm (mean atmospheric pressure at sea level).\n\nCelsius is on an interval scale > it has an arbitrary zero value and can take positive or negative values. This prevents relative comparisons between values:\n\ne.ge., 100 \\(^{\\circ} C\\) is not “twice as hot” as 50 \\(^{\\circ} C\\)\n\n\n\nYou can use the following equation to convert between Celsius and Kelvin:\n\n\\[\nT(K) = T(\\deg C) + 273.15\n\\tag{1}\\]\n\n\n\n\nTable 1: SI Base Units.\n\n\n\n\n\n\n\nSI base unit\nSymbol\nQuantity\n\n\n\n\nMeter\nm\nLength\n\n\nKilogram\nKg\nMass\n\n\nSecond\ns\nTime\n\n\nKelvin\nK\nThermodynamic Temperature\n\n\nAmpere\nA\nElectric current\n\n\nMole\nmol\nAmount of a substance\n\n\nCandela\ncd\nLuminous intensity"
+    "text": "The SI (Système International d’Unités or International System of Units) is the official unit system in science and therefore mandatory in climatology. This system uses a small number of base units from which other derived units can be obtained. The SI base units are listed in Table 1 and should be used whenever applicable in this course.\n\nThe unit for temperature is Kelvin (K, not \\(^{\\circ} K\\)). Temperatures may be also indicated in degree Celsius ( \\(^{\\circ} C\\) ). However, temperature-differences should be referred to as Kelvin (K). The conversion is listed in Equation 12. Note how one Kelvin is equivalent to one degree Celsius, but the units have different zero points.\n\n0 K represents absolute zero, which is the lowest possible temperature: i.e., a complete lack of energy in a system.\n\nKelvin is on a ratio scale: it starts at a fixed, meaningful zero value and can only take positive values. This allows for relative comparisons between values:\n\ne.ge., 100 K is “twice as hot” as 50 K\n\n\n\\(^{\\circ} C\\) is the freezing point of fresh water at 1 atm (mean atmospheric pressure at sea level).\n\nCelsius is on an interval scale > it has an arbitrary zero value and can take positive or negative values. This prevents relative comparisons between values:\n\ne.ge., 100 \\(^{\\circ} C\\) is not “twice as hot” as 50 \\(^{\\circ} C\\)\n\n\n\nYou can use the following equation to convert between Celsius and Kelvin:\n\n\\[\nT(K) = T(\\deg C) + 273.15\n\\tag{1}\\]\n\n\n\n\nTable 1: SI Base Units.\n\n\n\n\n\n\n\nSI base unit\nSymbol\nQuantity\n\n\n\n\nMeter\nm\nLength\n\n\nKilogram\nKg\nMass\n\n\nSecond\ns\nTime\n\n\nKelvin\nK\nThermodynamic Temperature\n\n\nAmpere\nA\nElectric current\n\n\nMole\nmol\nAmount of a substance\n\n\nCandela\ncd\nLuminous intensity"
+  },
+  {
+    "objectID": "Resources.html#absorption-opaque",
+    "href": "Resources.html#absorption-opaque",
+    "title": "Additional Resources",
+    "section": "Absorption Opaque",
+    "text": "Absorption Opaque\n\\[\na_{\\lambda} = 1  - \\alpha_{\\lambda}\n\\tag{2}\\]"
+  },
+  {
+    "objectID": "Resources.html#absorption-transparent",
+    "href": "Resources.html#absorption-transparent",
+    "title": "Additional Resources",
+    "section": "Absorption Transparent",
+    "text": "Absorption Transparent\n\\[\na_{\\lambda} = 1  - \\alpha_{\\lambda} - \\tau_{\\lambda}\n\\tag{3}\\]"
   },
   {
     "objectID": "Resources.html#albedo",
     "href": "Resources.html#albedo",
     "title": "Additional Resources",
     "section": "Albedo",
-    "text": "Albedo\n\\[\nalbedo = \\alpha_{SW} = \\frac{\\uparrow SW}{\\downarrow SW}\n\\tag{2}\\]"
+    "text": "Albedo\n\\[\nalbedo = \\alpha_{SW} = \\frac{\\uparrow SW}{\\downarrow SW}\n\\tag{4}\\]"
+  },
+  {
+    "objectID": "Resources.html#beers-law-for-plant-canopies",
+    "href": "Resources.html#beers-law-for-plant-canopies",
+    "title": "Additional Resources",
+    "section": "Beers Law for Plant Canopies",
+    "text": "Beers Law for Plant Canopies\n\\[\nR_x = R_0 e^{\\frac{-GL\\Omega}{cos\\theta}}\n\\tag{5}\\]"
+  },
+  {
+    "objectID": "Resources.html#beers-law",
+    "href": "Resources.html#beers-law",
+    "title": "Additional Resources",
+    "section": "Beers Law",
+    "text": "Beers Law\n\\[\nR_x = R_0 e^{-kx}\n\\tag{6}\\]"
   },
   {
     "objectID": "Resources.html#cosine-law-of-illumination",
     "href": "Resources.html#cosine-law-of-illumination",
     "title": "Additional Resources",
     "section": "Cosine Law of Illumination",
-    "text": "Cosine Law of Illumination\n\\[\nR_s = R_p cos(\\theta)\n\\tag{3}\\]"
+    "text": "Cosine Law of Illumination\n\\[\nR_s = R_p cos(\\theta)\n\\tag{7}\\]"
   },
   {
     "objectID": "Resources.html#water-balance",
     "href": "Resources.html#water-balance",
     "title": "Additional Resources",
     "section": "Water Balance",
-    "text": "Water Balance\n\\[\nR_n=H+LE+G+E*\n\\tag{4}\\]"
+    "text": "Water Balance\n\\[\nR_n=H+LE+G+E*\n\\tag{8}\\]"
   },
   {
     "objectID": "Resources.html#energy-of-photon",
     "href": "Resources.html#energy-of-photon",
     "title": "Additional Resources",
     "section": "Energy of Photon",
-    "text": "Energy of Photon\n\\[\ne = hv\n\\tag{5}\\]"
+    "text": "Energy of Photon\n\\[\ne = hv\n\\tag{9}\\]"
   },
   {
     "objectID": "Resources.html#frequency",
     "href": "Resources.html#frequency",
     "title": "Additional Resources",
     "section": "Frequency",
-    "text": "Frequency\n\\[\nv=\\frac{c}{\\lambda}\n\\tag{6}\\]"
+    "text": "Frequency\n\\[\nv=\\frac{c}{\\lambda}\n\\tag{10}\\]"
   },
   {
     "objectID": "Resources.html#ideal-gas-law",
     "href": "Resources.html#ideal-gas-law",
     "title": "Additional Resources",
     "section": "Ideal Gas Law",
-    "text": "Ideal Gas Law\n\\[\nPV=nRT\n\\tag{7}\\]"
+    "text": "Ideal Gas Law\n\\[\nPV=nRT\n\\tag{11}\\]"
   },
   {
     "objectID": "Resources.html#kelvin",
     "href": "Resources.html#kelvin",
     "title": "Additional Resources",
     "section": "Kelvin",
-    "text": "Kelvin\n\\[\nT(K) = T(\\deg C) + 273.15\n\\tag{8}\\]"
+    "text": "Kelvin\n\\[\nT(K) = T(\\deg C) + 273.15\n\\tag{12}\\]"
   },
   {
     "objectID": "Resources.html#kirchhoffs-law",
     "href": "Resources.html#kirchhoffs-law",
     "title": "Additional Resources",
     "section": "Kirchhoffs Law",
-    "text": "Kirchhoffs Law\n\\[\na_lambda = \\epsilon_\\lambda\n\\tag{9}\\]"
+    "text": "Kirchhoffs Law\n\\[\na_lambda = \\epsilon_\\lambda\n\\tag{13}\\]"
   },
   {
     "objectID": "Resources.html#net-radiation",
     "href": "Resources.html#net-radiation",
     "title": "Additional Resources",
     "section": "Net Radiation",
-    "text": "Net Radiation\n\\[\nR_n = (SW \\downarrow - SW \\uparrow) + (LW \\downarrow - LW \\uparrow)\n\\tag{10}\\]"
+    "text": "Net Radiation\n\\[\nR_n = (SW \\downarrow - SW \\uparrow) + (LW \\downarrow - LW \\uparrow)\n\\tag{14}\\]"
   },
   {
     "objectID": "Resources.html#planks-law",
     "href": "Resources.html#planks-law",
     "title": "Additional Resources",
     "section": "Planks Law",
-    "text": "Planks Law\n\\[\nE = \\frac{2*h*c}{\\lambda^{5}}*\\frac{1}{e^{\\frac{h*c}{\\lambda*\\sigma_b*T}}-1}\n\\tag{11}\\]"
+    "text": "Planks Law\n\\[\nE = \\frac{2*h*c}{\\lambda^{5}}*\\frac{1}{e^{\\frac{h*c}{\\lambda*\\sigma_b*T}}-1}\n\\tag{15}\\]"
   },
   {
     "objectID": "Resources.html#radiation-balance",
     "href": "Resources.html#radiation-balance",
     "title": "Additional Resources",
     "section": "Radiation Balance",
-    "text": "Radiation Balance\n\\[\na_\\lambda + \\tau_\\lambda + \\alpha_\\lambda = 1\n\\tag{12}\\]"
+    "text": "Radiation Balance\n\\[\na_\\lambda + \\tau_\\lambda + \\alpha_\\lambda = 1\n\\tag{16}\\]"
   },
   {
     "objectID": "Resources.html#relative-humidity",
     "href": "Resources.html#relative-humidity",
     "title": "Additional Resources",
     "section": "Relative Humidity",
-    "text": "Relative Humidity\n\\[\nRH = \\frac{\\rho_v}{\\rho^*_v(T)}\n\\tag{13}\\]"
+    "text": "Relative Humidity\n\\[\nRH = \\frac{\\rho_v}{\\rho^*_v(T)}\n\\tag{17}\\]"
+  },
+  {
+    "objectID": "Resources.html#solar-irradiance",
+    "href": "Resources.html#solar-irradiance",
+    "title": "Additional Resources",
+    "section": "Solar Irradiance",
+    "text": "Solar Irradiance\n\\[\nSW\\downarrow = SW\\downarrow_S + SW\\downarrow_D\n\\tag{18}\\]"
+  },
+  {
+    "objectID": "Resources.html#solar-zenith-at-noon",
+    "href": "Resources.html#solar-zenith-at-noon",
+    "title": "Additional Resources",
+    "section": "Solar Zenith at Noon",
+    "text": "Solar Zenith at Noon\n\\[\n\\theta = Latitude - Solar\\:Declination\n\\tag{19}\\]"
   },
   {
     "objectID": "Resources.html#mean",
     "href": "Resources.html#mean",
     "title": "Additional Resources",
     "section": "Mean",
-    "text": "Mean\n\\[\n\\bar{x} =  \\sum_{n=1}^{N} \\frac{x_n}{N}\n\\tag{14}\\]"
+    "text": "Mean\n\\[\n\\bar{x} =  \\sum_{n=1}^{N} \\frac{x_n}{N}\n\\tag{20}\\]"
   },
   {
     "objectID": "Resources.html#standard-deviation",
     "href": "Resources.html#standard-deviation",
     "title": "Additional Resources",
     "section": "Standard Deviation",
-    "text": "Standard Deviation\n\\[\n\\sigma =  \\frac{\\sum_{n=1}^{N} x_n - \\bar{x}}{N}\n\\tag{15}\\]"
+    "text": "Standard Deviation\n\\[\n\\sigma =  \\frac{\\sum_{n=1}^{N} x_n - \\bar{x}}{N}\n\\tag{21}\\]"
   },
   {
     "objectID": "Resources.html#z-score-normalization",
     "href": "Resources.html#z-score-normalization",
     "title": "Additional Resources",
     "section": "z Score Normalization",
-    "text": "z Score Normalization\n\\[\nz = \\frac{x-\\bar{x}}{\\sigma}\n\\tag{16}\\]"
+    "text": "z Score Normalization\n\\[\nz = \\frac{x-\\bar{x}}{\\sigma}\n\\tag{22}\\]"
   },
   {
     "objectID": "Resources.html#stefan-boltzman-law-grey-body-adjusted",
     "href": "Resources.html#stefan-boltzman-law-grey-body-adjusted",
     "title": "Additional Resources",
     "section": "Stefan Boltzman Law Grey Body Adjusted",
-    "text": "Stefan Boltzman Law Grey Body Adjusted\n\\[\nE_g = \\epsilon\\sigma_b T^4 + (1-\\epsilon) * (SW\\downarrow+LW\\downarrow)\n\\tag{17}\\]"
+    "text": "Stefan Boltzman Law Grey Body Adjusted\n\\[\nE_g = \\epsilon\\sigma_b T^4 + (1-\\epsilon) * (SW\\downarrow+LW\\downarrow)\n\\tag{23}\\]"
   },
   {
     "objectID": "Resources.html#stefan-boltzman-law-grey-body",
     "href": "Resources.html#stefan-boltzman-law-grey-body",
     "title": "Additional Resources",
     "section": "Stefan Boltzman Law Grey Body",
-    "text": "Stefan Boltzman Law Grey Body\n\\[\nE_g = \\epsilon\\sigma_b T^4\n\\tag{18}\\]"
+    "text": "Stefan Boltzman Law Grey Body\n\\[\nE_g = \\epsilon\\sigma_b T^4\n\\tag{24}\\]"
   },
   {
     "objectID": "Resources.html#stefan-boltzman-law",
     "href": "Resources.html#stefan-boltzman-law",
     "title": "Additional Resources",
     "section": "Stefan Boltzman Law",
-    "text": "Stefan Boltzman Law\n\\[\nE_b = \\sigma_b T^4\n\\tag{19}\\]"
-  },
-  {
-    "objectID": "Resources.html#total-irradiance",
-    "href": "Resources.html#total-irradiance",
-    "title": "Additional Resources",
-    "section": "Total Irradiance",
-    "text": "Total Irradiance\n\\[\nSW\\downarrow = SW\\downarrow_s + SW\\downarrow_d\n\\tag{20}\\]"
+    "text": "Stefan Boltzman Law\n\\[\nE_b = \\sigma_b T^4\n\\tag{25}\\]"
   },
   {
     "objectID": "Resources.html#vapor-density-deficit",
     "href": "Resources.html#vapor-density-deficit",
     "title": "Additional Resources",
     "section": "Vapor Density Deficit",
-    "text": "Vapor Density Deficit\n\\[\nVDD = \\rho^*_v(T) - \\rho_v\n\\tag{21}\\]"
+    "text": "Vapor Density Deficit\n\\[\nVDD = \\rho^*_v(T) - \\rho_v\n\\tag{26}\\]"
   },
   {
     "objectID": "Resources.html#vapor-density",
     "href": "Resources.html#vapor-density",
     "title": "Additional Resources",
     "section": "Vapor Density",
-    "text": "Vapor Density\n\\[\n\\rho_v = \\rho^*_{vw}(T_w) - \\gamma(T-T_w)\n\\tag{22}\\]"
+    "text": "Vapor Density\n\\[\n\\rho_v = \\rho^*_{vw}(T_w) - \\gamma(T-T_w)\n\\tag{27}\\]"
   },
   {
     "objectID": "Resources.html#vapor-pressure-deficit",
     "href": "Resources.html#vapor-pressure-deficit",
     "title": "Additional Resources",
     "section": "Vapor Pressure Deficit",
-    "text": "Vapor Pressure Deficit\n\\[\nVPD = e*(T) - e\n\\tag{23}\\]"
+    "text": "Vapor Pressure Deficit\n\\[\nVPD = e*(T) - e\n\\tag{28}\\]"
   },
   {
     "objectID": "Resources.html#vapor-pressure",
     "href": "Resources.html#vapor-pressure",
     "title": "Additional Resources",
     "section": "Vapor Pressure",
-    "text": "Vapor Pressure\n\\[\ne = \\rho_v R_v T\n\\tag{24}\\]"
+    "text": "Vapor Pressure\n\\[\ne = \\rho_v R_v T\n\\tag{29}\\]"
   },
   {
     "objectID": "Resources.html#water-balance-1",
     "href": "Resources.html#water-balance-1",
     "title": "Additional Resources",
     "section": "Water Balance",
-    "text": "Water Balance\n\\[\nP=ET+\\delta S+Q\n\\tag{25}\\]"
+    "text": "Water Balance\n\\[\nP=ET+\\delta S+Q\n\\tag{30}\\]"
   },
   {
     "objectID": "Resources.html#weins-law",
     "href": "Resources.html#weins-law",
     "title": "Additional Resources",
     "section": "Weins Law",
-    "text": "Weins Law\n\\[\n\\lambda_{max} = \\frac{b}{T}\n\\tag{26}\\]"
+    "text": "Weins Law\n\\[\n\\lambda_{max} = \\frac{b}{T}\n\\tag{31}\\]"
   },
   {
     "objectID": "Slides/Lecture1.html#learning-objectives",
@@ -928,7 +991,7 @@
     "href": "Slides/Lecture3.html#cosine-law-of-illumination-1",
     "title": "Short-wave Radiation",
     "section": "Cosine law of illumination",
-    "text": "Cosine law of illumination\nFlux density on a surface (\\(R_s\\)) is proportional to the flux density perpendicular to a beam (\\(R_p\\)) and the zenith (\\(\\theta\\)).\n\nFor a flat land surface \\(\\theta\\) = latitude + solar declination\n\n\n\n\n\\(\\theta\\) ranges from:\n\n+23.5 (summer solstice)\n0 (equinoxes)\n-23.5 (winter solstice)\n\n\n\n\\[\nR_s = R_p cos(\\theta)\n\\qquad(1)\\]"
+    "text": "Cosine law of illumination\nFlux density on a surface (\\(R_s\\)) is proportional to the flux density perpendicular to a beam (\\(R_p\\)) and the zenith (\\(\\theta\\)).\n\nFor a flat land surface at solar noon\n\n\\[\n\\theta = Latitude - Solar\\:Declination\n\\qquad(1)\\]\n\n\n\nSolar Declination ranges from:\n\n+23.5 (summer solstice)\n0 (equinoxes)\n-23.5 (winter solstice)\n\n\n\n\\[\nR_s = R_p cos(\\theta)\n\\qquad(2)\\]"
   },
   {
     "objectID": "Slides/Lecture3.html#cosine-law-of-illumination-2",
@@ -963,7 +1026,7 @@
     "href": "Slides/Lecture3.html#total-irradiance",
     "title": "Short-wave Radiation",
     "section": "Total Irradiance",
-    "text": "Total Irradiance\n\n\n\\[\nSW\\downarrow = SW\\downarrow_s + SW\\downarrow_d\n\\qquad(2)\\]\n\nNote the differing label convention in this figure. Some sources will use “K” for shortwave radiation. I don’t like that because its too similar to “Kelvin”, so I prefer to use “SW”.\n\n\n\n\n\n\n\nNOTE the symbol K used to describe shortwave radiation and the arrow to indicate whether the radiation is down toward the earth or up and away from the earth."
+    "text": "Total Irradiance\n\n\n\\[\nSW\\downarrow = SW\\downarrow_S + SW\\downarrow_D\n\\qquad(3)\\]\n\nNote the differing label convention in this figure. Some sources will use “K” for shortwave radiation. I don’t like that because its too similar to “Kelvin”, so I prefer to use “SW”.\n\n\n\n\n\n\n\nNOTE the symbol K used to describe shortwave radiation and the arrow to indicate whether the radiation is down toward the earth or up and away from the earth."
   },
   {
     "objectID": "Slides/Lecture3.html#direct-and-diffuse-radiation---example",
@@ -991,7 +1054,7 @@
     "href": "Slides/Lecture3.html#pyranometer",
     "title": "Short-wave Radiation",
     "section": "Pyranometer",
-    "text": "Pyranometer\nSolar radiation $\\(SW\\downarrow = SW\\downarrow_S + SW\\downarrow_D\\)) is measured by a pyranometer.\n\n\n\nGlass domes transmit \\(SW\\)\n\nPrevent conduction / convection\n\nA thermopile measures the temperature rise of the absorbing black surface\n\n\n\n\n\n\nInside the double glass dome (to prevent convection and conduction) there is a black absorber disk (the sensing element), which is made of a black carbon with a high absorptivity. The temperature rise of the sensing element due to short-wave irradiance is measured relatively to the (more constant) body temperature of the pyranometer. A thermopile (array of thermocouples) measures the temperature difference, which creates a voltage and then is measured by the data logger. The black carbon would be also sensitive to long-wave radiation, but the glass dome filters out the long-wave emission. A double glass dome reduces heating of the inner dome (long-wave emission of the dome)."
+    "text": "Pyranometer\nSolar irradiance \\(SW\\downarrow = SW\\downarrow_S + SW\\downarrow_D\\) is measured by a pyranometer.\n\n\n\nGlass domes transmit \\(SW\\)\n\nPrevent conduction / convection\n\nA thermopile measures the temperature rise of the absorbing black surface\n\n\n\n\n\n\nInside the double glass dome (to prevent convection and conduction) there is a black absorber disk (the sensing element), which is made of a black carbon with a high absorptivity. The temperature rise of the sensing element due to short-wave irradiance is measured relatively to the (more constant) body temperature of the pyranometer. A thermopile (array of thermocouples) measures the temperature difference, which creates a voltage and then is measured by the data logger. The black carbon would be also sensitive to long-wave radiation, but the glass dome filters out the long-wave emission. A double glass dome reduces heating of the inner dome (long-wave emission of the dome)."
   },
   {
     "objectID": "Slides/Lecture3.html#measuring-diffuse-radiation",
@@ -1029,11 +1092,18 @@
     "text": "Temporal and spatial variation\n\n\nEach of these factors effects incoming short-wave radiation:\n\nThe Earth is a sphere (latitude)\nThe Earth is tilted on its axis (seasons)\nThe Earth rotates (time of day)\nThe Earth has an atmosphere (absorption & scattering)\nThe Earth’s surface is not flat\n\n\n\n\n\n\nThis is a really fundamental lecture that helps us understand the distribution of solar radiation on Earth and how ultimately this affects climate and the circulation (winds) on earth."
   },
   {
+    "objectID": "Slides/Lecture4.html#defining-the-solar-zenith",
+    "href": "Slides/Lecture4.html#defining-the-solar-zenith",
+    "title": "Surface Geometry and Albedo",
+    "section": "Defining the Solar Zenith",
+    "text": "Defining the Solar Zenith\nThe local solar zenith (\\(\\theta\\)) is the inverse of the local sun angle (\\(\\theta = 90 - sun\\:angle\\)). It varies globally as a function of season (solar declination) and locally as a function of latitude and time of day.\n\n\n\nAt solar noon: the \\(\\theta\\) reaches its daily minimum\n\n\\[\n\\theta = Latitude - Solar\\:Declination\n\\qquad(1)\\]\n\nAt sunrise/sunset the \\(\\theta = 90 ^{\\circ}\\)\nAt other times of day it will fall between these values\nYou can use this solar calculator time/date & location"
+  },
+  {
     "objectID": "Slides/Lecture4.html#latitude",
     "href": "Slides/Lecture4.html#latitude",
     "title": "Surface Geometry and Albedo",
     "section": "Latitude",
-    "text": "Latitude\nThe effect of latitude is most obvious at the equinoxes, when Sun is overhead at the Equator.\n\n\nIrradiance (at top of atmosphere) follows the Cosine law law of illumination:\n\\[\nR_s = R_p cos(\\theta)\n\\qquad(1)\\]\n\n\n\n\n\n\nTable 1: Decrease of Rs with solar declination.\n\n\nθ\nRs\n\n\n\n\n\n0°\n1.00 I0\n\n\n\n23.5°\n0.92 I0\n8 % less\n\n\n50°\n0.64 I0\n36 % less\n\n\n80°\n0.17 I0\n83 % less\n\n\n\n\n\n\n\n\n\nThink back to our discussion of the Cosine Law of Illumination. Again you try this with a flashlight and a globe or ball. Note that on the lower left globe S0 is the solar constant. By “extra-terrestrial” in this case we mean at the outer edge of the atmosphere (not aliens!)"
+    "text": "Latitude\nThe effect of latitude is most obvious at the equinoxes, when Sun is overhead at the Equator.\n\n\nIrradiance (at top of atmosphere) follows the Cosine law law of illumination:\n\\[\nR_s = R_p cos(\\theta)\n\\qquad(2)\\]\n\n\n\n\n\n\nTable 1: Decrease of Rs with solar declination.\n\n\nθ\nRs\n\n\n\n\n\n0°\n1.00 I0\n\n\n\n23.5°\n0.92 I0\n8 % less\n\n\n50°\n0.64 I0\n36 % less\n\n\n80°\n0.17 I0\n83 % less\n\n\n\n\n\n\n\n\n\nThink back to our discussion of the Cosine Law of Illumination. Again you try this with a flashlight and a globe or ball. Note that on the lower left globe S0 is the solar constant. By “extra-terrestrial” in this case we mean at the outer edge of the atmosphere (not aliens!)"
   },
   {
     "objectID": "Slides/Lecture4.html#seasons",
@@ -1075,35 +1145,35 @@
     "href": "Slides/Lecture4.html#recall",
     "title": "Surface Geometry and Albedo",
     "section": "Recall",
-    "text": "Recall\nRadiation Balance: radiation (of wavelength \\(\\lambda\\)) can interact with an object in three ways:\n\n\n\nAbsorption \\(a_{\\lambda}\\)\nTransmission \\(\\tau_{\\lambda}\\)\nReflection \\(\\alpha_{\\lambda}\\)\n\nFor short-wave radiation, we use the term Albedo\n\n\n\n\\[\na_\\lambda + \\tau_\\lambda + \\alpha_\\lambda = 1\n\\qquad(2)\\]"
+    "text": "Recall\nRadiation Balance: radiation (of wavelength \\(\\lambda\\)) can interact with an object in three ways:\n\n\n\nAbsorption \\(a_{\\lambda}\\)\nTransmission \\(\\tau_{\\lambda}\\)\nReflection \\(\\alpha_{\\lambda}\\)\n\nFor short-wave radiation, we use the term Albedo\n\n\n\n\\[\na_\\lambda + \\tau_\\lambda + \\alpha_\\lambda = 1\n\\qquad(3)\\]"
   },
   {
     "objectID": "Slides/Lecture4.html#key-terms",
     "href": "Slides/Lecture4.html#key-terms",
     "title": "Surface Geometry and Albedo",
     "section": "Key Terms",
-    "text": "Key Terms\nIrradiance: incoming flux density of shortwave radiation on receiving horizontal surface (W m-2)\n\n\nReflectance: reflected flux density of shortwave radiation the surface (W m-2)\nAlbedo: proportion of irradiance that is reflected (unitless)\n\\[\nalbedo = \\alpha_{SW} = \\frac{\\uparrow SW}{\\downarrow SW}\n\\qquad(3)\\]"
+    "text": "Key Terms\nIrradiance: flux density of incoming shortwave radiation on receiving horizontal surface (W m-2)\nReflectance: flux density of reflected shortwave radiation the surface (W m-2)\nAlbedo: proportion of irradiance that is reflected (unitless)"
   },
   {
     "objectID": "Slides/Lecture4.html#measuring-albedo-iclicker",
     "href": "Slides/Lecture4.html#measuring-albedo-iclicker",
     "title": "Surface Geometry and Albedo",
     "section": "Measuring Albedo (iClicker)",
-    "text": "Measuring Albedo (iClicker)\n\n\nWhich instrument in this photo (A or B) would you sue to measure reflectance?"
+    "text": "Measuring Albedo (iClicker)\n\n\nWhich instrument in this photo (A or B) would you use to measure reflectance?"
   },
   {
     "objectID": "Slides/Lecture4.html#observations-from-burns-bog",
     "href": "Slides/Lecture4.html#observations-from-burns-bog",
     "title": "Surface Geometry and Albedo",
     "section": "Observations from Burns Bog",
-    "text": "Observations from Burns Bog\n\n\n\n\n\n\n\nFigure 2: Reflectance data from the Burns Bog Flux Station June 29th, 2021.\n\n\n\n\n\n\n\n\n\nFigure 3: Reflectance data from the Burns Bog Flux Station December 31st, 2021."
+    "text": "Observations from Burns Bog\n\n\n\n\n\n\n\nFigure 2: Irradiance and Reflectance at Burns Bog June 29th, 2021.\n\n\n\n\n\n\n\n\n\nFigure 3: Irradiance and Reflectance at Burns Bog December 31st, 2021."
   },
   {
     "objectID": "Slides/Lecture4.html#spectral-reflectivity-alpha_lambda",
     "href": "Slides/Lecture4.html#spectral-reflectivity-alpha_lambda",
     "title": "Surface Geometry and Albedo",
     "section": "Spectral Reflectivity \\(\\alpha_{\\lambda}\\)",
-    "text": "Spectral Reflectivity \\(\\alpha_{\\lambda}\\)\nLeaves, soils, and rocks all have distinctive features.\n\nFor opaque objects (e.g., rocks and soils) the spectral absorptivity is:\n\n\\[\na_{\\lambda} = 1  - \\alpha_{\\lambda}\n\\qquad(4)\\]\n\nFor transparent objects (e.g., leaves, the spectral absorptivity is:\n\n\\[\na_{\\lambda} = 1  - \\alpha_{\\lambda} - \\tau_{\\lambda}\n\\qquad(5)\\]"
+    "text": "Spectral Reflectivity \\(\\alpha_{\\lambda}\\)\nLeaves, soils, and rocks all have distinctive features.\n\nFor opaque objects (e.g., rocks and soils) the spectral absorptivity is:\n\n\\[\na_{\\lambda} = 1  - \\alpha_{\\lambda}\n\\qquad(4)\\]\n\nFor transparent objects (e.g., leaves and water) the spectral absorptivity is:\n\n\\[\na_{\\lambda} = 1  - \\alpha_{\\lambda} - \\tau_{\\lambda}\n\\qquad(5)\\]"
   },
   {
     "objectID": "Slides/Lecture4.html#spectral-reflectivity-alpha_lambda-of-soil",
@@ -1180,14 +1250,7 @@
     "href": "Slides/Lecture4.html#albedo-of-crops-and-forests",
     "title": "Surface Geometry and Albedo",
     "section": "Albedo of crops and forests",
-    "text": "Albedo of crops and forests\n\n\n\nAlbedo depends on stand height:\n\nIncreased “trapping” of solar radiation with increased height\nIndividual leaves generally have higher reflectivity than a canopy of the same leaves"
-  },
-  {
-    "objectID": "Slides/Lecture4.html#albedo-of-crops-and-forests-1",
-    "href": "Slides/Lecture4.html#albedo-of-crops-and-forests-1",
-    "title": "Surface Geometry and Albedo",
-    "section": "Albedo of crops and forests",
-    "text": "Albedo of crops and forests\n\n\n\n\n\nT.R. Oke (1987): ‘Boundary Layer Climates’ 2nd Edition.\n\n\n\n\n\n\nLow grass (15 cm)\n\n\n\n\n\nTall grass (70 cm)"
+    "text": "Albedo of crops and forests\n\n\n\n\n\nT.R. Oke (1987): ‘Boundary Layer Climates’ 2nd Edition.\n\n\n\n\n\n\nIncreased “trapping” of light with increased height. Individual leaves generally have higher reflectivity than a canopy of the same leaves"
   },
   {
     "objectID": "Slides/Lecture4.html#take-home-points",
@@ -1199,203 +1262,168 @@
   {
     "objectID": "Slides/Lecture5.html#radiation-transfer-in-plant-canopies",
     "href": "Slides/Lecture5.html#radiation-transfer-in-plant-canopies",
-    "title": "Atmospheric Environments",
+    "title": "Radiation transfer in plant canopies",
     "section": "Radiation transfer in plant canopies",
-    "text": "Radiation transfer in plant canopies\n\n\nTransmission of solar radiation in a foggy Westcoast Forest (Photo: A. Christen)\n\n\n\n\n\nOne of our applications in forest and agricultural climatology is the \u000bmodelling and measurement of short-wave irradiance at the ground \u000bafter passing through Earth’s atmosphere."
+    "text": "Radiation transfer in plant canopies\n\nTransmission of solar radiation in a foggy West Coast Forest\nOne of our applications in forest and agricultural climatology is themodelling and measurement of short-wave irradiance at the ground after passing through Earth’s atmosphere."
   },
   {
-    "objectID": "Slides/Lecture5.html#photo-a.-christen",
-    "href": "Slides/Lecture5.html#photo-a.-christen",
-    "title": "Atmospheric Environments",
-    "section": "Photo: A. Christen",
-    "text": "Photo: A. Christen\n\n\nLearning Objectives\n\nDescribe how is short-wave radiation is distributed within a plant canopy.\nExplain how different wavelengths behave differently within the canopy.\nUnderstand how radiation distribution affect photosynthesis in a plant canopy."
+    "objectID": "Slides/Lecture5.html#learning-objectives",
+    "href": "Slides/Lecture5.html#learning-objectives",
+    "title": "Radiation transfer in plant canopies",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\n\n\n\nDescribe how is short-wave radiation is distributed within a plant canopy.\nExplain how different wavelengths behave differently within the canopy.\nUnderstand how radiation distribution affect photosynthesis in a plant canopy."
   },
   {
     "objectID": "Slides/Lecture5.html#beers-law",
     "href": "Slides/Lecture5.html#beers-law",
-    "title": "Atmospheric Environments",
+    "title": "Radiation transfer in plant canopies",
     "section": "Beer’s Law",
-    "text": "Beer’s Law\n\n\nGraphic: Wikipedia\nBeer’s Law describes the reduction in flux density of a beam of radiation through a homogeneous medium:\n\n\n\n\n\nALERT: a new “law” to be added to your growing list of radiation laws! Note: dz simply refers to a thickness or depth of some material (it could be air, water, glass, plastic or in our case the depth of plant canopy."
+    "text": "Beer’s Law\nBeer’s Law describes the attenuation (reduction in flux density) of a beam of radiation through a homogeneous medium.\n\n\n\\[\nR_x = R_0 e^{-kx}\n\\qquad(1)\\]\n\n\\(\\mu\\) is the attenuation coefficient\n\nCombination of absorptance and reflectance\nWill vary with \\(\\lambda\\)\n\n\n\n\n\n\n\n\nFigure 1: Beam attenuation as a function of distance\n\n\n\n\n\n\nALERT: a new “law” to be added to your growing list of radiation laws! Note: dz simply refers to a thickness or depth of some material it could be air, water, glass, plastic or in our case the depth of plant canopy."
   },
   {
     "objectID": "Slides/Lecture5.html#beers-law-1",
     "href": "Slides/Lecture5.html#beers-law-1",
-    "title": "Atmospheric Environments",
+    "title": "Radiation transfer in plant canopies",
     "section": "Beer’s Law",
-    "text": "Beer’s Law\n\n\n\n\n\n\n\n\nHere: Bbeer’s Law is extended to the case where there are multiple layers as you might find in forest canopy. Note: The light extinction coefficient (k) represents the light-interception capacity of the vegetation."
+    "text": "Beer’s Law\nStrictly speaking - the law only applies to homogenous media.\n\n\n\nAttenuation will vary with because composition & density vary\n\n\n\n\n\nPlant canopies are not homogenous\n\n\n\n\n\nHere you can see how light changes as you go deeper into the canopy (i.e. as X gets bigger)"
   },
   {
-    "objectID": "Slides/Lecture5.html#photo-a.-christen-1",
-    "href": "Slides/Lecture5.html#photo-a.-christen-1",
-    "title": "Atmospheric Environments",
-    "section": "Photo: A. Christen",
-    "text": "Photo: A. Christen\n\n\n\n\n\n\n\n\nHere you can see how light changes as you go deeper into the canopy (i.e. as X gets bigger)"
+    "objectID": "Slides/Lecture5.html#beers-law-2",
+    "href": "Slides/Lecture5.html#beers-law-2",
+    "title": "Radiation transfer in plant canopies",
+    "section": "Beer’s Law",
+    "text": "Beer’s Law\nStrictly speaking - the law only applies to homogenous media.\n\n\n\nHowever, it measurements show it roughly applies in uniform canopies\n\ne.g., grass\n\nWe can develop empirical (observation based) relationships for different plant canopies\n\n\n\n\n\n\nMeasured vertical profiles of K↓ in a native grass stand."
   },
   {
-    "objectID": "Slides/Lecture5.html#t.r.-oke-1987-boundary-layer-climates",
-    "href": "Slides/Lecture5.html#t.r.-oke-1987-boundary-layer-climates",
-    "title": "Atmospheric Environments",
-    "section": "T.R. Oke (1987): Boundary Layer Climates",
-    "text": "T.R. Oke (1987): Boundary Layer Climates\n\n\nI(x)\nI(x)\nx = 0\nSolar and net radiation in plant canopies\nMeasurements demonstrate that Beer’s law roughly applies in uniform canopies (grass)\n\n\n\n\n\nMeasured vertical profiles of K↓ in a native grass stand."
-  },
-  {
-    "objectID": "Slides/Lecture5.html#photo-a.-christen-2",
-    "href": "Slides/Lecture5.html#photo-a.-christen-2",
-    "title": "Atmospheric Environments",
-    "section": "Photo: A. Christen",
-    "text": "Photo: A. Christen\n\n\nVertical distribution of canopy leaf area?"
+    "objectID": "Slides/Lecture5.html#vertical-distribution-of-folliage",
+    "href": "Slides/Lecture5.html#vertical-distribution-of-folliage",
+    "title": "Radiation transfer in plant canopies",
+    "section": "Vertical distribution of folliage",
+    "text": "Vertical distribution of folliage"
   },
   {
     "objectID": "Slides/Lecture5.html#modifying-beers-law-to-apply-to",
     "href": "Slides/Lecture5.html#modifying-beers-law-to-apply-to",
-    "title": "Atmospheric Environments",
+    "title": "Radiation transfer in plant canopies",
     "section": "Modifying Beer’s Law to apply to",
-    "text": "Modifying Beer’s Law to apply to\nplant canopies\n\n\n\nThe main modification to overcome the non-uniformity of leaves is to replace distance (x) with the cumulative leaf area index (LAI).\nWhat is LAI?\nThe leaf area index is the one-sided leaf area per unit ground area.\n\n\n\n\n\n\nHere we modify Beer’s Law to use Leaf area with depth, something that can be done for different canopies\nIt is defined as the one-sided green leaf area per unit ground surface area (LAI = leaf area / ground area, m2 / m2) in broadleaf canopies.[1]"
+    "text": "Modifying Beer’s Law to apply to\n\n\n\nThe main modification to overcome the non-uniformity of leaves is to replace distance (x) with the cumulative leaf area index (LAI).\nWhat is LAI?\n\nThe leaf area index is the one-sided leaf (and stem) area per unit ground area.\n\n\n\n\n\n\n\nHere we modify Beer’s Law to use Leaf area with depth, something that can be done for different canopies\nIt is defined as the one-sided green leaf (and stem) area per unit ground surface area (LAI = leaf area / ground area, m2 / m2) in broadleaf canopies."
   },
   {
-    "objectID": "Slides/Lecture5.html#m2",
-    "href": "Slides/Lecture5.html#m2",
-    "title": "Atmospheric Environments",
-    "section": "1 m2",
-    "text": "1 m2\n\n\n1 m2\nWhat is the LAI?\n\n\n\n\n\nhttps://www.metergroup.com/en/meter-environment/education-guides/researchers-complete-guide-leaf-area-index-lai"
+    "objectID": "Slides/Lecture5.html#leaf-area-index",
+    "href": "Slides/Lecture5.html#leaf-area-index",
+    "title": "Radiation transfer in plant canopies",
+    "section": "Leaf Area Index",
+    "text": "Leaf Area Index\n\n\nhttps://www.metergroup.com/en/meter-environment/education-guides/researchers-complete-guide-leaf-area-index-lai"
   },
   {
-    "objectID": "Slides/Lecture5.html#modifying-beers-law-to-apply",
-    "href": "Slides/Lecture5.html#modifying-beers-law-to-apply",
-    "title": "Atmospheric Environments",
-    "section": "Modifying Beer’s Law to apply",
-    "text": "Modifying Beer’s Law to apply\nto plant canopies\n\n\nThe leaf area index is the one-sided leaf area per unit ground area. Cumulative LAI (L) = sum of LAI starting at top of canopy\n\n\n\n\n\nYou can see how this might work and notice how we make the switch to a cumulative index as we go down into the canopy. In the next slide you will see how we can use this to modify the Beer’s Law equation with one that has L rather than distance x"
+    "objectID": "Slides/Lecture5.html#leaf-area-index-1",
+    "href": "Slides/Lecture5.html#leaf-area-index-1",
+    "title": "Radiation transfer in plant canopies",
+    "section": "Leaf Area Index",
+    "text": "Leaf Area Index\n\n\n\n\n\nA single spruce branch\n\n\n\n\n\n\nThe same branch broken into its respective components\n\n\n\n\n\nIn conifers, three definitions for LAI have been used: Half of the total needle surface area per unit ground surface area [2] Projected (or one-sided, in accordance the definition for broadleaf canopies) needle area per unit ground area Total needle surface area per unit ground area [3]"
   },
   {
-    "objectID": "Slides/Lecture5.html#grass",
-    "href": "Slides/Lecture5.html#grass",
-    "title": "Atmospheric Environments",
-    "section": "Grass",
-    "text": "Grass\n\n\nMaize\nCotton\nBeer’s Law modified for plant canopies\n\nWe rewrite Beer’s Law for solar (S) radiation as:\nwhere S0 is solar irradiance above the canopy, Su is solar irradiance under the canopy, L is the cumulative LAI and G is the plant canopy extinction coefficient."
+    "objectID": "Slides/Lecture5.html#modifying-beers-law",
+    "href": "Slides/Lecture5.html#modifying-beers-law",
+    "title": "Radiation transfer in plant canopies",
+    "section": "Modifying Beer’s Law",
+    "text": "Modifying Beer’s Law\nCumulative LAI (L) = sum of LAI\n\nIntegration of LAI through canopy starting at top of canopy\n\n\n\nYou can see how this might work and notice how we make the switch to a cumulative index as we go down into the canopy. In the next slide you will see how we can use this to modify the Beer’s Law equation with one that has L rather than distance x"
   },
   {
-    "objectID": "Slides/Lecture5.html#photo-a.-christen-3",
-    "href": "Slides/Lecture5.html#photo-a.-christen-3",
-    "title": "Atmospheric Environments",
-    "section": "Photo: A. Christen",
-    "text": "Photo: A. Christen\n\n\nOrientation of canopy leaf area?\n\n\n\n\n\n\nThese two slides illustrate how the orientation of leaves is not really taken into account well"
+    "objectID": "Slides/Lecture5.html#orientation-of-canopy-leaf-area",
+    "href": "Slides/Lecture5.html#orientation-of-canopy-leaf-area",
+    "title": "Radiation transfer in plant canopies",
+    "section": "Orientation of canopy leaf area",
+    "text": "Orientation of canopy leaf area\n\n\n\n\n\nPickleweed evolved to minimize LAI to help survive hostile conditions on exposed rocky coasts\n\n\n\n\n\n\nSquash evolved to maximize LAI to help maximize energy capture and produce large fruits with many seeds\n\n\n\n\n\nThese two slides illustrate how the orientation of leaves is not really taken into account well"
   },
   {
     "objectID": "Slides/Lecture5.html#leaf-orientation",
     "href": "Slides/Lecture5.html#leaf-orientation",
-    "title": "Atmospheric Environments",
+    "title": "Radiation transfer in plant canopies",
     "section": "Leaf orientation",
     "text": "Leaf orientation\n\n\n\nThe canopy extinction coefficient is often called the projection coefficient because it’s related to the orientation of the leaves: erectophile or planophile in relation to the sun angle.\n\n\n\n\n\n\nIn fact we take account of leaf orientation in the canopy extinction coefficient."
   },
   {
-    "objectID": "Slides/Lecture5.html#other-modifications-to-beers-law",
-    "href": "Slides/Lecture5.html#other-modifications-to-beers-law",
-    "title": "Atmospheric Environments",
-    "section": "Other modifications to Beer’s Law",
-    "text": "Other modifications to Beer’s Law\n\n\n\nCorrecting for path length (1/cos θ) – i.e. add the cosine law of illumination to account for greater path length at slant angles\nCorrecting for clumping (Ω) – the ’clumping factor is a non-dimensional number < 1.0 to account for preferred spatial clumps within the canopy\n With these  modifications we write:\n\n\n\n\n\n\nAnd we can get even more detailed in our application of Beer’s Law by taking account of path length and clumping"
+    "objectID": "Slides/Lecture5.html#example-of-extreme-clumping",
+    "href": "Slides/Lecture5.html#example-of-extreme-clumping",
+    "title": "Radiation transfer in plant canopies",
+    "section": "Example of extreme clumping",
+    "text": "Example of extreme clumping\n\nClumping of vegetation in Burns Bog"
   },
   {
-    "objectID": "Slides/Lecture5.html#photo-a.-black",
-    "href": "Slides/Lecture5.html#photo-a.-black",
-    "title": "Atmospheric Environments",
-    "section": "Photo: A. Black",
-    "text": "Photo: A. Black\n\n\nExample of extreme clumping\nBlack spruce in Central Yukon"
+    "objectID": "Slides/Lecture5.html#modifying-beers-law-1",
+    "href": "Slides/Lecture5.html#modifying-beers-law-1",
+    "title": "Radiation transfer in plant canopies",
+    "section": "Modifying Beer’s Law",
+    "text": "Modifying Beer’s Law\nWe rewrite Beer’s Law for solar radiation under a canopy as:\n\n\n\\[\nR_x = R_0 e^{\\frac{-GL\\Omega}{cos\\theta}}\n\\qquad(2)\\]\n\n\\(R_0\\) is irradiance above the canopy\n\\(R_u\\) is irradiance under the canopy\n\\(L\\) is the cumulative LAI\n\\(G\\) is the plant canopy attenuation coefficient\n\\(\\Omega\\) is a clumping scale factor\n\\(cos\\theta\\) accounts for the zenith angle"
   },
   {
-    "objectID": "Slides/Lecture5.html#direct-beam-transmissions-into-canopies",
-    "href": "Slides/Lecture5.html#direct-beam-transmissions-into-canopies",
-    "title": "Atmospheric Environments",
-    "section": "Direct beam transmissions into canopies",
-    "text": "Direct beam transmissions into canopies\n\n\n\n\n\n\n\n\nI do not need you to learn these equations. I just you to need to understand that these effects can be taken into account. Can invert to estimate LAI\nEXAM QUESTION ON CLUMPING"
-  },
-  {
-    "objectID": "Slides/Lecture5.html#what-happens-to-radiation-at-the-forest-floor-as-q-increases",
-    "href": "Slides/Lecture5.html#what-happens-to-radiation-at-the-forest-floor-as-q-increases",
-    "title": "Atmospheric Environments",
-    "section": "What happens to radiation at the forest floor as q increases?",
-    "text": "What happens to radiation at the forest floor as q increases?"
+    "objectID": "Slides/Lecture5.html#transmissions-through-canopies",
+    "href": "Slides/Lecture5.html#transmissions-through-canopies",
+    "title": "Radiation transfer in plant canopies",
+    "section": "Transmissions through canopies",
+    "text": "Transmissions through canopies\n\n\n\n\n\n\n\n\nI do not need you to learn these equations. I just you to need to understand that these effects can be taken into account. Can invert to estimate LAI"
   },
   {
     "objectID": "Slides/Lecture5.html#radiation-beneath-plant-canopies",
     "href": "Slides/Lecture5.html#radiation-beneath-plant-canopies",
-    "title": "Atmospheric Environments",
-    "section": "Radiation beneath plant canopies\u000b",
-    "text": "Radiation beneath plant canopies\u000b\n\n\n\nNote that diffuse radiation penetrates the canopy more effectively than direct radiation, hence the ratio D(diffuse)/S (Direct solar) increases with depth into canopy.\u000b\u000bScattering of direct radiation helps increase proportion of diffuse PAR in the canopy.\nNIR/PAR increases with depth into canopy.\u000b\u000bThe high PAR absorptivity of leaves in the upper canopy results in depleted PAR in the lower canopy."
+    "title": "Radiation transfer in plant canopies",
+    "section": "Radiation beneath plant canopies",
+    "text": "Radiation beneath plant canopies\n\nDiffuse (d) radiation penetrates the canopy more effectively than direct (s) radiation\n\nRatio \\(\\frac{SW_d\\downarrow}{SW_s\\downarrow}\\) increases with depth into canopy.\nScattering of direct radiation helps increase proportion of diffuse PAR in the canopy.\n\n\\(\\frac{NIR\\downarrow}{PAR\\downarrow}\\) increases with depth into canopy.\n\nThe high PAR absorptivity of leaves in the upper canopy results in depleted PAR in the lower canopy."
   },
   {
-    "objectID": "Slides/Lecture5.html#photo-a.-black-1",
-    "href": "Slides/Lecture5.html#photo-a.-black-1",
-    "title": "Atmospheric Environments",
-    "section": "Photo: A. Black",
-    "text": "Photo: A. Black\n\n\nHow does radiation beneath a canopy \u000bchange with season?"
+    "objectID": "Slides/Lecture5.html#changes-with-seasons",
+    "href": "Slides/Lecture5.html#changes-with-seasons",
+    "title": "Radiation transfer in plant canopies",
+    "section": "Changes with seasons",
+    "text": "Changes with seasons"
   },
   {
-    "objectID": "Slides/Lecture5.html#day-of-year",
-    "href": "Slides/Lecture5.html#day-of-year",
-    "title": "Atmospheric Environments",
-    "section": "Day of year",
-    "text": "Day of year\n\n\nPhoto: A. Black\nRadiation above & below boreal aspen canopy\nHow does radiation beneath a canopy \u000bchange with season?\n\n\n\n\n\n\nCan you see in the two plots when the aspen forest comes into leaf?"
+    "objectID": "Slides/Lecture5.html#changes-with-seasons-1",
+    "href": "Slides/Lecture5.html#changes-with-seasons-1",
+    "title": "Radiation transfer in plant canopies",
+    "section": "Changes with seasons",
+    "text": "Changes with seasons\n\n\n\n\n\n\n\nRadiation above & below boreal aspen canopy\n\n\n\n\n\nCan you see in the two plots when the aspen forest comes into leaf?"
   },
   {
-    "objectID": "Slides/Lecture5.html#radiation-in-understorey-relative-to-above-canopy",
-    "href": "Slides/Lecture5.html#radiation-in-understorey-relative-to-above-canopy",
-    "title": "Atmospheric Environments",
-    "section": "Radiation in understorey relative to above canopy",
-    "text": "Radiation in understorey relative to above canopy\n\n\nHow does radiation beneath a canopy \u000bchange with season?\n\n\n\n\n\n\n\nFigure 1: CAPTION\n\n\n\n\n\n\nEmergence here means when the leaves come out. Note: the middle refers to PAR (Photosynthetically Active Radiation)"
+    "objectID": "Slides/Lecture5.html#changes-with-seasons-iclicker",
+    "href": "Slides/Lecture5.html#changes-with-seasons-iclicker",
+    "title": "Radiation transfer in plant canopies",
+    "section": "Changes with seasons (iClicker)",
+    "text": "Changes with seasons (iClicker)\n\n\nWhich bar on the graph (A or B) would represent the proportion of radiation reaching the floor of a deciduous forest in late winter?\n\n\n\n\n\n\n\nFigure 2: Proportion of radiation reaching the forest floor\n\n\n\n\n\n\nEmergence here means when the leaves come out. Note: the middle refers to PAR (Photosynthetically Active Radiation)"
   },
   {
     "objectID": "Slides/Lecture5.html#radiation-and-understory",
     "href": "Slides/Lecture5.html#radiation-and-understory",
-    "title": "Atmospheric Environments",
+    "title": "Radiation transfer in plant canopies",
     "section": "Radiation and understory",
-    "text": "Radiation and understory\n\n\nPhotos: A. Christen / A. Black\nEuropean beech forests (Fagus sylvatica) show a strong extinction in the crown space and little or no understorey.\nHere, the transmitted radiation supports healthy hazelnut understorey."
+    "text": "Radiation and understory\n\n\n\n\n\nDense hemlock stand little or no understory\n\n\n\n\n\n\nOpen alder forest with lush understory"
   },
   {
     "objectID": "Slides/Lecture5.html#sunflecks",
     "href": "Slides/Lecture5.html#sunflecks",
-    "title": "Atmospheric Environments",
+    "title": "Radiation transfer in plant canopies",
     "section": "‘Sunflecks’",
-    "text": "‘Sunflecks’\n\n\nPhoto: A. Christen\nOke / Christen (in prep.)\n\n\n\n\n\n\nIf you take walks in the forest you will be familiar with “sunflecks” where direct light can penetrate right to the ground through openings in the canopy."
+    "text": "‘Sunflecks’\n\n\n\nSunflecks move with position of sun\n\nRapid change from sunlit to shadowed\n\n\n\n\n\n\n\n\nIf you take walks in the forest you will be familiar with “sunflecks” where direct light can penetrate right to the ground through openings in the canopy."
   },
   {
-    "objectID": "Slides/Lecture5.html#photo-a.-christen-4",
-    "href": "Slides/Lecture5.html#photo-a.-christen-4",
-    "title": "Atmospheric Environments",
-    "section": "Photo: A. Christen",
-    "text": "Photo: A. Christen\n\n\n\nSunflecks move with relative position of sun -\nrapid change from sunlit to shadowed"
+    "objectID": "Slides/Lecture5.html#temporally-variability",
+    "href": "Slides/Lecture5.html#temporally-variability",
+    "title": "Radiation transfer in plant canopies",
+    "section": "Temporally Variability",
+    "text": "Temporally Variability"
   },
   {
-    "objectID": "Slides/Lecture5.html#photo-a.-christen-5",
-    "href": "Slides/Lecture5.html#photo-a.-christen-5",
-    "title": "Atmospheric Environments",
-    "section": "Photo: A. Christen",
-    "text": "Photo: A. Christen"
-  },
-  {
-    "objectID": "Slides/Lecture5.html#photo-a.-christen-6",
-    "href": "Slides/Lecture5.html#photo-a.-christen-6",
-    "title": "Atmospheric Environments",
-    "section": "Photo: A. Christen",
-    "text": "Photo: A. Christen\n\n\nSunflecks and photosynthesis"
-  },
-  {
-    "objectID": "Slides/Lecture5.html#rate-of-photosynthesis-µmol-m-2-s-1",
-    "href": "Slides/Lecture5.html#rate-of-photosynthesis-µmol-m-2-s-1",
-    "title": "Atmospheric Environments",
-    "section": "Rate of photosynthesis \u000b(µmol m-2 s-1)",
-    "text": "Rate of photosynthesis \u000b(µmol m-2 s-1)\n\n\nPhotosynthetically active radiation\u000b(µmol m-2 s-1)\u000b\nWhich curve corresponds to understory vegetation?\nHigher efficiency of understorey species at low PAR\n\n\n\n\n\n\nFigure 2: CAPTION\n\n\n\n\n\n\nThis graph really just illustrates that understory plants (the red symbols that include ferns and salal) are more efficient photosynthesisers at low amounts of PAR (the left side of the graph). Alternatively the trees (Green – Maples) do better with high amounts of PAR such as you find high up in the canopy."
-  },
-  {
-    "objectID": "Slides/Lecture5.html#rate-of-photosynthesis-µmol-m-2-s-1-1",
-    "href": "Slides/Lecture5.html#rate-of-photosynthesis-µmol-m-2-s-1-1",
-    "title": "Atmospheric Environments",
-    "section": "Rate of photosynthesis \u000b(µmol m-2 s-1)",
-    "text": "Rate of photosynthesis \u000b(µmol m-2 s-1)\n\n\nPhotosynthetically active radiation\u000b(µmol m-2 s-1)\u000b\nHigher efficiency of understorey species at low PAR\nPhotosynthesis in the subcanopy\u000bRemember PAR is ~400-700 nm\n\n\n\n\n\n\nFigure 3: CAPTION\n\n\n\n\n\n\nThis graph really just illustrates that understory plants (the red symbols that include ferns and salal) are more efficient photosynthesisers at low amounts of PAR (the left side of the graph). Alternatively the trees (Green – Maples) do better with high amounts of PAR such as you find high up in the canopy."
+    "objectID": "Slides/Lecture5.html#canopy-position-photosynthesis",
+    "href": "Slides/Lecture5.html#canopy-position-photosynthesis",
+    "title": "Radiation transfer in plant canopies",
+    "section": "Canopy Position & Photosynthesis",
+    "text": "Canopy Position & Photosynthesis\n\n\n [1] \"Trillium\"     \"Trillium\"     \"Trillium\"     \"Trillium\"     \"Trillium\"    \n [6] \"Trillium\"     \"Fern\"         \"Fern\"         \"Fern\"         \"Fern\"        \n[11] \"Salal\"        \"Salal\"        \"Salal\"        \"Salal\"        \"Salal\"       \n[16] \"Salal\"        \"Oregon Grape\" \"Oregon Grape\" \"Oregon Grape\" \"Oregon Grape\"\n[21] \"Oregon Grape\" \"Oregon Grape\"\n\n\n$platform\n[1] \"x86_64-w64-mingw32\"\n\n$arch\n[1] \"x86_64\"\n\n$os\n[1] \"mingw32\"\n\n$crt\n[1] \"ucrt\"\n\n$system\n[1] \"x86_64, mingw32\"\n\n$status\n[1] \"\"\n\n$major\n[1] \"4\"\n\n$minor\n[1] \"2.1\"\n\n$year\n[1] \"2022\"\n\n$month\n[1] \"06\"\n\n$day\n[1] \"23\"\n\n$`svn rev`\n[1] \"82513\"\n\n$language\n[1] \"R\"\n\n$version.string\n[1] \"R version 4.2.1 (2022-06-23 ucrt)\"\n\n$nickname\n[1] \"Funny-Looking Kid\"\n\n\n\nThis graph really just illustrates that understory plants (the red symbols that include ferns and salal) are more efficient photosynthesisers at low amounts of PAR (the left side of the graph). Alternatively the trees (Green – Maples) do better with high amounts of PAR such as you find high up in the canopy."
   },
   {
     "objectID": "Slides/Lecture5.html#take-home-points",
     "href": "Slides/Lecture5.html#take-home-points",
-    "title": "Atmospheric Environments",
+    "title": "Radiation transfer in plant canopies",
     "section": "Take home points",
     "text": "Take home points\n\n\n\nRadiative transfer through plant canopies can be approximated using Beer’s Law using the cumulative Leaf Area Index (L) instead of the distance, plus path length and a clumping factor.\nRadiation within plant canopies is not uniformly distributed in space, time (‘sunflecks’) and with regard to spectral characteristics.\nWe can use radiative transfer theory to infer the LAI of a stand if we measure short-wave radiation transmission.\n\n\n\n\n\n\n\nBack to Homepage"
   }

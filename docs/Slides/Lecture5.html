@@ -9,7 +9,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.2.313">
 
-  <title>Atmospheric Environments – lecture5</title>
+  <title>Atmospheric Environments - Radiation transfer in plant canopies</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -331,18 +331,19 @@
   <div class="reveal">
     <div class="slides">
 
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Radiation transfer in plant canopies</h1>
+  <p class="subtitle">How does light interact with plants?</p>
 
+<div class="quarto-title-authors">
+</div>
+
+</section>
 <section id="radiation-transfer-in-plant-canopies" class="slide level2">
 <h2>Radiation transfer in plant canopies</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>Transmission of solar radiation in a foggy Westcoast Forest (Photo: A. Christen)</p>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture5/1_0.jpg"></p>
-</div>
-</div>
-<aside class="notes">
-<p>One of our applications in forest and agricultural climatology is the modelling and measurement of short-wave irradiance at the ground after passing through Earth’s atmosphere.</p>
+
+<img data-src="images/Lecture5/1_0.jpg" class="r-stretch quarto-figure-center"><p class="caption">Transmission of solar radiation in a foggy West Coast Forest</p><aside class="notes">
+<p>One of our applications in forest and agricultural climatology is themodelling and measurement of short-wave irradiance at the ground after passing through Earth’s atmosphere.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -355,46 +356,49 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="photo-a.-christen" class="slide level2">
-<h2>Photo: A. Christen</h2>
+<section id="learning-objectives" class="slide level2">
+<h2>Learning Objectives</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p>Learning Objectives</p>
+<div class="column" style="width:65%;">
 <ul>
 <li>Describe how is short-wave radiation is distributed within a plant canopy.</li>
 <li>Explain how different wavelengths behave differently within the canopy.</li>
 <li>Understand how radiation distribution affect photosynthesis in a plant canopy.</li>
 </ul>
-</div><div class="column" style="width:50%;">
+</div><div class="column" style="width:35%;">
 <p><img data-src="images/Lecture5/2_0.jpg"></p>
 </div>
 </div>
-<aside class="notes">
-
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
 </section>
-<section id="beers-law" class="slide level2">
+<section id="beers-law" class="slide level2 smaller">
 <h2>Beer’s Law</h2>
+<p>Beer’s Law describes the attenuation (reduction in flux density) of a beam of radiation through a homogeneous medium.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>Graphic: Wikipedia</p>
-<p>Beer’s Law describes the reduction in flux density of a beam of radiation through a homogeneous medium:</p>
+<p><span id="eq-Beers-Law"><span class="math display">\[
+R_x = R_0 e^{-kx}
+\qquad(1)\]</span></span></p>
+<ul>
+<li><span class="math inline">\(\mu\)</span> is the attenuation coefficient
+<ul>
+<li>Combination of absorptance and reflectance</li>
+<li>Will vary with <span class="math inline">\(\lambda\)</span></li>
+</ul></li>
+</ul>
 </div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture5/3_2.gif"></p>
+<div class="cell">
+<div id="fig-Beers-Law" class="quarto-figure quarto-figure-center">
+<figure>
+<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-4a43ffa1ce5f3b899f7c" style="width:417.6px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-4a43ffa1ce5f3b899f7c">{"x":{"visdat":{"7b303e3c2c4c":["function () ","plotlyVisDat"]},"cur_data":"7b303e3c2c4c","attrs":{"7b303e3c2c4c":{"x":{},"y":{},"mode":"lines","name":"&mu; = 0.5","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"},"7b303e3c2c4c.1":{"x":{},"y":{},"mode":"lines","name":"&mu; = 0.75","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","inherit":true},"7b303e3c2c4c.2":{"x":{},"y":{},"mode":"lines","name":"&mu; = 1","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"yaxis":{"domain":[0,1],"automargin":true,"title":"R<sub>x<\/sub>/R<sub>0<\/sub>"},"xaxis":{"domain":[0,1],"automargin":true,"title":"Distance (X)"},"legend":{"x":0.85,"y":0.8},"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1,1.1,1.2,1.3,1.4,1.5,1.6,1.7,1.8,1.9,2,2.1,2.2,2.3,2.4,2.5,2.6,2.7,2.8,2.9,3,3.1,3.2,3.3,3.4,3.5,3.6,3.7,3.8,3.9,4,4.1,4.2,4.3,4.4,4.5,4.6,4.7,4.8,4.9,5,5.1,5.2,5.3,5.4,5.5,5.6,5.7,5.8,5.9,6,6.1,6.2,6.3,6.4,6.5,6.6,6.7,6.8,6.9,7,7.1,7.2,7.3,7.4,7.5,7.6,7.7,7.8,7.9,8,8.1,8.2,8.3,8.4,8.5,8.6,8.7,8.8,8.9,9,9.1,9.2,9.3,9.4,9.5,9.6,9.7,9.8,9.9,10],"y":[1,0.951229424500714,0.90483741803596,0.860707976425058,0.818730753077982,0.778800783071405,0.740818220681718,0.704688089718713,0.670320046035639,0.637628151621773,0.606530659712633,0.576949810380487,0.548811636094026,0.522045776761016,0.49658530379141,0.472366552741015,0.449328964117222,0.427414931948727,0.406569659740599,0.386741023454501,0.367879441171442,0.349937749111155,0.33287108369808,0.316636769379053,0.301194211912202,0.28650479686019,0.272531793034013,0.259240260645892,0.246596963941606,0.234570288093798,0.22313016014843,0.212247973826743,0.201896517994655,0.192049908620754,0.182683524052735,0.173773943450445,0.165298888221587,0.157237166313628,0.149568619222635,0.142274071586514,0.135335283236613,0.128734903587804,0.122456428252982,0.116484157773497,0.110803158362334,0.105399224561864,0.100258843722804,0.0953691622155496,0.0907179532894125,0.0862935864993705,0.0820849986238988,0.0780816660011532,0.0742735782143339,0.0706512130604296,0.0672055127397498,0.0639278612067076,0.060810062625218,0.0578443208748385,0.0550232200564072,0.0523397059484324,0.0497870683678639,0.0473589243911409,0.0450492023935578,0.0428521268670402,0.0407622039783662,0.038774207831722,0.03688316740124,0.035084354100845,0.0333732699603261,0.0317456363780679,0.0301973834223185,0.0287246396542394,0.0273237224472926,0.0259911287787553,0.0247235264703394,0.0235177458560091,0.0223707718561656,0.0212797364383772,0.0202419114458044,0.0192547017753869,0.0183156388887342,0.0174223746394935,0.0165726754017613,0.0157644164848545,0.0149955768204777,0.0142642339089993,0.0135685590122009,0.0129068125804799,0.0122773399030684,0.0116785669703954,0.0111089965382423,0.0105672043838527,0.0100518357446336,0.0095616019305435,0.00909527710169582,0.00865169520312063,0.00822974704902003,0.00782837754922577,0.00744658307092434,0.00708340892905212,0.00673794699908547],"mode":"lines","name":"&mu; = 0.5","type":"scatter","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1,1.1,1.2,1.3,1.4,1.5,1.6,1.7,1.8,1.9,2,2.1,2.2,2.3,2.4,2.5,2.6,2.7,2.8,2.9,3,3.1,3.2,3.3,3.4,3.5,3.6,3.7,3.8,3.9,4,4.1,4.2,4.3,4.4,4.5,4.6,4.7,4.8,4.9,5,5.1,5.2,5.3,5.4,5.5,5.6,5.7,5.8,5.9,6,6.1,6.2,6.3,6.4,6.5,6.6,6.7,6.8,6.9,7,7.1,7.2,7.3,7.4,7.5,7.6,7.7,7.8,7.9,8,8.1,8.2,8.3,8.4,8.5,8.6,8.7,8.8,8.9,9,9.1,9.2,9.3,9.4,9.5,9.6,9.7,9.8,9.9,10],"y":[1,0.927743486328553,0.860707976425058,0.798516218759377,0.740818220681718,0.687289278790972,0.637628151621773,0.591555364366815,0.548811636094026,0.509156420607549,0.472366552741015,0.438234992464949,0.406569659740599,0.377192353563157,0.349937749111155,0.32465246735835,0.301194211912202,0.279430968221407,0.259240260645892,0.240508463208342,0.22313016014843,0.207007552681153,0.192049908620754,0.178173051772898,0.165298888221587,0.153354966844928,0.142274071586514,0.13199384318783,0.122456428252982,0.113608153670764,0.105399224561864,0.09778344405135,0.0907179532894125,0.0841629902573104,0.0780816660011532,0.0724397570342515,0.0672055127397498,0.0623494766896734,0.0578443208748385,0.0536646919127301,0.0497870683678639,0.0461896283816801,0.0428521268670402,0.0397557815762213,0.03688316740124,0.034218118311666,0.031745636378068,0.0294518073691073,0.0273237224472926,0.0253494055227249,0.0235177458560091,0.0218184355310428,0.0202419114458044,0.0187793014946844,0.0174223746394935,0.0161634945881659,0.0149955768204777,0.0139120487189376,0.0129068125804799,0.0119742113008036,0.0111089965382423,0.0103062991780007,0.0095616019305435,0.00887071390992826,0.00822974704902002,0.00763509421885996,0.00708340892905213,0.00657158649492961,0.00609674656551564,0.0056562169139531,0.00524751839918138,0.00486835101422977,0.00451658094261267,0.00419022854998458,0.00388745724347613,0.00360656313601573,0.00334596545747128,0.00310419765864931,0.00287989915808824,0.00267180768519945,0.00247875217666636,0.00229964618612494,0.00213348177003771,0.00197932381535319,0.00183630477702891,0.00170361979580257,0.00158052216873622,0.0014663191470429,0.00136036803754789,0.00126207258584461,0.00117087962079117,0.00108627594146386,0.00100778542904851,0.000934966367416581,0.000867408957307002,0.000804733010124613,0.00074658580837668,0.000692640120706802,0.000642592360355557,0.000596160876684358,0.000553084370147834],"mode":"lines","name":"&mu; = 0.75","type":"scatter","marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"line":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1,1.1,1.2,1.3,1.4,1.5,1.6,1.7,1.8,1.9,2,2.1,2.2,2.3,2.4,2.5,2.6,2.7,2.8,2.9,3,3.1,3.2,3.3,3.4,3.5,3.6,3.7,3.8,3.9,4,4.1,4.2,4.3,4.4,4.5,4.6,4.7,4.8,4.9,5,5.1,5.2,5.3,5.4,5.5,5.6,5.7,5.8,5.9,6,6.1,6.2,6.3,6.4,6.5,6.6,6.7,6.8,6.9,7,7.1,7.2,7.3,7.4,7.5,7.6,7.7,7.8,7.9,8,8.1,8.2,8.3,8.4,8.5,8.6,8.7,8.8,8.9,9,9.1,9.2,9.3,9.4,9.5,9.6,9.7,9.8,9.9,10],"y":[1,0.90483741803596,0.818730753077982,0.740818220681718,0.670320046035639,0.606530659712633,0.548811636094026,0.49658530379141,0.449328964117222,0.406569659740599,0.367879441171442,0.33287108369808,0.301194211912202,0.272531793034013,0.246596963941606,0.22313016014843,0.201896517994655,0.182683524052735,0.165298888221587,0.149568619222635,0.135335283236613,0.122456428252982,0.110803158362334,0.100258843722804,0.0907179532894125,0.0820849986238988,0.0742735782143339,0.0672055127397498,0.060810062625218,0.0550232200564072,0.0497870683678639,0.0450492023935578,0.0407622039783662,0.03688316740124,0.0333732699603261,0.0301973834223185,0.0273237224472926,0.0247235264703394,0.0223707718561656,0.0202419114458044,0.0183156388887342,0.0165726754017613,0.0149955768204777,0.0135685590122009,0.0122773399030684,0.0111089965382423,0.0100518357446336,0.00909527710169582,0.00822974704902003,0.00744658307092434,0.00673794699908547,0.00609674656551564,0.00551656442076077,0.00499159390691022,0.00451658094261267,0.00408677143846407,0.00369786371648293,0.00334596545747127,0.00302755474537582,0.00273944481876837,0.00247875217666636,0.0022428677194858,0.00202943063629573,0.00183630477702891,0.00166155727317393,0.00150343919297757,0.00136036803754789,0.00123091190267348,0.0011137751478448,0.00100778542904851,0.000911881965554516,0.000825104923265905,0.000746585808376679,0.000675538775193844,0.000611252761129572,0.000553084370147834,0.000500451433440611,0.000452827182886797,0.000409734978979787,0.000370743540459088,0.000335462627902512,0.000303539138078867,0.000274653569972143,0.000248516827107952,0.000224867324178848,0.000203468369010644,0.000184105793667579,0.000166585810987634,0.000150733075095477,0.000136388926482011,0.00012340980408668,0.000111665808490115,0.000101039401837093,9.14242314781733e-05,8.27240655566322e-05,7.48518298877006e-05,6.77287364908539e-05,6.12834950532221e-05,5.54515994321769e-05,5.01746820561753e-05,4.53999297624849e-05],"mode":"lines","name":"&mu; = 1","type":"scatter","marker":{"color":"rgba(44,160,44,1)","line":{"color":"rgba(44,160,44,1)"}},"error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"line":{"color":"rgba(44,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<p></p><figcaption>Figure&nbsp;1: Beam attenuation as a function of distance</figcaption><p></p>
+</figure>
+</div>
+</div>
 </div>
 </div>
 <aside class="notes">
-<p>ALERT: a new “law” to be added to your growing list of radiation laws! Note: dz simply refers to a thickness or depth of some material (it could be air, water, glass, plastic or in our case the depth of plant canopy.</p>
+<p>ALERT: a new “law” to be added to your growing list of radiation laws! Note: dz simply refers to a thickness or depth of some material it could be air, water, glass, plastic or in our case the depth of plant canopy.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -409,34 +413,19 @@
 </section>
 <section id="beers-law-1" class="slide level2">
 <h2>Beer’s Law</h2>
+<p>Strictly speaking - the law only applies to <strong>homogenous</strong> media.</p>
 <div class="columns">
-<div class="column" style="width:0%;">
-
-</div><div class="column" style="width:100%;">
-<p><img data-src="images/Lecture5/4_1.png"></p>
-</div>
-</div>
-<aside class="notes">
-<p>Here: Bbeer’s Law is extended to the case where there are multiple layers as you might find in forest canopy. Note: The light extinction coefficient (k) represents the light-interception capacity of the vegetation.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="photo-a.-christen-1" class="slide level2">
-<h2>Photo: A. Christen</h2>
-<div class="columns">
-<div class="column" style="width:0%;">
-
-</div><div class="column" style="width:100%;">
+<div class="column" style="width:50%;">
+<ul>
+<li>Attenuation will vary with because composition &amp; density vary</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
 <p><img data-src="images/Lecture5/5_3.jpg"></p>
+<p></p><figcaption>Plant canopies are <strong>not</strong> homogenous</figcaption><p></p>
+</figure>
+</div>
 </div>
 </div>
 <aside class="notes">
@@ -453,16 +442,19 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="t.r.-oke-1987-boundary-layer-climates" class="slide level2">
-<h2>T.R. Oke (1987): Boundary Layer Climates</h2>
+<section id="beers-law-2" class="slide level2">
+<h2>Beer’s Law</h2>
+<p>Strictly speaking - the law only applies to <strong>homogenous</strong> media.</p>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p>I(x)</p>
-<p>I(x)</p>
-<p>x = 0</p>
-<p>Solar and net radiation in plant canopies</p>
-<p>Measurements demonstrate that Beer’s law roughly applies in uniform canopies (grass)</p>
-</div><div class="column" style="width:50%;">
+<div class="column" style="width:65%;">
+<ul>
+<li>However, it measurements show it roughly applies in uniform canopies
+<ul>
+<li>e.g., grass</li>
+</ul></li>
+<li>We can develop empirical (observation based) relationships for different plant canopies</li>
+</ul>
+</div><div class="column" style="width:35%;">
 <p><img data-src="images/Lecture5/6_4.png"></p>
 </div>
 </div>
@@ -480,25 +472,20 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="photo-a.-christen-2" class="slide level2">
-<h2>Photo: A. Christen</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>Vertical distribution of canopy leaf area?</p>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture5/7_0.jpg"></p>
-</div>
-</div>
-</section>
+<section id="vertical-distribution-of-folliage" class="slide level2">
+<h2>Vertical distribution of folliage</h2>
+
+<img data-src="images/Lecture5/7_0.jpg" class="r-stretch"></section>
 <section id="modifying-beers-law-to-apply-to" class="slide level2">
 <h2>Modifying Beer’s Law to apply to</h2>
-<p>plant canopies</p>
 <div class="columns">
 <div class="column" style="width:100%;">
 <ul>
 <li>The main modification to overcome the non-uniformity of leaves is to replace distance (x) with the cumulative leaf area index (LAI).</li>
-<li>What is LAI?</li>
-<li>The leaf area index is the one-sided leaf area per unit ground area.</li>
+<li>What is LAI?
+<ul>
+<li>The leaf area index is the one-sided leaf (and stem) area per unit ground area.</li>
+</ul></li>
 </ul>
 </div><div class="column" style="width:0%;">
 
@@ -506,7 +493,7 @@
 </div>
 <aside class="notes">
 <p>Here we modify Beer’s Law to use Leaf area with depth, something that can be done for different canopies</p>
-<p>It is defined as the one-sided green leaf area per unit ground surface area (LAI = leaf area / ground area, m2&nbsp;/ m2) in&nbsp;broadleaf&nbsp;canopies.[1]&nbsp;</p>
+<p>It is defined as the one-sided green leaf (and stem) area per unit ground surface area (LAI = leaf area / ground area, m2&nbsp;/ m2) in&nbsp;broadleaf&nbsp;canopies.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -519,17 +506,10 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="m2" class="slide level2">
-<h2>1 m2</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>1 m2</p>
-<p>What is the LAI?</p>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture5/9_1.png"></p>
-</div>
-</div>
-<aside class="notes">
+<section id="leaf-area-index" class="slide level2">
+<h2>Leaf Area Index</h2>
+
+<img data-src="images/Lecture5/9_1.png" class="r-stretch"><aside class="notes">
 <p>https://www.metergroup.com/en/meter-environment/education-guides/researchers-complete-guide-leaf-area-index-lai</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -543,14 +523,23 @@
           display:block!important;
       }</style></aside>
 </section>
-<section class="slide level2">
-
+<section id="leaf-area-index-1" class="slide level2">
+<h2>Leaf Area Index</h2>
 <div class="columns">
-<div class="column" style="width:0%;">
-
-</div><div class="column" style="width:100%;">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
 <p><img data-src="images/Lecture5/10_1.jpg"></p>
+<p></p><figcaption>A single spruce branch</figcaption><p></p>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
 <p><img data-src="images/Lecture5/10_2.jpg"></p>
+<p></p><figcaption>The same branch broken into its respective components</figcaption><p></p>
+</figure>
+</div>
 </div>
 </div>
 <aside class="notes">
@@ -567,17 +556,14 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="modifying-beers-law-to-apply" class="slide level2">
-<h2>Modifying Beer’s Law to apply</h2>
-<p>to plant canopies</p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>The leaf area index is the one-sided leaf area per unit ground area. Cumulative LAI (L) = sum of LAI starting at top of canopy</p>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture5/11_2.png"></p>
-</div>
-</div>
-<aside class="notes">
+<section id="modifying-beers-law" class="slide level2">
+<h2>Modifying Beer’s Law</h2>
+<p>Cumulative LAI (L) = sum of LAI</p>
+<ul>
+<li>Integration of LAI through canopy starting at top of canopy</li>
+</ul>
+
+<img data-src="images/Lecture5/11_2.png" class="r-stretch"><aside class="notes">
 <p>You can see how this might work and notice how we make the switch to a cumulative index as we go down into the canopy. In the next slide you will see how we can use this to modify the Beer’s Law equation with one that has L rather than distance x</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -591,31 +577,23 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="grass" class="slide level2">
-<h2>Grass</h2>
+<section id="orientation-of-canopy-leaf-area" class="slide level2">
+<h2>Orientation of canopy leaf area</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>Maize</p>
-<p>Cotton</p>
-<p>Beer’s Law modified for plant canopies</p>
-<ul>
-<li>We rewrite Beer’s Law for solar (S) radiation as:</li>
-<li>where S0 is solar irradiance above the canopy, Su is solar irradiance under the canopy, L is the cumulative LAI and G is the plant canopy extinction coefficient.</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture5/12_0.jpg"></p>
-<p><img data-src="images/Lecture5/12_6.png"></p>
-</div>
-</div>
-</section>
-<section id="photo-a.-christen-3" class="slide level2">
-<h2>Photo: A. Christen</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>Orientation of canopy leaf area?</p>
-</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
 <p><img data-src="images/Lecture5/13_1.jpg"></p>
+<p></p><figcaption>Pickleweed evolved to minimize LAI to help survive hostile conditions on exposed rocky coasts</figcaption><p></p>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
 <p><img data-src="images/Lecture5/13_2.jpg"></p>
+<p></p><figcaption>Squash evolved to maximize LAI to help maximize energy capture and produce large fruits with many seeds</figcaption><p></p>
+</figure>
+</div>
 </div>
 </div>
 <aside class="notes">
@@ -657,56 +635,42 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="other-modifications-to-beers-law" class="slide level2">
-<h2>Other modifications to Beer’s Law</h2>
+<section id="example-of-extreme-clumping" class="slide level2">
+<h2>Example of extreme clumping</h2>
+
+<img data-src="images/Lecture5/Clumpy.jpg" class="r-stretch quarto-figure-center"><p class="caption">Clumping of vegetation in Burns Bog</p></section>
+<section id="modifying-beers-law-1" class="slide level2 smaller">
+<h2>Modifying Beer’s Law</h2>
+<p>We rewrite Beer’s Law for solar radiation under a canopy as:</p>
 <div class="columns">
-<div class="column" style="width:50%;">
+<div class="column" style="width:60%;">
+<p><span id="eq-Beers-Law-for-Plant-Canopies"><span class="math display">\[
+R_x = R_0 e^{\frac{-GL\Omega}{cos\theta}}
+\qquad(2)\]</span></span></p>
 <ul>
-<li>Correcting for path length (1/cos θ) – i.e.&nbsp;add the cosine law of illumination to account for greater path length at slant angles</li>
-<li>Correcting for clumping (Ω) – the ’clumping factor is a non-dimensional number &lt; 1.0 to account for preferred spatial clumps within the canopy</li>
-<li><pre><code> With these  modifications we write:</code></pre></li>
+<li><span class="math inline">\(R_0\)</span> is irradiance above the canopy</li>
+<li><span class="math inline">\(R_u\)</span> is irradiance under the canopy</li>
+<li><span class="math inline">\(L\)</span> is the cumulative LAI</li>
+<li><span class="math inline">\(G\)</span> is the plant canopy attenuation coefficient</li>
+<li><span class="math inline">\(\Omega\)</span> is a clumping scale factor</li>
+<li><span class="math inline">\(cos\theta\)</span> accounts for the zenith angle</li>
 </ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture5/15_2.png"></p>
-</div>
-</div>
-<aside class="notes">
-<p>And we can get even more detailed in our application of Beer’s Law by taking account of path length and clumping</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="photo-a.-black" class="slide level2">
-<h2>Photo: A. Black</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>Example of extreme clumping</p>
-<p>Black spruce in Central Yukon</p>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture5/16_0.png"></p>
+</div><div class="column" style="width:40%;">
+<p><img data-src="images/Lecture5/12_0.jpg"></p>
 </div>
 </div>
 </section>
-<section id="direct-beam-transmissions-into-canopies" class="slide level2">
-<h2>Direct beam transmissions into canopies</h2>
+<section id="transmissions-through-canopies" class="slide level2">
+<h2>Transmissions through canopies</h2>
 <div class="columns">
 <div class="column" style="width:0%;">
 
 </div><div class="column" style="width:100%;">
-<p><img data-src="images/Lecture5/17_1.png"></p>
+<p><img data-src="images/Lecture5/17_1.png" style="width:80.0%"></p>
 </div>
 </div>
 <aside class="notes">
 <p>I do not need you to learn these equations. I just you to need to understand that these effects can be taken into account. Can invert to estimate LAI</p>
-<p>EXAM QUESTION ON CLUMPING</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -719,49 +683,36 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="what-happens-to-radiation-at-the-forest-floor-as-q-increases" class="slide level2">
-<h2>What happens to radiation at the forest floor as q increases?</h2>
-<div class="columns">
-<div class="column" style="width:0%;">
-
-</div><div class="column" style="width:100%;">
-
-</div>
-</div>
-</section>
 <section id="radiation-beneath-plant-canopies" class="slide level2">
-<h2>Radiation beneath plant canopies</h2>
-<div class="columns">
-<div class="column" style="width:100%;">
+<h2>Radiation beneath plant canopies</h2>
 <ul>
-<li>Note that diffuse radiation penetrates the canopy more effectively than direct radiation, hence the ratio D(diffuse)/S (Direct solar) increases with depth into canopy.Scattering of direct radiation helps increase proportion of diffuse PAR in the canopy.</li>
-<li>NIR/PAR increases with depth into canopy.The high PAR absorptivity of leaves in the upper canopy results in depleted PAR in the lower canopy.</li>
+<li>Diffuse (d) radiation penetrates the canopy more effectively than direct (s) radiation
+<ul>
+<li>Ratio <span class="math inline">\(\frac{SW_d\downarrow}{SW_s\downarrow}\)</span> increases with depth into canopy.</li>
+<li>Scattering of direct radiation helps increase proportion of diffuse PAR in the canopy.</li>
+</ul></li>
+<li><span class="math inline">\(\frac{NIR\downarrow}{PAR\downarrow}\)</span> increases with depth into canopy.
+<ul>
+<li>The high PAR absorptivity of leaves in the upper canopy results in depleted PAR in the lower canopy.</li>
+</ul></li>
 </ul>
-</div><div class="column" style="width:0%;">
+</section>
+<section id="changes-with-seasons" class="slide level2">
+<h2>Changes with seasons</h2>
 
-</div>
-</div>
-</section>
-<section id="photo-a.-black-1" class="slide level2">
-<h2>Photo: A. Black</h2>
+<img data-src="images/Lecture5/20_0.jpg" class="r-stretch"></section>
+<section id="changes-with-seasons-1" class="slide level2">
+<h2>Changes with seasons</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>How does radiation beneath a canopy change with season?</p>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture5/20_0.jpg"></p>
-</div>
-</div>
-</section>
-<section id="day-of-year" class="slide level2">
-<h2>Day of year</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>Photo: A. Black</p>
-<p>Radiation above &amp; below boreal aspen canopy</p>
-<p>How does radiation beneath a canopy change with season?</p>
-</div><div class="column" style="width:50%;">
 <p><img data-src="images/Lecture5/21_2.jpg"></p>
-<p><img data-src="images/Lecture5/21_4.png"></p>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/Lecture5/22_0.png"></p>
+<p></p><figcaption>Radiation above &amp; below boreal aspen canopy</figcaption><p></p>
+</figure>
+</div>
 </div>
 </div>
 <aside class="notes">
@@ -778,29 +729,19 @@
           display:block!important;
       }</style></aside>
 </section>
-<section class="slide level2">
-
-<div class="columns">
-<div class="column" style="width:0%;">
-
-</div><div class="column" style="width:100%;">
-<p><img data-src="images/Lecture5/22_0.png"></p>
-</div>
-</div>
-</section>
-<section id="radiation-in-understorey-relative-to-above-canopy" class="slide level2">
-<h2>Radiation in understorey relative to above canopy</h2>
+<section id="changes-with-seasons-iclicker" class="slide level2 smaller">
+<h2>Changes with seasons (iClicker)</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>How does radiation beneath a canopy change with season?</p>
-</div><div class="column" style="width:50%;">
+<p>Which bar on the graph (A or B) would represent the proportion of radiation reaching the floor of a deciduous forest in late winter?</p>
 <p><img data-src="images/Lecture5/23_0.jpg"></p>
+</div><div class="column" style="width:50%;">
 <div class="cell">
 <div id="fig-23_3" class="quarto-figure quarto-figure-center">
 <figure>
-<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-6e005b912e256d165f40" style="width:960px;height:480px;"></div>
-<script type="application/json" data-for="htmlwidget-6e005b912e256d165f40">{"x":{"visdat":{"39c04a166655":["function () ","plotlyVisDat"]},"cur_data":"39c04a166655","attrs":{"39c04a166655":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"name":"Beforeemergence","type":"bar","inherit":true},"39c04a166655.1":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"name":"Afteremergence","type":"bar","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"automargin":true,"title":"X","type":"category","categoryorder":"array","categoryarray":["K↓","PAR","Q*"]},"yaxis":{"domain":[0,1],"automargin":true,"title":"Beforeemergence"},"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":["K↓","PAR","Q*"],"y":[0.58,0.548,0.463],"name":"Beforeemergence","type":"bar","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["K↓","PAR","Q*"],"y":[0.331,0.264,0.262],"name":"Afteremergence","type":"bar","marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
-<p></p><figcaption>Figure&nbsp;1: CAPTION</figcaption><p></p>
+<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-c700c5635f92704c9253" style="width:398.4px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-c700c5635f92704c9253">{"x":{"visdat":{"7b304c13bfb":["function () ","plotlyVisDat"]},"cur_data":"7b304c13bfb","attrs":{"7b304c13bfb":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"name":"A","type":"bar","inherit":true},"7b304c13bfb.1":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"name":"B","type":"bar","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"yaxis":{"domain":[0,1],"automargin":true,"title":"Radiation in understory relative to above canopy","range":[0,1]},"xaxis":{"domain":[0,1],"automargin":true,"title":" ","type":"category","categoryorder":"array","categoryarray":["PAR","R<sub>n<\/sub>","SW&#x2193;"]},"legend":{"x":0.85,"y":0.8},"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":["SW&#x2193;","PAR","R<sub>n<\/sub>"],"y":[0.58,0.548,0.463],"name":"A","type":"bar","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["SW&#x2193;","PAR","R<sub>n<\/sub>"],"y":[0.331,0.264,0.262],"name":"B","type":"bar","marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<p></p><figcaption>Figure&nbsp;2: Proportion of radiation reaching the forest floor</figcaption><p></p>
 </figure>
 </div>
 </div>
@@ -824,24 +765,35 @@
 <h2>Radiation and understory</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>Photos: A. Christen / A. Black</p>
-<p>European beech forests (Fagus sylvatica) show a strong extinction in the crown space and little or no understorey.</p>
-<p>Here, the transmitted radiation supports healthy hazelnut understorey.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/Lecture5/24_3.png" style="width:70.0%"></p>
+<p></p><figcaption>Dense hemlock stand little or no understory</figcaption><p></p>
+</figure>
+</div>
 </div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture5/24_3.png"></p>
-<p><img data-src="images/Lecture5/24_4.png"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/Lecture5/24_4.png" style="width:70.0%"></p>
+<p></p><figcaption>Open alder forest with lush understory</figcaption><p></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
 <section id="sunflecks" class="slide level2">
 <h2>‘Sunflecks’</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p>Photo: A. Christen</p>
-<p>Oke / Christen (in prep.)</p>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture5/25_1.jpg"></p>
+<div class="column" style="width:60%;">
+<ul>
+<li>Sunflecks move with position of sun
+<ul>
+<li>Rapid change from sunlit to shadowed</li>
+</ul></li>
+</ul>
 <p><img data-src="images/Lecture5/25_4.png"></p>
+</div><div class="column" style="width:40%;">
+<p><img data-src="images/Lecture5/25_1.jpg"></p>
 </div>
 </div>
 <aside class="notes">
@@ -858,99 +810,75 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="photo-a.-christen-4" class="slide level2">
-<h2>Photo: A. Christen</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li>Sunflecks move with relative position of sun -</li>
-<li>rapid change from sunlit to shadowed</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture5/26_1.jpg"></p>
-</div>
-</div>
-</section>
-<section id="photo-a.-christen-5" class="slide level2">
-<h2>Photo: A. Christen</h2>
-<div class="columns">
-<div class="column" style="width:0%;">
-
-</div><div class="column" style="width:100%;">
-
-</div>
+<section id="temporally-variability" class="slide level2">
+<h2>Temporally Variability</h2>
+<div style="overflow: hidden;
+  padding-top: 55%;
+  position: relative">
+<iframe src="images/Lecture5/SunFlecks.mp4" title="Processes" scrolling="no" frameborder="0" style="border: 0;
+height: 100%;
+left: 0;
+position: absolute;
+top: 0;
+width: 75%;">
+</iframe>
 </div>
 </section>
-<section class="slide level2">
-
-<div class="columns">
-<div class="column" style="width:0%;">
-
-</div><div class="column" style="width:100%;">
-
-</div>
-</div>
-</section>
-<section id="photo-a.-christen-6" class="slide level2">
-<h2>Photo: A. Christen</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>Sunflecks and photosynthesis</p>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture5/29_3.jpg"></p>
-</div>
-</div>
-</section>
-<section id="rate-of-photosynthesis-µmol-m-2-s-1" class="slide level2">
-<h2>Rate of photosynthesis (µmol m-2 s-1)</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>Photosynthetically active radiation(µmol m-2 s-1)</p>
-<p>Which curve corresponds to understory vegetation?</p>
-<p>Higher efficiency of understorey species at low PAR</p>
-</div><div class="column" style="width:50%;">
+<section id="canopy-position-photosynthesis" class="slide level2">
+<h2>Canopy Position &amp; Photosynthesis</h2>
 <div class="cell">
-<div id="fig-30_2" class="quarto-figure quarto-figure-center">
-<figure>
-<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-5919d6ba9d588e0a7532" style="width:960px;height:480px;"></div>
-<script type="application/json" data-for="htmlwidget-5919d6ba9d588e0a7532">{"x":{"visdat":{"39c05031605c":["function () ","plotlyVisDat"]},"cur_data":"39c05031605c","attrs":{"39c05031605c":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"name":"Trillium.y","type":"scatter","mode":"markers","inherit":true},"39c05031605c.1":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"name":"Fern.y","type":"scatter","mode":"markers","inherit":true},"39c05031605c.2":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"name":"Salal.y","type":"scatter","mode":"markers","inherit":true},"39c05031605c.3":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"name":"OregonGrape.y","type":"scatter","mode":"markers","inherit":true},"39c05031605c.4":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"name":"SugarMaple.y","type":"scatter","mode":"markers","inherit":true},"39c05031605c.5":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"name":"SilverMaple.y","type":"scatter","mode":"markers","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"automargin":true,"title":"Trillium.x"},"yaxis":{"domain":[0,1],"automargin":true,"title":"Trillium.y"},"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[0,0.1,0.2,0.3,0.4,0.5,7.05,24,25],"y":[76.797,62.909,54.739,44.118,35.131,21.242,0,0,0],"name":"Trillium.y","type":"scatter","mode":"markers","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[3.208,2.228,0.639,0.014,-0.037,0,0],"y":[108.66,41.667,22.059,11.438,7.05e-06,0,0],"name":"Fern.y","type":"scatter","mode":"markers","marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"line":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[2.617,3.952,3.293,1.552,1.4,0.454,-0.121,0,0],"y":[468.954,386.438,176.471,32.68,33.497,17.974,0,0,0],"name":"Salal.y","type":"scatter","mode":"markers","marker":{"color":"rgba(44,160,44,1)","line":{"color":"rgba(44,160,44,1)"}},"error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"line":{"color":"rgba(44,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[2.82,2.668,1.687,0.927,0.183,0.504,0,0,0],"y":[269.608,58.824,50.654,19.608,27.778,14.706,0,0,0],"name":"OregonGrape.y","type":"scatter","mode":"markers","marker":{"color":"rgba(214,39,40,1)","line":{"color":"rgba(214,39,40,1)"}},"error_y":{"color":"rgba(214,39,40,1)"},"error_x":{"color":"rgba(214,39,40,1)"},"line":{"color":"rgba(214,39,40,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[5.56,4.21,2.69,0.937,-0.512,-1.88,0,0],"y":[400,200,100,49,21,0,0,0],"name":"SugarMaple.y","type":"scatter","mode":"markers","marker":{"color":"rgba(148,103,189,1)","line":{"color":"rgba(148,103,189,1)"}},"error_y":{"color":"rgba(148,103,189,1)"},"error_x":{"color":"rgba(148,103,189,1)"},"line":{"color":"rgba(148,103,189,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[4.45,4.46,4.13,2.11,0.88,-0.00712,-0.0924,0,0],"y":[400,199,199,99,49,21,0,0,0],"name":"SilverMaple.y","type":"scatter","mode":"markers","marker":{"color":"rgba(140,86,75,1)","line":{"color":"rgba(140,86,75,1)"}},"error_y":{"color":"rgba(140,86,75,1)"},"error_x":{"color":"rgba(140,86,75,1)"},"line":{"color":"rgba(140,86,75,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
-<p></p><figcaption>Figure&nbsp;2: CAPTION</figcaption><p></p>
-</figure>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] "Trillium"     "Trillium"     "Trillium"     "Trillium"     "Trillium"    
+ [6] "Trillium"     "Fern"         "Fern"         "Fern"         "Fern"        
+[11] "Salal"        "Salal"        "Salal"        "Salal"        "Salal"       
+[16] "Salal"        "Oregon Grape" "Oregon Grape" "Oregon Grape" "Oregon Grape"
+[21] "Oregon Grape" "Oregon Grape"</code></pre>
 </div>
-</div>
-</div>
-</div>
-<aside class="notes">
-<p>This graph really just illustrates that understory plants (the red symbols that include ferns and salal) are more efficient photosynthesisers at low amounts of PAR (the left side of the graph). Alternatively the trees (Green – Maples) do better with high amounts of PAR such as you find high up in the canopy.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="rate-of-photosynthesis-µmol-m-2-s-1-1" class="slide level2">
-<h2>Rate of photosynthesis (µmol m-2 s-1)</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>Photosynthetically active radiation(µmol m-2 s-1)</p>
-<p>Higher efficiency of understorey species at low PAR</p>
-<p>Photosynthesis in the subcanopyRemember PAR is ~400-700 nm</p>
-</div><div class="column" style="width:50%;">
-<div class="cell">
-<div id="fig-31_2" class="quarto-figure quarto-figure-center">
-<figure>
-<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-ebfe7ecc0fcf86eb754e" style="width:960px;height:480px;"></div>
-<script type="application/json" data-for="htmlwidget-ebfe7ecc0fcf86eb754e">{"x":{"visdat":{"39c0674958ff":["function () ","plotlyVisDat"]},"cur_data":"39c0674958ff","attrs":{"39c0674958ff":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"name":"Trillium.y","type":"scatter","mode":"markers","inherit":true},"39c0674958ff.1":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"name":"Fern.y","type":"scatter","mode":"markers","inherit":true},"39c0674958ff.2":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"name":"Salal.y","type":"scatter","mode":"markers","inherit":true},"39c0674958ff.3":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"name":"OregonGrape.y","type":"scatter","mode":"markers","inherit":true},"39c0674958ff.4":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"name":"SugarMaple.y","type":"scatter","mode":"markers","inherit":true},"39c0674958ff.5":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"name":"SilverMaple.y","type":"scatter","mode":"markers","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"automargin":true,"title":"Trillium.x"},"yaxis":{"domain":[0,1],"automargin":true,"title":"Trillium.y"},"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[0,0.1,0.2,0.3,0.4,0.5,7.05,24,25],"y":[76.797,62.909,54.739,44.118,35.131,21.242,0,0,0],"name":"Trillium.y","type":"scatter","mode":"markers","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[3.208,2.228,0.639,0.014,-0.037,0,0],"y":[108.66,41.667,22.059,11.438,7.05e-06,0,0],"name":"Fern.y","type":"scatter","mode":"markers","marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"line":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[2.617,3.952,3.293,1.552,1.4,0.454,-0.121,0,0],"y":[468.954,386.438,176.471,32.68,33.497,17.974,0,0,0],"name":"Salal.y","type":"scatter","mode":"markers","marker":{"color":"rgba(44,160,44,1)","line":{"color":"rgba(44,160,44,1)"}},"error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"line":{"color":"rgba(44,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[2.82,2.668,1.687,0.927,0.183,0.504,0,0,0],"y":[269.608,58.824,50.654,19.608,27.778,14.706,0,0,0],"name":"OregonGrape.y","type":"scatter","mode":"markers","marker":{"color":"rgba(214,39,40,1)","line":{"color":"rgba(214,39,40,1)"}},"error_y":{"color":"rgba(214,39,40,1)"},"error_x":{"color":"rgba(214,39,40,1)"},"line":{"color":"rgba(214,39,40,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[5.56,4.21,2.69,0.937,-0.512,-1.88,0,0],"y":[400,200,100,49,21,0,0,0],"name":"SugarMaple.y","type":"scatter","mode":"markers","marker":{"color":"rgba(148,103,189,1)","line":{"color":"rgba(148,103,189,1)"}},"error_y":{"color":"rgba(148,103,189,1)"},"error_x":{"color":"rgba(148,103,189,1)"},"line":{"color":"rgba(148,103,189,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[4.45,4.46,4.13,2.11,0.88,-0.00712,-0.0924,0,0],"y":[400,199,199,99,49,21,0,0,0],"name":"SilverMaple.y","type":"scatter","mode":"markers","marker":{"color":"rgba(140,86,75,1)","line":{"color":"rgba(140,86,75,1)"}},"error_y":{"color":"rgba(140,86,75,1)"},"error_x":{"color":"rgba(140,86,75,1)"},"line":{"color":"rgba(140,86,75,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
-<p></p><figcaption>Figure&nbsp;3: CAPTION</figcaption><p></p>
-</figure>
-</div>
-</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$platform
+[1] "x86_64-w64-mingw32"
+
+$arch
+[1] "x86_64"
+
+$os
+[1] "mingw32"
+
+$crt
+[1] "ucrt"
+
+$system
+[1] "x86_64, mingw32"
+
+$status
+[1] ""
+
+$major
+[1] "4"
+
+$minor
+[1] "2.1"
+
+$year
+[1] "2022"
+
+$month
+[1] "06"
+
+$day
+[1] "23"
+
+$`svn rev`
+[1] "82513"
+
+$language
+[1] "R"
+
+$version.string
+[1] "R version 4.2.1 (2022-06-23 ucrt)"
+
+$nickname
+[1] "Funny-Looking Kid"</code></pre>
 </div>
 </div>
 <aside class="notes">

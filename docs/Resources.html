@@ -150,7 +150,11 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#constants" id="toc-constants" class="nav-link" data-scroll-target="#constants">Constants</a></li>
   <li><a href="#important-equations-and-helpful-conversions" id="toc-important-equations-and-helpful-conversions" class="nav-link" data-scroll-target="#important-equations-and-helpful-conversions">Important Equations and Helpful Conversions</a>
   <ul class="collapse">
+  <li><a href="#absorption-opaque" id="toc-absorption-opaque" class="nav-link" data-scroll-target="#absorption-opaque">Absorption Opaque</a></li>
+  <li><a href="#absorption-transparent" id="toc-absorption-transparent" class="nav-link" data-scroll-target="#absorption-transparent">Absorption Transparent</a></li>
   <li><a href="#albedo" id="toc-albedo" class="nav-link" data-scroll-target="#albedo">Albedo</a></li>
+  <li><a href="#beers-law-for-plant-canopies" id="toc-beers-law-for-plant-canopies" class="nav-link" data-scroll-target="#beers-law-for-plant-canopies">Beers Law for Plant Canopies</a></li>
+  <li><a href="#beers-law" id="toc-beers-law" class="nav-link" data-scroll-target="#beers-law">Beers Law</a></li>
   <li><a href="#cosine-law-of-illumination" id="toc-cosine-law-of-illumination" class="nav-link" data-scroll-target="#cosine-law-of-illumination">Cosine Law of Illumination</a></li>
   <li><a href="#water-balance" id="toc-water-balance" class="nav-link" data-scroll-target="#water-balance">Water Balance</a></li>
   <li><a href="#energy-of-photon" id="toc-energy-of-photon" class="nav-link" data-scroll-target="#energy-of-photon">Energy of Photon</a></li>
@@ -162,13 +166,14 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#planks-law" id="toc-planks-law" class="nav-link" data-scroll-target="#planks-law">Planks Law</a></li>
   <li><a href="#radiation-balance" id="toc-radiation-balance" class="nav-link" data-scroll-target="#radiation-balance">Radiation Balance</a></li>
   <li><a href="#relative-humidity" id="toc-relative-humidity" class="nav-link" data-scroll-target="#relative-humidity">Relative Humidity</a></li>
+  <li><a href="#solar-irradiance" id="toc-solar-irradiance" class="nav-link" data-scroll-target="#solar-irradiance">Solar Irradiance</a></li>
+  <li><a href="#solar-zenith-at-noon" id="toc-solar-zenith-at-noon" class="nav-link" data-scroll-target="#solar-zenith-at-noon">Solar Zenith at Noon</a></li>
   <li><a href="#mean" id="toc-mean" class="nav-link" data-scroll-target="#mean">Mean</a></li>
   <li><a href="#standard-deviation" id="toc-standard-deviation" class="nav-link" data-scroll-target="#standard-deviation">Standard Deviation</a></li>
   <li><a href="#z-score-normalization" id="toc-z-score-normalization" class="nav-link" data-scroll-target="#z-score-normalization">z Score Normalization</a></li>
   <li><a href="#stefan-boltzman-law-grey-body-adjusted" id="toc-stefan-boltzman-law-grey-body-adjusted" class="nav-link" data-scroll-target="#stefan-boltzman-law-grey-body-adjusted">Stefan Boltzman Law Grey Body Adjusted</a></li>
   <li><a href="#stefan-boltzman-law-grey-body" id="toc-stefan-boltzman-law-grey-body" class="nav-link" data-scroll-target="#stefan-boltzman-law-grey-body">Stefan Boltzman Law Grey Body</a></li>
   <li><a href="#stefan-boltzman-law" id="toc-stefan-boltzman-law" class="nav-link" data-scroll-target="#stefan-boltzman-law">Stefan Boltzman Law</a></li>
-  <li><a href="#total-irradiance" id="toc-total-irradiance" class="nav-link" data-scroll-target="#total-irradiance">Total Irradiance</a></li>
   <li><a href="#vapor-density-deficit" id="toc-vapor-density-deficit" class="nav-link" data-scroll-target="#vapor-density-deficit">Vapor Density Deficit</a></li>
   <li><a href="#vapor-density" id="toc-vapor-density" class="nav-link" data-scroll-target="#vapor-density">Vapor Density</a></li>
   <li><a href="#vapor-pressure-deficit" id="toc-vapor-pressure-deficit" class="nav-link" data-scroll-target="#vapor-pressure-deficit">Vapor Pressure Deficit</a></li>
@@ -203,7 +208,7 @@ ul.task-list li input[type="checkbox"] {
 <h1>The SI System</h1>
 <p>The SI (Système International d’Unités or International System of Units) is the official unit system in science and therefore mandatory in climatology. This system uses a small number of base units from which other derived units can be obtained. The SI base units are listed in <a href="#tbl-si-Base">Table&nbsp;1</a> and should be used whenever applicable in this course.</p>
 <ul>
-<li>The unit for temperature is Kelvin (K, <em>not</em> <span class="math inline">\(^{\circ} K\)</span>). Temperatures may be also indicated in degree Celsius ( <span class="math inline">\(^{\circ} C\)</span> ). However, temperature-differences should be referred to as Kelvin (K). The conversion is listed in <strong>?@eq-Kelvin-to-Celsius</strong>. Note how one Kelvin is equivalent to one degree Celsius, but the units have different zero points.
+<li>The unit for temperature is Kelvin (K, <em>not</em> <span class="math inline">\(^{\circ} K\)</span>). Temperatures may be also indicated in degree Celsius ( <span class="math inline">\(^{\circ} C\)</span> ). However, temperature-differences should be referred to as Kelvin (K). The conversion is listed in <a href="#eq-Kelvin">Equation&nbsp;12</a>. Note how one Kelvin is equivalent to one degree Celsius, but the units have different zero points.
 <ul>
 <li>0 K represents <strong>absolute zero</strong>, which is the <strong>lowest possible temperature</strong>: i.e., a complete lack of energy in a system.
 <ul>
@@ -403,7 +408,7 @@ T(K) = T(\deg C) + 273.15
 <tbody>
 <tr class="odd">
 <td style="text-align: left;"><span class="math inline">\(T\)</span></td>
-<td style="text-align: left;">Temperature</td>
+<td style="text-align: left;">Temperature (in Kelvin unless specified otherwise)</td>
 <td style="text-align: left;">Quantitatification of the heat present in an object</td>
 </tr>
 <tr class="even">
@@ -469,7 +474,7 @@ T(K) = T(\deg C) + 273.15
 <tr class="even">
 <td style="text-align: left;"><span class="math inline">\(e\)</span></td>
 <td style="text-align: left;">Vapor pressure</td>
-<td style="text-align: left;"><a href="#eq-Vapor-Pressure">Equation&nbsp;24</a></td>
+<td style="text-align: left;"><a href="#eq-Vapor-Pressure">Equation&nbsp;29</a></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><span class="math inline">\(T_w\)</span></td>
@@ -479,17 +484,17 @@ T(K) = T(\deg C) + 273.15
 <tr class="even">
 <td style="text-align: left;"><span class="math inline">\(VDD\)</span></td>
 <td style="text-align: left;">Vapor density defect</td>
-<td style="text-align: left;"><a href="#eq-Vapor-Density-Deficit">Equation&nbsp;21</a></td>
+<td style="text-align: left;"><a href="#eq-Vapor-Density-Deficit">Equation&nbsp;26</a></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><span class="math inline">\(VPD\)</span></td>
 <td style="text-align: left;">Vapor pressure defect</td>
-<td style="text-align: left;"><a href="#eq-Vapor-Pressure-Deficit">Equation&nbsp;23</a></td>
+<td style="text-align: left;"><a href="#eq-Vapor-Pressure-Deficit">Equation&nbsp;28</a></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><span class="math inline">\(\rho_v\)</span></td>
 <td style="text-align: left;">Vapor density</td>
-<td style="text-align: left;"><a href="#eq-Vapor-Density">Equation&nbsp;22</a></td>
+<td style="text-align: left;"><a href="#eq-Vapor-Density">Equation&nbsp;27</a></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><span class="math inline">\(T_d\)</span></td>
@@ -514,7 +519,27 @@ T(K) = T(\deg C) + 273.15
 <tr class="odd">
 <td style="text-align: left;"><span class="math inline">\(\theta\)</span></td>
 <td style="text-align: left;">Solar Zenith</td>
-<td style="text-align: left;">Angle between the sun and the vertical direction</td>
+<td style="text-align: left;">Angle between the sun and the vertical direction - to calculate the zenith at solar noon see <a href="#eq-Solar-Zenith-at-Noon">Equation&nbsp;19</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(E_b\)</span></td>
+<td style="text-align: left;">Black-body emissivity</td>
+<td style="text-align: left;">An idealized estimate of radiative flux density based on an object’s temperature assuming its a black-body see <a href="#eq-Stefan-Boltzman-Law">Equation&nbsp;25</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(\epsilon\)</span></td>
+<td style="text-align: left;">emissivity</td>
+<td style="text-align: left;">The ratio of energy emitted from a surface to that which would be emitted by a black-body emitter at the same temperature</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(E_g\)</span></td>
+<td style="text-align: left;">Grey-body emissivity</td>
+<td style="text-align: left;">An adjustment to <span class="math inline">\(E_b\)</span> which accounts for the object’s emissivity <span class="math inline">\(\epsilon\)</span> see <a href="#eq-Stefan-Boltzman-Law-Grey-Body">Equation&nbsp;24</a> &amp; see <a href="#eq-Stefan-Boltzman-Law-Grey-Body-Adjusted">Equation&nbsp;23</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(\mu\)</span></td>
+<td style="text-align: left;">Attenuation coefficient in Beers Law</td>
+<td style="text-align: left;">the proportion of radiation that is not transmitted through a substance - not to be confused with the prefix <span class="math inline">\(\mu\)</span> meaning micro</td>
 </tr>
 </tbody>
 </table>
@@ -857,155 +882,185 @@ T(K) = T(\deg C) + 273.15
 <ul>
 <li>Note these are listed in no particular order</li>
 </ul>
+<section id="absorption-opaque" class="level2">
+<h2 class="anchored" data-anchor-id="absorption-opaque">Absorption Opaque</h2>
+<p><span id="eq-Absorption-Opaque"><span class="math display">\[
+a_{\lambda} = 1  - \alpha_{\lambda}
+\tag{2}\]</span></span></p>
+</section>
+<section id="absorption-transparent" class="level2">
+<h2 class="anchored" data-anchor-id="absorption-transparent">Absorption Transparent</h2>
+<p><span id="eq-Absorption-Transparent"><span class="math display">\[
+a_{\lambda} = 1  - \alpha_{\lambda} - \tau_{\lambda}
+\tag{3}\]</span></span></p>
+</section>
 <section id="albedo" class="level2">
 <h2 class="anchored" data-anchor-id="albedo">Albedo</h2>
 <p><span id="eq-Albedo"><span class="math display">\[
 albedo = \alpha_{SW} = \frac{\uparrow SW}{\downarrow SW}
-\tag{2}\]</span></span></p>
+\tag{4}\]</span></span></p>
+</section>
+<section id="beers-law-for-plant-canopies" class="level2">
+<h2 class="anchored" data-anchor-id="beers-law-for-plant-canopies">Beers Law for Plant Canopies</h2>
+<p><span id="eq-Beers-Law-for-Plant-Canopies"><span class="math display">\[
+R_x = R_0 e^{\frac{-GL\Omega}{cos\theta}}
+\tag{5}\]</span></span></p>
+</section>
+<section id="beers-law" class="level2">
+<h2 class="anchored" data-anchor-id="beers-law">Beers Law</h2>
+<p><span id="eq-Beers-Law"><span class="math display">\[
+R_x = R_0 e^{-kx}
+\tag{6}\]</span></span></p>
 </section>
 <section id="cosine-law-of-illumination" class="level2">
 <h2 class="anchored" data-anchor-id="cosine-law-of-illumination">Cosine Law of Illumination</h2>
 <p><span id="eq-Cosine-Law-of-Illumination"><span class="math display">\[
 R_s = R_p cos(\theta)
-\tag{3}\]</span></span></p>
+\tag{7}\]</span></span></p>
 </section>
 <section id="water-balance" class="level2">
 <h2 class="anchored" data-anchor-id="water-balance">Water Balance</h2>
 <p><span id="eq-Water-Balance"><span class="math display">\[
 R_n=H+LE+G+E*
-\tag{4}\]</span></span></p>
+\tag{8}\]</span></span></p>
 </section>
 <section id="energy-of-photon" class="level2">
 <h2 class="anchored" data-anchor-id="energy-of-photon">Energy of Photon</h2>
 <p><span id="eq-Energy-of-Photon"><span class="math display">\[
 e = hv
-\tag{5}\]</span></span></p>
+\tag{9}\]</span></span></p>
 </section>
 <section id="frequency" class="level2">
 <h2 class="anchored" data-anchor-id="frequency">Frequency</h2>
 <p><span id="eq-Frequency"><span class="math display">\[
 v=\frac{c}{\lambda}
-\tag{6}\]</span></span></p>
+\tag{10}\]</span></span></p>
 </section>
 <section id="ideal-gas-law" class="level2">
 <h2 class="anchored" data-anchor-id="ideal-gas-law">Ideal Gas Law</h2>
 <p><span id="eq-Ideal-Gas-Law"><span class="math display">\[
 PV=nRT
-\tag{7}\]</span></span></p>
+\tag{11}\]</span></span></p>
 </section>
 <section id="kelvin" class="level2">
 <h2 class="anchored" data-anchor-id="kelvin">Kelvin</h2>
 <p><span id="eq-Kelvin"><span class="math display">\[
 T(K) = T(\deg C) + 273.15
-\tag{8}\]</span></span></p>
+\tag{12}\]</span></span></p>
 </section>
 <section id="kirchhoffs-law" class="level2">
 <h2 class="anchored" data-anchor-id="kirchhoffs-law">Kirchhoffs Law</h2>
 <p><span id="eq-Kirchhoffs-Law"><span class="math display">\[
 a_lambda = \epsilon_\lambda
-\tag{9}\]</span></span></p>
+\tag{13}\]</span></span></p>
 </section>
 <section id="net-radiation" class="level2">
 <h2 class="anchored" data-anchor-id="net-radiation">Net Radiation</h2>
 <p><span id="eq-Net-Radiation"><span class="math display">\[
 R_n = (SW \downarrow - SW \uparrow) + (LW \downarrow - LW \uparrow)
-\tag{10}\]</span></span></p>
+\tag{14}\]</span></span></p>
 </section>
 <section id="planks-law" class="level2">
 <h2 class="anchored" data-anchor-id="planks-law">Planks Law</h2>
 <p><span id="eq-Planks-Law"><span class="math display">\[
 E = \frac{2*h*c}{\lambda^{5}}*\frac{1}{e^{\frac{h*c}{\lambda*\sigma_b*T}}-1}
-\tag{11}\]</span></span></p>
+\tag{15}\]</span></span></p>
 </section>
 <section id="radiation-balance" class="level2">
 <h2 class="anchored" data-anchor-id="radiation-balance">Radiation Balance</h2>
 <p><span id="eq-Radiation-Balance"><span class="math display">\[
 a_\lambda + \tau_\lambda + \alpha_\lambda = 1
-\tag{12}\]</span></span></p>
+\tag{16}\]</span></span></p>
 </section>
 <section id="relative-humidity" class="level2">
 <h2 class="anchored" data-anchor-id="relative-humidity">Relative Humidity</h2>
 <p><span id="eq-Relative-Humidity"><span class="math display">\[
 RH = \frac{\rho_v}{\rho^*_v(T)}
-\tag{13}\]</span></span></p>
+\tag{17}\]</span></span></p>
+</section>
+<section id="solar-irradiance" class="level2">
+<h2 class="anchored" data-anchor-id="solar-irradiance">Solar Irradiance</h2>
+<p><span id="eq-Solar-Irradiance"><span class="math display">\[
+SW\downarrow = SW\downarrow_S + SW\downarrow_D
+\tag{18}\]</span></span></p>
+</section>
+<section id="solar-zenith-at-noon" class="level2">
+<h2 class="anchored" data-anchor-id="solar-zenith-at-noon">Solar Zenith at Noon</h2>
+<p><span id="eq-Solar-Zenith-at-Noon"><span class="math display">\[
+\theta = Latitude - Solar\:Declination
+\tag{19}\]</span></span></p>
 </section>
 <section id="mean" class="level2">
 <h2 class="anchored" data-anchor-id="mean">Mean</h2>
 <p><span id="eq-Mean"><span class="math display">\[
 \bar{x} =  \sum_{n=1}^{N} \frac{x_n}{N}
-\tag{14}\]</span></span></p>
+\tag{20}\]</span></span></p>
 </section>
 <section id="standard-deviation" class="level2">
 <h2 class="anchored" data-anchor-id="standard-deviation">Standard Deviation</h2>
 <p><span id="eq-Standard-Deviation"><span class="math display">\[
 \sigma =  \frac{\sum_{n=1}^{N} x_n - \bar{x}}{N}
-\tag{15}\]</span></span></p>
+\tag{21}\]</span></span></p>
 </section>
 <section id="z-score-normalization" class="level2">
 <h2 class="anchored" data-anchor-id="z-score-normalization">z Score Normalization</h2>
 <p><span id="eq-z-Score-Normalization"><span class="math display">\[
 z = \frac{x-\bar{x}}{\sigma}
-\tag{16}\]</span></span></p>
+\tag{22}\]</span></span></p>
 </section>
 <section id="stefan-boltzman-law-grey-body-adjusted" class="level2">
 <h2 class="anchored" data-anchor-id="stefan-boltzman-law-grey-body-adjusted">Stefan Boltzman Law Grey Body Adjusted</h2>
 <p><span id="eq-Stefan-Boltzman-Law-Grey-Body-Adjusted"><span class="math display">\[
 E_g = \epsilon\sigma_b T^4 + (1-\epsilon) * (SW\downarrow+LW\downarrow)
-\tag{17}\]</span></span></p>
+\tag{23}\]</span></span></p>
 </section>
 <section id="stefan-boltzman-law-grey-body" class="level2">
 <h2 class="anchored" data-anchor-id="stefan-boltzman-law-grey-body">Stefan Boltzman Law Grey Body</h2>
 <p><span id="eq-Stefan-Boltzman-Law-Grey-Body"><span class="math display">\[
 E_g = \epsilon\sigma_b T^4
-\tag{18}\]</span></span></p>
+\tag{24}\]</span></span></p>
 </section>
 <section id="stefan-boltzman-law" class="level2">
 <h2 class="anchored" data-anchor-id="stefan-boltzman-law">Stefan Boltzman Law</h2>
 <p><span id="eq-Stefan-Boltzman-Law"><span class="math display">\[
 E_b = \sigma_b T^4
-\tag{19}\]</span></span></p>
-</section>
-<section id="total-irradiance" class="level2">
-<h2 class="anchored" data-anchor-id="total-irradiance">Total Irradiance</h2>
-<p><span id="eq-Total-Irradiance"><span class="math display">\[
-SW\downarrow = SW\downarrow_s + SW\downarrow_d
-\tag{20}\]</span></span></p>
+\tag{25}\]</span></span></p>
 </section>
 <section id="vapor-density-deficit" class="level2">
 <h2 class="anchored" data-anchor-id="vapor-density-deficit">Vapor Density Deficit</h2>
 <p><span id="eq-Vapor-Density-Deficit"><span class="math display">\[
 VDD = \rho^*_v(T) - \rho_v
-\tag{21}\]</span></span></p>
+\tag{26}\]</span></span></p>
 </section>
 <section id="vapor-density" class="level2">
 <h2 class="anchored" data-anchor-id="vapor-density">Vapor Density</h2>
 <p><span id="eq-Vapor-Density"><span class="math display">\[
 \rho_v = \rho^*_{vw}(T_w) - \gamma(T-T_w)
-\tag{22}\]</span></span></p>
+\tag{27}\]</span></span></p>
 </section>
 <section id="vapor-pressure-deficit" class="level2">
 <h2 class="anchored" data-anchor-id="vapor-pressure-deficit">Vapor Pressure Deficit</h2>
 <p><span id="eq-Vapor-Pressure-Deficit"><span class="math display">\[
 VPD = e*(T) - e
-\tag{23}\]</span></span></p>
+\tag{28}\]</span></span></p>
 </section>
 <section id="vapor-pressure" class="level2">
 <h2 class="anchored" data-anchor-id="vapor-pressure">Vapor Pressure</h2>
 <p><span id="eq-Vapor-Pressure"><span class="math display">\[
 e = \rho_v R_v T
-\tag{24}\]</span></span></p>
+\tag{29}\]</span></span></p>
 </section>
 <section id="water-balance-1" class="level2">
 <h2 class="anchored" data-anchor-id="water-balance-1">Water Balance</h2>
 <p><span id="eq-Water-Balance"><span class="math display">\[
 P=ET+\delta S+Q
-\tag{25}\]</span></span></p>
+\tag{30}\]</span></span></p>
 </section>
 <section id="weins-law" class="level2">
 <h2 class="anchored" data-anchor-id="weins-law">Weins Law</h2>
 <p><span id="eq-Weins-Law"><span class="math display">\[
 \lambda_{max} = \frac{b}{T}
-\tag{26}\]</span></span></p>
+\tag{31}\]</span></span></p>
 
 
 </section>
