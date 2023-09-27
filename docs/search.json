@@ -805,6 +805,97 @@
     "text": "Megan\n\n\n\n\n\n\nPronouns: She/Her/Hers\nEmail: melkin@student.ubc.ca\nBio: My name is Megan and I am in my final year of Geographical Science at UBC. I have been working this past year on co-op with Environment and Climate Change Canada and am excited to be back in the classroom! My main areas of study are GIS, Geomorphology, and Urban Meteorology. Some of my hobbies include mountain biking, climbing, and swimming and I am very fortunate to call BC my home."
   },
   {
+    "objectID": "Assignments/Lab3.html",
+    "href": "Assignments/Lab3.html",
+    "title": "Lab 3: Atmospheric Humidity",
+    "section": "",
+    "text": "This assignment is worth 11 points."
+  },
+  {
+    "objectID": "Assignments/Lab3.html#measuring-atmospheric-humidity",
+    "href": "Assignments/Lab3.html#measuring-atmospheric-humidity",
+    "title": "Lab 3: Atmospheric Humidity",
+    "section": "Measuring Atmospheric Humidity",
+    "text": "Measuring Atmospheric Humidity\nThe most common type of instrument used to measure humidity is the psychrometer (Figure 3). This instrument consists simply of a pair of thermometers, one of which has a wetted wick enclosing the sensor. The wet-bulb is cooled by evaporation to a temperature that depends on the atmospheric vapor density.\n\n\n\nFigure 3: Diagram of a sling psychrometer\n\n\nThe water vapor density \\(\\rho_v\\) (aka. absolute humidity) can be calculated from measurements of wet-bulb temperature (\\(T_b\\)) and dry-bulb temperature (\\(T\\)) using the relationship:\n\\[\n\\rho_v = \\rho^*_{vw}(T_w) - \\gamma(T-T_w)\n\\tag{1}\\]\nThese and other symbols in this exercise are defined in Table 1.\nOther ways of expressing the amount of moisture are used and each has particular usefulness in certain applications. The total amount of water that the atmosphere can hold without condensation depends only on temperature. This quantity, called the saturation vapor density \\(\\rho^*_v(T)\\), is given for a range of temperatures in Figure 1. The ratio of actual vapor density to the maximum possible (i.e. the saturation vapor density) when expressed as a percentage is called the relative humidity:\n\\[\nRH = \\frac{\\rho_v}{\\rho^*_v(T)}\n\\tag{2}\\]\nFor some calculations of evaporation rate, the difference between the maximum and the actual vapor density is useful. This is called the vapor density deficit:\n\\[\nVDD = \\rho^*_v(T) - \\rho_v\n\\tag{3}\\]\nWe may express the water vapor content of air by finding the temperature to which a parcel of air could be cooled at constant atmospheric pressure before condensation commences. This temperature is called the dew point temperature \\(T_d\\). Note: that for a saturated parcel the dewpoint temperature is the temperature of the parcel. For any water vapor density, \\(T_d\\) can be found by using Figure 1 in reverse. For example, air with a vapor density of 7.8 g m-3 has a \\(T_d\\) of 7°C.\nWater vapor content of the air can be expressed in terms of the partial pressure exerted by the water vapor, or water vapor pressure, \\(e\\). This is related to vapor density by the gas law as follows:\n\\[\ne = \\rho_v R_v T\n\\tag{4}\\]\nWhere R_v is the gas constant for water vapor (see Table 1) and \\(T\\) is the absolute temperature (K). Using units of g m-3 for \\(\\rho_v(T)\\) results in units of kPa (kilopascals) for \\(e\\).\nSaturation vapor pressure, \\(e*(T)\\): Consider a parcel at temperature \\(T\\). Unless the parcel is currently saturated, the parcel could hold more water vapor than it currently does. The partial pressure exerted by the water vapor is given by \\(e\\), whereas the partial pressure that would be exerted by the water vapor if the parcel were saturated, is \\(e*\\), which is a function of temperature: i.e., \\(e*(T)\\). (Units: kPa).\nVapor pressure deficit, VPD: Vapor pressure deficit represents the difference between the actual and saturation vapor pressures of a parcel at temperature T:\n\\[\nVPD = e*(T) - e\n\\tag{5}\\]\n\nNote: that the smaller the VPD, the closer the parcel is to saturation. (Units: kPa)"
+  },
+  {
+    "objectID": "Assignments/Lab3.html#psychrometer",
+    "href": "Assignments/Lab3.html#psychrometer",
+    "title": "Lab 3: Atmospheric Humidity",
+    "section": "Psychrometer",
+    "text": "Psychrometer\nTo make measurements of water vapor content of the air, you will use the Assmann aspirated psychrometer. Examine the psychrometer and notice the wick on the wet-bulb thermometer. Use distilled water to wet the wick thoroughly. Wind up the clockwork ventilation fan. Take the instrument outdoors and measure the wet- and dry bulb temperatures. Read measurements every 15 s for 3 or 4 minutes until the thermometer reaches equilibrium. Use the equilibrium values for further calculations.\nReturn to the laboratory, re-wet the wick and re-wind the psychrometer. Repeat the measurements of wet- and dry-bulb temperature. The water vapor density in the air in the classroom and outdoors can now be calculated (see 5.4, Question 1)."
+  },
+  {
+    "objectID": "Assignments/Lab3.html#questions",
+    "href": "Assignments/Lab3.html#questions",
+    "title": "Lab 3: Atmospheric Humidity",
+    "section": "Questions",
+    "text": "Questions\n\nQuestion 1 (3 points)\nCalculate from your measurements with the Assmann psychrometer: \\(\\rho_v(T)\\), \\(e\\), \\(RH\\), \\(VDD\\), \\(VPD\\) and \\(T_d\\) for both indoors and outdoors.\n\n\nQuestion 2 (2 points)\nSuppose in an experiment measuring the humidity outdoors, it is convenient to suck in a sample of cool air through a tube into a warm laboratory. The sample warmed to room temperature allowing its pressure to remain constant. What happens to its volume? Which of the measures of humidity (\\(\\rho_v(T)\\), \\(e\\), \\(RH\\), \\(VDD\\) and \\(T_d\\)) will be the same when determined on this warmed sample as would be obtained by measurement with a psychrometer outdoors and how would each measure of humidity differ? Hint: remember pressure is constant, but temperature, and therefore volume, changes.\n\n\nQuestion 3 (1 points)\nWere your measured vapor densities indoors and outdoors equal? Is this reasonable? Explain why. ### Question 4 (1 points)\n\n\nQuestion 5 (1 points)\nA high-precision method for measuring water vapor content of the air uses a dew-point hygrometer. In this instrument a mirror is cooled until condensation causes fogging on the mirror and this is detected by a photodetector that records the scattering of a beam of light shining on the mirror. At that time, the temperature of the mirror is recorded. What temperature would be recorded if the air vapor pressure is 1.60 kPa? ### Question 6 (1 points)\n\n\nQuestion 7 (2 points)\nA cool winter Canadian air mass with a temperature of -4°C and a relative humidity of 91% meets a warm air mass sweeping northward from Texas with a temperature of 17°C and a relative humidity of 17%. In the mixing process will the southern border of the Canadian air gain or lose water vapor content? Explain."
+  },
+  {
+    "objectID": "Assignments/Lab1.html",
+    "href": "Assignments/Lab1.html",
+    "title": "Lab 1: The UBC Climate Station",
+    "section": "",
+    "text": "This assignment is worth 15 points."
+  },
+  {
+    "objectID": "Assignments/Lab1.html#history-and-scope-of-the-station",
+    "href": "Assignments/Lab1.html#history-and-scope-of-the-station",
+    "title": "Lab 1: The UBC Climate Station",
+    "section": "History and Scope of the Station",
+    "text": "History and Scope of the Station\nThe UBC Climatological Station was established in 1957 at UBC Point Grey Campus west of the Agronomy Barn on Agronomy Road. By 1961 the UBC Climatological Station had achieved the necessary standards to be classed as an Ordinary Climatological Station by the Environment Canada Climatological Network (Hare and Thomas, 1979). In the early 1970s, campus development forced its relocation further south, to the Totem Research Station (Figure 2). The station is located 100m a.s.l. with an open exposure to the majority of the climatic elements.\n\n\n\n\n\n\nFigure 2: Location of Totem Climate Station\n\n\n\nStandardization\nAny site of a climatological station must meet basic criteria before its data will be accepted by Environment Canada. For example, the surroundings must be reasonably flat, there should be no major obstacles to airflow, no significant obstruction to the horizon, no extraneous sources of heat, vapor or dust and the surface should consist of short grass. Similarly, the instrumentation must conform to Environment Canada standards. The data gathered from a climatological station are to be related to large-scale air mass and regional characteristics not the microclimate of the site. Insistence on these points assures users of site and instrument standardization so that different stations can be compared within expected limits of accuracy."
+  },
+  {
+    "objectID": "Assignments/Lab1.html#climate-variables-measured",
+    "href": "Assignments/Lab1.html#climate-variables-measured",
+    "title": "Lab 1: The UBC Climate Station",
+    "section": "Climate Variables Measured",
+    "text": "Climate Variables Measured\nThe station is equipped with an electronic data logger, which makes automatic measurements of climate variables every ten seconds, and half-hour average values are then calculated and stored in the memory of the data-logger. The table below (Table 1) lists the variables measured at the UBC Climatological Station. This is followed by discussion of some specific variables measured at the station and some example data from different time periods.\n\n\nTable 1: Automatic measurements recorded every 10 seconds at the UBC Climatological Station\n\n\n\n\n\n\n\n\nVariable\nInstrument\nLevel\nUnits\n\n\n\n\nShort-wave Radiation\nPyranometer\n1 m height A-frame (incoming and outgoing)\nW m2\n\n\nLong-wave Radiation\nPyrgeometer\n1 m height A-frame (incoming and outgoing)\nW m2\n\n\nAir temperature\nThermistor\n1.3 m height\n°C\n\n\nHumidity\nThin-film capacitive sensor\n1.3 m height\n%\n\n\nSoil temperature\nThermocouples\n10, 20, and 40 cm depths\n°C\n\n\nWind speed / direction\nPropeller anemometer\n10m height\nm s-1\n\n\nSnow depth\nSonic ranging sensor\n1.3 m height\ncm\n\n\nPrecipitation\nTipping bucket rain gauge\n1 m height\nmm\n\n\n\n\n\nRadiation\nFigure 3 (a) shows a pyranometer, which is used to measure the short-wave (SW) radiation at the station. Shortwave radiation is also know as solar radiation, because it is the primary wavelength of radiation emitted from the Sun. The pyranometer contains a small black absorber disk inside a glass dome whose radiative properties allow only radiation with wavelengths (\\(\\mu\\)) between 0.3 and 3 \\(\\mu m\\) to pass through. As radiation reaches the absorber disk, it will warm up and create a temperature difference to the rest of the body of the instrument whose temperature varies only slowly. The difference can be directly related to short-wave receipt.\nFigure 3 (b) shows a pyrgeometer, which is used to measure the thermal radiation, also know as long-wave (LW) radiation. It works in a similar way as a pyranometer, except it measures wavelengths between 4.5 and 100 µm. Figure 3 (c) shows how sets of pyranometers and pyrgeometers, one of each pointing upward toward the sky and downward toward the ground, are used to measure both incoming and outgoing short-wave and long-wave radiation respectively. We’ll take a more in depth look at radiation in lab 2.\n\n\n\n\n\n\n\n(a) Pyranometer\n\n\n\n\n\n\n\n(b) Pyrgeometer\n\n\n\n\n\n\n\n\n\n(c) Typical radiation measurement setup\n\n\n\n\nFigure 3: Instrumentation used to measure radiation\n\n\n\n\nAir & Soil Temperature\nAir temperature and humidity are measured in a Stevenson screen Figure 4 designed to protect the instruments from liquid water (rain/snow) and shade them from solar radiation, but permit free air circulation.\n\n\n\nFigure 4: Stevenson Screen\n\n\nSoil temperatures are measured using Copper/Constantan thermocouples. These are wires made up of two different metals that carry a small electrical signal. The transfer of electricity between the two metals is dependent upon temperature, and from that we can calculate temperature for whatever medium the thermocouple is in contact with.\n\nFigure 5 shows an example of air and soil temperature data collected at Totem field during the 2021 Heatdome.\n\nYou can move your cursor over the traces (lines) to see the values of the different variables.\nThink about how air and soil temperatures compare to one another in this example.\n\n\n\n\n\n\n\nFigure 5: Temperature data from Totem Field during the 2021 Heatdome.\n\n\n\n\n\nPrecipitation\nRainfall is measured using a tipping bucket Figure 6 (b), which works by funneling precipitation into small seesaw-like counter Figure 6. The depth of new snowfall and the total depth of the snow lying on the ground was historically measured with a meter stick. It is now measured using an automated sonic snow depth sensor Figure 6 (c).\n\nLiquid water equivalent of the snow is typically estimated using a 10:1 ratio\n\n10 mm of snow ≈ 1 mm of rainfall\n\nHowever, this is just an average, and accuracy of this estimate can vary drastically depending on the type of snow.\n\nIn Vancouver, we typically get “wet, heavy snow” which has a much higher liquid water equivalent, with a ratio closer to 5:1. Using the standard 10:1 ratio for a typical Vancouver snowfall would underestimate liquid precipitation.\n“Powder”, the light, fluffy snow common in dry mountainous areas that makes for great skiing has a much lower liquid water equivalent, with a ratio closer to 20:1.\n\n\n\n\n\n\n\n\n\n(a) Inside a Tipping bucket\n\n\n\n\n\n\n\n(b) Tipping bucket\n\n\n\n\n\n\n\n(c) Snow depth sensor\n\n\n\n\nFigure 6: Instrumentation used to measure precipitation (rain and snow).\n\n\n\nFigure 7 shows an example of precipitation data collected at Totem field during November 2021, when an Atmospheric River caused widespread flooding across the region.\n\n\n\n\n\n\nFigure 7: Precipitation data from Totem Field during the 2021 Atmospheric River event.\n\n\n\n\n\nWind Speed\nWind speed (horizontal) and direction are measured on a prop vane anemometer Figure 8. The sensor is mounted at 10 m above the surface to avoid the effects of local obstacles such as the instrument shelters Figure 1. Figure 9 shows mean annual wind speeds measured at Totem Field.\n\nProp vane anemometers are cheap and function well in most weather conditions, however the mechanical components can degrade over time.\n\n\n\n\nFigure 8: Example of a propeller anemometer *Note this photo is not from Totem Field\n\n\n\n\n\n\n\nFigure 9: Mean annual wind speed at Totem Station."
+  },
+  {
+    "objectID": "Assignments/Lab1.html#questions",
+    "href": "Assignments/Lab1.html#questions",
+    "title": "Lab 1: The UBC Climate Station",
+    "section": "Questions",
+    "text": "Questions\n\nQuestion 1 (1.5 points)\nIs the climatological station suitably located to provide climatic data representative of the UBC campus and surrounding areas? Discuss why or why not. You can pan around and zoom in/out on Figure 2 to help you answer this question.\n\n\nQuestion 2 (1 points)\nWhy is a Stevenson screen built with slatted walls, a double roof, and white paint?\n\n\nQuestion 3 (1 points)\nHow do air and soil temperatures compare to one another during the 2021 Heatdome event shown in Figure 5? Which variable (air or soil temperature at 10/20/40 cm) has the largest range on a daily basis? Which has the smallest range?\n\n\nQuestion 4 (0.5 points)\nFill in the blanks: indicate the words/phrases that complete the statement.\nUsing the standard 10:1 ratio for “Powder” snow in a dry mountainous region would ______ liquid precipitation.\n\n\nQuestion 5 (1 points)\nBased on Figure 9, do you think the wind data from the last few years at totem field is accurate? Why or why not?"
+  },
+  {
+    "objectID": "Assignments/Lab1.html#questions-1",
+    "href": "Assignments/Lab1.html#questions-1",
+    "title": "Lab 1: The UBC Climate Station",
+    "section": "Questions",
+    "text": "Questions\n\nQuestion 6 (1.5 points)\nCompare the UBC climatological station at totem field with the one on top of the Earth, Ocean, and Atmospheric sciences building. You can zoom out to location the station on Figure 2 for more context, look at the website and webcams for the EOAS station. Do you think conditions at the rooftop site are representative of the conditions in the surrounding area? Would it meet the standards Environment Canada requires discussed above?"
+  },
+  {
+    "objectID": "Assignments/Lab1.html#long-term-trends",
+    "href": "Assignments/Lab1.html#long-term-trends",
+    "title": "Lab 1: The UBC Climate Station",
+    "section": "Long-term Trends",
+    "text": "Long-term Trends\nOne way to assess long-term patterns in a location is to look at deviations from the mean conditions over a period of record.\n\nMean air temperature at Totem Station since 1960 is 10.2 °C, with a standard deviation of 0.6 °C.\nLikewise, mean annual precipitation at Totem Station since 1960 is 1130.8 mm, with a standard deviation of 229 mm.\nUsing these values we can z-normalize temperature and precipitation data from the Totem station to investigate long-term patterns at the site Figure 10.\n\n\n\n\n\n\nFigure 10: Z-score normalized mean annual air temperature and total annual precipitation data for the Totem Field climate station."
+  },
+  {
+    "objectID": "Assignments/Lab1.html#climate-normals",
+    "href": "Assignments/Lab1.html#climate-normals",
+    "title": "Lab 1: The UBC Climate Station",
+    "section": "Climate Normals",
+    "text": "Climate Normals\nTo look at the general conditions of a given location, we often use something called “Climate Normals”. These are 30-year averages of temperature and precipitation, in decadal blocks, eg. 1961 to 1990, or 1991 to 2020. They can give you an general overview of the seasonal conditions at a location.\n\n\n\n\n\nFigure 11: Climate normals for the Totem field weather station since 1960."
+  },
+  {
+    "objectID": "Assignments/Lab1.html#questions-2",
+    "href": "Assignments/Lab1.html#questions-2",
+    "title": "Lab 1: The UBC Climate Station",
+    "section": "Questions",
+    "text": "Questions\n\nQuestion 7 (2 points)\nWhat does Figure 10 tell you about yearly air temperatures and precipitation at UBC over the last 60 years?\n\n\nQuestion 8 (2 points)\nInspect Figure 11; and toggle through the different periods (1961-1990 thru 1991-2020). On average, which periods are the coldest and warmest at Totem Field respectively? Is there any noticeable change in average monthly air temperatures from the earliest period to the the latest? If so in which months and by how much?\n\n\nQuestion 9 (0.5 points)\nHow does the total November Precipitation from 2021 shown in Figure 7 compare to a “typical” November as defined using the 1990-2020 climate normals shown in Figure 11?\n\n\nQuestion 10 (4 points)\nClimate normals for stations across Canada can be found here. You can search for stations by name, province/territory, or proximity to specific locations. For the most recent period available, pick two stations: one from Quebec, and one from Nunavut, and find their climate normal graphs. Compare the seasonality of monthly average temperatures and total precipitation to the the climate normals covering the same time period for Totem Station, discuss the similarities/differences you see. Take screenshots of the climate normal graphs and include them in your answer."
+  },
+  {
+    "objectID": "acknowledgement.html",
+    "href": "acknowledgement.html",
+    "title": "Territorial Acknowledgement",
+    "section": "",
+    "text": "The University of British Columbia and the city of Vancouver are on the traditional, ancestral, and unceded territory of the Coast Salish Peoples. Specifically the UBC Vancouver campus is on xʷməθkʷəy̓əm (Musqueam) land.\n\nThere are nearly 200 First Nations spread through BC, and many more across the continent.\n\nIt is essential to recognize Indigenous territories and Indigenous sovereignty, especially within the context of geography courses.\nTo learn more about the Indigenous people, culture, and languages where you live and around the world, check out native-land.ca.\n\n\n\n\n\nMap Source\n\n\n\n\n\nWhy Do an Acknowledgement?\nA land acknowledgement is meant to convey a deep rooted cultural connection to the land and the historical and present day injustices and violence enacted on Indigenous communities through colonialism. For centuries, settler societies have perpetuated a genocide against Indigenous people across the globe. In many ways this genocide is still ongoing here in British Columbia and across Canada. There has been concerted effort by the government, religious organizations, and educational institutions to erase Indigenous culture and identity which as marginalized these communities in Canadian Society.\n\nAn acknowledgement is one small way to help with that, but it cannot be treated as a formality. It is a time to reflect and build understanding.\n\n\n\nWhat does it mean?\n\n\nTraditional and Ancestral Recognize by whom the lands were traditionally used and/or occupied and the cultures have been handed down from generation to generation. The area around UBC was used by many different people, including the xʷməθkʷəy̓əm, əl̓ilwətaɁɬ, and Skwxwú7mesh-ulh Nations.\nThese people are are part of a broader linguistic / cultural group of Coast Salish speaking people. The xʷməθkʷəy̓əm and əl̓ilwətaɁɬ speak dialects of Hul’q’umi’num’ / Halq’eméylem / hən̓q̓əmin̓əm̓ and the Skwxwú7mesh-ulh speak Sḵwx̱wú7mesh sníchim.\n\n\n\n\n\n\n\nUnceded: Refers to land that was not turned over to the government by a treaty or other agreement. Over 95% of the land in BC, and many lands elsewhere in the world were never ceded by treaty. Without treaties, these lands remain the sovereign territory of the First Nations that call them home. Yet at the same time, the lands have been claimed by Canada and these First Nations living on these lands lack a framework to express their sovereignty. This by no means absolves the Canadian government of their crimes where lands were “ceded” by treaty. Treaties were more frequently reached by coercion than negotiation. The RCMP was created specifically to force indigenous people off their lands by any means necessary."
+  },
+  {
     "objectID": "Assignments/Lab2.html",
     "href": "Assignments/Lab2.html",
     "title": "Lab 2: Radiation",
@@ -868,69 +959,6 @@
     "text": "Questions\n\nQuestion 5 (3 points)\nReport results in the Spectral absorptivity, reflectivity and transmissivity table and comment on possible errors in the measurements. Copy this table into your lab report word document. Note you should have calculated \\(a_\\lambda\\) and \\(\\alpha_\\lambda\\) for all soil samples, the white and black hide under fluorescent and incandescent light \\(a_\\lambda\\), \\(\\tau_\\lambda\\), and \\(\\alpha_\\lambda\\) for both leaves - everything separately for the fluorescent and incandescent light.\n\n\nQuestion 6 (2 points)\nExplain any differences you found between your measurements of the reflection, transmission and absorption coefficients of the green leaf using fluorescent and incandescent lamps (refer to Figure 2 and Figure 1)\n\n\nQuestion 7 (0.5 points)\nFill in the blank(s): indicate the words/phrases that complete the statement.\n________ is the pigment responsible for the green color of leaves? It is one of the primary pigments responsible for ________.\n\n\nQuestion 8 (1 points)\nFrom the measurements of \\(\\alpha_\\lambda\\) and \\(a_\\lambda\\) of the soil samples, what is the effect of organic matter and water content on these radiative properties?"
   },
   {
-    "objectID": "acknowledgement.html",
-    "href": "acknowledgement.html",
-    "title": "Territorial Acknowledgement",
-    "section": "",
-    "text": "The University of British Columbia and the city of Vancouver are on the traditional, ancestral, and unceded territory of the Coast Salish Peoples. Specifically the UBC Vancouver campus is on xʷməθkʷəy̓əm (Musqueam) land.\n\nThere are nearly 200 First Nations spread through BC, and many more across the continent.\n\nIt is essential to recognize Indigenous territories and Indigenous sovereignty, especially within the context of geography courses.\nTo learn more about the Indigenous people, culture, and languages where you live and around the world, check out native-land.ca.\n\n\n\n\n\nMap Source\n\n\n\n\n\nWhy Do an Acknowledgement?\nA land acknowledgement is meant to convey a deep rooted cultural connection to the land and the historical and present day injustices and violence enacted on Indigenous communities through colonialism. For centuries, settler societies have perpetuated a genocide against Indigenous people across the globe. In many ways this genocide is still ongoing here in British Columbia and across Canada. There has been concerted effort by the government, religious organizations, and educational institutions to erase Indigenous culture and identity which as marginalized these communities in Canadian Society.\n\nAn acknowledgement is one small way to help with that, but it cannot be treated as a formality. It is a time to reflect and build understanding.\n\n\n\nWhat does it mean?\n\n\nTraditional and Ancestral Recognize by whom the lands were traditionally used and/or occupied and the cultures have been handed down from generation to generation. The area around UBC was used by many different people, including the xʷməθkʷəy̓əm, əl̓ilwətaɁɬ, and Skwxwú7mesh-ulh Nations.\nThese people are are part of a broader linguistic / cultural group of Coast Salish speaking people. The xʷməθkʷəy̓əm and əl̓ilwətaɁɬ speak dialects of Hul’q’umi’num’ / Halq’eméylem / hən̓q̓əmin̓əm̓ and the Skwxwú7mesh-ulh speak Sḵwx̱wú7mesh sníchim.\n\n\n\n\n\n\n\nUnceded: Refers to land that was not turned over to the government by a treaty or other agreement. Over 95% of the land in BC, and many lands elsewhere in the world were never ceded by treaty. Without treaties, these lands remain the sovereign territory of the First Nations that call them home. Yet at the same time, the lands have been claimed by Canada and these First Nations living on these lands lack a framework to express their sovereignty. This by no means absolves the Canadian government of their crimes where lands were “ceded” by treaty. Treaties were more frequently reached by coercion than negotiation. The RCMP was created specifically to force indigenous people off their lands by any means necessary."
-  },
-  {
-    "objectID": "Assignments/Lab1.html",
-    "href": "Assignments/Lab1.html",
-    "title": "Lab 1: The UBC Climate Station",
-    "section": "",
-    "text": "This assignment is worth 15 points."
-  },
-  {
-    "objectID": "Assignments/Lab1.html#history-and-scope-of-the-station",
-    "href": "Assignments/Lab1.html#history-and-scope-of-the-station",
-    "title": "Lab 1: The UBC Climate Station",
-    "section": "History and Scope of the Station",
-    "text": "History and Scope of the Station\nThe UBC Climatological Station was established in 1957 at UBC Point Grey Campus west of the Agronomy Barn on Agronomy Road. By 1961 the UBC Climatological Station had achieved the necessary standards to be classed as an Ordinary Climatological Station by the Environment Canada Climatological Network (Hare and Thomas, 1979). In the early 1970s, campus development forced its relocation further south, to the Totem Research Station (Figure 2). The station is located 100m a.s.l. with an open exposure to the majority of the climatic elements.\n\n\n\n\n\n\nFigure 2: Location of Totem Climate Station\n\n\n\nStandardization\nAny site of a climatological station must meet basic criteria before its data will be accepted by Environment Canada. For example, the surroundings must be reasonably flat, there should be no major obstacles to airflow, no significant obstruction to the horizon, no extraneous sources of heat, vapor or dust and the surface should consist of short grass. Similarly, the instrumentation must conform to Environment Canada standards. The data gathered from a climatological station are to be related to large-scale air mass and regional characteristics not the microclimate of the site. Insistence on these points assures users of site and instrument standardization so that different stations can be compared within expected limits of accuracy."
-  },
-  {
-    "objectID": "Assignments/Lab1.html#climate-variables-measured",
-    "href": "Assignments/Lab1.html#climate-variables-measured",
-    "title": "Lab 1: The UBC Climate Station",
-    "section": "Climate Variables Measured",
-    "text": "Climate Variables Measured\nThe station is equipped with an electronic data logger, which makes automatic measurements of climate variables every ten seconds, and half-hour average values are then calculated and stored in the memory of the data-logger. The table below (Table 1) lists the variables measured at the UBC Climatological Station. This is followed by discussion of some specific variables measured at the station and some example data from different time periods.\n\n\nTable 1: Automatic measurements recorded every 10 seconds at the UBC Climatological Station\n\n\n\n\n\n\n\n\nVariable\nInstrument\nLevel\nUnits\n\n\n\n\nShort-wave Radiation\nPyranometer\n1 m height A-frame (incoming and outgoing)\nW m2\n\n\nLong-wave Radiation\nPyrgeometer\n1 m height A-frame (incoming and outgoing)\nW m2\n\n\nAir temperature\nThermistor\n1.3 m height\n°C\n\n\nHumidity\nThin-film capacitive sensor\n1.3 m height\n%\n\n\nSoil temperature\nThermocouples\n10, 20, and 40 cm depths\n°C\n\n\nWind speed / direction\nPropeller anemometer\n10m height\nm s-1\n\n\nSnow depth\nSonic ranging sensor\n1.3 m height\ncm\n\n\nPrecipitation\nTipping bucket rain gauge\n1 m height\nmm\n\n\n\n\n\nRadiation\nFigure 3 (a) shows a pyranometer, which is used to measure the short-wave (SW) radiation at the station. Shortwave radiation is also know as solar radiation, because it is the primary wavelength of radiation emitted from the Sun. The pyranometer contains a small black absorber disk inside a glass dome whose radiative properties allow only radiation with wavelengths (\\(\\mu\\)) between 0.3 and 3 \\(\\mu m\\) to pass through. As radiation reaches the absorber disk, it will warm up and create a temperature difference to the rest of the body of the instrument whose temperature varies only slowly. The difference can be directly related to short-wave receipt.\nFigure 3 (b) shows a pyrgeometer, which is used to measure the thermal radiation, also know as long-wave (LW) radiation. It works in a similar way as a pyranometer, except it measures wavelengths between 4.5 and 100 µm. Figure 3 (c) shows how sets of pyranometers and pyrgeometers, one of each pointing upward toward the sky and downward toward the ground, are used to measure both incoming and outgoing short-wave and long-wave radiation respectively. We’ll take a more in depth look at radiation in lab 2.\n\n\n\n\n\n\n\n(a) Pyranometer\n\n\n\n\n\n\n\n(b) Pyrgeometer\n\n\n\n\n\n\n\n\n\n(c) Typical radiation measurement setup\n\n\n\n\nFigure 3: Instrumentation used to measure radiation\n\n\n\n\nAir & Soil Temperature\nAir temperature and humidity are measured in a Stevenson screen Figure 4 designed to protect the instruments from liquid water (rain/snow) and shade them from solar radiation, but permit free air circulation.\n\n\n\nFigure 4: Stevenson Screen\n\n\nSoil temperatures are measured using Copper/Constantan thermocouples. These are wires made up of two different metals that carry a small electrical signal. The transfer of electricity between the two metals is dependent upon temperature, and from that we can calculate temperature for whatever medium the thermocouple is in contact with.\n\nFigure 5 shows an example of air and soil temperature data collected at Totem field during the 2021 Heatdome.\n\nYou can move your cursor over the traces (lines) to see the values of the different variables.\nThink about how air and soil temperatures compare to one another in this example.\n\n\n\n\n\n\n\nFigure 5: Temperature data from Totem Field during the 2021 Heatdome.\n\n\n\n\n\nPrecipitation\nRainfall is measured using a tipping bucket Figure 6 (b), which works by funneling precipitation into small seesaw-like counter Figure 6. The depth of new snowfall and the total depth of the snow lying on the ground was historically measured with a meter stick. It is now measured using an automated sonic snow depth sensor Figure 6 (c).\n\nLiquid water equivalent of the snow is typically estimated using a 10:1 ratio\n\n10 mm of snow ≈ 1 mm of rainfall\n\nHowever, this is just an average, and accuracy of this estimate can vary drastically depending on the type of snow.\n\nIn Vancouver, we typically get “wet, heavy snow” which has a much higher liquid water equivalent, with a ratio closer to 5:1. Using the standard 10:1 ratio for a typical Vancouver snowfall would underestimate liquid precipitation.\n“Powder”, the light, fluffy snow common in dry mountainous areas that makes for great skiing has a much lower liquid water equivalent, with a ratio closer to 20:1.\n\n\n\n\n\n\n\n\n\n(a) Inside a Tipping bucket\n\n\n\n\n\n\n\n(b) Tipping bucket\n\n\n\n\n\n\n\n(c) Snow depth sensor\n\n\n\n\nFigure 6: Instrumentation used to measure precipitation (rain and snow).\n\n\n\nFigure 7 shows an example of precipitation data collected at Totem field during November 2021, when an Atmospheric River caused widespread flooding across the region.\n\n\n\n\n\n\nFigure 7: Precipitation data from Totem Field during the 2021 Atmospheric River event.\n\n\n\n\n\nWind Speed\nWind speed (horizontal) and direction are measured on a prop vane anemometer Figure 8. The sensor is mounted at 10 m above the surface to avoid the effects of local obstacles such as the instrument shelters Figure 1. Figure 9 shows mean annual wind speeds measured at Totem Field.\n\nProp vane anemometers are cheap and function well in most weather conditions, however the mechanical components can degrade over time.\n\n\n\n\nFigure 8: Example of a propeller anemometer *Note this photo is not from Totem Field\n\n\n\n\n\n\n\nFigure 9: Mean annual wind speed at Totem Station."
-  },
-  {
-    "objectID": "Assignments/Lab1.html#questions",
-    "href": "Assignments/Lab1.html#questions",
-    "title": "Lab 1: The UBC Climate Station",
-    "section": "Questions",
-    "text": "Questions\n\nQuestion 1 (1.5 points)\nIs the climatological station suitably located to provide climatic data representative of the UBC campus and surrounding areas? Discuss why or why not. You can pan around and zoom in/out on Figure 2 to help you answer this question.\n\n\nQuestion 2 (1 points)\nWhy is a Stevenson screen built with slatted walls, a double roof, and white paint?\n\n\nQuestion 3 (1 points)\nHow do air and soil temperatures compare to one another during the 2021 Heatdome event shown in Figure 5? Which variable (air or soil temperature at 10/20/40 cm) has the largest range on a daily basis? Which has the smallest range?\n\n\nQuestion 4 (0.5 points)\nFill in the blanks: indicate the words/phrases that complete the statement.\nUsing the standard 10:1 ratio for “Powder” snow in a dry mountainous region would ______ liquid precipitation.\n\n\nQuestion 5 (1 points)\nBased on Figure 9, do you think the wind data from the last few years at totem field is accurate? Why or why not?"
-  },
-  {
-    "objectID": "Assignments/Lab1.html#questions-1",
-    "href": "Assignments/Lab1.html#questions-1",
-    "title": "Lab 1: The UBC Climate Station",
-    "section": "Questions",
-    "text": "Questions\n\nQuestion 6 (1.5 points)\nCompare the UBC climatological station at totem field with the one on top of the Earth, Ocean, and Atmospheric sciences building. You can zoom out to location the station on Figure 2 for more context, look at the website and webcams for the EOAS station. Do you think conditions at the rooftop site are representative of the conditions in the surrounding area? Would it meet the standards Environment Canada requires discussed above?"
-  },
-  {
-    "objectID": "Assignments/Lab1.html#long-term-trends",
-    "href": "Assignments/Lab1.html#long-term-trends",
-    "title": "Lab 1: The UBC Climate Station",
-    "section": "Long-term Trends",
-    "text": "Long-term Trends\nOne way to assess long-term patterns in a location is to look at deviations from the mean conditions over a period of record.\n\nMean air temperature at Totem Station since 1960 is 10.2 °C, with a standard deviation of 0.6 °C.\nLikewise, mean annual precipitation at Totem Station since 1960 is 1130.8 mm, with a standard deviation of 229 mm.\nUsing these values we can z-normalize temperature and precipitation data from the Totem station to investigate long-term patterns at the site Figure 10.\n\n\n\n\n\n\nFigure 10: Z-score normalized mean annual air temperature and total annual precipitation data for the Totem Field climate station."
-  },
-  {
-    "objectID": "Assignments/Lab1.html#climate-normals",
-    "href": "Assignments/Lab1.html#climate-normals",
-    "title": "Lab 1: The UBC Climate Station",
-    "section": "Climate Normals",
-    "text": "Climate Normals\nTo look at the general conditions of a given location, we often use something called “Climate Normals”. These are 30-year averages of temperature and precipitation, in decadal blocks, eg. 1961 to 1990, or 1991 to 2020. They can give you an general overview of the seasonal conditions at a location.\n\n\n\n\n\nFigure 11: Climate normals for the Totem field weather station since 1960."
-  },
-  {
-    "objectID": "Assignments/Lab1.html#questions-2",
-    "href": "Assignments/Lab1.html#questions-2",
-    "title": "Lab 1: The UBC Climate Station",
-    "section": "Questions",
-    "text": "Questions\n\nQuestion 7 (2 points)\nWhat does Figure 10 tell you about yearly air temperatures and precipitation at UBC over the last 60 years?\n\n\nQuestion 8 (2 points)\nInspect Figure 11; and toggle through the different periods (1961-1990 thru 1991-2020). On average, which periods are the coldest and warmest at Totem Field respectively? Is there any noticeable change in average monthly air temperatures from the earliest period to the the latest? If so in which months and by how much?\n\n\nQuestion 9 (0.5 points)\nHow does the total November Precipitation from 2021 shown in Figure 7 compare to a “typical” November as defined using the 1990-2020 climate normals shown in Figure 11?\n\n\nQuestion 10 (4 points)\nClimate normals for stations across Canada can be found here. You can search for stations by name, province/territory, or proximity to specific locations. For the most recent period available, pick two stations: one from Quebec, and one from Nunavut, and find their climate normal graphs. Compare the seasonality of monthly average temperatures and total precipitation to the the climate normals covering the same time period for Totem Station, discuss the similarities/differences you see. Take screenshots of the climate normal graphs and include them in your answer."
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Syllabus",
@@ -991,7 +1019,7 @@
     "href": "Lectures.html#quizzes",
     "title": "Overview",
     "section": "Quizzes",
-    "text": "Quizzes\nQuizzes will held on the dates listed in the schedule below. *(ote dates are subject to change & will be announced in class the week before."
+    "text": "Quizzes\nQuizzes will held on the dates listed in the schedule below. Note dates are subject to change & will be announced in class the week before."
   },
   {
     "objectID": "Lectures.html#readings",
@@ -1428,6 +1456,13 @@
     "text": "Radiation transfer in plant canopies\n\nTransmission of solar radiation in a foggy West Coast Forest\nOne of our applications in forest and agricultural climatology is themodelling and measurement of short-wave irradiance at the ground after passing through Earth’s atmosphere."
   },
   {
+    "objectID": "Slides/Lecture5.html#lecture-review-quiz-iclicker",
+    "href": "Slides/Lecture5.html#lecture-review-quiz-iclicker",
+    "title": "Radiation transfer in plant canopies",
+    "section": "Lecture Review Quiz (iClicker)",
+    "text": "Lecture Review Quiz (iClicker)\nWe have a lecture review quiz this Friday (September 29th)"
+  },
+  {
     "objectID": "Slides/Lecture5.html#learning-objectives",
     "href": "Slides/Lecture5.html#learning-objectives",
     "title": "Radiation transfer in plant canopies",
@@ -1501,29 +1536,43 @@
     "objectID": "Slides/Lecture5.html#leaf-orientation",
     "href": "Slides/Lecture5.html#leaf-orientation",
     "title": "Radiation transfer in plant canopies",
-    "section": "Leaf orientation",
-    "text": "Leaf orientation\n\n\n\nThe canopy extinction coefficient is often called the projection coefficient because it’s related to the orientation of the leaves: erectophile or planophile in relation to the sun angle.\n\n\n\n\n\n\nIn fact we take account of leaf orientation in the canopy extinction coefficient."
+    "section": "Leaf Orientation",
+    "text": "Leaf Orientation\n\n\nThe canopy attenuation coefficient is related to the orientation of the leaves in relation to the sun angle:\n\nErectophile vs. planophile\n\n\n\n\n\n\nIn fact we take account of leaf orientation in the canopy extinction coefficient."
   },
   {
-    "objectID": "Slides/Lecture5.html#example-of-extreme-clumping",
-    "href": "Slides/Lecture5.html#example-of-extreme-clumping",
+    "objectID": "Slides/Lecture5.html#spatial-heterogeneity",
+    "href": "Slides/Lecture5.html#spatial-heterogeneity",
     "title": "Radiation transfer in plant canopies",
-    "section": "Example of extreme clumping",
-    "text": "Example of extreme clumping\n\nClumping of vegetation in Burns Bog"
+    "section": "Spatial Heterogeneity",
+    "text": "Spatial Heterogeneity\nConsider the similarity/dissimilarity across space.\n\nA homogenous canopy will have a more even distribution across\n\nThe attenuation coefficient will be less variable\n\nA heterogeneous canopy will have a less even distribution across\n\nThe attenuation coefficient will be more variable"
+  },
+  {
+    "objectID": "Slides/Lecture5.html#spatial-heterogeneity-1",
+    "href": "Slides/Lecture5.html#spatial-heterogeneity-1",
+    "title": "Radiation transfer in plant canopies",
+    "section": "Spatial Heterogeneity",
+    "text": "Spatial Heterogeneity\n\n\n\n\n\nHomogenous, dense, evenly spaced corn limits canopy transmittance\n\n\n\n\n\n\nHeterogenous, clumpy vegetation in Burns Bog allows more light to reach the surface"
   },
   {
     "objectID": "Slides/Lecture5.html#modifying-beers-law-1",
     "href": "Slides/Lecture5.html#modifying-beers-law-1",
     "title": "Radiation transfer in plant canopies",
     "section": "Modifying Beer’s Law",
-    "text": "Modifying Beer’s Law\nWe rewrite Beer’s Law for solar radiation under a canopy as:\n\n\n\\[\nR_x = R_0 e^{\\frac{-GL\\Omega}{cos\\theta}}\n\\qquad(2)\\]\n\n\\(R_0\\) is irradiance above the canopy\n\\(R_u\\) is irradiance under the canopy\n\\(L\\) is the cumulative LAI\n\\(G\\) is the plant canopy attenuation coefficient\n\\(\\Omega\\) is a clumping scale factor\n\\(cos\\theta\\) accounts for the zenith angle"
+    "text": "Modifying Beer’s Law\nWe rewrite Beer’s Law for solar radiation under a canopy as:\n\n\n\\[\nR_u = R_0 e^{\\frac{-GL\\Omega}{cos\\theta}}\n\\qquad(2)\\]\n\n\\(R_0\\) is irradiance above the canopy\n\\(R_u\\) is irradiance under the canopy\n\\(L\\) is the cumulative LAI\n\\(G\\) is the plant canopy attenuation coefficient\n\\(\\Omega\\) is a clumping scale factor\n\\(cos\\theta\\) accounts for the zenith angle"
   },
   {
-    "objectID": "Slides/Lecture5.html#transmissions-through-canopies",
-    "href": "Slides/Lecture5.html#transmissions-through-canopies",
+    "objectID": "Slides/Lecture5.html#canopy-transmission",
+    "href": "Slides/Lecture5.html#canopy-transmission",
     "title": "Radiation transfer in plant canopies",
-    "section": "Transmissions through canopies",
-    "text": "Transmissions through canopies\n\n\n\n\n\n\n\n\nI do not need you to learn these equations. I just you to need to understand that these effects can be taken into account. Can invert to estimate LAI"
+    "section": "Canopy Transmission",
+    "text": "Canopy Transmission\nTransmitted radiation will be a proportion of total incoming radiation.\n\n\n\\[\n\\tau_{\\lambda} = \\frac{R_{u\\lambda}}{R_{0\\lambda}}\n\\qquad(3)\\]\n\n\n\n\n\nI do not need you to learn these equations. I just you to need to understand that these effects can be taken into account. Can invert to estimate LAI"
+  },
+  {
+    "objectID": "Slides/Lecture5.html#canopy-transmission-iclicker",
+    "href": "Slides/Lecture5.html#canopy-transmission-iclicker",
+    "title": "Radiation transfer in plant canopies",
+    "section": "Canopy Transmission (iClicker)",
+    "text": "Canopy Transmission (iClicker)\nCan you have a negative value for transmitted radiation?\n\n\nA - Yes\nB - No\n\n\n\n\n\nI do not need you to learn these equations. I just you to need to understand that these effects can be taken into account. Can invert to estimate LAI"
   },
   {
     "objectID": "Slides/Lecture5.html#radiation-beneath-plant-canopies",
@@ -1579,7 +1628,7 @@
     "href": "Slides/Lecture5.html#canopy-position-photosynthesis",
     "title": "Radiation transfer in plant canopies",
     "section": "Canopy Position & Photosynthesis",
-    "text": "Canopy Position & Photosynthesis\n\n\n\n\n\nFigure 3: Rates of photosynthesis at different light levels for different plant species in a forest\n\n\n\n\nThis graph really just illustrates that understory plants (the red symbols that include ferns and salal) are more efficient photosynthesisers at low amounts of PAR (the left side of the graph). Alternatively the trees (Green – Maples) do better with high amounts of PAR such as you find high up in the canopy."
+    "text": "Canopy Position & Photosynthesis\n\n\n\n\n\nFigure 3: Rates of CO2 uptake (photosynthesis) at different light levels for different species in a forest\n\n\n\n\nThis graph really just illustrates that understory plants (the red symbols that include ferns and salal) are more efficient photosynthesisers at low amounts of PAR (the left side of the graph). Alternatively the trees (Green – Maples) do better with high amounts of PAR such as you find high up in the canopy."
   },
   {
     "objectID": "Slides/Lecture5.html#take-home-points",
