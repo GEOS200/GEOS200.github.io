@@ -4,70 +4,77 @@
     "href": "Slides/Lecture6.html#long-wave-radiation",
     "title": "Long-wave Radiation",
     "section": "Long-wave radiation",
-    "text": "Long-wave radiation\n\nTrees on UBC Campus recorded in the thermal infrared using a thermal scanner shown in false colo"
+    "text": "Long-wave radiation\n\nTrees recorded in thermal infrared using a thermal scanner shown in false color"
   },
   {
     "objectID": "Slides/Lecture6.html#learning-objectives",
     "href": "Slides/Lecture6.html#learning-objectives",
     "title": "Long-wave Radiation",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\n\n\n\nExplain the role of Long-wave radiation in the climate system.\nDescribed how absorption and emission are linked & understand Kirchhoff’s law of thermal radiation.\nExplain how we can measure Long-wave radiation.\n\n\n\n\n\n\n\n\nToday we are going to move away from the shortwave radiation coming from the sun. We will examine Long-wave radiation, which is the radiation emitted from everything within the earth-atmosphere system (including us!)."
+    "text": "Learning Objectives\n\nExplain the role of Long-wave radiation in the climate system.\nDescribed how absorption and emission are linked & understand Kirchhoff’s law of thermal radiation.\nExplain how we can measure Long-wave radiation."
   },
   {
     "objectID": "Slides/Lecture6.html#what-is-long-wave-radiation",
     "href": "Slides/Lecture6.html#what-is-long-wave-radiation",
     "title": "Long-wave Radiation",
     "section": "What is ‘Long-wave’ radiation?",
-    "text": "What is ‘Long-wave’ radiation?\n\n\nVisible\nEmittance (W m-2)\nStefan’s constant\nCool roofs Tree tops\nSurface emissivity (typically &gt; 0.95)\nWarm backyard Cool flat roof\nWarm backyard Cool flat roof\nAbsolute surface temperature (K)\n\nWavelength range: 3 µm to 100 µm\nLong-wave radiation = far-infrared radiation = thermal infrared radiation (TIR)\nExchanged between sky, surface and all surrounding objects.\nObjects emit radiation (emittance) according to the Stefan-Boltzmann equation (see Lecture 3):"
+    "text": "What is ‘Long-wave’ radiation?\nObjects emit radiation proportional to their temperature; adjusting for emittance as per the Stefan-Boltzmann equation for grey-bodies.\n\n\n\nWavelength (\\(\\lambda\\)) &gt; 3 \\(\\mu m\\)\nLong-wave radiation \\(\\approx\\) thermal infrared radiation (TIR)\nExchanged between sky, surface and all surrounding objects\n\n\n\\[\nE_g = \\epsilon\\sigma_b T^4\n\\qquad(1)\\]"
   },
   {
-    "objectID": "Slides/Lecture6.html#long-wave-3-to-100-μm",
-    "href": "Slides/Lecture6.html#long-wave-3-to-100-μm",
+    "objectID": "Slides/Lecture6.html#review-short-wave-vs.-long-wave",
+    "href": "Slides/Lecture6.html#review-short-wave-vs.-long-wave",
     "title": "Long-wave Radiation",
-    "section": "Long-wave ~3 to >100 μm",
-    "text": "Long-wave ~3 to &gt;100 μm\n\n\nshortwave0.15 to ~3 μm\nReview ‘shortwave’ vs. ‘Long-wave’\nAt 300 K:λmax is 9.7 μm (~10 μm)\nAt 6000 K:λmax is 0.48 μm (~0.5 μm)"
+    "section": "Review Short-wave vs. Long-wave",
+    "text": "Review Short-wave vs. Long-wave\n\n\n\n\n\nPeak spectral output of the Sun and Earth compared on a log scale\n\n\n\n\n\n\nPeak spectral output of the Sun and Earth compared in natural units"
   },
   {
     "objectID": "Slides/Lecture6.html#radiation-laws-terminology",
     "href": "Slides/Lecture6.html#radiation-laws-terminology",
     "title": "Long-wave Radiation",
     "section": "Radiation Laws & Terminology",
-    "text": "Radiation Laws & Terminology\n\n\n\nPlanck’s Law\nWiens Law\nStefan Boltzmann Law\nPAR 0.4-0.7 μm\nBeer’s Law\nKirchhoff’s Law\n\n\n\n\n\n\nYou should review these definitions from earlier material."
+    "text": "Radiation Laws & Terminology\n\nPlanck’s Law: describes the full spectral output (spectra)\nWiens Law: gives the peak of the spectra\nStefan Boltzmann Law: gives the integral of the spectra\nBeer’s Law: describes attenuation of radiation\nPhotosyntheically Active Radiation (PAR): \\(\\lambda\\) 0.4-0.7 \\(\\mu\\) m\nKirchhoff’s Law: relates emissivity to absorptivity"
   },
   {
-    "objectID": "Slides/Lecture6.html#visible",
-    "href": "Slides/Lecture6.html#visible",
+    "objectID": "Slides/Lecture6.html#short-wave-vs-long-wave-imagery",
+    "href": "Slides/Lecture6.html#short-wave-vs-long-wave-imagery",
     "title": "Long-wave Radiation",
-    "section": "Visible",
-    "text": "Visible\n\n\nLong-wave\nShortwave\nAn urban environment with buildings and trees recorded from a camera in the TIR during day (right) and in the visible part of the short-wave (left). Dark bluish colors refer to low radiative flux densities, yellow to white colors are strong radiative flux densities.\nCool roofs Tree tops\nShortwave photography vs Long-wave image\nWarm backyard Cool flat roof\nImages: FLIR / D. Scherer, Ecology Department, TU Berlin.\nWarm backyard Cool flat roof\n\n\n\n\n\n\nWe take advantage of thermal infra-red cameras (that “see” Long-wave radiation which is not visible to our eyes). Can you think of some examples??"
+    "section": "Short-wave vs Long-wave Imagery",
+    "text": "Short-wave vs Long-wave Imagery\n\n\n\n\n\nUrban environment with buildings and trees recorded in the visible part of the electromagnetic spectrum.\n\n\n\n\n\n\nSame location, recorded using a thermal infrared (TIR) camera. Dark colors = low TIR flux densities, light colors = high TIR flux densities."
   },
   {
     "objectID": "Slides/Lecture6.html#kirchhoffs-law",
     "href": "Slides/Lecture6.html#kirchhoffs-law",
     "title": "Long-wave Radiation",
     "section": "Kirchhoff’s Law",
-    "text": "Kirchhoff’s Law\nEmissivity = Absorptivity\n\\[\na_{\\lambda} = \\epsilon_{\\lambda}\n\\qquad(1)\\]\n\n\nKirchhoff’s law\n\nAssuming no transmission the absorptivity of a body (aλ) equals its emissivity (ελ)\nA good absorber is a good emitter – also true that if a surface is a poor absorber it also doesn’t emit that kind of radiation.\n\n\n\n\n\n\nAnother Law to remember! It tells us that a particular wavelength, objects that absorb radiation well at that wavelength, are equally good emitters of radiation at that wavelength."
+    "text": "Kirchhoff’s Law\nAssuming no transmission the absorptivity of a body (\\(a_\\lambda\\)) equals its emissivity (\\(\\epsilon_{\\lambda}\\)).\n\n\n\\[\na_{\\lambda} = \\epsilon_{\\lambda}\n\\qquad(2)\\]\n\nA good absorber is a good emitter\nA poor absorber is a poor emitter\nWavelength specific relationship\n\n\n\n\n\n\nAnother Law to remember! It tells us that a particular wavelength, objects that absorb radiation well at that wavelength, are equally good emitters of radiation at that wavelength."
   },
   {
-    "objectID": "Slides/Lecture6.html#kirchhoffs-law.",
-    "href": "Slides/Lecture6.html#kirchhoffs-law.",
+    "objectID": "Slides/Lecture6.html#kirchhoffs-law-1",
+    "href": "Slides/Lecture6.html#kirchhoffs-law-1",
     "title": "Long-wave Radiation",
-    "section": "Kirchhoff’s law.",
-    "text": "Kirchhoff’s law.\n\n\n\nBe sure to note that Kirchhoff’s law only applies if the wavelength considered is the same – do not mix them together.\nSince no bodies in the Earth-Atmosphere system are hot enough to emit solar radiation Kirchhoff’s law only has relevance to long-wave exchange in climatology."
+    "section": "Kirchhoff’s law",
+    "text": "Kirchhoff’s law\n\n\n\nBe sure to note that Kirchhoff’s law only applies if the wavelength considered is the same – do not mix them together.\nSince no bodies in the Earth-Atmosphere system are hot enough to emit solar radiation Kirchhoff’s law only has relevance to long-wave exchange in climatology."
   },
   {
-    "objectID": "Slides/Lecture6.html#the-atmosphere-is-a-selective-absorber-in-the-long-wave.",
-    "href": "Slides/Lecture6.html#the-atmosphere-is-a-selective-absorber-in-the-long-wave.",
+    "objectID": "Slides/Lecture6.html#kirchhoffs-law-2",
+    "href": "Slides/Lecture6.html#kirchhoffs-law-2",
     "title": "Long-wave Radiation",
-    "section": "The atmosphere is a selective absorber in the Long-wave.",
-    "text": "The atmosphere is a selective absorber in the Long-wave.\nThe most significant absorbing gases are water vapour (the most important), CO2, O3, O2, N2O, and CH4 Aerosols (particles) and liquid water in cloud if present will be dominant.\n\n\n\n\n\n\n\n\nWe have seen this graph before but it is worth reviewing especially with respective to the important “Greenhouse” gases. Notice that there is very little absorption in the wavelength band known as the “atmospheric window”"
+    "section": "Kirchhoff’s law",
+    "text": "Kirchhoff’s law\n\n\nThe atmosphere is a selective absorber (and emitter) of long-wave radiation.\n\nAerosols and clouds are dominant when present\nMost significant absorbing gases:\n\nH2O\nCO2\nO3\nO2\nN2O\nCH4\n\n\n\n\n\n\n\nWe have seen this graph before but it is worth reviewing especially with respective to the important “Greenhouse” gases. Notice that there is very little absorption in the wavelength band known as the “atmospheric window”"
   },
   {
-    "objectID": "Slides/Lecture6.html#µm",
-    "href": "Slides/Lecture6.html#µm",
+    "objectID": "Slides/Lecture6.html#atmospheric-absorption-and-emission",
+    "href": "Slides/Lecture6.html#atmospheric-absorption-and-emission",
     "title": "Long-wave Radiation",
-    "section": "8µm",
-    "text": "8µm\n\n\n13µm\nAtmospheric absorption and emission\n\n\n\n\n\nThis is an important graph that I will discuss in the VIDEO"
+    "section": "Atmospheric absorption and emission",
+    "text": "Atmospheric absorption and emission\nKirchhoff’s Law tells us that since atmospheric absorption is concentrated at these wavelengths so is atmospheric emission.\n\n\n\nEqually, at wavelengths where the atmosphere is poor at absorbing it is poor at emitting."
+  },
+  {
+    "objectID": "Slides/Lecture6.html#atmospheric-absorption-and-emission-1",
+    "href": "Slides/Lecture6.html#atmospheric-absorption-and-emission-1",
+    "title": "Long-wave Radiation",
+    "section": "Atmospheric absorption and emission",
+    "text": "Atmospheric absorption and emission\n\n\nThis is an important graph that I will discuss in the VIDEO"
   },
   {
     "objectID": "Slides/Lecture6.html#net-long-wave-radiation-flux-density",
@@ -749,151 +756,74 @@
     "text": "Weins Law\n\\[\n\\lambda_{max} = \\frac{b}{T}\n\\tag{31}\\]"
   },
   {
-    "objectID": "Labs.html",
-    "href": "Labs.html",
+    "objectID": "Lectures.html",
+    "href": "Lectures.html",
     "title": "Overview",
     "section": "",
-    "text": "Laboratory exercises are designed to complement the lecture materials and are a mandatory part of the course. The accompanying laboratory exercises provide hands-on experiences explaining physical principles and introducing biometeorological instrumentation. Labs will be held weekly (excluding the Week 1) in room 102A of the Macmillan building. Days/times for each lab section are listed in Table 1.\n\nYou must be registered for a lab section in order to complete the course, and you may only attend the lab session you are registered for.\n\n\n\n\n\n\n\n\nTable 1: Meeting day/time by lab section.\n\n\nSection\nDay & Time\nTA\n\n\n\n\nL1A/L01\nTuesday 11:00-13:00\nMegan\n\n\nL1B/L02\nTuesday 13:00-15:00\nMegan\n\n\nL1C/L03\nThursday 9:00-11:00\nTzu-Yi\n\n\nL1D/L04\nWednesday 11:00-13:00\nZoe\n\n\nL1E/L05\nWednesday 13:00-15:00\nZoe\n\n\nL1F/L06\nFriday 12:00-14:00\nTzu-Yi"
+    "text": "Lecture topics and quiz dates are listed in Table 1 below, and the relevant lecture slides can be found in the sidebar on the left. Lectures are held in person Wednesday & Friday, 9:30 - 11:00 in Friedman Building, Room 153. If you are unable to attend in-person, remote attendance is available on on zoom and recordings will be posted here afterwards."
   },
   {
-    "objectID": "Labs.html#materials",
-    "href": "Labs.html#materials",
+    "objectID": "Lectures.html#iclicker",
+    "href": "Lectures.html#iclicker",
     "title": "Overview",
-    "section": "Materials",
-    "text": "Materials\nThe labs do not require you to install any specific software. You may benefit from a spreadsheet editor such as Excel or Number to make table and charts for your lab reports, however you may also write/draw tables and charts by hand.\n\nAny other equipment necessary to conduct laboratory experiments will be provided."
+    "section": "iClicker",
+    "text": "iClicker\nLectures will have a embedded questions that can be answered using iClicker\n\nLecture participation points are only available during the lecture."
   },
   {
-    "objectID": "Labs.html#formatting",
-    "href": "Labs.html#formatting",
+    "objectID": "Lectures.html#quizzes",
+    "href": "Lectures.html#quizzes",
     "title": "Overview",
-    "section": "Formatting",
-    "text": "Formatting\nLab reports should be written concisely and uploaded as a Word Document of PDF to Canvas. No need to repeat questions. Number and sort your answers in accordance with questions in lab manual. All questions should be attempted and answered in the order of the lab manual.\n\nAnswers should be presented in tables where applicable, templates will provided if necessary. Procedures and equipment should also not be reported.\nShow your work: any calculations with important results should be clearly indicated. Partial credit may be granted based. In some cases an analysis of errors is appropriate.\n\nPlease always indicate units and follow the SI for units and scientific notation (see more info here).\nThe report’s header should list the course number, your name, your UBC student number, your TA’s name, and the number and title of the lab."
+    "section": "Quizzes",
+    "text": "Quizzes\nQuizzes will held on the dates listed in the schedule below. Note dates are subject to change & will be announced in class the week before."
   },
   {
-    "objectID": "Labs.html#due-dates",
-    "href": "Labs.html#due-dates",
+    "objectID": "Lectures.html#readings",
+    "href": "Lectures.html#readings",
     "title": "Overview",
-    "section": "Due Dates",
-    "text": "Due Dates\nAll reports should be submitted on Canvas by the due date. Late lab reports will be penalized 10% per day. Lab reports will not be accepted once graded reports have been returned to the class. In cases where a student fails to submit a report due to sickness, they should contact their TA before the deadline to discuss options."
+    "section": "Readings?",
+    "text": "Readings?\nThere is no textbook for the course. All materials for lecture will be provided to you. Typically, materials will be introduced in lecture first, but if any readings are assigned, you will be given a pdf copy of the material."
   },
   {
-    "objectID": "Labs.html#grading-of-reports",
-    "href": "Labs.html#grading-of-reports",
-    "title": "Overview",
-    "section": "Grading of Reports",
-    "text": "Grading of Reports\nLabs will be marked by your TA using a standard rubric and short comments will be provided where applicable. Late lab submissions will be penalized 10% per day days after their due date.\n\nLab assignments submitted by the due date will be graded and returned with feedback within 7 days of the due date.\nLate submissions are note guaranteed to be returned within 7 days."
-  },
-  {
-    "objectID": "Labs.html#var-lab.ta1.name",
-    "href": "Labs.html#var-lab.ta1.name",
-    "title": "Overview",
-    "section": "Zoe",
-    "text": "Zoe\n\n\n\n\n\n\nPronouns: She/Her/Hers\nEmail: hehanzha@student.ubc.ca\nBio: I received a BSc in Environmental Science from the University of British Columbia in 2022. My undergraduate thesis research investigated the impacts of fire on greenhouse gas (GHG) fluxes (CO2, CH4, and N2O) within different burned zones of a bog. The methodology incorporated chamber measurements and gas chromatography for the analysis. Currently, as a second-year MSc student, I am examining the impacts of seedling removal — a post-fire management practice — on the GHG fluxes (CO2 and CH4) within the 2016 burned zone of the Burns Bog, Delta, BC. This research utilizes a smart chamber with a portable analyzer. Additionally, I am interested in quantifying the net carbon exchange at the ecosystem scale using eddy covariance techniques and understanding carbon dynamics across varying ecosystem types."
-  },
-  {
-    "objectID": "Labs.html#var-lab.ta2.name",
-    "href": "Labs.html#var-lab.ta2.name",
-    "title": "Overview",
-    "section": "Tzu-Yi",
-    "text": "Tzu-Yi\n\n\n\n\n\n\nPronouns: She/Her/Hers\nEmail: tzuyilu@student.ubc.ca\nBio: My name is Tzu-Yi. I am a fourth-year PhD candidate collaborating under the guidance of Dr. Sara Knox in Geography. I am interested in understanding the key processes underlying the carbon cycle between the atmosphere and coastal wetland ecosystem. Moreover, I am dedicated to quantifying how greenhouse gas fluxes in coastal wetlands contribute to regional and global carbon cycles. Currently, my research has been conducted in both the Delta and Richmond regions of British Columbia, measuring continuous carbon dioxide (CO2) and methane (CH4) exchanges in tidal marshes. I’m delighted to be a part of this exciting course as one of the TAs in GEOS200. Learning is a collaborative journey, and I’m glad to support you every step of the way."
-  },
-  {
-    "objectID": "Labs.html#var-lab.ta3.name",
-    "href": "Labs.html#var-lab.ta3.name",
-    "title": "Overview",
-    "section": "Megan",
-    "text": "Megan\n\n\n\n\n\n\nPronouns: She/Her/Hers\nEmail: melkin@student.ubc.ca\nBio: My name is Megan and I am in my final year of Geographical Science at UBC. I have been working this past year on co-op with Environment and Climate Change Canada and am excited to be back in the classroom! My main areas of study are GIS, Geomorphology, and Urban Meteorology. Some of my hobbies include mountain biking, climbing, and swimming and I am very fortunate to call BC my home."
-  },
-  {
-    "objectID": "Assignments/Lab3.html",
-    "href": "Assignments/Lab3.html",
-    "title": "Lab 3: Atmospheric Humidity",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Syllabus",
     "section": "",
-    "text": "This assignment is worth 11 points."
+    "text": "GEOS 200 / APBI 244: 2023 W1\nwith Dr. June skeeter\nThis course focuses on the physical principles of weather and climate. We cover thermal, moisture and wind dynamics from the global scale down to the scale of ecosystems. We explore daily weather systems and climate change and discuss large scale weather and climate processes relevant to applications in forestry and agriculture.\n\n\n\nUnderstand the physical and biological processes that determine the microclimate of a surface.\nExplain how microclimates vary in time & space (vertically and horizontally).\nDescribe interactions between the biosphere and the atmosphere, and to understand how surface-atmosphere feedbacks respond to environmental change.\nKnow the basic principles of widely used biometeorological instrumentation.\nAnalyze and interpret data from measurement systems that are used to monitor near-surface climate and surface radiation and energy balances.\nProvide examples how the principles of biometeorology have practical application to society."
   },
   {
-    "objectID": "Assignments/Lab3.html#measuring-atmospheric-humidity",
-    "href": "Assignments/Lab3.html#measuring-atmospheric-humidity",
-    "title": "Lab 3: Atmospheric Humidity",
-    "section": "Measuring Atmospheric Humidity",
-    "text": "Measuring Atmospheric Humidity\nThe most common type of instrument used to measure humidity is the psychrometer (Figure 3). This instrument consists simply of a pair of thermometers, one of which has a wetted wick enclosing the sensor. The wet-bulb is cooled by evaporation to a temperature that depends on the atmospheric vapor density.\n\n\n\nFigure 3: Diagram of a sling psychrometer\n\n\nThe water vapor density \\(\\rho_v\\) (aka. absolute humidity) can be calculated from measurements of wet-bulb temperature (\\(T_b\\)) and dry-bulb temperature (\\(T\\)) using the relationship:\n\\[\n\\rho_v = \\rho^*_{vw}(T_w) - \\gamma(T-T_w)\n\\tag{1}\\]\nThese and other symbols in this exercise are defined in Table 1.\nOther ways of expressing the amount of moisture are used and each has particular usefulness in certain applications. The total amount of water that the atmosphere can hold without condensation depends only on temperature. This quantity, called the saturation vapor density \\(\\rho^*_v(T)\\), is given for a range of temperatures in Figure 1. The ratio of actual vapor density to the maximum possible (i.e. the saturation vapor density) when expressed as a percentage is called the relative humidity:\n\\[\nRH = \\frac{\\rho_v}{\\rho^*_v(T)}\n\\tag{2}\\]\nFor some calculations of evaporation rate, the difference between the maximum and the actual vapor density is useful. This is called the vapor density deficit:\n\\[\nVDD = \\rho^*_v(T) - \\rho_v\n\\tag{3}\\]\nWe may express the water vapor content of air by finding the temperature to which a parcel of air could be cooled at constant atmospheric pressure before condensation commences. This temperature is called the dew point temperature \\(T_d\\). Note: that for a saturated parcel the dewpoint temperature is the temperature of the parcel. For any water vapor density, \\(T_d\\) can be found by using Figure 1 in reverse. For example, air with a vapor density of 7.8 g m-3 has a \\(T_d\\) of 7°C.\nWater vapor content of the air can be expressed in terms of the partial pressure exerted by the water vapor, or water vapor pressure, \\(e\\). This is related to vapor density by the gas law as follows:\n\\[\ne = \\rho_v R_v T\n\\tag{4}\\]\nWhere R_v is the gas constant for water vapor (see Table 1) and \\(T\\) is the absolute temperature (K). Using units of g m-3 for \\(\\rho_v(T)\\) results in units of kPa (kilopascals) for \\(e\\).\nSaturation vapor pressure, \\(e*(T)\\): Consider a parcel at temperature \\(T\\). Unless the parcel is currently saturated, the parcel could hold more water vapor than it currently does. The partial pressure exerted by the water vapor is given by \\(e\\), whereas the partial pressure that would be exerted by the water vapor if the parcel were saturated, is \\(e*\\), which is a function of temperature: i.e., \\(e*(T)\\). (Units: kPa).\nVapor pressure deficit, VPD: Vapor pressure deficit represents the difference between the actual and saturation vapor pressures of a parcel at temperature T:\n\\[\nVPD = e*(T) - e\n\\tag{5}\\]\n\nNote: that the smaller the VPD, the closer the parcel is to saturation. (Units: kPa)"
+    "objectID": "index.html#lab-assignments",
+    "href": "index.html#lab-assignments",
+    "title": "Syllabus",
+    "section": "Lab assignments",
+    "text": "Lab assignments\nLabs will be marked by your TA using a standard rubric and short comments will be provided where applicable. Late lab submissions will be penalized 10% per day days after their due date.\n\nLab assignments submitted by the due date will be graded and returned with feedback within 7 days of the due date.\nLate submissions are note guaranteed to be returned within 7 days."
   },
   {
-    "objectID": "Assignments/Lab3.html#psychrometer",
-    "href": "Assignments/Lab3.html#psychrometer",
-    "title": "Lab 3: Atmospheric Humidity",
-    "section": "Psychrometer",
-    "text": "Psychrometer\nTo make measurements of water vapor content of the air, you will use the Assmann aspirated psychrometer. Examine the psychrometer and notice the wick on the wet-bulb thermometer. Use distilled water to wet the wick thoroughly. Wind up the clockwork ventilation fan. Take the instrument outdoors and measure the wet- and dry bulb temperatures. Read measurements every 15 s for 3 or 4 minutes until the thermometer reaches equilibrium. Use the equilibrium values for further calculations.\nReturn to the laboratory, re-wet the wick and re-wind the psychrometer. Repeat the measurements of wet- and dry-bulb temperature. The water vapor density in the air in the classroom and outdoors can now be calculated (see 5.4, Question 1)."
+    "objectID": "index.html#quizzes",
+    "href": "index.html#quizzes",
+    "title": "Syllabus",
+    "section": "Quizzes",
+    "text": "Quizzes\nLecture quizzes are to be completed during the scheduled lecture period. You will have 25 minutes to complete the quiz. Quizzes are open book, but please make sure to follow the guidelines below on Academic Honesty. Answers to quizzes will be reviewed at the start of the following lecture session.\n\nYou can complete the quizzes in-person or remotely.\nBecause answers to quizzes will be reviewed in class you cannot make up missed quizzes.\n\nHowever, lowest scoring lecture quiz will be dropped."
   },
   {
-    "objectID": "Assignments/Lab3.html#questions",
-    "href": "Assignments/Lab3.html#questions",
-    "title": "Lab 3: Atmospheric Humidity",
-    "section": "Questions",
-    "text": "Questions\n\nQuestion 1 (3 points)\nCalculate from your measurements with the Assmann psychrometer: \\(\\rho_v(T)\\), \\(e\\), \\(RH\\), \\(VDD\\), \\(VPD\\) and \\(T_d\\) for both indoors and outdoors.\n\n\nQuestion 2 (2 points)\nSuppose in an experiment measuring the humidity outdoors, it is convenient to suck in a sample of cool air through a tube into a warm laboratory. The sample warmed to room temperature allowing its pressure to remain constant. What happens to its volume? Which of the measures of humidity (\\(\\rho_v(T)\\), \\(e\\), \\(RH\\), \\(VDD\\) and \\(T_d\\)) will be the same when determined on this warmed sample as would be obtained by measurement with a psychrometer outdoors and how would each measure of humidity differ? Hint: remember pressure is constant, but temperature, and therefore volume, changes.\n\n\nQuestion 3 (1 points)\nWere your measured vapor densities indoors and outdoors equal? Is this reasonable? Explain why. ### Question 4 (1 points)\n\n\nQuestion 5 (1 points)\nA high-precision method for measuring water vapor content of the air uses a dew-point hygrometer. In this instrument a mirror is cooled until condensation causes fogging on the mirror and this is detected by a photodetector that records the scattering of a beam of light shining on the mirror. At that time, the temperature of the mirror is recorded. What temperature would be recorded if the air vapor pressure is 1.60 kPa? ### Question 6 (1 points)\n\n\nQuestion 7 (2 points)\nA cool winter Canadian air mass with a temperature of -4°C and a relative humidity of 91% meets a warm air mass sweeping northward from Texas with a temperature of 17°C and a relative humidity of 17%. In the mixing process will the southern border of the Canadian air gain or lose water vapor content? Explain."
+    "objectID": "index.html#participation-absences",
+    "href": "index.html#participation-absences",
+    "title": "Syllabus",
+    "section": "Participation & Absences",
+    "text": "Participation & Absences\nIf you are sick (with COVID or otherwise), please stay home to protect others and take care of yourself. Lectures are streamed on zoom so that you may still attend online and participation credit. Lecture recordings are also here. If you miss a lab session, you may attend an alternate session, but make sure to check in with TA running that session.\n\nParticipation points are only available during the lecture session. Makeup points will not be offered, but I will offer bonus participation points a the end of term which you can use to compensate for an absence or two."
   },
   {
-    "objectID": "Assignments/Lab1.html",
-    "href": "Assignments/Lab1.html",
-    "title": "Lab 1: The UBC Climate Station",
-    "section": "",
-    "text": "This assignment is worth 15 points."
+    "objectID": "index.html#accommodations",
+    "href": "index.html#accommodations",
+    "title": "Syllabus",
+    "section": "Accommodations",
+    "text": "Accommodations\nPlease contact the Center for Accessibility if you require accommodations for a disability. Once you are registered please make me aware of any necessary accommodations by email in a timely manner.\n\nIf you require an accommodation please contact me by email: june.skeeter@ubc.ca"
   },
   {
-    "objectID": "Assignments/Lab1.html#history-and-scope-of-the-station",
-    "href": "Assignments/Lab1.html#history-and-scope-of-the-station",
-    "title": "Lab 1: The UBC Climate Station",
-    "section": "History and Scope of the Station",
-    "text": "History and Scope of the Station\nThe UBC Climatological Station was established in 1957 at UBC Point Grey Campus west of the Agronomy Barn on Agronomy Road. By 1961 the UBC Climatological Station had achieved the necessary standards to be classed as an Ordinary Climatological Station by the Environment Canada Climatological Network (Hare and Thomas, 1979). In the early 1970s, campus development forced its relocation further south, to the Totem Research Station (Figure 2). The station is located 100m a.s.l. with an open exposure to the majority of the climatic elements.\n\n\n\n\n\n\nFigure 2: Location of Totem Climate Station\n\n\n\nStandardization\nAny site of a climatological station must meet basic criteria before its data will be accepted by Environment Canada. For example, the surroundings must be reasonably flat, there should be no major obstacles to airflow, no significant obstruction to the horizon, no extraneous sources of heat, vapor or dust and the surface should consist of short grass. Similarly, the instrumentation must conform to Environment Canada standards. The data gathered from a climatological station are to be related to large-scale air mass and regional characteristics not the microclimate of the site. Insistence on these points assures users of site and instrument standardization so that different stations can be compared within expected limits of accuracy."
-  },
-  {
-    "objectID": "Assignments/Lab1.html#climate-variables-measured",
-    "href": "Assignments/Lab1.html#climate-variables-measured",
-    "title": "Lab 1: The UBC Climate Station",
-    "section": "Climate Variables Measured",
-    "text": "Climate Variables Measured\nThe station is equipped with an electronic data logger, which makes automatic measurements of climate variables every ten seconds, and half-hour average values are then calculated and stored in the memory of the data-logger. The table below (Table 1) lists the variables measured at the UBC Climatological Station. This is followed by discussion of some specific variables measured at the station and some example data from different time periods.\n\n\nTable 1: Automatic measurements recorded every 10 seconds at the UBC Climatological Station\n\n\n\n\n\n\n\n\nVariable\nInstrument\nLevel\nUnits\n\n\n\n\nShort-wave Radiation\nPyranometer\n1 m height A-frame (incoming and outgoing)\nW m2\n\n\nLong-wave Radiation\nPyrgeometer\n1 m height A-frame (incoming and outgoing)\nW m2\n\n\nAir temperature\nThermistor\n1.3 m height\n°C\n\n\nHumidity\nThin-film capacitive sensor\n1.3 m height\n%\n\n\nSoil temperature\nThermocouples\n10, 20, and 40 cm depths\n°C\n\n\nWind speed / direction\nPropeller anemometer\n10m height\nm s-1\n\n\nSnow depth\nSonic ranging sensor\n1.3 m height\ncm\n\n\nPrecipitation\nTipping bucket rain gauge\n1 m height\nmm\n\n\n\n\n\nRadiation\nFigure 3 (a) shows a pyranometer, which is used to measure the short-wave (SW) radiation at the station. Shortwave radiation is also know as solar radiation, because it is the primary wavelength of radiation emitted from the Sun. The pyranometer contains a small black absorber disk inside a glass dome whose radiative properties allow only radiation with wavelengths (\\(\\mu\\)) between 0.3 and 3 \\(\\mu m\\) to pass through. As radiation reaches the absorber disk, it will warm up and create a temperature difference to the rest of the body of the instrument whose temperature varies only slowly. The difference can be directly related to short-wave receipt.\nFigure 3 (b) shows a pyrgeometer, which is used to measure the thermal radiation, also know as long-wave (LW) radiation. It works in a similar way as a pyranometer, except it measures wavelengths between 4.5 and 100 µm. Figure 3 (c) shows how sets of pyranometers and pyrgeometers, one of each pointing upward toward the sky and downward toward the ground, are used to measure both incoming and outgoing short-wave and long-wave radiation respectively. We’ll take a more in depth look at radiation in lab 2.\n\n\n\n\n\n\n\n(a) Pyranometer\n\n\n\n\n\n\n\n(b) Pyrgeometer\n\n\n\n\n\n\n\n\n\n(c) Typical radiation measurement setup\n\n\n\n\nFigure 3: Instrumentation used to measure radiation\n\n\n\n\nAir & Soil Temperature\nAir temperature and humidity are measured in a Stevenson screen Figure 4 designed to protect the instruments from liquid water (rain/snow) and shade them from solar radiation, but permit free air circulation.\n\n\n\nFigure 4: Stevenson Screen\n\n\nSoil temperatures are measured using Copper/Constantan thermocouples. These are wires made up of two different metals that carry a small electrical signal. The transfer of electricity between the two metals is dependent upon temperature, and from that we can calculate temperature for whatever medium the thermocouple is in contact with.\n\nFigure 5 shows an example of air and soil temperature data collected at Totem field during the 2021 Heatdome.\n\nYou can move your cursor over the traces (lines) to see the values of the different variables.\nThink about how air and soil temperatures compare to one another in this example.\n\n\n\n\n\n\n\nFigure 5: Temperature data from Totem Field during the 2021 Heatdome.\n\n\n\n\n\nPrecipitation\nRainfall is measured using a tipping bucket Figure 6 (b), which works by funneling precipitation into small seesaw-like counter Figure 6. The depth of new snowfall and the total depth of the snow lying on the ground was historically measured with a meter stick. It is now measured using an automated sonic snow depth sensor Figure 6 (c).\n\nLiquid water equivalent of the snow is typically estimated using a 10:1 ratio\n\n10 mm of snow ≈ 1 mm of rainfall\n\nHowever, this is just an average, and accuracy of this estimate can vary drastically depending on the type of snow.\n\nIn Vancouver, we typically get “wet, heavy snow” which has a much higher liquid water equivalent, with a ratio closer to 5:1. Using the standard 10:1 ratio for a typical Vancouver snowfall would underestimate liquid precipitation.\n“Powder”, the light, fluffy snow common in dry mountainous areas that makes for great skiing has a much lower liquid water equivalent, with a ratio closer to 20:1.\n\n\n\n\n\n\n\n\n\n(a) Inside a Tipping bucket\n\n\n\n\n\n\n\n(b) Tipping bucket\n\n\n\n\n\n\n\n(c) Snow depth sensor\n\n\n\n\nFigure 6: Instrumentation used to measure precipitation (rain and snow).\n\n\n\nFigure 7 shows an example of precipitation data collected at Totem field during November 2021, when an Atmospheric River caused widespread flooding across the region.\n\n\n\n\n\n\nFigure 7: Precipitation data from Totem Field during the 2021 Atmospheric River event.\n\n\n\n\n\nWind Speed\nWind speed (horizontal) and direction are measured on a prop vane anemometer Figure 8. The sensor is mounted at 10 m above the surface to avoid the effects of local obstacles such as the instrument shelters Figure 1. Figure 9 shows mean annual wind speeds measured at Totem Field.\n\nProp vane anemometers are cheap and function well in most weather conditions, however the mechanical components can degrade over time.\n\n\n\n\nFigure 8: Example of a propeller anemometer *Note this photo is not from Totem Field\n\n\n\n\n\n\n\nFigure 9: Mean annual wind speed at Totem Station."
-  },
-  {
-    "objectID": "Assignments/Lab1.html#questions",
-    "href": "Assignments/Lab1.html#questions",
-    "title": "Lab 1: The UBC Climate Station",
-    "section": "Questions",
-    "text": "Questions\n\nQuestion 1 (1.5 points)\nIs the climatological station suitably located to provide climatic data representative of the UBC campus and surrounding areas? Discuss why or why not. You can pan around and zoom in/out on Figure 2 to help you answer this question.\n\n\nQuestion 2 (1 points)\nWhy is a Stevenson screen built with slatted walls, a double roof, and white paint?\n\n\nQuestion 3 (1 points)\nHow do air and soil temperatures compare to one another during the 2021 Heatdome event shown in Figure 5? Which variable (air or soil temperature at 10/20/40 cm) has the largest range on a daily basis? Which has the smallest range?\n\n\nQuestion 4 (0.5 points)\nFill in the blanks: indicate the words/phrases that complete the statement.\nUsing the standard 10:1 ratio for “Powder” snow in a dry mountainous region would ______ liquid precipitation.\n\n\nQuestion 5 (1 points)\nBased on Figure 9, do you think the wind data from the last few years at totem field is accurate? Why or why not?"
-  },
-  {
-    "objectID": "Assignments/Lab1.html#questions-1",
-    "href": "Assignments/Lab1.html#questions-1",
-    "title": "Lab 1: The UBC Climate Station",
-    "section": "Questions",
-    "text": "Questions\n\nQuestion 6 (1.5 points)\nCompare the UBC climatological station at totem field with the one on top of the Earth, Ocean, and Atmospheric sciences building. You can zoom out to location the station on Figure 2 for more context, look at the website and webcams for the EOAS station. Do you think conditions at the rooftop site are representative of the conditions in the surrounding area? Would it meet the standards Environment Canada requires discussed above?"
-  },
-  {
-    "objectID": "Assignments/Lab1.html#long-term-trends",
-    "href": "Assignments/Lab1.html#long-term-trends",
-    "title": "Lab 1: The UBC Climate Station",
-    "section": "Long-term Trends",
-    "text": "Long-term Trends\nOne way to assess long-term patterns in a location is to look at deviations from the mean conditions over a period of record.\n\nMean air temperature at Totem Station since 1960 is 10.2 °C, with a standard deviation of 0.6 °C.\nLikewise, mean annual precipitation at Totem Station since 1960 is 1130.8 mm, with a standard deviation of 229 mm.\nUsing these values we can z-normalize temperature and precipitation data from the Totem station to investigate long-term patterns at the site Figure 10.\n\n\n\n\n\n\nFigure 10: Z-score normalized mean annual air temperature and total annual precipitation data for the Totem Field climate station."
-  },
-  {
-    "objectID": "Assignments/Lab1.html#climate-normals",
-    "href": "Assignments/Lab1.html#climate-normals",
-    "title": "Lab 1: The UBC Climate Station",
-    "section": "Climate Normals",
-    "text": "Climate Normals\nTo look at the general conditions of a given location, we often use something called “Climate Normals”. These are 30-year averages of temperature and precipitation, in decadal blocks, eg. 1961 to 1990, or 1991 to 2020. They can give you an general overview of the seasonal conditions at a location.\n\n\n\n\n\nFigure 11: Climate normals for the Totem field weather station since 1960."
-  },
-  {
-    "objectID": "Assignments/Lab1.html#questions-2",
-    "href": "Assignments/Lab1.html#questions-2",
-    "title": "Lab 1: The UBC Climate Station",
-    "section": "Questions",
-    "text": "Questions\n\nQuestion 7 (2 points)\nWhat does Figure 10 tell you about yearly air temperatures and precipitation at UBC over the last 60 years?\n\n\nQuestion 8 (2 points)\nInspect Figure 11; and toggle through the different periods (1961-1990 thru 1991-2020). On average, which periods are the coldest and warmest at Totem Field respectively? Is there any noticeable change in average monthly air temperatures from the earliest period to the the latest? If so in which months and by how much?\n\n\nQuestion 9 (0.5 points)\nHow does the total November Precipitation from 2021 shown in Figure 7 compare to a “typical” November as defined using the 1990-2020 climate normals shown in Figure 11?\n\n\nQuestion 10 (4 points)\nClimate normals for stations across Canada can be found here. You can search for stations by name, province/territory, or proximity to specific locations. For the most recent period available, pick two stations: one from Quebec, and one from Nunavut, and find their climate normal graphs. Compare the seasonality of monthly average temperatures and total precipitation to the the climate normals covering the same time period for Totem Station, discuss the similarities/differences you see. Take screenshots of the climate normal graphs and include them in your answer."
-  },
-  {
-    "objectID": "acknowledgement.html",
-    "href": "acknowledgement.html",
-    "title": "Territorial Acknowledgement",
-    "section": "",
-    "text": "The University of British Columbia and the city of Vancouver are on the traditional, ancestral, and unceded territory of the Coast Salish Peoples. Specifically the UBC Vancouver campus is on xʷməθkʷəy̓əm (Musqueam) land.\n\nThere are nearly 200 First Nations spread through BC, and many more across the continent.\n\nIt is essential to recognize Indigenous territories and Indigenous sovereignty, especially within the context of geography courses.\nTo learn more about the Indigenous people, culture, and languages where you live and around the world, check out native-land.ca.\n\n\n\n\n\nMap Source\n\n\n\n\n\nWhy Do an Acknowledgement?\nA land acknowledgement is meant to convey a deep rooted cultural connection to the land and the historical and present day injustices and violence enacted on Indigenous communities through colonialism. For centuries, settler societies have perpetuated a genocide against Indigenous people across the globe. In many ways this genocide is still ongoing here in British Columbia and across Canada. There has been concerted effort by the government, religious organizations, and educational institutions to erase Indigenous culture and identity which as marginalized these communities in Canadian Society.\n\nAn acknowledgement is one small way to help with that, but it cannot be treated as a formality. It is a time to reflect and build understanding.\n\n\n\nWhat does it mean?\n\n\nTraditional and Ancestral Recognize by whom the lands were traditionally used and/or occupied and the cultures have been handed down from generation to generation. The area around UBC was used by many different people, including the xʷməθkʷəy̓əm, əl̓ilwətaɁɬ, and Skwxwú7mesh-ulh Nations.\nThese people are are part of a broader linguistic / cultural group of Coast Salish speaking people. The xʷməθkʷəy̓əm and əl̓ilwətaɁɬ speak dialects of Hul’q’umi’num’ / Halq’eméylem / hən̓q̓əmin̓əm̓ and the Skwxwú7mesh-ulh speak Sḵwx̱wú7mesh sníchim.\n\n\n\n\n\n\n\nUnceded: Refers to land that was not turned over to the government by a treaty or other agreement. Over 95% of the land in BC, and many lands elsewhere in the world were never ceded by treaty. Without treaties, these lands remain the sovereign territory of the First Nations that call them home. Yet at the same time, the lands have been claimed by Canada and these First Nations living on these lands lack a framework to express their sovereignty. This by no means absolves the Canadian government of their crimes where lands were “ceded” by treaty. Treaties were more frequently reached by coercion than negotiation. The RCMP was created specifically to force indigenous people off their lands by any means necessary."
+    "objectID": "index.html#academic-concessions",
+    "href": "index.html#academic-concessions",
+    "title": "Syllabus",
+    "section": "Academic Concessions",
+    "text": "Academic Concessions\nIf you experience extenuating circumstances that prevent you completing course work, you may be elidible for an Academic Concession.\n\nI can make accommodations on a case by case basis, but it is your responsibility to communicate your needs in a timely fashion (i.e. before a due date).\nPlease email me promptly (june.skeeter@ubc.ca) so that we can work together to figure out an accommodation for your situation.\n\nYou are not obligated to explain your personal circumstances to me to justify the concession, my intent is to be accommodating. However, you must to communicate any need for a concession in a timely manner. If you require multiple concessions I may refer you to Arts Advising."
   },
   {
     "objectID": "Assignments/Lab2.html",
@@ -949,7 +879,7 @@
     "href": "Assignments/Lab2.html#experimental-procedures",
     "title": "Lab 2: Radiation",
     "section": "Experimental Procedures",
-    "text": "Experimental Procedures\n\nTurn the multimeter to the 300 mV position. Turn on the fluorescent lamp directly above your first soil sample. Hold the switch for at least 3-5 seconds to make sure the lamp switches on properly.\nMeasure the amount of short-wave radiation striking one soil surface by placing the photocell horizontally and 0.5 cm above the soil surface. Make sure that the darker (sensitive) side of the sensor is facing upwards. Write down the voltage reading from the meter.\nTurn the photocell over and hold it with the sensitive side downwards horizontally about 2 cm above your soil surface. If the sensor is held too close to the surface, it will “see” too much of its own shadow. Read the voltage from the meter.\nCalculate the coefficient of reflection \\(\\alpha_{\\lambda}\\) for the fluorescent lamp-soil combination: hint see Equation 1, Equation 4 and Equation 5\nExchange the fluorescent lamp for the incandescent lamp. It is suggested to keep room lights switched off during measurements involving incandescent lamps. Why? Measure the coefficient of reflection \\(\\alpha_{\\lambda}\\) for the incandescent lamp-soil combination.\nRepeat this procedure for all soil samples under both light sources. Calculate coefficients of reflection \\(\\alpha_{SW}\\) as well as absorption \\(a_{SW}\\) for all samples. Note, here: \\(\\tau_{\\lambda} = 0\\)\nMeasure incident, reflected and transmitted light of a green leaf - separately for both light sources. In addition to the measurements above, without moving the leaf, place the radiation sensor under the leaf with the negative side upwards. Calculate the coefficients of transmission by: hint see Equation 1, Equation 4 and Equation 6\nRepeat the procedure for a yellow or brown autumnal leaf. Calculate the coefficients of reflection \\(\\alpha_{SW}\\) , transmission \\(\\tau_{\\lambda} = 0\\) and absorption \\(a_{SW}\\) for the fluorescent and incandescent radiation on the leaf."
+    "text": "Experimental Procedures\n\nTurn the multimeter to the 300 mV position. Turn on the fluorescent lamp directly above your first soil sample. Hold the switch for at least 3-5 seconds to make sure the lamp switches on properly.\nMeasure the amount of short-wave radiation striking one soil surface by placing the photocell horizontally and 0.5 cm above the soil surface. Make sure that the darker (sensitive) side of the sensor is facing upwards. Write down the voltage reading from the meter.\nTurn the photocell over and hold it with the sensitive side downwards horizontally about 2 cm above your soil surface. If the sensor is held too close to the surface, it will “see” too much of its own shadow. Read the voltage from the meter.\nCalculate the coefficient of reflection \\(\\alpha_{\\lambda}\\) for the fluorescent lamp-soil combination: hint see Equation 1, Equation 4 and Equation 5\nExchange the fluorescent lamp for the incandescent lamp. It is suggested to keep room lights switched off during measurements involving incandescent lamps. Why? Measure the coefficient of reflection \\(\\alpha_{\\lambda}\\) for the incandescent lamp-soil combination.\nRepeat this procedure for all soil samples under both light sources. Calculate coefficients of reflection \\(\\alpha_{SW}\\) as well as absorption \\(a_{SW}\\) for all samples. Note, here: \\(\\tau_{\\lambda} = 0\\)\nMeasure incident, reflected and transmitted light of a green leaf - separately for both light sources. In addition to the measurements above, without moving the leaf, place the radiation sensor under the leaf with the sensitive side upwards. Calculate the coefficients of transmission by: hint see Equation 1, Equation 4 and Equation 6\nRepeat the procedure for a yellow or brown autumnal leaf. Calculate the coefficients of reflection \\(\\alpha_{SW}\\) , transmission \\(\\tau_{\\lambda} = 0\\) and absorption \\(a_{SW}\\) for the fluorescent and incandescent radiation on the leaf."
   },
   {
     "objectID": "Assignments/Lab2.html#questions-1",
@@ -959,74 +889,179 @@
     "text": "Questions\n\nQuestion 5 (3 points)\nReport results in the Spectral absorptivity, reflectivity and transmissivity table and comment on possible errors in the measurements. Copy this table into your lab report word document. Note you should have calculated \\(a_\\lambda\\) and \\(\\alpha_\\lambda\\) for all soil samples, the white and black hide under fluorescent and incandescent light \\(a_\\lambda\\), \\(\\tau_\\lambda\\), and \\(\\alpha_\\lambda\\) for both leaves - everything separately for the fluorescent and incandescent light.\n\n\nQuestion 6 (2 points)\nExplain any differences you found between your measurements of the reflection, transmission and absorption coefficients of the green leaf using fluorescent and incandescent lamps (refer to Figure 2 and Figure 1)\n\n\nQuestion 7 (0.5 points)\nFill in the blank(s): indicate the words/phrases that complete the statement.\n________ is the pigment responsible for the green color of leaves? It is one of the primary pigments responsible for ________.\n\n\nQuestion 8 (1 points)\nFrom the measurements of \\(\\alpha_\\lambda\\) and \\(a_\\lambda\\) of the soil samples, what is the effect of organic matter and water content on these radiative properties?"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Syllabus",
+    "objectID": "acknowledgement.html",
+    "href": "acknowledgement.html",
+    "title": "Territorial Acknowledgement",
     "section": "",
-    "text": "GEOS 200 / APBI 244: 2023 W1\nwith Dr. June skeeter\nThis course focuses on the physical principles of weather and climate. We cover thermal, moisture and wind dynamics from the global scale down to the scale of ecosystems. We explore daily weather systems and climate change and discuss large scale weather and climate processes relevant to applications in forestry and agriculture.\n\n\n\nUnderstand the physical and biological processes that determine the microclimate of a surface.\nExplain how microclimates vary in time & space (vertically and horizontally).\nDescribe interactions between the biosphere and the atmosphere, and to understand how surface-atmosphere feedbacks respond to environmental change.\nKnow the basic principles of widely used biometeorological instrumentation.\nAnalyze and interpret data from measurement systems that are used to monitor near-surface climate and surface radiation and energy balances.\nProvide examples how the principles of biometeorology have practical application to society."
+    "text": "The University of British Columbia and the city of Vancouver are on the traditional, ancestral, and unceded territory of the Coast Salish Peoples. Specifically the UBC Vancouver campus is on xʷməθkʷəy̓əm (Musqueam) land.\n\nThere are nearly 200 First Nations spread through BC, and many more across the continent.\n\nIt is essential to recognize Indigenous territories and Indigenous sovereignty, especially within the context of geography courses.\nTo learn more about the Indigenous people, culture, and languages where you live and around the world, check out native-land.ca.\n\n\n\n\n\nMap Source\n\n\n\n\n\nWhy Do an Acknowledgement?\nA land acknowledgement is meant to convey a deep rooted cultural connection to the land and the historical and present day injustices and violence enacted on Indigenous communities through colonialism. For centuries, settler societies have perpetuated a genocide against Indigenous people across the globe. In many ways this genocide is still ongoing here in British Columbia and across Canada. There has been concerted effort by the government, religious organizations, and educational institutions to erase Indigenous culture and identity which as marginalized these communities in Canadian Society.\n\nAn acknowledgement is one small way to help with that, but it cannot be treated as a formality. It is a time to reflect and build understanding.\n\n\n\nWhat does it mean?\n\n\nTraditional and Ancestral Recognize by whom the lands were traditionally used and/or occupied and the cultures have been handed down from generation to generation. The area around UBC was used by many different people, including the xʷməθkʷəy̓əm, əl̓ilwətaɁɬ, and Skwxwú7mesh-ulh Nations.\nThese people are are part of a broader linguistic / cultural group of Coast Salish speaking people. The xʷməθkʷəy̓əm and əl̓ilwətaɁɬ speak dialects of Hul’q’umi’num’ / Halq’eméylem / hən̓q̓əmin̓əm̓ and the Skwxwú7mesh-ulh speak Sḵwx̱wú7mesh sníchim.\n\n\n\n\n\n\n\nUnceded: Refers to land that was not turned over to the government by a treaty or other agreement. Over 95% of the land in BC, and many lands elsewhere in the world were never ceded by treaty. Without treaties, these lands remain the sovereign territory of the First Nations that call them home. Yet at the same time, the lands have been claimed by Canada and these First Nations living on these lands lack a framework to express their sovereignty. This by no means absolves the Canadian government of their crimes where lands were “ceded” by treaty. Treaties were more frequently reached by coercion than negotiation. The RCMP was created specifically to force indigenous people off their lands by any means necessary."
   },
   {
-    "objectID": "index.html#lab-assignments",
-    "href": "index.html#lab-assignments",
-    "title": "Syllabus",
-    "section": "Lab assignments",
-    "text": "Lab assignments\nLabs will be marked by your TA using a standard rubric and short comments will be provided where applicable. Late lab submissions will be penalized 10% per day days after their due date.\n\nLab assignments submitted by the due date will be graded and returned with feedback within 7 days of the due date.\nLate submissions are note guaranteed to be returned within 7 days."
+    "objectID": "Assignments/Lab1.html",
+    "href": "Assignments/Lab1.html",
+    "title": "Lab 1: The UBC Climate Station",
+    "section": "",
+    "text": "This assignment is worth 15 points."
   },
   {
-    "objectID": "index.html#quizzes",
-    "href": "index.html#quizzes",
-    "title": "Syllabus",
-    "section": "Quizzes",
-    "text": "Quizzes\nLecture quizzes are to be completed during the scheduled lecture period. You will have 25 minutes to complete the quiz. Quizzes are open book, but please make sure to follow the guidelines below on Academic Honesty. Answers to quizzes will be reviewed at the start of the following lecture session.\n\nYou can complete the quizzes in-person or remotely.\nBecause answers to quizzes will be reviewed in class you cannot make up missed quizzes.\n\nHowever, lowest scoring lecture quiz will be dropped."
+    "objectID": "Assignments/Lab1.html#history-and-scope-of-the-station",
+    "href": "Assignments/Lab1.html#history-and-scope-of-the-station",
+    "title": "Lab 1: The UBC Climate Station",
+    "section": "History and Scope of the Station",
+    "text": "History and Scope of the Station\nThe UBC Climatological Station was established in 1957 at UBC Point Grey Campus west of the Agronomy Barn on Agronomy Road. By 1961 the UBC Climatological Station had achieved the necessary standards to be classed as an Ordinary Climatological Station by the Environment Canada Climatological Network (Hare and Thomas, 1979). In the early 1970s, campus development forced its relocation further south, to the Totem Research Station (Figure 2). The station is located 100m a.s.l. with an open exposure to the majority of the climatic elements.\n\n\n\n\n\n\nFigure 2: Location of Totem Climate Station\n\n\n\nStandardization\nAny site of a climatological station must meet basic criteria before its data will be accepted by Environment Canada. For example, the surroundings must be reasonably flat, there should be no major obstacles to airflow, no significant obstruction to the horizon, no extraneous sources of heat, vapor or dust and the surface should consist of short grass. Similarly, the instrumentation must conform to Environment Canada standards. The data gathered from a climatological station are to be related to large-scale air mass and regional characteristics not the microclimate of the site. Insistence on these points assures users of site and instrument standardization so that different stations can be compared within expected limits of accuracy."
   },
   {
-    "objectID": "index.html#participation-absences",
-    "href": "index.html#participation-absences",
-    "title": "Syllabus",
-    "section": "Participation & Absences",
-    "text": "Participation & Absences\nIf you are sick (with COVID or otherwise), please stay home to protect others and take care of yourself. Lectures are streamed on zoom so that you may still attend online and participation credit. Lecture recordings are also here. If you miss a lab session, you may attend an alternate session, but make sure to check in with TA running that session.\n\nParticipation points are only available during the lecture session. Makeup points will not be offered, but I will offer bonus participation points a the end of term which you can use to compensate for an absence or two."
+    "objectID": "Assignments/Lab1.html#climate-variables-measured",
+    "href": "Assignments/Lab1.html#climate-variables-measured",
+    "title": "Lab 1: The UBC Climate Station",
+    "section": "Climate Variables Measured",
+    "text": "Climate Variables Measured\nThe station is equipped with an electronic data logger, which makes automatic measurements of climate variables every ten seconds, and half-hour average values are then calculated and stored in the memory of the data-logger. The table below (Table 1) lists the variables measured at the UBC Climatological Station. This is followed by discussion of some specific variables measured at the station and some example data from different time periods.\n\n\nTable 1: Automatic measurements recorded every 10 seconds at the UBC Climatological Station\n\n\n\n\n\n\n\n\nVariable\nInstrument\nLevel\nUnits\n\n\n\n\nShort-wave Radiation\nPyranometer\n1 m height A-frame (incoming and outgoing)\nW m2\n\n\nLong-wave Radiation\nPyrgeometer\n1 m height A-frame (incoming and outgoing)\nW m2\n\n\nAir temperature\nThermistor\n1.3 m height\n°C\n\n\nHumidity\nThin-film capacitive sensor\n1.3 m height\n%\n\n\nSoil temperature\nThermocouples\n10, 20, and 40 cm depths\n°C\n\n\nWind speed / direction\nPropeller anemometer\n10m height\nm s-1\n\n\nSnow depth\nSonic ranging sensor\n1.3 m height\ncm\n\n\nPrecipitation\nTipping bucket rain gauge\n1 m height\nmm\n\n\n\n\n\nRadiation\nFigure 3 (a) shows a pyranometer, which is used to measure the short-wave (SW) radiation at the station. Shortwave radiation is also know as solar radiation, because it is the primary wavelength of radiation emitted from the Sun. The pyranometer contains a small black absorber disk inside a glass dome whose radiative properties allow only radiation with wavelengths (\\(\\mu\\)) between 0.3 and 3 \\(\\mu m\\) to pass through. As radiation reaches the absorber disk, it will warm up and create a temperature difference to the rest of the body of the instrument whose temperature varies only slowly. The difference can be directly related to short-wave receipt.\nFigure 3 (b) shows a pyrgeometer, which is used to measure the thermal radiation, also know as long-wave (LW) radiation. It works in a similar way as a pyranometer, except it measures wavelengths between 4.5 and 100 µm. Figure 3 (c) shows how sets of pyranometers and pyrgeometers, one of each pointing upward toward the sky and downward toward the ground, are used to measure both incoming and outgoing short-wave and long-wave radiation respectively. We’ll take a more in depth look at radiation in lab 2.\n\n\n\n\n\n\n\n(a) Pyranometer\n\n\n\n\n\n\n\n(b) Pyrgeometer\n\n\n\n\n\n\n\n\n\n(c) Typical radiation measurement setup\n\n\n\n\nFigure 3: Instrumentation used to measure radiation\n\n\n\n\nAir & Soil Temperature\nAir temperature and humidity are measured in a Stevenson screen Figure 4 designed to protect the instruments from liquid water (rain/snow) and shade them from solar radiation, but permit free air circulation.\n\n\n\nFigure 4: Stevenson Screen\n\n\nSoil temperatures are measured using Copper/Constantan thermocouples. These are wires made up of two different metals that carry a small electrical signal. The transfer of electricity between the two metals is dependent upon temperature, and from that we can calculate temperature for whatever medium the thermocouple is in contact with.\n\nFigure 5 shows an example of air and soil temperature data collected at Totem field during the 2021 Heatdome.\n\nYou can move your cursor over the traces (lines) to see the values of the different variables.\nThink about how air and soil temperatures compare to one another in this example.\n\n\n\n\n\n\n\nFigure 5: Temperature data from Totem Field during the 2021 Heatdome.\n\n\n\n\n\nPrecipitation\nRainfall is measured using a tipping bucket Figure 6 (b), which works by funneling precipitation into small seesaw-like counter Figure 6. The depth of new snowfall and the total depth of the snow lying on the ground was historically measured with a meter stick. It is now measured using an automated sonic snow depth sensor Figure 6 (c).\n\nLiquid water equivalent of the snow is typically estimated using a 10:1 ratio\n\n10 mm of snow ≈ 1 mm of rainfall\n\nHowever, this is just an average, and accuracy of this estimate can vary drastically depending on the type of snow.\n\nIn Vancouver, we typically get “wet, heavy snow” which has a much higher liquid water equivalent, with a ratio closer to 5:1. Using the standard 10:1 ratio for a typical Vancouver snowfall would underestimate liquid precipitation.\n“Powder”, the light, fluffy snow common in dry mountainous areas that makes for great skiing has a much lower liquid water equivalent, with a ratio closer to 20:1.\n\n\n\n\n\n\n\n\n\n(a) Inside a Tipping bucket\n\n\n\n\n\n\n\n(b) Tipping bucket\n\n\n\n\n\n\n\n(c) Snow depth sensor\n\n\n\n\nFigure 6: Instrumentation used to measure precipitation (rain and snow).\n\n\n\nFigure 7 shows an example of precipitation data collected at Totem field during November 2021, when an Atmospheric River caused widespread flooding across the region.\n\n\n\n\n\n\nFigure 7: Precipitation data from Totem Field during the 2021 Atmospheric River event.\n\n\n\n\n\nWind Speed\nWind speed (horizontal) and direction are measured on a prop vane anemometer Figure 8. The sensor is mounted at 10 m above the surface to avoid the effects of local obstacles such as the instrument shelters Figure 1. Figure 9 shows mean annual wind speeds measured at Totem Field.\n\nProp vane anemometers are cheap and function well in most weather conditions, however the mechanical components can degrade over time.\n\n\n\n\nFigure 8: Example of a propeller anemometer *Note this photo is not from Totem Field\n\n\n\n\n\n\n\nFigure 9: Mean annual wind speed at Totem Station."
   },
   {
-    "objectID": "index.html#accommodations",
-    "href": "index.html#accommodations",
-    "title": "Syllabus",
-    "section": "Accommodations",
-    "text": "Accommodations\nPlease contact the Center for Accessibility if you require accommodations for a disability. Once you are registered please make me aware of any necessary accommodations by email in a timely manner.\n\nIf you require an accommodation please contact me by email: june.skeeter@ubc.ca"
+    "objectID": "Assignments/Lab1.html#questions",
+    "href": "Assignments/Lab1.html#questions",
+    "title": "Lab 1: The UBC Climate Station",
+    "section": "Questions",
+    "text": "Questions\n\nQuestion 1 (1.5 points)\nIs the climatological station suitably located to provide climatic data representative of the UBC campus and surrounding areas? Discuss why or why not. You can pan around and zoom in/out on Figure 2 to help you answer this question.\n\n\nQuestion 2 (1 points)\nWhy is a Stevenson screen built with slatted walls, a double roof, and white paint?\n\n\nQuestion 3 (1 points)\nHow do air and soil temperatures compare to one another during the 2021 Heatdome event shown in Figure 5? Which variable (air or soil temperature at 10/20/40 cm) has the largest range on a daily basis? Which has the smallest range?\n\n\nQuestion 4 (0.5 points)\nFill in the blank(s): indicate the words/phrases that complete the statement.\nUsing the standard 10:1 ratio for “Powder” snow in a dry mountainous region would ______ liquid precipitation.\n\n\nQuestion 5 (1 points)\nBased on Figure 9, do you think the wind data from the last few years at totem field is accurate? Why or why not?"
   },
   {
-    "objectID": "index.html#academic-concessions",
-    "href": "index.html#academic-concessions",
-    "title": "Syllabus",
-    "section": "Academic Concessions",
-    "text": "Academic Concessions\nIf you experience extenuating circumstances that prevent you completing course work, you may be elidible for an Academic Concession.\n\nI can make accommodations on a case by case basis, but it is your responsibility to communicate your needs in a timely fashion (i.e. before a due date).\nPlease email me promptly (june.skeeter@ubc.ca) so that we can work together to figure out an accommodation for your situation.\n\nYou are not obligated to explain your personal circumstances to me to justify the concession, my intent is to be accommodating. However, you must to communicate any need for a concession in a timely manner. If you require multiple concessions I may refer you to Arts Advising."
+    "objectID": "Assignments/Lab1.html#questions-1",
+    "href": "Assignments/Lab1.html#questions-1",
+    "title": "Lab 1: The UBC Climate Station",
+    "section": "Questions",
+    "text": "Questions\n\nQuestion 6 (1.5 points)\nCompare the UBC climatological station at totem field with the one on top of the Earth, Ocean, and Atmospheric sciences building. You can zoom out to location the station on Figure 2 for more context, look at the website and webcams for the EOAS station. Do you think conditions at the rooftop site are representative of the conditions in the surrounding area? Would it meet the standards Environment Canada requires discussed above?"
   },
   {
-    "objectID": "Lectures.html",
-    "href": "Lectures.html",
+    "objectID": "Assignments/Lab1.html#long-term-trends",
+    "href": "Assignments/Lab1.html#long-term-trends",
+    "title": "Lab 1: The UBC Climate Station",
+    "section": "Long-term Trends",
+    "text": "Long-term Trends\nOne way to assess long-term patterns in a location is to look at deviations from the mean conditions over a period of record.\n\nMean air temperature at Totem Station since 1960 is 10.2 °C, with a standard deviation of 0.6 °C.\nLikewise, mean annual precipitation at Totem Station since 1960 is 1130.8 mm, with a standard deviation of 229 mm.\nUsing these values we can z-normalize temperature and precipitation data from the Totem station to investigate long-term patterns at the site Figure 10.\n\n\n\n\n\n\nFigure 10: Z-score normalized mean annual air temperature and total annual precipitation data for the Totem Field climate station."
+  },
+  {
+    "objectID": "Assignments/Lab1.html#climate-normals",
+    "href": "Assignments/Lab1.html#climate-normals",
+    "title": "Lab 1: The UBC Climate Station",
+    "section": "Climate Normals",
+    "text": "Climate Normals\nTo look at the general conditions of a given location, we often use something called “Climate Normals”. These are 30-year averages of temperature and precipitation, in decadal blocks, eg. 1961 to 1990, or 1991 to 2020. They can give you an general overview of the seasonal conditions at a location.\n\n\n\n\n\nFigure 11: Climate normals for the Totem field weather station since 1960."
+  },
+  {
+    "objectID": "Assignments/Lab1.html#questions-2",
+    "href": "Assignments/Lab1.html#questions-2",
+    "title": "Lab 1: The UBC Climate Station",
+    "section": "Questions",
+    "text": "Questions\n\nQuestion 7 (2 points)\nWhat does Figure 10 tell you about yearly air temperatures and precipitation at UBC over the last 60 years?\n\n\nQuestion 8 (2 points)\nInspect Figure 11; and toggle through the different periods (1961-1990 thru 1991-2020). On average, which periods are the coldest and warmest at Totem Field respectively? Is there any noticeable change in average monthly air temperatures from the earliest period to the the latest? If so in which months and by how much?\n\n\nQuestion 9 (0.5 points)\nHow does the total November Precipitation from 2021 shown in Figure 7 compare to a “typical” November as defined using the 1990-2020 climate normals shown in Figure 11?\n\n\nQuestion 10 (4 points)\nClimate normals for stations across Canada can be found here. You can search for stations by name, province/territory, or proximity to specific locations. For the most recent period available, pick two stations: one from Quebec, and one from Nunavut, and find their climate normal graphs. Compare the seasonality of monthly average temperatures and total precipitation to the the climate normals covering the same time period for Totem Station, discuss the similarities/differences you see. Take screenshots of the climate normal graphs and include them in your answer."
+  },
+  {
+    "objectID": "Assignments/Lab3.html",
+    "href": "Assignments/Lab3.html",
+    "title": "Lab 3: Atmospheric Humidity",
+    "section": "",
+    "text": "This assignment is worth 11 points."
+  },
+  {
+    "objectID": "Assignments/Lab3.html#the-ideal-gas-law",
+    "href": "Assignments/Lab3.html#the-ideal-gas-law",
+    "title": "Lab 3: Atmospheric Humidity",
+    "section": "The Ideal Gas Law",
+    "text": "The Ideal Gas Law\nYou may recall from a high school chemistry class, the Ideal Gas Law (Equation 1) can be used to describe the state of some a gas as a function of pressure (\\(P\\)), volume (\\(V\\)), temperature (\\(T\\)), and the amount of the gas (\\(n\\)) in moles; with \\(R\\) being the ideal gas constant(see Table 1). The amount in moles of a given gas can be defined as \\(n = \\frac{m}{M}\\), where \\(m\\) is the mass of the substance (in kg or g) and \\(M\\) is the Molar mass (in kg mol-1 or g mol-1) respectively. The molar mass of water (in g mol-1) is listed in Table 1. The Ideal Gas Law generally applies to water vapor as it does other gasses and can be used to help explain some important relationships.\n\\[\nPV=nRT\n\\tag{1}\\]\nTwo key metrics we use to describe atmospheric moisture in meteorology are:\n\nVapor density: \\(\\rho_v\\)\n\n\nThis metric quantifies the density of water vapor within a parcel of air and is typically given in g m-3\n\nIt describes mass of H20 vapor (in grams) per unit volume (cubic meter) of air, i.e. \\(\\frac{m_{H2O}}{V}\\).\n\n\n\nVapor pressure: \\(P_v\\)\n\n\nThis metric quantifies the partial pressure exerted by the water vapor in a parcel of air and is typically given in kPa.\n\nThe pressure exerted by the water vapor in the atmosphere, is only a small portion of the total pressure exerted by the atmosphere. The pressure of the various gasses is proportional composition of gasses in the atmosphere (see Table 2)\n\n\nWe can redefine the ideal gas law in terms of \\(\\rho_v^*\\) and \\(P_v^*\\) as Equation 2 to make our calculations easier:\n\\[\n\\rho_v = \\frac{\\rho_vM}{RT}\n\\tag{2}\\]"
+  },
+  {
+    "objectID": "Assignments/Lab3.html#saturation",
+    "href": "Assignments/Lab3.html#saturation",
+    "title": "Lab 3: Atmospheric Humidity",
+    "section": "Saturation",
+    "text": "Saturation\nUnder the pressures and temperature conditions experienced on Earth the atmosphere can only hold a small amount of water vapor before it becomes saturated. We add an asterisk to \\(\\rho_v^*\\) and \\(P_v^*\\) to denote saturation vapor density and saturation vapor pressure respectively. Once the atmosphere reaches saturation point, H2O vapor in the air will begin to condense into its liquid form.\nDetermining exact value of \\(\\rho_v^*\\) and \\(P_v^*\\) for a specific value of \\(T\\) isn’t a straightforward calculation. This is because we need to consider the latent heat of vaporization (recall this term for lecture). When water changes phase, it adds (condensation/freezing) or removes (evaporation/melting) a massive amount of energy from its surrounding environment. Calculating \\(\\rho_v^*\\) and \\(P_v^*\\) exactly involves using some calculus to evaluate a differential equation known as the Clausius–Clapeyron relation. But don’t worry, we’re not going to make you do any calculus here. Empirically derived relationships have been derived to help simplify the calculations. On such relationship, is known as the Buck equation (Equation 3). Note: this empirical equation requires \\(T\\) to be in \\(^\\circ C\\), instead of \\(K\\), which is different from most from many others. The ideal gas law Equation 1 and it’s variant Equation 2 require temperature to be in K.\n\\[\nP_v^*(T)=0.61121e^{(18.678-\\frac{T}{234.5})(\\frac{T}{257.14+T})}\n\\tag{3}\\]\nBy evaluating Equation 3, we can come up with an accurate approximation for \\(P_v^*\\) to a high degree of accuracy (\\(/pm\\) 0.08%) within the ranges of temperatures and pressures typically observed on Earths surface. We can then plug the result into Equation 2 to solve for \\(\\rho_v\\). Remembering to convert our temperature values to K in order to evaluate this variant of the ideal gas law. The R code shown in Example 1 shows how you could perform these calculations in programmatically.\n\nExample 1  \n\n# Functions are pieces of code that can be defined once an run numerous times\n# They make performing calculations that need to be repeated much easier\n# Functions may take one or more inputs in parentheses ()\n# They and will evaluate the instructions contained between the curly brackets {}\n# The \"return()\" command can optionally be used to return one or more outputs\n\nBuck_Equation &lt;- function(T){\n    # This function evaluates the Buck Equation \n    # It take an air temperature in Celsius as input\n    # It outputs (returns) the saturation vapor pressure in kPa\n    P_v &lt;- 0.61121*exp((18.678-T/234.5)*(T/(257.14+T)))\n    return(P_v)\n}\n\nIdeal_Gas_Law_Vapor_Density &lt;- function(T,P_v){\n    # This function evaluates the Ideal Gas Law for water vapor\n    # It take an air temperature in Celsius and vapor pressure in kPa as inputs. \n    # It first converts the temperature to Kelvin \n    # Then it evaluates the equation and returns the vapor density in g m-3\n\n    # Constants\n    R &lt;- 8.31446261815324-3 # Ideal Gas Constant in kPa m$^3$ g$^{-1}$ K$^{-1}$\n    M &lt;- 18.01528 # Molar mass of H20 in g m-3\n\n    # Converts temperature to Kelvin\n    T_k &lt;- T + 273.15\n\n    rho_v = P_v*M/(R*T_k)\n    return (rho_v)\n}\n\n# Air temperature data.  \n# Using \"c(-20:40)\" creates a vector (e.g., list) evenly spaced numbers (interval of 1) over the range -20 to 40\nT &lt;- c(-20:40) \n\n# Evaluate the Buck Equation\nP_v &lt;- Buck_Equation(T)\n\n# Evaluate the ideal gas law\nrho_v &lt;- Ideal_Gas_Law_Vapor_Density(T,P_v)\n\n# A \"data frame\" is a collection of \nSaturation_by_Temperature &lt;- data.frame(T,rho_v,P_v)\n\n\n\n\n\n\n\n\n\nFigure 1: Saturation vapor pressure \\(P_v^*\\) as a function of temperature \\(T\\), calculated using Equation 3\n\n\n\n\n\n\n\n\n\nFigure 2: Saturation vapor density \\(\\rho_v^*\\) as a function of temperature \\(T\\) and \\(P_v\\) using Equation 2."
+  },
+  {
+    "objectID": "Assignments/Lab3.html#humidity",
+    "href": "Assignments/Lab3.html#humidity",
+    "title": "Lab 3: Atmospheric Humidity",
+    "section": "Humidity",
+    "text": "Humidity"
+  },
+  {
+    "objectID": "Assignments/Lab3.html#experiemtnal-p",
+    "href": "Assignments/Lab3.html#experiemtnal-p",
+    "title": "Lab 3: Atmospheric Humidity",
+    "section": "Experiemtnal P",
+    "text": "Experiemtnal P"
+  },
+  {
+    "objectID": "Assignments/Lab3.html#measuring-atmospheric-humidity",
+    "href": "Assignments/Lab3.html#measuring-atmospheric-humidity",
+    "title": "Lab 3: Atmospheric Humidity",
+    "section": "Measuring Atmospheric Humidity",
+    "text": "Measuring Atmospheric Humidity\nThe most common type of instrument used to measure humidity is the psychrometer (Figure 3). This instrument consists simply of a pair of thermometers, one of which has a wetted wick enclosing the sensor. The wet-bulb is cooled by evaporation to a temperature that depends on the atmospheric vapor density.\n\n\n\nFigure 3: Diagram of a sling psychrometer\n\n\nThe water vapor density \\(\\rho_v\\) (aka. absolute humidity) can be calculated from measurements of wet-bulb temperature (\\(T_w\\)) and dry-bulb temperature (\\(T\\)) using this relationship:\n\\[\n\\rho_v = \\rho^*_{vw}(T_w) - \\gamma(T-T_w)\n\\tag{4}\\]\nOther ways of expressing the amount of moisture are used and each has particular usefulness in certain applications. The total amount of water that the atmosphere can hold without condensation depends only on temperature. This quantity, called the saturation vapor density \\(\\rho^*_v(T)\\), is given for a range of temperatures in Figure 2. The ratio of actual vapor density to the maximum possible (i.e. the saturation vapor density) when expressed as a percentage is called the relative humidity:\n\\[\nRH = \\frac{\\rho_v}{\\rho^*_v(T)}\n\\tag{5}\\]\nFor some calculations of evaporation rate, the difference between the maximum and the actual vapor density is useful. This is called the vapor density deficit:\n\\[\nVDD = \\rho^*_v(T) - \\rho_v\n\\tag{6}\\]\nWe may express the water vapor content of air by finding the temperature to which a parcel of air could be cooled at constant atmospheric pressure before condensation commences. This temperature is called the dew point temperature \\(T_d\\). Note: that for a saturated parcel the dewpoint temperature is the temperature of the parcel. For any water vapor density, \\(T_d\\) can be found by using Figure 2 in reverse. For example, air with a vapor density of 7.8 g m-3 has a \\(T_d\\) of 7°C.\nWater vapor content of the air can be expressed in terms of the partial pressure exerted by the water vapor, or water vapor pressure, \\(e\\). This is related to vapor density by the gas law as follows:\n\\[\ne = \\rho_v R_v T\n\\tag{7}\\]\nWhere R_v is the gas constant for water vapor (see Table 1) and \\(T\\) is the absolute temperature (K). Using units of g m-3 for \\(\\rho_v(T)\\) results in units of kPa (kilopascals) for \\(e\\).\nSaturation vapor pressure, \\(e*(T)\\): Consider a parcel at temperature \\(T\\). Unless the parcel is currently saturated, the parcel could hold more water vapor than it currently does. The partial pressure exerted by the water vapor is given by \\(e\\), whereas the partial pressure that would be exerted by the water vapor if the parcel were saturated, is \\(e*\\), which is a function of temperature: i.e., \\(e*(T)\\). (Units: kPa).\nVapor pressure deficit, VPD: Vapor pressure deficit represents the difference between the actual and saturation vapor pressures of a parcel at temperature T:\n\\[\nVPD = e*(T) - e\n\\tag{8}\\]\n\nNote: that the smaller the VPD, the closer the parcel is to saturation. (Units: kPa)"
+  },
+  {
+    "objectID": "Assignments/Lab3.html#psychrometer",
+    "href": "Assignments/Lab3.html#psychrometer",
+    "title": "Lab 3: Atmospheric Humidity",
+    "section": "Psychrometer",
+    "text": "Psychrometer\nTo make measurements of water vapor content of the air, you will use the Assmann aspirated psychrometer. Examine the psychrometer and notice the wick on the wet-bulb thermometer. Use distilled water to wet the wick thoroughly. Wind up the clockwork ventilation fan. Take the instrument outdoors and measure the wet- and dry bulb temperatures. Read measurements every 15 s for 3 or 4 minutes until the thermometer reaches equilibrium. Use the equilibrium values for further calculations.\nReturn to the laboratory, re-wet the wick and re-wind the psychrometer. Repeat the measurements of wet- and dry-bulb temperature. The water vapor density in the air in the classroom and outdoors can now be calculated (see 5.4, Question 1)."
+  },
+  {
+    "objectID": "Assignments/Lab3.html#questions",
+    "href": "Assignments/Lab3.html#questions",
+    "title": "Lab 3: Atmospheric Humidity",
+    "section": "Questions",
+    "text": "Questions\n\nQuestion 1 (3 points)\nCalculate from your measurements with the Assmann psychrometer: \\(\\rho_v(T)\\), \\(e\\), \\(RH\\), \\(VDD\\), \\(VPD\\) and \\(T_d\\) for both indoors and outdoors.\n\n\nQuestion 2 (2 points)\nSuppose in an experiment measuring the humidity outdoors, it is convenient to suck in a sample of cool air through a tube into a warm laboratory. The sample warmed to room temperature allowing its pressure to remain constant. What happens to its volume? Which of the measures of humidity (\\(\\rho_v(T)\\), \\(e\\), \\(RH\\), \\(VDD\\) and \\(T_d\\)) will be the same when determined on this warmed sample as would be obtained by measurement with a psychrometer outdoors and how would each measure of humidity differ? Hint: remember pressure is constant, but temperature, and therefore volume, changes.\n\n\nQuestion 3 (1 points)\nWere your measured vapor densities indoors and outdoors equal? Is this reasonable? Explain why. ### Question 4 (1 points)\n\n\nQuestion 5 (1 points)\nA high-precision method for measuring water vapor content of the air uses a dew-point hygrometer. In this instrument a mirror is cooled until condensation causes fogging on the mirror and this is detected by a photodetector that records the scattering of a beam of light shining on the mirror. At that time, the temperature of the mirror is recorded. What temperature would be recorded if the air vapor pressure is 1.60 kPa? ### Question 6 (1 points)\n\n\nQuestion 7 (2 points)\nA cool winter Canadian air mass with a temperature of -4°C and a relative humidity of 91% meets a warm air mass sweeping northward from Texas with a temperature of 17°C and a relative humidity of 17%. In the mixing process will the southern border of the Canadian air gain or lose water vapor content? Explain."
+  },
+  {
+    "objectID": "Labs.html",
+    "href": "Labs.html",
     "title": "Overview",
     "section": "",
-    "text": "Lecture topics and quiz dates are listed in Table 1 below, and the relevant lecture slides can be found in the sidebar on the left. Lectures are held in person Wednesday & Friday, 9:30 - 11:00 in Friedman Building, Room 153. If you are unable to attend in-person, remote attendance is available on on zoom and recordings will be posted here afterwards."
+    "text": "Laboratory exercises are designed to complement the lecture materials and are a mandatory part of the course. The accompanying laboratory exercises provide hands-on experiences explaining physical principles and introducing biometeorological instrumentation. Labs will be held weekly (excluding the Week 1) in room 102A of the Macmillan building. Days/times for each lab section are listed in Table 1.\n\nYou must be registered for a lab section in order to complete the course, and you may only attend the lab session you are registered for.\n\n\n\n\n\n\n\n\nTable 1: Meeting day/time by lab section.\n\n\nSection\nDay & Time\nTA\n\n\n\n\nL1A/L01\nTuesday 11:00-13:00\nMegan\n\n\nL1B/L02\nTuesday 13:00-15:00\nMegan\n\n\nL1C/L03\nThursday 9:00-11:00\nTzu-Yi\n\n\nL1D/L04\nWednesday 11:00-13:00\nZoe\n\n\nL1E/L05\nWednesday 13:00-15:00\nZoe\n\n\nL1F/L06\nFriday 12:00-14:00\nTzu-Yi"
   },
   {
-    "objectID": "Lectures.html#iclicker",
-    "href": "Lectures.html#iclicker",
+    "objectID": "Labs.html#materials",
+    "href": "Labs.html#materials",
     "title": "Overview",
-    "section": "iClicker",
-    "text": "iClicker\nLectures will have a embedded questions that can be answered using iClicker\n\nLecture participation points are only available during the lecture."
+    "section": "Materials",
+    "text": "Materials\nThe labs do not require you to install any specific software. You may benefit from a spreadsheet editor such as Excel or Number to make table and charts for your lab reports, however you may also write/draw tables and charts by hand.\n\nAny other equipment necessary to conduct laboratory experiments will be provided."
   },
   {
-    "objectID": "Lectures.html#quizzes",
-    "href": "Lectures.html#quizzes",
+    "objectID": "Labs.html#formatting",
+    "href": "Labs.html#formatting",
     "title": "Overview",
-    "section": "Quizzes",
-    "text": "Quizzes\nQuizzes will held on the dates listed in the schedule below. Note dates are subject to change & will be announced in class the week before."
+    "section": "Formatting",
+    "text": "Formatting\nLab reports should be written concisely and uploaded as a Word Document of PDF to Canvas. No need to repeat questions. Number and sort your answers in accordance with questions in lab manual. All questions should be attempted and answered in the order of the lab manual.\n\nAnswers should be presented in tables where applicable, templates will provided if necessary. Procedures and equipment should also not be reported.\nShow your work: any calculations with important results should be clearly indicated. Partial credit may be granted based. In some cases an analysis of errors is appropriate.\n\nPlease always indicate units and follow the SI for units and scientific notation (see more info here).\nThe report’s header should list the course number, your name, your UBC student number, your TA’s name, and the number and title of the lab."
   },
   {
-    "objectID": "Lectures.html#readings",
-    "href": "Lectures.html#readings",
+    "objectID": "Labs.html#due-dates",
+    "href": "Labs.html#due-dates",
     "title": "Overview",
-    "section": "Readings?",
-    "text": "Readings?\nThere is no textbook for the course. All materials for lecture will be provided to you. Typically, materials will be introduced in lecture first, but if any readings are assigned, you will be given a pdf copy of the material."
+    "section": "Due Dates",
+    "text": "Due Dates\nAll reports should be submitted on Canvas by the due date. Late lab reports will be penalized 10% per day. Lab reports will not be accepted once graded reports have been returned to the class. In cases where a student fails to submit a report due to sickness, they should contact their TA before the deadline to discuss options."
+  },
+  {
+    "objectID": "Labs.html#grading-of-reports",
+    "href": "Labs.html#grading-of-reports",
+    "title": "Overview",
+    "section": "Grading of Reports",
+    "text": "Grading of Reports\nLabs will be marked by your TA using a standard rubric and short comments will be provided where applicable. Late lab submissions will be penalized 10% per day days after their due date.\n\nLab assignments submitted by the due date will be graded and returned with feedback within 7 days of the due date.\nLate submissions are note guaranteed to be returned within 7 days."
+  },
+  {
+    "objectID": "Labs.html#var-lab.ta1.name",
+    "href": "Labs.html#var-lab.ta1.name",
+    "title": "Overview",
+    "section": "Zoe",
+    "text": "Zoe\n\n\n\n\n\n\nPronouns: She/Her/Hers\nEmail: hehanzha@student.ubc.ca\nBio: I received a BSc in Environmental Science from the University of British Columbia in 2022. My undergraduate thesis research investigated the impacts of fire on greenhouse gas (GHG) fluxes (CO2, CH4, and N2O) within different burned zones of a bog. The methodology incorporated chamber measurements and gas chromatography for the analysis. Currently, as a second-year MSc student, I am examining the impacts of seedling removal — a post-fire management practice — on the GHG fluxes (CO2 and CH4) within the 2016 burned zone of the Burns Bog, Delta, BC. This research utilizes a smart chamber with a portable analyzer. Additionally, I am interested in quantifying the net carbon exchange at the ecosystem scale using eddy covariance techniques and understanding carbon dynamics across varying ecosystem types."
+  },
+  {
+    "objectID": "Labs.html#var-lab.ta2.name",
+    "href": "Labs.html#var-lab.ta2.name",
+    "title": "Overview",
+    "section": "Tzu-Yi",
+    "text": "Tzu-Yi\n\n\n\n\n\n\nPronouns: She/Her/Hers\nEmail: tzuyilu@student.ubc.ca\nBio: My name is Tzu-Yi. I am a fourth-year PhD candidate collaborating under the guidance of Dr. Sara Knox in Geography. I am interested in understanding the key processes underlying the carbon cycle between the atmosphere and coastal wetland ecosystem. Moreover, I am dedicated to quantifying how greenhouse gas fluxes in coastal wetlands contribute to regional and global carbon cycles. Currently, my research has been conducted in both the Delta and Richmond regions of British Columbia, measuring continuous carbon dioxide (CO2) and methane (CH4) exchanges in tidal marshes. I’m delighted to be a part of this exciting course as one of the TAs in GEOS200. Learning is a collaborative journey, and I’m glad to support you every step of the way."
+  },
+  {
+    "objectID": "Labs.html#var-lab.ta3.name",
+    "href": "Labs.html#var-lab.ta3.name",
+    "title": "Overview",
+    "section": "Megan",
+    "text": "Megan\n\n\n\n\n\n\nPronouns: She/Her/Hers\nEmail: melkin@student.ubc.ca\nBio: My name is Megan and I am in my final year of Geographical Science at UBC. I have been working this past year on co-op with Environment and Climate Change Canada and am excited to be back in the classroom! My main areas of study are GIS, Geomorphology, and Urban Meteorology. Some of my hobbies include mountain biking, climbing, and swimming and I am very fortunate to call BC my home."
   },
   {
     "objectID": "Slides/Lecture1.html#learning-objectives",

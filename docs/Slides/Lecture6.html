@@ -326,7 +326,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Long-wave Radiation</h1>
-  <p class="subtitle">Shortwave radiation is absorbed by the earth and remitted as Long-wave radiation</p>
+  <p class="subtitle">Shortwave radiation is absorbed by the Earth and it’s atmosphere. It remitted as Long-wave radiation.</p>
 
 <div class="quarto-title-authors">
 </div>
@@ -335,56 +335,29 @@
 <section id="long-wave-radiation" class="slide level2">
 <h2>Long-wave radiation</h2>
 
-<img data-src="images/Lecture6/1_0.jpg" class="r-stretch quarto-figure-center"><p class="caption">Trees on UBC Campus recorded in the thermal infrared using a thermal scanner shown in false colo</p></section>
+<img data-src="images/Lecture6/2_2.jpg.jpg" class="r-stretch quarto-figure-center"><p class="caption">Trees recorded in thermal infrared using a thermal scanner shown in false color</p></section>
 <section id="learning-objectives" class="slide level2">
 <h2>Learning Objectives</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
 <ul>
 <li>Explain the role of Long-wave radiation in the climate system.</li>
 <li>Described how absorption and emission are linked &amp; understand Kirchhoff’s law of thermal radiation.</li>
 <li>Explain how we can measure Long-wave radiation.</li>
 </ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture6/2_2.jpg"></p>
-<p><img data-src="images/Lecture6/2_3.jpg"></p>
-<p><img data-src="images/Lecture6/2_5.png"></p>
-</div>
-</div>
-<aside class="notes">
-<p>Today we are going to move away from the shortwave radiation coming from the sun. We will examine Long-wave radiation, which is the radiation emitted from everything within the earth-atmosphere system (including us!).</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
 </section>
 <section id="what-is-long-wave-radiation" class="slide level2">
 <h2>What is ‘Long-wave’ radiation?</h2>
+<p>Objects emit radiation proportional to their temperature; adjusting for emittance as per the Stefan-Boltzmann equation for grey-bodies.</p>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p>Visible</p>
-<p>Emittance (W m<sup>-2</sup>)</p>
-<p>Stefan’s constant</p>
-<p>Cool roofs Tree tops</p>
-<p>Surface emissivity (typically &gt; 0.95)</p>
-<p>Warm backyard Cool flat roof</p>
-<p>Warm backyard Cool flat roof</p>
-<p>Absolute surface temperature (K)</p>
+<div class="column" style="width:55%;">
 <ul>
-<li>Wavelength range: 3 µm to 100 µm</li>
-<li>Long-wave radiation = far-infrared radiation = thermal infrared radiation (TIR)</li>
-<li>Exchanged between sky, surface and all surrounding objects.</li>
-<li>Objects emit radiation (emittance) according to the Stefan-Boltzmann equation (see Lecture 3):</li>
+<li>Wavelength (<span class="math inline">\(\lambda\)</span>) &gt; 3 <span class="math inline">\(\mu m\)</span></li>
+<li>Long-wave radiation <span class="math inline">\(\approx\)</span> thermal infrared radiation (TIR)</li>
+<li>Exchanged between sky, surface and all surrounding objects</li>
 </ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture6/3_18.png"></p>
+</div><div class="column" style="width:45%;">
+<p><span id="eq-Stefan-Boltzman-Law-Grey-Body"><span class="math display">\[
+E_g = \epsilon\sigma_b T^4
+\qquad(1)\]</span></span></p>
 </div>
 </div>
 <aside class="notes">
@@ -401,92 +374,69 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="long-wave-3-to-100-μm" class="slide level2">
-<h2>Long-wave ~3 to &gt;100 μm</h2>
+<section id="review-short-wave-vs.-long-wave" class="slide level2">
+<h2>Review Short-wave vs.&nbsp;Long-wave</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>shortwave0.15 to ~3 μm</p>
-<p>Review ‘shortwave’ vs.&nbsp;‘Long-wave’</p>
-<p>At 300 K:λmax is 9.7 μm (~10 μm)</p>
-<p>At 6000 K:λmax is 0.48 μm (~0.5 μm)</p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../Assignments/images/Spectral_Curves.jpg"></p>
+<figcaption>Peak spectral output of the Sun and Earth compared on a log scale</figcaption>
+</figure>
+</div>
 </div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture6/4_2.png"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../Assignments/images/Spectral_Curves_TrueScale.jpg"></p>
+<figcaption>Peak spectral output of the Sun and Earth compared in natural units</figcaption>
+</figure>
+</div>
 </div>
 </div>
 </section>
 <section id="radiation-laws-terminology" class="slide level2">
 <h2>Radiation Laws &amp; Terminology</h2>
-<div class="columns">
-<div class="column" style="width:100%;">
 <ul>
-<li>Planck’s Law</li>
-<li>Wiens Law</li>
-<li>Stefan Boltzmann Law</li>
-<li>PAR 0.4-0.7 μm</li>
-<li>Beer’s Law</li>
-<li>Kirchhoff’s Law</li>
+<li>Planck’s Law: describes the full spectral output (spectra)</li>
+<li>Wiens Law: gives the peak of the spectra</li>
+<li>Stefan Boltzmann Law: gives the integral of the spectra</li>
+<li>Beer’s Law: describes attenuation of radiation</li>
+<li>Photosyntheically Active Radiation (PAR): <span class="math inline">\(\lambda\)</span> 0.4-0.7 <span class="math inline">\(\mu\)</span> m</li>
+<li>Kirchhoff’s Law: relates emissivity to absorptivity</li>
 </ul>
-</div><div class="column" style="width:0%;">
-
-</div>
-</div>
-<aside class="notes">
-<p>You should review these definitions from earlier material.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
 </section>
-<section id="visible" class="slide level2">
-<h2>Visible</h2>
+<section id="short-wave-vs-long-wave-imagery" class="slide level2">
+<h2>Short-wave vs Long-wave Imagery</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>Long-wave</p>
-<p>Shortwave</p>
-<p>An urban environment with buildings and trees recorded from a camera in the TIR during day (right) and in the visible part of the short-wave (left). Dark bluish colors refer to low radiative flux densities, yellow to white colors are strong radiative flux densities.</p>
-<p>Cool roofs Tree tops</p>
-<p>Shortwave photography vs Long-wave image</p>
-<p>Warm backyard Cool flat roof</p>
-<p>Images: FLIR / D. Scherer, Ecology Department, TU Berlin.</p>
-<p>Warm backyard Cool flat roof</p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/Lecture6/6_11.png" style="width:90.0%"></p>
+<figcaption>Urban environment with buildings and trees recorded in the visible part of the electromagnetic spectrum.</figcaption>
+</figure>
+</div>
 </div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture6/6_11.png"></p>
-<p><img data-src="images/Lecture6/6_12.png"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/Lecture6/6_12.png" style="width:90.0%"></p>
+<figcaption>Same location, recorded using a thermal infrared (TIR) camera. Dark colors = low TIR flux densities, light colors = high TIR flux densities.</figcaption>
+</figure>
 </div>
 </div>
-<aside class="notes">
-<p>We take advantage of thermal infra-red cameras (that “see” Long-wave radiation which is not visible to our eyes). Can you think of some examples??</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
+</div>
 </section>
 <section id="kirchhoffs-law" class="slide level2">
 <h2>Kirchhoff’s Law</h2>
-<p>Emissivity = Absorptivity</p>
-<p><span id="eq-Kirchhoffs-Law"><span class="math display">\[
-a_{\lambda} = \epsilon_{\lambda}
-\qquad(1)\]</span></span></p>
+<p>Assuming no transmission the absorptivity of a body (<span class="math inline">\(a_\lambda\)</span>) equals its emissivity (<span class="math inline">\(\epsilon_{\lambda}\)</span>).</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>Kirchhoff’s law</p>
+<p><span id="eq-Kirchhoffs-Law"><span class="math display">\[
+a_{\lambda} = \epsilon_{\lambda}
+\qquad(2)\]</span></span></p>
 <ul>
-<li>Assuming no transmission the absorptivity of a body (aλ) equals its emissivity (ελ)</li>
-<li>A good absorber is a good emitter – also true that if a surface is a poor absorber it also doesn’t emit that kind of radiation.</li>
+<li>A good absorber is a good emitter</li>
+<li>A poor absorber is a poor emitter</li>
+<li>Wavelength specific relationship</li>
 </ul>
 </div><div class="column" style="width:50%;">
 <p><img data-src="images/Lecture6/7_4.png"></p>
@@ -506,8 +456,8 @@ a_{\lambda} = \epsilon_{\lambda}
           display:block!important;
       }</style></aside>
 </section>
-<section id="kirchhoffs-law." class="slide level2">
-<h2>Kirchhoff’s law.</h2>
+<section id="kirchhoffs-law-1" class="slide level2">
+<h2>Kirchhoff’s law</h2>
 <div class="columns">
 <div class="column" style="width:100%;">
 <ul>
@@ -519,13 +469,24 @@ a_{\lambda} = \epsilon_{\lambda}
 </div>
 </div>
 </section>
-<section id="the-atmosphere-is-a-selective-absorber-in-the-long-wave." class="slide level2">
-<h2>The atmosphere is a selective absorber in the Long-wave.</h2>
-<p>The most significant absorbing gases are water vapour (the most important), CO2, O3, O2, N2O, and CH4 Aerosols (particles) and liquid water in cloud if present will be dominant.</p>
+<section id="kirchhoffs-law-2" class="slide level2 smaller">
+<h2>Kirchhoff’s law</h2>
 <div class="columns">
-<div class="column" style="width:0%;">
-
-</div><div class="column" style="width:100%;">
+<div class="column" style="width:65%;">
+<p>The atmosphere is a selective absorber (and emitter) of long-wave radiation.</p>
+<ul>
+<li>Aerosols and clouds are dominant when present</li>
+<li>Most significant absorbing gases:
+<ul>
+<li>H<sub>2</sub>O</li>
+<li>CO<sub>2</sub></li>
+<li>O<sub>3</sub></li>
+<li>O<sub>2</sub></li>
+<li>N<sub>2</sub>O</li>
+<li>CH<sub>4</sub></li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:35%;">
 <p><img data-src="images/Lecture6/9_4.png"></p>
 </div>
 </div>
@@ -543,29 +504,23 @@ a_{\lambda} = \epsilon_{\lambda}
           display:block!important;
       }</style></aside>
 </section>
-<section class="slide level2">
-
+<section id="atmospheric-absorption-and-emission" class="slide level2">
+<h2>Atmospheric absorption and emission</h2>
+<p>Kirchhoff’s Law tells us that since atmospheric absorption is concentrated at these wavelengths so is atmospheric emission.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>aλ = ελ</p>
-<p>Atmospheric absorption and emission</p>
-<p>Kirchhoff’s Law tells us that since atmospheric absorption is concentrated at these wavelengths so is atmospheric emission. Equally, at wavelengths where the atmosphere is poor at absorbing it is poor at emitting.</p>
+<ul>
+<li>Equally, at wavelengths where the atmosphere is poor at absorbing it is poor at emitting.</li>
+</ul>
 </div><div class="column" style="width:50%;">
 <p><img data-src="images/Lecture6/10_4.png"></p>
 </div>
 </div>
 </section>
-<section id="µm" class="slide level2">
-<h2>8µm</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>13µm</p>
-<p>Atmospheric absorption and emission</p>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture6/11_0.png"></p>
-</div>
-</div>
-<aside class="notes">
+<section id="atmospheric-absorption-and-emission-1" class="slide level2">
+<h2>Atmospheric absorption and emission</h2>
+
+<img data-src="images/Lecture6/11_0.png" class="r-stretch"><aside class="notes">
 <p>This is an important graph that I will discuss in the VIDEO</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
