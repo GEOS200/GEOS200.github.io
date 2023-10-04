@@ -1,218 +1,218 @@
 [
   {
-    "objectID": "Slides/Lecture7.html#radiation-budget-of-planet-earth",
-    "href": "Slides/Lecture7.html#radiation-budget-of-planet-earth",
-    "title": "Atmospheric Environments",
-    "section": "Radiation budget of Planet Earth",
-    "text": "Radiation budget of Planet Earth\n\n\nPhoto taken by the Apollo 8 astronauts as they became the first humans to circumnavigate the Moon. (Photo: NASA)"
+    "objectID": "Slides/Lecture7.html#section",
+    "href": "Slides/Lecture7.html#section",
+    "title": "Radiation Budget of Planet Earth",
+    "section": "",
+    "text": "Photo from Galileo of the Earth-Moon system in 1992 (NASA)\n\n\n\n\n\n\nPhoto taken from Apollo 8 astronauts as they orbited the Moon. (Photo: NASA)"
   },
   {
     "objectID": "Slides/Lecture7.html#learning-objectives",
     "href": "Slides/Lecture7.html#learning-objectives",
-    "title": "Atmospheric Environments",
+    "title": "Radiation Budget of Planet Earth",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\n\n\nImage taken by the Galileo spaceship as it flew by the Earth-Moon system in 1992 (NASA)\n\nBecause radiation is the only transfer mechanism between our planet and the Sun / Space we can calculate the theoretical radiation equilibrium of Planet Earth. Let’s do this today!\nKnow how to estimate the expected ‘temperature’ of our planet based on our calculation.\nUnderstand how the presence of the atmosphere affects the temperature on our planet."
+    "text": "Learning Objectives\n\nBecause radiation is the only transfer mechanism between our planet and the Sun / Space we can calculate the theoretical radiation budget of Planet Earth.\nKnow how to estimate the expected ‘temperature’ of our planet based on our calculation.\nUnderstand how the presence of the atmosphere affects the temperature on our planet."
   },
   {
-    "objectID": "Slides/Lecture7.html#longwave-3-to-100-μm",
-    "href": "Slides/Lecture7.html#longwave-3-to-100-μm",
-    "title": "Atmospheric Environments",
-    "section": "longwave \u000b~3 to >100 μm",
-    "text": "longwave \u000b~3 to &gt;100 μm\n\n\nshortwave\u000b0.15 to ~3 μm\nReview ‘shortwave’ vs. ‘longwave’\u000b\nAt 300 K:\u000bλmax is 9.7 μm (~10 μm)\nAt 6000 K:\u000bλmax is 0.48 μm (~0.5 μm)"
+    "objectID": "Slides/Lecture7.html#review-short-wave-vs.-long-wave",
+    "href": "Slides/Lecture7.html#review-short-wave-vs.-long-wave",
+    "title": "Radiation Budget of Planet Earth",
+    "section": "Review ‘Short-wave’ vs. ‘Long-wave’",
+    "text": "Review ‘Short-wave’ vs. ‘Long-wave’\n\n\nShort-wave: \\(\\lambda &lt;=3 \\mu m\\)\n\nAt 5800 K: \\(\\lambda\\) max is 0.50 \\(\\mu m\\)\n\nLong-wave: \\(\\lambda &gt;3 \\mu m\\)\n\nAt 288 K: \\(\\lambda\\) max is 10.35 \\(\\mu m\\)"
   },
   {
-    "objectID": "Slides/Lecture7.html#what-is-the-solar-constant-i0",
-    "href": "Slides/Lecture7.html#what-is-the-solar-constant-i0",
-    "title": "Atmospheric Environments",
-    "section": "What is the solar constant I0?",
-    "text": "What is the solar constant I0?\n\n\n\n\n\n\n\n\nTable 1: CAPTION\n\n\n\n\n\n\nX0\nX1\n\n\n\n\nA\nThe average flux density leaving Sun’s surface\n\n\nB\nThe average flux density reaching the Earth’s surface\n\n\nC\nThe average flux density reaching the Earth’s orbit perpendicular to the beam\n\n\nD\nThe average flux density reaching the Earth’s orbit averaged over the sphere of the planet.\n\n\n\n\n\n\n\n\n\nAnswer is C"
+    "objectID": "Slides/Lecture7.html#what-is-the-solar-constant-i_0-iclicker",
+    "href": "Slides/Lecture7.html#what-is-the-solar-constant-i_0-iclicker",
+    "title": "Radiation Budget of Planet Earth",
+    "section": "What is the solar constant \\(I_0\\)? (iClicker)",
+    "text": "What is the solar constant \\(I_0\\)? (iClicker)\n\nA The average flux density leaving Sun’s surface\nB The average flux density reaching the Earth’s surface\nC The average flux density reaching the Earth’s orbit perpendicular to the beam\nD The average flux density reaching the Earth’s orbit averaged over the sphere of the planet\n\n\nAnswer is C"
   },
   {
-    "objectID": "Slides/Lecture7.html#energy-fluxes-in-w-j-s-1",
-    "href": "Slides/Lecture7.html#energy-fluxes-in-w-j-s-1",
-    "title": "Atmospheric Environments",
-    "section": "Energy fluxes in W (=J s-1)",
-    "text": "Energy fluxes in W (=J s-1)\n\n\nShort-wave\nLong-wave\n\nThe only relevant energetic exchange between Earth and Space is radiation. Earth absorbs an incoming net shortwave radiative flux Fin from Sun, and Earth itself emits a net longwave radiative flux Fout to Space.\nEquilibrium climate state -\nBare blackbody earth\n\nThese two fluxes can be considered in equilibrium. Why?"
+    "objectID": "Slides/Lecture7.html#equilibrium-bare-blackbody",
+    "href": "Slides/Lecture7.html#equilibrium-bare-blackbody",
+    "title": "Radiation Budget of Planet Earth",
+    "section": "Equilibrium (Bare blackbody)",
+    "text": "Equilibrium (Bare blackbody)\nOnly relevant energy exchange between Earth and Space is radiation. Earth absorbs incoming \\(SW\\) from the Sun, and Earth emits \\(LW\\) to Space.\n\n\n\nThese two fluxes can be considered in equilibrium. Why?\n\n\\(F_{in}\\) = Short-wave\n\\(F_{out}\\) = Long-wave"
   },
   {
     "objectID": "Slides/Lecture7.html#planetary-albedo",
     "href": "Slides/Lecture7.html#planetary-albedo",
-    "title": "Atmospheric Environments",
+    "title": "Radiation Budget of Planet Earth",
     "section": "Planetary albedo",
-    "text": "Planetary albedo\n\n\n\nNot all shortwave radiation that reaches a planet from sun is absorbed. Some fraction is reflected back to Space.\nThe percentage of short-wave radiation reflected back to Space is called planetary albedo α. α is mainly controlled by cloud cover and cloud properties, the extent of ice and snow.\nEarth’s planetary albedo is α = 31%"
+    "text": "Planetary albedo\nNot all \\(SW\\)$ that reaches a planet from sun is absorbed. Some fraction is reflected back to Space.\n\n\n\nPlanetary albedo \\(\\alpha\\): the % of \\(SW\\) reflected back to Space\n\n\\(\\alpha\\) is mainly controlled by:\n\nCloud type/cove\nExtent of ice and snow\n\nEarth’s \\(\\alpha\\) = 31%"
   },
   {
     "objectID": "Slides/Lecture7.html#absorption-of-short-wave-radiation-on-earth",
     "href": "Slides/Lecture7.html#absorption-of-short-wave-radiation-on-earth",
-    "title": "Atmospheric Environments",
+    "title": "Radiation Budget of Planet Earth",
     "section": "Absorption of short-wave radiation on Earth",
-    "text": "Absorption of short-wave radiation on Earth\n\n\n\n22% of the solar radiation is reflected by the atmosphere (clouds, droplets, aerosols) and \u000b9% is reflected by the surface.\nThere is no transmission through the Planet’s interior possible, so short-wave absorption must be \u000b1 - α = 100 - 31% = 69%, \u000bof those 20% are absorbed in the atmosphere and 49% at the surface."
+    "text": "Absorption of short-wave radiation on Earth\n\n\n\n22% of the solar radiation is reflected by the atmosphere (clouds, droplets, aerosols) and 9% is reflected by the surface.\nThere is no transmission through the Planet’s interior possible, so short-wave absorption must be 1 - α = 100 - 31% = 69%, of those 20% are absorbed in the atmosphere and 49% at the surface."
   },
   {
     "objectID": "Slides/Lecture7.html#absorption-of-short-wave-radiation-on-earth-1",
     "href": "Slides/Lecture7.html#absorption-of-short-wave-radiation-on-earth-1",
-    "title": "Atmospheric Environments",
+    "title": "Radiation Budget of Planet Earth",
     "section": "Absorption of short-wave radiation on Earth",
-    "text": "Absorption of short-wave radiation on Earth\n\n\n\n22% of the solar radiation is reflected by the atmosphere (clouds, droplets, aerosols) and \u000b9% is reflected by the surface.\nThere is no transmission through the Planet’s interior possible, so short-wave absorption must be \u000b1 - α = 100 - 31% = 69%, \u000bof those 20% are absorbed in the atmosphere and 49% at the surface."
+    "text": "Absorption of short-wave radiation on Earth\n\n\n\n22% of the solar radiation is reflected by the atmosphere (clouds, droplets, aerosols) and 9% is reflected by the surface.\nThere is no transmission through the Planet’s interior possible, so short-wave absorption must be 1 - α = 100 - 31% = 69%, of those 20% are absorbed in the atmosphere and 49% at the surface."
   },
   {
     "objectID": "Slides/Lecture7.html#absorbed-flux-w",
     "href": "Slides/Lecture7.html#absorbed-flux-w",
-    "title": "Atmospheric Environments",
+    "title": "Radiation Budget of Planet Earth",
     "section": "Absorbed flux (W)",
-    "text": "Absorbed flux (W)\n\n\nPlanetary albedo\nSolar constant (W m-2)\nSilhouette \u000barea of Earth [disk] (m2)\nCalculating planetary absorption\nThis flux density is projected over the silhouette area A* of Earth (corresponds to a disk of same diameter as the sphere).\n\nIn lecture 4 we introduced the solar constant I0 as the radiant flux density at the top of the atmosphere normal to the solar beam.\n\n\n\n\n\n\n\nTophat question"
+    "text": "Absorbed flux (W)\n\n\nPlanetary albedo\nSolar constant (W m-2)\nSilhouette area of Earth [disk] (m2)\nCalculating planetary absorption\nThis flux density is projected over the silhouette area A* of Earth (corresponds to a disk of same diameter as the sphere).\n\nIn lecture 4 we introduced the solar constant I0 as the radiant flux density at the top of the atmosphere normal to the solar beam.\n\n\n\n\n\n\n\nTophat question"
   },
   {
     "objectID": "Slides/Lecture7.html#w",
     "href": "Slides/Lecture7.html#w",
-    "title": "Atmospheric Environments",
+    "title": "Radiation Budget of Planet Earth",
     "section": "(W)",
     "text": "(W)\n\n\n(m2)\n(W m-2)\nTo get the total emitted flux Fout (in W) we can simply multiply the average flux density Iout by A, the Earth’s surface:\n(W m-2)\n\n\n\nLong-wave budget.\n5.67 x 10-8 (W m-2 K-4)\n\nIf Earth would be a bare blackbody we could relate the long-wave average flux density emitted by one square meter of Earth’s surface Iout (in W m-2) to the average surface temperature TS using the Stefan Boltzmann Law:"
   },
   {
     "objectID": "Slides/Lecture7.html#hence",
     "href": "Slides/Lecture7.html#hence",
-    "title": "Atmospheric Environments",
+    "title": "Radiation Budget of Planet Earth",
     "section": "hence:",
-    "text": "hence:\n\n\nSilhouette \u000barea of Earth [disk] (m2)\nSolar constant (W m-2)\nSurface area of Earth sphere\nEnergy fluxes in W (=J s-1)\nAverage surface temperature (K)\nA simple energy balance for ‘bare’ Earth\nLet us assume an equilibrium state, i.e. that net incoming shortwave and outgoing longwave fluxes are balanced:"
+    "text": "hence:\n\n\nSilhouette area of Earth [disk] (m2)\nSolar constant (W m-2)\nSurface area of Earth sphere\nEnergy fluxes in W (=J s-1)\nAverage surface temperature (K)\nA simple energy balance for ‘bare’ Earth\nLet us assume an equilibrium state, i.e. that net incoming shortwave and outgoing longwave fluxes are balanced:"
   },
   {
     "objectID": "Slides/Lecture7.html#earth-radius",
     "href": "Slides/Lecture7.html#earth-radius",
-    "title": "Atmospheric Environments",
+    "title": "Radiation Budget of Planet Earth",
     "section": "Earth radius",
-    "text": "Earth radius\n\n\nWe see, Earth receives short-wave radiation only from ‘one side’ at a given time, but emits long-wave radiation in all directions to space.\nEarth radius\nGeometric considerations\nEarth emits at a flux density of Iout from the whole surface area A of Earth - a sphere\u000b\nThe solar constant I0 is distributed over the silhouette area A* of Earth - corresponding to a disk\u000b\n\n\n\n\n\n\n\naverage flux density"
+    "text": "Earth radius\n\n\nWe see, Earth receives short-wave radiation only from ‘one side’ at a given time, but emits long-wave radiation in all directions to space.\nEarth radius\nGeometric considerations\nEarth emits at a flux density of Iout from the whole surface area A of Earth - a sphere\nThe solar constant I0 is distributed over the silhouette area A* of Earth - corresponding to a disk\n\n\n\n\n\n\n\naverage flux density"
   },
   {
     "objectID": "Slides/Lecture7.html#is-this-value-realistic",
     "href": "Slides/Lecture7.html#is-this-value-realistic",
-    "title": "Atmospheric Environments",
+    "title": "Radiation Budget of Planet Earth",
     "section": "Is this value realistic?",
     "text": "Is this value realistic?\n\n\nSolving for the Earth’s surface temperature (the only unknown variable):\nSolving for Earth’s surface temperature\n\n\n\n\n\n\n\n\n\nTophat question Using the values for planet Earth, i.e. α = 0.31, I0 = 1367 W m-2 we will get an average surface temperature value of 254 K = -19ºC."
   },
   {
     "objectID": "Slides/Lecture7.html#test-your-knowledge",
     "href": "Slides/Lecture7.html#test-your-knowledge",
-    "title": "Atmospheric Environments",
+    "title": "Radiation Budget of Planet Earth",
     "section": "Test your knowledge",
-    "text": "Test your knowledge\n\n\nWhat temperature did you predict for the planet?\n\n\n\n\n\nTable 2: CAPTION\n\n\nX0\nX1\n\n\n\n\nA\n+254ºC\n\n\nB\n+15ºC\n\n\nC\n-19ºC\n\n\nD\nSomething different\n\n\nE\nI was unable to perform this calculation\n\n\n\n\n\n\n\n\n\nAnswer is C"
+    "text": "Test your knowledge\n\n\nWhat temperature did you predict for the planet?\n\n\n\n\n\nTable 1: CAPTION\n\n\nX0\nX1\n\n\n\n\nA\n+254ºC\n\n\nB\n+15ºC\n\n\nC\n-19ºC\n\n\nD\nSomething different\n\n\nE\nI was unable to perform this calculation\n\n\n\n\n\n\n\n\n\nAnswer is C"
   },
   {
     "objectID": "Slides/Lecture7.html#effect-of-an-atmosphere",
     "href": "Slides/Lecture7.html#effect-of-an-atmosphere",
-    "title": "Atmospheric Environments",
+    "title": "Radiation Budget of Planet Earth",
     "section": "Effect of an atmosphere",
     "text": "Effect of an atmosphere\n\n\nEarth’s known average surface temperature is +15ºC. Our calculation results in a too cold surface temperature because we have not incorporated the atmosphere i.e. the effects of greenhouse gases.\n\nThe calculation gives us an idea, that without an atmosphere it would be –19ºC on Earth on average. Thus the effect of the atmosphere (natural greenhouse effect) must be worth +34 K!\nSide note - Humans have changed greenhouse gas concentrations - we call this enhanced greenhouse effect (which will be discussed in future lectures).\n\n\n\n\n\n\nThis approach would work for a bare planet or Moon, but is not an accurate representation of Earth’s energy balance."
   },
   {
     "objectID": "Slides/Lecture7.html#the-greenhouse-effect",
     "href": "Slides/Lecture7.html#the-greenhouse-effect",
-    "title": "Atmospheric Environments",
+    "title": "Radiation Budget of Planet Earth",
     "section": "The ‘Greenhouse Effect’",
     "text": "The ‘Greenhouse Effect’\n\n\n\nThe atmosphere is somewhat like greenhouse glass - transparent to short-wave but opaque to long-wave radiation - the term ‘Greenhouse effect’.\nThe Earth is warmer than it would be without this ‘trapping’ effect of the atmosphere. The long-wave process is due to absorption of L↑ and re-emission due to εa and Ta, not to reflection. Note, a portion of re-emission returns to Earth."
   },
   {
     "objectID": "Slides/Lecture7.html#photo-a.-christen",
     "href": "Slides/Lecture7.html#photo-a.-christen",
-    "title": "Atmospheric Environments",
+    "title": "Radiation Budget of Planet Earth",
     "section": "Photo: A. Christen",
     "text": "Photo: A. Christen\n\n\n‘Greenhouse’ is not a good analogy because warming in greenhouses largely due to reduction in convective heat transfer by shelter, and to a lesser extent due to increased downward long-wave emission from the glass.\n\nTechnical note: Why the term ‘Greenhouse Effect’\nis not a good analogy"
   },
   {
     "objectID": "Slides/Lecture7.html#includes-other-trace-gases-halocarbons-not-shown",
     "href": "Slides/Lecture7.html#includes-other-trace-gases-halocarbons-not-shown",
-    "title": "Atmospheric Environments",
+    "title": "Radiation Budget of Planet Earth",
     "section": "* Includes other trace gases (halocarbons, not shown)",
-    "text": "* Includes other trace gases (halocarbons, not shown)\n\n\n\nImportant greenhouse gases\nand their human-caused increase in the last 150 years\n\n\n\n\n\n\nTable 3: CAPTION\n\n\n\n\n\n\n\n\n\nX0\nX1\nX2\nX3\nX4\n\n\n\n\nCompound\nAbundance (pre-industrial)\nAbundance\n\n\n\n\n(2011/12)\nLifetime  (yr)\nEffect of human enhancement\n\n\n\n\nWater vapour\nvariable\nvariable\n0.03\n—\n\n\nCarbon dioxide CO2\n~280 ppm\n393 ppm\n5 - 200\n1.85 W m-2\n\n\nMethane CH4\n~700\n1874 ppb\n12\n0.51 W m-2\n\n\nNitrous oxide N2O\n~270\n324 ppb\n114\n0.18 W m-2\n\n\nOzone O3\n25 ppm\n34 ppm\ndays\n0.35 W m-2\n\n\nCFC-11 CFCl3\n0\n268 ppb\n45\n0.34 W m-2 *\n\n\nCFC-12 CF2Cl2\n0\n531 ppb\n100\n\n\n\nSulfur hexafluoride SF6\n0\n7.5 ppt\n3200\n\n\n\nAll\n\n\n\n3.23 W m-2"
+    "text": "* Includes other trace gases (halocarbons, not shown)\n\n\n\nImportant greenhouse gases\nand their human-caused increase in the last 150 years\n\n\n\n\n\n\nTable 2: CAPTION\n\n\n\n\n\n\n\n\n\nX0\nX1\nX2\nX3\nX4\n\n\n\n\nCompound\nAbundance (pre-industrial)\nAbundance\n\n\n\n\n(2011/12)\nLifetime  (yr)\nEffect of human enhancement\n\n\n\n\nWater vapour\nvariable\nvariable\n0.03\n—\n\n\nCarbon dioxide CO2\n~280 ppm\n393 ppm\n5 - 200\n1.85 W m-2\n\n\nMethane CH4\n~700\n1874 ppb\n12\n0.51 W m-2\n\n\nNitrous oxide N2O\n~270\n324 ppb\n114\n0.18 W m-2\n\n\nOzone O3\n25 ppm\n34 ppm\ndays\n0.35 W m-2\n\n\nCFC-11 CFCl3\n0\n268 ppb\n45\n0.34 W m-2 *\n\n\nCFC-12 CF2Cl2\n0\n531 ppb\n100\n\n\n\nSulfur hexafluoride SF6\n0\n7.5 ppt\n3200\n\n\n\nAll\n\n\n\n3.23 W m-2"
   },
   {
     "objectID": "Slides/Lecture7.html#test-your-knowledge-1",
     "href": "Slides/Lecture7.html#test-your-knowledge-1",
-    "title": "Atmospheric Environments",
+    "title": "Radiation Budget of Planet Earth",
     "section": "Test your knowledge",
-    "text": "Test your knowledge\n\n\nWhat is the most important greenhouse gas contributing to the natural greenhouse effect on our planet?\n\n\n\n\n\nTable 4: CAPTION\n\n\nX0\nX1\n\n\n\n\nA\nOzone\n\n\nB\nCarbon dioxide\n\n\nC\nMethane\n\n\nD\nOxygen\n\n\nE\nWater vapour"
+    "text": "Test your knowledge\n\n\nWhat is the most important greenhouse gas contributing to the natural greenhouse effect on our planet?\n\n\n\n\n\nTable 3: CAPTION\n\n\nX0\nX1\n\n\n\n\nA\nOzone\n\n\nB\nCarbon dioxide\n\n\nC\nMethane\n\n\nD\nOxygen\n\n\nE\nWater vapour"
   },
   {
     "objectID": "Slides/Lecture7.html#test-your-knowledge-2",
     "href": "Slides/Lecture7.html#test-your-knowledge-2",
-    "title": "Atmospheric Environments",
+    "title": "Radiation Budget of Planet Earth",
     "section": "Test your knowledge",
-    "text": "Test your knowledge\n\n\nWhat is the most important greenhouse gas contributing to the natural greenhouse effect on our planet?\n\n\n\n\n\nTable 5: CAPTION\n\n\nX0\nX1\n\n\n\n\nA\nOzone\n\n\nB\nCarbon dioxide\n\n\nC\nMethane\n\n\nD\nOxygen\n\n\nE\nWater vapour"
+    "text": "Test your knowledge\n\n\nWhat is the most important greenhouse gas contributing to the natural greenhouse effect on our planet?\n\n\n\n\n\nTable 4: CAPTION\n\n\nX0\nX1\n\n\n\n\nA\nOzone\n\n\nB\nCarbon dioxide\n\n\nC\nMethane\n\n\nD\nOxygen\n\n\nE\nWater vapour"
   },
   {
     "objectID": "Slides/Lecture7.html#anthropogenic-enhanced-gases",
     "href": "Slides/Lecture7.html#anthropogenic-enhanced-gases",
-    "title": "Atmospheric Environments",
+    "title": "Radiation Budget of Planet Earth",
     "section": "Anthropogenic enhanced gases",
-    "text": "Anthropogenic enhanced gases\n\n\nWhich greenhouse gas have humans not increased globally over the last 150?\n\n\n\n\n\nTable 6: CAPTION\n\n\nX0\nX1\n\n\n\n\nA\nMethane\n\n\nB\nNitrous oxide\n\n\nC\nCarbon dioxide\n\n\nD\nArgon\n\n\n\n\n\n\n\n\n\n\n\n\n\nArgon isn’t even a GHG"
+    "text": "Anthropogenic enhanced gases\n\n\nWhich greenhouse gas have humans not increased globally over the last 150?\n\n\n\n\n\nTable 5: CAPTION\n\n\nX0\nX1\n\n\n\n\nA\nMethane\n\n\nB\nNitrous oxide\n\n\nC\nCarbon dioxide\n\n\nD\nArgon\n\n\n\n\n\n\n\n\n\n\n\n\n\nArgon isn’t even a GHG"
   },
   {
     "objectID": "Slides/Lecture7.html#a-more-realistic-energy-balance-of-earth",
     "href": "Slides/Lecture7.html#a-more-realistic-energy-balance-of-earth",
-    "title": "Atmospheric Environments",
+    "title": "Radiation Budget of Planet Earth",
     "section": "A more realistic energy balance of Earth",
     "text": "A more realistic energy balance of Earth\n\n\nMagnitudes from Kiehl and Trenberth (1997, Bull. Am. Met. Soc.) in IPCC 2001."
   },
   {
     "objectID": "Slides/Lecture7.html#confirm-there-is-no-net-gain-or-loss-for-earth",
     "href": "Slides/Lecture7.html#confirm-there-is-no-net-gain-or-loss-for-earth",
-    "title": "Atmospheric Environments",
+    "title": "Radiation Budget of Planet Earth",
     "section": "Confirm – there is no net gain or loss for Earth",
     "text": "Confirm – there is no net gain or loss for Earth\n\n\n\nshort-wave input = short-wave loss + long-wave loss\n       100%                                   31%                      69%\n  342 W m-2                           107 W m-2              235 W m-2"
   },
   {
     "objectID": "Slides/Lecture7.html#the-atmosphere-appears-to-be-in-radiative-deficit-and-should-be-cooling-and-the-surface-in-radiative-surplus-and-should-be-warming-from-year-to-year.-why-is-this-not-happening",
     "href": "Slides/Lecture7.html#the-atmosphere-appears-to-be-in-radiative-deficit-and-should-be-cooling-and-the-surface-in-radiative-surplus-and-should-be-warming-from-year-to-year.-why-is-this-not-happening",
-    "title": "Atmospheric Environments",
+    "title": "Radiation Budget of Planet Earth",
     "section": "The Atmosphere appears to be in radiative deficit (and should be cooling) and the surface in radiative surplus (and should be warming) from year-to-year. Why is this not happening?",
     "text": "The Atmosphere appears to be in radiative deficit (and should be cooling) and the surface in radiative surplus (and should be warming) from year-to-year. Why is this not happening?\n\n\nThe energy balance of the Atmosphere\n\nall-wave = Short-wave - net long-wave\nnet loss absorption loss\n -30%                20%                               +102% -57% -95% = -50%"
   },
   {
     "objectID": "Slides/Lecture7.html#a-more-realistic-energy-balance-of-earth-1",
     "href": "Slides/Lecture7.html#a-more-realistic-energy-balance-of-earth-1",
-    "title": "Atmospheric Environments",
+    "title": "Radiation Budget of Planet Earth",
     "section": "A more realistic energy balance of Earth",
     "text": "A more realistic energy balance of Earth\n\n\nMagnitudes from Kiehl and Trenberth (1997, Bull. Am. Met. Soc.) in IPCC 2001."
   },
   {
     "objectID": "Slides/Lecture7.html#a-more-realistic-energy-balance-of-earth-2",
     "href": "Slides/Lecture7.html#a-more-realistic-energy-balance-of-earth-2",
-    "title": "Atmospheric Environments",
+    "title": "Radiation Budget of Planet Earth",
     "section": "A more realistic energy balance of Earth",
     "text": "A more realistic energy balance of Earth\n\n\nMagnitudes from Kiehl and Trenberth (1997, Bull. Am. Met. Soc.) in IPCC 2001."
   },
   {
     "objectID": "Slides/Lecture7.html#the-atmosphere-appears-to-be-in-radiative-deficit-and-should-be-cooling-and-the-surface-in-radiative-surplus-and-should-be-warming-from-year-to-year-not-happening-because-the-earths-surplus-is-convected-by-sensible-and-latent-heat-flux-into-the-atmosphere-and-offsets-the-radiative-imbalance-i.e.-the-whole-energy-balance-is-involved-not-just-radiation.",
     "href": "Slides/Lecture7.html#the-atmosphere-appears-to-be-in-radiative-deficit-and-should-be-cooling-and-the-surface-in-radiative-surplus-and-should-be-warming-from-year-to-year-not-happening-because-the-earths-surplus-is-convected-by-sensible-and-latent-heat-flux-into-the-atmosphere-and-offsets-the-radiative-imbalance-i.e.-the-whole-energy-balance-is-involved-not-just-radiation.",
-    "title": "Atmospheric Environments",
+    "title": "Radiation Budget of Planet Earth",
     "section": "The Atmosphere appears to be in radiative deficit (and should be cooling) and the surface in radiative surplus (and should be warming) from year-to-year – not happening because the Earth’s surplus is convected by sensible and latent heat flux into the Atmosphere and offsets the radiative imbalance, i.e. the whole energy balance is involved not just radiation.",
     "text": "The Atmosphere appears to be in radiative deficit (and should be cooling) and the surface in radiative surplus (and should be warming) from year-to-year – not happening because the Earth’s surplus is convected by sensible and latent heat flux into the Atmosphere and offsets the radiative imbalance, i.e. the whole energy balance is involved not just radiation.\n\n\n\nAtmosphere: QAtmos = QH Atmos + QE Atmos Surface: QSurface = QH Surface + QE Surface\n                                 -30%        +22%       +8%                              +30%        -22%         -8%\n\nThe energy balance of the Atmosphere\n\nall-wave = Short-wave - net long-wave\nnet loss absorption loss\n -30%                20%                               +102% -57% -95% = -50%"
   },
   {
     "objectID": "Slides/Lecture7.html#all-wave-short-wave---net-long-wave",
     "href": "Slides/Lecture7.html#all-wave-short-wave---net-long-wave",
-    "title": "Atmospheric Environments",
+    "title": "Radiation Budget of Planet Earth",
     "section": "all-wave = Short-wave - net long-wave",
-    "text": "all-wave = Short-wave - net long-wave\nnet loss absorption loss -30% 20% +102% -57% -95% = -50% \u000bThe Atmosphere appears to be in radiative deficit (and should be cooling) and the surface in radiative surplus (and should be warming) from year-to-year – not happening because the Earth’s surplus is convected by sensible and latent heat flux into the Atmosphere and offsets the radiative imbalance, i.e. the whole energy balance is involved not just radiation\n\n\n\nAtmosphere: QAtmos = QH Atmos + QE Atmos Surface: QSurface = QH Surface + QE Surface\n                                 -30%        +22%       +8%                              +30%        -22%         -8%\n\nThe energy balance of the Atmosphere"
+    "text": "all-wave = Short-wave - net long-wave\nnet loss absorption loss -30% 20% +102% -57% -95% = -50% The Atmosphere appears to be in radiative deficit (and should be cooling) and the surface in radiative surplus (and should be warming) from year-to-year – not happening because the Earth’s surplus is convected by sensible and latent heat flux into the Atmosphere and offsets the radiative imbalance, i.e. the whole energy balance is involved not just radiation\n\n\n\nAtmosphere: QAtmos = QH Atmos + QE Atmos Surface: QSurface = QH Surface + QE Surface\n                                 -30%        +22%       +8%                              +30%        -22%         -8%\n\nThe energy balance of the Atmosphere"
   },
   {
     "objectID": "Slides/Lecture7.html#a-more-realistic-energy-balance-of-earth-3",
     "href": "Slides/Lecture7.html#a-more-realistic-energy-balance-of-earth-3",
-    "title": "Atmospheric Environments",
+    "title": "Radiation Budget of Planet Earth",
     "section": "A more realistic energy balance of Earth",
     "text": "A more realistic energy balance of Earth\n\n\n\n0 = short-wave - long-wave + long-wave - convective\n            absorption                                      emission             absorption        transfer            \n                49%                                               114%                     94%                29% \n             168 W m-2                                       390 W m-2          324 W m-2       102 W m-2\n\n\nMagnitudes from Kiehl and Trenberth (1997, Bull. Am. Met. Soc.) in IPCC 2001."
   },
   {
     "objectID": "Slides/Lecture7.html#test-your-knowledge-3",
     "href": "Slides/Lecture7.html#test-your-knowledge-3",
-    "title": "Atmospheric Environments",
+    "title": "Radiation Budget of Planet Earth",
     "section": "Test your knowledge",
-    "text": "Test your knowledge\n\n\nSo how is a latent heat flux into the Atmosphere realized?\n\n\n\n\n\nTable 7: CAPTION\n\n\n\n\n\n\nX0\nX1\n\n\n\n\nA\nWater is vaporized by radiation at the surface and condenses in clouds - there it warms up air.\n\n\nB\nRadiation absorption at surface warms up air near surface - warm air rises and transports extra heat to higher layers of atmosphere.\n\n\nC\nRain releases its geopotential energy as raindrops splash at the surface - they warm up the surface more than the atmosphere.\n\n\n\n\n\n\n\n\n\nAnswer is A"
+    "text": "Test your knowledge\n\n\nSo how is a latent heat flux into the Atmosphere realized?\n\n\n\n\n\nTable 6: CAPTION\n\n\n\n\n\n\nX0\nX1\n\n\n\n\nA\nWater is vaporized by radiation at the surface and condenses in clouds - there it warms up air.\n\n\nB\nRadiation absorption at surface warms up air near surface - warm air rises and transports extra heat to higher layers of atmosphere.\n\n\nC\nRain releases its geopotential energy as raindrops splash at the surface - they warm up the surface more than the atmosphere.\n\n\n\n\n\n\n\n\n\nAnswer is A"
   },
   {
     "objectID": "Slides/Lecture7.html#take-home-points",
     "href": "Slides/Lecture7.html#take-home-points",
-    "title": "Atmospheric Environments",
+    "title": "Radiation Budget of Planet Earth",
     "section": "Take home points",
     "text": "Take home points\n\n\n\nThe planet is using (absorbing) only 69% of the solar radiation received. The planetary albedo is 31%.\nWithout atmosphere it would be –19ºC on Earth on average. The natural greenhouse effect is worth +34 K.\nThe atmosphere is in a radiative deficit and the Planet’s surface shows a radiative surplus. Sensible and latent heat fluxes offset the radiative imbalance, i.e. transport energy from the surface into the atmosphere.\n\n\n\n\n\n\n\nBack to Homepage"
   },
@@ -824,6 +824,83 @@
     "title": "Energy",
     "section": "Summary",
     "text": "Summary\n\nEnergy and mass transfer mechanisms\n\nRadiation, conduction, and convection\n\nUnderstand the concept of energy and mass balances and their connectivity\n\nNeither mass nor energy can be created or destroyed by any ordinary means, just converted from one form to another.\n\n\n\n\nBack to Homepage"
+  },
+  {
+    "objectID": "Quizzes/Quiz1.html",
+    "href": "Quizzes/Quiz1.html",
+    "title": "Lecture Quiz 1",
+    "section": "",
+    "text": "Latent heat of vaporization is the\n\nThe energy input required to evaporate a unit mass (e.g., 1 kg) of liquid water.\nThe energy input required to condense a unit mass (e.g., 1 kg) of water vapor.\nThe energy input required to melt a unit mass (e.g., 1 kg) of ice.\nThe energy released when a unit mass (e.g., 1 kg) of liquid water evaporates.\nThe energy input required to evaporate a unit mass (e.g., 1 kg) of liquid water or ice.\n\nAnswer:\n\nThe energy input required to evaporate a unit mass (e.g., 1 kg) of liquid water."
+  },
+  {
+    "objectID": "Quizzes/Quiz1.html#section",
+    "href": "Quizzes/Quiz1.html#section",
+    "title": "Lecture Quiz 1",
+    "section": "",
+    "text": "Latent heat of vaporization is the\n\nThe energy input required to evaporate a unit mass (e.g., 1 kg) of liquid water.\nThe energy input required to condense a unit mass (e.g., 1 kg) of water vapor.\nThe energy input required to melt a unit mass (e.g., 1 kg) of ice.\nThe energy released when a unit mass (e.g., 1 kg) of liquid water evaporates.\nThe energy input required to evaporate a unit mass (e.g., 1 kg) of liquid water or ice.\n\nAnswer:\n\nThe energy input required to evaporate a unit mass (e.g., 1 kg) of liquid water."
+  },
+  {
+    "objectID": "Quizzes/Quiz1.html#section-1",
+    "href": "Quizzes/Quiz1.html#section-1",
+    "title": "Lecture Quiz 1",
+    "section": "2",
+    "text": "2\nWhich of the following is correct? Short-wave radiation makes up the majority of radiation emitted by:\n\nAll of the answers below\nThe moon\nEarth’s atmosphere and surface\nPlants\nThe sun\n\nAnswer:\n\nThe sun"
+  },
+  {
+    "objectID": "Quizzes/Quiz1.html#section-2",
+    "href": "Quizzes/Quiz1.html#section-2",
+    "title": "Lecture Quiz 1",
+    "section": "3",
+    "text": "3\nSpectral absorptivity of a green leaf is:\n\nGreater for photosynthetically active radiation (PAR) than near infrared radiation (NIR)\nGreater for \\(\\lambda\\) = 0.55 \\(\\mu m\\) (green light) than \\(\\lambda\\) = 0.45 \\(\\mu m\\) (blue light)\nLower for \\(\\lambda\\) = 0.55 \\(\\mu m\\) (green light) than \\(\\lambda\\) = 0.45 \\(\\mu m\\) (blue light)\nBoth a and b are correct\nBoth a and c are correct\n\nAnswer:\n\nBoth a and c are correct"
+  },
+  {
+    "objectID": "Quizzes/Quiz1.html#section-3",
+    "href": "Quizzes/Quiz1.html#section-3",
+    "title": "Lecture Quiz 1",
+    "section": "4",
+    "text": "4\nGenerally:\n\nThe albedo of snow covered surfaces is lower than that of vegetated surfaces\nThe albedo of snow covered surfaces is approximately equal to that of vegetated surfaces\nThe albedo of snow covered surfaces is higher than that of vegetated surfaces\nThe albedo of snow covered surfaces is higher than that of vegetated surfaces but the reflectivity is not\nThe albedo of snow covered surfaces is higher than that of vegetated surfaces and so is the absorptivity\n\nAnswer:\n\nThe albedo of snow covered surfaces is higher than that of vegetated surfaces"
+  },
+  {
+    "objectID": "Quizzes/Quiz1.html#section-4",
+    "href": "Quizzes/Quiz1.html#section-4",
+    "title": "Lecture Quiz 1",
+    "section": "5",
+    "text": "5\nWhich of the below are valid units for radiant flux density\n\nW m \\(^{-2}\\)\nJ s \\(^{-1}\\) m \\(^{-2}\\)\nW kg \\(^{-1}\\)\nJ m \\(^{-2}\\)\n\nis the most concise options, but b. would work as well\n\n\nAnswer:\n\n\nis the most concise options, but b. would work as well"
+  },
+  {
+    "objectID": "Quizzes/Quiz1.html#section-5",
+    "href": "Quizzes/Quiz1.html#section-5",
+    "title": "Lecture Quiz 1",
+    "section": "6",
+    "text": "6\nAccording to ____ law, the wavelength of maximum intensity will get _____ as an object gets _____.\n\nStefan-Boltzmann’s Law, longer, hotter\nWein’s Law, longer, hotter\nStefan-Boltzmann’s Law, shorter, hotter\nWein’s Law, shorter, cooler\nWein’s Law, shorter, hotter\n\nAnswer:\n\nWein’s Law, shorter, hotter"
+  },
+  {
+    "objectID": "Quizzes/Quiz1.html#section-6",
+    "href": "Quizzes/Quiz1.html#section-6",
+    "title": "Lecture Quiz 1",
+    "section": "7",
+    "text": "7\nBeer’s Law modified for plant canopies (i.e., \\(R_u = R_0 e^{\\frac{-GL\\Omega}{cos\\theta}}\\)) predicts that:\n\nSolar irradiance decreases linearly as a function of depth into the canopy\nSolar irradiance at the forest floor is higher for canopies with a higher cumulative leaf area index (L).\nSolar irradiance at the forest floor is constant throughout the day\nNone of the above are true\nAll of the above (excluding d.) are true\n\nAnswer:\n\nNone of the above are true."
+  },
+  {
+    "objectID": "Quizzes/Quiz1.html#section-7",
+    "href": "Quizzes/Quiz1.html#section-7",
+    "title": "Lecture Quiz 1",
+    "section": "8",
+    "text": "8\nThe cosine law of illumination describes:\n\nHow the solar beam is spread across the Earth’s surface as a function of the solar zenith (\\(\\theta\\)).\nHow solar irradiance on the Earth’s surface increases as you move closer to the North (or South) Pole.\nHow solar irradiance on the Earth’s surface decreases at solar noon relative to other times of day.\nBoth a & b are True\nBoth a & c are True\n\nAnswer:\n\nHow the solar beam is spread across the Earth’s surface as a function of the solar zenith (\\(\\theta\\))."
+  },
+  {
+    "objectID": "Quizzes/Quiz1.html#section-8",
+    "href": "Quizzes/Quiz1.html#section-8",
+    "title": "Lecture Quiz 1",
+    "section": "9",
+    "text": "9\nWhich of the following statements are true:\n\nHeat can do work, temperature cannot.\nHeat usually flows from a hotter object to a colder object, but it can do the opposite if there is enough of an energy imbalance between the two objects.\nHeat is an quantification of the total energy present in an object, temperature is a relative measure of our perception of heat.\nBoth a & c are True\na, b, & c are all True\n\nAnswer:\n\nBoth a & c are True"
+  },
+  {
+    "objectID": "Quizzes/Quiz1.html#section-9",
+    "href": "Quizzes/Quiz1.html#section-9",
+    "title": "Lecture Quiz 1",
+    "section": "10",
+    "text": "10\nThe table below shows measurements of incoming and outgoing short-wave radiation above an aspen forest on a sunny late-winter day in northern Alberta. Which of the statements bellow best describes these data.\n\n\n\n\n\nTime\n\\(SW \\downarrow\\) W m\\(^{-2}\\)\nSW \\(\\uparrow\\) W m\\(^{-2}\\)\nAlbedo\n\n\n\n\n10:00\n200\n150\n0.75\n\n\n11:00\n250\n190\n0.76\n\n\n12:00\n300\n234\n0.78\n\n\n13:00\n250\n190\n0.76\n\n\n14:00\n200\n150\n0.75\n\n\n\n\n\n\nThese data appear incorrect; outgoing short-wave radiation should be higher than incoming short-wave radiation\nThese data appear incorrect; the albedo should be lower in winter because there sun angle is lower\nThese data appear reasonable for a forest with some snow-cover in late winter\nThese data appear incorrect; \\(SW \\downarrow\\) W m \\(^{-2}\\) and \\(SW \\uparrow\\) W m \\(^{-2}\\) look plausible but it appears that albedo not calculated correctly\nThese data appear reasonable for a forest without snow-cover in late winter\n\nAnswer:\n\nThese data appear reasonable for a forest with some snow-cover in winter"
   },
   {
     "objectID": "Labs.html",
@@ -1848,18 +1925,18 @@
     "text": "Test your knowledge (iClicker)\nIs long-wave radiation emitted by the surface generally greater than that emitted by the atmosphere?\n\nHint: is the surface usually warmer than the atmosphere?\n\nA - Yes\nB - No"
   },
   {
-    "objectID": "Slides/Lecture6.html#diurnal-course-clear-skies",
-    "href": "Slides/Lecture6.html#diurnal-course-clear-skies",
+    "objectID": "Slides/Lecture6.html#clear-skies",
+    "href": "Slides/Lecture6.html#clear-skies",
     "title": "Long-wave Radiation",
-    "section": "Diurnal Course: Clear Skies",
-    "text": "Diurnal Course: Clear Skies\n\n\n\n\n\n\n\nFigure 1: Incoming and Outgoing Long-wave Radiation at Burns Bog July 21st, 2023.\n\n\n\n\n\n\n\\(LW\\downarrow\\) = 340 w m-2\n\\(LW\\uparrow\\) = 416 w m-2\n\n\n\\(LW^* = LW\\downarrow - LW\\uparrow\\) = -76 w m-2"
+    "section": "Clear Skies",
+    "text": "Clear Skies\n\n\n\n\n\n\n\nFigure 1: Incoming and Outgoing Long-wave Radiation at Burns Bog July 21st, 2023.\n\n\n\n\n\n\n\\(LW\\downarrow\\) = 340 w m-2\n\\(LW\\uparrow\\) = 416 w m-2\n\n\n\\(LW^* = LW\\downarrow - LW\\uparrow\\) = -76 w m-2"
   },
   {
-    "objectID": "Slides/Lecture6.html#diurnal-course-cloudy-skies-iclicker",
-    "href": "Slides/Lecture6.html#diurnal-course-cloudy-skies-iclicker",
+    "objectID": "Slides/Lecture6.html#cloudy-skies-iclicker",
+    "href": "Slides/Lecture6.html#cloudy-skies-iclicker",
     "title": "Long-wave Radiation",
-    "section": "Diurnal Course: Cloudy Skies (iClicker)",
-    "text": "Diurnal Course: Cloudy Skies (iClicker)\n\n\n\n\n\n\n\nFigure 2: Incoming and Outgoing Long-wave Radiation at Burns Bog December 27th, 2022.\n\n\n\n\n\n\n\\(LW\\downarrow\\) = 348 w m-2\n\\(LW\\uparrow\\) = 349 w m-2\n\n\n\\(LW^*\\) = ?"
+    "section": "Cloudy Skies (iClicker)",
+    "text": "Cloudy Skies (iClicker)\n\n\n\n\n\n\n\nFigure 2: Incoming and Outgoing Long-wave Radiation at Burns Bog December 27th, 2022.\n\n\n\n\n\n\n\\(LW\\downarrow\\) = 348 w m-2\n\\(LW\\uparrow\\) = 349 w m-2\n\n\n\\(LW^*\\) = ?"
   },
   {
     "objectID": "Slides/Lecture6.html#which-day-was-warmer-iclicker",
