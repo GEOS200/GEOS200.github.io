@@ -28,6 +28,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -332,8 +397,8 @@
 </div>
 
 </section>
-<section id="section" class="slide level2">
-<h2></h2>
+<section class="slide level2">
+
 <div class="columns">
 <div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
@@ -412,9 +477,15 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="equilibrium-bare-blackbody" class="slide level2">
-<h2>Equilibrium (Bare blackbody)</h2>
-<p>Only relevant energy exchange between Earth and Space is radiation. Earth absorbs incoming <span class="math inline">\(SW\)</span> from the Sun, and Earth emits <span class="math inline">\(LW\)</span> to Space.</p>
+<section id="partitioning-the-solar-constant" class="slide level2">
+<h2>Partitioning the Solar Constant</h2>
+<p><span class="math inline">\(I_0 \approx\)</span> 1361 W m<sup>-2</sup>.</p>
+
+<img data-src="images/Lecture7/Partition.png" class="r-stretch"></section>
+<section id="equilibrium" class="slide level2">
+<h2>Equilibrium</h2>
+<p>Earth absorbs incoming <span class="math inline">\(SW\)</span> from the Sun</p>
+<p>Earth emits <span class="math inline">\(LW\)</span> to Space</p>
 <div class="columns">
 <div class="column" style="width:60%;">
 <ul>
@@ -430,8 +501,8 @@
 </div>
 </section>
 <section id="planetary-albedo" class="slide level2">
-<h2>Planetary albedo</h2>
-<p>Not all <span class="math inline">\(SW\)</span>$ that reaches a planet from sun is absorbed. Some fraction is reflected back to Space.</p>
+<h2>Planetary Albedo</h2>
+<p>Not all <span class="math inline">\(SW\)</span> that reaches a planet from sun is absorbed, a fraction is reflected back to Space.</p>
 <div class="columns">
 <div class="column" style="width:60%;">
 <ul>
@@ -450,119 +521,108 @@
 </div>
 </div>
 </section>
-<section id="absorption-of-short-wave-radiation-on-earth" class="slide level2">
-<h2>Absorption of short-wave radiation on Earth</h2>
+<section id="planetary-absorption" class="slide level2">
+<h2>Planetary Absorption</h2>
+<p>Transmission through Earth is impossible; <span class="math inline">\(a = 1 - \alpha\)</span></p>
 <div class="columns">
-<div class="column" style="width:50%;">
+<div class="column" style="width:65%;">
 <ul>
-<li>22% of the solar radiation is reflected by the atmosphere (clouds, droplets, aerosols) and 9% is reflected by the surface.</li>
-<li>There is no transmission through the Planet’s interior possible, so short-wave absorption must be 1 - α = 100 - 31% = 69%, of those 20% are absorbed in the atmosphere and 49% at the surface.</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture7/7_2.png"></p>
-</div>
-</div>
-</section>
-<section id="absorption-of-short-wave-radiation-on-earth-1" class="slide level2">
-<h2>Absorption of short-wave radiation on Earth</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
+<li>Earth’s Albedo: <span class="math inline">\(\alpha \approx 31\%\)</span>
 <ul>
-<li>22% of the solar radiation is reflected by the atmosphere (clouds, droplets, aerosols) and 9% is reflected by the surface.</li>
-<li>There is no transmission through the Planet’s interior possible, so short-wave absorption must be 1 - α = 100 - 31% = 69%, of those 20% are absorbed in the atmosphere and 49% at the surface.</li>
+<li>Atmosphere: 22%
+<ul>
+<li>Clouds, droplets, aerosols</li>
+</ul></li>
+<li>Surface: 9%</li>
+</ul></li>
+<li><span class="math inline">\(a = 100\% - 31\% = 69\%\)</span>
+<ul>
+<li>Atmosphere: 20%</li>
+<li>Surface: 49%</li>
+</ul></li>
 </ul>
-</div><div class="column" style="width:50%;">
+</div><div class="column" style="width:35%;">
 <p><img data-src="images/Lecture7/8_2.png"></p>
 </div>
 </div>
 </section>
-<section id="absorbed-flux-w" class="slide level2">
-<h2>Absorbed flux (W)</h2>
+<section id="planetary-absorption-1" class="slide level2">
+<h2>Planetary Absorption</h2>
+<p>Recall the solar constant <span class="math inline">\(I_0\)</span>: the radiant flux density at the top of the atmosphere perpendicular to the solar beam.</p>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p>Planetary albedo</p>
-<p>Solar constant (W m-2)</p>
-<p>Silhouette area of Earth [disk] (m2)</p>
-<p>Calculating planetary absorption</p>
-<p>This flux density is projected over the silhouette area A* of Earth (corresponds to a disk of same diameter as the sphere).</p>
+<div class="column" style="width:65%;">
 <ul>
-<li>In lecture 4 we introduced the solar constant I0 as the radiant flux density at the top of the atmosphere normal to the solar beam.</li>
+<li><span class="math inline">\(SW\)</span> Flux into the Earth (<span class="math inline">\(F_{in}\)</span>) in W is:</li>
 </ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture7/9_11.png"></p>
+<p><span id="eq-Planetary-Absorption"><span class="math display">\[
+F_{in} = A^*(1-\alpha)I_0
+\qquad(1)\]</span></span></p>
+<ul>
+<li><span class="math inline">\(I_0\)</span> (W m<sup>-2</sup>) projected over Earth’s silhouette area (<span class="math inline">\(A^* = \pi r^{2}\)</span>) in m<sup>2</sup>
+<ul>
+<li>Adjusted for <span class="math inline">\(\alpha\)</span></li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:35%;">
 <p><img data-src="images/Lecture7/9_12.png"></p>
 </div>
 </div>
-<aside class="notes">
-<p>Tophat question</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
 </section>
-<section id="w" class="slide level2">
-<h2>(W)</h2>
+<section id="planetary-emission" class="slide level2">
+<h2>Planetary Emission</h2>
+<p>Planetary <span class="math inline">\(LW\)</span> emission (<span class="math inline">\(F_{out}\)</span>) in W can be approximated as a function of temperature using Stefan-Boltzmann.</p>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p>(m2)</p>
-<p>(W m-2)</p>
-<p>To get the total emitted flux Fout (in W) we can simply multiply the average flux density Iout by A, the Earth’s surface:</p>
-<p>(W m-2)</p>
-<ol start="11" type="A">
-<li></li>
-</ol>
-<p>Long-wave budget.</p>
-<p>5.67 x 10-8 (W m-2 K-4)</p>
+<div class="column" style="width:65%;">
+<p><span id="eq-Planetary-Emission"><span class="math display">\[
+F_{out} = AI_{out} = 4\pi R^{2}\epsilon\sigma_b T^4
+\qquad(2)\]</span></span></p>
 <ul>
-<li>If Earth would be a bare blackbody we could relate the long-wave average flux density emitted by one square meter of Earth’s surface Iout (in W m-2) to the average surface temperature TS using the Stefan Boltzmann Law:</li>
+<li>Average flux density (<span class="math inline">\(I_{out}\)</span>) in W m<sup>-2</sup> times Earth’s surface area
+<ul>
+<li><span class="math inline">\(\epsilon_{surface} \approx 0.95\)</span></li>
+<li><span class="math inline">\(T \approx 288 K\)</span></li>
+</ul></li>
 </ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture7/10_5.png"></p>
-<p><img data-src="images/Lecture7/10_11.png"></p>
+</div><div class="column" style="width:35%;">
 <p><img data-src="images/Lecture7/10_17.png"></p>
 </div>
 </div>
 </section>
-<section id="hence" class="slide level2">
-<h2>hence:</h2>
+<section id="surface-emissivity" class="slide level2">
+<h2>Surface Emissivity</h2>
+<p><img data-src="images/Lecture7/Emissivity.jpg" style="width:80.0%"></p>
+<p><img data-src="images/Lecture7/ASTER-GED-Death-Valley-Color-Bar.png" style="width:50.0%"></p>
+</section>
+<section id="simplified-energy-balance" class="slide level2">
+<h2>Simplified Energy Balance:</h2>
+<p>Let us assume an equilibrium state, i.e.&nbsp;<span class="math inline">\(F_{in} = F_{out}\)</span></p>
+<p><span id="eq-Planetary-Energy-Balance"><span class="math display">\[
+\pi R^{2} (1-\alpha)I_0 = 4\pi R^{2}\epsilon\sigma_b T^4
+\qquad(3)\]</span></span></p>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p>Silhouette area of Earth [disk] (m2)</p>
-<p>Solar constant (W m-2)</p>
-<p>Surface area of Earth <a href="m2">sphere</a></p>
-<p>Energy fluxes in W (=J s-1)</p>
-<p>Average surface temperature (K)</p>
-<p>A simple energy balance for ‘bare’ Earth</p>
-<p>Let us assume an equilibrium state, i.e.&nbsp;that net incoming shortwave and outgoing longwave fluxes are balanced:</p>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture7/11_1.png"></p>
-<p><img data-src="images/Lecture7/11_2.png"></p>
-<p><img data-src="images/Lecture7/11_16.png"></p>
-<p><img data-src="images/Lecture7/11_17.png"></p>
+<div class="column" style="width:60%;">
+<ul>
+<li>Outgoing <span class="math inline">\(LW\)</span> will balance out incoming <span class="math inline">\(SW\)</span></li>
+</ul>
+</div><div class="column" style="width:40%;">
 <p><img data-src="images/Lecture7/11_18.png"></p>
 </div>
 </div>
 </section>
-<section id="earth-radius" class="slide level2">
-<h2>Earth radius</h2>
+<section id="geometric-considerations" class="slide level2">
+<h2>Geometric Considerations</h2>
+<p>Earth receives <span class="math inline">\(SW\)</span> only from ‘one side’; but emits <span class="math inline">\(LW\)</span> in all directions to space.</p>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p>We see, Earth receives short-wave radiation only from ‘one side’ at a given time, but emits long-wave radiation in all directions to space.</p>
-<p>Earth radius</p>
-<p>Geometric considerations</p>
-<p>Earth emits at a flux density of Iout from the whole surface area A of Earth - a sphere</p>
-<p>The solar constant I0 is distributed over the silhouette area A* of Earth - corresponding to a disk</p>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture7/12_2.png"></p>
+<div class="column" style="width:60%;">
+<ul>
+<li><p><span class="math inline">\(F_{in}\)</span> is distributed over the silhouette area <span class="math inline">\(A^*\)</span> of Earth</p></li>
+<li><p><span class="math inline">\(F_{out}\)</span> is from the whole surface area <span class="math inline">\(A\)</span> of Earth</p>
+<ul>
+<li><em>Note</em> <span class="math inline">\(F_{out}\)</span> is not constant across space</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:40%;">
 <p><img data-src="images/Lecture7/12_8.png"></p>
-<p><img data-src="images/Lecture7/12_9.png"></p>
 </div>
 </div>
 <aside class="notes">
@@ -579,81 +639,34 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="is-this-value-realistic" class="slide level2">
-<h2>Is this value realistic?</h2>
+<section id="earths-surface-temperature-iclicker" class="slide level2">
+<h2>Earth’s Surface Temperature (iClicker)</h2>
+<p>The area terms (<span class="math inline">\(\pi R^2\)</span>) in <a href="#/simplified-energy-balance">Equation&nbsp;3</a> cancel on both sides; leaving us with</p>
+<p><span class="math inline">\((1-\alpha)I_0 = 4\epsilon\sigma_b T^4\)</span></p>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p>Solving for the Earth’s surface temperature (the only unknown variable):</p>
-<p>Solving for Earth’s surface temperature</p>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture7/13_5.png"></p>
-<p><img data-src="images/Lecture7/13_6.png"></p>
-<p><img data-src="images/Lecture7/13_10.png"></p>
-<p><img data-src="images/Lecture7/13_12.png"></p>
-<p><img data-src="images/Lecture7/13_13.png"></p>
-</div>
-</div>
-<aside class="notes">
-<p>Tophat question Using the values for planet Earth, i.e.&nbsp;α = 0.31, I0 = 1367 W m-2 we will get an average surface temperature value of 254 K = -19ºC.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="test-your-knowledge" class="slide level2">
-<h2>Test your knowledge</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>What temperature did you predict for the planet?</p>
-</div><div class="column" style="width:50%;">
+<div class="column" style="width:60%;">
+<p>Rearranging to solve for T:</p>
+<p><span class="math inline">\(T = \sqrt[4]{\frac{(1-\alpha)I_0}{4\epsilon\sigma_b}}\)</span></p>
 <div class="cell">
-<div class="cell-output-display">
-<div id="tbl-14_2">
-<table>
-<caption>Table&nbsp;1: CAPTION</caption>
-<thead>
-<tr class="header">
-<th style="text-align: left;">X0</th>
-<th style="text-align: left;">X1</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">A</td>
-<td style="text-align: left;">+254ºC</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">B</td>
-<td style="text-align: left;">+15ºC</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">C</td>
-<td style="text-align: left;">-19ºC</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">D</td>
-<td style="text-align: left;">Something different</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">E</td>
-<td style="text-align: left;">I was unable to perform this calculation</td>
-</tr>
-</tbody>
-</table>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>I0 <span class="ot">&lt;-</span> <span class="dv">1361</span> <span class="co"># W m-2</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a>alpha <span class="ot">&lt;-</span> <span class="fl">0.31</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a>epsilon <span class="ot">&lt;-</span> <span class="fl">0.95</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a>sigma <span class="ot">&lt;-</span> <span class="fl">5.67e-8</span> <span class="co"># W m-2 K-4</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a></span>
+<span id="cb1-6"><a href="#cb1-6"></a>T <span class="ot">=</span> ((<span class="dv">1</span><span class="sc">-</span>alpha)<span class="sc">*</span>I0<span class="sc">/</span>(<span class="dv">4</span><span class="sc">*</span>epsilon<span class="sc">*</span>sigma))<span class="sc">**</span>.<span class="dv">25</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div>
-</div>
+<p><span class="math inline">\(T \approx\)</span> 256.9 K</p>
+</div><div class="column" style="width:40%;">
+<p>Is this value realistic?</p>
+<ul>
+<li><p>A - Yes</p></li>
+<li><p>B - No (underestimate)</p></li>
+<li><p>C - No (overestimate)</p></li>
+</ul>
 </div>
 </div>
 <aside class="notes">
-<p>Answer is C</p>
+
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -668,159 +681,157 @@
 </section>
 <section id="effect-of-an-atmosphere" class="slide level2">
 <h2>Effect of an atmosphere</h2>
-<div class="columns">
-<div class="column" style="width:100%;">
-<p>Earth’s known average surface temperature is +15ºC. Our calculation results in a too cold surface temperature because we have not incorporated the atmosphere i.e.&nbsp;the effects of greenhouse gases.</p>
+<p>Earth’s known average surface temperature is 15 ° C.</p>
 <ul>
-<li>The calculation gives us an idea, that without an atmosphere it would be –19ºC on Earth on average. Thus the effect of the atmosphere (natural greenhouse effect) must be worth +34 K!</li>
-<li>Side note - Humans have changed greenhouse gas concentrations - we call this enhanced greenhouse effect (which will be discussed in future lectures).</li>
+<li><p>The previous calculation underestimates surface temperature because we have not incorporated the atmosphere i.e.&nbsp;the effects of greenhouse gases.</p></li>
+<li><p>Without an atmosphere it would be <span class="math inline">\(T \approx\)</span> -16.2 ° C on Earth on average.</p>
+<ul>
+<li>The effect of the atmosphere (natural greenhouse effect) must be worth <span class="math inline">\(\approx\)</span> 31.2 K!</li>
+</ul></li>
 </ul>
-</div><div class="column" style="width:0%;">
-
-</div>
-</div>
-<aside class="notes">
-<p>This approach would work for a bare planet or Moon, but is not an accurate representation of Earth’s energy balance.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
 </section>
 <section id="the-greenhouse-effect" class="slide level2">
 <h2>The ‘Greenhouse Effect’</h2>
-<div class="columns">
-<div class="column" style="width:100%;">
+<p>The atmosphere has an insulating effect on planet earth.</p>
 <ul>
-<li>The atmosphere is somewhat like greenhouse glass - transparent to short-wave but opaque to long-wave radiation - the term ‘Greenhouse effect’.</li>
-<li>The Earth is warmer than it would be without this ‘trapping’ effect of the atmosphere. The long-wave process is due to absorption of L↑ and re-emission due to εa and Ta, not to reflection. Note, a portion of re-emission returns to Earth.</li>
+<li>The greenhouse gas effect limits the <span class="math inline">\(\tau_{LW}\)</span> through the atmosphere
+<ul>
+<li>This effectively reduces Earth’s <span class="math inline">\(\epsilon_{LW}\)</span></li>
+<li>But how? Kirchhoff’s law states that <span class="math inline">\(\epsilon_{\lambda} = a_{\lambda}\)</span>?</li>
+</ul></li>
+<li>The <span class="math inline">\(a_{LW}\)</span> is re-emitted <strong>in all directions</strong>
+<ul>
+<li>i.e., it is recycled</li>
+<li>Loss of energy from the surface slowed</li>
+</ul></li>
 </ul>
-</div><div class="column" style="width:0%;">
-
+</section>
+<section id="the-greenhouse-effect-1" class="slide level2">
+<h2>The ‘Greenhouse Effect’</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>The atmosphere is a selective absorber (and emitter) of radiation.</p>
+<ul>
+<li>The transmission window allows some <span class="math inline">\(LW\)</span> through</li>
+<li>Outside of that window, little <span class="math inline">\(LW\)</span> escapes!</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/Lecture3/13_0.png"></p>
 </div>
 </div>
 </section>
-<section id="photo-a.-christen" class="slide level2">
-<h2>Photo: A. Christen</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>‘Greenhouse’ is not a good analogy because warming in greenhouses largely due to reduction in convective heat transfer by shelter, and to a lesser extent due to increased downward long-wave emission from the glass.</p>
-<ul>
-<li>Technical note: Why the term ‘Greenhouse Effect’</li>
-<li>is not a good analogy</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture7/17_4.jpg"></p>
-<p><img data-src="images/Lecture7/17_5.png"></p>
+<section id="the-effective-emissivity" class="slide level2">
+<h2>The Effective Emissivity</h2>
+<p>Since we know the mean surface temperature of the earth, we can instead rearrange <a href="#/simplified-energy-balance">Equation&nbsp;3</a> to solve for <span class="math inline">\(\epsilon\)</span>:</p>
+<p><span class="math inline">\(\epsilon= \frac{(1-\alpha)I_0}{4\sigma_bT^4}\)</span></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>I0 <span class="ot">&lt;-</span> <span class="dv">1361</span> <span class="co"># W m-2</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a>alpha <span class="ot">&lt;-</span> <span class="fl">0.31</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a>T_s <span class="ot">&lt;-</span> <span class="dv">15</span> <span class="co"># C</span></span>
+<span id="cb2-4"><a href="#cb2-4"></a>sigma <span class="ot">&lt;-</span> <span class="fl">5.67e-8</span> <span class="co"># W m-2 K-4</span></span>
+<span id="cb2-5"><a href="#cb2-5"></a></span>
+<span id="cb2-6"><a href="#cb2-6"></a>T <span class="ot">=</span> T_s <span class="sc">+</span> <span class="fl">273.15</span></span>
+<span id="cb2-7"><a href="#cb2-7"></a></span>
+<span id="cb2-8"><a href="#cb2-8"></a>epsilon <span class="ot">=</span> (<span class="dv">1</span><span class="sc">-</span>alpha)<span class="sc">*</span>I0<span class="sc">/</span>(<span class="dv">4</span><span class="sc">*</span>sigma<span class="sc">*</span>T<span class="sc">**</span><span class="dv">4</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div>
+<p>The atmosphere reduces the global value of <span class="math inline">\(\epsilon\)</span> to <span class="math inline">\(\approx\)</span> 0.601</p>
 </section>
-<section id="includes-other-trace-gases-halocarbons-not-shown" class="slide level2">
-<h2>* Includes other trace gases (halocarbons, not shown)</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
+<section id="radiative-output" class="slide level2">
+<h2>Radiative Output</h2>
+<p>Since we now have a reasonable estimate of <span class="math inline">\(\epsilon\)</span>, we estimate planetary emissions following <a href="#/planetary-emission">Equation&nbsp;2</a>.</p>
+<p><span class="math inline">\(F_{out} = AI_{out} = 4\pi R^{2}\epsilon\sigma_b T^4\)</span></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>I_out <span class="ot">=</span> epsilon<span class="sc">*</span>sigma<span class="sc">*</span>T<span class="sc">**</span><span class="dv">4</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a></span>
+<span id="cb3-3"><a href="#cb3-3"></a>R <span class="ot">=</span> <span class="fl">6378.1</span> <span class="co"># km</span></span>
+<span id="cb3-4"><a href="#cb3-4"></a>R <span class="ot">=</span> R <span class="sc">*</span> <span class="dv">1000</span></span>
+<span id="cb3-5"><a href="#cb3-5"></a></span>
+<span id="cb3-6"><a href="#cb3-6"></a>F_out <span class="ot">=</span> <span class="dv">4</span><span class="sc">*</span>pi<span class="sc">*</span>R<span class="sc">**</span><span class="dv">2</span><span class="sc">*</span>I_out</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>The average flux density of <span class="math inline">\(LW\)</span> at the top of Earth’s atmosphere <span class="math inline">\(I_{out} \approx\)</span> 234.8 W m<sup>-2</sup></p>
+<p>The average flux of <span class="math inline">\(LW\)</span> from Earth <span class="math inline">\(F_{out} \approx\)</span> 1.2001616^{17} W</p>
+</section>
+<section id="radiative-output-iclicker" class="slide level2">
+<h2>Radiative Output (iClicker)</h2>
+<p>Our estimated value of <span class="math inline">\(I_{out}\)</span> (234.8 W m<sup>-2</sup>) <span class="math inline">\(\neq I_0\)</span> (1361 W m<sup>-2</sup>).</p>
+<p>What accounts for the discrepancy?</p>
+<p>A - <span class="math inline">\(I_0\)</span> is distributed across Earth’s silhouette area <span class="math inline">\(A^*\)</span>; we need distribute <span class="math inline">\(I_0\)</span> across Earth’s total surface area <span class="math inline">\(A\)</span></p>
+<p>B - A portion of <span class="math inline">\(I_0\)</span> is never absorbed by the Earth due to the planetary Albedo (<span class="math inline">\(\alpha \approx 0.31\)</span>)</p>
+<p>C - Both A &amp; B</p>
+</section>
+<section id="radiative-output-1" class="slide level2">
+<h2>Radiative Output</h2>
+<p>If we account for both, we’ll get the average flux density at the top of Earth’s Atmosphere across the <strong>Full</strong> electromagnetic spectrum.</p>
 <ul>
-<li>Important greenhouse gases</li>
-<li>and their human-caused increase in the last 150 years</li>
+<li><p><span class="math inline">\(\bar{I_0} = \frac{I_0}{4}\)</span> = 340.25 W m<sup>-2</sup></p></li>
+<li><p><span class="math inline">\(\bar{I_0}= \bar{I_0} \alpha + I_{out}\)</span> = 105.4775 W m<sup>-2</sup> + 234.7725 W m<sup>-2</sup></p></li>
 </ul>
-</div><div class="column" style="width:50%;">
+</section>
+<section id="important-greenhouse-gases" class="slide level2 smaller">
+<h2>Important greenhouse gases</h2>
 <div class="cell">
 <div class="cell-output-display">
 <div id="tbl-18_2">
 <table>
-<caption>Table&nbsp;2: CAPTION</caption>
+<caption>Table&nbsp;1: Includes other trace gases (halocarbons, not shown)</caption>
 <colgroup>
-<col style="width: 21%">
-<col style="width: 23%">
-<col style="width: 16%">
-<col style="width: 13%">
+<col style="width: 19%">
 <col style="width: 24%">
+<col style="width: 14%">
+<col style="width: 13%">
+<col style="width: 27%">
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;">X0</th>
-<th style="text-align: left;">X1</th>
-<th style="text-align: left;">X2</th>
-<th style="text-align: left;">X3</th>
-<th style="text-align: left;">X4</th>
+<th style="text-align: left;">Compound</th>
+<th style="text-align: left;">Abundance pre industrial</th>
+<th style="text-align: left;">Abundance 2011</th>
+<th style="text-align: left;">Lifetime yr</th>
+<th style="text-align: left;">Effect of human enhancement</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">Compound</td>
-<td style="text-align: left;">Abundance (pre-industrial)</td>
-<td style="text-align: left;">Abundance</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">(2011/12)</td>
-<td style="text-align: left;">Lifetime  (yr)</td>
-<td style="text-align: left;">Effect of human enhancement</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Water vapour</td>
-<td style="text-align: left;">variable</td>
-<td style="text-align: left;">variable</td>
+<td style="text-align: left;">H<sub>2</sub>O</td>
+<td style="text-align: left;">Variable</td>
+<td style="text-align: left;">Variable</td>
 <td style="text-align: left;">0.03</td>
 <td style="text-align: left;">—</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Carbon dioxide CO2</td>
+<td style="text-align: left;">CO<sub>2</sub></td>
 <td style="text-align: left;">~280 ppm</td>
 <td style="text-align: left;">393 ppm</td>
 <td style="text-align: left;">5 - 200</td>
 <td style="text-align: left;">1.85 W&nbsp;m-2</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Methane CH4</td>
+<td style="text-align: left;">CH<sub>4</sub></td>
 <td style="text-align: left;">~700</td>
 <td style="text-align: left;">1874 ppb</td>
 <td style="text-align: left;">12</td>
 <td style="text-align: left;">0.51 W&nbsp;m-2</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Nitrous oxide N2O</td>
+<td style="text-align: left;">N<sub>2</sub>O</td>
 <td style="text-align: left;">~270</td>
 <td style="text-align: left;">324 ppb</td>
 <td style="text-align: left;">114</td>
 <td style="text-align: left;">0.18 W&nbsp;m-2</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Ozone O3</td>
+<td style="text-align: left;">Ozone O<sub>3</sub></td>
 <td style="text-align: left;">25 ppm</td>
 <td style="text-align: left;">34 ppm</td>
 <td style="text-align: left;">days</td>
 <td style="text-align: left;">0.35 W&nbsp;m-2</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">CFC-11 CFCl3</td>
-<td style="text-align: left;">0</td>
-<td style="text-align: left;">268 ppb</td>
-<td style="text-align: left;">45</td>
+<td style="text-align: left;">Misc. Trace Gasses</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
 <td style="text-align: left;">0.34 W&nbsp;m-2 *</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">CFC-12 CF2Cl2</td>
-<td style="text-align: left;">0</td>
-<td style="text-align: left;">531 ppb</td>
-<td style="text-align: left;">100</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Sulfur hexafluoride SF6</td>
-<td style="text-align: left;">0</td>
-<td style="text-align: left;">7.5 ppt</td>
-<td style="text-align: left;">3200</td>
-<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">All</td>
@@ -834,353 +845,99 @@
 </div>
 </div>
 </div>
-</div>
-</div>
-<aside class="notes">
-
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
 </section>
-<section id="test-your-knowledge-1" class="slide level2">
-<h2>Test your knowledge</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
+<section id="test-your-knowledge-iclicker" class="slide level2">
+<h2>Test your knowledge (iClicker)</h2>
 <p>What is the most important greenhouse gas contributing to the natural greenhouse effect on our planet?</p>
-</div><div class="column" style="width:50%;">
-<div class="cell">
-<div class="cell-output-display">
-<div id="tbl-19_2">
-<table>
-<caption>Table&nbsp;3: CAPTION</caption>
-<thead>
-<tr class="header">
-<th style="text-align: left;">X0</th>
-<th style="text-align: left;">X1</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">A</td>
-<td style="text-align: left;">Ozone</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">B</td>
-<td style="text-align: left;">Carbon dioxide</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">C</td>
-<td style="text-align: left;">Methane</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">D</td>
-<td style="text-align: left;">Oxygen</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">E</td>
-<td style="text-align: left;">Water vapour</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-</div>
-</div>
-<aside class="notes">
-
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
+<ul>
+<li>A Ozone</li>
+<li>B Carbon dioxide</li>
+<li>C Methane</li>
+<li>D Oxygen</li>
+<li>E Water vapour</li>
+</ul>
 </section>
-<section id="test-your-knowledge-2" class="slide level2">
+<section id="test-your-knowledge" class="slide level2">
 <h2>Test your knowledge</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
 <p>What is the most important greenhouse gas contributing to the natural greenhouse effect on our planet?</p>
-</div><div class="column" style="width:50%;">
-<div class="cell">
-<div class="cell-output-display">
-<div id="tbl-20_2">
-<table>
-<caption>Table&nbsp;4: CAPTION</caption>
-<thead>
-<tr class="header">
-<th style="text-align: left;">X0</th>
-<th style="text-align: left;">X1</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">A</td>
-<td style="text-align: left;">Ozone</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">B</td>
-<td style="text-align: left;">Carbon dioxide</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">C</td>
-<td style="text-align: left;">Methane</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">D</td>
-<td style="text-align: left;">Oxygen</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">E</td>
-<td style="text-align: left;">Water vapour</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-<p><img data-src="images/Lecture7/20_3.jpg"></p>
-</div>
-</div>
-<aside class="notes">
 
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="anthropogenic-enhanced-gases" class="slide level2">
-<h2>Anthropogenic enhanced gases</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>Which greenhouse gas have humans not increased globally over the last 150?</p>
-</div><div class="column" style="width:50%;">
-<div class="cell">
-<div class="cell-output-display">
-<div id="tbl-21_2">
-<table>
-<caption>Table&nbsp;5: CAPTION</caption>
-<thead>
-<tr class="header">
-<th style="text-align: left;">X0</th>
-<th style="text-align: left;">X1</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">A</td>
-<td style="text-align: left;">Methane</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">B</td>
-<td style="text-align: left;">Nitrous oxide</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">C</td>
-<td style="text-align: left;">Carbon dioxide</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">D</td>
-<td style="text-align: left;">Argon</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-</div>
-</div>
-<aside class="notes">
-<p>Argon isn’t even a GHG</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="a-more-realistic-energy-balance-of-earth" class="slide level2">
-<h2>A more realistic energy balance of Earth</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>Magnitudes from Kiehl and Trenberth (1997, Bull. Am. Met. Soc.) in IPCC 2001.</p>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture7/22_2.png"></p>
-</div>
-</div>
-</section>
-<section id="confirm-there-is-no-net-gain-or-loss-for-earth" class="slide level2">
-<h2>Confirm – there is no net gain or loss for Earth</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li>short-wave input = short-wave loss + long-wave loss</li>
-<li><pre><code>       100%                                   31%                      69%</code></pre></li>
-<li><pre><code>  342 W m-2                           107 W m-2              235 W m-2</code></pre></li>
-<li></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture7/23_2.png"></p>
-</div>
-</div>
-</section>
-<section id="the-atmosphere-appears-to-be-in-radiative-deficit-and-should-be-cooling-and-the-surface-in-radiative-surplus-and-should-be-warming-from-year-to-year.-why-is-this-not-happening" class="slide level2">
-<h2>The Atmosphere appears to be in radiative deficit (and should be cooling) and the surface in radiative surplus (and should be warming) from year-to-year. Why is this not happening?</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>The energy balance of the Atmosphere</p>
-<ul>
-<li>all-wave = Short-wave - net long-wave</li>
-<li>net loss absorption loss</li>
-<li><pre><code> -30%                20%                               +102% -57% -95% = -50%</code></pre></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture7/24_0.png"></p>
-</div>
-</div>
-</section>
-<section id="a-more-realistic-energy-balance-of-earth-1" class="slide level2">
-<h2>A more realistic energy balance of Earth</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>Magnitudes from Kiehl and Trenberth (1997, Bull. Am. Met. Soc.) in IPCC 2001.</p>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture7/25_2.png"></p>
-</div>
-</div>
-</section>
-<section id="a-more-realistic-energy-balance-of-earth-2" class="slide level2">
-<h2>A more realistic energy balance of Earth</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>Magnitudes from Kiehl and Trenberth (1997, Bull. Am. Met. Soc.) in IPCC 2001.</p>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture7/26_2.png"></p>
-</div>
-</div>
-</section>
-<section id="the-atmosphere-appears-to-be-in-radiative-deficit-and-should-be-cooling-and-the-surface-in-radiative-surplus-and-should-be-warming-from-year-to-year-not-happening-because-the-earths-surplus-is-convected-by-sensible-and-latent-heat-flux-into-the-atmosphere-and-offsets-the-radiative-imbalance-i.e.-the-whole-energy-balance-is-involved-not-just-radiation." class="slide level2">
-<h2>The Atmosphere appears to be in radiative deficit (and should be cooling) and the surface in radiative surplus (and should be warming) from year-to-year – not happening because the Earth’s surplus is convected by sensible and latent heat flux into the Atmosphere and offsets the radiative imbalance, i.e.&nbsp;the whole energy balance is involved not just radiation.</h2>
-<div class="columns">
-<div class="column" style="width:100%;">
-<ul>
-<li>Atmosphere: Q<em>Atmos = QH Atmos + QE Atmos Surface: Q</em>Surface = QH Surface + QE Surface</li>
-<li><pre><code>                                 -30%        +22%       +8%                              +30%        -22%         -8%</code></pre></li>
-</ul>
-<p>The energy balance of the Atmosphere</p>
-<ul>
-<li>all-wave = Short-wave - net long-wave</li>
-<li>net loss absorption loss</li>
-<li><pre><code> -30%                20%                               +102% -57% -95% = -50%</code></pre></li>
-</ul>
-</div><div class="column" style="width:0%;">
+<img data-src="images/Lecture7/20_3.jpg" class="r-stretch"></section>
+<section id="a-more-realistic-energy-balance" class="slide level2">
+<h2>A more Realistic Energy Balance</h2>
 
-</div>
-</div>
-</section>
-<section id="all-wave-short-wave---net-long-wave" class="slide level2">
-<h2>all-wave = Short-wave - net long-wave</h2>
-<p>net loss absorption loss -30% 20% +102% -57% -95% = -50% The Atmosphere appears to be in radiative deficit (and should be cooling) and the surface in radiative surplus (and should be warming) from year-to-year – not happening because the Earth’s surplus is convected by sensible and latent heat flux into the Atmosphere and offsets the radiative imbalance, i.e.&nbsp;the whole energy balance is involved not just radiation</p>
+<img data-src="images/Lecture7/MeanEnergyBalance.png" class="r-stretch quarto-figure-center"><p class="caption">Magnitudes from Kiehl and Trenberth (1997, Bull. Am. Met. Soc.) in IPCC 2001.</p></section>
+<section id="there-is-no-net-gain-or-loss-for-earth" class="slide level2">
+<h2>There is no net gain or loss for Earth</h2>
 <div class="columns">
-<div class="column" style="width:100%;">
+<div class="column" style="width:50%;">
+<p><span class="math inline">\(SW\)</span> input (100%) = <span class="math inline">\(SW\)</span> loss (31%) + <span class="math inline">\(LW\)</span> (69%):</p>
 <ul>
-<li>Atmosphere: Q<em>Atmos = QH Atmos + QE Atmos Surface: Q</em>Surface = QH Surface + QE Surface</li>
-<li><pre><code>                                 -30%        +22%       +8%                              +30%        -22%         -8%</code></pre></li>
+<li><span class="math inline">\(I_{0} = \bar{I_0} \alpha + I_{out}\)</span></li>
 </ul>
-<p>The energy balance of the Atmosphere</p>
-</div><div class="column" style="width:0%;">
-
+</div><div class="column">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/Lecture7/MeanEnergyBalance.png"></p>
+<figcaption>Magnitudes from Kiehl and Trenberth (1997, Bull. Am. Met. Soc.) in IPCC 2001.</figcaption>
+</figure>
+</div>
 </div>
 </div>
 </section>
-<section id="a-more-realistic-energy-balance-of-earth-3" class="slide level2">
-<h2>A more realistic energy balance of Earth</h2>
+<section id="energy-balance-of-the-atmosphere" class="slide level2">
+<h2>Energy Balance of the Atmosphere</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <ul>
-<li>0 = short-wave - long-wave + long-wave - convective</li>
-<li><pre><code>            absorption                                      emission             absorption        transfer            </code></pre></li>
-<li><pre><code>                49%                                               114%                     94%                29% </code></pre></li>
-<li><pre><code>             168 W m-2                                       390 W m-2          324 W m-2       102 W m-2</code></pre></li>
-<li></li>
+<li>The Atmosphere appears to be in radiative deficit
+<ul>
+<li>Should be cooling</li>
+</ul></li>
+<li>The surface in radiative surplus
+<ul>
+<li>Should be warming</li>
+</ul></li>
+<li>Why is this not happening?</li>
 </ul>
-<p>Magnitudes from Kiehl and Trenberth (1997, Bull. Am. Met. Soc.) in IPCC 2001.</p>
 </div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture7/29_2.png"></p>
-<p><img data-src="images/Lecture7/29_3.gif"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/Lecture7/MeanEnergyBalance.png"></p>
+<figcaption>Magnitudes from Kiehl and Trenberth (1997, Bull. Am. Met. Soc.) in IPCC 2001.</figcaption>
+</figure>
+</div>
 </div>
 </div>
 </section>
-<section id="test-your-knowledge-3" class="slide level2">
-<h2>Test your knowledge</h2>
+<section id="energy-balance-of-the-atmosphere-1" class="slide level2">
+<h2>Energy Balance of the Atmosphere</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>So how is a latent heat flux into the Atmosphere realized?</p>
+<ul>
+<li>Earth’s surplus is convected by sensible and latent heat flux into the Atmosphere
+<ul>
+<li>Offsets the radiative imbalance,</li>
+<li>i.e.&nbsp;the <strong>whole</strong> energy balance is involved not <em>just</em> radiation</li>
+</ul></li>
+</ul>
 </div><div class="column" style="width:50%;">
-<div class="cell">
-<div class="cell-output-display">
-<div id="tbl-30_2">
-<table>
-<caption>Table&nbsp;6: CAPTION</caption>
-<colgroup>
-<col style="width: 2%">
-<col style="width: 97%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">X0</th>
-<th style="text-align: left;">X1</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">A</td>
-<td style="text-align: left;">Water is vaporized by radiation at the surface and condenses in clouds - there it warms up air.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">B</td>
-<td style="text-align: left;">Radiation absorption at surface warms up air near surface - warm air rises and transports extra heat to higher layers of atmosphere.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">C</td>
-<td style="text-align: left;">Rain releases its geopotential energy as raindrops splash at the surface - they warm up the surface more than the atmosphere.</td>
-</tr>
-</tbody>
-</table>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/Lecture7/MeanEnergyBalance.png"></p>
+<figcaption>Magnitudes from Kiehl and Trenberth (1997, Bull. Am. Met. Soc.) in IPCC 2001.</figcaption>
+</figure>
 </div>
 </div>
 </div>
-</div>
-</div>
+</section>
+<section id="latent-heat-flux-iclicker" class="slide level2">
+<h2>Latent Heat Flux (iClicker)</h2>
+<p>How is a latent heat flux into the Atmosphere realized?</p>
+<ul>
+<li>A - Water is vaporized by radiation at the surface and condenses in clouds - there it warms up air.</li>
+<li>B - Radiation absorption at surface warms up air near surface - warm air rises and transports extra heat to higher layers of atmosphere.</li>
+<li>C - Rain releases its geopotential energy as raindrops splash at the surface - they warm up the surface more than the atmosphere.</li>
+</ul>
 <aside class="notes">
 <p>Answer is A</p>
 <style type="text/css">
@@ -1201,7 +958,7 @@
 <div class="column" style="width:100%;">
 <ul>
 <li>The planet is using (absorbing) only 69% of the solar radiation received. The planetary albedo is 31%.</li>
-<li>Without atmosphere it would be –19ºC on Earth on average. The natural greenhouse effect is worth +34 K.</li>
+<li>Without atmosphere it would be -16.5579764$° C on Earth on average. The natural greenhouse effect is worth -31.2 K.</li>
 <li>The atmosphere is in a radiative deficit and the Planet’s surface shows a radiative surplus. Sensible and latent heat fluxes offset the radiative imbalance, i.e.&nbsp;transport energy from the surface into the atmosphere.</li>
 </ul>
 </div><div class="column" style="width:0%;">
