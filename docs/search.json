@@ -84,11 +84,11 @@
     "text": "Cold and Snowy\n\n\n\n\n\n\n\nFigure 3: Radiation data from the Burns Bog Flux Station.\n\n\n\n\nTotal for the day:\n\\(SW^* =\\) 1 \\(MJ m^{-2}\\)\n\\(LW^* =\\) -3 \\(MJ m^{-2}\\)\n\\(R_n =\\) -2 \\(MJ m^{-2}\\)"
   },
   {
-    "objectID": "Slides/Lecture8.html#snowmelt-in-spring",
-    "href": "Slides/Lecture8.html#snowmelt-in-spring",
+    "objectID": "Slides/Lecture8.html#during-snowmelt",
+    "href": "Slides/Lecture8.html#during-snowmelt",
     "title": "Net radiation of land surfaces",
-    "section": "Snowmelt in “Spring”",
-    "text": "Snowmelt in “Spring”\n\n\n\n\n\n\n\nFigure 4: Radiation data from the Burns Bog Flux Station.\n\n\n\n\nTotal for the day:\n\\(SW^* =\\) 1 \\(MJ m^{-2}\\)\n\\(LW^* =\\) 1 \\(MJ m^{-2}\\)\n\\(R_n =\\) 1 \\(MJ m^{-2}\\)"
+    "section": "During Snowmelt",
+    "text": "During Snowmelt\n\n\n\n\n\n\n\nFigure 4: Radiation data from the Burns Bog Flux Station.\n\n\n\n\nTotal for the day:\n\\(SW^* =\\) 1 \\(MJ m^{-2}\\)\n\\(LW^* =\\) 1 \\(MJ m^{-2}\\)\n\\(R_n =\\) 1 \\(MJ m^{-2}\\)"
   },
   {
     "objectID": "Slides/Lecture8.html#units-iclicker",
@@ -116,18 +116,18 @@
     "href": "Slides/Lecture8.html#summary-of-our-interpretation",
     "title": "Net radiation of land surfaces",
     "section": "Summary of our interpretation",
-    "text": "Summary of our interpretation\n\nThere is a strong correlation between \\(R_n\\) and \\(SW\\downarrow\\), i.e. the daily \\(R_n\\) variation is mainly driven by the solar cycle\n\nDaytime \\(SW^*\\) is only partly offset by \\(LW^*\\); at night \\(LW^*\\) is unopposed\n\nCloud cover increases \\(LW^*\\), snow cover reduces \\(SW^*\\)\nWhen the ground is warmer than the air \\(LW^*\\) is more negative\n\nIf the air is warmer than the ground, \\(LW^*\\) can be positive"
+    "text": "Summary of our interpretation\n\nStrong correlation between \\(R_n\\) and \\(SW\\downarrow\\)\n\nDaily \\(R_n\\) variation is mainly driven by the solar cycle\nDaytime \\(SW^*\\) is only partly offset by \\(LW^*\\)\nAt night \\(LW^*\\) is unopposed\n\nCloud cover increases \\(LW^*\\), snow cover reduces \\(SW^*\\)\n\\(LW^*\\) is more negative when ground is warmer than the air\n\n\\(LW^*\\) can be positive if the air is warmer than the ground"
+  },
+  {
+    "objectID": "Slides/Lecture8.html#effect-of-landcover",
+    "href": "Slides/Lecture8.html#effect-of-landcover",
+    "title": "Net radiation of land surfaces",
+    "section": "Effect of Landcover",
+    "text": "Effect of Landcover\n\n\n\n\n\nMature Forest\n\n\n\n\n\n\nClearcut"
   },
   {
     "objectID": "Slides/Lecture8.html#landcover-effects",
     "href": "Slides/Lecture8.html#landcover-effects",
-    "title": "Net radiation of land surfaces",
-    "section": "Landcover Effects",
-    "text": "Landcover Effects"
-  },
-  {
-    "objectID": "Slides/Lecture8.html#landcover-effects-1",
-    "href": "Slides/Lecture8.html#landcover-effects-1",
     "title": "Net radiation of land surfaces",
     "section": "Landcover Effects",
     "text": "Landcover Effects\n\n\n\nMeasurements show that \\(R_n\\) in a clearcut is \\(\\approx\\) 24% less than in uncut forest.\n\nWhy? \\(SW \\downarrow\\) and \\(LW \\downarrow\\) didn’t change drastically, but \\(SW \\uparrow\\) and \\(LW \\uparrow\\) did.\n\n\n\n\n\n\n\n\nFigure 7: Radiation balance of a forest and a clearcut."
@@ -158,7 +158,7 @@
     "href": "Slides/Lecture8.html#nighttime-cooling",
     "title": "Net radiation of land surfaces",
     "section": "Nighttime Cooling",
-    "text": "Nighttime Cooling\nNighttime surface cooling is only controlled by \\(LW\\):\n\\(SW \\downarrow = 0\\) ; \\(R_n = \\epsilon LW \\downarrow - \\epsilon \\sigma_b T_s^4\\)\n\n\n\nThe \\(LW^*\\) is usually negative\n\nCloud has a large effect on \\(LW \\downarrow\\)\nCloudless nights have lowest \\(LW \\downarrow\\)\n\nmost negative \\(LW^*\\)\n\n\n\n\n\n\n\nFrost when surface cools below the dewpoint & freezing point"
+    "text": "Nighttime Cooling\nNighttime surface cooling is only controlled by \\(LW\\):\n\\(SW \\downarrow = 0\\)\n\\(R_n = \\epsilon LW \\downarrow - \\epsilon \\sigma_b T_s^4\\)\n\n\n\nThe \\(LW^*\\) is usually negative\n\nCloud has a large effect on \\(LW \\downarrow\\)\nCloudless nights have lowest \\(LW \\downarrow\\)\n\nMost negative \\(LW^*\\)\n\n\n\n\n\n\n\nFrost when surface cools below the dewpoint & freezing point"
   },
   {
     "objectID": "Slides/Lecture8.html#view-factor",
@@ -207,14 +207,14 @@
     "href": "Slides/Lecture8.html#why-is-this-important-1",
     "title": "Net radiation of land surfaces",
     "section": "Why is this important?",
-    "text": "Why is this important?\nThis study recommended strip clearcuts less than twice the stand height because minimum air temperature decreases with distance from stand edge.\n\n\n\nLow air temperatures (night frosts) can kill lodgepole pine seedlings during their germination period.\nSize of clearcut affects minimum temperatures near the soil surface\n\n\n\n\n\n\nSky view with distance from forest edge"
+    "text": "Why is this important?\nThis study recommended strip clearcuts &lt;2h (h = stand height) because \\(T_{min}\\) decreases with distance from stand edge.\n\n\n\nFrosts can kill lodgepole pine seedlings during their germination period.\nSize of clearcut affects minimum temperatures near the soil surface\n\n\n\n\n\n\nSky view with distance from forest edge"
   },
   {
     "objectID": "Slides/Lecture8.html#take-home-points",
     "href": "Slides/Lecture8.html#take-home-points",
     "title": "Net radiation of land surfaces",
     "section": "Take home points",
-    "text": "Take home points\n\nDistinguish between net shortwave (\\(SW^*\\)), net longwave (\\(LW^*\\)) and net all-wave radiation (\\(R_n\\)).\nThe magnitude of \\(R_n\\) is controlled by surface properties (albedo, surface temperature, emissivity)\nThe magnitude of \\(R_n\\) is further controlled by the surrounding 3D surface. The sky view factor is an important parameter that controls the magnitude of \\(LW^*\\)* during night.\nSurface properties and geometry can be modified to control surface climates.\n\n\n\nBack to Homepage"
+    "text": "Take home points\n\nDistinguish between net shortwave (\\(SW^*\\)), net longwave (\\(LW^*\\)) and net all-wave radiation (\\(R_n\\)).\nThe magnitude of \\(R_n\\) is controlled by surface properties:\n\nAlbedo, surface temperature, emissivity\n\nThe magnitude of \\(R_n\\) is also controlled by the surrounding 3D surface\n\nSky view influences \\(LW^*\\)* at night.\n\nSurface properties can be modified to control surface climates\n\n\n\nBack to Homepage"
   },
   {
     "objectID": "Slides/Lecture6.html#long-wave-radiation",
