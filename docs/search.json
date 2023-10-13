@@ -126,32 +126,39 @@
     "text": "Heat Capacity of Soils\n\nPorosity & saturation are the a dominant controls, mineral vs. organic is secondary"
   },
   {
+    "objectID": "Slides/Lecture9.html#soil-heat-flux",
+    "href": "Slides/Lecture9.html#soil-heat-flux",
+    "title": "Heat and temperature",
+    "section": "Soil Heat Flux",
+    "text": "Soil Heat Flux\nDescribes the transfer of heat through a volume of soil.\n\n\n\nIn Equation 3, the heat flux through a soil layer of depth \\(z\\), is proportional to the rate of soil temperature change (\\(\\Delta T_s\\)) of time \\(t\\) and the heat capacity (\\(C\\)) of the soil.\n\n\n\\[\n\\frac{H_G}{z} = C \\frac{\\Delta T_s}{t}\n\\qquad(3)\\]"
+  },
+  {
     "objectID": "Slides/Lecture9.html#heat-fluxes-and-thermal-effects",
     "href": "Slides/Lecture9.html#heat-fluxes-and-thermal-effects",
     "title": "Heat and temperature",
     "section": "Heat Fluxes and Thermal Effects",
-    "text": "Heat Fluxes and Thermal Effects\n\na. During day, positive heat flux warms the soil b. At night, negative heat flux cools the soil"
+    "text": "Heat Fluxes and Thermal Effects\nPositive indicates a surplus of energy at the surface being transferred downwards through the soil via conduction. Negative indicates a surplus at depth being transferred upwards through the soil via conduction.\n\na. During day, positive heat flux warms the soil b. At night, negative heat flux cools the soil"
+  },
+  {
+    "objectID": "Slides/Lecture9.html#heat-fluxes-and-net-radiation",
+    "href": "Slides/Lecture9.html#heat-fluxes-and-net-radiation",
+    "title": "Heat and temperature",
+    "section": "Heat Fluxes and Net Radiation",
+    "text": "Heat Fluxes and Net Radiation\n\\(H_g\\) will be correlated with \\(R_n\\), though its not a direct relationship, and the strength of the relationship will vary by site conditions.\n\nNet radiation (\\(R_n\\)) and soil heat flux (\\(H_g\\)) at the Burns Bog EC station, 2022"
   },
   {
     "objectID": "Slides/Lecture9.html#warming-cooling-rates",
     "href": "Slides/Lecture9.html#warming-cooling-rates",
     "title": "Heat and temperature",
     "section": "Warming / cooling rates",
-    "text": "Warming / cooling rates\nThe key that links heat flux to temperature change is heat capacity (C).\n\n\n\nEquation 3 relates the heat flux with over a layer \\(z\\), to the rate of temperature change of time \\(t\\).\n\n\n\\[\n\\frac{H_G}{z} = C \\frac{\\Delta T}{t}\n\\qquad(3)\\]"
+    "text": "Warming / cooling rates"
   },
   {
     "objectID": "Slides/Lecture9.html#warming-cooling-rates-1",
     "href": "Slides/Lecture9.html#warming-cooling-rates-1",
     "title": "Heat and temperature",
     "section": "Warming / cooling rates",
-    "text": "Warming / cooling rates"
-  },
-  {
-    "objectID": "Slides/Lecture9.html#warming-cooling-rates-2",
-    "href": "Slides/Lecture9.html#warming-cooling-rates-2",
-    "title": "Heat and temperature",
-    "section": "Warming / cooling rates",
-    "text": "Warming / cooling rates\nThe higher C, the smaller the rate of temperature change.\n\n\n\n\n\nA wet soil (high C) has a ‘conservative’ thermal climate (it responds slowly to heat input or output).\n\n\n\n\n\n\nA dry soil (low C) is becoming hot by day and cold by night."
+    "text": "Warming / cooling rates\nThe higher C, the smaller the rate of temperature change.\n\n\n\n\n\nA wet soil (high \\(C\\)) heats/cools slowly.\n\n\n\n\n\n\nA dry soil (low \\(C\\)) is heats/cools rapidly."
   },
   {
     "objectID": "Slides/Lecture9.html#test-your-knowledge-iclicker-1",
@@ -2377,7 +2384,7 @@
     "href": "Slides/Lecture8.html#why-is-this-important",
     "title": "Net radiation of land surfaces",
     "section": "Why is this important?",
-    "text": "Why is this important?\n\\(\\psi_{sky}\\) is a “weighting factor” expressing the relative importance of sky in the long-wave balance of an object (e.g., a seedling).\n\\[\nLW^* = \\psi_{sky}\\epsilon LW \\downarrow - (1-\\psi_{sky})\\epsilon \\sigma_b T_s^4\n\\qquad(6)\\]\n\n\n\nThe higher \\(\\psi_{sky}\\) the lower the \\(LW^*\\)$ of the seedling\n\nSky usually more than 30K colder than the ground"
+    "text": "Why is this important?\n\\(\\psi_{sky}\\) is a “weighting factor” expressing the relative importance of sky in the long-wave balance of an object (e.g., a seedling).\n\\[\nLW^* = \\psi_{sky}\\epsilon LW \\downarrow - (1-\\psi_{sky})\\epsilon \\sigma_b T_s^4\n\\qquad(6)\\]\n\n\n\nThe higher \\(\\psi_{sky}\\) the lower the \\(LW^*\\) of the seedling\n\nSky usually more than 30K colder than the ground"
   },
   {
     "objectID": "Slides/Lecture8.html#why-is-this-important-1",
