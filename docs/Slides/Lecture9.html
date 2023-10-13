@@ -10,7 +10,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.3.450">
 
-  <title>Atmospheric Environments - Energy</title>
+  <title>Atmospheric Environments - Heat and temperature</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -28,6 +28,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -333,8 +398,8 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Energy</h1>
-  <p class="subtitle">The ability to do work.</p>
+  <h1 class="title">Heat and temperature</h1>
+  <p class="subtitle">Distinct by related topics that are easy to mix up</p>
 
 <div class="quarto-title-authors">
 </div>
@@ -343,116 +408,96 @@
 <section id="learning-objectives" class="slide level2">
 <h2>Learning Objectives</h2>
 <ul>
-<li>Understand which forms of energy are important for driving the climate system.</li>
-<li>Explain the difference between heat and temperature.</li>
-<li>Describe the mechanisms by which energy is transported.</li>
-<li>Understand how we account for energy and mass conversions in the atmosphere.</li>
+<li>Understand the linkage between temperature and life.</li>
 </ul>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Describe what determines the temperature response to an energy input.</li>
+<li>Explain why soils warm and cool differently and how this is related to the role of water content.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/Lecture9/2_2.jpg"></p>
+<figcaption>Photo: A. Christen</figcaption>
+</figure>
+</div>
+</div>
+</div>
 </section>
-<section id="iclicker" class="slide level2">
-<h2>iClicker</h2>
-<p>We’ll try using I clicker today:</p>
+<section id="temperature-and-life-forms" class="slide level2">
+<h2>Temperature and life-forms</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
 <ul>
-<li>Use the join code: <strong>PXPZ</strong></li>
-<li>Or follow this link: https://join.iclicker.com/PXPZ</li>
+<li>Temperature has a major effect on various life forms.</li>
+<li>Temperature limits growth, reproduction and survival of a species.</li>
 </ul>
-<p>If these options don’t work, go to:</p>
-<ul>
-<li>student.iclicker.com</li>
-<li>Then search for Atmospheric Environments ## iClicker</li>
-</ul>
-<p>We’ll try using I clicker today:</p>
-<ul>
-<li>Use the join code: <strong>PXPZ</strong></li>
-<li>Or follow this link: https://join.iclicker.com/PXPZ</li>
-</ul>
-<p>If these options don’t work, go to:</p>
-<ul>
-<li>student.iclicker.com</li>
-<li>Then search for Atmospheric Environments</li>
-</ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/Lecture9/9_1.png"></p>
+<figcaption>Optimal temperature ranges for various lifforms</figcaption>
+</figure>
+</div>
+</div>
+</div>
 </section>
-<section id="which-forms-of-energy-are-important-in-the-atmosphere" class="slide level2">
-<h2>Which forms of energy are important in the atmosphere?</h2>
+<section id="temperature-and-plant-growth" class="slide level2">
+<h2>Temperature and plant growth</h2>
+<p>Surface and soil temperatures can be a risk for plants, hence there are several practices aimed to reduce heat or frost stress.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Here we look at the processes controlling soil temperatures to understand soil climates and design better practices for plant growth.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/Lecture9/10_3.gif"></p>
+<figcaption>Spruce seedlings in controlled temperature experiment</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="temperature-and-plant-growth-rate" class="slide level2">
+<h2>Temperature and plant growth rate</h2>
 
-<img data-src="images/Typhoon.jpg" class="r-stretch"></section>
-<section id="test-poll" class="slide level2">
-<h2>Test Poll</h2>
-<p>I am able to join and answer:</p>
+<img data-src="images/Lecture9/11_2.jpg" class="r-stretch"></section>
+<section id="soil-climates" class="slide level2">
+<h2>Soil climates</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Soil temperatures are controlled by available energy</p>
 <ul>
-<li><p>A - Yes</p></li>
-<li><p>B - No</p></li>
-</ul>
-</section>
-<section id="test-poll-1" class="slide level2">
-<h2>Test Poll</h2>
-<p>I am able to join and answer:</p>
+<li><p>Varies with latitude and proximity to the coast in BC</p></li>
+<li><p>Also influenced by topography, soil type, and moisture</p>
 <ul>
-<li><p>A - Yes</p></li>
-<li><p>B - No</p></li>
+<li>Abbotsford 11 °C<br>
+</li>
+<li>Prince George 6.4 °C</li>
+</ul></li>
 </ul>
+</div><div class="column" style="width:50%;">
+<div class="cell">
+<div id="fig-14_3" class="quarto-figure quarto-figure-center">
+<figure>
+<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-a5bdbf82867483671879" style="width:480px;height:384px;"></div>
+<script type="application/json" data-for="htmlwidget-a5bdbf82867483671879">{"x":{"visdat":{"67d04a674e8d":["function () ","plotlyVisDat"]},"cur_data":"67d04a674e8d","attrs":{"67d04a674e8d":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"name":"Abbotsford","type":"scatter","mode":"lines+markers","inherit":true},"67d04a674e8d.1":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"name":"Prince George","type":"scatter","mode":"lines+markers","inherit":true}},"layout":{"margin":{"b":50,"l":50,"t":50,"r":50,"pad":4},"yaxis":{"domain":[0,1],"automargin":true,"title":"<sup>&deg;<\/sup>C"},"xaxis":{"domain":[0,1],"automargin":true,"title":"Month"},"legend":{"x":0.050000000000000003,"y":1},"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[1,2,3,4,5.0999999999999996,6.0999999999999996,7.2000000000000002,8,9,10,11,12],"y":[3,4,6,10.5,15,18,19.5,18,15.5,11.5,7.5,4],"name":"Abbotsford","type":"scatter","mode":"lines+markers","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[1,2,3,4,5.0999999999999996,6.0999999999999996,7.2000000000000002,8,9,10,11,12],"y":[-1.5,-0.69999999999999996,0,4,10.5,15,16.300000000000001,14.699999999999999,11,6,1.5,-0.5],"name":"Prince George","type":"scatter","mode":"lines+markers","marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"line":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<figcaption>Figure&nbsp;1: Average soil temperature by month.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
 </section>
-<section id="forms-of-energy-in-the-atmosphere" class="slide level2">
-<h2>Forms of energy in the atmosphere</h2>
-<ul>
-<li><strong>Radiation</strong>: electromagnetic waves (e.g., sunlight)</li>
-<li><strong>Sensible heat</strong>: thermal energy we can feel (e.g., warm air, cold ice)</li>
-<li><strong>Latent heat</strong>: phase changes of a water (e.g., evaporation, condensation)</li>
-<li><strong>Chemical</strong> energy: bonds of atoms (e.g., photosynthesis)</li>
-<li><strong>Kinetic</strong>: from motion (e.g., winds)</li>
-<li><strong>Geopotential</strong>: position in gravitational field</li>
-</ul>
-<aside class="notes">
-<p>This is an important slide and worth memorizing. Remember “sensible heat” is heat that can be “sensed” or felt. We can measure sensible heat with a thermometer. Latent means “hidden” and therefore is associated with the energy used to change phases of water.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="heat-vs.-temperature" class="slide level2">
-<h2>Heat vs.&nbsp;Temperature</h2>
+<section id="recall---heat-vs.-temperature" class="slide level2">
+<h2>Recall - Heat vs.&nbsp;Temperature</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <p><strong>Heat</strong> is the thermal energy content of a body.</p>
-<ul>
-<li>Sum of kinetic and potential energy</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><strong>Temperature</strong> a (relative) measure of thermal energy.</p>
-<ul>
-<li>Average random kinetic energy
-<ul>
-<li>The ability of a body to transfer thermal energy</li>
-</ul></li>
-</ul>
-</div>
-</div>
-<aside class="notes">
-<p>The difference between HEAT and TEMPERATURE is important and a little subtle. To illustrate this, can you think of a situation where heat is added but temperature does not change?? Perhaps the one you know best is when water reaches boiling point in a pot on the stove - its temperature stays at 100oC but heat continues to be added. Note the K in the slide stands for temperature in Kelvins.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="heat-vs.-temperature-1" class="slide level2">
-<h2>Heat vs.&nbsp;Temperature</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Heat</strong> is the total thermal energy content of a body.</p>
 <ul>
 <li>Travels from hotter to colder objects</li>
 <li><strong>Can do work</strong></li>
@@ -467,284 +512,335 @@
 <ul>
 <li>Increases/decreases when heat is added/removed</li>
 <li><strong>Cannot do work</strong></li>
-</ul>
-</div>
-</div>
-</section>
-<section id="temperature-scales-compared" class="slide level2 smaller">
-<h2>Temperature scales compared</h2>
-<div class="columns">
-<div class="column" style="width:60%;">
-<p>Several scales have been invented:</p>
+<li>Expressed in Kelvin (K)
 <ul>
-<li><p>Fahrenheit, Celsius, Kelvin…</p></li>
-<li><p>According to <a href="../Resources.qmd#the-si-system">the SI system</a></p>
-<ul>
-<li>We should use Kelvin (K)</li>
-<li>or Celsius (°C)
-<ul>
-<li><em>For absolute temperatures only</em></li>
+<li>Or Celsius (C)</li>
 </ul></li>
-</ul></li>
-<li><p>Conversion:</p></li>
 </ul>
-<p><span id="eq-Kelvin"><span class="math display">\[
-T(K) = T(\deg C) + 273.15
-\qquad(1)\]</span></span></p>
-</div><div class="column" style="width:40%;">
-<p><img data-src="images/Lecture1/6_3.png" style="width:90.0%"></p>
-</div>
-</div>
-<aside class="notes">
-<p>Temperature scales have changed over time and really only developed in response to the ability to blow glass tubes (in Italy) in which some kind of thermally responsive liquid could be contained (e.g.&nbsp;mercury, alcohol). We will use the absolute temperature scale (K) a lot in this course. For example a sunny 20 C day in Vancouver would be 293.15 K</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="three-states-of-water" class="slide level2">
-<h2>Three States of Water</h2>
-
-<img data-src="images/PhaseChange.jpg" style="width:90.0%" class="r-stretch"><aside class="notes">
-<p>Here is an example of the three states of water: LIQUID, ICE, GAS (Vapour).</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="states-of-water-iclicker" class="slide level2">
-<h2>States of Water (iClicker)</h2>
-<p>Which of the following are <strong>not</strong> states of water? ## States of Water (iClicker)</p>
-<p>Which of the following are <strong>not</strong> states of water?</p>
-<ul>
-<li>A: Ice</li>
-<li>B: Liquid</li>
-<li>C: Vapor (gas)</li>
-<li>D: Air</li>
-<li>A: Ice</li>
-<li>B: Liquid</li>
-<li>C: Vapor (gas)</li>
-<li>D: Air</li>
-</ul>
-</section>
-<section id="state-changes-of-water" class="slide level2">
-<h2>State changes of water</h2>
-<p>&nbsp;<br>&nbsp;<br></p>
-<p>&nbsp;<br>&nbsp;<br></p>
-<div class="columns">
-<div class="column" style="width:0%;">
-
-</div><div class="column" style="width:100%;">
-<p><img data-src="images/Lecture1/8_2.png"></p>
-</div>
-</div>
-<aside class="notes">
-<p>The next 4 slides will show the changes of phase of water and the SIX processes that are possible. Also shown are the amounts of energy per kilogram of water associated with each phase change. The next 4 slides will show the changes of phase of water and the SIX processes that are possible. Also shown are the amounts of energy per kilogram of water associated with each phase change.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="state-changes-of-water-1" class="slide level2">
-<h2>State changes of water</h2>
-<p>&nbsp;<br>&nbsp;<br></p>
-<p>&nbsp;<br>&nbsp;<br></p>
-<div class="columns">
-<div class="column" style="width:0%;">
-
-</div><div class="column" style="width:100%;">
-<p><img data-src="images/Lecture1/9_2.png"></p>
 </div>
 </div>
 </section>
-<section id="latent-heat" class="slide level2">
-<h2>Latent Heat</h2>
-<p>&nbsp;<br>&nbsp;<br></p>
-<div class="columns">
-<div class="column" style="width:0%;">
-
-</div><div class="column" style="width:100%;">
-<p><img data-src="images/Lecture1/11_2.png"></p>
-</div>
-</div>
-<aside class="notes">
-<p>The main point here is that because energy is required to change phase we talk about this type of energy use as LATENT HEAT.NOTICE the large amounts of energy associated with Evaporation and Condensation, compared to melting and freezing. In evaporation larges amounts of heat are required and are the reason you feel cold (heat taken from your body) when water evaporates from your body after coming out of a swimming pool. Similarly, when water vapour condenses into a liquid, large amounts of heat are released into the atmosphere. This is of course a way for energy to be from the tropics to mid latitudes. The main point here is that because energy is required to change phase we talk about this type of energy use as LATENT HEAT.NOTICE the large amounts of energy associated with Evaporation and Condensation, compared to melting and freezing. In evaporation larges amounts of heat are required and are the reason you feel cold (heat taken from your body) when water evaporates from your body after coming out of a swimming pool. Similarly, when water vapour condenses into a liquid, large amounts of heat are released into the atmosphere. This is of course a way for energy to be from the tropics to mid latitudes.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="latent-heat-1" class="slide level2">
-<h2>Latent Heat</h2>
-<div class="columns">
-<div class="column" style="width:0%;">
-
-</div><div class="column" style="width:100%;">
-<p><img data-src="images/Lecture1/12_2.png"></p>
-</div>
-</div>
-</section>
-<section id="latent-heat-2" class="slide level2 smaller">
-<h2>Latent Heat</h2>
+<section id="heat-capacity" class="slide level2 smaller">
+<h2>Heat Capacity</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>The energy (<span class="math inline">\(kJ\: kg^{-1}\)</span>) required for water to change states varies with temperature.</p>
+<p>Heat capacity (<span class="math inline">\(C\)</span>) is the quantity of heat required to raise the temperature of a <strong>unit volume</strong> (e.g., 1 m<sup>-3</sup>) of a material 1 K.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/Lecture9/16_2.png"></p>
+<figcaption>Heat capacity is measured in J m<sup>-3</sup> K<sup>-1</sup></figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
 <div class="cell">
 <div class="cell-output-display">
-<div id="tbl-13_2">
+<div id="tbl-16_4">
 <table>
-<caption>Table&nbsp;1: Energy associated with phase changes of water at 0<span class="math inline">\(^{\circ}C\)</span></caption>
+<caption>Table&nbsp;1: Heat capacity of various substances</caption>
+<colgroup>
+<col style="width: 60%">
+<col style="width: 40%">
+</colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;">Phase change</th>
-<th style="text-align: left;">Value</th>
+<th style="text-align: left;">Material</th>
+<th style="text-align: right;">Heat capacity MJ m<sup>-3</sup> Km<sup>-1</sup></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">Evaporation <br> Condensation</td>
-<td style="text-align: left;">2501 <span class="math inline">\(kJ kg^{-1}\)</span></td>
+<td style="text-align: left;">Air</td>
+<td style="text-align: right;">0.0012</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Melting <br> Freezing</td>
-<td style="text-align: left;">334 <span class="math inline">\(kJ kg^{-1}\)</span></td>
+<td style="text-align: left;">Water (liquid)</td>
+<td style="text-align: right;">4.1800</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Sublimation <br> Deposition</td>
-<td style="text-align: left;">2835 <span class="math inline">\(kJ kg^{-1}\)</span></td>
+<td style="text-align: left;">Ice</td>
+<td style="text-align: right;">1.9000</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Soil mineral</td>
+<td style="text-align: right;">2.1000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Soil organic matter</td>
+<td style="text-align: right;">2.5000</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Wood organic matter</td>
+<td style="text-align: right;">2.0000</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
 </div>
+</div>
+</div>
+<aside class="notes">
+
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="test-your-knowledge-iclicker" class="slide level2 smaller">
+<h2>Test your knowledge (iClicker)</h2>
+<p>You run an experiment using a camping stove with a 1 liter pan to heat up four different substances. You run the stover for the same amount of time (1 minute) and use the same volume of each substance (exactly 1 liter). All substances start at the same temperature (15 <span class="math inline">\(^{\circ} C\)</span>); which substance will have the highest temperature at the end of the 1 minute period?</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>A Water</li>
+<li>B Air (empty pan with lid)</li>
+<li>C Dry Soil</li>
+<li>D Food in water (e.g.&nbsp;rice)</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/Lecture9/17_3.jpg"></p>
+</div>
+</div>
+<aside class="notes">
+<p>Answer is B</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="specific-heat" class="slide level2 smaller">
+<h2>Specific Heat</h2>
+<p>Specific heat <span class="math inline">\(c\)</span> is the quantity of heat required to raise the temperature of a <strong>unit mass</strong> (e.g., 1 Kg) of a material 1 K.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/Lecture9/18_3.png"></p>
+<figcaption>Specific heat is measured in J Kg<sup>-1</sup> K<sup>-1</sup></figcaption>
+</figure>
+</div>
 </div><div class="column" style="width:50%;">
 <div class="cell">
-<div id="fig-13_3" class="quarto-figure quarto-figure-center">
-<figure>
-<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-8ca4fff91ee0639f26ea" style="width:408px;height:480px;"></div>
-<script type="application/json" data-for="htmlwidget-8ca4fff91ee0639f26ea">{"x":{"visdat":{"45ac405773b0":["function () ","plotlyVisDat"]},"cur_data":"45ac405773b0","attrs":{"45ac405773b0":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"type":"scatter","mode":"lines+markers","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Latent Heat of Vaporization","xaxis":{"domain":[0,1],"automargin":true,"title":"<sup>&deg;<\/sup>C"},"yaxis":{"domain":[0,1],"automargin":true,"title":"kJ kg<sup>-1<\/sup>"},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[-30,-20,-10,0,10,20,30,40,50,60,70,80,90,100],"y":[2575,2549,2525,2500.9000000000001,2477.1999999999998,2453.5,2429.8000000000002,2406,2381.9000000000001,2357.6999999999998,2333,2308,2282.5,2256.4000000000001],"type":"scatter","mode":"lines+markers","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
-<figcaption>Figure&nbsp;1: Latent heat of evaporation / condensation at different temperatures</figcaption>
-</figure>
+<div class="cell-output-display">
+<div id="tbl-18_2">
+<table>
+<caption>Table&nbsp;2: Specific heat of various substances</caption>
+<colgroup>
+<col style="width: 60%">
+<col style="width: 40%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Material</th>
+<th style="text-align: right;">Specific heat kJ kg<sup>-1</sup> K<sup>-1</sup></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Air</td>
+<td style="text-align: right;">1.01</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Water (liquid)</td>
+<td style="text-align: right;">4.18</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Ice</td>
+<td style="text-align: right;">2.10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Soil mineral</td>
+<td style="text-align: right;">0.80</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Soil organic matter</td>
+<td style="text-align: right;">1.90</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Wood organic matter</td>
+<td style="text-align: right;">1.30</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>
 </div>
-<aside class="notes">
-<p>The amount of heat involved in these processes is given the term “latent heat of…..” as we see in the above table. Notice that the amounts of energy required are dependent on temperature.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
+</div>
 </section>
-<section id="latent-heat-of-vaporization" class="slide level2">
-<h2>Latent heat of vaporization</h2>
-<p>Conversion from latent to sensible heat in a storm cloud is equivalent to the energy released from a small nuclear bomb.</p>
+<section id="what-is-the-relationship-between-c-and-c" class="slide level2 smaller">
+<h2>What is the relationship between <span class="math inline">\(C\)</span> and <span class="math inline">\(c\)</span> ?</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<ul>
-<li>Based on the amount of latent heat picked up at the surface through evaporation
-<ul>
-<li>Released as water vapor condenses back into liquid water or freezes into ice.</li>
-</ul></li>
-</ul>
+<p>Density (<span class="math inline">\(\rho\)</span>) of the material:</p>
+<p><span id="eq-Heat-Capacity"><span class="math display">\[
+C=\rho c
+\qquad(1)\]</span></span></p>
+<p>Example of water:</p>
+<p><span class="math inline">\(C =\)</span> 1 Mg m<sup>-3</sup> <span class="math inline">\(x\)</span> 4.18 J kg<sup>-1</sup> K<sup>-1</sup> = <br> 4.18 J<sup>6</sup> m<sup>-3</sup> K<sup>-1</sup> = 4.18 MJ m<sup>-3</sup> K<sup>-1</sup></p>
 </div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture1/14_3.jpg"></p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-19_6">
+<table>
+<caption>Table&nbsp;3: Density heat of various substances</caption>
+<colgroup>
+<col style="width: 60%">
+<col style="width: 40%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Material</th>
+<th style="text-align: right;">Density Mg m<sup>-3</sup></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Air</td>
+<td style="text-align: right;">0.0012</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Water (liquid)</td>
+<td style="text-align: right;">1.0000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Ice</td>
+<td style="text-align: right;">0.9000</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Soil mineral</td>
+<td style="text-align: right;">2.6500</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Soil organic matter</td>
+<td style="text-align: right;">1.3000</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Wood organic matter</td>
+<td style="text-align: right;">1.5000</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
 </div>
 </div>
 </section>
-<section id="why-spray-liquid-water-on-a-tree" class="slide level2">
-<h2>Why spray liquid water on a tree?</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>Its seems counter-intuitive, but fine mist irrigation by sprinklers is used to reduce frost damage.</p>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture1/15_2.png"></p>
-</div>
-</div>
-<aside class="notes">
-<p>This example is the first of many that we will look at where farmers/orchardists etc. take advantage of atmospheric processes in order to prevent damage to crops/animals etc..</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="why-spray-liquid-water-on-a-tree-1" class="slide level2">
-<h2>Why spray liquid water on a tree?</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>Latent heat of fusion:</p>
-<ul>
-<li>Sprayed liquid water releases latent heat of fusion as it becomes ice
-<ul>
-<li>Prevents a damaging drop in temperature of almonds</li>
-</ul></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture1/15_2.png"></p>
-</div>
-</div>
-<aside class="notes">
-<p>This example is the first of many that we will look at where farmers/orchardists etc. take advantage of atmospheric processes in order to prevent damage to crops/animals etc..</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="energy-transfer-in-the-atmosphere" class="slide level2">
-<h2>Energy transfer in the atmosphere</h2>
+<section id="why-is-this-important" class="slide level2">
+<h2>Why is this important?</h2>
 
-<img data-src="images/Lecture1/17_3.png" class="r-stretch"><aside class="notes">
-<p>Here we continue with the definition of basic physical processes that you are hopefully very familiar with. Examples would be: Radiation: light coming from the sun Conduction: heat transferred from molecule to molecule as you would see in the soil or a rod that is heated in a campfire Convection: heat transferred by a moving fluid such as in a boiling pot, milk poured into a cup of coffee or cumulus clouds in the atmosphere.</p>
+<img data-src="images/Lecture9/20_1.gif" class="r-stretch quarto-figure-center"><p class="caption">Porosity &amp; volume fractions <span class="math inline">\(\theta\)</span> will dictate heat capacity of soil</p></section>
+<section id="compound-substances" class="slide level2">
+<h2>Compound Substances</h2>
+<p>The heat capacity of a mixture of substances can be calculated from the heat capacity and volume fraction of each component. For soil:</p>
+<p><span id="eq-Heat-Capacity"><span class="math display">\[
+C=\rho c
+\qquad(2)\]</span></span></p>
+<ul>
+<li><span class="math inline">\(\theta\)</span> is the volume fraction of mineral (m), organic matter (o), water (w) and air (a)
+<ul>
+<li><em>Note</em>: <span class="math inline">\(C_a\)</span> is very small relative to the other values of C</li>
+</ul></li>
+</ul>
+</section>
+<section id="the-role-of-soil-moisture" class="slide level2 smaller">
+<h2>The role of soil moisture</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="images/Lecture9/22_2.gif"></p>
+</div><div class="column" style="width:50%;">
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-16_4_2">
+<table>
+<caption>Table&nbsp;4: Heat capacity of various substances</caption>
+<colgroup>
+<col style="width: 60%">
+<col style="width: 40%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Material</th>
+<th style="text-align: right;">Heat capacity MJ m<sup>-3</sup> Km<sup>-1</sup></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Air</td>
+<td style="text-align: right;">0.0012</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Water (liquid)</td>
+<td style="text-align: right;">4.1800</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Ice</td>
+<td style="text-align: right;">1.9000</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Soil mineral</td>
+<td style="text-align: right;">2.1000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Soil organic matter</td>
+<td style="text-align: right;">2.5000</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Wood organic matter</td>
+<td style="text-align: right;">2.0000</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="heat-capacity-soils" class="slide level2 smaller">
+<h2>Heat capacity Soils</h2>
+<p>We have a soil that is 45% minerals and 0% organic matter by volume. The rest is pore space (for air or water).</p>
+<div class="fragment">
+<p><strong>Dry Mineral Soil</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>C_w <span class="ot">=</span> <span class="fl">4.18</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a>C_m <span class="ot">=</span> <span class="fl">2.1</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a>C_o <span class="ot">=</span> <span class="fl">2.5</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a>C_a <span class="ot">=</span> <span class="fl">0.0012</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a>theta_m <span class="ot">=</span> .<span class="dv">45</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a>theta_o <span class="ot">=</span> <span class="dv">0</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a>theta_w <span class="ot">=</span> <span class="dv">0</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a>theta_a <span class="ot">=</span> <span class="dv">1</span><span class="sc">-</span>(theta_w<span class="sc">+</span>theta_o<span class="sc">+</span>theta_m)</span>
+<span id="cb1-9"><a href="#cb1-9"></a>C_dry_mineral <span class="ot">=</span> C_m<span class="sc">*</span>theta_m<span class="sc">+</span>C_o<span class="sc">*</span>theta_o<span class="sc">+</span>C_w<span class="sc">*</span>theta_w<span class="sc">+</span>C_a<span class="sc">*</span>theta_a</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><span class="math inline">\(C =\)</span> 0.94566 MJ m<sup>-3</sup> K<sup>-1</sup></p>
+</div>
+<div class="fragment">
+<p><strong>Saturate Soil</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>theta_a <span class="ot">=</span> <span class="dv">0</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a>theta_w <span class="ot">=</span> <span class="dv">1</span><span class="sc">-</span>(theta_a<span class="sc">+</span>theta_o<span class="sc">+</span>theta_m)</span>
+<span id="cb2-3"><a href="#cb2-3"></a>C_saturated_mineral <span class="ot">=</span> C_m<span class="sc">*</span>theta_m<span class="sc">+</span>C_o<span class="sc">*</span>theta_o<span class="sc">+</span>C_w<span class="sc">*</span>theta_w<span class="sc">+</span>C_a<span class="sc">*</span>theta_a</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><span class="math inline">\(C =\)</span> 3.244 MJ m<sup>-3</sup> K<sup>-1</sup></p>
+</div>
+<aside class="notes">
+<p>θ is the volume fraction</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -757,25 +853,207 @@ T(K) = T(\deg C) + 273.15
           display:block!important;
       }</style></aside>
 </section>
-<section id="convection" class="slide level2">
-<h2>Convection</h2>
-<p>There are free and forced types of convection.</p>
-<div class="columns">
-<div class="column" style="width:35%;">
+<section id="heat-capacity-soils-iclicker" class="slide level2 smaller">
+<h2>Heat capacity Soils (iClicker)</h2>
+<p>We have a soil that is 0% minerals and 45% organic matter by volume and 25% water by volume. What would it’s heat capacity be in MJ m<sup>-3</sup> K<sup>-1</sup>?</p>
+<p><strong>Wet (not saturated) Organic Soil</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>C_w <span class="ot">=</span> <span class="fl">4.18</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a>C_m <span class="ot">=</span> <span class="fl">2.1</span></span>
+<span id="cb3-3"><a href="#cb3-3"></a>C_o <span class="ot">=</span> <span class="fl">2.5</span></span>
+<span id="cb3-4"><a href="#cb3-4"></a>C_a <span class="ot">=</span> <span class="fl">0.0012</span></span>
+<span id="cb3-5"><a href="#cb3-5"></a>theta_m <span class="ot">=</span> <span class="dv">0</span></span>
+<span id="cb3-6"><a href="#cb3-6"></a>theta_o <span class="ot">=</span> .<span class="dv">45</span></span>
+<span id="cb3-7"><a href="#cb3-7"></a>theta_w <span class="ot">=</span> .<span class="dv">25</span></span>
+<span id="cb3-8"><a href="#cb3-8"></a>theta_a <span class="ot">=</span> <span class="dv">1</span><span class="sc">-</span>(theta_w<span class="sc">+</span>theta_o<span class="sc">+</span>theta_m)</span>
+<span id="cb3-9"><a href="#cb3-9"></a>C_wet_organic <span class="ot">=</span> C_m<span class="sc">*</span>theta_m<span class="sc">+</span>C_o<span class="sc">*</span>theta_o<span class="sc">+</span>C_w<span class="sc">*</span>theta_w<span class="sc">+</span>C_a<span class="sc">*</span>theta_a</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <ul>
-<li>Forced convection would be air movement caused by a fan or the wind.</li>
+<li>A 2.17036 MJ m<sup>-3</sup> K<sup>-1</sup></li>
+<li>B 0.94566 MJ m<sup>-3</sup> K<sup>-1</sup></li>
+<li>C 3.244 MJ m<sup>-3</sup> K<sup>-1</sup></li>
 </ul>
-</div><div class="column" style="width:65%;">
+<div class="fragment">
+<p><span class="math inline">\(C =\)</span> 2.17036 MJ m<sup>-3</sup> K<sup>-1</sup></p>
+</div>
+<aside class="notes">
+<p>θ is the volume fraction</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="heat-capacity-1" class="slide level2 smaller">
+<h2>Heat Capacity</h2>
+<p>Organic soils have high porosities so they can hold a lot of water so more heat is required to warm them compared to mineral soils.</p>
+<ul>
+<li>“Cold soils” – slow to warm up in spring - are found in poorly drained locations</li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-25_2">
+<table>
+<caption>Table&nbsp;5: Heat capacity of natural materials</caption>
+<colgroup>
+<col style="width: 25%">
+<col style="width: 11%">
+<col style="width: 22%">
+<col style="width: 40%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Mixture</th>
+<th style="text-align: left;">% H2O content</th>
+<th style="text-align: left;">Density(Mg m<sup>-3</sup>)</th>
+<th style="text-align: left;">Heat capacity C(MJ m<sup>-3</sup> K<sup>-1</sup>)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Mineral soil (dry / saturated)</td>
+<td style="text-align: left;">0 / 0.55</td>
+<td style="text-align: left;">1.20 / 1.75</td>
+<td style="text-align: left;">0.90 / 3.2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Wood (dry / saturated)</td>
+<td style="text-align: left;">0 / 0.60</td>
+<td style="text-align: left;">0.60 / 1.20</td>
+<td style="text-align: left;">0.80 / 3.3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Peat soil (dry / saturated)</td>
+<td style="text-align: left;">0 / 0.85</td>
+<td style="text-align: left;">0.20 / 1.05</td>
+<td style="text-align: left;">0.40 / 3.9</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Animal / plant tissue</td>
+<td style="text-align: left;">~0.9</td>
+<td style="text-align: left;">1.1</td>
+<td style="text-align: left;">3.7</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="heat-capacity-of-soils" class="slide level2">
+<h2>Heat Capacity of Soils</h2>
+
+<img data-src="images/Lecture9/HeatCapacityOfSoil.png" class="r-stretch quarto-figure-center"><p class="caption">Porosity is a dominant control, mineral vs.&nbsp;organic is secondary</p></section>
+<section id="heat-fluxes-and-thermal-effects" class="slide level2">
+<h2>Heat Fluxes and Thermal Effects</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><ol type="a">
+<li>During day, positive heat flux warms the soil</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>At night, negative heat flux cools the soil</li>
+</ol></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/Lecture9/27_2.png"></p>
+</div>
+</div>
+</section>
+<section id="warming-cooling-rates" class="slide level2">
+<h2>Warming / cooling rates</h2>
+<p>The key that links heat flux to temperature change is heat capacity (C).</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><a href="#/warming-cooling-rates">Equation&nbsp;3</a> relates the heat flux with over a layer <span class="math inline">\(z\)</span>, to the rate of temperature change of time <span class="math inline">\(t\)</span>.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><span id="eq-Soil-Heat-Flux"><span class="math display">\[
+\frac{\Delta H_G}{z} = C \frac{\Delta T}{t}
+\qquad(3)\]</span></span></p>
+</div>
+</div>
+</section>
+<section id="warming-cooling-rates-1" class="slide level2">
+<h2>Warming / cooling rates</h2>
+
+<img data-src="images/Lecture9/29_1.jpg" class="r-stretch"></section>
+<section id="warming-cooling-rates-2" class="slide level2">
+<h2>Warming / cooling rates</h2>
+<p>The higher C, the smaller the rate of temperature change.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/Lecture1/18_3.png"></p>
-<figcaption>Free convection of heat from hot ground</figcaption>
+<p><img data-src="images/Lecture9/30_2.jpg"></p>
+<figcaption>A wet soil (high C) has a ‘conservative’ thermal climate (it responds slowly to heat input or output).</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/Lecture9/30_1.jpg"></p>
+<figcaption>A dry soil (low C) is becoming hot by day and cold by night.</figcaption>
 </figure>
 </div>
 </div>
 </div>
+</section>
+<section id="test-your-knowledge-iclicker-1" class="slide level2">
+<h2>Test your knowledge (iClicker)</h2>
+<p>Given same amount of energy input by radiation (e.g.&nbsp;same day), which soil will warm up more rapidly? The photos show the same location:</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/Lecture9/31_2.jpg" style="width:85.0%"></p>
+<figcaption>A</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/Lecture9/31_3.jpg" style="width:85.0%"></p>
+<figcaption>B</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="how-fast-does-a-moist-soil-warm-up" class="slide level2">
+<h2>How fast does a moist soil warm up?</h2>
+<p>We have a mineral soil with <span class="math inline">\(\approx\)</span> 30% water content by volume, giving it C = 2 MJ m<sup>-3</sup> K<sup>-1</sup>. With a soil heat flux (H) of 100 W m<sup>-2</sup> going into the soil surface layer of depth z = 0.1 m. Rearranging <a href="#/warming-cooling-rates">Equation&nbsp;3</a> we can solve for <span class="math inline">\(\Delta T\)</span>:</p>
+<p><span class="math inline">\(\frac{\Delta T}{t} = \frac{1}{C}\frac{H_g}{z}\)</span></p>
+<p><span class="math inline">\(\frac{\Delta T}{t} = \frac{1}{2 MJ m^{-3} K^{-1}}\frac{100 J m^{-2} s^{-1}}{0.1 m}\)</span></p>
+<div class="fragment">
+<p>0.0005 K s<sup>-1</sup> = 1.8 K H<sup>-1</sup></p>
+</div>
+</section>
+<section id="test-your-knowledge-iclicker-2" class="slide level2 smaller">
+<h2>Test your knowledge (iClicker)</h2>
+<p>You run an experiment using camping stove with a 1 liter pan to heat up four different substances. You run the stover for the same amount of time (1 minute) and use the same volume of each substance (exactly 1 liter). All substances start at the same temperature (15 <span class="math inline">\(^{\circ} C\)</span>); which substance will have the lowest temperature at the end of the 1 minute period?</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>A Water</li>
+<li>B Air (empty pan with lid)</li>
+<li>C Dry Soil</li>
+<li>D Food in water (e.g.&nbsp;rice)</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/Lecture9/17_3.jpg"></p>
+</div>
+</div>
 <aside class="notes">
-<p>NOTE: CONVECTION is associated with vertical motion in the atmosphere while ADVECTION refers to horizontal motion. Free convection is when air rises of its own accord because it is warmer and less dense than the surrounding air. Forced convection is when air is forced up and over a barrier such as a hill. NOTE: CONVECTION is associated with vertical motion in the atmosphere while ADVECTION refers to horizontal motion. Free convection is when air rises of its own accord because it is warmer and less dense than the surrounding air. Forced convection is when air is forced up and over a barrier such as a hill.</p>
+<p>Answer is A</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -788,158 +1066,23 @@ T(K) = T(\deg C) + 273.15
           display:block!important;
       }</style></aside>
 </section>
-<section id="fluxes-and-flux-densities" class="slide level2 smaller">
-<h2>Fluxes and flux densities</h2>
+<section id="take-home-points" class="slide level2">
+<h2>Take home points</h2>
 <div class="columns">
-<div class="column" style="width:30%;">
-<h3 id="heat">Heat</h3>
+<div class="column" style="width:100%;">
 <ul>
-<li>Aka. Energy
+<li>Plant growth is determined by surface and near-surface soil temperatures.
 <ul>
-<li>J (Joules)</li>
+<li>In Agriculture and forestry, there is potential to manage soil temperatures.</li>
 </ul></li>
+<li>Heat capacity <span class="math inline">\(C\)</span> and specific heat <span class="math inline">\(c\)</span> are linked by density.</li>
+<li>Temperature change in the soil controlled by soil heat capacity.</li>
+<li>Important role of soil volumetric water content for temperature changes - quick dry soils vs.&nbsp;slow wet soils.</li>
 </ul>
-<p><br> &nbsp;</p>
-<p><img data-src="images/Lecture1/19_7.png"></p>
-</div><div class="column" style="width:30%;">
-<h3 id="heat-flux">Heat Flux</h3>
-<ul>
-<li>Flow rate of energy
-<ul>
-<li>Aka. Power</li>
-<li>W = J s<sup>-1</sup></li>
-</ul></li>
-</ul>
-<p><img data-src="images/Lecture1/19_8.png"></p>
-</div><div class="column" style="width:40%;">
-<h3 id="heat-flux-density">Heat Flux Density</h3>
-<ul>
-<li>Net transfer of energy
-<ul>
-<li>Flow rate of energy per unit area</li>
-<li>W m-2 = J s<sup>-1</sup> m<sup>-2</sup></li>
-</ul></li>
-</ul>
-<p><img data-src="images/Lecture1/19_9.png"></p>
-</div>
-</div>
-</section>
-<section id="heat-flux-iclicker" class="slide level2">
-<h2>Heat Flux (iClicker)</h2>
-<p>Heat always travels from:</p>
-<ul>
-<li>A: Hotter to colder</li>
-<li>B: Colder to hotter</li>
-<li>C: Either A or B</li>
-</ul>
-</section>
-<section id="fluxes-and-flux-densities-1" class="slide level2">
-<h2>Fluxes and flux densities</h2>
-<p>Generally speaking: flux densities can be positive or negative.</p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li>Sum of positive and negative fluxes</li>
-<li>The sign will depend on your reference point.
-<ul>
-<li>Heat will always go from hotter to colder object</li>
-<li>But many fluxes are bi-directional.</li>
-</ul></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture1/21_3.png"></p>
-</div>
-</div>
-</section>
-<section id="net-radiation" class="slide level2">
-<h2>Net Radiation</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li>Incoming radiation (sunlight)</li>
-<li>Minus reflected &amp; emitted radiation</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture1/20_5.jpg"></p>
-</div>
-</div>
-</section>
-<section id="net-ecosystem-exchange-of-co2" class="slide level2">
-<h2>Net Ecosystem Exchange (of CO<sub>2</sub>)</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li>Carbon uptake (photosynthesis)</li>
-<li>Minus carbon emission (respiration)</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture1/22_2.jpg"></p>
-</div>
-</div>
-</section>
-<section id="conservation-of-energy-and-mass" class="slide level2">
-<h2>Conservation of energy and mass</h2>
-<p>One of the most powerful laws used in analyzing organism-environment interaction is this <strong>Law of Conservation</strong>.</p>
-<ul>
-<li>Neither mass nor energy can be created or destroyed by any ordinary means.</li>
-<li>The application is similar to reconciling your checking account i.e.&nbsp;you can construct a budget or balance to account for all inflows and outflows of heat and mass.</li>
-</ul>
-</section>
-<section id="conservation-of-energy-and-mass-1" class="slide level2">
-<h2>Conservation of energy and mass</h2>
-<div class="columns">
-<div class="column" style="width:40%;">
-<p>Energy is continually being converted from one form to another</p>
-<ul>
-<li>None is lost.</li>
-</ul>
-</div><div class="column" style="width:60%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/Typhoon.jpg"></p>
-<figcaption>A typhoon transports energy away from the equator</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="energy-conservation" class="slide level2">
-<h2>Energy conservation</h2>
+</div><div class="column" style="width:0%;">
 
-<img data-src="images/Lecture1/26_2.png" class="r-stretch"></section>
-<section id="energy-balance-of-a-vegetated-surface" class="slide level2">
-<h2>Energy balance of a vegetated surface</h2>
-
-<img data-src="images/Energy_Balance.png" style="width:85.0%" class="r-stretch"></section>
-<section id="summary" class="slide level2">
-<h2>Summary</h2>
-<ul>
-<li>Difference between heat and temperature
-<ul>
-<li>Heat does work - temperature does not</li>
-</ul></li>
-<li>What is latent heat?
-<ul>
-<li>Energy associated with phase change (of water)</li>
-</ul></li>
-<li>Flux vs.&nbsp;flux density
-<ul>
-<li>Flux density is energy transport per unit area per unit time (W m-2)</li>
-</ul></li>
-</ul>
-</section>
-<section id="summary-1" class="slide level2">
-<h2>Summary</h2>
-<ul>
-<li>Energy and mass transfer mechanisms
-<ul>
-<li>Radiation, conduction, and convection</li>
-</ul></li>
-<li>Understand the concept of energy and mass balances and their connectivity
-<ul>
-<li>Neither mass nor energy can be created or destroyed by any ordinary means, just converted from one form to another.</li>
-</ul></li>
-</ul>
+</div>
+</div>
 
 <div class="footer footer-default">
 <p><a href="../Lectures.html">Back to Homepage</a></p>
