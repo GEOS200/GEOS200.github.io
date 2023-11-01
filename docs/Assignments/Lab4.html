@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Atmospheric Environments - Lab 4: Atmospheric Stability &amp; The Planetary Boundary Layer</title>
+<title>Atmospheric Environments - Lab 4: Vertical Structure of the Atmosphere</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -126,28 +126,37 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#objectives" id="toc-objectives" class="nav-link active" data-scroll-target="#objectives">Objectives</a>
+  <li><a href="#objectives" id="toc-objectives" class="nav-link active" data-scroll-target="#objectives">Objectives</a></li>
+  <li><a href="#theory" id="toc-theory" class="nav-link" data-scroll-target="#theory"><span class="header-section-number">1</span> Theory</a>
   <ul class="collapse">
-  <li><a href="#materials-required" id="toc-materials-required" class="nav-link" data-scroll-target="#materials-required">Materials Required:</a></li>
-  <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions">Questions</a></li>
+  <li><a href="#atmospheric-pressure" id="toc-atmospheric-pressure" class="nav-link" data-scroll-target="#atmospheric-pressure">Atmospheric Pressure</a></li>
+  <li><a href="#lapse-rates" id="toc-lapse-rates" class="nav-link" data-scroll-target="#lapse-rates">Lapse Rates</a></li>
+  <li><a href="#observations" id="toc-observations" class="nav-link" data-scroll-target="#observations">Observations</a></li>
+  <li><a href="#atmospheric-profiles" id="toc-atmospheric-profiles" class="nav-link" data-scroll-target="#atmospheric-profiles">Atmospheric Profiles</a></li>
+  <li><a href="#lapse-rates-1" id="toc-lapse-rates-1" class="nav-link" data-scroll-target="#lapse-rates-1">Lapse Rates</a></li>
+  <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions">Questions</a>
+  <ul class="collapse">
+  <li><a href="#question-1-1-points" id="toc-question-1-1-points" class="nav-link" data-scroll-target="#question-1-1-points">Question 1 <font size="-1">[1 points]</font></a></li>
+  <li><a href="#question-2-7-points" id="toc-question-2-7-points" class="nav-link" data-scroll-target="#question-2-7-points">Question 2 <font size="-1">[7 points]</font></a></li>
+  <li><a href="#question-3-4-points" id="toc-question-3-4-points" class="nav-link" data-scroll-target="#question-3-4-points">Question 3 <font size="-1">[4 points]</font></a></li>
+  <li><a href="#question-4-2-points" id="toc-question-4-2-points" class="nav-link" data-scroll-target="#question-4-2-points">Question 4 <font size="-1">[2 points]</font></a></li>
   </ul></li>
-  <li><a href="#objectives-1" id="toc-objectives-1" class="nav-link" data-scroll-target="#objectives-1"><span class="header-section-number">1</span> Objectives:</a>
-  <ul class="collapse">
-  <li><a href="#theory" id="toc-theory" class="nav-link" data-scroll-target="#theory">Theory</a></li>
   </ul></li>
   <li><a href="#part-a---static-stability" id="toc-part-a---static-stability" class="nav-link" data-scroll-target="#part-a---static-stability"><span class="header-section-number">2</span> Part A - Static stability</a>
   <ul class="collapse">
   <li><a href="#questions-1" id="toc-questions-1" class="nav-link" data-scroll-target="#questions-1">Questions</a></li>
+  <li><a href="#part-b---potential-temperature" id="toc-part-b---potential-temperature" class="nav-link" data-scroll-target="#part-b---potential-temperature">Part B - Potential temperature</a></li>
+  <li><a href="#part-c---a-local-wind-circulation" id="toc-part-c---a-local-wind-circulation" class="nav-link" data-scroll-target="#part-c---a-local-wind-circulation">Part C - A local wind circulation</a></li>
   </ul></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="Lab4.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lab 4: Atmospheric Stability &amp; The Planetary Boundary Layer</h1>
+<h1 class="title">Lab 4: Vertical Structure of the Atmosphere</h1>
 </div>
 
 
@@ -162,18 +171,189 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<!-- ::::: {.content-hidden when-format="pdf"} -->
-<p>This assignment is worth <strong>15.5 points</strong>.</p>
+<p>This assignment is worth <strong>16.5 points</strong>.</p>
 <section id="objectives" class="level1 unnumbered">
 <h1 class="unnumbered">Objectives</h1>
 <ul>
 <li>Understand the concept related to the vertical structure of the atmosphere, in particular, how temperature changes with height</li>
-<li>Understand the concept related to the vertical structure of the atmosphere</li>
-<li>Understand the difference between the two types of lapse rates - environmental lapse rate (ELR) and the process lapse rate</li>
+<li>Understand the different types of lapse rates
+<ul>
+<li>Environmental lapse rate (ELR)</li>
+<li>Dry adiabatic lapse rate (DALR)</li>
+<li>Saturated adiabatic lapse rate (SALR)</li>
+</ul></li>
 <li>Understand and concept of static stability and distinguish between different types of stability within a particular air layer</li>
 </ul>
-<section id="materials-required" class="level2">
-<h2 class="anchored" data-anchor-id="materials-required">Materials Required:</h2>
+</section>
+<section id="theory" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Theory</h1>
+<section id="atmospheric-pressure" class="level2">
+<h2 class="anchored" data-anchor-id="atmospheric-pressure">Atmospheric Pressure</h2>
+<p>The atmosphere is a compressible gas; i.e., air is compressed by the weight (pressure) of the air above it. Therefore, density (<span class="math inline">\(\rho\)</span>) and air pressure (<span class="math inline">\(P_a\)</span>) decrease with increasing height above the sea level (<a href="#fig-Pressure">Figure&nbsp;1</a>). Note how <span class="math inline">\(P_a\)</span> decreases steadily with height, from just over 100 kPa at sea level to less than 10 kPa at 25,000 meters above sea level (m.a.s.l). Air pressure <strong>always</strong> decreases with height, because air pressure is a function of the weight of air above a measurement location. As you move upwards through the atmosphere, the weight of the air above you decreases, so there is less pressure (compressional force) exerted by the remaining air above you and the density of the air decrease.</p>
+<p>The relationship between pressure and density is given by the Ideal Gas Law <a href="#eq-Ideal-Gas-Law">Equation&nbsp;1</a>. Recall the notation from <a href="../Assignments/Lab3.html#the-ideal-gas-law">Lab 3</a>: pressure (<span class="math inline">\(P\)</span>), volume (<span class="math inline">\(V\)</span>), temperature (<span class="math inline">\(T\)</span>), and the amount of the gas (<span class="math inline">\(n\)</span>) in moles; with <span class="math inline">\(R\)</span> being the ideal gas constant (see <a href="#tbl-symbols">Table&nbsp;2</a>). The amount in moles of a given gas (or mixture of gasses) can be defined as <span class="math inline">\(n = \frac{m}{M}\)</span>, where <span class="math inline">\(m\)</span> is the mass of the substance (in kg or g) and <span class="math inline">\(M\)</span> is the Molar mass (in kg mol<sup>-1</sup> or g mol<sup>-1</sup>) respectively.</p>
+<p><span id="eq-Ideal-Gas-Law"><span class="math display">\[
+PV=nRT
+\tag{1}\]</span></span></p>
+<p>You may have noticed this phenomena if you’ve ever been to the top of a tall mountain. Since the atmosphere is less dense on top of a tall mountain, there is less oxygen available with each, and your body has to breathe more heavily to compensate. You probably also noticed that it was cooler atop the mountain. Looking at <a href="#eq-Ideal-Gas-Law">Equation&nbsp;1</a>, we can see that a decrease in <span class="math inline">\(P\)</span> can also lead to a decrease in <span class="math inline">\(T\)</span>.</p>
+<div id="fig-Pressure" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/Port_Hardy_Radiosonde_Data.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;1: Atmospheric pressure (<span class="math inline">\(P_a\)</span>) and density (<span class="math inline">\(\rho\)</span>) as a function of height above the Earth’s surface. Measured at Port Hardy, BC 5PM October 29th, 2023</figcaption>
+</figure>
+</div>
+</section>
+<section id="lapse-rates" class="level2">
+<h2 class="anchored" data-anchor-id="lapse-rates">Lapse Rates</h2>
+<p>As a consequence of the ideal gas law, when an air parcel is lifted upwards though the atmosphere, its temperate will decrease in correspondence with the decrease in air pressure. Conversely, when a parcel of air sinks its temperature will increase in correspondence with the increase in pressure. This phenomena is known as an adiabatic process: where temperature of a substance changes without the addition/subtraction of energy. When thinking about adiabatic processes, we assume a parcel does not mix with the environment. In reality, this assumption is never perfectly met, but it applies well enough when dealing with large parcels of air.</p>
+<p>The rate at which the parcel will cool depends on whether or not it is saturated. Why? Because the amount of water the atmosphere can hold is a function of <a href="../Slides/Lecture11.html">temperature</a>. In order for a parcel to cool below its dewpoint water vapor must condense, and the process of condensation <a href="https://geos200.github.io/Slides/Lecture1.html#/latent-heat">releases heat</a> to the surrounding environment. The <strong>dry adiabatic lapse rate (DALR)</strong> applies when a parcel of air is <strong>not</strong>, and has a constant with a value of 0.01 K m<sup>-1</sup>. The <strong>saturated adiabatic lapse rate (SALR)</strong> applies once a parcel of air reaches saturation. It is important to note that SALR &lt; DALR; the parcel cools as it rises but condensation also occurs which releases latent heat and counteracts some of the cooling. The SALR is not a constant, however, a reasonable approximation of the SALR for typical conditions 0.005 K m<sup>-1</sup>. We will assume this value when performing some calculations later.</p>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p>The actual value of the SALR is a complex non-linear function of temperature and pressure. It is shown for selected values of <span class="math inline">\(T\)</span> and <span class="math inline">\(P_a\)</span> in <a href="#fig-SALR">Figure&nbsp;2</a>.</p>
+<ul>
+<li>Calculating the exact value of the SALR is complex because:
+<ul>
+<li>The latent heat released by condensation varies as a function of <span class="math inline">\(T\)</span></li>
+<li>The amount of water that must condense for a parcel to cool also varies as a function of <span class="math inline">\(T\)</span></li>
+<li><span class="math inline">\(T\)</span> varies as a function of <span class="math inline">\(P_a\)</span></li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:60%;">
+<div id="fig-SALR" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/SALR.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;2: The saturated adiabatic lapse rate (SALR) for selected temperature and pressure values.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>The observed rate of change of <span class="math inline">\(T\)</span> with height at a given location know the environmental lapse rate (ELR). We can determine the ELR directly from weather balloon data or estimate it from weather forecast models. The ELR rate varies drastically between locations, heights, and times. It can be calculated between any two heights in a balloon profile using <a href="#eq-Environmental-Lapse-Rate">Equation&nbsp;4</a>. A positive ELR indicates that <span class="math inline">\(T\)</span> <em>increases</em> with height whereas a negative ELR indicates <span class="math inline">\(T\)</span> it <em>decreases</em> with height.</p>
+<p><span id="eq-Environmental-Lapse-Rate"><span class="math display">\[
+ELR = \frac{T_{z2}-T_{z1}}{z2-z1}
+\tag{2}\]</span></span></p>
+<p>If you look at the difference between those two lapse rates - ELR vs.&nbsp;DALR - you can assess the static stability of a particular air layer:</p>
+<p>ELR &gt; DALR: unstable. For an air parcel, a slight upward displacement will result in a continuous rise of the parcel because the parcel will become warmer and less dense than the surrounding air at the same height and therefore possesses buoyancy. Conversely, if the air parcel is displaced below, it will become cooler and more dense than the surrounding air at the same height, and it will tend to continue sinking. In an unstable layer, vertical movements are enhanced.</p>
+<p>ELR = DALR: neutral. There will be no tendency for a parcel to rise or sink after it is displaced either above or below because it cools or warms at exactly the same rate as the surrounding air. Therefore, the parcel will come to rest after the displacing force is removed.</p>
+<p>ELR &lt; DALR: stable. If an air parcel is displaced upwards, it will become cooler and more dense than the surrounding air and tend to sink back to its original location. If displaced below, it will find itself warmer and tend to rise back up to its original location. In a stable layer, vertical movements are suppressed. In very stable conditions, smoke and other air pollutants accumulate and often cause respiratory problems.</p>
+<p>To facilitate comparison between the ELR and the dry adiabatic lapse rate, atmospheric scientists prefer to convert environmental (measured) temperatures T at a particular height z to potential temperatures θ by:</p>
+<p><span id="eq-potential-temperature"><span class="math display">\[
+\theta(z) = T(z) + \Gamma_d z                           
+\tag{3}\]</span></span></p>
+<p>Note: θ(z) is the potential temperature at height z and T(z) is the temperature at height z. No need to multiply them by z.</p>
+<p>Potential temperatures have the advantage that we can easily determine the stability of a layer on a graph: a decreasing potential temperature with height indicates an unstable layer, a constant potential temperature with height indicates a neutral layer, and an increasing potential temperature with height indicates a stable layer. This is true because the dry adiabatic lapse rate, DALR, plots as a vertical line on a graph of potential temperature vs.&nbsp;height (by definition).</p>
+<p>The layer of air closest to the Earth’s surface - the planetary boundary layer (PBL) - changes its vertical temperature distribution often throughout the 24-hour diurnal cycle because here air temperature is strongly affected by surface conditions. The PBL is modified during the day by radiative heating of the surface, which generates buoyancy and warms up the lower atmosphere, resulting in typically unstable conditions close to the ground. The daytime boundary layer is termed the mixed layer whose depth h* may be defined as the height to which buoyant dry air parcels rise adiabatically.</p>
+<p>At night, radiative cooling of the ground surface indicates that the atmosphere close to the ground will cool down as well, and the near-surface air becomes stable. Therefore, the mixed layer is largely destroyed at night and is replaced at low-level by a stable inversion layer.</p>
+</section>
+<section id="observations" class="level2">
+<h2 class="anchored" data-anchor-id="observations">Observations</h2>
+<p>Our understanding of the vertical structure of Earth’s atmosphere has been informed by over a century of weather balloon launches <a href="#fig-Radiosonde">Figure&nbsp;3</a>. Modern balloons carry sensors to measure temperature, humidity, and air pressure along with a radiosonde which transmits data back to a station on the ground. The balloons record data as they ascend through the atmosphere, giving us a profile of temperature, humidity, and air pressure. Some balloons are also tracked by GPS, which allows wind speed and direction to be calculated as well. Eventually, the balloon pops and it’s transmitter returns to earth via a parachute. Modern balloons regularly reach heights exceeding 30,000 meters above sea level (m.a.s.l); for reference, commercial aircraft fly between 9,000 and 13,000 m.a.s.l</p>
+<p><a href="#fig-map">Figure&nbsp;4</a> shows a web map weather balloon stations that are part the Integrated Global Radiosonde Archive network. Take a moment to look around the map; note the spatial distribution of stations across Earth’s surface. These data are an important component of weather forecasts as they give us information the current state of the upper atmosphere. They are also used to help validate satellite data products, and historical balloon records are use to train global climate models.</p>
+<div id="fig-Radiosonde" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/radiosonde.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;3: Photos of weather balloon launches at various points in history</figcaption>
+</figure>
+</div>
+<div id="fig-map" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<div style="overflow: hidden;
+  padding-top: 55%;
+  position: relative">
+<iframe src="maps/BalloonSites.html" title="Processes" scrolling="no" frameborder="0" style="border: 0;
+height: 100%;
+left: 0;
+position: absolute;
+top: 0;
+width: 75%;">
+</iframe>
+</div>
+<figcaption class="figure-caption">Figure&nbsp;4: Location of all currently active Integrated Global Radiosonde Archive (IGRA) weather balloon stations. Points are color-coded and scaled by the length of the sites record. Larger blue circles indicate longer records, smaller green circles indicate shorter records.</figcaption>
+</figure>
+</div>
+</section>
+<section id="atmospheric-profiles" class="level2">
+<h2 class="anchored" data-anchor-id="atmospheric-profiles">Atmospheric Profiles</h2>
+<p>You’ve already seen from lecture that the atmosphere tends to be colder than the Earth’s surface. In this lab, we’ll investigate this phenomena a bit further, and think about properties of the atmosphere (temperature, humidity, and pressure) change with height. <a href="#fig-Balloon-Data-BC">Figure&nbsp;5</a> and <a href="#fig-Balloon-Data-AB">Figure&nbsp;6</a> respectively show examples of data recorded from a weather balloon launches in Port Hardy, BC and Edmonton, AB. Balloon launches are conducted at consistent times across the globe, using (UTC time)[https://en.wikipedia.org/wiki/Coordinated_Universal_Time] instead of the local time. This is important for standardizing observations so they can be included in global climate models. If you ever need to convert between UTC time and local time, you can use <a href="https://www.timeanddate.com/worldclock/converter.html">this tool</a> to help.</p>
+<p>Also note how air temperature (<span class="math inline">\(T\)</span>) and the dewpoint (<span class="math inline">\(T_d\)</span>) also tend to decrease with height. This is because of the ideal gas law, discussed in <a href="../Assignments/Lab3.html#the-ideal-gas-law">Lab 3</a>; for a fixed volume of air, a decrease in <span class="math inline">\(P_a\)</span> will result in a corresponding drop in <span class="math inline">\(T\)</span>. However, <span class="math inline">\(T\)</span> does <strong>do not</strong> always decrease as a function of height (we’ll discuss why in lecture). A <strong>temperature inversion</strong> occurs when warmer air is found above cooler air. In <a href="#fig-Balloon-Data-BC">Figure&nbsp;5</a>, there is a strong temperature inversions present near the surface. In <a href="#fig-Balloon-Data-AB">Figure&nbsp;6</a> there is not a temperature inversion near the surface.</p>
+<!-- ![Weather balloon data from Port Hardy, BC 12:00 UTC on October 29 (5:00 AM October 29th Pacific Daylight Time).  The station is located at 17 m.a.s.l](images/Port_Hardy_Radiosonde_Data.png) -->
+<!-- ::: {#fig-Balloon-Data-BC}  -->
+<div class="columns">
+<!-- :::{.column width="50%"}
+
+
+#| label: fig-balloon-pressure-BC
+#| fig-cap: "Air pressure vs. height."
+#| fig-width: 4
+#| fig-height: 3
+
+
+fig <- plot_ly(data = BC_data) 
+
+fig <- fig %>% add_trace(x = ~Pressure..kPa., y = ~Geopotential.Height..m.,  name = "P<sub>a</sub>",
+        mode = "lines+markers", type = "scatter",line = list(color = P_color, width = 1.5),marker = list(color = P_color))
+
+fig <- fig %>%  layout(yaxis = list(range=c(0,25000),
+                                    title = 'Height (m.a.s.l)'),
+                      xaxis = list(range(0,110),
+                                  title = 'Pressure kPa'))
+fig
+
+
+
+
+::: --><div class="column" style="width:50%;">
+<div class="cell">
+<div id="fig-Balloon-Data-BC" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-415b3ebade0a3d85128a" style="width:100%;height:487px;"></div>
+<script type="application/json" data-for="htmlwidget-415b3ebade0a3d85128a">{"x":{"visdat":{"734412702316":["function () ","plotlyVisDat"]},"cur_data":"734412702316","attrs":{"734412702316":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"name":"T","mode":"lines+markers","type":"scatter","line":{"color":"#bd1117","width":1.5},"marker":{"color":"#bd1117"},"inherit":true},"734412702316.1":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"name":"T<sub>d<\/sub>","mode":"lines+markers","type":"scatter","line":{"color":"#1207ad","width":1.5},"marker":{"color":"#1207ad"},"inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"yaxis":{"domain":[0,1],"automargin":true,"range":[0,25000],"title":"Height (m.a.s.l)"},"xaxis":{"domain":[0,1],"automargin":true,"title":"Temperature <sup>&deg;<\/sup>C"},"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[-0.5,3.3999999999999999,2.6000000000000001,6.7999999999999998,0.80000000000000004,-16.5,-30.100000000000001,-44.700000000000003,-55.5,-65.900000000000006,-66.900000000000006,-64.5,-62.899999999999999,-61.5,-62.700000000000003,-64.299999999999997,-65.5,-63.299999999999997,-57.100000000000001],"y":[17,271,904,1592,3172,5790,7430,9410,10600,11990,12165,13740,16230,18440,20510,23660,26130,30360,30360],"name":"T","mode":"lines+markers","type":"scatter","line":{"color":"#bd1117","width":1.5},"marker":{"color":"#bd1117","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[-0.90000000000000002,-0.80000000000000027,-5.4000000000000004,-18.199999999999999,-22.199999999999999,-27.5,-42.100000000000001,-63.700000000000003,-66.5,-74.900000000000006,-75.900000000000006,-80.5,-87.900000000000006,-88.5,-89.700000000000003,-90.299999999999997,-91.5,-90.299999999999997,-88.099999999999994],"y":[17,271,904,1592,3172,5790,7430,9410,10600,11990,12165,13740,16230,18440,20510,23660,26130,30360,30360],"name":"T<sub>d<\/sub>","mode":"lines+markers","type":"scatter","line":{"color":"#1207ad","width":1.5},"marker":{"color":"#1207ad","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<figcaption class="figure-caption">Figure&nbsp;5: Weather balloon data from Port Hardy, BC 12:00 UTC on October 29 (5:00 AM October 29 Pacific Daylight Time). The station is located at 17 m.a.s.l</figcaption>
+</figure>
+</div>
+</div>
+</div><!-- :::: --><!-- ::: --><!-- ::: {#fig-Balloon-Data-AB}  --><!-- ::::{.columns} --><!-- :::{.column width="50%"} --><!-- 
+#| label: fig-balloon-pressure-AB
+#| fig-cap: "Air pressure vs. height."
+#| fig-width: 4
+#| fig-height: 3
+
+T_color = '#bd1117'
+T_d_color = '#1207ad'
+P_color = '#510587'
+
+fig <- plot_ly(data = AB_data) 
+
+fig <- fig %>% add_trace(x = ~Pressure..kPa., y = ~Geopotential.Height..m.,  name = "P<sub>a</sub>",
+        mode = "lines+markers", type = "scatter",line = list(color = P_color, width = 1.5),marker = list(color = P_color))
+
+fig <- fig %>%  layout(yaxis = list(range=c(0,25000),
+                                    title = 'Height (m.a.s.l)'),
+                      xaxis = list(range(0,110),
+                                  title = 'Pressure kPa'))
+fig
+
+
+
+
+::: --><div class="column" style="width:50%;">
+<div class="cell">
+<div id="fig-Balloon-Data-AB" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-13da2750883fe1a6b02f" style="width:100%;height:487px;"></div>
+<script type="application/json" data-for="htmlwidget-13da2750883fe1a6b02f">{"x":{"visdat":{"7344468a4c1":["function () ","plotlyVisDat"]},"cur_data":"7344468a4c1","attrs":{"7344468a4c1":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"name":"T","mode":"lines+markers","type":"scatter","line":{"color":"#bd1117","width":1.5},"marker":{"color":"#bd1117"},"inherit":true},"7344468a4c1.1":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"name":"T<sub>d<\/sub>","mode":"lines+markers","type":"scatter","line":{"color":"#1207ad","width":1.5},"marker":{"color":"#1207ad"},"inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"yaxis":{"domain":[0,1],"automargin":true,"range":[0,25000],"title":"Height (m.a.s.l)"},"xaxis":{"domain":[0,1],"automargin":true,"title":"Temperature <sup>&deg;<\/sup>C"},"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[12,11.800000000000001,5.4000000000000004,-4.9000000000000004,-18.899999999999999,-30.100000000000001,-45.100000000000001,-50.299999999999997,-48.100000000000001,-45.899999999999999,-46.700000000000003,-47.899999999999999,-54.100000000000001,-52.899999999999999,-51.5,-50.100000000000001,-49.700000000000003,-39.100000000000001,-23.699999999999999],"y":[766,779,1480,3036,5610,7240,9220,9940,10420,11900,13810,16470,17594,18780,20950,24260,26900,31570,31570],"name":"T","mode":"lines+markers","type":"scatter","line":{"color":"#bd1117","width":1.5},"marker":{"color":"#bd1117","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[6,5.8000000000000007,4.1000000000000005,-4.9000000000000004,-19.399999999999999,-32.100000000000001,-47.300000000000004,-56.299999999999997,-59.100000000000001,-57.899999999999999,-58.700000000000003,-61.899999999999999,-66.099999999999994,-64.900000000000006,-64.5,-67.099999999999994,-70.700000000000003,-73.099999999999994,-70.700000000000003],"y":[766,779,1480,3036,5610,7240,9220,9940,10420,11900,13810,16470,17594,18780,20950,24260,26900,31570,31570],"name":"T<sub>d<\/sub>","mode":"lines+markers","type":"scatter","line":{"color":"#1207ad","width":1.5},"marker":{"color":"#1207ad","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<figcaption class="figure-caption">Figure&nbsp;6: Weather balloon data from Edmonton, AB 0:00 UTC on June 21 (6:00 PM June 20 Mountain Daylight Time). The station is located at 766 m.a.s.l</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<!-- ::: -->
+</section>
+<section id="lapse-rates-1" class="level2">
+<h2 class="anchored" data-anchor-id="lapse-rates-1">Lapse Rates</h2>
+<p>The rate of change of air temperature with is know the environmental lapse rate (ELR). We can determine the ELR directly from balloon data or estimate it from weather forecast models. The ELR rate varies drastically between locations, heights, and times. It can be between any two heights in a balloon profile using <a href="#eq-Environmental-Lapse-Rate">Equation&nbsp;4</a>. For example, the ELR between the surface and 1592 m.a.s.l in <a href="#fig-Balloon-Data-BC">Figure&nbsp;5</a> is approximately 0.005 K m<sup>-1</sup>. The ELR between the surface and 1480 m.a.s.l in <a href="#fig-Balloon-Data-BC">Figure&nbsp;5</a> is -0.009 K m<sup>-1</sup>. A positive ELR indicates that <span class="math inline">\(T\)</span> <em>increases</em> with height whereas a negative ELR indicates <span class="math inline">\(T\)</span> it <em>decreases</em>.</p>
+<p><span id="eq-Environmental-Lapse-Rate"><span class="math display">\[
+ELR = \frac{T_{z2}-T_{z1}}{z2-z1}
+\tag{4}\]</span></span></p>
 <div class="columns">
 <div class="column" style="width:45%;">
 <div class="cell">
@@ -285,9 +465,9 @@ ul.task-list li input[type="checkbox"] {
 <div class="cell">
 <div id="fig-profile" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-d463ed595d7c81e06166" style="width:100%;height:650px;"></div>
-<script type="application/json" data-for="htmlwidget-d463ed595d7c81e06166">{"x":{"visdat":{"5a28437c6b65":["function () ","plotlyVisDat"]},"cur_data":"5a28437c6b65","attrs":{"5a28437c6b65":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"name":"Air Temperature","mode":"lines","type":"scatter","line":{"color":"#f56042","width":1.5},"inherit":true},"5a28437c6b65.1":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"name":"Dewpoint","mode":"lines","type":"scatter","line":{"color":"#7b42f5","width":1.5},"inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":100,"r":10},"title":"Temperature and Dewpoint with Height Above Sea Level","xaxis":{"domain":[0,1],"automargin":true,"title":"&deg; C"},"yaxis":{"domain":[0,1],"automargin":true,"overlaying":"y","side":"right","title":"meters"},"legend":{"x":0.59999999999999998,"y":0.90000000000000002},"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[22,18.100000000000001,15.4,12.4,11.6,10.300000000000001,9.4000000000000004,8.3000000000000007,7,2.2000000000000002,-2.2000000000000002,-7.9000000000000004,-13,-17.699999999999999,-22.600000000000001,-22,-22],"y":[0,250,500,750,1000,1200,1500,1700,2000,2500,3000,3600,4200,4900,5600,6400,7200],"name":"Air Temperature","mode":"lines","type":"scatter","line":{"color":"#f56042","width":1.5},"marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[10,7.7999999999999998,6.5,5.4000000000000004,4.2999999999999998,3.2000000000000002,2.5,1.8999999999999999,-0.40000000000000002,-3.1000000000000001,-6.2000000000000002,-12.1,-17.5,-22,-26.199999999999999,-29.300000000000001,-33],"y":[0,250,500,750,1000,1200,1500,1700,2000,2500,3000,3600,4200,4900,5600,6400,7200],"name":"Dewpoint","mode":"lines","type":"scatter","line":{"color":"#7b42f5","width":1.5},"marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
-<figcaption class="figure-caption">Figure&nbsp;1: Observations of temperature and dewpoint temperature with height (m) above the surface</figcaption>
+<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-edba184f282690a26996" style="width:100%;height:650px;"></div>
+<script type="application/json" data-for="htmlwidget-edba184f282690a26996">{"x":{"visdat":{"734439b9161b":["function () ","plotlyVisDat"]},"cur_data":"734439b9161b","attrs":{"734439b9161b":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"name":"Air Temperature","mode":"lines+markers","type":"scatter","line":{"color":"#f56042","width":1.5},"inherit":true},"734439b9161b.1":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"name":"Dewpoint","mode":"lines+markers","type":"scatter","line":{"color":"#7b42f5","width":1.5},"inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":100,"r":10},"title":"Temperature and Dewpoint with Height Above Sea Level","xaxis":{"domain":[0,1],"automargin":true,"title":"&deg; C"},"yaxis":{"domain":[0,1],"automargin":true,"overlaying":"y","side":"right","title":"meters"},"legend":{"x":0.59999999999999998,"y":0.90000000000000002},"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[22,18.100000000000001,15.4,12.4,11.6,10.300000000000001,9.4000000000000004,8.3000000000000007,7,2.2000000000000002,-2.2000000000000002,-7.9000000000000004,-13,-17.699999999999999,-22.600000000000001,-22,-22],"y":[0,250,500,750,1000,1200,1500,1700,2000,2500,3000,3600,4200,4900,5600,6400,7200],"name":"Air Temperature","mode":"lines+markers","type":"scatter","line":{"color":"#f56042","width":1.5},"marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[10,7.7999999999999998,6.5,5.4000000000000004,4.2999999999999998,3.2000000000000002,2.5,1.8999999999999999,-0.40000000000000002,-3.1000000000000001,-6.2000000000000002,-12.1,-17.5,-22,-26.199999999999999,-29.300000000000001,-33],"y":[0,250,500,750,1000,1200,1500,1700,2000,2500,3000,3600,4200,4900,5600,6400,7200],"name":"Dewpoint","mode":"lines+markers","type":"scatter","line":{"color":"#7b42f5","width":1.5},"marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<figcaption class="figure-caption">Figure&nbsp;7: Observations of temperature and dewpoint temperature with height (m) above the surface</figcaption>
 </figure>
 </div>
 </div>
@@ -296,26 +476,23 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="questions" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="questions">Questions</h2>
-<!-- ::::: -->
-<div id="exr-plot" class="theorem exercise">
-<p><span class="theorem-title"><strong>Question 1 (Question 1 <font size="-1">[7 points]</font>) </strong></span>Using Excel and the data provided in <a href="#tbl-profile">Table&nbsp;1</a>; plot the profile temperature (T) and dewpoint temperature (Td), as well as the saturated adiabatic lapse rate (SALR) and the dry adiabatic lapse rate (DALR). Use height as the y axis, and temperature as the x axis.</p>
+<section id="question-1-1-points" class="level3">
+<h3 class="anchored" data-anchor-id="question-1-1-points">Question 1 <font size="-1">[1 points]</font></h3>
+<p><em>Multiple Choice</em>: select the correct answer(s) from those listed</p>
+<p>Looking at <a href="#fig-map">Figure&nbsp;4</a>, what parts of the world (countries/regions) have the most comprehensive weather balloon records? Consider both the density of current observations and the length of historical records in your answer.</p>
+</section>
+<section id="question-2-7-points" class="level3">
+<h3 class="anchored" data-anchor-id="question-2-7-points">Question 2 <font size="-1">[7 points]</font></h3>
+<p>Using Excel and the data provided in <a href="#tbl-profile">Table&nbsp;1</a>; plot the profile temperature (T) and dewpoint temperature (Td), as well as the saturated adiabatic lapse rate (SALR) and the dry adiabatic lapse rate (DALR). Use height as the y axis, and temperature as the x axis.</p>
 <p><strong>Note:</strong> <span class="math inline">\(DALR = 10^{\circ}C km^{-1}\)</span> and <span class="math inline">\(SALR = 6^{\circ}C km^{-1}\)</span></p>
-</div>
-<div id="exr-stability" class="theorem exercise">
-<p><span class="theorem-title"><strong>Question 2 (Question 2 <font size="-1">[4 points]</font>) </strong></span>For each line segment of the profile (i.e., each row of the table above) determine the stability, and label it on the profile as stable, conditionally unstable, neutral or unstable. Hint: consider each ELR line segment and compare to the slopes of ELR and DALR.</p>
-</div>
-<div id="exr-clouds" class="theorem exercise">
-<p><span class="theorem-title"><strong>Question 3 (Question 3 <font size="-1">[2 points]</font>) </strong></span>Are there any levels where clouds would be present? Explain.</p>
-</div>
 </section>
+<section id="question-3-4-points" class="level3">
+<h3 class="anchored" data-anchor-id="question-3-4-points">Question 3 <font size="-1">[4 points]</font></h3>
+<p>For each line segment of the profile (i.e., each row of the table above) determine the stability, and label it on the profile as stable, conditionally unstable, neutral or unstable. Hint: consider each ELR line segment and compare to the slopes of ELR and DALR.</p>
 </section>
-<section id="objectives-1" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Objectives:</h1>
-<ul>
-<li>Understand the concept related to the vertical structure of the atmosphere</li>
-<li>Understand the difference between the two types of lapse rates - environmental lapse rate (ELR) and the process lapse rate</li>
-<li>Understand and concept of static stability and distinguish between different types of stability within a particular air layer</li>
-</ul>
+<section id="question-4-2-points" class="level3">
+<h3 class="anchored" data-anchor-id="question-4-2-points">Question 4 <font size="-1">[2 points]</font></h3>
+<p>Are there any levels where clouds would be present? Explain.</p>
 <p>This laboratory will acquaint you with some fundamental features of the atmospheric boundary layer; particularly, the concept of static stability, the diurnal development of the thermal structure and depth of the mixed layer, and the nature of local wind systems formed at the boundary between contrasting surface thermal environments.</p>
 <p>The vertical distribution of air temperature in the atmosphere exerts a strong control on vertical air movement and hence has a significant impact on mixing of energy and mass. This is of essential importance in applications such as air pollution, forest fires, dispersion of pollen etc. This laboratory exercise will acquaint you with the quantitative concept of static stability and you will learn how stability changes throughout a typical day. It will further provide you with an example of a local wind system, driven by commonly-found horizontal gradients in the vertical distribution of air temperature.</p>
 <div id="tbl-symbols" class="anchored">
@@ -343,7 +520,7 @@ ul.task-list li input[type="checkbox"] {
 <td>K m-1</td>
 </tr>
 <tr class="even">
-<td>Γd</td>
+<td>DALR</td>
 <td>Dry adiabatic lapse rate</td>
 <td>Constant 0.01</td>
 <td>K m-1</td>
@@ -375,23 +552,7 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 </div>
-<section id="theory" class="level2">
-<h2 class="anchored" data-anchor-id="theory">Theory</h2>
-<p>The environmental lapse rate (ELR) is the actual rate of air temperature decrease or increase with height in the atmosphere, i.e.&nbsp;as measured by thermometers at different heights. The daily average ELR is typically about 0.006 K m-1 but may vary considerably.</p>
-<p>The dry adiabatic lapse rate (Γd) is the temperature change of a dry (unsaturated) air parcel as the parcel moves up for down in the atmosphere. This is a process lapse rate. The parcel is assumed not to mix with the environment but allowed to change its volume - it is said to behave adiabatically. Γd is a constant with a value of 0.01 K m-1.</p>
-<p>If you look at the difference between those two lapse rates - ELR vs.&nbsp;Γd - you can assess the static stability of a particular air layer:</p>
-<p>ELR &gt; Γd: unstable. For an air parcel, a slight upward displacement will result in a continuous rise of the parcel because the parcel will become warmer and less dense than the surrounding air at the same height and therefore possesses buoyancy. Conversely, if the air parcel is displaced below, it will become cooler and more dense than the surrounding air at the same height, and it will tend to continue sinking. In an unstable layer, vertical movements are enhanced.</p>
-<p>ELR = Γd: neutral. There will be no tendency for a parcel to rise or sink after it is displaced either above or below because it cools or warms at exactly the same rate as the surrounding air. Therefore, the parcel will come to rest after the displacing force is removed.</p>
-<p>ELR &lt; Γd: stable. If an air parcel is displaced upwards, it will become cooler and more dense than the surrounding air and tend to sink back to its original location. If displaced below, it will find itself warmer and tend to rise back up to its original location. In a stable layer, vertical movements are suppressed. In very stable conditions, smoke and other air pollutants accumulate and often cause respiratory problems.</p>
-<p>To facilitate comparison between the ELR and the dry adiabatic lapse rate, atmospheric scientists prefer to convert environmental (measured) temperatures T at a particular height z to potential temperatures θ by:</p>
-<p><span id="eq-potential-temperature"><span class="math display">\[
-\theta(z) = T(z) + \Gamma_d z                           
-\tag{1}\]</span></span></p>
-<p>Note: θ(z) is the potential temperature at height z and T(z) is the temperature at height z. No need to multiply them by z.</p>
-<p>Potential temperatures have the advantage that we can easily determine the stability of a layer on a graph: a decreasing potential temperature with height indicates an unstable layer, a constant potential temperature with height indicates a neutral layer, and an increasing potential temperature with height indicates a stable layer. This is true because the dry adiabatic lapse rate, Γd, plots as a vertical line on a graph of potential temperature vs.&nbsp;height (by definition).</p>
-<p>The layer of air closest to the Earth’s surface - the planetary boundary layer (PBL) - changes its vertical temperature distribution often throughout the 24-hour diurnal cycle because here air temperature is strongly affected by surface conditions. The PBL is modified during the day by radiative heating of the surface, which generates buoyancy and warms up the lower atmosphere, resulting in typically unstable conditions close to the ground. The daytime boundary layer is termed the mixed layer whose depth h* may be defined as the height to which buoyant dry air parcels rise adiabatically.</p>
-<p>At night, radiative cooling of the ground surface indicates that the atmosphere close to the ground will cool down as well, and the near-surface air becomes stable. Therefore, the mixed layer is largely destroyed at night and is replaced at low-level by a stable inversion layer.</p>
-<p>7.3 Calculations</p>
+</section>
 </section>
 </section>
 <section id="part-a---static-stability" class="level1" data-number="2">
@@ -452,13 +613,13 @@ ul.task-list li input[type="checkbox"] {
 <section id="questions-1" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="questions-1">Questions</h2>
 <div id="exr-ELR" class="theorem exercise">
-<p><span class="theorem-title"><strong>Question 4 (Question 4 <font size="-1">[1 points]</font>) </strong></span><a href="#tbl-morningBalloon">Table&nbsp;3</a> shows temperature data from a balloon launch. Plot these results in excel (or graph paper) with heights ranging from 0 to 2000 m on the y- axis, and temperatures from -4 to 20 <span class="math inline">\(^{\circ }\)</span> C on the x-axis.</p>
+<p><span class="theorem-title"><strong>Question 1 (Question 5 <font size="-1">[1 points]</font>) </strong></span><a href="#tbl-morningBalloon">Table&nbsp;3</a> shows temperature data from a balloon launch. Plot these results in excel (or graph paper) with heights ranging from 0 to 2000 m on the y- axis, and temperatures from -4 to 20 <span class="math inline">\(^{\circ }\)</span> C on the x-axis.</p>
 </div>
 <div id="exr-ELR2" class="theorem exercise">
-<p><span class="theorem-title"><strong>Question 5 (Question 5 <font size="-1">[0.5 points]</font>) </strong></span>What is the name of the profile you have drawn?</p>
+<p><span class="theorem-title"><strong>Question 2 (Question 6 <font size="-1">[0.5 points]</font>) </strong></span>What is the name of the profile you have drawn?</p>
 </div>
 <div id="exr-ELR3" class="theorem exercise">
-<p><span class="theorem-title"><strong>Question 6 (Question 6 <font size="-1">[1 points]</font>) </strong></span>What is the name given to the type of temperature profile between 500 and 750 m, and what is the numerical value of the lapse rate in this portion of the profile (Please include units)</p>
+<p><span class="theorem-title"><strong>Question 3 (Question 7 <font size="-1">[1 points]</font>) </strong></span>What is the name given to the type of temperature profile between 500 and 750 m, and what is the numerical value of the lapse rate in this portion of the profile (Please include units)</p>
 </div>
 <p>1.2 <span class="math inline">\(^{\circ} C / 100 m\)</span></p>
 <ul>
@@ -469,11 +630,15 @@ ul.task-list li input[type="checkbox"] {
 <p>Q5. Qualitatively (i.e., describe in your own words), how would your answer be changed if the smoke were saturated with water vapour? Assume that the SALR = 6°C/km. [0.5]</p>
 <p>Q6. To what temperature would the dry smoke have to be raised at the surface before it could penetrate to 2000m? Hint: use your method for 3 in reverse starting with measured temperature at 2000 m. [1]</p>
 <p>Q7. Classify portions of the profile that are stable and unstable. Hint: Consider the steepness of segments of you graph you plotted in Q1 compared to DALR (the dry adiabatic lapse rate). [1]</p>
-<p>Part B - Potential temperature</p>
+</section>
+<section id="part-b---potential-temperature" class="level2">
+<h2 class="anchored" data-anchor-id="part-b---potential-temperature">Part B - Potential temperature</h2>
 <p>Figure 7.1 Profiles of potential temperatures θ for 5 different times of day on August 8, 1978</p>
 <p>Figure 7.1 includes vertical profiles of potential temperature θmeasured over Vancouver during a period when the weather was clear and dominated by a large anticyclone (high pressure area). The observations were made using an electrical thermometer attached to helium-filled balloons. The readings were originally monitored as environmental temperatures T and later converted to potential temperatures θ, as plotted.</p>
 <p>Q8. What is the environmental temperature of the air at 400 m above the surface at 0900 h? Use equation 7.1 and solve for T(z) and refer to Figure 7.1. [1]</p>
-<p>Part C - A local wind circulation</p>
+</section>
+<section id="part-c---a-local-wind-circulation" class="level2">
+<h2 class="anchored" data-anchor-id="part-c---a-local-wind-circulation">Part C - A local wind circulation</h2>
 <p>Figure 7.2: (a) Location of the Airport and Sunset Observation sites in Vancouver. (b) Near surface air temperature T at the Airport and Sunset sites. Also included is the water surface temperature for Georgia Strait. All values refer to conditions on August 8, 1978.</p>
 <p>Figure 7.3 Wind direction and wind speed at the 30m level at the Sunset Site on August 8, 1978.</p>
 <p>Figure 7.4 Vertical profiles of wind direction and wind speed at the Sunset Site on August 8, 1978 at about 1300 PST. Note the y-axis units are m x10.</p>
