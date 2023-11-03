@@ -1,0 +1,719 @@
+---
+format:
+  revealjs:
+    theme: default
+title: Atmospheric Humidity
+subtitle: Quantifying water vapor content in the atmosphere
+---
+
+{{< include _imports.qmd >}}
+
+
+## Atmospheric Humidity
+
+
+![An Assmann Psycrhometer can be used to measure the wet bulb temperature and calculate atmospheric humidity](images/Lecture11/Psychrometer.png)
+
+## Learning objectives {.smaller}
+
+* Describe the physical and biological significance of atmospheric humidity
+* Define vapor density (or absolute humidity)
+* Be able to convert between vapor density and vapor pressure
+* Understand the relationship of saturation vapor density to temperature
+* Define and know how to calculate relative humidity
+* Know other important measures of humidity - vapor density deficit, vapor pressure deficit, dew point temperature & wet bulb depression
+* Give examples of sensors that can measure humidity
+
+## Atmospheric Humidity {.smaller}
+
+Water vapor makes up small part of atmosphere, but has important physical and biological significance because:
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* It's a major greenhouse gas
+* Plays a major role in energy transport globally and locally 
+* Affects animal comfort, plant disease, fire weather, metal corrosion, etc.
+
+:::
+
+::: {.column width="50%"}
+
+
+Gas|Proportion
+---|----------
+Nitrogen (N<sub>2</sub>)|78.08%
+Oxygen (O<sub>2</sub>)|20.95%
+Argon (Ar)|0.93%
+Carbon Dioxide (CO<sub>2</sub>)|0.04%
+Misc. Trace Gasses|<0.01% 
+Water Vapor (H<sub>2</sub>O)|0-3%
+
+: Approximate composition of the atmosphere.  {#tbl-concentrations}
+
+
+:::
+
+::::
+
+## Atmospheric Humidity
+
+
+* The heat released by condensing 1 g of water is enough to raise 1 kg of air (0.8 m<sup>3</sup>) by 2.5 °C 
+  + Due to water’s very high heat of vaporization, 2450 J g<sup>-1</sup>
+  + Freezing water releases another 330 J g<sup>-1</sup>
+* We feel cold after coming out of a swimming pool because the heat used for evaporation of the water comes from our skin
+
+## Vapor Density
+
+Vapor density ($\rho_v$) is the mass of water vapor per unit volume of air (g m<sup>-3</sup>); it is the fundamental measure of humidity.
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* The ‘driving force’ for evaporation is the $\rho_v$ gradient between an evaporating surface and the surrounding air.
+
+:::
+
+::: {.column width="50%"}
+
+![Density is the mass of a substance per unit volume (e.g., 1 m<sup>-3</sup>)](images/Lecture11/5_3.png)
+
+
+:::
+
+::::
+
+
+## Vapor Pressure
+
+Vapor pressure ($P_v$) is the partial pressure (aka force) exerted by water vapor in a parcel of air.
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+* A slightly more abstract measure of humidity.
+
+* Mean sea level air pressure is 101.325 kPa
+* $P_v \leq 5 kPa$
+
+:::
+
+::: {.column width="40%"}
+
+![](images/Lecture11/VapPress.jpg)
+
+
+:::
+
+::::
+
+## Mixing Ratio {.smaller}
+
+Water vapor content can also be expressed as a mixing ratio, which gives the abundance of one component of a mixture (H<sub>2</sub>O) relative to all other components ("dry air").
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+$r_{H2O} = \frac{m_{H2O}}{m_{dry}}$
+$m_{dry} = m_{total} - m_{H2O}$
+
+* Usually parts per thousand for water vapor
+  - g H<sub>2</sub>O per kg dry air
+
+* In this example:
+
+$m_{dry} = 608.5 g - 23 g = 0.5855 kg$
+
+$r_{H2O} = \frac{23 g}{0.5855 kg} = 39.28 \frac{g}{kg}$
+
+:::
+
+::: {.column width="50%"}
+
+
+![](images/Lecture11/mixing_ratio.png){width="120%"}
+
+:::
+
+::::
+
+## Ideal Gas Law
+
+Describes the state of a gas as a function of pressure ($P$), volume ($V$), temperature ($T$) in Kelvin, the amount of the gas ($n$) in moles; and the ideal gas constant ($R$ = 8.314 x 10 $^{-3}$ kPa m $^3$ g $^{-1}$ K $^{-1}$).  
+
+{{< include ../_Equations/Ideal-Gas-Law.qmd >}}
+
+* $n = \frac{m}{M}$, where $m$ is the mass of the substance and $M$ is the Molar mass of the substance.
+* Can be applied to a mixture of gasses (e.g., dry air) or a single gas (e.g., water vapor)
+
+
+## Ideal Gas Law
+
+The molar mass of water is 18.015 g mol $^{-1}$.  Given this, we can redefine @eq-Ideal-Gas-Law in terms of $\rho_v$ and $P_v$ as @eq-Ideal-Gas-Law-Vapor-Density.
+
+{{< include ../_Equations/Ideal-Gas-Law-Vapor-Density.qmd >}}
+
+* This allows us to convert between $\rho_v$ and $P_v$
+  + Knowing one, allows easy calculation of the other
+
+## Saturation
+
+The ability of air to hold water vapor increases exponentially with temperature.
+
+* We add a "$^*$" to indicate saturation:
+  + Saturation vapor density $\rho_v^*$ 
+  + Saturation vapor pressure $P_v^*$
+
+
+
+## Laten Heat
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+Determining $\rho_v^*$ or $P_v^*$ for a given $T$ requires integrating the Clausius–Clapeyron equation.
+
+* The latent heat of vaporization $L$ is also varies as a function of $T$
+
+{{< include ../_Equations/Clausius–Clapeyron.qmd >}}
+
+:::
+
+::: {.column width="50%"}
+
+```{r}
+#| label: fig-13_3
+#| fig-cap: Latent heat of evaporation / condensation at different temperatures
+#| fig-width: 4.5
+
+Data <- read.csv(file = '../_Data/LatentHeatVaporization.csv',sep=',')#, check.names = FALSE)
+
+fig <- plot_ly(data=Data)
+
+fig <- fig %>% add_trace(x = ~Temperature.C, y = ~Heat.of.vaporization.kJ.kg.1,type = "scatter", mode = "lines+markers")
+
+
+fig <- fig %>% layout(
+  xaxis = list(
+    title = "Temperature <sup>&deg;</sup>C"
+  ),
+  yaxis = list(
+    title = "Latent Heat (kJ kg<sup>-1</sup>)"
+  ),
+  title = 'Latent Heat of Vaporization',
+  margin = Margin_m,
+  legend = list(x = 0.05, y = 0.99, orientation='h')
+)
+
+
+
+fig
+
+```
+
+:::
+
+::::
+
+## Saturation
+
+Luckily, some experimentally based empirical relationships have been developed for typical conditions on Earth's surface.
+
+* It turns out temperature ($T$) and pressure ($P$) changes have an equal and opposite effect on saturation pressure $P_v^*$
+  + We can calculate $P_v^*$ to $\pm$ 0.1% for typical temperature conditions using the empirically derived Buck Equation:
+
+{{< include ../_Equations/Buck-Equation.qmd >}}
+
+
+
+
+## Saturation
+
+```{R}
+Buck_Equation <- function(T){
+	# Takes T in deg C and returns P_v in kPa
+	P_v <- 0.61121*exp((18.678-T/234.5)*(T/(257.14+T)))
+	return(P_v)
+}
+
+Ideal_Gas_Law_Vapor_Density <- function(T,P_v){
+	# Takes T in deg C and vapor pressure in kPa; converts T to K; then returns the rho_v in g m-3
+	R <- 8.31446261815324e-3 # Ideal Gas Constant in kPa m$^3$ K$^{-1}$ mol$^{-1}$ 
+	M <- 18.01528 # Molar mass of H20 in g m-3
+	T_k <- T + 273.15
+	rho_v = P_v*M/(R*T_k)
+	return (rho_v)
+}
+
+# Vector of air temperature in 1 deg C intervals over over the range -10 to 40 C
+T <- c(-10:40) 
+P_v <- Buck_Equation(T)
+rho_v <- Ideal_Gas_Law_Vapor_Density(T,P_v)
+
+# A "data frame" is a like a table
+Saturation_by_Temperature <- data.frame(T,rho_v,P_v)
+
+```
+
+:::: {.columns}
+::: {.column width="50%"}
+
+
+```{r}
+#| label: fig-saturation-vapor-pressure
+#| fig-cap: "Saturation vapor pressure $P_v^*$ as a function of temperature $T$"
+#| fig-width: 4.5
+#| fig-height: 4.5
+
+
+fig <- plot_ly(data = Saturation_by_Temperature) 
+
+fig <- fig %>% add_trace(x = ~T, y = ~P_v,  name = "P<sub>v</sub>",
+        mode = "lines+markers", type = "scatter",line = list(color = '#f78400', width = 1.5),marker = list(color = '#f78400'))
+
+fig <- fig %>%  layout(
+  yaxis = list(#range=c(0,10),
+                title = 'kPa'),
+  xaxis = list(#range(-5,45),
+              title = '<sup>&deg;</sup>C'),
+  title = 'Saturation Vapor Pressure vs. Air Temperature',
+  margin = Margin_m,
+  legend = list(x = 0.05, y = 0.99, orientation='h'))
+fig
+
+```
+
+
+:::
+::: {.column width="50%"}
+
+```{r}
+#| label: fig-saturation-vapor-density
+#| fig-cap: "Saturation vapor density $\\rho_v^*$ as a function of temperature $T$"
+#| fig-width: 4.5
+#| fig-height: 4.5
+
+
+fig <- plot_ly(data = Saturation_by_Temperature) 
+
+fig <- fig %>% add_trace(x = ~T, y = ~rho_v,  name = "&#961;<sub>v</sub><sup>*</sup>",
+        mode = "lines+markers", type = "scatter",line = list(color = '#f78400', width = 1.5),marker = list(color = '#f78400'))
+
+fig <- fig %>%  layout(
+  yaxis = list(#range=c(0,60),
+                title = 'g m<sup>-3</sup>'),
+  xaxis = list(#range(-5,45),
+                title = '<sup>&deg;</sup>C'),
+  title = 'Saturation Vapor Density vs. Air Temperature',
+  margin = Margin_m,
+  legend = list(x = 0.05, y = 0.99, orientation='h'))
+fig
+
+```
+
+:::
+::::
+
+
+## Partial Saturation
+
+
+:::: {.columns}
+::: {.column width="50%"}
+
+Typically, ambient air is not saturated. An air parcel such as the one the figure can be brought to saturation by:
+
+* Adding moisture to the air
+* Cooling the air
+
+
+:::
+::: {.column width="50%"}
+
+```{r}
+#| label: fig-partial-saturation
+#| fig-cap: "Saturation vapor density $\\rho_v^*$ as a function of temperature $T$"
+#| fig-width: 4.5
+#| fig-height: 4.5
+
+Saturation_by_Temperature$EX = Saturation_by_Temperature$rho_v
+Saturation_by_Temperature$EX[Saturation_by_Temperature$T!=20]=NaN
+
+fig <- plot_ly(data = Saturation_by_Temperature) 
+
+fig <- fig %>% add_trace(x = ~T, y = ~rho_v,  name = "&#961;<sub>v</sub><sup>*</sup>",
+        mode = "lines+markers", type = "scatter",line = list(color = '#f78400', width = 1.5),marker = list(color = '#f78400'))
+
+fig <- fig %>% add_trace(x = ~T, y = ~EX-10,  name = "Example<br>Parcel",
+        mode = "markers", type = "scatter",marker = list(color = '#de0211',size = 10, line = list(color = 'black',width = 2)))
+
+fig <- fig %>%  layout(
+  yaxis = list(#range=c(0,60),
+                title = 'g m<sup>-3</sup>'),
+  xaxis = list(#range(-5,45),
+                title = '<sup>&deg;</sup>C'),
+  title = 'Saturation Vapor Density vs. Air Temperature',
+  margin = Margin_m,
+  legend = list(x = 0.05, y = 0.99, orientation='h'))
+fig
+
+```
+
+:::
+::::
+
+
+::: {.notes}
+
+Humidity is often expressed as a fraction or % of the maximum
+water vapor the air can hold:
+
+
+:::
+
+
+## Dewpoint temperature (Td)
+
+The temperature down to which the air must be cooled isobarically (without changing air pressure) for it to become saturated.
+
+![Can be measured with a silver coated cooled mirror. $T_d$ is the temperature of the mirror when water vapor condenses on it.](images/Lecture11/19_2.png)
+
+
+## Dewpoint Calculation (iClicker)
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+You can determine $T_d$ from $\rho_v$ or $P_v$ using the relationship between $T$ and $\rho_v^*$ or $P_v^*$
+
+* If $T$ = 20 °C and $P_v$ = 1.7 kPa, what is $T_d$?
+
+  + A 20 °C
+  + B 15 °C
+
+
+:::
+
+::: {.column width="50%"}
+
+
+```{r}
+#| label: fig-saturation-vapor-pressure-2
+#| fig-cap: "Saturation vapor pressure $P_v^*$ as a function of temperature $T$"
+#| fig-width: 4.5
+#| fig-height: 4.5
+
+
+fig <- plot_ly(data = Saturation_by_Temperature) 
+
+fig <- fig %>% add_trace(x = ~T, y = ~P_v,  name = "P<sub>v</sub>",
+        mode = "lines+markers", type = "scatter",line = list(color = '#f78400', width = 1.5),marker = list(color = '#f78400'))
+
+fig <- fig %>%  layout(
+  yaxis = list(#range=c(0,10),
+                title = 'kPa'),
+  xaxis = list(#range(-5,45),
+              title = '<sup>&deg;</sup>C'),
+  title = 'Saturation Vapor Pressure vs. Air Temperature',
+  margin = Margin_m,
+  legend = list(x = 0.05, y = 0.99, orientation='h'))
+fig
+
+```
+
+:::
+
+::::
+
+
+## Condensation
+
+
+If an air parcel to cools below $T_d$, condensation will<sup>*</sup> occur.
+
+* Condensation **releases** heat which warms the surrounding environment
+  + Cloud formation is an important avenue of energy exchange
+
+* Condensation nuclei are required to initiate condensation.
+  + In the absence nuclei, which can occur in the upper atmosphere, air will become *supersaturated*
+  + Earth's surface is a nuclei, so supersaturation doesn't occur near the surface.
+
+
+
+
+## Relative Humidity
+
+Humidity can be expressed as a fraction or % of the maximum (saturation) water vapor the air can hold at that temperature:
+
+{{< include ../_Equations/Relative-Humidity.qmd >}}
+
+* RH depends on T because $\rho_v^*$ is a function of T
+
+
+
+## Relative Humidity and Temperature
+
+The variation in RH during the day is largely determined by the variation in temperature.
+
+:::: {.columns}
+
+::: {.column width="70%"}
+
+
+![Air temperature and RH are usually in anti-phase](images/Lecture11/11_1.png)
+
+
+:::
+
+::: {.column width="30%"}
+
+![$r_{H2O}$ stays same but $T$ and $RH$ change ](images/Lecture11/11_3.png)
+
+
+:::
+
+::::
+
+## Importance of RH
+
+* Determines the water content of porous media e.g., wood, soil, clothing, which has been allowed to equilibrate with the air.
+* Low RH (< 30%) contributes to high risk of forest fire  
+* Metal corrosion is directly related to RH.
+* Many plant diseases are strongly affected by RH.
+
+
+
+## Relative Humidity (iClicker)
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+In the classroom, T = 21°C and $\rho_v$ = 9 g m<sup>-3</sup>. What is the RH?  
+
+* A 5%
+* B 100%
+* C 25%
+* D 50%
+
+
+:::
+
+::: {.column width="50%"}
+
+
+```{r}
+#| label: fig-saturation-vapor-density-2
+#| fig-cap: "Saturation vapor density $\\rho_v^*$ as a function of temperature $T$"
+#| fig-width: 4.5
+#| fig-height: 4.5
+
+
+fig <- plot_ly(data = Saturation_by_Temperature) 
+
+fig <- fig %>% add_trace(x = ~T, y = ~rho_v,  name = "&#961;<sub>v</sub><sup>*</sup>",
+        mode = "lines+markers", type = "scatter",line = list(color = '#f78400', width = 1.5),marker = list(color = '#f78400'))
+
+fig <- fig %>%  layout(yaxis = list(#range=c(0,60),
+                                    title = 'g m<sup>-3</sup>'),
+                      xaxis = list(#range(-5,45),
+                                    title = '<sup>&deg;</sup>C'),
+                        title = 'Saturation Vapor Density vs. Air Temperature')
+fig
+
+```
+
+:::
+
+::::
+
+## Relative Humidity example
+
+* In the classroom, $T$ = 21 °C and $\rho_v$ = 9 g m<sup>-3</sup>. What is the RH?  
+  + First determine  $\rho_v^*$ using the graph. It is $\approx$ 18 g m<sup>-3</sup>.
+  + Then RH =  $\rho_v$ / $\rho_v^*$ = (9/18) x 100% = 50%.
+
+
+## Vapor Density Deficit (VDD)
+
+
+The increase in $\rho_v$ necessary to bring the air to saturation  It is expressed as:
+
+{{< include ../_Equations/Vapor-Density-Deficit.qmd >}}
+
+* RH doesn’t determine the rate of evaporation or condensation 
+  + The difference between vapor density at the exchange surface and the air determines it!
+
+
+## VDD (iClicker)
+
+
+In the classroom, T = 21°C and $\rho_v$ = 9 g m<sup>-3</sup>. We know that $\rho_v^* \approx$ 18 g m<sup>-3</sup>. So What is the VDD?  
+
+
+::: {.fragment}
+
+$VDD = rho_v^* - rho_v =$ 9 g m<sup>-3</sup>
+
+:::
+
+## Vapor Pressure Deficit (VPD)
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+This variable is very similar to VDD
+
+{{< include ../_Equations/Vapor-Pressure-Deficit.qmd >}}
+
+
+* Helpful to understand the response of the stomata of leaves to the dryness of the air
+
+
+:::
+
+::: {.column width="50%"}
+
+
+![](images/Lecture11/VPD.png)
+
+:::
+
+::::
+
+
+
+## Vapor Pressure Deficit (VPD)
+
+
+:::: {.columns}
+
+::: {.column width="70%"}
+
+Rates of photosynthesis are influenced by VPD.
+
+* With increasing VPD, photosynthesis first becomes more efficient as the pressure gradient aids gas transfer between the leaves and the atmosphere
+* Then it has a strong limiting effect as plants close their stomata to avoid excess water loss
+
+
+:::
+
+::: {.column width="30%"}
+
+
+![](images/Lecture11/Illisarvik.png)
+
+:::
+
+::::
+
+
+
+## Measuring Humidity {.smaller}
+
+
+* RH has been measured by different methods:  Leonardo de Vinci used the weight of a ball of wool.
+* de Saussure invented the hair hygrometer (2.5% change in length for 0 to 100% RH).
+* At fire weather stations, the weight of small sticks of wood has been used.
+* More recently changes in electrical conductivity resulting from adsorption of water vapor by a thin polymer film coated on small sensing chips has proven to be very effective. 
+  + These are commonly used in climate stations.
+
+
+
+
+## Measuring RH
+
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+![Vaisala HMP35C probe with air filter](images/Lecture11/26_2.png)
+
+
+:::
+
+::: {.column width="40%"}
+
+
+![HMP35C with air filter removed showing RH sensing chip ](images/Lecture11/27_1.png)
+
+:::
+
+::::
+
+
+
+## Psychrometry
+
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+
+* The size of the depression is a  measure of the rate of removal of latent heat
+  + Which is due to the dryness of the ambient air relative to saturation at the temperature of the evaporating surface (the wet-bulb)
+
+
+:::
+
+::: {.column width="40%"}
+
+
+![](images/Lecture11/28_6.png)
+
+
+:::
+
+::::
+
+
+## Infrared gas analyzer (IRGA) 
+
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+
+Fast-response IRGA using the absorption of near-infrared radiation by water vapor (or CO2) as the means of sensing humidity.
+
+* Used in the eddy-covariance method of measuring fluxes of water vapor 
+  - we’ll discuss later. 
+
+:::
+
+::: {.column width="40%"}
+
+
+![](images/Lecture11/32_0.png)
+
+
+:::
+
+::::
+
+## Take home points {.smaller}
+
+* Makes up small part of atmosphere but is the main greenhouse gas 
+* Large latent heat of vaporization (conversion of liquid to vapor) 
+* Relationship of vapor density to vapor pressure by ideal gas law 
+* Saturation vapor density (ability of air to store water vapor) (v *) is exponentially related to temperature 
+* RH (v/v *) and VDD (v * - v) are very sensitive to temperature 
+* vapor density difference determines rate of H2O vapor transfer 
+* RH determines equilibrium water content of porous materials such as fire fuels & affects animal comfort, plant disease & metal corrosion 
+* Leaf stomata close as VDD or VPD increases 
