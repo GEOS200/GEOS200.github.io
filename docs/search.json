@@ -1046,8 +1046,8 @@
     "objectID": "Slides/Lecture12.html#stable-atmosphere",
     "href": "Slides/Lecture12.html#stable-atmosphere",
     "title": "Profile of the Atmosphere, Lapse rates, and Stability",
-    "section": "Stable atmosphere",
-    "text": "Stable atmosphere\n\n\n\n\n\n\nA slight upward displacement of this air parcel will cause it to become cooler and more dense than its surroundings and it will return to its original position. A slight downward displacement, and the air parcel will be warmer and rise back to its original position."
+    "section": "Stable Atmosphere",
+    "text": "Stable Atmosphere\n\n\n\n\n\n\nA slight upward displacement of this air parcel will cause it to become cooler and more dense than its surroundings and it will return to its original position. A slight downward displacement, and the air parcel will be warmer and rise back to its original position."
   },
   {
     "objectID": "Slides/Lecture12.html#stable-atmosphere-1",
@@ -1075,21 +1075,21 @@
     "href": "Slides/Lecture12.html#neutral",
     "title": "Profile of the Atmosphere, Lapse rates, and Stability",
     "section": "Neutral",
-    "text": "Neutral\nTypically found when there is little surface heating or cooling (heavy overcast) and/or when winds are strong so that the air is thoroughly mixed (homogenized). Does not aid or restrict dispersion and mixing – plumes are conic and steadily occupy larger air volume."
+    "text": "Neutral\nTypically found when there is little surface heating or cooling (overcast) or when strong winds thoroughly mix the air. Does not aid or restrict dispersion and mixing, plumes are conic and steadily occupy larger air volume."
   },
   {
     "objectID": "Slides/Lecture12.html#conditionally-unstable",
     "href": "Slides/Lecture12.html#conditionally-unstable",
     "title": "Profile of the Atmosphere, Lapse rates, and Stability",
     "section": "Conditionally Unstable",
-    "text": "Conditionally Unstable\n\n\nWhen the ELR is between the DLAR and the SALR\n\nDry air that is lifted will not continue to rise under it’s own power\nSaturated air that is lifted will continue to rise under it’s own power"
+    "text": "Conditionally Unstable\n\n\nWhen the ELR is between the DLAR and the SALR\n\nDry air that is lifted will not continue to rise under it’s own power\nSaturated air that is lifted will continue to rise under it’s own power\n\n\n\n\n\nSALR is sometimes call the Moist Adiabatic Lapse Rate"
   },
   {
     "objectID": "Slides/Lecture12.html#summary-comparing-lapse-rates",
     "href": "Slides/Lecture12.html#summary-comparing-lapse-rates",
     "title": "Profile of the Atmosphere, Lapse rates, and Stability",
     "section": "Summary: Comparing lapse rates",
-    "text": "Summary: Comparing lapse rates\n\nUnstable: ELR &gt; DALR (& SALR)\nStable: ELR &lt; DALR (& SALR)\nNeutral: ELR = DALR\nCond. unstable = SALR &lt; ELR &lt; DALR"
+    "text": "Summary: Comparing lapse rates\n\nUnstable: ELR &gt; DALR (& SALR)\nStable: ELR &lt; DALR (& SALR)\nNeutral: ELR = DALR\nConditionally unstable = SALR &lt; ELR &lt; DALR\n\nBy definition, Neutral is also conditionally unstable"
   },
   {
     "objectID": "Slides/Lecture12.html#test-your-knowledge-iclicker-1",
@@ -1117,7 +1117,7 @@
     "href": "Slides/Lecture12.html#potential-temperature",
     "title": "Profile of the Atmosphere, Lapse rates, and Stability",
     "section": "Potential temperature",
-    "text": "Potential temperature\nTo ‘remove’ the effects of pressure change with height we can remove the dry adiabatic lapse rate and calculate the potential temperature θ as:\n\\[\n\\theta = T_z + DALR z\n\\qquad(4)\\]\n\nwhere θ is the temperature the air would have it were brought to a reference air pressure (typically a 100 kPa, 1000 mb). This standardization of the temperature is the same as rotating all T profiles to the right by the slope of DALR.\n\n:::\n\n\n\n::::"
+    "text": "Potential temperature\nTo ‘remove’ the effects of pressure change with height we can remove the dry adiabatic lapse rate and calculate the potential temperature θ as:\n\\[\n\\theta = T_z + DALR z\n\\qquad(4)\\]\n\nθ is the temperature the air would have it were brought to a reference air pressure (typically a 100 kPa, 1000 mb). This standardization of the temperature is the same as rotating all T profiles to the right by the slope of DALR."
   },
   {
     "objectID": "Slides/Lecture12.html#potential-temperature-profiles",
