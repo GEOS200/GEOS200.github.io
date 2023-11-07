@@ -282,12 +282,12 @@ ul.task-list li input[type="checkbox"] {
 <tr class="odd">
 <td style="text-align: left;">DALR</td>
 <td style="text-align: left;">Dry Adiabatic Lapse Rate</td>
-<td style="text-align: left;">0.01 <span class="math inline">\(K m^{-1}\)</span></td>
+<td style="text-align: left;">-0.01 <span class="math inline">\(K m^{-1}\)</span></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">SALR</td>
 <td style="text-align: left;">Saturated Adiabatic Lapse Rate</td>
-<td style="text-align: left;">The rate is variable as a function of <span class="math inline">\(T\)</span> and <span class="math inline">\(P\)</span> but we can assume a constant rate of 0.005 <span class="math inline">\(K m^{-1}\)</span> to get a reasonable approximation</td>
+<td style="text-align: left;">The rate is variable as a function of <span class="math inline">\(T\)</span> and <span class="math inline">\(P\)</span> but we can assume a constant rate of -0.005 <span class="math inline">\(K m^{-1}\)</span> to get a reasonable approximation</td>
 </tr>
 </tbody>
 </table>
@@ -372,7 +372,7 @@ PV=nRT
 <section id="adiabatic-processes" class="level2">
 <h2 class="anchored" data-anchor-id="adiabatic-processes">Adiabatic Processes</h2>
 <p>The rate at which the parcel will cool depends on whether or not it is saturated. Why? Because the amount of water the atmosphere can hold is a function of <a href="../Slides/Lecture11.html">temperature</a>. In order for a parcel to cool below its dewpoint water vapor must condense, and the process of condensation <a href="https://geos200.github.io/Slides/Lecture1.html#/latent-heat">releases heat</a> to the surrounding environment.</p>
-<p>The <strong>dry adiabatic lapse rate (DALR)</strong> applies when a parcel of air is <strong>not</strong> saturated, and has a constant with a value of <span class="math inline">\(\pm\)</span> 0.01 K m<sup>-1</sup>. The DALR dictate the rate of cooling if a parcel is being lifted upwards and the rate of warming for a parcel that is descending.</p>
+<p>The <strong>dry adiabatic lapse rate (DALR)</strong> applies when a parcel of air is <strong>not</strong> saturated, and has a constant with a value of -0.01 K m<sup>-1</sup>. The DALR dictates the rate of cooling if a parcel is being lifted upwards or the rate of warming for a parcel that is descending.</p>
 <p>The <strong>saturated adiabatic lapse rate (SALR)</strong> applies once a parcel of air reaches saturation. A saturated parcel still cools as it rises but condensation also occurs which releases latent heat and counteracts some of the cooling. It important to note that the SALR <strong>only</strong> applies to cooling air, when air warms it will always do so at the DALR, because as soon as the air begins to warm, it will no longer be saturated.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
@@ -382,7 +382,7 @@ PV=nRT
 <li>The latent heat released by condensation varies as a function of <span class="math inline">\(T\)</span></li>
 <li>The amount of water that must condense for a parcel to cool also varies as a function of <span class="math inline">\(T\)</span></li>
 </ul>
-<p>While the SALR is not constant you will can see from <a href="#fig-SALR">Figure&nbsp;4</a> that changes in <span class="math inline">\(T\)</span> and <span class="math inline">\(P\)</span> have opposing effects on the SALR. A decrease in <span class="math inline">\(T\)</span> increases the SALR while a decrease in <span class="math inline">\(P\)</span> will decrease SALR. Given this, we can assume a constant SALR of 0.005 K m<sup>-1</sup> to perform reasonably accurate approximations.</p>
+<p>While the SALR is not constant you will can see from <a href="#fig-SALR">Figure&nbsp;4</a> that changes in <span class="math inline">\(T\)</span> and <span class="math inline">\(P\)</span> have opposing effects on the SALR. A decrease in <span class="math inline">\(T\)</span> increases the SALR while a decrease in <span class="math inline">\(P\)</span> will decrease SALR. Given this, we can assume a constant SALR of -0.005 K m<sup>-1</sup> to perform reasonably accurate approximations.</p>
 </div><div class="column" style="width:50%;">
 <div id="fig-SALR" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
@@ -418,89 +418,89 @@ ELR = \frac{T_{z_2}-T_{z_1}}{z_2-z_1}
 <tr class="header">
 <th style="text-align: right;"></th>
 <th style="text-align: right;">Height (m.a.s.l)</th>
-<th style="text-align: left;">ELR K/m</th>
+<th style="text-align: right;">ELR K/m</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">17</td>
-<td style="text-align: left;">–</td>
+<td style="text-align: right;">NA</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">2</td>
 <td style="text-align: right;">271</td>
-<td style="text-align: left;">0.0154</td>
+<td style="text-align: right;">0.0154</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">3</td>
 <td style="text-align: right;">904</td>
-<td style="text-align: left;">-0.0013</td>
+<td style="text-align: right;">-0.0013</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">4</td>
 <td style="text-align: right;">1592</td>
-<td style="text-align: left;">0.0061</td>
+<td style="text-align: right;">0.0061</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">3172</td>
-<td style="text-align: left;">-0.0038</td>
+<td style="text-align: right;">-0.0038</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">6</td>
 <td style="text-align: right;">5790</td>
-<td style="text-align: left;">-0.0066</td>
+<td style="text-align: right;">-0.0066</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">7</td>
 <td style="text-align: right;">7430</td>
-<td style="text-align: left;">-0.0083</td>
+<td style="text-align: right;">-0.0083</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">8</td>
 <td style="text-align: right;">9410</td>
-<td style="text-align: left;">-0.0074</td>
+<td style="text-align: right;">-0.0074</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">9</td>
 <td style="text-align: right;">10600</td>
-<td style="text-align: left;">-0.0091</td>
+<td style="text-align: right;">-0.0091</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">10</td>
 <td style="text-align: right;">11990</td>
-<td style="text-align: left;">-0.0075</td>
+<td style="text-align: right;">-0.0075</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">11</td>
 <td style="text-align: right;">12165</td>
-<td style="text-align: left;">-0.0057</td>
+<td style="text-align: right;">-0.0057</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">13740</td>
-<td style="text-align: left;">0.0015</td>
+<td style="text-align: right;">0.0015</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">13</td>
 <td style="text-align: right;">16230</td>
-<td style="text-align: left;">0.0006</td>
+<td style="text-align: right;">0.0006</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">14</td>
 <td style="text-align: right;">18440</td>
-<td style="text-align: left;">0.0006</td>
+<td style="text-align: right;">0.0006</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">15</td>
 <td style="text-align: right;">20510</td>
-<td style="text-align: left;">-0.0006</td>
+<td style="text-align: right;">-0.0006</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">16</td>
 <td style="text-align: right;">23660</td>
-<td style="text-align: left;">-0.0005</td>
+<td style="text-align: right;">-0.0005</td>
 </tr>
 </tbody>
 </table>
@@ -516,11 +516,14 @@ ELR = \frac{T_{z_2}-T_{z_1}}{z_2-z_1}
 <div class="columns">
 <div class="column" style="width:60%;">
 <p><span id="eq-Lifting-Condensation-Level"><span class="math display">\[
-LCL = \frac{T_{z_1}-T_{dz_1}}{DALR}+z_1
+LCL = \frac{T_{dz_1}-T_{z_1}}{DALR}+z_1
 \tag{3}\]</span></span></p>
 <p>The numerator in <a href="#eq-Lifting-Condensation-Level">Equation&nbsp;3</a> will tell us who much a parcel needs to cool in order to reach it’s dewpoint, the denominator tells us how many meters the parcel needs to rise from it’s current position, and subtracting <span class="math inline">\(z_1\)</span> puts in standard terms (m.a.s.l). <strong>Recall</strong>: the parcel will not mix well with its surroundings so its starting properties (e.g., water vapor content) will be preserved. So while <span class="math inline">\(T\)</span> will decrease adiabatically as a parcel is lifted, <span class="math inline">\(T_d\)</span> will remain unchanged.</p>
 <ul>
-<li>In <a href="#fig-LCL">Figure&nbsp;6</a>, a parcel at the surface (<span class="math inline">\(z_1\)</span> = 0 m.a.s.l) has <span class="math inline">\(T = 20^{\circ}C\)</span> and <span class="math inline">\(T_d = 10^{\circ}C\)</span>, the parcel must cool <span class="math inline">\(10 K\)</span> for <span class="math inline">\(T=T_d\)</span> and condensation will begin. With the DALR = 0.01 K m<sup>-1</sup>; <span class="math inline">\(LCL = \frac{10 K}{0.01 K m^{-1}} 0 m.a.s.l- = 1000 m.a.s.l.\)</span>.</li>
+<li>In <a href="#fig-LCL">Figure&nbsp;6</a>, a parcel at the surface (<span class="math inline">\(z_1\)</span> = 0 m.a.s.l) has <span class="math inline">\(T = 20^{\circ}C\)</span> and <span class="math inline">\(T_d = 10^{\circ}C\)</span>, the parcel must cool by 10 <span class="math inline">\(^{\circ}C\)</span> for <span class="math inline">\(T=T_d\)</span> and condensation will begin. With the DALR = -0.01 K m<sup>-1</sup>; <span class="math inline">\(LCL = \frac{10 ^{\circ}C - 20 ^{\circ}C}{-0.01 K m^{-1}} + 0 m.a.s.l- = 1000 m.a.s.l.\)</span>.
+<ul>
+<li><em>Note</em> Lapse rates are given in K, we don’t need to convert <span class="math inline">\(T\)</span> and <span class="math inline">\(T_d\)</span> to K first, because 1 <span class="math inline">\(^{\circ}C\)</span> = 1 K. Any time you calculate the difference between two temperatures in <span class="math inline">\(^{\circ}C\)</span> the resulting value is also the difference in K.</li>
+</ul></li>
 </ul>
 </div><div class="column" style="width:40%;">
 <div id="fig-LCL" class="quarto-figure quarto-figure-center anchored">
@@ -534,12 +537,12 @@ LCL = \frac{T_{z_1}-T_{dz_1}}{DALR}+z_1
 </section>
 <section id="adiabatic-process-equation" class="level2">
 <h2 class="anchored" data-anchor-id="adiabatic-process-equation">Adiabatic Process Equation</h2>
-<p>A generalize formula for approximating the temperature of a parcel (<span class="math inline">\(T_p\)</span>) that moves from one level (<span class="math inline">\(z_1\)</span>) to another (<span class="math inline">\(z_2\)</span>), is given in <a href="#eq-Adiabatic-Process-Equation">Equation&nbsp;4</a>. If a parcel is rising (<span class="math inline">\(z_1 &lt; z-2\)</span>), it will cool at the DALR until reaching the LCL and then cool at the SALR. <em>Note</em> that above the LCL, the parcel’s dewpoint (<span class="math inline">\(T_dp\)</span>) will decrease in lockstep with <span class="math inline">\(T_p\)</span>. If a parcel is descending (<span class="math inline">\(z_1 &gt; z_2\)</span>) it will warm at the DALR over the entire descent while the <span class="math inline">\(T_dp\)</span> will not change.</p>
+<p>A generalize formula for approximating the temperature of a parcel (<span class="math inline">\(T_p\)</span>) that moves from one level (<span class="math inline">\(z_1\)</span>) to another (<span class="math inline">\(z_2\)</span>), is given in <a href="#eq-Adiabatic-Process-Equation">Equation&nbsp;4</a>. If a parcel is rising (<span class="math inline">\(z_1 &lt; z-2\)</span>), it will cool at the DALR until reaching the LCL and then cool at the SALR. <em>Note</em> that above the LCL, the parcel’s dewpoint (<span class="math inline">\(T_{dp}\)</span>) will decrease in lockstep with <span class="math inline">\(T_p\)</span>. If a parcel is descending (<span class="math inline">\(z_1 &gt; z_2\)</span>) it will warm at the DALR over the entire descent while the <span class="math inline">\(T_{dp}\)</span> will not change.</p>
 <p><span id="eq-Adiabatic-Process-Equation"><span class="math display">\[
 T_p(z_2) = \begin{cases}
-T_p(z_1) - min((LCL-z_1),(z_2-z_1)) * DALR - max(z_2-LCL,0) * SALR,
+T_p(z_1) + min((LCL-z_1),(z_2-z_1)) * DALR + max(z_2-LCL,0) * SALR,
 \text{if} z_2&gt;z_1 \\
-T_p(z_1) + (z_1 - z_2) * DALR,
+T_p(z_1) + (z_2-z_1) * DALR,
 \text{if} z_1&gt;z_2
 \end{cases}
 \tag{4}\]</span></span></p>
@@ -622,7 +625,7 @@ T_p(z_1) + (z_1 - z_2) * DALR,
 <h2 class="anchored" data-anchor-id="questions-2">Questions</h2>
 <section id="question-8-2-points" class="level3">
 <h3 class="anchored" data-anchor-id="question-8-2-points">Question 8 <font size="-1">[2 points]</font></h3>
-<p>Looking at <a href="#tbl-ELR">Table&nbsp;2</a>, give the atmospheric stability for each layer (unstable, conditionally unstable, or stable). You can find a copy of the data from the table <a href="www/ELR_ex.csv">here</a>. <strong>Note:</strong> you can assume a constant SALR of 0.005 <span class="math inline">\(^{\circ}C km^{-1}\)</span>. Given this, how would you characterize the stability of the atmosphere at this location on this day? If there were a forest fire in the area, what would happen to the smoke from the fire?</p>
+<p>Looking at <a href="#tbl-ELR">Table&nbsp;2</a>, give the atmospheric stability for each layer (unstable, conditionally unstable, or stable). You can find a copy of the data from the table <a href="www/ELR_ex.csv">here</a>. <strong>Note:</strong> you can assume a constant SALR of -0.005 <span class="math inline">\(^{\circ}C km^{-1}\)</span>. Given this, how would you characterize the stability of the atmosphere at this location on this day? If there were a forest fire in the area, what would happen to the smoke from the fire?</p>
 </section>
 </section>
 </section>
