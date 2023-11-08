@@ -788,7 +788,7 @@
     "href": "Slides/Lecture13.html#learning-objectives",
     "title": "Orographic Lift",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\n\nDescribe how temperature changed over time in the atmosphere.\nExplain how temperature changes with height in the atmosphere.\nBe able to compare the difference between the ELR and the process lapse rate to distinguish between unstable, neutral or stable atmospheric stratifications\nGive examples of how the stratification (stability) of the atmosphere controls mixing and dispersion."
+    "text": "Learning Objectives"
   },
   {
     "objectID": "Slides/Lecture13.html#temperature-of-an-air-parcel-vs.-the-surrounding-environment",
@@ -2811,7 +2811,7 @@
     "href": "Slides/Lecture12.html#classifying-stability",
     "title": "Profile of the Atmosphere, Lapse rates, and Stability",
     "section": "Classifying Stability",
-    "text": "Classifying Stability\nStability is determined by comparing the Environmental Lapse Rate (ELR) to the Dry Adiabatic Lapse Rate (DALR = -0.01 K m) and the Saturated Adiabatic Lapse Rate (SALR; not constant but often assumed to be -0.005 K m).\n\nThe ELR is not constant. It will vary by time of day, location, and height.\n\n\n\n\n\nTable 2: Example of stability classifications.\n\n\nUnstable\nNeutral\nConditionally Unstable\nStable\n\n\n\n\nELR&lt;DALR\nELR=DLAR\nDALR&lt;=ELR&lt;=SALR\nELR&gt;SALR"
+    "text": "Classifying Stability\nStability is determined by comparing the Environmental Lapse Rate (ELR) to the Dry Adiabatic Lapse Rate (DALR = -0.01 K m-1) and the Saturated Adiabatic Lapse Rate (SALR; not constant but often assumed to be -0.005 K m-1).\n\nThe ELR is not constant. It will vary by time of day, location, and height.\n\n\n\n\n\nTable 2: Example of stability classifications.\n\n\nUnstable\nNeutral\nConditionally Unstable\nStable\n\n\n\n\nELR&lt;DALR\nELR=DLAR\nDALR&lt;=ELR&lt;=SALR\nELR&gt;SALR"
   },
   {
     "objectID": "Slides/Lecture12.html#classifying-stability-1",
@@ -3694,5 +3694,103 @@
     "title": "Lecture Quiz 3",
     "section": "10",
     "text": "10\nA parcel of air descends 1000 m; what will happen to it?\n\nIts \\(T\\) will change by 10 K\nIts \\(T\\) will change by -10 K\nIts \\(P\\) will increase\nB & C\nA & C"
+  },
+  {
+    "objectID": "Slides/Lecture12.html#unstable-atmosphere",
+    "href": "Slides/Lecture12.html#unstable-atmosphere",
+    "title": "Profile of the Atmosphere, Lapse rates, and Stability",
+    "section": "Unstable atmosphere",
+    "text": "Unstable atmosphere\n\n\n\n\n\n\nA slight upward displacement of this air parcel will result in a continuous rise of the parcel because it will become warmer and less dense than its surroundings. A slight downward displacement, and the air parcel will continue to sink."
+  },
+  {
+    "objectID": "Slides/Lecture12.html#unstable-atmosphere-1",
+    "href": "Slides/Lecture12.html#unstable-atmosphere-1",
+    "title": "Profile of the Atmosphere, Lapse rates, and Stability",
+    "section": "Unstable atmosphere",
+    "text": "Unstable atmosphere\n\n\n\n\n\n\nA slight upward displacement of this air parcel will result in a continuous rise of the parcel because it will become warmer and less dense than its surroundings. A slight downward displacement, and the air parcel will continue to sink."
+  },
+  {
+    "objectID": "Slides/Lecture12.html#unstable",
+    "href": "Slides/Lecture12.html#unstable",
+    "title": "Profile of the Atmosphere, Lapse rates, and Stability",
+    "section": "Unstable",
+    "text": "Unstable\nThe plume shape is because both sources of convection are active – thermals cause the large ‘loops’, and mechanical eddies cause the spreading\n\n\n\n\n\nTypically found near the ground by day if strong heating, or if there is advection of a colder airmass aloft. Very good for dispersion and mixing, development of thermals and convective cloud (cumulus)\n\n\n\n\n\n\nA looping plume in strongly unstable conditions (Photo: CSIRO)"
+  },
+  {
+    "objectID": "Slides/Lecture12.html#stable-atmosphere",
+    "href": "Slides/Lecture12.html#stable-atmosphere",
+    "title": "Profile of the Atmosphere, Lapse rates, and Stability",
+    "section": "Stable Atmosphere",
+    "text": "Stable Atmosphere\n\n\n\n\n\n\nA slight upward displacement of this air parcel will cause it to become cooler and more dense than its surroundings and it will return to its original position. A slight downward displacement, and the air parcel will be warmer and rise back to its original position."
+  },
+  {
+    "objectID": "Slides/Lecture12.html#stable",
+    "href": "Slides/Lecture12.html#stable",
+    "title": "Profile of the Atmosphere, Lapse rates, and Stability",
+    "section": "Stable",
+    "text": "Stable\nTypically found near the ground at night if strong radiative loss (\\(R_n\\) &lt; 0) and little wind. Also formed when warm air moves over colder surface or sinking of warm air aloft. Poor for dispersion and mixing. Smoke and fog lie in horizontal layers.\n\n\n\n\n\nAt night with weak winds there is little production of turbulence and the plume stays intact and undiluted for great distances\n\n\n\n\n\n\nAir pollution in stable conditions."
+  },
+  {
+    "objectID": "Slides/Lecture12.html#neutral-atmosphere",
+    "href": "Slides/Lecture12.html#neutral-atmosphere",
+    "title": "Profile of the Atmosphere, Lapse rates, and Stability",
+    "section": "Neutral atmosphere",
+    "text": "Neutral atmosphere\n\n\n\n\n\n\nA slight upward displacement of this air parcel will cause it to become cooler and more dense than its surroundings and it will return to its original position. A slight downward displacement, and the air parcel will be warmer and rise back to its original position."
+  },
+  {
+    "objectID": "Slides/Lecture12.html#neutral",
+    "href": "Slides/Lecture12.html#neutral",
+    "title": "Profile of the Atmosphere, Lapse rates, and Stability",
+    "section": "Neutral",
+    "text": "Neutral\nTypically found when there is little surface heating or cooling (overcast) or when strong winds thoroughly mix the air. Does not aid or restrict dispersion and mixing, plumes are conic and steadily occupy larger air volume."
+  },
+  {
+    "objectID": "Slides/Lecture12.html#conditionally-unstable",
+    "href": "Slides/Lecture12.html#conditionally-unstable",
+    "title": "Profile of the Atmosphere, Lapse rates, and Stability",
+    "section": "Conditionally Unstable",
+    "text": "Conditionally Unstable\n\n\nWhen the ELR is between the DLAR and the SALR\n\nDry air that is lifted will not continue to rise under it’s own power\nSaturated air that is lifted will continue to rise under it’s own power\n\n\n\n\n\nSALR is sometimes call the Moist Adiabatic Lapse Rate"
+  },
+  {
+    "objectID": "Slides/Lecture12.html#summary-comparing-lapse-rates",
+    "href": "Slides/Lecture12.html#summary-comparing-lapse-rates",
+    "title": "Profile of the Atmosphere, Lapse rates, and Stability",
+    "section": "Summary: Comparing lapse rates",
+    "text": "Summary: Comparing lapse rates\n\nUnstable: ELR &gt; DALR (& SALR)\nStable: ELR &lt; DALR (& SALR)\nNeutral: ELR = DALR\nConditionally unstable = SALR &lt; ELR &lt; DALR\n\nBy definition, Neutral is also conditionally unstable"
+  },
+  {
+    "objectID": "Slides/Lecture12.html#test-your-knowledge-iclicker-1",
+    "href": "Slides/Lecture12.html#test-your-knowledge-iclicker-1",
+    "title": "Profile of the Atmosphere, Lapse rates, and Stability",
+    "section": "Test your knowledge (iClicker)",
+    "text": "Test your knowledge (iClicker)\nWhich is an unstable situation?"
+  },
+  {
+    "objectID": "Slides/Lecture12.html#test-your-knowledge-iclicker-2",
+    "href": "Slides/Lecture12.html#test-your-knowledge-iclicker-2",
+    "title": "Profile of the Atmosphere, Lapse rates, and Stability",
+    "section": "Test your knowledge (iClicker)",
+    "text": "Test your knowledge (iClicker)\nWhich layer is stable?\n\n\nB"
+  },
+  {
+    "objectID": "Slides/Lecture12.html#inversion",
+    "href": "Slides/Lecture12.html#inversion",
+    "title": "Profile of the Atmosphere, Lapse rates, and Stability",
+    "section": "Inversion",
+    "text": "Inversion\n\n\nReminder: An inversion is a stable layer that prevents air to mix vertically\n\nTraps air pollutants below and can cause poor air quality"
+  },
+  {
+    "objectID": "Slides/Lecture12.html#potential-temperature",
+    "href": "Slides/Lecture12.html#potential-temperature",
+    "title": "Profile of the Atmosphere, Lapse rates, and Stability",
+    "section": "Potential temperature",
+    "text": "Potential temperature\nTo ‘remove’ the effects of pressure change with height we can remove the dry adiabatic lapse rate and calculate the potential temperature θ as:\n\\[\n\\theta = T_z + DALR z\n\\qquad(5)\\]\n\nθ is the temperature the air would have it were brought to a reference air pressure (typically a 100 kPa, 1000 mb). This standardization of the temperature is the same as rotating all T profiles to the right by the slope of DALR."
+  },
+  {
+    "objectID": "Slides/Lecture12.html#potential-temperature-profiles",
+    "href": "Slides/Lecture12.html#potential-temperature-profiles",
+    "title": "Profile of the Atmosphere, Lapse rates, and Stability",
+    "section": "Potential temperature profiles",
+    "text": "Potential temperature profiles"
   }
 ]
