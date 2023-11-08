@@ -788,133 +788,49 @@
     "href": "Slides/Lecture13.html#learning-objectives",
     "title": "Orographic Lift",
     "section": "Learning Objectives",
-    "text": "Learning Objectives"
+    "text": "Learning Objectives\n\nUnderstand how adiabatic processes effect temperature and moisture conditions British Columbia"
   },
   {
-    "objectID": "Slides/Lecture13.html#temperature-of-an-air-parcel-vs.-the-surrounding-environment",
-    "href": "Slides/Lecture13.html#temperature-of-an-air-parcel-vs.-the-surrounding-environment",
+    "objectID": "Slides/Lecture13.html#the-adiabatic-process-equation",
+    "href": "Slides/Lecture13.html#the-adiabatic-process-equation",
     "title": "Orographic Lift",
-    "section": "Temperature of an air parcel vs. the surrounding environment",
-    "text": "Temperature of an air parcel vs. the surrounding environment\n\n\n\nWe use the environmental lapse rate to assess the temperature of the environment as you move vertically in the atmosphere\nWe use the dry adiabatic lapse rate or saturated adiabatic lapse rate to determine the temperature of an air parcel"
+    "section": "The Adiabatic Process Equation",
+    "text": "The Adiabatic Process Equation\nPutting together the points from the previous lecture, we can define the Adiabatic Process Equation to determine how the temperature of a parcel will change adiabatically if it is transported between two height levels (\\(z_1\\) & \\(z_2\\)).\n\nGiven \\(T_{z_1}\\) and \\(T_{dz_1}\\), and assuming the DALR = -0.01 K m-1 SALR = -0.005 K m-1\n\n\\[\nT_p(z_2) = \\begin{cases}\nT_p(z_1) + min((LCL-z_1),(z_2-z_1)) * DALR + max(z_2-LCL,0) * SALR,\n\\text{if} z_2&gt;z_1 \\\\\nT_p(z_1) + (z_2-z_1) * DALR,\n\\text{if} z_1&gt;z_2\n\\end{cases}\n\\qquad(1)\\]\n\nRecall: \\(\\frac{T_{dz_1}-T_{z_1}}{DALR}+z_1\\)"
   },
   {
-    "objectID": "Slides/Lecture13.html#lapse-rates-stability",
-    "href": "Slides/Lecture13.html#lapse-rates-stability",
+    "objectID": "Slides/Lecture13.html#orographic-lift",
+    "href": "Slides/Lecture13.html#orographic-lift",
     "title": "Orographic Lift",
-    "section": "Lapse rates & stability",
-    "text": "Lapse rates & stability\n\n\n\n\n\n\nA slight upward displacement of this air parcel will result in a continuous rise of the parcel because it will become warmer and less dense than its surroundings. A slight downward displacement, and the air parcel will continue to sink."
+    "section": "Orographic Lift",
+    "text": "Orographic Lift\nOrographic lift is when air from low elevations is forced up and over a mountain range. This is a common occurrence in British Columbia during the winter, when moist air coming off the Pacific Ocean collides with coastal mountain ranges\n\nThis often results in precipitation on the “windward” side of mountains\n\nAs air rises it cools, reaching saturation\n\nThis is also responsible for the dry conditions on the “leeward” site of mountains\n\nAs air sinks it warms, while the dewpoint remains unchanged"
   },
   {
-    "objectID": "Slides/Lecture13.html#unstable-atmosphere",
-    "href": "Slides/Lecture13.html#unstable-atmosphere",
+    "objectID": "Slides/Lecture13.html#orographic-lift-1",
+    "href": "Slides/Lecture13.html#orographic-lift-1",
     "title": "Orographic Lift",
-    "section": "Unstable atmosphere",
-    "text": "Unstable atmosphere\n\n\n\n\n\n\nA slight upward displacement of this air parcel will result in a continuous rise of the parcel because it will become warmer and less dense than its surroundings. A slight downward displacement, and the air parcel will continue to sink."
+    "section": "Orographic Lift",
+    "text": "Orographic Lift\n\n\nOrographic lift is largely responsible for maintaining the temperate rain forests along the west coast of North America.\n\nMany of the wettest locations in the world, are winds consistently force wet ocean air up mountain slopes"
   },
   {
-    "objectID": "Slides/Lecture13.html#unstable-atmosphere-1",
-    "href": "Slides/Lecture13.html#unstable-atmosphere-1",
+    "objectID": "Slides/Lecture13.html#the-rain-shadow-effect",
+    "href": "Slides/Lecture13.html#the-rain-shadow-effect",
     "title": "Orographic Lift",
-    "section": "Unstable atmosphere",
-    "text": "Unstable atmosphere\n\n\n\n\n\n\nA slight upward displacement of this air parcel will result in a continuous rise of the parcel because it will become warmer and less dense than its surroundings. A slight downward displacement, and the air parcel will continue to sink."
+    "section": "The Rain Shadow Effect",
+    "text": "The Rain Shadow Effect\n\n\nIt also explains why a place like the Okanagan Valley has a desert like climate despite its proximity to rainy locations like Vancouver.\n\nMany of the driest locations in the world are in the “rainshadow” of large mountain ranges"
   },
   {
-    "objectID": "Slides/Lecture13.html#unstable",
-    "href": "Slides/Lecture13.html#unstable",
+    "objectID": "Slides/Lecture13.html#the-mountain-problem",
+    "href": "Slides/Lecture13.html#the-mountain-problem",
     "title": "Orographic Lift",
-    "section": "Unstable",
-    "text": "Unstable\nThe plume shape is because both sources of convection are active – thermals cause the large ‘loops’, and mechanical eddies cause the spreading\n\n\n\n\n\nTypically found near the ground by day if strong heating, or if there is advection of a colder airmass aloft. Very good for dispersion and mixing, development of thermals and convective cloud (cumulus)\n\n\n\n\n\n\nA looping plume in strongly unstable conditions (Photo: CSIRO)"
-  },
-  {
-    "objectID": "Slides/Lecture13.html#stable-atmosphere",
-    "href": "Slides/Lecture13.html#stable-atmosphere",
-    "title": "Orographic Lift",
-    "section": "Stable Atmosphere",
-    "text": "Stable Atmosphere\n\n\n\n\n\n\nA slight upward displacement of this air parcel will cause it to become cooler and more dense than its surroundings and it will return to its original position. A slight downward displacement, and the air parcel will be warmer and rise back to its original position."
-  },
-  {
-    "objectID": "Slides/Lecture13.html#stable",
-    "href": "Slides/Lecture13.html#stable",
-    "title": "Orographic Lift",
-    "section": "Stable",
-    "text": "Stable\nTypically found near the ground at night if strong radiative loss (\\(R_n\\) &lt; 0) and little wind. Also formed when warm air moves over colder surface or sinking of warm air aloft. Poor for dispersion and mixing. Smoke and fog lie in horizontal layers.\n\n\n\n\n\nAt night with weak winds there is little production of turbulence and the plume stays intact and undiluted for great distances\n\n\n\n\n\n\nAir pollution in stable conditions."
-  },
-  {
-    "objectID": "Slides/Lecture13.html#neutral-atmosphere",
-    "href": "Slides/Lecture13.html#neutral-atmosphere",
-    "title": "Orographic Lift",
-    "section": "Neutral atmosphere",
-    "text": "Neutral atmosphere\n\n\n\n\n\n\nA slight upward displacement of this air parcel will cause it to become cooler and more dense than its surroundings and it will return to its original position. A slight downward displacement, and the air parcel will be warmer and rise back to its original position."
-  },
-  {
-    "objectID": "Slides/Lecture13.html#neutral",
-    "href": "Slides/Lecture13.html#neutral",
-    "title": "Orographic Lift",
-    "section": "Neutral",
-    "text": "Neutral\nTypically found when there is little surface heating or cooling (overcast) or when strong winds thoroughly mix the air. Does not aid or restrict dispersion and mixing, plumes are conic and steadily occupy larger air volume."
-  },
-  {
-    "objectID": "Slides/Lecture13.html#conditionally-unstable",
-    "href": "Slides/Lecture13.html#conditionally-unstable",
-    "title": "Orographic Lift",
-    "section": "Conditionally Unstable",
-    "text": "Conditionally Unstable\n\n\nWhen the ELR is between the DLAR and the SALR\n\nDry air that is lifted will not continue to rise under it’s own power\nSaturated air that is lifted will continue to rise under it’s own power\n\n\n\n\n\nSALR is sometimes call the Moist Adiabatic Lapse Rate"
-  },
-  {
-    "objectID": "Slides/Lecture13.html#summary-comparing-lapse-rates",
-    "href": "Slides/Lecture13.html#summary-comparing-lapse-rates",
-    "title": "Orographic Lift",
-    "section": "Summary: Comparing lapse rates",
-    "text": "Summary: Comparing lapse rates\n\nUnstable: ELR &gt; DALR (& SALR)\nStable: ELR &lt; DALR (& SALR)\nNeutral: ELR = DALR\nConditionally unstable = SALR &lt; ELR &lt; DALR\n\nBy definition, Neutral is also conditionally unstable"
-  },
-  {
-    "objectID": "Slides/Lecture13.html#test-your-knowledge-iclicker",
-    "href": "Slides/Lecture13.html#test-your-knowledge-iclicker",
-    "title": "Orographic Lift",
-    "section": "Test your knowledge (iClicker)",
-    "text": "Test your knowledge (iClicker)\nWhich is an unstable situation?"
-  },
-  {
-    "objectID": "Slides/Lecture13.html#test-your-knowledge-iclicker-1",
-    "href": "Slides/Lecture13.html#test-your-knowledge-iclicker-1",
-    "title": "Orographic Lift",
-    "section": "Test your knowledge (iClicker)",
-    "text": "Test your knowledge (iClicker)\nWhich layer is stable?\n\n\nB"
-  },
-  {
-    "objectID": "Slides/Lecture13.html#inversion",
-    "href": "Slides/Lecture13.html#inversion",
-    "title": "Orographic Lift",
-    "section": "Inversion",
-    "text": "Inversion\n\n\nReminder: An inversion is a stable layer that prevents air to mix vertically\n\nTraps air pollutants below and can cause poor air quality"
-  },
-  {
-    "objectID": "Slides/Lecture13.html#potential-temperature",
-    "href": "Slides/Lecture13.html#potential-temperature",
-    "title": "Orographic Lift",
-    "section": "Potential temperature",
-    "text": "Potential temperature\nTo ‘remove’ the effects of pressure change with height we can remove the dry adiabatic lapse rate and calculate the potential temperature θ as:\n\\[\n\\theta = T_z + DALR z\n\\qquad(1)\\]\n\nθ is the temperature the air would have it were brought to a reference air pressure (typically a 100 kPa, 1000 mb). This standardization of the temperature is the same as rotating all T profiles to the right by the slope of DALR."
-  },
-  {
-    "objectID": "Slides/Lecture13.html#potential-temperature-profiles",
-    "href": "Slides/Lecture13.html#potential-temperature-profiles",
-    "title": "Orographic Lift",
-    "section": "Potential temperature profiles",
-    "text": "Potential temperature profiles"
-  },
-  {
-    "objectID": "Slides/Lecture13.html#orographic-lift-and-the-mountain-problem",
-    "href": "Slides/Lecture13.html#orographic-lift-and-the-mountain-problem",
-    "title": "Orographic Lift",
-    "section": "Orographic Lift and the Mountain Problem",
-    "text": "Orographic Lift and the Mountain Problem\nOrographic lift is when air from low elevations is forced up and over a mountain range. This is a common occurrence in British Columbia, and often results in precipitation on the “windward” side of mountains. Orographic lift is largely responsible for maintaining template rain forests along the west coast of North America. It is also responsible for the rain shadow effect on the “leeward” side of mountain ranges. Precipitation occurs on the windward side of the mountains as air rises and cools. Then hot, dry air descends on the leeward slope. This explains why a place like the Okanagan Valley have a desert like climate despite its proximity to rainy locations like Vancouver.\nA classic example of this phenomena in Meteorology is known as the mountain problem."
+    "section": "The Mountain Problem",
+    "text": "The Mountain Problem\nA classic example of these phenomena in Meteorology."
   },
   {
     "objectID": "Slides/Lecture13.html#take-home-points",
     "href": "Slides/Lecture13.html#take-home-points",
     "title": "Orographic Lift",
     "section": "Take home points",
-    "text": "Take home points\n\n\n\nTimes of maximum and minimum temperature at the surface occur when rates of energy input and output cross.\nTemperature changes with height in the atmosphere - environmental lapse rate (ELR)\nParcels moving up or down change their temperature adiabatically - the process lapse rate (i.e., DALR or SALR)\nThe difference between ELR and the process lapse rate allows us to distinguish between unstable, neutral or stable atmospheric stratifications - with different implications on dispersion.\n\n\n\n\n\nBack to Homepage"
+    "text": "Take home points\n\n\n\nTemperature decreases with height on the windward slope of a mountain\n\nCondensation/Precipitation will often occur\n\nTemperature increases as winds move down the leeward slope of a mountain\n\n\\(RH\\) decreases as well, because \\(T_d\\) remains unchanged while \\(T\\) increases\n\n\n\n\n\n\nBack to Homepage"
   },
   {
     "objectID": "Slides/Lecture11.html#atmospheric-humidity",
@@ -1356,6 +1272,83 @@
     "title": "Energy",
     "section": "Summary",
     "text": "Summary\n\nEnergy and mass transfer mechanisms\n\nRadiation, conduction, and convection\n\nUnderstand the concept of energy and mass balances and their connectivity\n\nNeither mass nor energy can be created or destroyed by any ordinary means, just converted from one form to another.\n\n\n\n\nBack to Homepage"
+  },
+  {
+    "objectID": "Quizzes/Quiz3.html",
+    "href": "Quizzes/Quiz3.html",
+    "title": "Lecture Quiz 3",
+    "section": "",
+    "text": "When \\(R_n\\) is positive, it indicates an energy surplus at a given location. A portion of that energy surplus will be transferred to the soil as soil heat flux (\\(H_g\\)). The magnitude of soil heat flux at a given site for a given \\(R_n\\) will be influenced by:\n\nSoil Organic Matter Content\nSoil Moisture Content\nSoil Porosity\nB & C\nA, B, & C"
+  },
+  {
+    "objectID": "Quizzes/Quiz3.html#section",
+    "href": "Quizzes/Quiz3.html#section",
+    "title": "Lecture Quiz 3",
+    "section": "",
+    "text": "When \\(R_n\\) is positive, it indicates an energy surplus at a given location. A portion of that energy surplus will be transferred to the soil as soil heat flux (\\(H_g\\)). The magnitude of soil heat flux at a given site for a given \\(R_n\\) will be influenced by:\n\nSoil Organic Matter Content\nSoil Moisture Content\nSoil Porosity\nB & C\nA, B, & C"
+  },
+  {
+    "objectID": "Quizzes/Quiz3.html#section-1",
+    "href": "Quizzes/Quiz3.html#section-1",
+    "title": "Lecture Quiz 3",
+    "section": "2",
+    "text": "2\nSoil’s thermal conductivity \\(k\\) varies ______ as a function of the \\(k\\) of it’s components and the relative proportion of each component in the soil.\n\nLinearly\nNon-linearly\nRelatively little\nB and C\nA and C"
+  },
+  {
+    "objectID": "Quizzes/Quiz3.html#section-2",
+    "href": "Quizzes/Quiz3.html#section-2",
+    "title": "Lecture Quiz 3",
+    "section": "3",
+    "text": "3\nAll else equal, a soil with a high thermal admittance, compared to a soil with low thermal admittance will:\n\nHave relatively high soil surface temperatures on sunny day\nHave relatively low soil surface temperatures on sunny day\nBe more prone to frost on a clear night\nImpossible to say given the information provided\nA & C"
+  },
+  {
+    "objectID": "Quizzes/Quiz3.html#section-3",
+    "href": "Quizzes/Quiz3.html#section-3",
+    "title": "Lecture Quiz 3",
+    "section": "4",
+    "text": "4\nAll else equal, a soil with a high thermal diffusivity, compared to a soil with low thermal diffusivity will:\n\nHave relatively high soil temperatures at depth on sunny day\nHave relatively low soil temperatures at depth on sunny day\nBe more prone to frost on a clear night\nImpossible to say given the information provided\nA & C"
+  },
+  {
+    "objectID": "Quizzes/Quiz3.html#section-4",
+    "href": "Quizzes/Quiz3.html#section-4",
+    "title": "Lecture Quiz 3",
+    "section": "5",
+    "text": "5\nAll else equal, which properties of an air parcel that is not saturated, will vary as a function of air temperature?\n\nVapor density \\(\\rho_v\\)\nVapor pressure \\(P_v\\)\nMixing ratio \\(r_H2O\\)\nRelative humidity \\(RH\\)\nAll of the above"
+  },
+  {
+    "objectID": "Quizzes/Quiz3.html#section-5",
+    "href": "Quizzes/Quiz3.html#section-5",
+    "title": "Lecture Quiz 3",
+    "section": "6",
+    "text": "6\nWhen a parcel is saturated:\n\n\\(\\rho_v = \\rho_v^*\\)\n\\(VDD = 0\\)\n\\(T = T_d\\)\nA & B\nA, B, & C"
+  },
+  {
+    "objectID": "Quizzes/Quiz3.html#section-6",
+    "href": "Quizzes/Quiz3.html#section-6",
+    "title": "Lecture Quiz 3",
+    "section": "7",
+    "text": "7\nThis equation allows us to approximate \\(P_v^*\\) as a function of \\(T\\) to a reasonable degree of accuracy for temperature and pressure conditions commonly experienced on Earth:\n\nThe Buck Equation\nFourier’s Law\nClausius–Clapeyron Equation\nIdeal Gas Law\nThe Adiabatic Process Equation"
+  },
+  {
+    "objectID": "Quizzes/Quiz3.html#section-7",
+    "href": "Quizzes/Quiz3.html#section-7",
+    "title": "Lecture Quiz 3",
+    "section": "8",
+    "text": "8\nAn adiabatic process is one where:\n\nTemperature changes without the exchange of heat with the surrounding environment\nTemperature changes because of the exchange of heat with the surrounding environment\nTemperature changes because of a change in atmospheric pressure\nA & C\nB & C"
+  },
+  {
+    "objectID": "Quizzes/Quiz3.html#section-8",
+    "href": "Quizzes/Quiz3.html#section-8",
+    "title": "Lecture Quiz 3",
+    "section": "9",
+    "text": "9\nThe saturated adiabatic lapse rate has a lower magnitude (i.e., absolute value) than the dry adiabatic lapse rate because:\n\nEvaporation releases latent heat to the surrounding environment\nEvaporation takes latent from the surrounding environment\nSaturation is an energy negative process\nCondensation takes latent from the surrounding environment\nCondensation releases latent heat to the surrounding environment"
+  },
+  {
+    "objectID": "Quizzes/Quiz3.html#section-9",
+    "href": "Quizzes/Quiz3.html#section-9",
+    "title": "Lecture Quiz 3",
+    "section": "10",
+    "text": "10\nA parcel of air descends 1000 m; what will happen to it?\n\nIts \\(T\\) will change by 10 K\nIts \\(T\\) will change by -10 K\nIts \\(P\\) will increase\nB & C\nA & C"
   },
   {
     "objectID": "Quizzes/Quiz1.html",
@@ -2821,6 +2814,76 @@
     "text": "Classifying Stability"
   },
   {
+    "objectID": "Slides/Lecture12.html#unstable",
+    "href": "Slides/Lecture12.html#unstable",
+    "title": "Profile of the Atmosphere, Lapse rates, and Stability",
+    "section": "Unstable",
+    "text": "Unstable\nThe plume shape is because both sources of convection are active – thermals cause the large ‘loops’, and mechanical eddies cause the spreading\n\n\n\n\n\nTypically found near the ground by day if strong heating, or if there is advection of a colder airmass aloft. Very good for dispersion and mixing, development of thermals and convective cloud (cumulus)\n\n\n\n\n\n\nA looping plume in strongly unstable conditions (Photo: CSIRO)"
+  },
+  {
+    "objectID": "Slides/Lecture12.html#stable",
+    "href": "Slides/Lecture12.html#stable",
+    "title": "Profile of the Atmosphere, Lapse rates, and Stability",
+    "section": "Stable",
+    "text": "Stable\nTypically found near the ground at night if strong radiative loss (\\(R_n\\) &lt; 0) and little wind. Also formed when warm air moves over colder surface or sinking of warm air aloft. Poor for dispersion and mixing. Smoke and fog lie in horizontal layers.\n\n\n\n\n\nAt night with weak winds there is little production of turbulence and the plume stays intact and undiluted for great distances\n\n\n\n\n\n\nAir pollution in stable conditions."
+  },
+  {
+    "objectID": "Slides/Lecture12.html#neutral",
+    "href": "Slides/Lecture12.html#neutral",
+    "title": "Profile of the Atmosphere, Lapse rates, and Stability",
+    "section": "Neutral",
+    "text": "Neutral\nTypically found when there is little surface heating or cooling (overcast) or when strong winds thoroughly mix the air. Does not aid or restrict dispersion and mixing, plumes are conic and steadily occupy larger air volume."
+  },
+  {
+    "objectID": "Slides/Lecture12.html#conditionally-unstable",
+    "href": "Slides/Lecture12.html#conditionally-unstable",
+    "title": "Profile of the Atmosphere, Lapse rates, and Stability",
+    "section": "Conditionally Unstable",
+    "text": "Conditionally Unstable\n\n\nWhen the ELR is between the DLAR and the SALR\n\nDry air that is lifted will not continue to rise under it’s own power\nSaturated air that is lifted will continue to rise under it’s own power\n\n\n\n\n\nSALR is sometimes call the Moist Adiabatic Lapse Rate"
+  },
+  {
+    "objectID": "Slides/Lecture12.html#summary-comparing-lapse-rates",
+    "href": "Slides/Lecture12.html#summary-comparing-lapse-rates",
+    "title": "Profile of the Atmosphere, Lapse rates, and Stability",
+    "section": "Summary: Comparing lapse rates",
+    "text": "Summary: Comparing lapse rates\n\nUnstable: ELR &lt; DALR (-0.01 K m-1)\nStable: ELR &lt; SALR (\\(\\approx\\) -0.005 K m -1)\nNeutral: ELR = DALR (-0.01 K m)\nConditionally unstable = DALR (-0.01 K m-1) &lt; ELR &lt; SALR (\\(\\approx\\) -0.005 K m -1)\n\nBy definition, Neutral is also conditionally unstable"
+  },
+  {
+    "objectID": "Slides/Lecture12.html#test-your-knowledge-iclicker-1",
+    "href": "Slides/Lecture12.html#test-your-knowledge-iclicker-1",
+    "title": "Profile of the Atmosphere, Lapse rates, and Stability",
+    "section": "Test your knowledge (iClicker)",
+    "text": "Test your knowledge (iClicker)\nWhich is an unstable situation?"
+  },
+  {
+    "objectID": "Slides/Lecture12.html#test-your-knowledge-iclicker-2",
+    "href": "Slides/Lecture12.html#test-your-knowledge-iclicker-2",
+    "title": "Profile of the Atmosphere, Lapse rates, and Stability",
+    "section": "Test your knowledge (iClicker)",
+    "text": "Test your knowledge (iClicker)\nWhich layer is stable?\n\n\nB"
+  },
+  {
+    "objectID": "Slides/Lecture12.html#inversion",
+    "href": "Slides/Lecture12.html#inversion",
+    "title": "Profile of the Atmosphere, Lapse rates, and Stability",
+    "section": "Inversion",
+    "text": "Inversion\n\n\nReminder: An inversion is a stable layer that prevents air to mix vertically\n\nTraps air pollutants below and can cause poor air quality"
+  },
+  {
+    "objectID": "Slides/Lecture12.html#potential-temperature",
+    "href": "Slides/Lecture12.html#potential-temperature",
+    "title": "Profile of the Atmosphere, Lapse rates, and Stability",
+    "section": "Potential temperature",
+    "text": "Potential temperature\nTo ‘remove’ the effects of pressure change with height we can remove the dry adiabatic lapse rate and calculate the potential temperature θ as:\n\\[\n\\theta = T_z + DALR z\n\\qquad(5)\\]\n\nθ is the temperature the air would have it were brought to a reference air pressure (typically a 100 kPa, 1000 mb). This standardization of the temperature is the same as rotating all T profiles to the right by the slope of DALR."
+  },
+  {
+    "objectID": "Slides/Lecture12.html#potential-temperature-profiles",
+    "href": "Slides/Lecture12.html#potential-temperature-profiles",
+    "title": "Profile of the Atmosphere, Lapse rates, and Stability",
+    "section": "Potential temperature profiles",
+    "text": "Potential temperature profiles"
+  },
+  {
     "objectID": "Slides/Lecture12.html#take-home-points",
     "href": "Slides/Lecture12.html#take-home-points",
     "title": "Profile of the Atmosphere, Lapse rates, and Stability",
@@ -3617,180 +3680,5 @@
     "title": "Net radiation of land surfaces",
     "section": "Take home points",
     "text": "Take home points\n\nDistinguish between net shortwave (\\(SW^*\\)), net longwave (\\(LW^*\\)) and net all-wave radiation (\\(R_n\\))\nThe magnitude of \\(R_n\\) is controlled by surface properties:\n\nAlbedo, surface temperature, emissivity\n\nThe magnitude of \\(R_n\\) is also controlled by the surrounding 3D surface\n\nSky view influences \\(LW^*\\)* at night\n\nSurface properties can be modified to control surface climates\n\n\n\nBack to Homepage"
-  },
-  {
-    "objectID": "Quizzes/Quiz3.html",
-    "href": "Quizzes/Quiz3.html",
-    "title": "Lecture Quiz 3",
-    "section": "",
-    "text": "When \\(R_n\\) is positive, it indicates an energy surplus at a given location. A portion of that energy surplus will be transferred to the soil as soil heat flux (\\(H_g\\)). The magnitude of soil heat flux at a given site for a given \\(R_n\\) will be influenced by:\n\nSoil Organic Matter Content\nSoil Moisture Content\nSoil Porosity\nB & C\nA, B, & C"
-  },
-  {
-    "objectID": "Quizzes/Quiz3.html#section",
-    "href": "Quizzes/Quiz3.html#section",
-    "title": "Lecture Quiz 3",
-    "section": "",
-    "text": "When \\(R_n\\) is positive, it indicates an energy surplus at a given location. A portion of that energy surplus will be transferred to the soil as soil heat flux (\\(H_g\\)). The magnitude of soil heat flux at a given site for a given \\(R_n\\) will be influenced by:\n\nSoil Organic Matter Content\nSoil Moisture Content\nSoil Porosity\nB & C\nA, B, & C"
-  },
-  {
-    "objectID": "Quizzes/Quiz3.html#section-1",
-    "href": "Quizzes/Quiz3.html#section-1",
-    "title": "Lecture Quiz 3",
-    "section": "2",
-    "text": "2\nSoil’s thermal conductivity \\(k\\) varies ______ as a function of the \\(k\\) of it’s components and the relative proportion of each component in the soil.\n\nLinearly\nNon-linearly\nRelatively little\nB and C\nA and C"
-  },
-  {
-    "objectID": "Quizzes/Quiz3.html#section-2",
-    "href": "Quizzes/Quiz3.html#section-2",
-    "title": "Lecture Quiz 3",
-    "section": "3",
-    "text": "3\nAll else equal, a soil with a high thermal admittance, compared to a soil with low thermal admittance will:\n\nHave relatively high soil surface temperatures on sunny day\nHave relatively low soil surface temperatures on sunny day\nBe more prone to frost on a clear night\nImpossible to say given the information provided\nA & C"
-  },
-  {
-    "objectID": "Quizzes/Quiz3.html#section-3",
-    "href": "Quizzes/Quiz3.html#section-3",
-    "title": "Lecture Quiz 3",
-    "section": "4",
-    "text": "4\nAll else equal, a soil with a high thermal diffusivity, compared to a soil with low thermal diffusivity will:\n\nHave relatively high soil temperatures at depth on sunny day\nHave relatively low soil temperatures at depth on sunny day\nBe more prone to frost on a clear night\nImpossible to say given the information provided\nA & C"
-  },
-  {
-    "objectID": "Quizzes/Quiz3.html#section-4",
-    "href": "Quizzes/Quiz3.html#section-4",
-    "title": "Lecture Quiz 3",
-    "section": "5",
-    "text": "5\nAll else equal, which properties of an air parcel that is not saturated, will vary as a function of air temperature?\n\nVapor density \\(\\rho_v\\)\nVapor pressure \\(P_v\\)\nMixing ratio \\(r_H2O\\)\nRelative humidity \\(RH\\)\nAll of the above"
-  },
-  {
-    "objectID": "Quizzes/Quiz3.html#section-5",
-    "href": "Quizzes/Quiz3.html#section-5",
-    "title": "Lecture Quiz 3",
-    "section": "6",
-    "text": "6\nWhen a parcel is saturated:\n\n\\(\\rho_v = \\rho_v^*\\)\n\\(VDD = 0\\)\n\\(T = T_d\\)\nA & B\nA, B, & C"
-  },
-  {
-    "objectID": "Quizzes/Quiz3.html#section-6",
-    "href": "Quizzes/Quiz3.html#section-6",
-    "title": "Lecture Quiz 3",
-    "section": "7",
-    "text": "7\nThis equation allows us to approximate \\(P_v^*\\) as a function of \\(T\\) to a reasonable degree of accuracy for temperature and pressure conditions commonly experienced on Earth:\n\nThe Buck Equation\nFourier’s Law\nClausius–Clapeyron Equation\nIdeal Gas Law\nThe Adiabatic Process Equation"
-  },
-  {
-    "objectID": "Quizzes/Quiz3.html#section-7",
-    "href": "Quizzes/Quiz3.html#section-7",
-    "title": "Lecture Quiz 3",
-    "section": "8",
-    "text": "8\nAn adiabatic process is one where:\n\nTemperature changes without the exchange of heat with the surrounding environment\nTemperature changes because of the exchange of heat with the surrounding environment\nTemperature changes because of a change in atmospheric pressure\nA & C\nB & C"
-  },
-  {
-    "objectID": "Quizzes/Quiz3.html#section-8",
-    "href": "Quizzes/Quiz3.html#section-8",
-    "title": "Lecture Quiz 3",
-    "section": "9",
-    "text": "9\nThe saturated adiabatic lapse rate has a lower magnitude (i.e., absolute value) than the dry adiabatic lapse rate because:\n\nEvaporation releases latent heat to the surrounding environment\nEvaporation takes latent from the surrounding environment\nSaturation is an energy negative process\nCondensation takes latent from the surrounding environment\nCondensation releases latent heat to the surrounding environment"
-  },
-  {
-    "objectID": "Quizzes/Quiz3.html#section-9",
-    "href": "Quizzes/Quiz3.html#section-9",
-    "title": "Lecture Quiz 3",
-    "section": "10",
-    "text": "10\nA parcel of air descends 1000 m; what will happen to it?\n\nIts \\(T\\) will change by 10 K\nIts \\(T\\) will change by -10 K\nIts \\(P\\) will increase\nB & C\nA & C"
-  },
-  {
-    "objectID": "Slides/Lecture12.html#unstable-atmosphere",
-    "href": "Slides/Lecture12.html#unstable-atmosphere",
-    "title": "Profile of the Atmosphere, Lapse rates, and Stability",
-    "section": "Unstable atmosphere",
-    "text": "Unstable atmosphere\n\n\n\n\n\n\nA slight upward displacement of this air parcel will result in a continuous rise of the parcel because it will become warmer and less dense than its surroundings. A slight downward displacement, and the air parcel will continue to sink."
-  },
-  {
-    "objectID": "Slides/Lecture12.html#unstable-atmosphere-1",
-    "href": "Slides/Lecture12.html#unstable-atmosphere-1",
-    "title": "Profile of the Atmosphere, Lapse rates, and Stability",
-    "section": "Unstable atmosphere",
-    "text": "Unstable atmosphere\n\n\n\n\n\n\nA slight upward displacement of this air parcel will result in a continuous rise of the parcel because it will become warmer and less dense than its surroundings. A slight downward displacement, and the air parcel will continue to sink."
-  },
-  {
-    "objectID": "Slides/Lecture12.html#unstable",
-    "href": "Slides/Lecture12.html#unstable",
-    "title": "Profile of the Atmosphere, Lapse rates, and Stability",
-    "section": "Unstable",
-    "text": "Unstable\nThe plume shape is because both sources of convection are active – thermals cause the large ‘loops’, and mechanical eddies cause the spreading\n\n\n\n\n\nTypically found near the ground by day if strong heating, or if there is advection of a colder airmass aloft. Very good for dispersion and mixing, development of thermals and convective cloud (cumulus)\n\n\n\n\n\n\nA looping plume in strongly unstable conditions (Photo: CSIRO)"
-  },
-  {
-    "objectID": "Slides/Lecture12.html#stable-atmosphere",
-    "href": "Slides/Lecture12.html#stable-atmosphere",
-    "title": "Profile of the Atmosphere, Lapse rates, and Stability",
-    "section": "Stable Atmosphere",
-    "text": "Stable Atmosphere\n\n\n\n\n\n\nA slight upward displacement of this air parcel will cause it to become cooler and more dense than its surroundings and it will return to its original position. A slight downward displacement, and the air parcel will be warmer and rise back to its original position."
-  },
-  {
-    "objectID": "Slides/Lecture12.html#stable",
-    "href": "Slides/Lecture12.html#stable",
-    "title": "Profile of the Atmosphere, Lapse rates, and Stability",
-    "section": "Stable",
-    "text": "Stable\nTypically found near the ground at night if strong radiative loss (\\(R_n\\) &lt; 0) and little wind. Also formed when warm air moves over colder surface or sinking of warm air aloft. Poor for dispersion and mixing. Smoke and fog lie in horizontal layers.\n\n\n\n\n\nAt night with weak winds there is little production of turbulence and the plume stays intact and undiluted for great distances\n\n\n\n\n\n\nAir pollution in stable conditions."
-  },
-  {
-    "objectID": "Slides/Lecture12.html#neutral-atmosphere",
-    "href": "Slides/Lecture12.html#neutral-atmosphere",
-    "title": "Profile of the Atmosphere, Lapse rates, and Stability",
-    "section": "Neutral atmosphere",
-    "text": "Neutral atmosphere\n\n\n\n\n\n\nA slight upward displacement of this air parcel will cause it to become cooler and more dense than its surroundings and it will return to its original position. A slight downward displacement, and the air parcel will be warmer and rise back to its original position."
-  },
-  {
-    "objectID": "Slides/Lecture12.html#neutral",
-    "href": "Slides/Lecture12.html#neutral",
-    "title": "Profile of the Atmosphere, Lapse rates, and Stability",
-    "section": "Neutral",
-    "text": "Neutral\nTypically found when there is little surface heating or cooling (overcast) or when strong winds thoroughly mix the air. Does not aid or restrict dispersion and mixing, plumes are conic and steadily occupy larger air volume."
-  },
-  {
-    "objectID": "Slides/Lecture12.html#conditionally-unstable",
-    "href": "Slides/Lecture12.html#conditionally-unstable",
-    "title": "Profile of the Atmosphere, Lapse rates, and Stability",
-    "section": "Conditionally Unstable",
-    "text": "Conditionally Unstable\n\n\nWhen the ELR is between the DLAR and the SALR\n\nDry air that is lifted will not continue to rise under it’s own power\nSaturated air that is lifted will continue to rise under it’s own power\n\n\n\n\n\nSALR is sometimes call the Moist Adiabatic Lapse Rate"
-  },
-  {
-    "objectID": "Slides/Lecture12.html#summary-comparing-lapse-rates",
-    "href": "Slides/Lecture12.html#summary-comparing-lapse-rates",
-    "title": "Profile of the Atmosphere, Lapse rates, and Stability",
-    "section": "Summary: Comparing lapse rates",
-    "text": "Summary: Comparing lapse rates\n\nUnstable: ELR &gt; DALR (& SALR)\nStable: ELR &lt; DALR (& SALR)\nNeutral: ELR = DALR\nConditionally unstable = SALR &lt; ELR &lt; DALR\n\nBy definition, Neutral is also conditionally unstable"
-  },
-  {
-    "objectID": "Slides/Lecture12.html#test-your-knowledge-iclicker-1",
-    "href": "Slides/Lecture12.html#test-your-knowledge-iclicker-1",
-    "title": "Profile of the Atmosphere, Lapse rates, and Stability",
-    "section": "Test your knowledge (iClicker)",
-    "text": "Test your knowledge (iClicker)\nWhich is an unstable situation?"
-  },
-  {
-    "objectID": "Slides/Lecture12.html#test-your-knowledge-iclicker-2",
-    "href": "Slides/Lecture12.html#test-your-knowledge-iclicker-2",
-    "title": "Profile of the Atmosphere, Lapse rates, and Stability",
-    "section": "Test your knowledge (iClicker)",
-    "text": "Test your knowledge (iClicker)\nWhich layer is stable?\n\n\nB"
-  },
-  {
-    "objectID": "Slides/Lecture12.html#inversion",
-    "href": "Slides/Lecture12.html#inversion",
-    "title": "Profile of the Atmosphere, Lapse rates, and Stability",
-    "section": "Inversion",
-    "text": "Inversion\n\n\nReminder: An inversion is a stable layer that prevents air to mix vertically\n\nTraps air pollutants below and can cause poor air quality"
-  },
-  {
-    "objectID": "Slides/Lecture12.html#potential-temperature",
-    "href": "Slides/Lecture12.html#potential-temperature",
-    "title": "Profile of the Atmosphere, Lapse rates, and Stability",
-    "section": "Potential temperature",
-    "text": "Potential temperature\nTo ‘remove’ the effects of pressure change with height we can remove the dry adiabatic lapse rate and calculate the potential temperature θ as:\n\\[\n\\theta = T_z + DALR z\n\\qquad(5)\\]\n\nθ is the temperature the air would have it were brought to a reference air pressure (typically a 100 kPa, 1000 mb). This standardization of the temperature is the same as rotating all T profiles to the right by the slope of DALR."
-  },
-  {
-    "objectID": "Slides/Lecture12.html#potential-temperature-profiles",
-    "href": "Slides/Lecture12.html#potential-temperature-profiles",
-    "title": "Profile of the Atmosphere, Lapse rates, and Stability",
-    "section": "Potential temperature profiles",
-    "text": "Potential temperature profiles"
   }
 ]
