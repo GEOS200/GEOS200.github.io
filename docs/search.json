@@ -3617,5 +3617,82 @@
     "title": "Net radiation of land surfaces",
     "section": "Take home points",
     "text": "Take home points\n\nDistinguish between net shortwave (\\(SW^*\\)), net longwave (\\(LW^*\\)) and net all-wave radiation (\\(R_n\\))\nThe magnitude of \\(R_n\\) is controlled by surface properties:\n\nAlbedo, surface temperature, emissivity\n\nThe magnitude of \\(R_n\\) is also controlled by the surrounding 3D surface\n\nSky view influences \\(LW^*\\)* at night\n\nSurface properties can be modified to control surface climates\n\n\n\nBack to Homepage"
+  },
+  {
+    "objectID": "Quizzes/Quiz3.html",
+    "href": "Quizzes/Quiz3.html",
+    "title": "Lecture Quiz 3",
+    "section": "",
+    "text": "When \\(R_n\\) is positive, it indicates an energy surplus at a given location. A portion of that energy surplus will be transferred to the soil as soil heat flux (\\(H_g\\)). The magnitude of soil heat flux at a given site for a given \\(R_n\\) will be influenced by:\n\nSoil Organic Matter Content\nSoil Moisture Content\nSoil Porosity\nB & C\nA, B, & C"
+  },
+  {
+    "objectID": "Quizzes/Quiz3.html#section",
+    "href": "Quizzes/Quiz3.html#section",
+    "title": "Lecture Quiz 3",
+    "section": "",
+    "text": "When \\(R_n\\) is positive, it indicates an energy surplus at a given location. A portion of that energy surplus will be transferred to the soil as soil heat flux (\\(H_g\\)). The magnitude of soil heat flux at a given site for a given \\(R_n\\) will be influenced by:\n\nSoil Organic Matter Content\nSoil Moisture Content\nSoil Porosity\nB & C\nA, B, & C"
+  },
+  {
+    "objectID": "Quizzes/Quiz3.html#section-1",
+    "href": "Quizzes/Quiz3.html#section-1",
+    "title": "Lecture Quiz 3",
+    "section": "2",
+    "text": "2\nSoil’s thermal conductivity \\(k\\) varies ______ as a function of the \\(k\\) of it’s components and the relative proportion of each component in the soil.\n\nLinearly\nNon-linearly\nRelatively little\nB and C\nA and C"
+  },
+  {
+    "objectID": "Quizzes/Quiz3.html#section-2",
+    "href": "Quizzes/Quiz3.html#section-2",
+    "title": "Lecture Quiz 3",
+    "section": "3",
+    "text": "3\nAll else equal, a soil with a high thermal admittance, compared to a soil with low thermal admittance will:\n\nHave relatively high soil surface temperatures on sunny day\nHave relatively low soil surface temperatures on sunny day\nBe more prone to frost on a clear night\nImpossible to say given the information provided\nA & C"
+  },
+  {
+    "objectID": "Quizzes/Quiz3.html#section-3",
+    "href": "Quizzes/Quiz3.html#section-3",
+    "title": "Lecture Quiz 3",
+    "section": "4",
+    "text": "4\nAll else equal, a soil with a high thermal diffusivity, compared to a soil with low thermal diffusivity will:\n\nHave relatively high soil temperatures at depth on sunny day\nHave relatively low soil temperatures at depth on sunny day\nBe more prone to frost on a clear night\nImpossible to say given the information provided\nA & C"
+  },
+  {
+    "objectID": "Quizzes/Quiz3.html#section-4",
+    "href": "Quizzes/Quiz3.html#section-4",
+    "title": "Lecture Quiz 3",
+    "section": "5",
+    "text": "5\nAll else equal, which properties of an air parcel that is not saturated, will vary as a function of air temperature?\n\nVapor density \\(\\rho_v\\)\nVapor pressure \\(P_v\\)\nMixing ratio \\(r_H2O\\)\nRelative humidity \\(RH\\)\nAll of the above"
+  },
+  {
+    "objectID": "Quizzes/Quiz3.html#section-5",
+    "href": "Quizzes/Quiz3.html#section-5",
+    "title": "Lecture Quiz 3",
+    "section": "6",
+    "text": "6\nWhen a parcel is saturated:\n\n\\(\\rho_v = \\rho_v^*\\)\n\\(VDD = 0\\)\n\\(T = T_d\\)\nA & B\nA, B, & C"
+  },
+  {
+    "objectID": "Quizzes/Quiz3.html#section-6",
+    "href": "Quizzes/Quiz3.html#section-6",
+    "title": "Lecture Quiz 3",
+    "section": "7",
+    "text": "7\nThis equation allows us to approximate \\(P_v^*\\) as a function of \\(T\\) to a reasonable degree of accuracy for temperature and pressure conditions commonly experienced on Earth:\n\nThe Buck Equation\nFourier’s Law\nClausius–Clapeyron Equation\nIdeal Gas Law\nThe Adiabatic Process Equation"
+  },
+  {
+    "objectID": "Quizzes/Quiz3.html#section-7",
+    "href": "Quizzes/Quiz3.html#section-7",
+    "title": "Lecture Quiz 3",
+    "section": "8",
+    "text": "8\nAn adiabatic process is one where:\n\nTemperature changes without the exchange of heat with the surrounding environment\nTemperature changes because of the exchange of heat with the surrounding environment\nTemperature changes because of a change in atmospheric pressure\nA & C\nB & C"
+  },
+  {
+    "objectID": "Quizzes/Quiz3.html#section-8",
+    "href": "Quizzes/Quiz3.html#section-8",
+    "title": "Lecture Quiz 3",
+    "section": "9",
+    "text": "9\nThe saturated adiabatic lapse rate has a lower magnitude (i.e., absolute value) than the dry adiabatic lapse rate because:\n\nEvaporation releases latent heat to the surrounding environment\nEvaporation takes latent from the surrounding environment\nSaturation is an energy negative process\nCondensation takes latent from the surrounding environment\nCondensation releases latent heat to the surrounding environment"
+  },
+  {
+    "objectID": "Quizzes/Quiz3.html#section-9",
+    "href": "Quizzes/Quiz3.html#section-9",
+    "title": "Lecture Quiz 3",
+    "section": "10",
+    "text": "10\nA parcel of air descends 1000 m; what will happen to it?\n\nIts \\(T\\) will change by 10 K\nIts \\(T\\) will change by -10 K\nIts \\(P\\) will increase\nB & C\nA & C"
   }
 ]
