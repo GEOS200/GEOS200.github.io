@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-html/tabby.min.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.3.450">
 
-  <title>Atmospheric Environments - Orographic Lift</title>
+  <title>Atmospheric Environments – ape</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="../../../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../../../site_libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -94,11 +94,11 @@
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
-  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../../site_libs/revealjs/dist/theme/quarto.css">
+  <link href="../../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../../../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
   .callout {
@@ -389,366 +389,28 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Orographic Lift</h1>
-  <p class="subtitle">How is the atmosphere organized and how do key properties of the atmosphere vary through out it</p>
 
-<div class="quarto-title-authors">
-</div>
+<section class="slide level2">
 
-</section>
-<section id="learning-objectives" class="slide level2">
-<h2>Learning Objectives</h2>
-<ul>
-<li>Understand how adiabatic processes effect temperature and moisture conditions British Columbia</li>
-</ul>
-</section>
-<section id="the-adiabatic-process-equation" class="slide level2 smaller">
-<h2>The Adiabatic Process Equation</h2>
-<p>To determine how the temperature of a parcel (<span class="math inline">\(T_p\)</span>) will change adiabatically if it is transported between two height levels (<span class="math inline">\(z_1\)</span> &amp; <span class="math inline">\(z_2\)</span>), given <span class="math inline">\(T_p(z_1)\)</span> and <span class="math inline">\(T_{dp}(z_1)\)</span>:</p>
-<p><br></p>
-<div style="font-size: 70%;">
-<p><span id="eq-Adiabatic-Process-Equation"><span class="math display">\[
-T_p(z_2) = \begin{cases}
-T_p(z_1) + min((LCL-z_1),(z_2-z_1)) * DALR + max(z_2-LCL,0) * SALR \ ,
-\text{if} z_2&gt;z_1 \\
-T_p(z_1) + (z_2-z_1) * DALR \ ,
-\text{if} z_1&gt;z_2
-\end{cases}
-\qquad(1)\]</span></span></p>
-</div>
-<ul>
-<li>Assume DALR = -0.01 K m<sup>-1</sup> SALR = -0.005 K m<sup>-1</sup></li>
-<li><strong>Recall</strong>: <span class="math inline">\(\frac{T_{dz_1}-T_{z_1}}{DALR}+z_1\)</span></li>
-</ul>
-</section>
-<section id="orographic-lift" class="slide level2">
-<h2>Orographic Lift</h2>
-<p>When air from low elevations is forced up a slope.</p>
-<ul>
-<li><p>A common occurrence in BC during the winter</p>
-<ul>
-<li>Moist air from the Pacific Ocean collides with Coast Mountains</li>
-</ul></li>
-<li><p>Often results in precipitation on the “windward” side of mountains</p>
-<ul>
-<li>As air rises it cools, reaching saturation</li>
-</ul></li>
-</ul>
-</section>
-<section id="orographic-lift-1" class="slide level2">
-<h2>Orographic Lift</h2>
-<div class="columns">
-<div class="column" style="width:60%;">
-<p>Largely responsible for maintaining the temperate rain forests of our region.</p>
-<ul>
-<li>Many of the wettest locations in the world:
-<ul>
-<li>Winds consistently push moist ocean air up mountain slopes</li>
-</ul></li>
-</ul>
-</div><div class="column" style="width:40%;">
-<p><img data-src="images/Lecture13/Rainforest.jpg"></p>
-</div>
-</div>
-</section>
-<section id="the-rain-shadow-effect" class="slide level2">
-<h2>The Rain Shadow Effect</h2>
-<div class="columns">
-<div class="column" style="width:60%;">
-<p>Also responsible for the desert like climate of the Okanagan Valley.</p>
-<ul>
-<li><p>Despite it’s its proximity to the coast, dry hot winds are a persistent in this region</p></li>
-<li><p>Many of the driest locations in the world are in the “rainshadow” of large mountain ranges</p></li>
-</ul>
-</div><div class="column" style="width:40%;">
-<p><img data-src="images/Lecture13/Rainshadow.jpg"></p>
-</div>
-</div>
-</section>
-<section id="the-mountain-problem" class="slide level2">
-<h2>The Mountain Problem</h2>
-<p>This is classic example of these phenomena in Meteorology. Given <span class="math inline">\(T\)</span> and <span class="math inline">\(T_d\)</span> at the base of a mountain:</p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li>Determine the <span class="math inline">\(LCL\)</span></li>
-<li>Estimate how <span class="math inline">\(T\)</span> and <span class="math inline">\(T_d\)</span> will evolve as air moves up and over a mountain</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture13/MountainProblem.png"></p>
-</div>
-</div>
-</section>
-<section id="the-mountain-problem-1" class="slide level2">
-<h2>The Mountain Problem</h2>
-<p>At A: <span class="math inline">\(z = 0 \ m\)</span>, <span class="math inline">\(T = 10 ^{\circ}C\)</span>, and <span class="math inline">\(T_d = 8 ^{\circ}C\)</span>. What will <span class="math inline">\(T\)</span> and <span class="math inline">\(T_d\)</span> be at B (<span class="math inline">\(z = 2500 \ m\)</span>) and C (<span class="math inline">\(z = 300 \ m\)</span>)?</p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Step 1</strong>: Determine the LCL</p>
-<div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>T_A <span class="ot">=</span> <span class="dv">10</span></span>
-<span id="cb1-2"><a href="#cb1-2"></a>Td_A <span class="ot">=</span> <span class="dv">8</span></span>
-<span id="cb1-3"><a href="#cb1-3"></a>z_A <span class="ot">=</span> <span class="dv">0</span></span>
-<span id="cb1-4"><a href="#cb1-4"></a>DALR <span class="ot">=</span> <span class="sc">-</span><span class="fl">0.01</span></span>
-<span id="cb1-5"><a href="#cb1-5"></a>SALR <span class="ot">=</span> <span class="sc">-</span><span class="fl">0.005</span></span>
-<span id="cb1-6"><a href="#cb1-6"></a></span>
-<span id="cb1-7"><a href="#cb1-7"></a>LCL <span class="ot">=</span> (Td_A <span class="sc">-</span> T_A)<span class="sc">/</span>DALR<span class="sc">+</span>z_A</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>LCL = 200 m.a.s.l</p>
-</div>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture13/MountainProblem_EX.png"></p>
-</div>
-</div>
-</section>
-<section id="the-mountain-problem-iclicker" class="slide level2">
-<h2>The Mountain Problem (iClicker)</h2>
-<p>At A: <span class="math inline">\(z = 0 \ m\)</span>, <span class="math inline">\(T = 10 ^{\circ}C\)</span>, and <span class="math inline">\(T_d = 8 ^{\circ}C\)</span>. What will <span class="math inline">\(T\)</span> and <span class="math inline">\(T_d\)</span> be at B (<span class="math inline">\(z = 2500 \ m\)</span>) and C (<span class="math inline">\(z = 300 \ m\)</span>)?</p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>What will <span class="math inline">\(T\)</span> be at the LCL?</p>
-<ul>
-<li>A. <span class="math inline">\(T = 10 ^{\circ}C\)</span></li>
-<li>B. <span class="math inline">\(T = 9 ^{\circ}C\)</span></li>
-<li>C. <span class="math inline">\(T = 8 ^{\circ}C\)</span></li>
-<li>D. <span class="math inline">\(T = 7 ^{\circ}C\)</span></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture13/MountainProblem_EX.png"></p>
-</div>
-</div>
-</section>
-<section id="the-mountain-problem-2" class="slide level2">
-<h2>The Mountain Problem</h2>
-<p>At A: <span class="math inline">\(z = 0 \ m\)</span>, <span class="math inline">\(T = 10 ^{\circ}C\)</span>, and <span class="math inline">\(T_d = 8 ^{\circ}C\)</span>. What will <span class="math inline">\(T\)</span> and <span class="math inline">\(T_d\)</span> be at B (<span class="math inline">\(z = 2500 \ m\)</span>) and C (<span class="math inline">\(z = 300 \ m\)</span>)?</p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Step 2</strong>: Evaluate the Adiabatic Process Equation for B</p>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture13/MountainProblem_EX.png"></p>
-</div>
-</div>
-</section>
-<section id="the-mountain-problem-3" class="slide level2">
-<h2>The Mountain Problem</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>z_B <span class="ot">=</span> <span class="dv">2500</span></span>
-<span id="cb2-2"><a href="#cb2-2"></a></span>
-<span id="cb2-3"><a href="#cb2-3"></a>T_B <span class="ot">=</span> T_A <span class="sc">+</span> <span class="fu">min</span>((LCL<span class="sc">-</span>z_A),(z_B<span class="sc">-</span>z_A))<span class="sc">*</span>DALR <span class="sc">+</span> <span class="fu">max</span>(z_B<span class="sc">-</span>LCL,<span class="dv">0</span>)<span class="sc">*</span>SALR</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Step 2</strong>: Evaluate the Adiabatic Process Equation for B</p>
-<div class="fragment">
-<p><span class="math inline">\(T\)</span> at B = -3.5 <span class="math inline">\(^{\circ}\)</span></p>
-</div>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture13/MountainProblem_EX.png"></p>
-</div>
-</div>
-</section>
-<section id="the-mountain-problem-iclicker-1" class="slide level2">
-<h2>The Mountain Problem (iClicker)</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>z_B <span class="ot">=</span> <span class="dv">2500</span></span>
-<span id="cb3-2"><a href="#cb3-2"></a></span>
-<span id="cb3-3"><a href="#cb3-3"></a>T_B <span class="ot">=</span> T_A <span class="sc">+</span> <span class="fu">min</span>((LCL<span class="sc">-</span>z_A),(z_B<span class="sc">-</span>z_A))<span class="sc">*</span>DALR <span class="sc">+</span> <span class="fu">max</span>(z_B<span class="sc">-</span>LCL,<span class="dv">0</span>)<span class="sc">*</span>SALR</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>What will <span class="math inline">\(T_d\)</span> be at B?</p>
-<ul>
-<li>A. <span class="math inline">\(T_d\)</span> = -3.5 <span class="math inline">\(^{\circ}\)</span></li>
-<li>B. <span class="math inline">\(T_d\)</span> = 10 <span class="math inline">\(^{\circ}\)</span></li>
-<li>C. <span class="math inline">\(T_d\)</span> &lt; -3.5 <span class="math inline">\(^{\circ}\)</span></li>
-<li>D. <span class="math inline">\(T_d\)</span> &gt; -3.5 <span class="math inline">\(^{\circ}\)</span></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture13/MountainProblem_EX.png"></p>
-</div>
-</div>
-</section>
-<section id="the-mountain-problem-iclicker-2" class="slide level2">
-<h2>The Mountain Problem (iClicker)</h2>
-<p>Given <span class="math inline">\(T\)</span> = -3.5 <span class="math inline">\(^{\circ}\)</span> and <span class="math inline">\(T_d\)</span> = -3.5 <span class="math inline">\(^{\circ}\)</span> at B, do you think precipitation will be occurring at B?</p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>What will <span class="math inline">\(T_d\)</span> be at B?</p>
-<ul>
-<li>A. Yes, it will probably be snowing</li>
-<li>B. Yes, it will probably be raining</li>
-<li>C. Probably not</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture13/MountainProblem_EX.png"></p>
-</div>
-</div>
-</section>
-<section id="the-mountain-problem-4" class="slide level2">
-<h2>The Mountain Problem</h2>
-<p>At A: <span class="math inline">\(z = 0 \ m\)</span>, <span class="math inline">\(T = 10 ^{\circ}C\)</span>, and <span class="math inline">\(T_d = 8 ^{\circ}C\)</span>. What will <span class="math inline">\(T\)</span> and <span class="math inline">\(T_d\)</span> be at B (<span class="math inline">\(z = 2500 \ m\)</span>) and C (<span class="math inline">\(z = 300 \ m\)</span>)?</p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Step 3</strong>: Evaluate the Adiabatic Process Equation for C</p>
-<div class="fragment">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>z_C <span class="ot">=</span> <span class="dv">300</span></span>
-<span id="cb4-2"><a href="#cb4-2"></a></span>
-<span id="cb4-3"><a href="#cb4-3"></a>T_C <span class="ot">=</span>T_B <span class="sc">+</span> (z_C<span class="sc">-</span>z_B)<span class="sc">*</span>DALR</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p><span class="math inline">\(T\)</span> at C = 18.5 <span class="math inline">\(^{\circ}\)</span></p>
-</div>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture13/MountainProblem_EX.png"></p>
-</div>
-</div>
-</section>
-<section id="the-mountain-problem-iclicker-3" class="slide level2">
-<h2>The Mountain Problem (iClicker)</h2>
-<p>At A: <span class="math inline">\(z = 0 \ m\)</span>, <span class="math inline">\(T = 10 ^{\circ}C\)</span>, and <span class="math inline">\(T_d = 8 ^{\circ}C\)</span>. What will <span class="math inline">\(T\)</span> and <span class="math inline">\(T_d\)</span> be at B (<span class="math inline">\(z = 2500 \ m\)</span>) and C (<span class="math inline">\(z = 300 \ m\)</span>)?</p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>What will <span class="math inline">\(T_d\)</span> be at C?</p>
-<ul>
-<li>A. <span class="math inline">\(T_d\)</span> = 8 <span class="math inline">\(^{\circ}\)</span></li>
-<li>B. <span class="math inline">\(T_d\)</span> = 18.5 <span class="math inline">\(^{\circ}\)</span></li>
-<li>C. <span class="math inline">\(T_d\)</span> = -3.5 <span class="math inline">\(^{\circ}\)</span></li>
-<li>D. Not enough information to know</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture13/MountainProblem_EX.png"></p>
-</div>
-</div>
-</section>
-<section id="putting-it-all-together" class="slide level2">
-<h2>Putting it all Together</h2>
-<p>I’m going to show you how you can evaluate the adiabatic process equation (APE) in R. If you’d like to try it out yourself, you can install R on your computer and try it out.</p>
-<ul>
-<li>You can find the materials need <a href="https://posit.co/download/rstudio-desktop/">here</a>
-<ul>
-<li>You can use R studio to evaluate the APE on quizzes/exams if you want</li>
-<li>Totally not mandatory! You can do it by hand too.</li>
-</ul></li>
-</ul>
-</section>
-<section id="putting-it-all-together-1" class="slide level2">
-<h2>Putting it all Together</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="co"># Evaluating the adiabatic process equation (APE) in R</span></span>
-<span id="cb5-2"><a href="#cb5-2"></a></span>
-<span id="cb5-3"><a href="#cb5-3"></a><span class="co"># A "Class" can contain values with variables (e.g., T, TD, and z)</span></span>
-<span id="cb5-4"><a href="#cb5-4"></a><span class="fu">setClass</span>(<span class="at">Class=</span><span class="st">"Parcel"</span>,<span class="fu">representation</span>(<span class="at">T=</span><span class="st">"numeric"</span>,<span class="at">Td=</span><span class="st">"numeric"</span>,<span class="at">z=</span><span class="st">"numeric"</span>))</span>
-<span id="cb5-5"><a href="#cb5-5"></a></span>
-<span id="cb5-6"><a href="#cb5-6"></a><span class="co"># A function can evaluate an equation repeatedly given different inputs</span></span>
-<span id="cb5-7"><a href="#cb5-7"></a>APE <span class="ot">&lt;-</span> <span class="cf">function</span>(Parcel,z2){</span>
-<span id="cb5-8"><a href="#cb5-8"></a>  DALR <span class="ot">=</span> <span class="sc">-</span><span class="fl">0.01</span></span>
-<span id="cb5-9"><a href="#cb5-9"></a>  SALR <span class="ot">=</span> <span class="sc">-</span><span class="fl">0.005</span></span>
-<span id="cb5-10"><a href="#cb5-10"></a>  <span class="co"># Calculate the LCL</span></span>
-<span id="cb5-11"><a href="#cb5-11"></a>  LCL <span class="ot">=</span> (Parcel<span class="sc">@</span>Td<span class="sc">-</span>Parcel<span class="sc">@</span>T)<span class="sc">/</span>DALR<span class="sc">+</span>Parcel<span class="sc">@</span>z</span>
-<span id="cb5-12"><a href="#cb5-12"></a>  <span class="co"># Evaluate the APE and update the parcel temperature</span></span>
-<span id="cb5-13"><a href="#cb5-13"></a>  Parcel<span class="sc">@</span>T <span class="ot">=</span> Parcel<span class="sc">@</span>T <span class="sc">+</span> <span class="fu">min</span>((LCL<span class="sc">-</span>Parcel<span class="sc">@</span>z),(z2<span class="sc">-</span>Parcel<span class="sc">@</span>z))<span class="sc">*</span>DALR <span class="sc">+</span> <span class="fu">max</span>(z2<span class="sc">-</span>LCL,<span class="dv">0</span>)<span class="sc">*</span>SALR</span>
-<span id="cb5-14"><a href="#cb5-14"></a>  <span class="co"># Update the parcel's height and dewpoint if necessary</span></span>
-<span id="cb5-15"><a href="#cb5-15"></a>  Parcel<span class="sc">@</span>z<span class="ot">=</span>z2</span>
-<span id="cb5-16"><a href="#cb5-16"></a>  <span class="cf">if</span>(Parcel<span class="sc">@</span>z<span class="sc">&gt;=</span>LCL){Parcel<span class="sc">@</span>Td <span class="ot">=</span> Parcel<span class="sc">@</span>T}</span>
-<span id="cb5-17"><a href="#cb5-17"></a>  <span class="fu">return</span>(Parcel)</span>
-<span id="cb5-18"><a href="#cb5-18"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="putting-it-all-together-2" class="slide level2">
-<h2>Putting it all Together</h2>
-<p>At A: <span class="math inline">\(z = 0 \ m\)</span>, <span class="math inline">\(T = 10 ^{\circ}C\)</span>, and <span class="math inline">\(T_d = 8 ^{\circ}C\)</span>. What will <span class="math inline">\(T\)</span> and <span class="math inline">\(T_d\)</span> be at B (<span class="math inline">\(z = 2500 \ m\)</span>) and C (<span class="math inline">\(z = 300 \ m\)</span>)?</p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="co"># Define the Parcel at A</span></span>
-<span id="cb6-2"><a href="#cb6-2"></a>A <span class="ot">=</span> <span class="fu">new</span>(<span class="st">"Parcel"</span>,<span class="at">T=</span><span class="dv">10</span>,<span class="at">Td=</span><span class="dv">8</span>,<span class="at">z=</span><span class="dv">0</span>)</span>
-<span id="cb6-3"><a href="#cb6-3"></a>A</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>An object of class "Parcel"
-Slot "T":
-[1] 10
-
-Slot "Td":
-[1] 8
-
-Slot "z":
-[1] 0</code></pre>
-</div>
-</div>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture13/MountainProblem_EX.png"></p>
-</div>
-</div>
-</section>
-<section id="putting-it-all-together-3" class="slide level2">
-<h2>Putting it all Together</h2>
-<p>At A: <span class="math inline">\(z = 0 \ m\)</span>, <span class="math inline">\(T = 10 ^{\circ}C\)</span>, and <span class="math inline">\(T_d = 8 ^{\circ}C\)</span>. What will <span class="math inline">\(T\)</span> and <span class="math inline">\(T_d\)</span> be at B (<span class="math inline">\(z = 2500 \ m\)</span>) and C (<span class="math inline">\(z = 300 \ m\)</span>)?</p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a><span class="co"># Evaluate APE for B</span></span>
-<span id="cb8-2"><a href="#cb8-2"></a>B <span class="ot">=</span> <span class="fu">APE</span>(A,<span class="dv">2500</span>)</span>
-<span id="cb8-3"><a href="#cb8-3"></a>B</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>An object of class "Parcel"
-Slot "T":
-[1] -3.5
-
-Slot "Td":
-[1] -3.5
-
-Slot "z":
-[1] 2500</code></pre>
-</div>
-</div>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture13/MountainProblem_EX.png"></p>
-</div>
-</div>
-</section>
-<section id="putting-it-all-together-4" class="slide level2">
-<h2>Putting it all Together</h2>
-<p>At A: <span class="math inline">\(z = 0 \ m\)</span>, <span class="math inline">\(T = 10 ^{\circ}C\)</span>, and <span class="math inline">\(T_d = 8 ^{\circ}C\)</span>. What will <span class="math inline">\(T\)</span> and <span class="math inline">\(T_d\)</span> be at B (<span class="math inline">\(z = 2500 \ m\)</span>) and C (<span class="math inline">\(z = 300 \ m\)</span>)?</p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a><span class="co"># Evaluate APE for B</span></span>
-<span id="cb10-2"><a href="#cb10-2"></a>C <span class="ot">=</span> <span class="fu">APE</span>(B,<span class="dv">300</span>)</span>
-<span id="cb10-3"><a href="#cb10-3"></a>C</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>An object of class "Parcel"
-Slot "T":
-[1] 18.5
-
-Slot "Td":
-[1] -3.5
-
-Slot "z":
-[1] 300</code></pre>
-</div>
-</div>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture13/MountainProblem_EX.png"></p>
-</div>
-</div>
-</section>
-<section id="take-home-points" class="slide level2">
-<h2>Take home points</h2>
-<div class="columns">
-<div class="column" style="width:100%;">
-<ul>
-<li>Temperature decreases with height on the windward slope of a mountain
-<ul>
-<li>Condensation/Precipitation will often occur</li>
-</ul></li>
-<li>Temperature increases as winds move down the leeward slope of a mountain
-<ul>
-<li><span class="math inline">\(RH\)</span> decreases as well, because <span class="math inline">\(T_d\)</span> remains unchanged while <span class="math inline">\(T\)</span> increases</li>
-</ul></li>
-</ul>
-</div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="co"># Evaluating the adiabatic process equation (APE) in R</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="co"># A "Class" can contain values with variables (e.g., T, TD, and z)</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="fu">setClass</span>(<span class="at">Class=</span><span class="st">"Parcel"</span>,<span class="fu">representation</span>(<span class="at">T=</span><span class="st">"numeric"</span>,<span class="at">Td=</span><span class="st">"numeric"</span>,<span class="at">z=</span><span class="st">"numeric"</span>))</span>
+<span id="cb1-5"><a href="#cb1-5"></a></span>
+<span id="cb1-6"><a href="#cb1-6"></a><span class="co"># A function can evaluate an equation repeatedly given different inputs</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a>APE <span class="ot">&lt;-</span> <span class="cf">function</span>(Parcel,z2){</span>
+<span id="cb1-8"><a href="#cb1-8"></a>  DALR <span class="ot">=</span> <span class="sc">-</span><span class="fl">0.01</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a>  SALR <span class="ot">=</span> <span class="sc">-</span><span class="fl">0.005</span></span>
+<span id="cb1-10"><a href="#cb1-10"></a>  <span class="co"># Calculate the LCL</span></span>
+<span id="cb1-11"><a href="#cb1-11"></a>  LCL <span class="ot">=</span> (Parcel<span class="sc">@</span>Td<span class="sc">-</span>Parcel<span class="sc">@</span>T)<span class="sc">/</span>DALR<span class="sc">+</span>Parcel<span class="sc">@</span>z</span>
+<span id="cb1-12"><a href="#cb1-12"></a>  <span class="co"># Evaluate the APE and update the parcel temperature</span></span>
+<span id="cb1-13"><a href="#cb1-13"></a>  Parcel<span class="sc">@</span>T <span class="ot">=</span> Parcel<span class="sc">@</span>T <span class="sc">+</span> <span class="fu">min</span>((LCL<span class="sc">-</span>Parcel<span class="sc">@</span>z),(z2<span class="sc">-</span>Parcel<span class="sc">@</span>z))<span class="sc">*</span>DALR <span class="sc">+</span> <span class="fu">max</span>(z2<span class="sc">-</span>LCL,<span class="dv">0</span>)<span class="sc">*</span>SALR</span>
+<span id="cb1-14"><a href="#cb1-14"></a>  <span class="co"># Update the parcel's height and dewpoint if necessary</span></span>
+<span id="cb1-15"><a href="#cb1-15"></a>  Parcel<span class="sc">@</span>z<span class="ot">=</span>z2</span>
+<span id="cb1-16"><a href="#cb1-16"></a>  <span class="cf">if</span>(Parcel<span class="sc">@</span>z<span class="sc">&gt;=</span>LCL){Parcel<span class="sc">@</span>Td <span class="ot">=</span> Parcel<span class="sc">@</span>T}</span>
+<span id="cb1-17"><a href="#cb1-17"></a>  <span class="fu">return</span>(Parcel)</span>
+<span id="cb1-18"><a href="#cb1-18"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 <div class="footer footer-default">
@@ -759,19 +421,19 @@ Slot "z":
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="../site_libs/revealjs/dist/reveal.js"></script>
+  <script src="../../../site_libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="../../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../../../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../../../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../../../site_libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
-  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="../site_libs/revealjs/plugin/math/math.js"></script>
+  <script src="../../../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../../../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../../../site_libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
