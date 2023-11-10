@@ -2905,18 +2905,39 @@
     "text": "Classifying Stability"
   },
   {
+    "objectID": "Slides/Lecture12.html#classifying-stability-2",
+    "href": "Slides/Lecture12.html#classifying-stability-2",
+    "title": "Profile of the Atmosphere, Lapse rates, and Stability",
+    "section": "Classifying Stability",
+    "text": "Classifying Stability"
+  },
+  {
     "objectID": "Slides/Lecture12.html#unstable",
     "href": "Slides/Lecture12.html#unstable",
     "title": "Profile of the Atmosphere, Lapse rates, and Stability",
     "section": "Unstable",
-    "text": "Unstable\nThe plume shape is because both sources of convection are active – thermals cause the large ‘loops’, and mechanical eddies cause the spreading\n\n\n\n\n\nTypically found near the ground by day if strong heating, or if there is advection of a colder airmass aloft. Very good for dispersion and mixing, development of thermals and convective cloud (cumulus)\n\n\n\n\n\n\nA looping plume in strongly unstable conditions (Photo: CSIRO)"
+    "text": "Unstable\nThe plume shape is because convection cause eddies, which look like ‘loops’. These eddies cause mixing in the atmosphere..\n\n\n\n\n\nTypically found near the ground by day if strong heating, or if there is advection of a colder airmass aloft. Very good for dispersion and mixing, development of thermals and convective cloud (cumulus)\n\n\n\n\n\n\nA looping plume in strongly unstable conditions (Photo: CSIRO)"
+  },
+  {
+    "objectID": "Slides/Lecture12.html#unstable-1",
+    "href": "Slides/Lecture12.html#unstable-1",
+    "title": "Profile of the Atmosphere, Lapse rates, and Stability",
+    "section": "Unstable",
+    "text": "Unstable\nThese conditions promote convection, which in certain cases can lead to the formation of thunderstorms"
   },
   {
     "objectID": "Slides/Lecture12.html#stable",
     "href": "Slides/Lecture12.html#stable",
     "title": "Profile of the Atmosphere, Lapse rates, and Stability",
     "section": "Stable",
-    "text": "Stable\nTypically found near the ground at night if strong radiative loss (\\(R_n\\) &lt; 0) and little wind. Also formed when warm air moves over colder surface or sinking of warm air aloft. Poor for dispersion and mixing. Smoke and fog lie in horizontal layers.\n\n\n\n\n\nAt night with weak winds there is little production of turbulence and the plume stays intact and undiluted for great distances\n\n\n\n\n\n\nAir pollution in stable conditions."
+    "text": "Stable\nFound near the ground at night if \\(R_n\\) &lt;&lt; 0 and little wind, when warm air moves over colder surfaces, or sinking of warm air aloft. Poor for dispersion and mixing.\n\n\n\n\n\nAt night with weak winds there is little production of turbulence and the plume stays intact and undiluted for great distances\n\n\n\n\n\n\nAir pollution in stable conditions"
+  },
+  {
+    "objectID": "Slides/Lecture12.html#stable-1",
+    "href": "Slides/Lecture12.html#stable-1",
+    "title": "Profile of the Atmosphere, Lapse rates, and Stability",
+    "section": "Stable",
+    "text": "Stable\n\n\nStable conditions promote clear cloudless skies and suppress precipitation.\n\nCommon in coastal BC during the summer\n\nPacific high pressure systems produce temperature inversions"
   },
   {
     "objectID": "Slides/Lecture12.html#neutral",
@@ -2926,11 +2947,32 @@
     "text": "Neutral\nTypically found when there is little surface heating or cooling (overcast) or when strong winds thoroughly mix the air. Does not aid or restrict dispersion and mixing, plumes are conic and steadily occupy larger air volume."
   },
   {
+    "objectID": "Slides/Lecture12.html#neutral-1",
+    "href": "Slides/Lecture12.html#neutral-1",
+    "title": "Profile of the Atmosphere, Lapse rates, and Stability",
+    "section": "Neutral",
+    "text": "Neutral\nTypically found when there is little surface heating or cooling (overcast) or when strong winds thoroughly mix the air. Does not aid or restrict dispersion and mixing."
+  },
+  {
     "objectID": "Slides/Lecture12.html#conditionally-unstable",
     "href": "Slides/Lecture12.html#conditionally-unstable",
     "title": "Profile of the Atmosphere, Lapse rates, and Stability",
     "section": "Conditionally Unstable",
-    "text": "Conditionally Unstable\n\n\nWhen the ELR is between the DLAR and the SALR\n\nDry air that is lifted will not continue to rise under it’s own power\nSaturated air that is lifted will continue to rise under it’s own power\n\n\n\n\n\nSALR is sometimes call the Moist Adiabatic Lapse Rate"
+    "text": "Conditionally Unstable\n\n\nWhen the ELR is between the DLAR and the SALR\n\nDry air that is lifted will not continue to rise under it’s own power\nSaturated air that is lifted will continue to rise under it’s own power\n\n\n\n\n\nSALR aka the Moist Adiabatic Lapse Rate"
+  },
+  {
+    "objectID": "Slides/Lecture12.html#conditionally-unstable-1",
+    "href": "Slides/Lecture12.html#conditionally-unstable-1",
+    "title": "Profile of the Atmosphere, Lapse rates, and Stability",
+    "section": "Conditionally Unstable",
+    "text": "Conditionally Unstable\n\n\nWhen the ELR is between the DLAR and the SALR\n\nDry air that is lifted will not continue to rise under it’s own power\nSaturated air that is lifted will continue to rise under it’s own power\n\n\n\n\n\nSALR aka the Moist Adiabatic Lapse Rate"
+  },
+  {
+    "objectID": "Slides/Lecture12.html#conditionally-unstable-2",
+    "href": "Slides/Lecture12.html#conditionally-unstable-2",
+    "title": "Profile of the Atmosphere, Lapse rates, and Stability",
+    "section": "Conditionally Unstable",
+    "text": "Conditionally Unstable\n\n\nThese conditions can also produce thunderstorms\n\nIf a trigger is present to initiate lift\n\ne.g., a cold front can produce a squall line\n\n\n\n\n\n\nSALR aka the Moist Adiabatic Lapse Rate"
   },
   {
     "objectID": "Slides/Lecture12.html#summary-comparing-lapse-rates",
@@ -2945,20 +2987,6 @@
     "title": "Profile of the Atmosphere, Lapse rates, and Stability",
     "section": "Test your knowledge (iClicker)",
     "text": "Test your knowledge (iClicker)\nWhich is an unstable situation?"
-  },
-  {
-    "objectID": "Slides/Lecture12.html#test-your-knowledge-iclicker-2",
-    "href": "Slides/Lecture12.html#test-your-knowledge-iclicker-2",
-    "title": "Profile of the Atmosphere, Lapse rates, and Stability",
-    "section": "Test your knowledge (iClicker)",
-    "text": "Test your knowledge (iClicker)\nWhich layer is stable?\n\n\nB"
-  },
-  {
-    "objectID": "Slides/Lecture12.html#inversion",
-    "href": "Slides/Lecture12.html#inversion",
-    "title": "Profile of the Atmosphere, Lapse rates, and Stability",
-    "section": "Inversion",
-    "text": "Inversion\n\n\nReminder: An inversion is a stable layer that prevents air to mix vertically\n\nTraps air pollutants below and can cause poor air quality"
   },
   {
     "objectID": "Slides/Lecture12.html#potential-temperature",
