@@ -540,9 +540,9 @@ LCL = \frac{T_{dz_1}-T_{z_1}}{DALR}+z_1
 <p>A generalize formula for approximating the temperature of a parcel (<span class="math inline">\(T_p\)</span>) that moves from one level (<span class="math inline">\(z_1\)</span>) to another (<span class="math inline">\(z_2\)</span>), is given in <a href="#eq-Adiabatic-Process-Equation">Equation&nbsp;4</a>. If a parcel is rising (<span class="math inline">\(z_1 &lt; z-2\)</span>), it will cool at the DALR until reaching the LCL and then cool at the SALR. <em>Note</em> that above the LCL, the parcel’s dewpoint (<span class="math inline">\(T_{dp}\)</span>) will decrease in lockstep with <span class="math inline">\(T_p\)</span>. If a parcel is descending (<span class="math inline">\(z_1 &gt; z_2\)</span>) it will warm at the DALR over the entire descent while the <span class="math inline">\(T_{dp}\)</span> will not change.</p>
 <p><span id="eq-Adiabatic-Process-Equation"><span class="math display">\[
 T_p(z_2) = \begin{cases}
-T_p(z_1) + min((LCL-z_1),(z_2-z_1)) * DALR + max(z_2-LCL,0) * SALR,
+T_p(z_1) + min((LCL-z_1),(z_2-z_1)) * DALR + max(z_2-LCL,0) * SALR \ ,
 \text{if} z_2&gt;z_1 \\
-T_p(z_1) + (z_2-z_1) * DALR,
+T_p(z_1) + (z_2-z_1) * DALR \ ,
 \text{if} z_1&gt;z_2
 \end{cases}
 \tag{4}\]</span></span></p>
@@ -625,7 +625,7 @@ T_p(z_1) + (z_2-z_1) * DALR,
 <h2 class="anchored" data-anchor-id="questions-2">Questions</h2>
 <section id="question-8-2-points" class="level3">
 <h3 class="anchored" data-anchor-id="question-8-2-points">Question 8 <font size="-1">[2 points]</font></h3>
-<p>Looking at <a href="#tbl-ELR">Table&nbsp;2</a>, give the atmospheric stability for each layer (unstable, conditionally unstable, or stable). You can find a copy of the data from the table <a href="www/ELR_ex.csv">here</a>. <strong>Note:</strong> you can assume a constant SALR of -0.005 <span class="math inline">\(^{\circ}C km^{-1}\)</span>. Given this, how would you characterize the stability of the atmosphere at this location on this day? If there were a forest fire in the area, what would happen to the smoke from the fire?</p>
+<p>Looking at <a href="#tbl-ELR">Table&nbsp;2</a>, give the atmospheric stability for each layer (unstable, conditionally unstable, or stable). You can find a copy of the data from the table <a href="www/ELR_ex.csv">here</a>. <strong>Note:</strong> you can assume a constant SALR of -0.005 <span class="math inline">\(K\ m^{-1}\)</span>. Given this, how would you characterize the stability of the atmosphere at this location on this day? If there were a forest fire in the area, what would happen to the smoke from the fire?</p>
 </section>
 </section>
 </section>
