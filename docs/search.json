@@ -795,7 +795,7 @@
     "href": "Slides/Lecture14.html#class-conduct",
     "title": "Turbulence and Convection",
     "section": "Class Conduct",
-    "text": "Class Conduct\nTalking during class can disrupt the learning experience of your classmates.\n\nIt is okay to quietly ask your neighbors questions or discuss issues relating to class content\nIt is not okay to have loud, draw out conversations"
+    "text": "Class Conduct\nTalking during class can disrupt the learning experience of your classmates.\n\nIt is okay to quietly ask your neighbors questions or discuss issues relating to class content\nIt is not okay to have loud/long conversations"
   },
   {
     "objectID": "Slides/Lecture14.html#class-conduct-iclicker",
@@ -914,7 +914,7 @@
     "href": "Slides/Lecture14.html#eddy-size-and-source-of-convection",
     "title": "Turbulence and Convection",
     "section": "Eddy Size and Source of Convection",
-    "text": "Eddy Size and Source of Convection\n\n\n\nDay: wide range of eddy sizes\n\nFree convection (heating)\nForced convection (wind)\n\nAt night: Eddies are small\n\nForced (wind)\n\n\n\n\n\n\nTraces of vertical wind near the same surface with same wind speed with and without surface heating.\n\n\n\n\n\nPlotting vertical and horizontal winds – we get a sense of turbulence in the atmosphere Turbulence as variation or gustiness of the wind"
+    "text": "Eddy Size and Source of Convection\n\n\n\nDay: wide range of eddy sizes\n\nFree convection (heating)\nForced convection (wind)\n\nNight: Eddies are small\n\nForced (wind)\n\n\n\n\n\n\nTraces of vertical wind near the same surface with same wind speed with and without surface heating."
   },
   {
     "objectID": "Slides/Lecture14.html#turbulence-air-temperatures",
@@ -927,8 +927,8 @@
     "objectID": "Slides/Lecture14.html#reynolds-decomposition",
     "href": "Slides/Lecture14.html#reynolds-decomposition",
     "title": "Turbulence and Convection",
-    "section": "Reynolds decomposition",
-    "text": "Reynolds decomposition\n\n\nTurbulent properties appear chaotic, but can be analyzed by deconstructing them into two parts:\n\nThe time mean (e.g., \\(\\bar{a}\\))\nThe instantaneous deviation from the mean (e.g., \\(a^{\\prime}\\))\n\n\nThis is called Reynolds’ notation\n\\[\na = \\bar{a} + a^{\\prime}\n\\qquad(1)\\]\n\n\n\n\nSee fluctuations as eddies move by."
+    "section": "Reynolds Decomposition",
+    "text": "Reynolds Decomposition\n\n\nTurbulent properties appear chaotic, but can be analyzed by deconstructing them into two parts:\n\nThe time mean (e.g., \\(\\bar{a}\\))\nThe instantaneous deviation from the mean (e.g., \\(a^{\\prime}\\))\n\n\nThis is called Reynolds’ decomposition\n\\[\na = \\bar{a} + a^{\\prime}\n\\qquad(1)\\]\n\n\n\n\nSee fluctuations as eddies move by."
   },
   {
     "objectID": "Slides/Lecture14.html#convective-transport",
@@ -984,14 +984,14 @@
     "href": "Slides/Lecture14.html#example-calculation-1",
     "title": "Turbulence and Convection",
     "section": "Example Calculation ",
-    "text": "Example Calculation \nAssume \\(K\\) = 0.25 m2 s-1 and \\(C_a\\) = 1200 J m-3 K-1, what is H?\n\n\n\n\n\\(H = -K C_a \\frac{T_2 - T_1}{z_2 - z_1}\\)\n\nT1 = 24 #C\nT2 = 22 #C\nz1 = 0.1 #C\nz2 = 2.1 #C\nK = 0.25 #m2 s-1\nC_a = 1200 #J m-3 K-1\nH = -K*C_a*(T2-T1)/(z2-z1)\n\n300 W m-2"
+    "text": "Example Calculation \nAssume \\(K\\) = 0.25 m2 s-1 and \\(C_a\\) = 1200 J m-3 K-1, what is H?\n\n\n\n\n\\(H = -K C_a \\frac{T_2 - T_1}{z_2 - z_1}\\)\n\nT1 = 24 #C\nT2 = 22 #C\nz1 = 0.1 #C\nz2 = 2.1 #C\nK = 0.25 #m2 s-1\nC_a = 1200 #J m-3 K-1\nH = -K*C_a*(T2-T1)/(z2-z1)\n\n\nA 300 W m-2"
   },
   {
     "objectID": "Slides/Lecture14.html#stable-vs-unstable",
     "href": "Slides/Lecture14.html#stable-vs-unstable",
     "title": "Turbulence and Convection",
-    "section": "Stable vs unstable",
-    "text": "Stable vs unstable\n\n\nIn which condition do you think K is generally higher? \n\nA Stable\nB Unstable"
+    "section": "Stable vs Unstable",
+    "text": "Stable vs Unstable\n\n\nIn which condition do you think K is generally higher? \n\nA Stable\nB Unstable"
   },
   {
     "objectID": "Slides/Lecture14.html#effect-of-surface-roughness",
@@ -1018,8 +1018,8 @@
     "objectID": "Slides/Lecture14.html#reynolds-notation",
     "href": "Slides/Lecture14.html#reynolds-notation",
     "title": "Turbulence and Convection",
-    "section": "Reynolds notation",
-    "text": "Reynolds notation\nA flux density is the average of all the instantaneous products of the vertical speeds of the eddies and the properties they carry:\n\\[\nF_c = \\bar{w^{\\prime}c^{\\prime}}\n\\qquad(4)\\]\n\n\\(w^{\\prime}\\) and \\(c^{\\prime}\\) are the instantaneous vertical wind velocity and concentration of an entity\n\nThe concentrations must be measured within about 30 cm of where w is measured\n\nThese multiplications must be made typically 20 times each second and averaged over larger time intervals (usually 30 minutes).\n\nThis means we must do 36,000 multiplications per 30 minutes!"
+    "section": "Reynolds Notation",
+    "text": "Reynolds Notation\nA flux density is the average of all the instantaneous products of the vertical speeds of the eddies and the properties they carry:\n\\[\nF_c = \\bar{w^{\\prime}c^{\\prime}}\n\\qquad(4)\\]\n\n\\(w^{\\prime}\\) and \\(c^{\\prime}\\) are the instantaneous vertical wind velocity and concentration of an entity\n\nThe concentrations must be measured within about 30 cm of where w is measured\n\nThese multiplications must be made typically 20 times each second and averaged over larger time intervals (usually 30 minutes).\n\nThis means we must do 36,000 multiplications per 30 minutes!"
   },
   {
     "objectID": "Slides/Lecture14.html#eddy-covariance-method",
@@ -4065,5 +4065,82 @@
     "title": "Net radiation of land surfaces",
     "section": "Take home points",
     "text": "Take home points\n\nDistinguish between net shortwave (\\(SW^*\\)), net longwave (\\(LW^*\\)) and net all-wave radiation (\\(R_n\\))\nThe magnitude of \\(R_n\\) is controlled by surface properties:\n\nAlbedo, surface temperature, emissivity\n\nThe magnitude of \\(R_n\\) is also controlled by the surrounding 3D surface\n\nSky view influences \\(LW^*\\)* at night\n\nSurface properties can be modified to control surface climates\n\n\n\nBack to Homepage"
+  },
+  {
+    "objectID": "Slides/Lecture14.html#eddies",
+    "href": "Slides/Lecture14.html#eddies",
+    "title": "Turbulence and Convection",
+    "section": "Eddies",
+    "text": "Eddies\nCoherent parts within the flow which have the same properties.\n\nEddies exist in a wide range of different sizes\n\n“Big whorls have little whorls which feed on their velocity, and little whorls have lesser whorls, and so on to viscosity.”\n\nRichardson, 1922"
+  },
+  {
+    "objectID": "Slides/Lecture14.html#eddies-1",
+    "href": "Slides/Lecture14.html#eddies-1",
+    "title": "Turbulence and Convection",
+    "section": "Eddies",
+    "text": "Eddies\nCoherent parts within the flow which have the same properties.\n\nEddies exist in a wide range of different sizes\nThe smallest eddies dissipate to heat"
+  },
+  {
+    "objectID": "Slides/Lecture14.html#forced-mechanical-convection",
+    "href": "Slides/Lecture14.html#forced-mechanical-convection",
+    "title": "Turbulence and Convection",
+    "section": "Forced (Mechanical) Convection",
+    "text": "Forced (Mechanical) Convection\n\n\nWind moving past obstacles (trees, buildings, etc.) creates eddies mechanically by disturbing flow.\n\nEddy size related to the size of the obstacle and flow velocity"
+  },
+  {
+    "objectID": "Slides/Lecture14.html#forced-mechanical-convection-1",
+    "href": "Slides/Lecture14.html#forced-mechanical-convection-1",
+    "title": "Turbulence and Convection",
+    "section": "Forced (Mechanical) Convection",
+    "text": "Forced (Mechanical) Convection\n\n\nAir moving at different speeds, or in different directions, creates shear stress.\n\nCauses turbulence and eddies\nExplains the turbulence you feel in an airplane\n\n\n\n\n\nPhoto (c) Bring Wong"
+  },
+  {
+    "objectID": "Slides/Lecture14.html#forced-mechanical-convection-2",
+    "href": "Slides/Lecture14.html#forced-mechanical-convection-2",
+    "title": "Turbulence and Convection",
+    "section": "Forced (Mechanical) Convection",
+    "text": "Forced (Mechanical) Convection\n\n\nWind moving over a natural surface experiences skin friction as it drags along\n\nGreater over rough surfaces"
+  },
+  {
+    "objectID": "Slides/Lecture14.html#forced-mechanical-convection-3",
+    "href": "Slides/Lecture14.html#forced-mechanical-convection-3",
+    "title": "Turbulence and Convection",
+    "section": "Forced (Mechanical) Convection",
+    "text": "Forced (Mechanical) Convection\nRequires a continual supply of kinetic energy from the flow. It comes from the mean wind speed.\n\nWind is driven by pressure/temperature gradients at larger scales (we’ll discuss this later)"
+  },
+  {
+    "objectID": "Slides/Lecture14.html#forced-mechanical-convection-4",
+    "href": "Slides/Lecture14.html#forced-mechanical-convection-4",
+    "title": "Turbulence and Convection",
+    "section": "Forced (Mechanical) Convection",
+    "text": "Forced (Mechanical) Convection\nWe can have three different scenarios that create turbulence mechanically"
+  },
+  {
+    "objectID": "Slides/Lecture14.html#free-thermal-convection",
+    "href": "Slides/Lecture14.html#free-thermal-convection",
+    "title": "Turbulence and Convection",
+    "section": "Free (Thermal) Convection",
+    "text": "Free (Thermal) Convection\nSurface heating differences → density differences → buoyancy differences → convection."
+  },
+  {
+    "objectID": "Slides/Lecture14.html#free-thermal-convection-1",
+    "href": "Slides/Lecture14.html#free-thermal-convection-1",
+    "title": "Turbulence and Convection",
+    "section": "Free (Thermal) Convection",
+    "text": "Free (Thermal) Convection\nBuoyant parcels are often semi-organized into ‘plumes’; rising thermals form convection cells.\n\nT.R. Oke (1987)"
+  },
+  {
+    "objectID": "Slides/Lecture14.html#free-thermal-convection-2",
+    "href": "Slides/Lecture14.html#free-thermal-convection-2",
+    "title": "Turbulence and Convection",
+    "section": "Free (Thermal) Convection",
+    "text": "Free (Thermal) Convection"
+  },
+  {
+    "objectID": "Slides/Lecture14.html#intense-convection-thunderstorm",
+    "href": "Slides/Lecture14.html#intense-convection-thunderstorm",
+    "title": "Turbulence and Convection",
+    "section": "Intense Convection > Thunderstorm",
+    "text": "Intense Convection &gt; Thunderstorm"
   }
 ]
