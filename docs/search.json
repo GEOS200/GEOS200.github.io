@@ -826,81 +826,81 @@
     "text": "Turbulence\nTurbulence is a feature of flows, not fluids.\n\nTurbulent flows are very efficient in equalizing temperature and concentration gradients:\n\nIn the Atmosphere, turbulent flows are 105 times more efficient than molecular diffusion"
   },
   {
-    "objectID": "Slides/Lecture14.html#turbulence-1",
-    "href": "Slides/Lecture14.html#turbulence-1",
+    "objectID": "Slides/Lecture14.html#eddies",
+    "href": "Slides/Lecture14.html#eddies",
     "title": "Turbulence and Convection",
-    "section": "Turbulence",
-    "text": "Turbulence\nEddies are coherent parts within the flow which have the same properties.\n\nEddies exist in a wide range of different sizes.\n\n“Big whorls have little whorls which feed on their velocity, and little whorls have lesser whorls, and so on to viscosity.” - Richardson, 1922"
+    "section": "Eddies",
+    "text": "Eddies\nCoherent parts within the flow which have the same properties.\n\nEddies exist in a wide range of different sizes\n\n“Big whorls have little whorls which feed on their velocity, and little whorls have lesser whorls, and so on to viscosity.”\n\nRichardson, 1922"
   },
   {
-    "objectID": "Slides/Lecture14.html#turbulence-2",
-    "href": "Slides/Lecture14.html#turbulence-2",
+    "objectID": "Slides/Lecture14.html#eddies-1",
+    "href": "Slides/Lecture14.html#eddies-1",
     "title": "Turbulence and Convection",
-    "section": "Turbulence",
-    "text": "Turbulence\nEddies are coherent parts within the flow which have the same properties.\n\nEddies exist in a wide range of different sizes.\nThe smallest eddies dissipate to heat."
+    "section": "Eddies",
+    "text": "Eddies\nCoherent parts within the flow which have the same properties.\n\nEddies exist in a wide range of different sizes\nThe smallest eddies dissipate to heat"
   },
   {
-    "objectID": "Slides/Lecture14.html#mechanical-forced-convection",
-    "href": "Slides/Lecture14.html#mechanical-forced-convection",
+    "objectID": "Slides/Lecture14.html#forced-mechanical-convection",
+    "href": "Slides/Lecture14.html#forced-mechanical-convection",
     "title": "Turbulence and Convection",
-    "section": "Mechanical (forced) convection",
-    "text": "Mechanical (forced) convection\n\n\nWind moving past obstacles (boulders, trees, buildings) causes pressure effects and flow separation.\n\nIt creates eddies related to the size of the obstacle."
+    "section": "Forced (Mechanical) Convection",
+    "text": "Forced (Mechanical) Convection\n\n\nWind moving past obstacles (trees, buildings, etc.) creates eddies mechanically by disturbing flow.\n\nEddy size related to the size of the obstacle and flow velocity"
   },
   {
-    "objectID": "Slides/Lecture14.html#mechanical-forced-convection-1",
-    "href": "Slides/Lecture14.html#mechanical-forced-convection-1",
+    "objectID": "Slides/Lecture14.html#forced-mechanical-convection-1",
+    "href": "Slides/Lecture14.html#forced-mechanical-convection-1",
     "title": "Turbulence and Convection",
-    "section": "Mechanical (forced) convection",
-    "text": "Mechanical (forced) convection\n\n\nAir moving at different speeds, or in different directions, creates shear stress.\n\nCauses turbulence and eddies\n\n\n\n\n\nPhoto (c) Bring Wong"
+    "section": "Forced (Mechanical) Convection",
+    "text": "Forced (Mechanical) Convection\n\n\nAir moving at different speeds, or in different directions, creates shear stress.\n\nCauses turbulence and eddies\nExplains the turbulence you feel in an airplane\n\n\n\n\n\nPhoto (c) Bring Wong"
   },
   {
-    "objectID": "Slides/Lecture14.html#mechanical-forced-convection-2",
-    "href": "Slides/Lecture14.html#mechanical-forced-convection-2",
+    "objectID": "Slides/Lecture14.html#forced-mechanical-convection-2",
+    "href": "Slides/Lecture14.html#forced-mechanical-convection-2",
     "title": "Turbulence and Convection",
-    "section": "Mechanical (forced) convection",
-    "text": "Mechanical (forced) convection\n\n\nWind moving over a natural surface experiences skin friction as it drags along\n\nGreater over rough surfaces → small eddies"
+    "section": "Forced (Mechanical) Convection",
+    "text": "Forced (Mechanical) Convection\n\n\nWind moving over a natural surface experiences skin friction as it drags along\n\nGreater over rough surfaces"
   },
   {
-    "objectID": "Slides/Lecture14.html#mechanical-forced-convection-3",
-    "href": "Slides/Lecture14.html#mechanical-forced-convection-3",
+    "objectID": "Slides/Lecture14.html#forced-mechanical-convection-3",
+    "href": "Slides/Lecture14.html#forced-mechanical-convection-3",
     "title": "Turbulence and Convection",
-    "section": "Mechanical (forced) convection",
-    "text": "Mechanical (forced) convection\nThe production of forced convection requires a continual supply of kinetic energy from the flow. This comes from the mean wind speed which is driven by horizontal pressure differences which in turn are due to temperature differences at larger scales."
+    "section": "Forced (Mechanical) Convection",
+    "text": "Forced (Mechanical) Convection\nRequires a continual supply of kinetic energy from the flow. It comes from the mean wind speed.\n\nWind is driven by pressure/temperature gradients at larger scales (we’ll discuss this later)"
   },
   {
-    "objectID": "Slides/Lecture14.html#mechanical-forced-convection-4",
-    "href": "Slides/Lecture14.html#mechanical-forced-convection-4",
+    "objectID": "Slides/Lecture14.html#forced-mechanical-convection-4",
+    "href": "Slides/Lecture14.html#forced-mechanical-convection-4",
     "title": "Turbulence and Convection",
-    "section": "Mechanical (forced) convection",
-    "text": "Mechanical (forced) convection\nWe can have three different scenarios that create turbulence mechanically"
+    "section": "Forced (Mechanical) Convection",
+    "text": "Forced (Mechanical) Convection\nWe can have three different scenarios that create turbulence mechanically"
   },
   {
-    "objectID": "Slides/Lecture14.html#thermal-free-convection",
-    "href": "Slides/Lecture14.html#thermal-free-convection",
+    "objectID": "Slides/Lecture14.html#free-thermal-convection",
+    "href": "Slides/Lecture14.html#free-thermal-convection",
     "title": "Turbulence and Convection",
-    "section": "Thermal (free) convection",
-    "text": "Thermal (free) convection\nSurface heating differences across landscape → density differences → buoyancy → convection ‘bubbles’ up."
+    "section": "Free (Thermal) Convection",
+    "text": "Free (Thermal) Convection\nSurface heating differences → density differences → buoyancy differences → convection."
   },
   {
-    "objectID": "Slides/Lecture14.html#thermal-free-convection-1",
-    "href": "Slides/Lecture14.html#thermal-free-convection-1",
+    "objectID": "Slides/Lecture14.html#free-thermal-convection-1",
+    "href": "Slides/Lecture14.html#free-thermal-convection-1",
     "title": "Turbulence and Convection",
-    "section": "Thermal (free) convection",
-    "text": "Thermal (free) convection\nThese buoyant parcels are often semi-organized into heat ‘plumes’ and rising thermals even forming convection cells.\n\nT.R. Oke (1987)"
+    "section": "Free (Thermal) Convection",
+    "text": "Free (Thermal) Convection\nBuoyant parcels are often semi-organized into ‘plumes’; rising thermals form convection cells.\n\nT.R. Oke (1987)"
   },
   {
-    "objectID": "Slides/Lecture14.html#thermal-turbulence-in-the-atmosphere",
-    "href": "Slides/Lecture14.html#thermal-turbulence-in-the-atmosphere",
+    "objectID": "Slides/Lecture14.html#free-thermal-convection-2",
+    "href": "Slides/Lecture14.html#free-thermal-convection-2",
     "title": "Turbulence and Convection",
-    "section": "Thermal turbulence in the atmosphere",
-    "text": "Thermal turbulence in the atmosphere\n\n\nConvective clouds – formed through rising motion – look how turbulent it is."
+    "section": "Free (Thermal) Convection",
+    "text": "Free (Thermal) Convection"
   },
   {
-    "objectID": "Slides/Lecture14.html#time-lapse-of-convection",
-    "href": "Slides/Lecture14.html#time-lapse-of-convection",
+    "objectID": "Slides/Lecture14.html#intense-convection-thunderstorm",
+    "href": "Slides/Lecture14.html#intense-convection-thunderstorm",
     "title": "Turbulence and Convection",
-    "section": "Time lapse of convection",
-    "text": "Time lapse of convection"
+    "section": "Intense Convection > Thunderstorm",
+    "text": "Intense Convection &gt; Thunderstorm"
   },
   {
     "objectID": "Slides/Lecture14.html#turbulence-iclicker",
@@ -1029,18 +1029,18 @@
     "text": "Eddy Covariance Method\nThis is called the eddy covariance method because the expression on the right Equation 4 is called the covariance of \\(w^{\\prime}\\) and \\(c^{\\prime}\\)\n\nFor the case of sensible heat flux density we write:\n\n\\[\nF_c = C_a \\bar{w^{\\prime}c^{\\prime}}\n\\qquad(5)\\]\n\nWhere \\(C_a\\) is the heat capacity of air (1200 J m-3 K-1)"
   },
   {
-    "objectID": "Slides/Lecture14.html#example---sensible-heat-flux-density",
-    "href": "Slides/Lecture14.html#example---sensible-heat-flux-density",
-    "title": "Turbulence and Convection",
-    "section": "Example - Sensible heat flux density",
-    "text": "Example - Sensible heat flux density"
-  },
-  {
     "objectID": "Slides/Lecture14.html#eddy-covariance-systems",
     "href": "Slides/Lecture14.html#eddy-covariance-systems",
     "title": "Turbulence and Convection",
     "section": "Eddy Covariance Systems",
     "text": "Eddy Covariance Systems"
+  },
+  {
+    "objectID": "Slides/Lecture14.html#example---sensible-heat-flux-density",
+    "href": "Slides/Lecture14.html#example---sensible-heat-flux-density",
+    "title": "Turbulence and Convection",
+    "section": "Example - Sensible heat flux density",
+    "text": "Example - Sensible heat flux density"
   },
   {
     "objectID": "Slides/Lecture14.html#take-home-points",
@@ -4065,82 +4065,5 @@
     "title": "Net radiation of land surfaces",
     "section": "Take home points",
     "text": "Take home points\n\nDistinguish between net shortwave (\\(SW^*\\)), net longwave (\\(LW^*\\)) and net all-wave radiation (\\(R_n\\))\nThe magnitude of \\(R_n\\) is controlled by surface properties:\n\nAlbedo, surface temperature, emissivity\n\nThe magnitude of \\(R_n\\) is also controlled by the surrounding 3D surface\n\nSky view influences \\(LW^*\\)* at night\n\nSurface properties can be modified to control surface climates\n\n\n\nBack to Homepage"
-  },
-  {
-    "objectID": "Slides/Lecture14.html#eddies",
-    "href": "Slides/Lecture14.html#eddies",
-    "title": "Turbulence and Convection",
-    "section": "Eddies",
-    "text": "Eddies\nCoherent parts within the flow which have the same properties.\n\nEddies exist in a wide range of different sizes\n\n“Big whorls have little whorls which feed on their velocity, and little whorls have lesser whorls, and so on to viscosity.”\n\nRichardson, 1922"
-  },
-  {
-    "objectID": "Slides/Lecture14.html#eddies-1",
-    "href": "Slides/Lecture14.html#eddies-1",
-    "title": "Turbulence and Convection",
-    "section": "Eddies",
-    "text": "Eddies\nCoherent parts within the flow which have the same properties.\n\nEddies exist in a wide range of different sizes\nThe smallest eddies dissipate to heat"
-  },
-  {
-    "objectID": "Slides/Lecture14.html#forced-mechanical-convection",
-    "href": "Slides/Lecture14.html#forced-mechanical-convection",
-    "title": "Turbulence and Convection",
-    "section": "Forced (Mechanical) Convection",
-    "text": "Forced (Mechanical) Convection\n\n\nWind moving past obstacles (trees, buildings, etc.) creates eddies mechanically by disturbing flow.\n\nEddy size related to the size of the obstacle and flow velocity"
-  },
-  {
-    "objectID": "Slides/Lecture14.html#forced-mechanical-convection-1",
-    "href": "Slides/Lecture14.html#forced-mechanical-convection-1",
-    "title": "Turbulence and Convection",
-    "section": "Forced (Mechanical) Convection",
-    "text": "Forced (Mechanical) Convection\n\n\nAir moving at different speeds, or in different directions, creates shear stress.\n\nCauses turbulence and eddies\nExplains the turbulence you feel in an airplane\n\n\n\n\n\nPhoto (c) Bring Wong"
-  },
-  {
-    "objectID": "Slides/Lecture14.html#forced-mechanical-convection-2",
-    "href": "Slides/Lecture14.html#forced-mechanical-convection-2",
-    "title": "Turbulence and Convection",
-    "section": "Forced (Mechanical) Convection",
-    "text": "Forced (Mechanical) Convection\n\n\nWind moving over a natural surface experiences skin friction as it drags along\n\nGreater over rough surfaces"
-  },
-  {
-    "objectID": "Slides/Lecture14.html#forced-mechanical-convection-3",
-    "href": "Slides/Lecture14.html#forced-mechanical-convection-3",
-    "title": "Turbulence and Convection",
-    "section": "Forced (Mechanical) Convection",
-    "text": "Forced (Mechanical) Convection\nRequires a continual supply of kinetic energy from the flow. It comes from the mean wind speed.\n\nWind is driven by pressure/temperature gradients at larger scales (we’ll discuss this later)"
-  },
-  {
-    "objectID": "Slides/Lecture14.html#forced-mechanical-convection-4",
-    "href": "Slides/Lecture14.html#forced-mechanical-convection-4",
-    "title": "Turbulence and Convection",
-    "section": "Forced (Mechanical) Convection",
-    "text": "Forced (Mechanical) Convection\nWe can have three different scenarios that create turbulence mechanically"
-  },
-  {
-    "objectID": "Slides/Lecture14.html#free-thermal-convection",
-    "href": "Slides/Lecture14.html#free-thermal-convection",
-    "title": "Turbulence and Convection",
-    "section": "Free (Thermal) Convection",
-    "text": "Free (Thermal) Convection\nSurface heating differences → density differences → buoyancy differences → convection."
-  },
-  {
-    "objectID": "Slides/Lecture14.html#free-thermal-convection-1",
-    "href": "Slides/Lecture14.html#free-thermal-convection-1",
-    "title": "Turbulence and Convection",
-    "section": "Free (Thermal) Convection",
-    "text": "Free (Thermal) Convection\nBuoyant parcels are often semi-organized into ‘plumes’; rising thermals form convection cells.\n\nT.R. Oke (1987)"
-  },
-  {
-    "objectID": "Slides/Lecture14.html#free-thermal-convection-2",
-    "href": "Slides/Lecture14.html#free-thermal-convection-2",
-    "title": "Turbulence and Convection",
-    "section": "Free (Thermal) Convection",
-    "text": "Free (Thermal) Convection"
-  },
-  {
-    "objectID": "Slides/Lecture14.html#intense-convection-thunderstorm",
-    "href": "Slides/Lecture14.html#intense-convection-thunderstorm",
-    "title": "Turbulence and Convection",
-    "section": "Intense Convection > Thunderstorm",
-    "text": "Intense Convection &gt; Thunderstorm"
   }
 ]
