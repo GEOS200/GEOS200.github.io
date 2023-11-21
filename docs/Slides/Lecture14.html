@@ -669,7 +669,7 @@ a = \bar{a} + a^{\prime}
 <h2>Flux Gradient Method</h2>
 <p>For sensible heat flux we can write:&nbsp;</p>
 <p><span id="eq-Flux-Gradient-Method-Sensible-Heat"><span class="math display">\[
-H = -K C_a \frac{T_2 - T_1}{z_2 - z_1}
+H_s = -K C_a \frac{T_2 - T_1}{z_2 - z_1}
 \qquad(2)\]</span></span></p>
 <ul>
 <li><p><span class="math inline">\(K\)</span> is the eddy diffusivity (m<sup>2</sup> s<sup>-1</sup>) and <span class="math inline">\(C_a\)</span> is the heat capacity of dry air</p></li>
@@ -711,7 +711,7 @@ F = -K C^* \frac{f_2 - f_1}{z_2 - z_1}
 <img data-src="images/Lecture14/5_2.png" class="r-stretch"></section>
 <section id="test-your-knowledge" class="slide level2">
 <h2>Test your knowledge</h2>
-<p>What is the direction of the sensible heat flux density H?&nbsp;</p>
+<p>What is the direction of the sensible heat flux density <span class="math inline">\(H_s\)</span>?&nbsp;</p>
 <div class="columns">
 <div class="column" style="width:45%;">
 <p><img data-src="images/Lecture14/6_3.png"></p>
@@ -727,7 +727,7 @@ F = -K C^* \frac{f_2 - f_1}{z_2 - z_1}
 <div class="column" style="width:45%;">
 <p><img data-src="images/Lecture14/6_3.png"></p>
 </div><div class="column" style="width:55%;">
-<p><span class="math inline">\(H = -K C_a \frac{T_2 - T_1}{z_2 - z_1}\)</span></p>
+<p><span class="math inline">\(H_S = -K C_a \frac{T_2 - T_1}{z_2 - z_1}\)</span></p>
 <ul>
 <li>A 300 W m<sup>-2</sup></li>
 <li>B -300 W m<sup>-2</sup></li>
@@ -740,12 +740,12 @@ F = -K C^* \frac{f_2 - f_1}{z_2 - z_1}
 </section>
 <section id="example-calculation-1" class="slide level2">
 <h2>Example Calculation&nbsp;</h2>
-<p>Assume <span class="math inline">\(K\)</span> = 0.25 m<sup>2</sup> s<sup>-1</sup> and <span class="math inline">\(C_a\)</span> = 1200 J m<sup>-3</sup> K<sup>-1</sup>, what is H?</p>
+<p>Assume <span class="math inline">\(K\)</span> = 0.25 m<sup>2</sup> s<sup>-1</sup> and <span class="math inline">\(C_a\)</span> = 1200 J m<sup>-3</sup> K<sup>-1</sup>, what is <span class="math inline">\(H_S\)</span>?</p>
 <div class="columns">
 <div class="column" style="width:45%;">
 <p><img data-src="images/Lecture14/6_3.png"></p>
 </div><div class="column" style="width:55%;">
-<p><span class="math inline">\(H = -K C_a \frac{T_2 - T_1}{z_2 - z_1}\)</span></p>
+<p><span class="math inline">\(H_S = -K C_a \frac{T_2 - T_1}{z_2 - z_1}\)</span></p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>T1 <span class="ot">=</span> <span class="dv">24</span> <span class="co">#C</span></span>
 <span id="cb1-2"><a href="#cb1-2"></a>T2 <span class="ot">=</span> <span class="dv">22</span> <span class="co">#C</span></span>
