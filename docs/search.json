@@ -1047,14 +1047,14 @@
     "href": "Slides/Lecture14.html#latent-heat-flux-density",
     "title": "Turbulence and Convection",
     "section": "Latent Heat Flux Density",
-    "text": "Latent Heat Flux Density\nFor many ecosystems, with a sufficient moisture supply latent heat flux \\(H_L\\) will exceed sensible heat flux \\(H_S\\).\n\n\\(H_L\\) is controlled by evapotranspiration from the ecosystem::\n\nEvaporation (from surfaces) + transpiration (from plants)"
+    "text": "Latent Heat Flux Density\nFor many ecosystems, with a sufficient moisture supply latent heat flux \\(H_L\\) will exceed sensible heat flux \\(H_S\\).\n\n:::{column width=“50%”}\n\\(H_L\\) is equivalent evapotranspiration from the ecosystem (when \\(H_L &gt; 0\\) W m-2):\n\nEvaporation (from surfaces) + transpiration (from plants)\n\n\n\n:::{column width=“50%”}\n\n::: ::::"
   },
   {
     "objectID": "Slides/Lecture14.html#take-home-points",
     "href": "Slides/Lecture14.html#take-home-points",
     "title": "Turbulence and Convection",
     "section": "Take home points",
-    "text": "Take home points\n\nMeasurement of convective exchange is more difficult compared to conduction / diffusion.\nAnalogous to laminar flow is the K-theory - Problem: difficult to get reasonable values for eddy diffusivities (change over with stability, turbulence intensity etc.).\nDirect measurement using eddy covariance method is possible - but requires sophisticated and expensive instrumentation and more tedious data analysis.\nThe same fluid can flow laminar or turbulent.\nEddies are coherent parts of the flow that show homogeneous properties.\nMechanical and thermal convection create eddies (turbulence).\nWe can use Reynold’s notation to separate a signal into a turbulent and a mean part.\n\n\n\nBack to Homepage"
+    "text": "Take home points\n\nMeasurement of convective exchange is more difficult compared to conduction / diffusion.\nFluid flow can be laminar or turbulent.\nEddies are coherent parts of the flow that show homogeneous properties.\nMechanical and thermal convection create eddies (turbulence).\nWe can use Reynold’s notation to separate a signal into a turbulent and a mean part.\nDirect measurement using eddy covariance method is possible - but requires sophisticated and expensive instrumentation and more tedious data analysis.\n\n\n\nBack to Homepage"
   },
   {
     "objectID": "Slides/Lecture12.html#learning-objectives",
