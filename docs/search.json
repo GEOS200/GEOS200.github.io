@@ -795,7 +795,7 @@
     "href": "Slides/Lecture15.html#cloud-formation",
     "title": "Clouds and Precipitation",
     "section": "Cloud formation",
-    "text": "Cloud formation\nMost cloud forms as a result of air being lifted.\n\n\n\nWhen it rises, due to the drop of air pressure, it expands and cools.\n\nAn Adiabatic Process\n\nDry air will cool at the dry adiabatic lapse rate\n\n(10K per 1000 m)"
+    "text": "Cloud formation\nMost cloud forms as a result of air being lifted.\n\n\n\nWhen it rises, due to the drop of air pressure, it expands and cools.\n\nAdiabatic Process \\(\\Gamma\\)\n\nDry air will cool at the dry adiabatic lapse rate\n\n(10K per 1000 m)"
   },
   {
     "objectID": "Slides/Lecture15.html#cloud-formation-1",
@@ -886,7 +886,7 @@
     "href": "Slides/Lecture15.html#orographic-lift-1",
     "title": "Clouds and Precipitation",
     "section": "Orographic Lift",
-    "text": "Orographic Lift\n\nclouds form on the up slope and dissipate on the down slope"
+    "text": "Orographic Lift\n\nClouds form on the up slope and dissipate on the down slope"
   },
   {
     "objectID": "Slides/Lecture15.html#orographic-lift-2",
@@ -942,7 +942,7 @@
     "href": "Slides/Lecture15.html#cumulus-cu",
     "title": "Clouds and Precipitation",
     "section": "Cumulus (Cu)",
-    "text": "Cumulus (Cu)\n\nLow level liquid water clouds, typical of fair weather, wide open spaces between clouds. Photo: A. Christen"
+    "text": "Cumulus (Cu)\n\nLow, liquid water clouds common in fair weather. Photo: A. Christen"
   },
   {
     "objectID": "Slides/Lecture15.html#altocumulus-ac",
@@ -1026,7 +1026,7 @@
     "href": "Slides/Lecture15.html#precipitation-1",
     "title": "Clouds and Precipitation",
     "section": "Precipitation",
-    "text": "Precipitation\n\n\nDroplets must be larger than 100 μm to have any chance to get to the surface.\n\nTypical rain drops are 2000 μm (2 mm) and have a terminal velocity of 8.8 m/s\nTo reach this size, must be processes to let droplets grow in clouds"
+    "text": "Precipitation\nDroplets must be larger than 100 μm to have any chance to get to the surface.\n\n\n\nTypical rain drops are 2000 μm (2 mm) and have a terminal velocity of 8.8 m/s\nTo reach this size, must be processes to let droplets grow in clouds"
   },
   {
     "objectID": "Slides/Lecture15.html#collision-coalescence-process",
@@ -1047,14 +1047,14 @@
     "href": "Slides/Lecture15.html#three-phase-process-1",
     "title": "Clouds and Precipitation",
     "section": "Three-phase process",
-    "text": "Three-phase process\nIn cold clouds, saturation vapor pressure is slightly lower around ice crystals than around cloud droplets, because ice has tighter bonds than liquid water.\n\n\n\nThe ice crystals collide and stick and hook together, forming snowflakes and grow large enough to fall\nMost of the rain falling in middle latitudes (even in summer) begins as snow\n\n\n\n\n\n\nMaking snow through deposition. (A) Snowflakes grow when water vapor, evaporated from supercooled cloud droplets, is deposited directly on an ice crystal, causing it to grow. (B) All snowflakes are hexagons, reflecting the six-sided structure of the hydrogen bonds between water molecules (see Figure 1.5)."
+    "text": "Three-phase process\nSaturation vapor pressure is slightly lower around ice crystals than water droplets; ice has tighter bonds than liquid water.\n\n\n\nThe ice crystals collide and stick and hook together, forming snowflakes and growing large enough to fall\nMost of the rain falling in middle latitudes (even in summer) begins as snow\n\n\n\n\n\n\nMaking snow through deposition. (A) Snowflakes grow when water vapor, evaporated from supercooled cloud droplets, is deposited directly on an ice crystal, causing it to grow. (B) All snowflakes are hexagons, reflecting the six-sided structure of the hydrogen bonds between water molecules (see Figure 1.5)."
   },
   {
     "objectID": "Slides/Lecture15.html#take-home-points",
     "href": "Slides/Lecture15.html#take-home-points",
     "title": "Clouds and Precipitation",
     "section": "Take home points",
-    "text": "Take home points\n\n\n\nClouds form when an air mass is lifted up, cools down, reaches the dew point and condenses - this happens first at the Lifting Condensation Level.\nLifting of an air mass can be due to convection, orography, convergence and /or frontal systems.\nImportant cloud types are: cumulus, cirrus and stratus - high ones are made up of ice, low ones of liquid water.\nPrecipitation forms when cloud droplets grow - can happen due to collision (warm cloud process) or due to differential saturation vapor pressure curves of ice and liquid water (three-phase process).\n\n\n\n\n\n\n\nBack to Homepage"
+    "text": "Take home points\n\nClouds form when an air mass is cools to the dew point and condenses (the Lifting Condensation Level).\nLifting of an air mass can be due to convection, orography, convergence and /or frontal systems.\nImportant cloud types are: cumulus, cirrus and stratus - high ones are made up of ice, low ones of liquid water.\nPrecipitation forms when cloud droplets grow - due to collision (warm process) or due to differential saturation vapor pressure of ice and liquid water (three-phase process).\n\n\n\nBack to Homepage"
   },
   {
     "objectID": "Slides/Lecture13.html#learning-objectives",
@@ -4485,5 +4485,19 @@
     "title": "Net radiation of land surfaces",
     "section": "Take home points",
     "text": "Take home points\n\nDistinguish between net shortwave (\\(SW^*\\)), net longwave (\\(LW^*\\)) and net all-wave radiation (\\(R_n\\))\nThe magnitude of \\(R_n\\) is controlled by surface properties:\n\nAlbedo, surface temperature, emissivity\n\nThe magnitude of \\(R_n\\) is also controlled by the surrounding 3D surface\n\nSky view influences \\(LW^*\\)* at night\n\nSurface properties can be modified to control surface climates\n\n\n\nBack to Homepage"
+  },
+  {
+    "objectID": "Slides/Lecture15.html#nucleation",
+    "href": "Slides/Lecture15.html#nucleation",
+    "title": "Clouds and Precipitation",
+    "section": "Nucleation",
+    "text": "Nucleation\nNuclei are required for water to condense or freeze in the atmosphere."
+  },
+  {
+    "objectID": "Slides/Lecture15.html#nuclei",
+    "href": "Slides/Lecture15.html#nuclei",
+    "title": "Clouds and Precipitation",
+    "section": "Nuclei",
+    "text": "Nuclei\nRequired for water to condense or freeze in the atmosphere."
   }
 ]
