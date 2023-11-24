@@ -10,7 +10,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.3.450">
 
-  <title>Atmospheric Environments - Profile of the Atmosphere, Lapse rates, and Stability</title>
+  <title>Atmospheric Environments - Clouds and Precipitation</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -319,514 +319,256 @@
       margin-right: 0; 
     }
   </style>
-  <script src="../site_libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
-  <script src="../site_libs/plotly-binding-4.10.2/plotly.js"></script>
-  <script src="../site_libs/typedarray-0.1/typedarray.min.js"></script>
-  <script src="../site_libs/jquery-3.5.1/jquery.min.js"></script>
-  <link href="../site_libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet">
-  <script src="../site_libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
-  <link href="../site_libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
-  <script src="../site_libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
 </head>
 <body class="quarto-light">
   <div class="reveal">
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Profile of the Atmosphere, Lapse rates, and Stability</h1>
-  <p class="subtitle">How is the atmosphere organized and how do key properties of the atmosphere vary through out it</p>
+  <h1 class="title">Clouds and Precipitation</h1>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
+<section class="slide level2">
+
+
+<img data-src="images/Lecture15/1_0.jpg" class="r-stretch quarto-figure-center"><p class="caption">A range of different clouds is represented on this picture - ice clouds (cirrus) and liquid water colds (cumulus) Photo: A. Christen</p></section>
 <section id="learning-objectives" class="slide level2">
 <h2>Learning Objectives</h2>
-<ul>
-<li>Describe how temperature changed over time in the atmosphere.</li>
-<li>Explain how temperature changes with height in the atmosphere.</li>
-<li>Be able to compare the difference between the ELR and the process lapse rate to distinguish between unstable, neutral or stable atmospheric stratifications</li>
-<li>Give examples of how the stratification (stability) of the atmosphere controls mixing and dispersion.</li>
-</ul>
-</section>
-<section id="structure-of-the-atmosphere" class="slide level2">
-<h2>Structure of the Atmosphere</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>Earth’s atmosphere is thousands of kilometers thick.</p>
-<ul>
-<li>But almost all of it’s mass (&gt;75%) is in the troposphere
-<ul>
-<li>Narrow zone closest to the surface</li>
-</ul></li>
-<li>Exosphere is a broad transition zone to the vacuum of space</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Layers.png"></p>
-</div>
-</div>
-</section>
-<section id="structure-of-the-atmosphere-1" class="slide level2">
-<h2>Structure of the Atmosphere</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li>Thermosphere: absorbs high energy X-rays &amp; UV rays</li>
-<li>Mesosphere: dense enough to burn up meteors</li>
-<li>Stratosphere: contains O<sub>3</sub> and protects us from UV rays</li>
-<li>Troposphere: where life occurs</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Atmosphere-Temperature-Vertical.png"></p>
-</div>
-</div>
-</section>
-<section id="structure-of-the-atmosphere-2" class="slide level2">
-<h2>Structure of the Atmosphere</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li>We are primarily concerned with processes that occur in the troposphere</li>
-<li>The top of the troposphere is demarcated by a temperature inversion
-<ul>
-<li>Known as the tropopause</li>
-</ul></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Atmosphere-Temperature-Vertical.png"></p>
-</div>
-</div>
-</section>
-<section id="mass-of-the-atmosphere" class="slide level2">
-<h2>Mass of the Atmosphere</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>There are <span class="math inline">\(\approx\)</span> 1 kg of air above <strong>every</strong> cm<sup>2</sup> of Earth’s surface</p>
-<ul>
-<li>This mass exerts pressure on the Earth’s surface, and everything on it
-<ul>
-<li>We are adapted to it, so we don’t feel it</li>
-</ul></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Layers.png"></p>
-</div>
-</div>
-</section>
-<section id="mass-of-the-atmosphere-corrected" class="slide level2">
-<h2>Mass of the Atmosphere (<em>Corrected</em>)</h2>
-<p>If there are <span class="math inline">\(\approx\)</span> 1 kg of air above every cm<sup>2</sup> of Earth’s surface, what is the mass of air above 1 m<sup>-2</sup>?</p>
-<ul>
-<li>A 100</li>
-<li>B 10000</li>
-<li>C 4</li>
-<li>D 2</li>
-</ul>
-</section>
-<section id="air-pressure-density-temperature" class="slide level2">
-<h2>Air Pressure, Density &amp; Temperature</h2>
-<p>Air pressure, density, &amp; temperature effected by the the mass of the atmosphere.</p>
-
-<img data-src="../Slides/images/Profile.png" class="r-stretch"></section>
-<section id="ideal-gas-law" class="slide level2">
-<h2>Ideal Gas Law</h2>
-<p>Describes the state of a gas as a function of pressure (<span class="math inline">\(P\)</span>), volume (<span class="math inline">\(V\)</span>), temperature (<span class="math inline">\(T\)</span>) in Kelvin, the amount of the gas (<span class="math inline">\(n\)</span>) in moles, and the ideal gas constant (<span class="math inline">\(R\)</span>).</p>
-<p><span id="eq-Ideal-Gas-Law"><span class="math display">\[
-PV=nRT
-\qquad(1)\]</span></span></p>
-<ul>
-<li>E.g., with observations of pressure and temperature, you can calculate the density of the atmosphere.</li>
-</ul>
-</section>
-<section id="atmospheric-temperatures" class="slide level2">
-<h2>Atmospheric Temperatures</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>Temperature (generally) decreases with height in the troposphere due to the decrease in air pressure.</p>
-<ul>
-<li>Explained by the ideal gas law</li>
-</ul>
-<p><span id="eq-Ideal-Gas-Law-Temperature"><span class="math display">\[
-T = \frac{PVM}{Rm}
-\qquad(2)\]</span></span></p>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Atmosphere-Temperature-Vertical.png"></p>
-</div>
-</div>
-</section>
-<section id="surface-temperatures-iclicker" class="slide level2">
-<h2>Surface Temperatures (iClicker)</h2>
-<p>On a sunny day (without clouds) what when do we usually observe the highest (maximum) temperature?</p>
-<ul>
-<li>A Sunrise</li>
-<li>B Mid-afternoon</li>
-<li>C At sunset</li>
-<li>D Midnight</li>
-</ul>
-<aside class="notes">
-<p>E</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="surface-temperatures" class="slide level2">
-<h2>Surface Temperatures</h2>
-<div class="cell">
-<div id="fig-Temperature" class="quarto-figure quarto-figure-center">
-<figure>
-<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-ae9ed5b40bbc8959dcf9" style="width:960px;height:480px;"></div>
-<script type="application/json" data-for="htmlwidget-ae9ed5b40bbc8959dcf9">{"x":{"visdat":{"5d0457614534":["function () ","plotlyVisDat"]},"cur_data":"5d0457614534","attrs":{"5d0457614534":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"name":"T<sub>a<\/sub>","mode":"lines","type":"scatter","line":{"color":"","width":1.5},"inherit":true},"5d0457614534.1":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"name":"T<sub>s<\/sub>","mode":"lines","type":"scatter","line":{"color":"#cc9425","width":1.5,"dash":"dashdot"},"inherit":true},"5d0457614534.2":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"name":"R<sub>n<\/sub>","yaxis":"y2","mode":"lines","type":"scatter","line":{"color":"black","width":1.5,"dash":"dashdot"},"inherit":true}},"layout":{"margin":{"b":50,"l":50,"t":50,"r":50,"pad":4},"yaxis":{"domain":[0,1],"automargin":true,"title":"deg C"},"yaxis2":{"title":"W m<sup>-2<sup>","overlaying":"y","side":"right"},"xaxis":{"domain":[0,1],"automargin":true,"title":"Date"},"legend":{"x":0.050000000000000003,"y":1,"orientation":"h"},"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"name":"T<sub>a<\/sub>","mode":"lines","type":"scatter","line":{"color":"","width":1.5},"marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"name":"T<sub>s<\/sub>","mode":"lines","type":"scatter","line":{"color":"#cc9425","width":1.5,"dash":"dashdot"},"marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"name":"R<sub>n<\/sub>","yaxis":"y2","mode":"lines","type":"scatter","line":{"color":"black","width":1.5,"dash":"dashdot"},"marker":{"color":"rgba(44,160,44,1)","line":{"color":"rgba(44,160,44,1)"}},"error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"xaxis":"x","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
-<figcaption>Figure&nbsp;1: Temperature and net radiation from the Burns Bog Flux Station over October 2023.</figcaption>
-</figure>
-</div>
-</div>
-</section>
-<section id="atmospheric-temperatures-1" class="slide level2">
-<h2>Atmospheric Temperatures</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>Daily temperature variability in the upper atmosphere is much lower than at the surface.</p>
-<ul>
-<li>Changes at the surface can alter temperature gradients relative to upper levels of the atmosphere
-<ul>
-<li>Can lead to convection (mixing)</li>
-</ul></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/UpperAirTemps.png"></p>
-</div>
-</div>
-</section>
-<section id="environmental-laps-rate-elr" class="slide level2">
-<h2>Environmental Laps Rate (ELR)</h2>
-<p>The observed rate of change of <span class="math inline">\(T\)</span> with height:</p>
-<p><span id="eq-Environmental-Lapse-Rate"><span class="math display">\[
-ELR = \frac{T_{z_2}-T_{z_1}}{z_2-z_1}
-\qquad(3)\]</span></span></p>
-</section>
-<section id="environmental-laps-rate-elr-1" class="slide level2 smaller">
-<h2>Environmental Laps Rate (ELR)</h2>
 <div class="columns">
 <div class="column" style="width:60%;">
-<div id="fig-Temperature" class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="../Assignments/images/Port_Hardy_Radiosonde_Data_Temp.png"></p>
-<figcaption>Figure&nbsp;2: Atmospheric temperature (T) profile measured at Port Hardy, BC 12:00 UTC October 29th, 2023</figcaption>
-</figure>
-</div>
+<ul>
+<li>Describe cloud formation in the atmosphere
+<ul>
+<li>Why:?</li>
+<li>When?</li>
+<li>Where?</li>
+</ul></li>
+<li>Explain what causes precipitation</li>
+</ul>
 </div><div class="column" style="width:40%;">
-<div class="cell">
-<div class="cell-output-display">
-<div id="tbl-ELR">
-<table>
-<caption>Table&nbsp;1: The Environmental Lapse Rate (ELR) corresponding to <a href="#/surface-temperatures">Figure&nbsp;2</a></caption>
-<thead>
-<tr class="header">
-<th style="text-align: right;"></th>
-<th style="text-align: right;">Height (m.a.s.l)</th>
-<th style="text-align: right;">ELR K/m</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">17</td>
-<td style="text-align: right;">NA</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">271</td>
-<td style="text-align: right;">0.0154</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">904</td>
-<td style="text-align: right;">-0.0013</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">1592</td>
-<td style="text-align: right;">0.0061</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">3172</td>
-<td style="text-align: right;">-0.0038</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">5790</td>
-<td style="text-align: right;">-0.0066</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">7430</td>
-<td style="text-align: right;">-0.0083</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">9410</td>
-<td style="text-align: right;">-0.0074</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">9</td>
-<td style="text-align: right;">10600</td>
-<td style="text-align: right;">-0.0091</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">10</td>
-<td style="text-align: right;">11990</td>
-<td style="text-align: right;">-0.0075</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">11</td>
-<td style="text-align: right;">12165</td>
-<td style="text-align: right;">-0.0057</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">12</td>
-<td style="text-align: right;">13740</td>
-<td style="text-align: right;">0.0015</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">13</td>
-<td style="text-align: right;">16230</td>
-<td style="text-align: right;">0.0006</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">14</td>
-<td style="text-align: right;">18440</td>
-<td style="text-align: right;">0.0006</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">15</td>
-<td style="text-align: right;">20510</td>
-<td style="text-align: right;">-0.0006</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">16</td>
-<td style="text-align: right;">23660</td>
-<td style="text-align: right;">-0.0005</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
+<p><img data-src="images/Lecture15/2_4.jpg"></p>
 </div>
 </div>
 </section>
-<section id="environmental-lapse-rates-elr" class="slide level2">
-<h2>Environmental Lapse Rates (ELR)</h2>
-<p>The ELR can vary drastically by location, time of day, and season.</p>
+<section id="cloud-formation" class="slide level2">
+<h2>Cloud formation</h2>
+<p>Most cloud forms as a result of air being lifted.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>When it rises, due to the drop of air pressure, it expands and cools.
+<ul>
+<li>An <strong>Adiabatic Process</strong></li>
+</ul></li>
+<li>Dry air will cool at the dry adiabatic lapse rate
+<ul>
+<li>(10K per 1000 m)</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/Lecture15/3_2.png"></p>
+</div>
+</div>
+</section>
+<section id="cloud-formation-1" class="slide level2">
+<h2>Cloud formation</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>If <span class="math inline">\(T\)</span> to drops to the dew-point <span class="math inline">\(T_d\)</span> of the air:</p>
+<ul>
+<li>Condensation may occur on small particles in the air
+<ul>
+<li>Forming droplets and creating clouds</li>
+</ul></li>
+<li>This is the lifting condensation level or LCL (~ cloud base).</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/Lecture15/5_2.png"></p>
+</div>
+</div>
+</section>
+<section id="lifting-condensation-level" class="slide level2">
+<h2>Lifting Condensation Level</h2>
 
-<img data-src="images/T_Profiles.png" class="r-stretch"></section>
-<section id="convection" class="slide level2">
-<h2>Convection</h2>
+<img data-src="images/Lecture15/LCL.jpg" class="r-stretch"></section>
+<section id="state-changes-of-water" class="slide level2">
+<h2>State changes of water</h2>
 
-<img data-src="images/Convection.gif" style="width:80.0%" class="r-stretch quarto-figure-center"><p class="caption">Cumulus clouds form when warm air is from the surface is convected upwards and cools to its <span class="math inline">\(T_d\)</span></p></section>
-<section id="convection-iclicker" class="slide level2">
-<h2>Convection (iClicker)</h2>
+<img data-src="images/Lecture15/7_1.png" class="r-stretch"></section>
+<section id="saturated-adiabatic-lapse-rate-salr" class="slide level2">
+<h2>Saturated adiabatic lapse rate (SALR)</h2>
+<p>After saturation, the rate of cooling is reduced due to release of latent heat.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>What time of day are cumulus clouds most likely to form?</p>
 <ul>
-<li>A Sunrise</li>
-<li>B Mid-afternoon</li>
-<li>C At sunset</li>
-<li>D Midnight</li>
+<li>SALR is not constant, it depends on:
+<ul>
+<li>The amount of moisture condensed</li>
+<li>The laten heat release of condensation</li>
+</ul></li>
 </ul>
 </div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/Convection.gif" style="width:80.0%"></p>
-<figcaption>Cumulus clouds form when warm air is from the surface is convected upwards and cools to its <span class="math inline">\(T_d\)</span></figcaption>
-</figure>
-</div>
+<p><img data-src="images/Lecture15/8_4.png"></p>
 </div>
 </div>
 </section>
-<section id="positive-buoyancy" class="slide level2">
-<h2>Positive Buoyancy</h2>
+<section id="saturated-adiabatic-lapse-rate-salr-1" class="slide level2">
+<h2>Saturated adiabatic lapse rate (SALR)</h2>
+<p>After saturation, the rate of cooling is reduced due to release of latent heat.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>Hot air balloons rise, by heating the air inside the balloon</p>
 <ul>
-<li>The becomes less dense than its surroundings, giving it positive buoyancy</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture12/HotAirBalloon.png"></p>
-</div>
-</div>
-</section>
-<section id="negative-buoyancy" class="slide level2">
-<h2>Negative Buoyancy</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>When air cools relative to it’s surroundings, it will sink.</p>
+<li>SALR is not constant, it depends on:
 <ul>
-<li>Negative buoyancy causes cold air to flow downhill over mountains like water</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/Lecture12/13_2.jpg"></p>
-<figcaption>Photo: A. Christen</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="anabatic-vs.-katabatic" class="slide level2">
-<h2>Anabatic vs.&nbsp;Katabatic</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Anabatic</strong>: upward flow along a slope due to warming of air at the surface</p>
-<p><strong>Katabatic</strong>: downward flow along a slope due to cooling of air at the surface</p>
-<ul>
-<li>Responsible for “Arctic Outflow” events. Locally known as a squamish</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture12/MountainWinds.jpg"></p>
-</div>
-</div>
-</section>
-<section id="atmospheric-stability" class="slide level2">
-<h2>Atmospheric Stability</h2>
-<p>Buoyancy is mainly due to <span class="math inline">\(T\)</span> differences, but <span class="math inline">\(\rho_v\)</span> differences can also affect buoyancy.</p>
-<p><strong>Stability</strong> is relative tendency for parcels to move vertically due to the environmental <span class="math inline">\(T\)</span> profile (layering and the rate at which T changes with height, i.e.&nbsp;lapse rate).</p>
-<ul>
-<li>Stable - vertical motion is suppressed</li>
-<li>Neutral - there is no relative vertical motion tendency</li>
-<li>Unstable - vertical motion is promoted or enhanced</li>
-</ul>
-</section>
-<section id="adiabatic-processes" class="slide level2">
-<h2>Adiabatic Processes</h2>
-<p>Even though the heat content of the parcel is conserved, <span class="math inline">\(T\)</span> changes because the air pressure (<span class="math inline">\(P\)</span>) decreases with height and the volume <span class="math inline">\(V\)</span> of the parcel changes.</p>
-<div class="columns">
-<div class="column" style="width:80%;">
-<ul>
-<li>On ascent, <span class="math inline">\(P\)</span> decreases, the parcel expands and the work done causes the parcel <span class="math inline">\(T\)</span> to drop.
-<ul>
-<li>The reverse is true if the parcel sinks
-<ul>
-<li>It compresses and warms.</li>
+<li>The amount of moisture condensed</li>
+<li>The laten heat release of condensation</li>
 </ul></li>
-<li>See <a href="#/atmospheric-temperatures">Equation&nbsp;2</a></li>
-</ul></li>
-</ul>
-</div><div class="column" style="width:20%;">
-<p><img data-src="images/Lecture12/18_2.png" style="width:80.0%"></p>
-</div>
-</div>
-</section>
-<section id="adiabatic-processes-key-points" class="slide level2">
-<h2>Adiabatic Processes – key points</h2>
-<ul>
-<li>Temperature changes are internal to the rising and descending air parcel</li>
-<li>Occurs without heat being added or withdrawn from the surrounding environment</li>
-<li>Changes in pressure cause a change in temperature</li>
-<li>Parcels moving vertically through the Atmosphere do not mix with the surrounding air very effectively
-<ul>
-<li>The properties of the parcel are conserved during ascent/descent</li>
-</ul></li>
-</ul>
-</section>
-<section id="test-your-knowledge-iclicker" class="slide level2">
-<h2>Test your knowledge (iClicker)</h2>
-<p>As an air parcel rises it ______________ and its temperature _____________ adiabatically</p>
-<ul>
-<li>Expands, warms</li>
-<li>Expands, cools</li>
-<li>Compresses, warms</li>
-<li>Compresses, cools</li>
-</ul>
-</section>
-<section id="dry-adiabatic-lapse-rate" class="slide level2">
-<h2>Dry Adiabatic Lapse Rate</h2>
-<p>The <strong>dry adiabatic lapse rate (DALR)</strong> is the rate of cooling/warming for a dry parcel of air that is rises/descends through the atmosphere.</p>
-<ul>
-<li>Has a constant with a value of <span class="math inline">\(\pm\)</span> 0.01 K m<sup>-1</sup>.
-<ul>
-<li>Will be negative (cooling) if a parcel is being lifted upwards and be positive (warming) for a parcel that is descending</li>
-</ul></li>
-</ul>
-</section>
-<section id="saturated-adiabatic-lapse-rate" class="slide level2">
-<h2>Saturated Adiabatic Lapse Rate</h2>
-<p>The <strong>saturated adiabatic lapse rate (SALR)</strong> applies once a parcel of air reaches saturation.</p>
-<ul>
-<li>A saturated parcel cools as it rises but condensation occurs which releases latent heat and counteracts some of the cooling.
-<ul>
-<li><strong>Only</strong> applies to cooling air, when air warms it will always do so at the DALR, because as soon as the air begins to warm, it will no longer be saturated.</li>
-</ul></li>
-</ul>
-</section>
-<section id="saturated-adiabatic-lapse-rate-1" class="slide level2">
-<h2>Saturated Adiabatic Lapse Rate</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>The SALR is non-linear function of <span class="math inline">\(T\)</span> and <span class="math inline">\(P\)</span></p>
-<ul>
-<li><span class="math inline">\(T\)</span> varies as a function of <span class="math inline">\(P\)</span></li>
-<li>The latent heat released by condensation varies with <span class="math inline">\(T\)</span></li>
-<li>The amount of water that must condense also varies with <span class="math inline">\(T\)</span></li>
 </ul>
 </div><div class="column" style="width:50%;">
 <p><img data-src="../Assignments/images/SALR.png"></p>
 </div>
 </div>
 </section>
-<section id="lifting-condensation-level" class="slide level2">
-<h2>Lifting Condensation Level</h2>
-<p>The <strong>lifting condensation level (LCL)</strong> is the height to which a parcel must be lifted for condensation to occur.</p>
+<section id="cloud-formation-2" class="slide level2">
+<h2>Cloud Formation</h2>
+<p>The common processes that lead to cloud formation in the troposphere:</p>
+<ol type="1">
+<li><p>Convection</p></li>
+<li><p>Fronts and Convergence</p></li>
+<li><p>Orographic Lift</p></li>
+<li><p>Radiative Cooling (Fog)</p></li>
+</ol>
+</section>
+<section id="convection" class="slide level2">
+<h2>Convection</h2>
+
+<img data-src="images/Lecture15/9_3.jpg" class="r-stretch quarto-figure-center"><p class="caption">Cumulus clouds form as a result of convection</p></section>
+<section id="convection-1" class="slide level2">
+<h2>Convection</h2>
 <div class="columns">
 <div class="column" style="width:60%;">
+<p>Some parts of the surface absorb more solar radiation than others, creating thermals</p>
 <ul>
-<li>The transition between the DALR and the SALR</li>
-<li>Corresponds to bottom of a cloud layer</li>
+<li>If the thermal cools to saturation, moisture condenses to form water droplets, and it becomes visible as a cumulus cloud</li>
 </ul>
 </div><div class="column" style="width:40%;">
-<p><img data-src="images/Lecture12/24_0.png"></p>
+<p><img data-src="images/Lecture15/9_2.gif"></p>
 </div>
 </div>
 </section>
-<section id="lifting-condensation-level-1" class="slide level2">
-<h2>Lifting Condensation Level</h2>
-<p>You can identify the LCL using this equation:</p>
+<section id="convergence-and-fronts" class="slide level2">
+<h2>Convergence and Fronts</h2>
+
+<img data-src="images/Lecture15/LowPressure.jpg" class="r-stretch quarto-figure-center"><p class="caption">Low pressure systems result in large-scale cloud formation</p></section>
+<section id="convergence-and-fronts-1" class="slide level2">
+<h2>Convergence and Fronts</h2>
+<p>A low pressure system causes air to converge (moving towards the center of the system) and rise on a large scale (100’s of kilometers).</p>
 <div class="columns">
 <div class="column" style="width:60%;">
-<p><span id="eq-Lifting-Condensation-Level"><span class="math display">\[
-LCL = \frac{T_{dz_1}-T_{z_1}}{DALR}+z_1
-\qquad(4)\]</span></span></p>
+<ul>
+<li>This causes widespread ascent of air, cooling and large areas of cloud.</li>
+<li>Multiple cloud types associated with low pressure systems</li>
+</ul>
 </div><div class="column" style="width:40%;">
-<p><img data-src="images/Lecture12/24_0.png"></p>
+<p><img data-src="images/Lecture15/16_4.gif"></p>
 </div>
 </div>
 </section>
-<section id="air-parcel-stability" class="slide level2">
-<h2>Air Parcel Stability</h2>
+<section id="convergence-and-fronts-2" class="slide level2">
+<h2>Convergence and Fronts</h2>
+<p>A front is a moving boundary between air mass that tends associate with low pressure systems.</p>
 <div class="columns">
-<div class="column" style="width:65%;">
+<div class="column" style="width:60%;">
 <ul>
-<li>Stable: if the parcel is displaced vertically, it will return to its original position</li>
-<li>Unstable: if the parcel is displaced vertically, it will accelerate away from its original position in the direction of the initial displacement</li>
+<li><strong>Cold front</strong>: advancing cold air mass</li>
+<li><strong>Warm front</strong>: advancing warm air mass.</li>
+<li>Both force warm air to rise in bands along the fronts</li>
 </ul>
-</div><div class="column" style="width:35%;">
-<p><img data-src="images/Lecture12/29_2.jpg"></p>
+</div><div class="column" style="width:40%;">
+<p><img data-src="images/Lecture15/16_5.gif"></p>
 </div>
 </div>
-<aside class="notes">
-<p>-How can we determine if an air parcel will move up or down and since this has implications for cloud formation &amp; precipitation -But first let’s discuss stability</p>
+</section>
+<section id="orographic-lift" class="slide level2">
+<h2>Orographic Lift</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/Lecture15/Orographic1.jpg"></p>
+<figcaption>An orographic cloud forming on Mt. Katahdin, Maine</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/Lecture15/Orographic2.jpg"></p>
+<figcaption>Same location looking down the slope</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="orographic-lift-1" class="slide level2">
+<h2>Orographic Lift</h2>
+
+<img data-src="images/Lecture15/Orographic3.jpg" class="r-stretch quarto-figure-center"><p class="caption">clouds form on the up slope and dissipate on the down slope</p></section>
+<section id="orographic-lift-2" class="slide level2">
+<h2>Orographic Lift</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Large masses of air rise when they are pushed over a mountain range.</p>
+<ul>
+<li>Forced lifting along a topographic barrier is called <strong>orographic uplift</strong>.</li>
+<li>Clouds produced in this way are called orographic clouds.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/Lecture15/10_2.gif"></p>
+</div>
+</div>
+</section>
+<section id="rain-shadows-in-the-lee-of-major-relief" class="slide level2">
+<h2>Rain shadows in the lee of major relief</h2>
+
+<img data-src="images/Lecture15/11_3.png" class="r-stretch"></section>
+<section id="iclicker" class="slide level2">
+<h2>iClicker</h2>
+<p>In British Columbia, where do you expect highest annual precipitation?</p>
+
+<img data-src="images/Lecture15/14_3.png" class="r-stretch"></section>
+<section id="iclicker-1" class="slide level2">
+<h2>iClicker</h2>
+<p>Heavy precipitation on westerly slopes, warmer drier on easterly side (Gulf Islands, Sunshine coast, Okanagan).</p>
+
+<img data-src="images/Lecture15/15_4.png" class="r-stretch"></section>
+<section class="slide level2">
+
+
+<img data-src="images/Lecture15/13_1.png" class="r-stretch quarto-figure-center"><p class="caption">Annual Precipitation in BC (mm)</p></section>
+<section id="radiative-cooling" class="slide level2">
+<h2>Radiative Cooling</h2>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img data-src="images/Lecture15/Radiative_2.jpg"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img data-src="images/Lecture15/Radiative_1.jpg"></p>
+</div>
+</div>
+</div>
+<p>Fog forms on calm-clear nights when radiative cooling causes surface air to cool below the dewpoint</p>
+</section>
+<section id="cloud-types" class="slide level2">
+<h2>Cloud types</h2>
+
+<img data-src="images/Lecture15/17_3.png" class="r-stretch quarto-figure-center"><p class="caption">We categorize clouds by height, composition, and form</p><aside class="notes">
+<p>Although there are an infinite variety of cloud shapes, all clouds can be organized into four major categories.&nbsp; The international cloud classification scheme recognizes three categories of clouds based on their form</p>
+<p>In 1803, Luke Howard, an English naturalist, developed the cloud classification scheme still used today. The World Meteorological Organization published the&nbsp;International Cloud Atlas&nbsp;in 1956, based on Howard’s classification scheme.</p>
+<p>Cirrus&nbsp;clouds are high clouds with a feathery appearance that are composed of ice crystals.&nbsp;Cumulus&nbsp;clouds are dome-shaped, bunched clouds, with a flat base and billowy upper portions that often rise high in the troposphere; that is, they show strong&nbsp;vertical development.&nbsp;Stratus&nbsp;clouds are low, flat sheets of clouds.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -839,20 +581,105 @@ LCL = \frac{T_{dz_1}-T_{z_1}}{DALR}+z_1
           display:block!important;
       }</style></aside>
 </section>
-<section id="assessing-stability" class="slide level2">
-<h2>Assessing Stability</h2>
-<div class="columns">
-<div class="column" style="width:100%;">
-<ul>
-<li>To determine stability we compare the temperature of the air parcel to the temperature of the surrounding environment.</li>
-<li>If an air parcel is warmer than its environment it will rise</li>
-<li>If an air parcel is colder than its environment it will sink</li>
-<li>You should also compare the process lapse rate to the environmental lapse rate (ELR)</li>
-</ul>
-</div>
-</div>
-<aside class="notes">
+<section id="cirrus-ci" class="slide level2">
+<h2>Cirrus (Ci)</h2>
 
+<img data-src="images/Lecture15/18_2.jpg" class="r-stretch quarto-figure-center"><p class="caption">High altitude ice clouds, appear as wisps. Photo: A. Christen</p></section>
+<section id="cumulus-cu" class="slide level2">
+<h2>Cumulus (Cu)</h2>
+
+<img data-src="images/Lecture15/19_2.jpg" class="r-stretch quarto-figure-center"><p class="caption">Low level liquid water clouds, typical of fair weather, wide open spaces between clouds. Photo: A. Christen</p></section>
+<section id="altocumulus-ac" class="slide level2">
+<h2>Altocumulus (Ac)</h2>
+
+<img data-src="images/Lecture15/20_2.jpg" class="r-stretch quarto-figure-center"><p class="caption">Middle level cumulus. Photo: A. Christen</p></section>
+<section id="cirrocumulus-cc" class="slide level2">
+<h2>Cirrocumulus (Cc)</h2>
+
+<img data-src="images/Lecture15/21_2.jpg" class="r-stretch quarto-figure-center"><p class="caption">Ice clouds as lots of puff balls, or in rolls (aircraft contrails). Photo: A. Christen</p></section>
+<section id="cumulonimbus-cb" class="slide level2">
+<h2>Cumulonimbus (Cb)</h2>
+
+<img data-src="images/Lecture15/22_0.jpg" class="r-stretch quarto-figure-center"><p class="caption">Large vertical extent; water droplets at low level, but upper levels are made of ice. Often lead to thunder storms and heavy showers. Photo: A. Christen</p></section>
+<section id="stratus-st" class="slide level2">
+<h2>Stratus (St)</h2>
+
+<img data-src="images/Lecture15/Orographic1.jpg" class="r-stretch quarto-figure-center"><p class="caption">Layer clouds with base below 2 km (liquid water). Spatially continuous sheets over large areas. Stratus on the ground is fog.</p></section>
+<section id="altostratus-as" class="slide level2">
+<h2>Altostratus (As)</h2>
+
+<img data-src="images/Lecture15/24_2.jpg" class="r-stretch quarto-figure-center"><p class="caption">Middle altitude clouds with uniform structure. Often due to an approaching frontal system. Photo: A. Christen</p></section>
+<section id="cirrostratus-cs" class="slide level2">
+<h2>Cirrostratus (Cs)</h2>
+
+<img data-src="images/Lecture15/25_0.jpg" class="r-stretch quarto-figure-center"><p class="caption">Fibrous outline gives halo around Sun or Moon due to the refraction of light by thin layer of ice crystals, here above UBC Totem Field. Photo: A. Christen</p></section>
+<section id="nimbostratus-ns" class="slide level2">
+<h2>Nimbostratus (Ns)</h2>
+
+<img data-src="images/Lecture15/28_4.jpg" class="r-stretch quarto-figure-center"><p class="caption">Thicker layer clouds associated with fronts and light or drizzly rain.</p></section>
+<section id="stratocumulus-sc" class="slide level2">
+<h2>Stratocumulus (Sc)</h2>
+
+<img data-src="images/Lecture15/27_2.jpg" class="r-stretch quarto-figure-center"><p class="caption">Low clouds, wider than tall – look like pancakes. Less clear space between than cumulus. Photo: A. Christen</p></section>
+<section id="cloud-quiz-iclicker" class="slide level2">
+<h2>Cloud-quiz (iClicker)</h2>
+<p>Which clouds are made entirely of ice-crystals?</p>
+<div class="columns">
+<div class="column" style="width:33%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/Lecture15/28_4.jpg"></p>
+<figcaption>A</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:33%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/Lecture15/28_7.jpg"></p>
+<figcaption>B</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:30%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/Lecture15/28_6.jpg"></p>
+<figcaption>C</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="cloud-quiz-iclicker-1" class="slide level2">
+<h2>Cloud-quiz (iClicker)</h2>
+<p>Which clouds are cumulus clouds, typical found on a summer day?</p>
+<div class="columns">
+<div class="column" style="width:33%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/Lecture15/28_4.jpg"></p>
+<figcaption>A</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:33%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/Lecture15/29_10.jpg"></p>
+<figcaption>B</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:30%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/Lecture15/29_7.jpg"></p>
+<figcaption>C</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>:::</p>
+<p>::::</p>
+<aside class="notes">
+<p>B</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -865,237 +692,104 @@ LCL = \frac{T_{dz_1}-T_{z_1}}{DALR}+z_1
           display:block!important;
       }</style></aside>
 </section>
-<section id="classifying-stability" class="slide level2 smaller">
-<h2>Classifying Stability</h2>
-<p>Stability is determined by comparing the Environmental Lapse Rate (ELR) to the Dry Adiabatic Lapse Rate (DALR = -0.01 K m<sup>-1</sup>) and the Saturated Adiabatic Lapse Rate (SALR; not constant but often assumed to be -0.005 K m<sup>-1</sup>).</p>
+<section id="precipitation" class="slide level2">
+<h2>Precipitation</h2>
+<p>Many clouds never produce significant precipitation.</p>
 <ul>
-<li>The ELR is not constant. It will vary by time of day, location, and height.</li>
-</ul>
-<div class="cell">
-<div class="cell-output-display">
-<div id="tbl-Stability">
-<table>
-<caption>Table&nbsp;2: Example of stability classifications.</caption>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Unstable</th>
-<th style="text-align: left;">Neutral</th>
-<th style="text-align: left;">Conditionally Unstable</th>
-<th style="text-align: left;">Stable</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">ELR&lt;DALR</td>
-<td style="text-align: left;">ELR=DLAR</td>
-<td style="text-align: left;">DALR&lt;=ELR&lt;=SALR</td>
-<td style="text-align: left;">ELR&gt;SALR</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-</section>
-<section id="classifying-stability-1" class="slide level2">
-<h2>Classifying Stability</h2>
-
-<img data-src="../Assignments/images/Stability.png" class="r-stretch"></section>
-<section id="classifying-stability-2" class="slide level2">
-<h2>Classifying Stability</h2>
-
-<img data-src="images/Lecture12/StabilityConditions.jpg" class="r-stretch"></section>
-<section id="unstable" class="slide level2">
-<h2>Unstable</h2>
-<p>The plume shape is because convection cause eddies, which look like ‘loops’. These eddies cause mixing in the atmosphere..</p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/Lecture12/38_4.png"></p>
-<figcaption>Typically found near the ground by day if strong heating, or if there is advection of a colder airmass aloft. Very good for dispersion and mixing, development of thermals and convective cloud (cumulus)</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/Lecture12/38_1.jpg"></p>
-<figcaption>A looping plume in strongly unstable conditions (Photo: CSIRO)</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="unstable-1" class="slide level2">
-<h2>Unstable</h2>
-<p>These conditions promote convection, which in certain cases can lead to the formation of thunderstorms</p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><img data-src="images/Convection.gif"></p>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture12/Thunderstorms.gif"></p>
-</div>
-</div>
-</section>
-<section id="stable" class="slide level2">
-<h2>Stable</h2>
-<p>Found near the ground at night if <span class="math inline">\(R_n\)</span> &lt;&lt; 0 and little wind, when warm air moves over colder surfaces, or sinking of warm air aloft. Poor for dispersion and mixing.</p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/Lecture12/43_5.png"></p>
-<figcaption>At night with weak winds there is little production of turbulence and the plume stays intact and undiluted for great distances</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/Lecture12/44_7.jpg"></p>
-<figcaption>Air pollution in stable conditions</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="stable-1" class="slide level2">
-<h2>Stable</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>Stable conditions promote clear cloudless skies and suppress precipitation.</p>
+<li>Cloud droplets likely to form when the air mass reaches the lifting condensation level
 <ul>
-<li>Common in coastal BC during the summer
-<ul>
-<li>Pacific high pressure systems produce temperature inversions</li>
+<li><p>No condensation if there without no condensation nuclei</p></li>
+<li><p>Sources of nuclei are dust, smoke, salt, etc.</p></li>
 </ul></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture12/Stable.jpg"></p>
-</div>
-</div>
-</section>
-<section id="neutral" class="slide level2">
-<h2>Neutral</h2>
-<p>Typically found when there is little surface heating or cooling (overcast) or when strong winds thoroughly mix the air. Does not aid or restrict dispersion and mixing, plumes are conic and steadily occupy larger air volume.</p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><img data-src="images/Lecture12/47_3.png"></p>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Lecture12/47_5.jpg"></p>
-</div>
-</div>
-</section>
-<section id="neutral-1" class="slide level2">
-<h2>Neutral</h2>
-<p>Typically found when there is little surface heating or cooling (overcast) or when strong winds thoroughly mix the air. Does not aid or restrict dispersion and mixing.</p>
-
-<img data-src="images/Lecture12/WindTunnle.gif" class="r-stretch"></section>
-<section id="conditionally-unstable" class="slide level2">
-<h2>Conditionally Unstable</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>When the ELR is between the DLAR and the SALR</p>
+<li>Most cloud droplets are tiny (~20 μm radius) and float on air currents
 <ul>
-<li>Dry air that is lifted <strong>will not</strong> continue to rise under it’s own power</li>
-<li>Saturated air that is lifted <strong>will</strong> continue to rise under it’s own power</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/Lecture12/48_2.jpg"></p>
-<figcaption>SALR aka the Moist Adiabatic Lapse Rate</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="conditionally-unstable-1" class="slide level2">
-<h2>Conditionally Unstable</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>When the ELR is between the DLAR and the SALR</p>
-<ul>
-<li>Dry air that is lifted <strong>will not</strong> continue to rise under it’s own power</li>
-<li>Saturated air that is lifted <strong>will</strong> continue to rise under it’s own power</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/Lecture12/48_2.jpg"></p>
-<figcaption>SALR aka the Moist Adiabatic Lapse Rate</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="conditionally-unstable-2" class="slide level2">
-<h2>Conditionally Unstable</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>These conditions can also produce thunderstorms</p>
-<ul>
-<li>If a trigger is present to initiate lift
-<ul>
-<li>e.g., a cold front can produce a squall line</li>
-</ul></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/Lecture12/squall_line.gif"></p>
-<figcaption>SALR aka the Moist Adiabatic Lapse Rate</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="summary-comparing-lapse-rates" class="slide level2">
-<h2>Summary: Comparing lapse rates</h2>
-<ul>
-<li>Unstable: ELR &lt; DALR (-0.01 K m<sup>-1</sup>)</li>
-<li>Stable: ELR &gt; SALR (<span class="math inline">\(\approx\)</span> -0.005 K m <sup>-1</sup>)</li>
-<li>Neutral: ELR = DALR (-0.01 K m)</li>
-<li>Conditionally unstable = DALR (-0.01 K m<sup>-1</sup>) &lt; ELR &lt; SALR (<span class="math inline">\(\approx\)</span> -0.005 K m <sup>-1</sup>)
-<ul>
-<li>By definition, Neutral is also conditionally unstable</li>
+<li>Too small to overcome evaporation on their way to surface</li>
 </ul></li>
 </ul>
 </section>
-<section id="test-your-knowledge-iclicker-1" class="slide level2">
-<h2>Test your knowledge (iClicker)</h2>
-<p>Which is an unstable situation?</p>
-
-<img data-src="images/Lecture12/49_2.png" class="r-stretch"></section>
-<section id="potential-temperature" class="slide level2">
-<h2>Potential temperature</h2>
-<p>To ‘remove’ the effects of pressure change with height we can remove the dry adiabatic lapse rate and calculate the potential temperature θ as:</p>
-<p><span id="eq-Potential-Temperature"><span class="math display">\[
-\theta = T_z + DALR z
-\qquad(5)\]</span></span></p>
-<ul>
-<li>θ is the temperature the air would have it were brought to a reference air pressure (typically a 100 kPa, 1000 mb). This standardization of the temperature is the same as rotating all T profiles to the right by the slope of DALR.</li>
-</ul>
-</section>
-<section id="potential-temperature-profiles" class="slide level2">
-<h2>Potential temperature profiles</h2>
+<section id="precipitation-1" class="slide level2">
+<h2>Precipitation</h2>
 <div class="columns">
-<div class="column" style="width:100%;">
-<p><img data-src="images/Lecture12/53_1.png"></p>
+<div class="column" style="width:50%;">
+<p>Droplets must be larger than 100 μm to have any chance to get to the surface.</p>
+<ul>
+<li>Typical rain drops are 2000 μm (2 mm) and have a terminal velocity of 8.8 m/s</li>
+<li>To reach this size, must be processes to let droplets grow in clouds</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/Lecture15/33_2.jpg"></p>
 </div>
 </div>
+</section>
+<section id="collision-coalescence-process" class="slide level2">
+<h2>Collision-Coalescence Process</h2>
+<p>Larger droplets fall faster than smaller ones and collide and combine with them. After many collisions, large droplets are big enough to overcome updrafts and survive evaporation on the way down.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Need a spectrum of droplet sizes to work – many very small, a few large ones</li>
+<li>Mainly occurs in the tropics</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/Lecture15/Collision-Coalescence.jpg"></p>
+</div>
+</div>
+</section>
+<section id="three-phase-process" class="slide level2">
+<h2>Three-phase Process</h2>
+<p>Requires a mixture of ice crystals, water droplets, and water vapor co-existing at temperatures below freezing</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Depends on the fact that saturation vapor pressure over surface of ice is slightly lower than over liquid water
+<ul>
+<li>Small gradient exists, from liquid to ice</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/Lecture15/Bergeron.jpg"></p>
+</div>
+</div>
+</section>
+<section id="three-phase-process-1" class="slide level2">
+<h2>Three-phase process</h2>
+<p>In cold clouds, saturation vapor pressure is slightly lower around ice crystals than around cloud droplets, because ice has tighter bonds than liquid water.</p>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li><p>The ice crystals collide and stick and hook together, forming snowflakes and grow large enough to fall</p></li>
+<li><p>Most of the rain falling in middle latitudes (even in summer) begins as snow</p></li>
+</ul>
+</div><div class="column" style="width:40%;">
+<p><img data-src="images/Lecture15/36_5.png"></p>
+</div>
+</div>
+<aside class="notes">
+<p>Making snow through deposition. (A) Snowflakes grow when water vapor, evaporated from supercooled cloud droplets, is deposited directly on an ice crystal, causing it to grow. (B)&nbsp;All snowflakes are hexagons, reflecting the six-sided structure of the hydrogen bonds between water molecules (see Figure 1.5).</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="take-home-points" class="slide level2">
 <h2>Take home points</h2>
 <div class="columns">
 <div class="column" style="width:100%;">
 <ul>
-<li>Times of maximum and minimum temperature at the surface occur when rates of energy input and output cross.
-<ul>
-<li>Temperature changes in the upper atmosphere are muted and time-lagged</li>
-</ul></li>
-<li>Temperature changes with height in the atmosphere - environmental lapse rate (ELR)</li>
-<li>Parcels moving up or down change their temperature adiabatically - the process lapse rate (i.e., DALR or SALR)</li>
+<li>Clouds form when an air mass is lifted up, cools down, reaches the dew point and condenses - this happens first at the Lifting Condensation Level.</li>
+<li>Lifting of an air mass can be due to convection, orography, convergence and /or frontal systems.</li>
+<li>Important cloud types are: cumulus, cirrus and stratus - high ones are made up of ice, low ones of liquid water.</li>
+<li>Precipitation forms when cloud droplets grow - can happen due to collision (warm cloud process) or due to differential saturation vapor pressure curves of ice and liquid water (three-phase process).</li>
 </ul>
+</div><div class="column" style="width:0%;">
+
 </div>
 </div>
 
