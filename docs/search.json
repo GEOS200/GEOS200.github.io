@@ -793,184 +793,233 @@
   {
     "objectID": "Slides/Lecture17.html#learning-objectives",
     "href": "Slides/Lecture17.html#learning-objectives",
-    "title": "Weather Systems & Forecasting",
+    "title": "Weather Systems",
     "section": "Learning objectives",
     "text": "Learning objectives\n\nDescribe the differences between continental / maritime and polar / tropical air masses.\nExplain the difference between warm fronts, cold fronts and occluded front.\nExplain what causes weather systems to develop and decay."
   },
   {
     "objectID": "Slides/Lecture17.html#air-masses",
     "href": "Slides/Lecture17.html#air-masses",
-    "title": "Weather Systems & Forecasting",
+    "title": "Weather Systems",
     "section": "Air masses",
     "text": "Air masses\nAn air mass is a large body of air (1000’s km across) with roughly uniform properties.\n\nContinental air tends to be drier with more extreme temperatures\nMaritime air tends to be wetter with more moderate temperatures\nTropical air is warmer than Polar air"
   },
   {
     "objectID": "Slides/Lecture17.html#air-mass-types",
     "href": "Slides/Lecture17.html#air-mass-types",
-    "title": "Weather Systems & Forecasting",
+    "title": "Weather Systems",
     "section": "Air Mass Types",
     "text": "Air Mass Types\nAir masses are classified according to their source region\n\n\n\nMaritime Tropical (mT): Warm & moist\nContinental Tropical (cT): Hot & dry\nMaritime Polar (mP): Cool & moist\nContinental Polar (cP): Cold & dry\nContinental Arctic (cA): Frigid & dry"
   },
   {
     "objectID": "Slides/Lecture17.html#test-your-knowledge-iclicker",
     "href": "Slides/Lecture17.html#test-your-knowledge-iclicker",
-    "title": "Weather Systems & Forecasting",
+    "title": "Weather Systems",
     "section": "Test your knowledge (iClicker)",
     "text": "Test your knowledge (iClicker)\nWhich of the air masses listed below would be #1 and #2 respectively in the figure below?\n\n\n\nA: cP and mT\nB: mP and cT"
   },
   {
     "objectID": "Slides/Lecture17.html#test-your-knowledge",
     "href": "Slides/Lecture17.html#test-your-knowledge",
-    "title": "Weather Systems & Forecasting",
+    "title": "Weather Systems",
     "section": "Test your knowledge",
     "text": "Test your knowledge\nWhich air mass is most relevant to us in Vancouver during the winter?\n\nA: Maritime Polar\nB: Maritime Tropical\nC: Continental Arctic\nD: Continental Polar"
   },
   {
     "objectID": "Slides/Lecture17.html#fronts",
     "href": "Slides/Lecture17.html#fronts",
-    "title": "Weather Systems & Forecasting",
+    "title": "Weather Systems",
     "section": "Fronts",
     "text": "Fronts\nA front is the transition zone between two contrasting air masses. There are 3 important characteristics of fronts:\n\nVertical ascent of warm air mass, producing clouds.\nHorizontal motion of fronts, sometimes at more than 50 km/h, resulting in rapid change in weather conditions.\nDiscontinuity of temperature, humidity and wind direction.\n\nTwo key types of fronts: Cold and Warm"
   },
   {
     "objectID": "Slides/Lecture17.html#cold-fronts",
     "href": "Slides/Lecture17.html#cold-fronts",
-    "title": "Weather Systems & Forecasting",
+    "title": "Weather Systems",
     "section": "Cold Fronts",
     "text": "Cold Fronts\nCold, dense air “undercuts” warm air forcing it aloft along the front. Commonly associated with:\n\n\n\nCumulonimbus clouds & heavy rain\nStrong wind & severe weather\nFollowed by clear skies\nTypical slope 1:40 – 1:50"
   },
   {
     "objectID": "Slides/Lecture17.html#cold-fronts-1",
     "href": "Slides/Lecture17.html#cold-fronts-1",
-    "title": "Weather Systems & Forecasting",
+    "title": "Weather Systems",
     "section": "Cold Fronts",
     "text": "Cold Fronts\nHow would you know if a cold front occurred?\n\nHeavy rain followed by a temperature drop and cold clear high pressure air"
   },
   {
     "objectID": "Slides/Lecture17.html#severe-weather",
     "href": "Slides/Lecture17.html#severe-weather",
-    "title": "Weather Systems & Forecasting",
+    "title": "Weather Systems",
     "section": "Severe Weather",
     "text": "Severe Weather\nRapid upward displacement of warm air &gt;&gt; intense storms\n\n\n\nHigh winds\nHeavy rain\nHail\nLightning\nTornadoes possible"
   },
   {
     "objectID": "Slides/Lecture17.html#warm-fronts",
     "href": "Slides/Lecture17.html#warm-fronts",
-    "title": "Weather Systems & Forecasting",
+    "title": "Weather Systems",
     "section": "Warm Fronts",
     "text": "Warm Fronts\nWarm air gradually rides up over colder air ahead of it. Commonly associated with:\n\n\n\nStratus clouds and moderate rainfall or snow\nLess intense but more widespread\nFollowed by warmer conditions\nTypical slope 1:100 - 1:150"
   },
   {
     "objectID": "Slides/Lecture17.html#cloud-sequence-of-a-warm-front",
     "href": "Slides/Lecture17.html#cloud-sequence-of-a-warm-front",
-    "title": "Weather Systems & Forecasting",
+    "title": "Weather Systems",
     "section": "Cloud Sequence of a Warm Front",
     "text": "Cloud Sequence of a Warm Front\n\nCirrus clouds are the first to appear"
   },
   {
     "objectID": "Slides/Lecture17.html#cloud-sequence-of-a-warm-front-1",
     "href": "Slides/Lecture17.html#cloud-sequence-of-a-warm-front-1",
-    "title": "Weather Systems & Forecasting",
+    "title": "Weather Systems",
     "section": "Cloud Sequence of a Warm Front",
     "text": "Cloud Sequence of a Warm Front\n\nFollowed by cirrostratus as the cloud deck lowers"
   },
   {
     "objectID": "Slides/Lecture17.html#cloud-sequence-of-a-warm-front-2",
     "href": "Slides/Lecture17.html#cloud-sequence-of-a-warm-front-2",
-    "title": "Weather Systems & Forecasting",
+    "title": "Weather Systems",
     "section": "Cloud Sequence of a Warm Front",
     "text": "Cloud Sequence of a Warm Front\n\nThen a transition to altostratus as the cloud deck continues to lower"
   },
   {
     "objectID": "Slides/Lecture17.html#cloud-sequence-of-a-warm-front-3",
     "href": "Slides/Lecture17.html#cloud-sequence-of-a-warm-front-3",
-    "title": "Weather Systems & Forecasting",
+    "title": "Weather Systems",
     "section": "Cloud Sequence of a Warm Front",
     "text": "Cloud Sequence of a Warm Front\n\nFinally nimbostratus clouds and precipitation once the frontal boundary is close enough"
   },
   {
     "objectID": "Slides/Lecture17.html#movement-of-fronts",
     "href": "Slides/Lecture17.html#movement-of-fronts",
-    "title": "Weather Systems & Forecasting",
+    "title": "Weather Systems",
     "section": "Movement of Fronts",
     "text": "Movement of Fronts\n\n\nCold fronts and warm fronts are continuously chasing each other around the mid-latitudes\n\nCold fronts travel faster than warm fronts, so they eventually catch up"
   },
   {
     "objectID": "Slides/Lecture17.html#occluded-front",
     "href": "Slides/Lecture17.html#occluded-front",
-    "title": "Weather Systems & Forecasting",
+    "title": "Weather Systems",
     "section": "Occluded Front",
     "text": "Occluded Front\n\n\n\n\n\n\n\n\nThe classical and usual view of an occluded front is that it initiates when a cold front overtakes a warm front near a cyclone, such that the warm air is separated (occluded) from the cyclone center at the surface"
   },
   {
     "objectID": "Slides/Lecture17.html#jet-streams",
     "href": "Slides/Lecture17.html#jet-streams",
-    "title": "Weather Systems & Forecasting",
+    "title": "Weather Systems",
     "section": "Jet Streams",
     "text": "Jet Streams\n\n\nRibbons of high speed winds (160-400 km h-1) encircling the globe aloft (10-15 km).\n\nSnake around the globe from W to E and steer weather disturbances (mid-latitude Lows)\nGenerally aligned with air mass boundaries at the surface\n\n\n\n\n\nSource: NASA"
   },
   {
     "objectID": "Slides/Lecture17.html#jet-streams-1",
     "href": "Slides/Lecture17.html#jet-streams-1",
-    "title": "Weather Systems & Forecasting",
+    "title": "Weather Systems",
     "section": "Jet Streams",
     "text": "Jet Streams\nFlow dynamics in jet streams promotes the formation of high and low pressure systems."
   },
   {
     "objectID": "Slides/Lecture17.html#high-and-low-pressure-systems",
     "href": "Slides/Lecture17.html#high-and-low-pressure-systems",
-    "title": "Weather Systems & Forecasting",
+    "title": "Weather Systems",
     "section": "High and Low Pressure Systems",
     "text": "High and Low Pressure Systems\n\n\n\n\n\nConvergence aloft\n\n\n\n\n\n\nDivergence aloft"
   },
   {
     "objectID": "Slides/Lecture17.html#link-between-jet-stream-and-ground",
     "href": "Slides/Lecture17.html#link-between-jet-stream-and-ground",
-    "title": "Weather Systems & Forecasting",
+    "title": "Weather Systems",
     "section": "Link Between Jet Stream and Ground",
-    "text": "Link Between Jet Stream and Ground\n\n\nTo form cyclones, it is important to consider the form of divergence in the jet stream. Cyclones cannot persist if they do not have upper-level support."
+    "text": "Link Between Jet Stream and Ground\n\n\nTo form cyclones, it is important to consider the form of divergence in the jet stream.\n\nCyclones cannot persist if they do not have upper-level support."
   },
   {
-    "objectID": "Slides/Lecture17.html#life-cycle-of-cyclones-early-incipient",
-    "href": "Slides/Lecture17.html#life-cycle-of-cyclones-early-incipient",
-    "title": "Weather Systems & Forecasting",
-    "section": "Life Cycle of Cyclones – Early (Incipient)",
-    "text": "Life Cycle of Cyclones – Early (Incipient)\n\n\n\nThe early stage starts with a relatively stationary front separating polar (cold) and subtropical (warm) air masses.\nA slight dynamic low created by the divergent jet stream aloft pulls air in, so cold air penetrates into the warm air, and warm air moves towards the cold air.\nThe center of the disturbance starts to rotate."
+    "objectID": "Slides/Lecture17.html#life-cycle-of-cyclones-early",
+    "href": "Slides/Lecture17.html#life-cycle-of-cyclones-early",
+    "title": "Weather Systems",
+    "section": "Life Cycle of Cyclones – Early",
+    "text": "Life Cycle of Cyclones – Early\nStage starts with a relatively stationary front separating polar (cold) and subtropical (warm) air masses.\n\n\n\nA slight dynamic low created by the divergent jet stream aloft pulls air in, so cold air penetrates into the warm air, and warm air moves towards the cold air.\nThe center of the disturbance starts to rotate."
   },
   {
-    "objectID": "Slides/Lecture17.html#life-cycle-of-cyclones-open-youthful",
-    "href": "Slides/Lecture17.html#life-cycle-of-cyclones-open-youthful",
-    "title": "Weather Systems & Forecasting",
-    "section": "Life Cycle of Cyclones – Open (Youthful)",
-    "text": "Life Cycle of Cyclones – Open (Youthful)\n\n\n\nLater, two fronts (one cold, one warm) are evident.\nThe denser cold air undercuts (‘attacks’) the warm air, and the warm air overrides the cold air ahead of it.\nThe uplift is augmented by the release of latent heat, especially at the cold front, as the ascending rises above the lifting condensation level, cloud develops.\nThe added energy enhances the development."
+    "objectID": "Slides/Lecture17.html#life-cycle-of-cyclones-open",
+    "href": "Slides/Lecture17.html#life-cycle-of-cyclones-open",
+    "title": "Weather Systems",
+    "section": "Life Cycle of Cyclones – Open",
+    "text": "Life Cycle of Cyclones – Open\nTwo fronts (one cold, one warm) are evident.\n\n\n\nThe denser cold air undercuts the warm air, and the warm air overrides the cold air ahead of it\nThe uplift is enhanced by the release of latent heat, as ascending air rises above the lifting condensation level & cloud develops."
   },
   {
     "objectID": "Slides/Lecture17.html#life-cycle-of-cyclones-occlusion",
     "href": "Slides/Lecture17.html#life-cycle-of-cyclones-occlusion",
-    "title": "Weather Systems & Forecasting",
+    "title": "Weather Systems",
     "section": "Life Cycle of Cyclones – Occlusion",
-    "text": "Life Cycle of Cyclones – Occlusion\n\n\n\nThe occluded stage begins when the cold front catches up with the warm front near the low pressure center.\nThe attacking cold air at ground level undercuts the warm air pushing it further aloft.\nWeather at the cold front has deep cloud and heavy rain. The ‘warm sector’ is systematically eliminated, as more cold air comes in.\n\nThis influx destroys the system."
+    "text": "Life Cycle of Cyclones – Occlusion\nThe occluded stage begins when the cold front catches up with the warm front near the low pressure center.\n\n\n\nThe cold air at ground level undercuts the warm air pushing it further aloft.\nThe ‘warm sector’ is systematically eliminated, as more cold air comes in.\n\nThis influx destroys the system."
   },
   {
     "objectID": "Slides/Lecture17.html#life-cycle-of-cyclones---dissolving",
     "href": "Slides/Lecture17.html#life-cycle-of-cyclones---dissolving",
-    "title": "Weather Systems & Forecasting",
+    "title": "Weather Systems",
     "section": "Life Cycle of Cyclones - Dissolving",
-    "text": "Life Cycle of Cyclones - Dissolving\n\n\nThe dissolving stage is the end of the cyclone’s life when the warm air aloft is separated from its source and gradually mix with the surrounding cold air.\n\n\n\n\nA dissolving Pacific cyclone as seen from Apollo 9"
+    "text": "Life Cycle of Cyclones - Dissolving\nThe dissolving stage is the end of the cyclone’s life.\n\n\n\nWarm air aloft is separated from its source and gradually mix with the surrounding cold air.\n\n\n\n\n\nA dissolving Pacific cyclone as seen from Apollo 9"
   },
   {
     "objectID": "Slides/Lecture17.html#on-a-weather-map",
     "href": "Slides/Lecture17.html#on-a-weather-map",
-    "title": "Weather Systems & Forecasting",
+    "title": "Weather Systems",
     "section": "On a Weather Map",
     "text": "On a Weather Map"
   },
   {
+    "objectID": "Slides/Lecture17.html#forecasting",
+    "href": "Slides/Lecture17.html#forecasting",
+    "title": "Weather Systems",
+    "section": "Forecasting",
+    "text": "Forecasting\n\n\nEnvironment Canada is responsible for weather forecasting and research.\n\nThey have multiple office located in Vancouver and Victoria\nSpecialize in prediction of coastal and mountain weather\n\n\n\n\n\nDouglas Jung Building, Vancouver BC\n\n\n\n\n\n35 forecasters work in the PSPC"
+  },
+  {
+    "objectID": "Slides/Lecture17.html#forecasting-101",
+    "href": "Slides/Lecture17.html#forecasting-101",
+    "title": "Weather Systems",
+    "section": "Forecasting 101",
+    "text": "Forecasting 101\n\nAnalysis: examine to determine what is happening\nDiagnosis: why is it happening?\nPrognosis: forecast the likely outcomes"
+  },
+  {
+    "objectID": "Slides/Lecture17.html#scales-of-forecasting",
+    "href": "Slides/Lecture17.html#scales-of-forecasting",
+    "title": "Weather Systems",
+    "section": "Scales of Forecasting",
+    "text": "Scales of Forecasting\n\nGlobal: Largest patterns over longest time-scales (e.g., climate change)\nSynoptic: Continental scale, multi-day weather patterns\nMesoscale: Smaller spatial scale, daily to hourly patterns\nMicroscale: Ecosystem-scale, short time-scale (hours to minutes)"
+  },
+  {
+    "objectID": "Slides/Lecture17.html#forecasting-challenges-in-british-columbia",
+    "href": "Slides/Lecture17.html#forecasting-challenges-in-british-columbia",
+    "title": "Weather Systems",
+    "section": "Forecasting Challenges in British Columbia",
+    "text": "Forecasting Challenges in British Columbia\n\n\n\nMountains and complex terrain\nSources of moisture\nPacific data void\n\nLack of observational data upstream of BC"
+  },
+  {
+    "objectID": "Slides/Lecture17.html#extreme-weather-heat-domes",
+    "href": "Slides/Lecture17.html#extreme-weather-heat-domes",
+    "title": "Weather Systems",
+    "section": "Extreme Weather: Heat Domes",
+    "text": "Extreme Weather: Heat Domes\n\n\nIntense high pressure systems that set up over an area and persist for days or weeks.\n\nSubsidence causes intense adiabatic heating and suppresses cloud formation\n\n\n\n\n\nRecord breaking heat dome, June 2021"
+  },
+  {
+    "objectID": "Slides/Lecture17.html#extreme-weather-heat-domes-1",
+    "href": "Slides/Lecture17.html#extreme-weather-heat-domes-1",
+    "title": "Weather Systems",
+    "section": "Extreme Weather: Heat Domes",
+    "text": "Extreme Weather: Heat Domes\n\n\nIntense high pressure systems that set up over an area and persist for days or weeks.\n\nSubsidence causes intense adiabatic heating and suppresses cloud formation\nExacerbates fire risk\n\n\n\n\n\nLytton BC, after the heat dome"
+  },
+  {
+    "objectID": "Slides/Lecture17.html#extreme-weather-atmospheric-rivers",
+    "href": "Slides/Lecture17.html#extreme-weather-atmospheric-rivers",
+    "title": "Weather Systems",
+    "section": "Extreme Weather: Atmospheric Rivers",
+    "text": "Extreme Weather: Atmospheric Rivers\n\n\n\n\n\n\n\nSatellite image of water vapor\n\n\n\n\n\nWashout on the Coquihalla Highway"
+  },
+  {
     "objectID": "Slides/Lecture17.html#take-home-points",
     "href": "Slides/Lecture17.html#take-home-points",
-    "title": "Weather Systems & Forecasting",
+    "title": "Weather Systems",
     "section": "Take home points",
-    "text": "Take home points\n\n\n\nAir masses is a large body of air with roughly uniform humidity and temperature depending on their origin\nFronts are the transition zone between two contrasting air masses\nWe distinguish between cold fronts (cold air undercuts warm air) and warm fronts (where warm air rides up over colder air ahead of it)\nThe life-cycle of cyclones is a dynamic process starting with initially two separate fronts (cold / warm) that will combine to a occlusion and eventually dissolve the energy.\n\n\n\n\n\n\n\nBack to Homepage"
+    "text": "Take home points\n\nAir masses is a large body of air with roughly uniform humidity and temperature depending on their origin\nFronts are the transition zone between two contrasting air masses\nWe distinguish between cold fronts (cold air undercuts warm air) and warm fronts (where warm air rides up over colder air ahead of it)\nThe life-cycle of cyclones is a dynamic process starting with initially two separate fronts (cold / warm) that will combine to a occlusion and eventually dissolve the energy.\nWeather forecasting is difficult and especially difficult in BC\nClimate change has changed the timing and intensity of many weather events\nThere is increasing focus on forecasting of severe events including wildfires, heat (and cold) extremes as well as precipitation events such as Atmospheric Rivers\n\n\n\nBack to Homepage"
   },
   {
     "objectID": "Slides/Lecture15.html#learning-objectives",
@@ -2720,7 +2769,7 @@
     "href": "Assignments/Lab4.html#questions",
     "title": "Lab 4: Vertical Structure of the Atmosphere",
     "section": "Questions",
-    "text": "Questions\n\nQuestion 1 [1 points]\nLooking at Figure 2, what parts of the world (countries/regions) have the most comprehensive weather balloon records? Consider both the density of current observations and the length of historical records in your answer.\n\n\nQuestion 2 [0.25 points]\nMultiple Choice: select the correct answer(s) from those listed\nWhat local time and date would a balloon launch in Port Hardy, BC that occurs at 00:00 UTC November 25th, 2023 correspond to?\n\nA 5:00 PM November 25th, 2023\nB 4:00 PM November 25th, 2023\nC 4:00 PM November 24th, 2023\nD 4:00 AM November 25th, 2023\n\n\n\nQuestion 3 [1 points]\nHow does air pressure vary as a function of height relative to sea level and why?\n\n\nQuestion 4 [0.75 points]\nThe dead sea is a salt lake between Jordan, Palestine, and Israel. It has an average surface elevation of 403.5 m below sea level, making it’s shores the lowest land area on Earth’s surface. All else equal, how would you you expect air pressure at the dead sea to compare to air pressure at locations at sea level in the region?"
+    "text": "Questions\n\nQuestion 1 [1 points]\nLooking at Figure 2, what parts of the world (countries/regions) have the most comprehensive weather balloon records? Consider both the density of current observations and the length of historical records in your answer.\nAnswer:\n\nIndia and the United States both have good spatial coverage with many stations having long periods of record (e.g., &gt;90 years).\n\nChina, Russia, and some parts of Europe have good spatial coverage, with many stations having moderate length records (e.g., &gt;50 years)\nIndonesia & Malaysia also have good spatial coverage, but only mostly shorter records (e.g., &lt;50 years)\n\nNotes for TA\n\nMay use regions instead of explicitly naming countries (eg. South Asia instead of India etc.)\n\nBut must mention India & US (or an equivalent region name) for full credit\n\nIf they don’t explicitly mention the other points but offer a thoughtful response or discuss other areas, they can still get full credit.\n\n\n\nQuestion 2 [0.25 points]\nMultiple Choice: select the correct answer(s) from those listed\nWhat local time and date would a balloon launch in Port Hardy, BC that occurs at 00:00 UTC November 25th, 2023 correspond to?\n\nA 5:00 PM November 25th, 2023\nB 4:00 PM November 25th, 2023\nC 4:00 PM November 24th, 2023\nD 4:00 AM November 25th, 2023\n\nC - 4:00 PM November 24th, 2023\n\n\nQuestion 3 [1 points]\nHow does air pressure vary as a function of height relative to sea level and why?\nWe’re looking for a summary of this explanation\n\n\nQuestion 4 [0.75 points]\nThe dead sea is a salt lake between Jordan, Palestine, and Israel. It has an average surface elevation of 403.5 m below sea level, making it’s shores the lowest land area on Earth’s surface. All else equal, how would you you expect air pressure at the dead sea to compare to air pressure at locations at sea level in the region?\nHalf credit if they say \\(P\\) will be lower than that at sea level. Full credit if they calculate the approximate relative difference:\n\ndP_dH = -0.012 #kPa/m\nElevation = -403.5 #m\n\nRelative_Pressure_Difference = Elevation*dP_dH\n\n\\(P\\) would be \\(\\approx\\) 4.842 kPa higher than that at seas level"
   },
   {
     "objectID": "Assignments/Lab4.html#adiabatic-processes",
@@ -2755,7 +2804,7 @@
     "href": "Assignments/Lab4.html#questions-1",
     "title": "Lab 4: Vertical Structure of the Atmosphere",
     "section": "Questions",
-    "text": "Questions\n\nQuestion 5 [1.5 points]\nWhy is the SALR is lower than than the DALR?\n\n\nQuestion 6 [2 points]\nAn air parcel at \\(z_1\\) = 100 m.a.s.l with \\(T\\) = 30 \\(^{\\circ}\\) C and \\(T_d\\) = 21 \\(^{\\circ}\\) C is displaced upwards to \\(z_2\\) = 1500 m.a.s.l. What will the parcel’s \\(T\\) and \\(T_d\\) be at when it reaches \\(z_2\\)? Will clouds form during the ascent, and if so, at what height will they begin to form?\n\n\nQuestion 7 [1 points]\nAn air parcel at \\(z_1\\) = 2000 m.a.s.l with \\(T\\) = 7 \\(^{\\circ}\\) C and \\(T_d\\) = 5 \\(^{\\circ}\\) C is displaced downwards to \\(z_2\\) = 100 m.a.s.l. What will the parcel’s \\(T\\) and \\(T_d\\) be at when it reaches \\(z_2\\)?"
+    "text": "Questions\n\nQuestion 5 [1.5 points]\nWhy is the SALR is lower than than the DALR?\nWhen a parcel rises, it will cool adiabatically. But for a saturated parcel to cool, condensation must occur. Laten heat released by condensation counteracts some (but not all) of the adiabatic cooling.\n\n\nQuestion 6 [2 points]\nAn air parcel at \\(z_1\\) = 100 m.a.s.l with \\(T\\) = 30 \\(^{\\circ}\\) C and \\(T_d\\) = 21 \\(^{\\circ}\\) C is displaced upwards to \\(z_2\\) = 1500 m.a.s.l. What will the parcel’s \\(T\\) and \\(T_d\\) be at when it reaches \\(z_2\\)? Will clouds form during the ascent, and if so, at what height will they begin to form?\n\nAPE &lt;- function(T1,TD1,Z1,Z2){\n  DALR = -0.01\n  SALR = -0.005\n  LCL = (TD1-T1)/DALR+Z1\n  if(Z1 &gt; Z2){\n    T2 = T1 + (Z2-Z1)*DALR\n  } else {\n    T2 = T1 + min((LCL-Z1),(Z2-Z1))*DALR + max(Z2-LCL,0)*SALR\n  }\n  if(T2&lt;TD1){\n    TD2 = T2\n  }\n  else {\n    TD2 = TD1\n  }\n  return(c(LCL,T2,TD2))\n}\n\n\nout = APE(T_z1,T_dz1,z1,z2)\n\nClouds will begin forming at the LCL (1000 m.a.s.l). At \\(z_2\\); \\(T\\) = 18.5 C and \\(T_d\\) 18.5 C\n\n\nQuestion 7 [1 points]\nAn air parcel at \\(z_1\\) = 2000 m.a.s.l with \\(T\\) = 7 \\(^{\\circ}\\) C and \\(T_d\\) = 5 \\(^{\\circ}\\) C is displaced downwards to \\(z_2\\) = 100 m.a.s.l. What will the parcel’s \\(T\\) and \\(T_d\\) be at when it reaches \\(z_2\\)?\n\nout = APE(T_z1,T_dz1,z1,z2)\n\nAt \\(z_2\\); \\(T\\) = 26 C and \\(T_d\\) 5 C"
   },
   {
     "objectID": "Assignments/Lab4.html#stable",
@@ -2790,14 +2839,14 @@
     "href": "Assignments/Lab4.html#questions-2",
     "title": "Lab 4: Vertical Structure of the Atmosphere",
     "section": "Questions",
-    "text": "Questions\n\nQuestion 8 [2 points]\nLooking at Table 2, give the atmospheric stability for each layer (unstable, conditionally unstable, or stable). You can find a copy of the data from the table here. Note: you can assume a constant SALR of -0.005 \\(K\\ m^{-1}\\). Given this, how would you characterize the stability of the atmosphere at this location on this day? If there were a forest fire in the area, what would happen to the smoke from the fire?"
+    "text": "Questions\n\nQuestion 8 [2 points]\nLooking at Table 2, give the atmospheric stability for each layer (unstable, conditionally unstable, or stable). You can find a copy of the data from the table here. Note: you can assume a constant SALR of -0.005 \\(K\\ m^{-1}\\). Given this, how would you characterize the stability of the atmosphere at this location on this day? If there were a forest fire in the area, what would happen to the smoke from the fire?\nThe atmosphere is stable near the surface, there is a region of conditional instability in the middle elevations, but no unstable conditions anywhere. Given the temperature inversion, smoke from the fire would not mix with the air above, it would accumulate near the surface.\n\n\n\n\n\n\nHeight (m.a.s.l)\nELR K/m\nStability\n\n\n\n\n1\n17\n–\n–\n\n\n2\n271\n0.0154\nStable\n\n\n3\n904\n-0.0013\nStable\n\n\n4\n1592\n0.0061\nStable\n\n\n5\n3172\n-0.0038\nStable\n\n\n6\n5790\n-0.0066\nConditionally Unstable\n\n\n7\n7430\n-0.0083\nConditionally Unstable\n\n\n8\n9410\n-0.0074\nConditionally Unstable\n\n\n9\n10600\n-0.0091\nConditionally Unstable\n\n\n10\n11990\n-0.0075\nConditionally Unstable\n\n\n11\n12165\n-0.0057\nConditionally Unstable\n\n\n12\n13740\n0.0015\nStable\n\n\n13\n16230\n0.0006\nStable\n\n\n14\n18440\n0.0006\nStable\n\n\n15\n20510\n-0.0006\nStable\n\n\n16\n23660\n-0.0005\nStable"
   },
   {
     "objectID": "Assignments/Lab4.html#questions-3",
     "href": "Assignments/Lab4.html#questions-3",
     "title": "Lab 4: Vertical Structure of the Atmosphere",
     "section": "Questions",
-    "text": "Questions\n\nQuestion 9 [5 points]\n\nWhat is the name of the balloon station you’ve been assigned? Where is it located and what is it the station’s elevation? Note List your student number here to make it easier for your TA to mark your answer.\nFor both balloon profiles you have been assigned:\n\n\n\nMake a plot showing the \\(T\\) and \\(T_d\\) change with height. You can sketch this by hand or make a graph using a software package like excel. Include the date/time of the balloon launch along with the station name and elevation in the title of each graph.\n\n\nCalculate the ELR using the temperature readings for each height interval and determine the atmospheric stability for each interval. You can list these as a table."
+    "text": "Questions\n\nQuestion 9 [5 points]\n\nWhat is the name of the balloon station you’ve been assigned? Where is it located and what is it the station’s elevation? Note List your student number here to make it easier for your TA to mark your answer.\nFor both balloon profiles you have been assigned:\n\n\n\nMake a plot showing the \\(T\\) and \\(T_d\\) change with height. You can sketch this by hand or make a graph using a software package like excel. Include the date/time of the balloon launch along with the station name and elevation in the title of each graph.\n\n\nCalculate the ELR using the temperature readings for each height interval and determine the atmospheric stability for each interval. You can list these as a table.\n\n\n\n0.5 pt for correct answers\nThese are going to vary by student and by summer/winter\n\n\n1 pts for a. for both winter and summer; 1.25 pts each for b. for both winter and summer"
   },
   {
     "objectID": "index.html",
@@ -4165,60 +4214,11 @@
     "text": "Take home points\n\nWinds are caused by the pressure gradient force which is equalizing horizontal pressure differences.\nOnce in motion, the Coriolis force and friction act, causing deflection and slowing of the wind.\nOn a global scale the energy transport is deflected, creating three distinct cells (Hadley, Ferrel and Polar cell) in each hemisphere.\nOn a smaller scale it creates thermal lows and highs (cyclones and anticyclones).\n\n\n\nBack to Homepage"
   },
   {
-    "objectID": "Slides/Lecture18.html#forecasting-in-bc",
-    "href": "Slides/Lecture18.html#forecasting-in-bc",
-    "title": "Forecasting",
-    "section": "Forecasting in BC",
-    "text": "Forecasting in BC\n\n\nEnvironment Canada is responsible for weather forecasting and research.\n\nThey have multiple office located in Vancouver and Victoria\nSpecialize in prediction of coastal and mountain weather\n\n\n\n\n\nDouglas Jung Building, Vancouver BC\n\n\n\n\n\n35 forecasters work in the PSPC"
-  },
-  {
-    "objectID": "Slides/Lecture18.html#forecasting-101",
-    "href": "Slides/Lecture18.html#forecasting-101",
-    "title": "Forecasting",
-    "section": "Forecasting 101",
-    "text": "Forecasting 101\n\nAnalysis: examine to determine what is happening\nDiagnosis: why is it happening?\nPrognosis: forecast the likely outcomes"
-  },
-  {
-    "objectID": "Slides/Lecture18.html#scales-of-forecasting",
-    "href": "Slides/Lecture18.html#scales-of-forecasting",
-    "title": "Forecasting",
-    "section": "Scales of Forecasting",
-    "text": "Scales of Forecasting\nGlobal &gt; Synoptic &gt; Regional &gt; Local"
-  },
-  {
-    "objectID": "Slides/Lecture18.html#forecasting-challenges-in-british-columbia",
-    "href": "Slides/Lecture18.html#forecasting-challenges-in-british-columbia",
-    "title": "Forecasting",
-    "section": "Forecasting Challenges in British Columbia",
-    "text": "Forecasting Challenges in British Columbia\n\n\n\nMountains and complex terrain\nSources of moisture\nPacific data void\n\nLack of observational data upstream of BC"
-  },
-  {
-    "objectID": "Slides/Lecture18.html#extreme-weather-heat-domes",
-    "href": "Slides/Lecture18.html#extreme-weather-heat-domes",
-    "title": "Forecasting",
-    "section": "Extreme Weather: Heat Domes",
-    "text": "Extreme Weather: Heat Domes\n\n\nIntense high pressure systems that set up over an area and persist for days or weeks.\n\nSubsidence causes intense adiabatic heating and suppresses cloud formation\n\n\n\n\n\nRecord breaking heat dome, June 2021"
-  },
-  {
-    "objectID": "Slides/Lecture18.html#extreme-weather-heat-domes-1",
-    "href": "Slides/Lecture18.html#extreme-weather-heat-domes-1",
-    "title": "Forecasting",
-    "section": "Extreme Weather: Heat Domes",
-    "text": "Extreme Weather: Heat Domes\n\n\nIntense high pressure systems that set up over an area and persist for days or weeks.\n\nSubsidence causes intense adiabatic heating and suppresses cloud formation\nExacerbates fire risk\n\n\n\n\n\nLytton BC, after the heat dome"
-  },
-  {
-    "objectID": "Slides/Lecture18.html#extreme-weather-atmospheric-rivers",
-    "href": "Slides/Lecture18.html#extreme-weather-atmospheric-rivers",
-    "title": "Forecasting",
-    "section": "Extreme Weather: Atmospheric Rivers",
-    "text": "Extreme Weather: Atmospheric Rivers\n\n\n\n\n\n\n\nSatellite image of water vapor\n\n\n\n\n\nWashout on the Coquihalla Highway"
-  },
-  {
     "objectID": "Slides/Lecture18.html#take-home-points",
     "href": "Slides/Lecture18.html#take-home-points",
     "title": "Forecasting",
     "section": "Take home points",
-    "text": "Take home points\n\nWeather forecasting is difficult and especially difficult in BC\nClimate change has changed the timing and intensity of many weather events\nThere is increasing focus on forecasting of severe events including wildfires, heat (and cold) extremes as well as precipitation events such as Atmospheric Rivers\n\n\n\nBack to Homepage"
+    "text": "Take home points\n\n\nBack to Homepage"
   },
   {
     "objectID": "Slides/Lecture3.html#short-wave-radiation",
