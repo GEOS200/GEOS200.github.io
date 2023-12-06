@@ -4372,7 +4372,7 @@
     "href": "Slides/Lecture18.html#about-evaluations",
     "title": "Review",
     "section": "About Evaluations",
-    "text": "About Evaluations\n\nThey are completely anonymous and they not released to professors until after the final exam.\n\nIf you’re curious what they look like on the professors’ end, you can see some of my evaluations from previous here\n\nI value constructive feedback, I strive to improve my content each time I teach a course"
+    "text": "About Evaluations\n\nThey are completely anonymous and they not released to professors until after the final exam.\n\nIf you’re curious what they look like on the professors’ end, you can see some of my evaluations from previous here\n\nI value constructive feedback, I strive to improve my content each time I teach a course. Some things I would like to know:\n\nHow you felt about the structure of the course\n\nWhat worked/didn’t work for you, how did you feel about the format/pace\n\nHow do you feel about the course webpage\n\nDo you feel it was accessible/user friendly?\nWould you have preferred everything be provided as static (ie .pdf documents) on canvas?\n\nHow did you feel about the lecture and lab materials:\n\nDid you find any topics/assignments too difficult/easy or too long/short?\nAnything you wish I’d covered or gone over in more detail?\nDid you find the participation questions helpful/engaging, or would you prefer the course didn’t have a participation component?\n\nIf you’ve used TopHat for other courses - How do you feel about iClicker compared to TopHat?"
   },
   {
     "objectID": "Slides/Lecture18.html#teaching-evaluations",
@@ -5171,5 +5171,26 @@
     "title": "Heat and temperature",
     "section": "Take home points",
     "text": "Take home points\n\n\n\nPlant growth is determined by surface and near-surface soil temperatures.\n\nIn Agriculture and forestry, there is potential to manage soil temperatures.\n\nHeat capacity \\(C\\) and specific heat \\(c\\) are linked by density.\nTemperature change in the soil controlled by soil heat capacity.\nImportant role of soil volumetric water content for temperature changes - quick dry soils vs. slow wet soils.\n\n\n\n\n\n\n\nBack to Homepage"
+  },
+  {
+    "objectID": "Slides/Lecture18.html#your-grades",
+    "href": "Slides/Lecture18.html#your-grades",
+    "title": "Review",
+    "section": "Your Grades",
+    "text": "Your Grades\nAll marks to date have been posted. Lab 5, Quiz 5, and the final are pending. Today’s iClicker participation are bonus points.\n\nYou assess your current standing following the syllabus and use this to figure out how you need to perform on the final to get a desired mark\n\n\n\n\n\nTable 1: Components of your final grade\n\n\nPoints Distribution\nPercent of Final Grade\n\n\n\n\niClicker Questions\n10%\n\n\nLecture Review Quizzes\n20%\n\n\nLab Assignments\n35%\n\n\nFinal Exam\n35%"
+  },
+  {
+    "objectID": "Slides/Lecture18.html#your-grades-1",
+    "href": "Slides/Lecture18.html#your-grades-1",
+    "title": "Review",
+    "section": "Your Grades",
+    "text": "Your Grades\nYou can adapt this example for yourself:\n\n# Labs\nLab_Score = c(13,14,14,12,13)\nLab_Points = c(15,15,15,14.5,15)\nLab_Weighted = sum(Lab_Score)/sum(Lab_Points)*.35\n\n# Quizzes\nQuiz_Score = c(6,8,0,9,10)\nQuiz_Points = c(10,10,10,10,10)\n# Drop the lowest\nQuiz_Score = sum(Quiz_Score)-min(Quiz_Score)\nQuiz_Points = sum(Quiz_Points)-min(Quiz_Points)\nQuiz_Weighted = sum(Quiz_Score)/sum(Quiz_Points)*.2\n\n# Participation\nParticipation_Score = 70\nParticipation_Points = 100\nParticipation_Weighted = Participation_Score/Participation_Points*.1\n\n# What do you need to get on the final?\nDesired_Mark = 80 #(A-)\nCurrent_Total = sum(c(Lab_Weighted,Quiz_Weighted,Participation_Weighted))*100\nFinal_Score = (Desired_Mark-Current_Total)/0.35\nsprintf(\"To get a Final Mark of %0.1f%%, you need approximately %0.1f%% on the final\",Desired_Mark,Final_Score)\n\n[1] \"To get a Final Mark of 80.0%, you need approximately 72.8% on the final\"\n\n# Calculate your mark from assumed final grade\nFinal_Score = 70\nFinal_Points = 100\nFinal_Weighted = Final_Score/Final_Points*.35\n\n# Total\nTotal_Mark = sum(c(Lab_Weighted,Quiz_Weighted,Participation_Weighted,Final_Weighted))*100\nsprintf(\"Your Final Mark will be approximately %0.1f%%, if you get %0.1f%% on the final\",Total_Mark,Final_Score)\n\n[1] \"Your Final Mark will be approximately 79.0%, if you get 70.0% on the final\""
+  },
+  {
+    "objectID": "Slides/Lecture18.html#feedback-iclicker",
+    "href": "Slides/Lecture18.html#feedback-iclicker",
+    "title": "Review",
+    "section": "Feedback (iClicker)",
+    "text": "Feedback (iClicker)\nHow did you attend lecture over the term?\nA. Mostly in-person B. Mostly over zoom C. A mix of both D. I usually didn’t attend lecture"
   }
 ]
