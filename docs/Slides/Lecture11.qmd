@@ -213,8 +213,6 @@ fig <- fig %>% layout(
   legend = list(x = 0.05, y = 0.99, orientation='h')
 )
 
-
-
 fig
 
 ```

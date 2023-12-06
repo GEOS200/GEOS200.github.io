@@ -1,0 +1,1022 @@
+---
+format:
+  revealjs:
+    theme: default
+title: Net radiation of land surfaces
+subtitle: Looking at site scale radiation budgets
+---
+
+{{< include _imports.qmd >}}
+
+
+![Measuring net all-wave radiation over totem field](images/Lecture8/1_0.jpg)
+
+
+
+## Learning objectives
+
+
+:::: {.columns}
+
+::: {.column width="75%"}
+
+
+* Define to components that make up net all-wave radiation at the land-surface
+* Describe how net all-wave radiation ($R_n$) is controlled by the weather conditions
+* Explain how $R_n$ is controlled by canopy structure and surface properties
+
+
+:::
+
+::: {.column width="25%"}
+
+![](images/Lecture8/2_2.jpg)
+
+
+:::
+
+::::
+
+
+## Net all-wave radiation ($R_n$)
+
+
+$R_n$ represents the amount of available energy at Earth's surface after all the radiation exchanges have taken place.
+
+* Negative: the surface is loosing energy to the the atmosphere/space
+* Positive: the surface is gaining energy from the the atmosphere/space
+
+{{< include ../_Equations/Net-Radiation.qmd >}}
+
+## Net all-wave radiation ($R_n$)
+
+$R_n$ is the flux density of **ALL** radiation. ie. the sum of component flux densities: Net short-wave radiation ($SW^*$) and net long-wave radiation ($LW^*$):
+
+{{< include ../_Equations/Net-Radiation-Short.qmd >}}
+
+:::: {.columns}
+
+::: {.column width="33%"}
+
+![](images/Lecture8/3_6.png)
+
+:::
+
+::: {.column width="33%"}
+
+![](images/Lecture8/3_8.png)
+
+:::
+
+::: {.column width="33%"}
+
+![](images/Lecture8/3_7.png)
+
+:::
+
+::::
+
+
+## A net radiometer
+
+
+
+![](images/Lecture8/9_0.jpg)
+
+
+
+## Component Fluxes
+
+Recall that $SW$ is **not** emitted by Earth's surface, but $LW$ is! 
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+
+![](images/Lecture8/4_5.png)
+
+:::
+
+::: {.column width="50%"}
+
+
+
+![](images/Lecture8/4_6.png)
+
+
+:::
+
+::::
+
+
+
+Absorbed : available energy for other processes
+
+::: {.notes}
+
+Self explanatory
+
+:::
+
+## The Surface Energy Balance
+
+We can define $R_n$ from the perspective of the Earth's surface in term's of it's energy balance.  How much energy is absorbed vs. how much is emitted?
+
+
+
+{{< include ../_Equations/Net-Radiation-Energy-Balance.qmd >}}
+
+
+
+$R_n$ is the main energy source driving near-surface climates. It can be positive (usually day) or negative (usually night).
+
+
+::: {.notes}
+
+If Q* is negative it means the surface is losing energy. This is what happens at night when the surface is emitting longwave radiation but there is no incoming shortwave radiation.
+
+:::
+
+## Test your knowledge (iClicker)
+
+
+
+$R_n$ is the energy available for other processes such as (select any valid answer):
+
+* Photosynthesis
+* Evaporation
+* Convection
+
+
+
+## Connectivity of energy and mass
+
+The radiation budget impacts all other "budgets" in Earth's climate system.
+
+* Water & carbon balances are directly influenced by the flux of energy into our out of the surface.
+
+
+
+## Diurnal Variation
+
+In the following slides, we'll look at examples of $R_n$ and its four component fluxes over the single day periods that show the contrasting effects of weather conditions on $R_n$.
+
+1. Clear skies during summer
+2. Rainy conditions during fall
+3. Snow-covered ground in winter
+4. Snowmelt
+
+## Hot & Sunny
+
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+```{R}
+#| label: fig-Radiation
+#| fig-cap: "Radiation data from the Burns Bog Flux Station."
+#| fig-width: 5.5
+#| fig-height: 4
+
+BBData <- read.csv(file = '../Assignments/data/BB_Data_For_GEOS200.csv',sep=',')
+
+BBData[['TimeStamp']] <- as.POSIXct(BBData[['TIMESTAMP']],format = "%Y-%m-%d %H%M")
+BBData[['NetRadiation']] <- BBData[['SW_IN_1_1_1']]+BBData[['LW_IN_1_1_1']]-(BBData[['SW_OUT_1_1_1']]+BBData[['LW_OUT_1_1_1']])
+
+Day <- drop_na(BBData[BBData$TimeStamp >='2023-08-27' & BBData$TimeStamp <='2023-08-28',])
+
+
+fig <- plot_ly(data = Day)
+Yl <- list(-100, 800)
+
+fig <- fig %>% add_trace(x = ~TimeStamp, y = ~SW_IN_1_1_1,  name = "&#x2193; SW",
+        mode = "lines", type = "scatter",line = list(color = '#cc9425', width = 1.5, dash="dashdot"))
+fig <- fig %>% add_trace(x = ~TimeStamp, y = ~SW_OUT_1_1_1,  name = "&#x2191; SW",
+        mode = "lines", type = "scatter",line = list(color = '#cc9425', width = 1.5, dash="dot"))
+        
+fig <- fig %>% add_trace(x = ~TimeStamp, y = ~LW_IN_1_1_1,  name = "&#x2193; LW",
+        mode = "lines", type = "scatter",line = list(color = '#b00e98', width = 1.5, dash="dashdot"))
+fig <- fig %>% add_trace(x = ~TimeStamp, y = ~LW_OUT_1_1_1,  name = "&#x2191; LW",
+        mode = "lines", type = "scatter",line = list(color = '#b00e98', width = 1.5, dash="dot"))
+
+fig <- fig %>% add_trace(x = ~TimeStamp, y = ~NetRadiation,  name = "R<sub>n</sub>",
+        mode = "lines", type = "scatter",line = list(color = 'black', width = 2))
+
+
+fig <- fig %>% layout(
+  yaxis = list(
+    title = "W m<sup>-2</sup>",
+    range = Yl
+  ),
+  xaxis = list(
+    title = "Date"
+  ),
+  margin = Margin_m,
+  legend = list(x = 0.05, y = 1, orientation='h')
+)
+
+fig
+
+```
+
+:::
+
+::: {.column width="40%"}
+
+Total for the day:
+
+$SW^* =$ `r round((sum(Day$SW_IN_1_1_1*1800)-sum(Day$SW_OUT_1_1_1*1800))/1e6,digits=1)` $MJ m^{-2}$
+
+$LW^* =$ `r round((sum(Day$LW_IN_1_1_1*1800)-sum(Day$LW_OUT_1_1_1*1800))/1e6,digits=1)` $MJ m^{-2}$
+
+$R_n =$ `r round(sum(Day$NetRadiation*1800)/1e6,digits=1)` $MJ m^{-2}$
+
+
+:::
+
+::::
+
+
+## Cloudy & Rainy
+
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+```{R}
+#| label: fig-Radiation-2
+#| fig-cap: "Radiation data from the Burns Bog Flux Station."
+#| fig-width: 5.5
+#| fig-height: 4
+
+Day <- drop_na(BBData[BBData$TimeStamp >='2023-10-09' & BBData$TimeStamp <='2023-10-10',])
+
+
+fig <- plot_ly(data = Day)
+Yl <- list(-100, 800)
+
+fig <- fig %>% add_trace(x = ~TimeStamp, y = ~SW_IN_1_1_1,  name = "&#x2193; SW",
+        mode = "lines", type = "scatter",line = list(color = '#cc9425', width = 1.5, dash="dashdot"))
+fig <- fig %>% add_trace(x = ~TimeStamp, y = ~SW_OUT_1_1_1,  name = "&#x2191; SW",
+        mode = "lines", type = "scatter",line = list(color = '#cc9425', width = 1.5, dash="dot"))
+        
+fig <- fig %>% add_trace(x = ~TimeStamp, y = ~LW_IN_1_1_1,  name = "&#x2193; LW",
+        mode = "lines", type = "scatter",line = list(color = '#b00e98', width = 1.5, dash="dashdot"))
+fig <- fig %>% add_trace(x = ~TimeStamp, y = ~LW_OUT_1_1_1,  name = "&#x2191; LW",
+        mode = "lines", type = "scatter",line = list(color = '#b00e98', width = 1.5, dash="dot"))
+
+fig <- fig %>% add_trace(x = ~TimeStamp, y = ~NetRadiation,  name = "R<sub>n</sub>",
+        mode = "lines", type = "scatter",line = list(color = 'black', width = 2))
+
+
+fig <- fig %>% layout(
+  yaxis = list(
+    title = "W m<sup>-2</sup>",
+    range = Yl
+  ),
+  xaxis = list(
+    title = "Date"
+  ),
+  margin = Margin_m,
+  legend = list(x = 0.05, y = 1, orientation='h')
+)
+
+fig
+
+```
+
+:::
+
+::: {.column width="40%"}
+
+Total for the day:
+
+$SW^* =$ `r round((sum(Day$SW_IN_1_1_1*1800)-sum(Day$SW_OUT_1_1_1*1800))/1e6,digits=1)` $MJ m^{-2}$
+
+$LW^* =$ `r round((sum(Day$LW_IN_1_1_1*1800)-sum(Day$LW_OUT_1_1_1*1800))/1e6,digits=1)` $MJ m^{-2}$
+
+$R_n =$ `r round(sum(Day$NetRadiation*1800)/1e6,digits=1)` $MJ m^{-2}$
+
+
+:::
+
+::::
+
+
+
+## Cold and Snowy
+
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+```{R}
+#| label: fig-Radiation-3
+#| fig-cap: "Radiation data from the Burns Bog Flux Station."
+#| fig-width: 5.5
+#| fig-height: 4
+
+Day <- drop_na(BBData[BBData$TimeStamp >='2021-12-29' & BBData$TimeStamp <='2021-12-30',])
+
+
+fig <- plot_ly(data = Day)
+Yl <- list(-100, 800)
+
+fig <- fig %>% add_trace(x = ~TimeStamp, y = ~SW_IN_1_1_1,  name = "&#x2193; SW",
+        mode = "lines", type = "scatter",line = list(color = '#cc9425', width = 1.5, dash="dashdot"))
+fig <- fig %>% add_trace(x = ~TimeStamp, y = ~SW_OUT_1_1_1,  name = "&#x2191; SW",
+        mode = "lines", type = "scatter",line = list(color = '#cc9425', width = 1.5, dash="dot"))
+        
+fig <- fig %>% add_trace(x = ~TimeStamp, y = ~LW_IN_1_1_1,  name = "&#x2193; LW",
+        mode = "lines", type = "scatter",line = list(color = '#b00e98', width = 1.5, dash="dashdot"))
+fig <- fig %>% add_trace(x = ~TimeStamp, y = ~LW_OUT_1_1_1,  name = "&#x2191; LW",
+        mode = "lines", type = "scatter",line = list(color = '#b00e98', width = 1.5, dash="dot"))
+
+fig <- fig %>% add_trace(x = ~TimeStamp, y = ~NetRadiation,  name = "R<sub>n</sub>",
+        mode = "lines", type = "scatter",line = list(color = 'black', width = 2))
+
+
+fig <- fig %>% layout(
+  yaxis = list(
+    title = "W m<sup>-2</sup>",
+    range = Yl
+  ),
+  xaxis = list(
+    title = "Date"
+  ),
+  margin = Margin_m,
+  legend = list(x = 0.05, y = 1, orientation='h')
+)
+
+fig
+
+```
+
+:::
+
+::: {.column width="40%"}
+
+Total for the day:
+
+$SW^* =$ `r round((sum(Day$SW_IN_1_1_1*1800)-sum(Day$SW_OUT_1_1_1*1800))/1e6,digits=1)` $MJ m^{-2}$
+
+$LW^* =$ `r round((sum(Day$LW_IN_1_1_1*1800)-sum(Day$LW_OUT_1_1_1*1800))/1e6,digits=1)` $MJ m^{-2}$
+
+$R_n =$ `r round(sum(Day$NetRadiation*1800)/1e6,digits=1)` $MJ m^{-2}$
+
+
+:::
+
+::::
+
+
+
+## During Snowmelt
+
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+```{R}
+#| label: fig-Radiation-4
+#| fig-cap: "Radiation data from the Burns Bog Flux Station."
+#| fig-width: 5.5
+#| fig-height: 4
+
+Day <- drop_na(BBData[BBData$TimeStamp >='2022-12-25' & BBData$TimeStamp <='2022-12-26',])
+
+
+fig <- plot_ly(data = Day)
+Yl <- list(-100, 800)
+
+fig <- fig %>% add_trace(x = ~TimeStamp, y = ~SW_IN_1_1_1,  name = "&#x2193; SW",
+        mode = "lines", type = "scatter",line = list(color = '#cc9425', width = 1.5, dash="dashdot"))
+fig <- fig %>% add_trace(x = ~TimeStamp, y = ~SW_OUT_1_1_1,  name = "&#x2191; SW",
+        mode = "lines", type = "scatter",line = list(color = '#cc9425', width = 1.5, dash="dot"))
+        
+fig <- fig %>% add_trace(x = ~TimeStamp, y = ~LW_IN_1_1_1,  name = "&#x2193; LW",
+        mode = "lines", type = "scatter",line = list(color = '#b00e98', width = 1.5, dash="dashdot"))
+fig <- fig %>% add_trace(x = ~TimeStamp, y = ~LW_OUT_1_1_1,  name = "&#x2191; LW",
+        mode = "lines", type = "scatter",line = list(color = '#b00e98', width = 1.5, dash="dot"))
+
+fig <- fig %>% add_trace(x = ~TimeStamp, y = ~NetRadiation,  name = "R<sub>n</sub>",
+        mode = "lines", type = "scatter",line = list(color = 'black', width = 2))
+
+
+fig <- fig %>% layout(
+  yaxis = list(
+    title = "W m<sup>-2</sup>",
+    range = Yl
+  ),
+  xaxis = list(
+    title = "Date"
+  ),
+  margin = Margin_m,
+  legend = list(x = 0.05, y = 1, orientation='h')
+)
+
+fig
+
+```
+
+:::
+
+::: {.column width="40%"}
+
+Total for the day:
+
+$SW^* =$ `r round((sum(Day$SW_IN_1_1_1*1800)-sum(Day$SW_OUT_1_1_1*1800))/1e6,digits=1)` $MJ m^{-2}$
+
+$LW^* =$ `r round((sum(Day$LW_IN_1_1_1*1800)-sum(Day$LW_OUT_1_1_1*1800))/1e6,digits=1)` $MJ m^{-2}$
+
+$R_n =$ `r round(sum(Day$NetRadiation*1800)/1e6,digits=1)` $MJ m^{-2}$
+
+
+:::
+
+::::
+
+
+## Units (iClicker)
+
+The measured radiation data are presented in W m<sup>-2</sup>, so why are daily totals presented in MJ m<sup>-2</sup>?
+
+* W = J s<sup>-1</sup>
+* W = MJ d<sup>-1</sup>
+* W = MJ h<sup>-1</sup>
+
+
+
+## A Full Year?
+
+
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+
+```{R}
+#| label: fig-Radiation-5
+#| fig-cap: "Total radiative fluxes at the Burns Bog Flux Station, 2022."
+#| fig-width: 5.5
+#| fig-height: 4
+
+
+Year <- read.csv(file = 'Data/Lecture8/Mean.csv',sep=',')
+
+
+fig <- plot_ly(data=Year)
+
+fig <- fig %>% add_trace(x = ~Component, y = ~Jm2, type = "bar")
+
+
+fig <- fig %>% layout(
+  yaxis = list(
+    title = "R<sub>n</sub> GJ m<sup>-2</sup>"
+  ),
+  xaxis = list(
+    title = ""
+  ),
+  margin = Margin_m
+)
+
+Year <- read.csv(file = 'Data/Lecture8/MeanT.csv',sep=',')
+
+fig
+
+
+```
+
+
+:::
+
+::: {.column width="40%"}
+
+Total flues over one year:
+
+$SW^* =$ `r (Year$SW_IN-Year$SW_OUT)` $GJ m^{-2}$
+
+$LW^* =$ `r (Year$LW_IN-Year$LW_OUT)` $GJ m^{-2}$
+
+$R_n =$ `r Year$Rn` $GJ m^{-2}$
+
+:::
+
+::::
+
+
+## Does it vary between years?
+
+```{R}
+#| label: fig-Radiation-6
+#| fig-cap: "Total radiative fluxes at the Burns Bog Flux Station by year."
+#| fig-width: 5.5
+#| fig-height: 4
+
+
+Year <- read.csv(file = 'Data/Lecture8/YearlySums.csv',sep=',')
+
+
+fig <- plot_ly(data=Year)
+
+fig <- fig %>% add_trace(x = ~Year, y = ~NetRadiation, type = "bar")
+
+
+fig <- fig %>% layout(
+  yaxis = list(
+    title = "R<sub>n</sub> GJ m<sup>-2</sup>",
+    range = list(0,3)
+  ),
+  xaxis = list(
+    title = ""
+  ),
+  margin = Margin_m
+)
+
+Year <- read.csv(file = 'Data/Lecture8/MeanT.csv',sep=',')
+
+fig
+
+
+```
+
+## Summary of our interpretation 
+
+
+
+* Strong correlation between $R_n$ and $SW\downarrow$
+  + Daily $R_n$ variation is mainly driven by the solar cycle
+  + Daytime $SW^*$ is only partly offset by $LW^*$
+  + At night $LW^*$ is unopposed 
+* Cloud cover increases $LW^*$, snow cover reduces $SW^*$ 
+* $LW^*$ is more negative when ground is warmer than the air 
+  + $LW^*$ *can* be positive if the air is warmer than the ground
+
+
+
+## Effect of Landcover 
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+![Mature Forest](images/Lecture8/CR_tower.jpg){width="70%"}
+
+
+:::
+
+::: {.column width="50%"}
+
+![Clearcut](images/Lecture8/15_0.jpg){width="70%"}
+
+
+:::
+
+::::
+
+## Landcover Effects
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+* Measurements show that $R_n$ in a clearcut is $\approx$ 24% less than in uncut forest. 
+  + Why? $SW \downarrow$ and $LW \downarrow$ didn't change drastically, but $SW \uparrow$ and $LW \uparrow$ did.
+
+:::
+
+::: {.column width="50%"}
+
+```{r}
+#| label: fig-16_3
+#| fig-cap: Radiation balance of a forest and a clearcut.
+#| fig-width: 4.5
+#| fig-height: 4
+
+Data <- read.csv(file = 'Data/Lecture8/16_3_Scatter.csv',sep=',', check.names = FALSE)
+
+fig <- plot_ly(data=Data)
+
+fig <- fig %>% add_trace(x = ~Forest, y = ~Clearcut, name='observations', type = "scatter", mode = "markers")
+
+
+fig <- fig %>% add_trace(x = ~Forest, y = ~Forest, name='1:1', type = "scatter", mode = "lines",line = list(color = 'black', width = 2))
+
+fig <- fig %>% layout(
+  yaxis = list(
+    title = "Clearcut MJ m<sup>-2</sup> d<sup>-1</sup>",
+    range = list(0,25)
+  ),
+  xaxis = list(
+    title = "Mature Forest MJ m<sup>-2</sup> d<sup>-1</sup>",
+    range = list(0,25)
+  ),
+  legend = list(x = 0.05, y = 0.95),
+  margin = Margin_m
+)
+
+fig
+
+```
+
+
+:::
+
+::::
+
+
+
+## Diurnal Course
+
+
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+* $SW \uparrow$ higher in the clearcut 
+  + Larger albedo
+
+* $LW \uparrow$ higher in the clearcut 
+  + Higher T
+
+:::
+
+::: {.column width="60%"}
+
+```{r}
+#| label: fig-17_0
+#| fig-cap: Diurnal course of outgoing radiation for a forest and clearcut
+#| fig-width: 5.5
+#| fig-height: 4
+
+
+Data <- read.csv(file = 'Data/Lecture8/17_0_Scatter_Lines.csv',sep=',', check.names = FALSE)
+
+fig <- plot_ly(data=Data)
+
+fig <- fig %>% add_trace(x = ~X, y = ~KForest, name = 'SW &#x2191; Forest',type = "scatter", mode = "lines+markers",marker=list(color='blue',size=10, symbol='x'),line=list(color='blue',width=2))
+
+fig <- fig %>% add_trace(x = ~X, y = ~KClearcut, name = 'SW &#x2191; Clearcut',type = "scatter", mode = "lines+markers",marker=list(color='blue',size=10, symbol='o'),line=list(color='blue',width=2))
+
+fig <- fig %>% add_trace(x = ~X, y = ~LForest, name = 'LW &#x2191; Forest',type = "scatter", mode = "lines+markers",marker=list(color='red',size=10, symbol='x'),line=list(color='red',width=2))
+
+fig <- fig %>% add_trace(x = ~X, y = ~LClearcut, name = 'LW &#x2191; Clearcut',type = "scatter", mode = "lines+markers",marker=list(color='red',size=10, symbol='o'),line=list(color='red',width=2))
+
+
+fig <- fig %>% layout(
+  yaxis = list(
+    title = "Clearcut W m<sup>-2</sup>"
+  ),
+  xaxis = list(
+    title = "Hour of day"
+  ),
+  legend = list(x = 0.85, y = 0.05),
+  margin = Margin_m
+)
+
+fig
+
+```
+
+:::
+
+::::
+
+
+
+## Daily Totals
+
+```{r}
+#| label: fig-21_1
+#| fig-cap: The clear-cut receives less radiative energy than the forest. 
+
+Data <- read.csv(file = 'Data/Lecture8/21_1_Bar.csv',sep=',', check.names = FALSE)
+
+fig <- plot_ly(data=Data)
+
+fig <- fig %>% add_trace(x = ~X, y = ~Forest,  name = 'Forest', type = "bar")
+
+fig <- fig %>% add_trace(x = ~X, y = ~Clearcut,  name = 'Clearcut', type = "bar")
+
+fig <- fig %>% layout(
+  yaxis = list(
+    title = "MJ m<sup>-2</sup> day<sup>-1</sup>"
+  ),
+  xaxis = list(
+    title = " "
+  ),
+  legend = list(x = 0.85, y = 0.05),
+  margin = Margin_m
+)
+
+fig
+
+```
+
+## iClicker
+
+If the forest has higher $R_n$ than the clearcut, where is that extra energy going? (*Note* there are two correct answers, you only need to select one)
+
+* A. Photosynthesis
+* B. Albedo
+* C. Longwave emissions
+* D. Evapotranspiration
+* E. Heating the soil
+
+
+## Nighttime Cooling {.smaller}
+
+Nighttime surface cooling is only controlled by $LW$:
+
+$SW \downarrow = 0$
+
+$R_n = \epsilon LW \downarrow - \epsilon \sigma_b T_s^4$
+
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+
+* The $LW^*$ is *usually* negative
+  + Cloud has a large effect on $LW \downarrow$ 
+  + Cloudless nights have lowest $LW \downarrow$ 
+    + Most negative $LW^*$
+
+
+
+:::
+
+::: {.column width="40%"}
+
+![Frost when surface cools below the dewpoint & freezing point](images/Lecture8/24_5.jpg)
+
+
+:::
+
+::::
+
+
+
+---
+
+
+![](images/Lecture8/26_0.png)
+
+
+
+![](images/Lecture8/26_1.png)
+
+## View factor
+
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+* The fraction of radiation leaving an object that is intercepted by other objects
+  * An object’s hemispherical view occupied by other objects
+* The sky view factor, $\psi_{sky}$ effects $LW^*$ at night
+  + Because the sky is usually ‘cold’ and an effective heat sink
+
+
+:::
+
+::: {.column width="40%"}
+
+![](images/Lecture8/27_2.png)
+
+
+
+![](images/Lecture8/27_3.png)
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+We defined sky view factor in an earlier lecture
+
+:::
+
+## An Open Field $\psi_{sky}$ = 0.9
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+![](images/Lecture8/28_1.png)
+
+:::
+
+::: {.column width="50%"}
+
+
+
+![](images/Lecture8/28_2.png)
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+Using a fish eye lens we can actually calculate the skyview factor
+
+:::
+
+## Conifer Forest $\psi_{sky}$ = 0.6
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+![](images/Lecture8/29_1.png)
+
+
+:::
+
+::: {.column width="50%"}
+
+
+![](images/Lecture8/29_5.png)
+
+
+:::
+
+::::
+
+
+
+## Deciduous Forest $\psi_{sky}$ = 0.2
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+![](images/Lecture8/30_1.gif){width="120%"}
+
+
+:::
+
+::: {.column width="50%"}
+
+![](images/Lecture8/30_2.gif){width="120%"}
+
+
+:::
+
+::::
+
+
+
+## Urban courtyard $\psi_{sky}$ = 0.2
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+![](images/Lecture8/31_1.png)
+
+:::
+
+::: {.column width="50%"}
+
+![](images/Lecture8/31_2.png)
+
+
+:::
+
+::::
+
+
+
+## Why is this important?
+
+
+$\psi_{sky}$ is a “weighting factor” expressing the relative importance of sky in the long-wave balance of an object (e.g., a seedling). 
+
+
+{{< include ../_Equations/Net-Longwave-Sky-View.qmd >}}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+* The higher $\psi_{sky}$ the lower the $LW^*$ of the seedling
+  + Sky usually more than 30K colder than the ground
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+![](images/Lecture8/32_4.png)
+
+
+:::
+
+::::
+
+
+
+---
+
+![](images/Lecture8/33_2.jpg)
+
+
+::: {.notes}
+
+The sky view factor in the clearcut is very different than in the uncut forest.
+
+:::
+
+## Why is this important?
+
+This study recommended strip clearcuts <2h (h = stand height) because $T_{min}$ decreases with distance from stand edge.
+
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+
+* Frosts can kill lodgepole pine seedlings during their germination period.
+* Size of clearcut affects minimum temperatures near the soil surface
+
+
+:::
+
+::: {.column width="40%"}
+
+```{r}
+#| label: SkyView
+#| fig-cap: Sky view with distance from forest edge
+#| fig-width: 4
+#| fig-height: 4
+
+Data <- read.csv(file = 'Data/Lecture8/SkyView.csv',sep=',', check.names = FALSE)
+
+fig <- plot_ly(data=Data)
+
+fig <- fig %>% add_trace(x = ~Distance, y = ~Psi, name='observations', type = "scatter", mode = "lines")
+
+
+fig <- fig %>% layout(
+  yaxis = list(
+    title = "&#x3C8;<sub>sky</sub>"
+  ),
+  xaxis = list(
+    title = "distance (m)"
+  ),
+  legend = list(x = 0.05, y = 0.95),
+  margin = Margin_m
+)
+
+fig
+
+```
+
+
+
+:::
+
+::::
+
+
+
+## Take home points
+
+
+* Distinguish between net shortwave ($SW^*$), net longwave ($LW^*$) and net all-wave radiation ($R_n$)
+* The magnitude of $R_n$ is controlled by surface properties:
+  + Albedo, surface temperature, emissivity
+* The magnitude of $R_n$ is also controlled by the surrounding 3D surface
+  + Sky view influences $LW^*$ at night
+* Surface properties can be modified to control surface climates

@@ -1,0 +1,698 @@
+---
+format:
+  revealjs:
+    theme: default
+title: Short-wave Radiation
+subtitle: Emitted from the Sun, it drives the Earth's climate system.
+---
+
+{{< include _imports.qmd >}}
+
+## Short-wave Radiation
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+Transmission, absorption and scattering (diffuse reflection) of solar radiation in the atmosphere causes a variety of optical effects.
+
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+![](images/Lecture3/1_0.jpg)
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+One of our applications in forest and agricultural climatology is the modelling and measurement of short-wave irradiance at the ground after passing through Earth’s atmosphere. 
+
+:::
+
+
+
+
+## Learning Objectives
+
+* Describe the characteristics of the solar radiation reaching our planet.
+* Explain what happens to the solar radiation as it passes through the atmosphere
+* Understand the effects of slope on radiation receipt.
+* Know the difference between direct and diffuse short-wave radiation.
+
+
+---
+
+
+:::: {.columns}
+
+::: {.column width="30%"}
+
+**Planck’s law**<br>&nbsp;
+
+* Dependence of $E$ and $\lambda$ on T
+
+
+![](images/Lecture3/3_3.png)
+
+:::
+
+
+::: {.column width="36%"}
+
+**Stefan-Boltzman law**
+
+* Integral of Plank's Law
+
+![](images/Lecture3/4_3.png)
+
+
+:::
+
+
+
+::: {.column width="33%"}
+
+**Wein's law**<br>&nbsp;
+
+* Maximum of Plank's Law
+
+![](images/Lecture3/5_3.png)
+
+
+:::
+
+::::
+
+
+## Solar constant $I_0$ {.smaller}
+
+The radiant flux density (irradiance) at the top of the atmosphere normal to the solar beam an at Earth’s mean distance from Sun.
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* Present observations suggest $I_0 \approx 1361 W m{-2}$ 
+
+![](images/Lecture3/7_5.png)
+
+
+:::
+
+::: {.column width="50%"}
+
+
+![The Nimbus satellite hosted the first instruments measuring the solar constant(NASA).](images/Lecture3/7_3.png){width=65%}
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+The “solar constant represents about the upper limit for solar energy in the Earth-atmosphere system. Imagine astronauts in the space station doing a space walk where they take a a board that is 1 meter by one meter and then measuring how much radiation falls on it when they point it directly at the sun. 
+NOTE: the word “constant” here is a bit misleading. Of courses the distance from the earth varies because of the elliptical orbit of the earth around the sun. The differences are small however. 
+
+:::
+
+
+
+## Average radiation on Earth
+
+
+The solar constant is a "theoretical maximum"
+
+::::{.columns}
+
+:::{.column width="50%"}
+
+* True at equator at solar noon
+
+* Actual value is lower everywhere else
+
+:::
+
+
+:::{.column width="50%"}
+
+![](images/Lecture3/8_3.png)
+
+:::
+
+::::
+
+## Attenuation of solar radiation (iClicker)
+
+On its path from the top of the atmosphere to the ground, solar radiation is reduced. Why?
+
+* A - Reflected back to space by clouds
+* B - Scattered by aerosols and droplets
+* C - Absorbed by certain gases, droplets and aerosols
+* D - All of the above
+
+
+## Reflection
+
+Clouds reflect 40 to 80% of the short-wave radiation incident upon them, the average is 55%.
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+* We call this the cloud albedo ($\alpha$), hence the ratio of the amount of solar (short-wave) radiation reflected by a body to the amount incident upon it.
+
+
+:::
+
+::: {.column width="40%"}
+
+
+
+
+![](images/Lecture3/11_3.png){width="75%"}
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+Reflection from clouds is really important! This is why the earth looks so bright from space. Clouds viewed from the sides or above are also very white (an indicator that they are reflecting all wavelengths of visible light). 
+
+:::
+
+
+
+
+## Absorption in the atmosphere
+
+The most significant absorbing substances are:
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+* H<sub>2</sub>O (vapor), CO<sub>2</sub>, O<sub>2</sub>, and O<sub>3</sub>
+* The atmosphere is quite transparent ($\tau \approx 1$) near $\lambda_{max}$ = 0.48 $\mu m$ 
+  + Intensity of solar radiation is greatest here
+
+:::
+
+::: {.column width="40%"}
+
+![Absorption Spectra of Gasses in the Atmosphere](images/AbsoprtionSpectraOfGasses.jpg)
+
+:::
+
+::::
+
+## What does this Mean?
+
+![](images/Lecture3/14_0.png){width=90%}
+
+
+## Optical Effects
+
+::: {#fig-Optics layout-ncol="3"}
+
+
+![Blue light is most easily scattered](images/BlueSky.jpg)
+
+![At sunset, more blue is scattered away](images/Lecture3/16_3.jpg)
+
+![Smoke scatters lots of light](images/Lecture3/17_3.jpg)
+
+Scattering of light by the atmosphere
+
+:::
+
+::: {.notes}
+
+The next images show some of the optical effects of the atmosphere. Some of these are best seen when the sun in low in the sky (sunrise and sunset) and the sun’s rays are passing slantwise through the atmosphere (we call this a long “path-length”) 
+
+:::
+
+
+## Scattering
+
+Scattering (diffuse reflection) is when incident light is diffused in **all** directions by the small molecules.
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* Reduces solar radiation reaching the ground
+* Diffuse the beam so that it arrives from all parts of the sky hemisphere.
+
+
+:::
+
+::: {.column width="50%"}
+
+![Scattering by particle size](images/Lecture3/18_3.png)
+
+:::
+
+::::
+
+
+## Scattering
+
+* **Rayleigh**: caused by gas molecules. Tends to scatter in all directions with a preference for shorter wavelengths
+* **Mie**: associated with larger solid or liquid particles. Scatters wavelength equally and mostly in a forward direction.
+
+![Scattering by particle size](images/Lecture3/18_3.png)
+
+## Transmission
+
+* Typical fractions of the solar getting through to the ground are:
+  + “Clean” atmosphere $\tau$ = 0.65-0.75
+  + “Dirty” atmosphere $\tau$ = 0.45-0.55
+  + In Vancouver, a typical value is $\tau$ = 0.70
+
+
+## Transmission Windows
+
+::::{.columns}
+
+:::{.column width=40%}
+
+* Most visible radiation is transmitted
+
+* Second window lets thermal radiation escape
+
+:::
+
+:::{.column width="60%"}
+
+![](images/Lecture3/13_0.png){width="80%"}
+
+:::
+::::
+::: {.notes}
+
+See Video: The “Atmospheric Window” is an important concept. You need to understand it. Simply put, the window part is analogy. It implies that in the 8-11 micrometer longwave (terrestrial) part of the radiation spectrum where there are no gases that absorb outgoing longwave radiation from the earth/atmosphere. Therefore this radiation is free to escape to space through these wavelengths. If this wasn’t the case, then the earth would continue to heat up over time. The role of “greenhouse” gases in the atmosphere is of course part of this story
+
+:::
+
+## Transmission (iClicker)
+
+
+
+![](images/Lecture3/20_0.png)
+
+
+## Smokey Skies Reduce Transmission
+
+
+:::: {.columns}
+
+::: {.column width="0%"}
+
+
+
+:::
+
+::: {.column width="100%"}
+
+
+
+
+![](images/Lecture3/21_1.png)
+
+
+
+:::
+
+::::
+
+
+
+## Cosine law of illumination
+
+Describes how incident radiant flux density (irradiance) of a beam decreases as the beam’s angle varies from overhead. 
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* The same energy is spread over a larger surface area when a beam is tilted relative to the surface
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+![](images/Lecture3/23_3.png)
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+This is an important concept! Try it yourself at home with a flashlight. You can also shine it on a globe (or ball) to see the impact on Latitude (ie.e why the poles receive less radiation than the tropics. 
+
+:::
+
+
+
+## Cosine law of illumination
+
+Flux density on a surface ($R_s$) is proportional to the flux density perpendicular to a beam ($R_p$) and the zenith ($\theta$).
+
+* For a flat land surface **at solar noon** 
+
+
+{{< include ../_Equations/Solar-Zenith-at-Noon.qmd >}}  
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* Solar Declination ranges from:
+  + +23.5 (summer solstice)
+  + 0 (equinoxes)
+  + -23.5 (winter solstice)
+
+
+:::
+
+::: {.column width="50%"}
+
+
+{{< include ../_Equations/Cosine-Law-of-Illumination.qmd >}}  
+
+
+![](images/Lecture3/Cosine_Angle.png)
+
+:::
+
+::::
+
+
+## Cosine law of illumination
+
+Radiation is distributed according to latitude and solar declination.
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+![](images/BeamAttenuationEx.png)
+
+:::
+
+::: {.column width="50%"}
+
+
+![](images/Solstices.webp)
+
+:::
+
+::::
+
+
+## Cosine law of illumination (iClicker) {.smaller}
+
+Compare the the flux density of a beam of sunlight **at solar noon** on **the autumnal equinox** at the equator and at the Arctic Circle (66 $^{\circ}$ North latitude).
+
+::::{.columns}
+:::{.column width="45%"}
+
+*Note*:
+
+* $R_s = R_p cos(\theta)$
+* At the equator, the sun is directly overhead: $\theta = 0$
+* At 66 $^{\circ}$ N latitude: $\theta = 66$
+
+:::
+
+:::{.column width="55%"}
+
+Irradiance at 66 $^{\circ}$ N would be:
+
+* **A** $\approx$ 66% that at the equator
+* **B** $\approx$ 40% that at the equator
+* **C** $\approx$ 33% that at the equator
+
+:::
+::::
+
+## Irradiance
+
+Shortwave irradiance ($SW\downarrow$) is the integration of all radiative fluxes coming from the upper hemisphere
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* Per unit area
+* Hence a radiative flux density in W m<sup>-2</sup>
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+![](images/Lecture3/26_3.png)
+
+
+:::
+
+::::
+
+
+
+## Direct vs. Diffuse Irradiance
+
+Two types of solar radiation arrive at the Earth’s surface:
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* Direct (s): comes directly in parallel rays from Sun.
+* Diffuse (d): after scattering and reflection by the Earth’s atmosphere.
+
+
+:::
+
+::: {.column width="50%"}
+
+
+![](images/Lecture3/27_3.jpg)
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+When you look at the horizon on a sunny day you still see BLUE – that is short wavelength visible radiation being scattered toward you (Rayleigh scattering)
+
+:::
+
+
+
+
+## Total Irradiance
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+
+{{< include ../_Equations/Solar-Irradiance.qmd >}}  
+
+
+::: {style="font-size: 50%;"}
+
+*Note* the differing label convention in this figure.  Some sources will use "K" for shortwave radiation.  I don't like that because its too similar to "Kelvin", so I prefer to use "SW".
+
+:::
+
+:::
+
+::: {.column width="50%"}
+
+<br><br>
+
+
+![](images/Lecture3/28_2.gif)
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+NOTE the symbol K used to describe shortwave radiation and the arrow to indicate whether the radiation is down toward the earth or up and away from the earth. 
+
+:::
+
+
+
+
+## Direct and diffuse radiation - example
+
+![](images/Lecture3/29_2.png)
+
+
+## Direct and diffuse radiation - example
+
+![](images/Lecture3/29_3.png)
+
+
+
+
+
+## Graph interpretation summary
+
+* The diffuse fraction is greater in the early morning and late evening (greater path length).
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* The diffuse fraction increases with cloud cover
+* Variability with scattered clouds
+  + ie. "Partly cloudy"
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+![](images/Lecture3/30_3.png)
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+
+
+:::
+
+
+
+
+## Pyranometer
+
+
+Solar irradiance $SW\downarrow = SW\downarrow_S + SW\downarrow_D$ is measured by a pyranometer.
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* Glass domes transmit $SW$
+  + Prevent conduction / convection
+* A thermopile measures the temperature rise of the absorbing black surface
+
+
+:::
+
+::: {.column width="50%"}
+
+![](images/Lecture3/31_3.png)
+
+:::
+
+::::
+
+
+::: {.notes}
+
+Inside the double glass dome (to prevent convection and conduction) there is a black absorber disk (the sensing element), which is made of a black carbon with a high absorptivity. The temperature rise of the sensing element due to short-wave irradiance is measured relatively to the (more constant) body temperature of the pyranometer. A thermopile (array of thermocouples) measures the temperature difference, which creates a voltage and then is measured by the data logger. 
+The black carbon would be also sensitive to long-wave radiation, but the glass dome filters out the long-wave emission. A double glass dome reduces heating of the inner dome (long-wave emission of the dome).
+
+
+:::
+
+
+
+
+## Measuring Diffuse Radiation
+
+The shade ring follows the solar path and eliminates direct radiation.
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* Only D is measured by the pyranometer
+* Paired with a non-shaded pyranometer, we can separate S and D
+
+:::
+
+::: {.column width="50%"}
+
+![](images/Lecture3/32_3.jpg)
+
+:::
+
+::::
+
+
+
+## Take home points
+
+
+:::: {.columns}
+
+::: {.column width="100%"}
+
+* Short-wave radiation = solar radiation. 
+* What is the meaning of the solar constant I0?
+* Solar radiation is reflected, scattered, and absorbed by certain gas molecules, droplets and particles in the atmosphere.
+* The magnitude of the short-wave irradiance at the ground is mainly determined by the angle of the beam
+  + Cosine law of illumination
+* Distinguish between direct and diffuse $SW$ irradiance.
+
+
+:::
+
+::: {.column width="0%"}
+
+
+
+:::
+
+::::

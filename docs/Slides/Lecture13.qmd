@@ -1,0 +1,471 @@
+---
+format:
+  revealjs:
+    theme: default
+title: Orographic Lift
+subtitle: How is the atmosphere organized and how do key properties of the atmosphere vary through out it
+---
+
+{{< include _imports.qmd >}}
+
+
+
+
+## Learning Objectives
+
+* Understand how adiabatic processes effect temperature and moisture conditions British Columbia
+
+
+## The Adiabatic Process Equation {.smaller}
+
+To determine how the temperature of a parcel ($T_p$) will change adiabatically if it is transported between two height levels ($z_1$ & $z_2$), given $T_p(z_1)$ and $T_{dp}(z_1)$:
+
+<br>
+
+
+::: {style="font-size: 70%;"}
+
+{{< include ../_Equations/Adiabatic-Process-Equation.qmd >}}
+
+:::
+
+* Assume DALR = -0.01 K m<sup>-1</sup> SALR = -0.005 K m<sup>-1</sup>
+* **Recall**: $\frac{T_{dz_1}-T_{z_1}}{DALR}+z_1$
+
+## Orographic Lift
+
+
+When air from low elevations is forced up a slope.
+
+* A common occurrence in BC during the winter
+  + Moist air from the Pacific Ocean collides with Coast Mountains
+
+* Often results in precipitation on the "windward" side of mountains
+
+  + As air rises it cools, reaching saturation
+
+
+## Orographic Lift
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+Largely responsible for maintaining the temperate rain forests of our region.
+
+* Many of the wettest locations in the world:
+  + Winds consistently push moist ocean air up mountain slopes
+
+:::
+
+::: {.column width="40%"}
+
+![](images/Lecture13/Rainforest.jpg)
+
+:::
+::::
+
+## The Rain Shadow Effect
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+Also responsible for the desert like climate of the Okanagan Valley.
+
+* Despite it's its proximity to the coast, dry hot winds are a persistent in this region
+
+* Many of the driest locations in the world are in the "rainshadow" of large mountain ranges
+
+:::
+
+::: {.column width="40%"}
+
+![](images/Lecture13/Rainshadow.jpg)
+
+:::
+::::
+
+
+
+## The Mountain Problem
+
+
+This is classic example of these phenomena in Meteorology.  Given $T$ and $T_d$ at the base of a mountain:
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+* Determine the $LCL$
+* Estimate how $T$ and $T_d$ will evolve as air moves up and over a mountain
+
+:::
+
+::: {.column width="50%"}
+
+![](images/Lecture13/MountainProblem.png)
+
+:::
+::::
+
+
+## The Mountain Problem
+
+
+At A: $z = 0 \ m$, $T = 10 ^{\circ}C$, and $T_d = 8 ^{\circ}C$.  What will $T$ and $T_d$ be at B ($z = 2500 \ m$) and C ($z = 300 \ m$)? 
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+**Step 1**: Determine the LCL
+
+:::{.fragment}
+
+```{R}
+#| echo: True
+T_A = 10
+Td_A = 8
+z_A = 0
+DALR = -0.01
+SALR = -0.005
+
+LCL = (Td_A - T_A)/DALR+z_A
+```
+
+LCL = `r LCL` m.a.s.l
+
+:::
+
+:::
+
+::: {.column width="50%"}
+
+![](images/Lecture13/MountainProblem_EX.png)
+
+:::
+::::
+
+
+## The Mountain Problem (iClicker)
+
+
+At A: $z = 0 \ m$, $T = 10 ^{\circ}C$, and $T_d = 8 ^{\circ}C$.  What will $T$ and $T_d$ be at B ($z = 2500 \ m$) and C ($z = 300 \ m$)? 
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+What will $T$ be at the LCL?
+
+* A. $T = 10 ^{\circ}C$
+* B. $T = 9 ^{\circ}C$
+* C. $T = 8 ^{\circ}C$
+* D. $T = 7 ^{\circ}C$
+
+:::
+
+
+::: {.column width="50%"}
+
+![](images/Lecture13/MountainProblem_EX.png)
+
+:::
+::::
+
+
+## The Mountain Problem
+
+
+At A: $z = 0 \ m$, $T = 10 ^{\circ}C$, and $T_d = 8 ^{\circ}C$.  What will $T$ and $T_d$ be at B ($z = 2500 \ m$) and C ($z = 300 \ m$)? 
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+**Step 2**: Evaluate the Adiabatic Process Equation for B
+
+:::
+
+::: {.column width="50%"}
+
+![](images/Lecture13/MountainProblem_EX.png)
+
+:::
+::::
+
+
+## The Mountain Problem
+
+
+```{R}
+#| echo: True
+z_B = 2500
+
+T_B = T_A + min((LCL-z_A),(z_B-z_A))*DALR + max(z_B-LCL,0)*SALR
+```
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+**Step 2**: Evaluate the Adiabatic Process Equation for B
+
+:::{.fragment}
+
+$T$ at B = `r T_B` $^{\circ}$
+
+:::
+:::
+
+::: {.column width="50%"}
+
+![](images/Lecture13/MountainProblem_EX.png)
+
+:::
+::::
+
+
+## The Mountain Problem (iClicker)
+
+```{R}
+#| echo: True
+z_B = 2500
+
+T_B = T_A + min((LCL-z_A),(z_B-z_A))*DALR + max(z_B-LCL,0)*SALR
+```
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+What will $T_d$ be at B? 
+
+* A. $T_d$ = `r T_B` $^{\circ}$
+* B. $T_d$ = `r T_A` $^{\circ}$
+* C. $T_d$ < `r T_B` $^{\circ}$
+* D. $T_d$ > `r T_B` $^{\circ}$
+
+:::
+
+::: {.column width="50%"}
+
+![](images/Lecture13/MountainProblem_EX.png)
+
+:::
+::::
+
+
+## The Mountain Problem (iClicker)
+
+Given  $T$ = `r T_B` $^{\circ}$ and $T_d$ = `r T_B` $^{\circ}$ at B, do you think precipitation will be occurring at B?
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+What will $T_d$ be at B? 
+
+* A. Yes, it will probably be snowing
+* B. Yes, it will probably be raining
+* C. Probably not
+
+:::
+
+::: {.column width="50%"}
+
+![](images/Lecture13/MountainProblem_EX.png)
+
+:::
+::::
+
+
+
+## The Mountain Problem
+
+
+At A: $z = 0 \ m$, $T = 10 ^{\circ}C$, and $T_d = 8 ^{\circ}C$.  What will $T$ and $T_d$ be at B ($z = 2500 \ m$) and C ($z = 300 \ m$)? 
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+**Step 3**: Evaluate the Adiabatic Process Equation for C
+
+
+:::{.fragment}
+
+```{R}
+#| echo: True
+z_C = 300
+
+T_C =T_B + (z_C-z_B)*DALR
+```
+
+$T$ at C = `r T_C` $^{\circ}$
+
+:::
+
+:::
+
+::: {.column width="50%"}
+
+![](images/Lecture13/MountainProblem_EX.png)
+
+:::
+::::
+
+
+
+
+
+## The Mountain Problem (iClicker)
+
+
+At A: $z = 0 \ m$, $T = 10 ^{\circ}C$, and $T_d = 8 ^{\circ}C$.  What will $T$ and $T_d$ be at B ($z = 2500 \ m$) and C ($z = 300 \ m$)? 
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+What will $T_d$ be at C? 
+
+* A. $T_d$ = `r Td_A` $^{\circ}$
+* B. $T_d$ = `r T_C` $^{\circ}$
+* C. $T_d$ = `r T_B` $^{\circ}$
+* D. Not enough information to know
+
+
+:::
+
+::: {.column width="50%"}
+
+![](images/Lecture13/MountainProblem_EX.png)
+
+:::
+::::
+
+
+
+## Putting it all Together
+
+I'm going to show you how you can evaluate the adiabatic process equation (APE) in R.  If you'd like to try it out yourself, you can install R on your computer and try it out.
+
+* You can find the materials need [here](https://posit.co/download/rstudio-desktop/)
+  + You can use R studio to evaluate the APE on quizzes/exams if you want
+  + Totally not mandatory!  You can do it by hand too.
+
+## Putting it all Together
+
+
+{{< include Data/Lecture13/APE.qmd >}}
+
+
+## Putting it all Together
+
+At A: $z = 0 \ m$, $T = 10 ^{\circ}C$, and $T_d = 8 ^{\circ}C$.  What will $T$ and $T_d$ be at B ($z = 2500 \ m$) and C ($z = 300 \ m$)? 
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+```{R}
+#| echo: True
+
+# Define the Parcel at A
+A = new("Parcel",T=10,Td=8,z=0)
+A
+```
+
+
+:::
+
+::: {.column width="50%"}
+
+![](images/Lecture13/MountainProblem_EX.png)
+
+:::
+::::
+
+## Putting it all Together
+
+At A: $z = 0 \ m$, $T = 10 ^{\circ}C$, and $T_d = 8 ^{\circ}C$.  What will $T$ and $T_d$ be at B ($z = 2500 \ m$) and C ($z = 300 \ m$)? 
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+```{R}
+#| echo: True
+
+# Evaluate APE for B
+B = APE(A,2500)
+B
+```
+
+
+:::
+
+::: {.column width="50%"}
+
+![](images/Lecture13/MountainProblem_EX.png)
+
+:::
+::::
+
+
+## Putting it all Together
+
+At A: $z = 0 \ m$, $T = 10 ^{\circ}C$, and $T_d = 8 ^{\circ}C$.  What will $T$ and $T_d$ be at B ($z = 2500 \ m$) and C ($z = 300 \ m$)? 
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+```{R}
+#| echo: True
+
+# Evaluate APE for B
+C = APE(B,300)
+C
+```
+
+
+:::
+
+::: {.column width="50%"}
+
+![](images/Lecture13/MountainProblem_EX.png)
+
+:::
+::::
+
+
+
+## Take home points
+
+
+:::: {.columns}
+
+::: {.column width="100%"}
+
+* Temperature decreases with height on the windward slope of a mountain
+  * Condensation/Precipitation will often occur
+* Temperature increases as winds move down the leeward slope of a mountain
+  * $RH$ decreases as well, because $T_d$ remains unchanged while $T$ increases
+
+
+:::
+
+
+
+::::

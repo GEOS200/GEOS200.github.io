@@ -1,0 +1,693 @@
+---
+format:
+  revealjs:
+    theme: default
+title: Turbulence and Convection
+subtitle: Mixing of the atmosphere
+---
+
+{{< include _imports.qmd >}}
+
+
+
+## Learning Objectives
+
+
+* Understand what ‘turbulence’ is.
+* Describe what causes a flow to be turbulent.
+* Explain how can we quantify the degree of turbulence.
+* Understand how this small scale randomness can impact larger scale processes.
+* Explain how we can describe / model convective transport. 
+
+<!-- * Understand and describe K-theory and resistances - a simple analogy to the laminar boundary layer. 
+* Explain how we can directly measure convective flux densities using the eddy covariance approach.  -->
+
+
+## Class Conduct
+
+Talking during class can disrupt the learning experience of your classmates.
+
+* It **is okay** to quietly ask your neighbors questions or discuss issues relating to class content
+* It **is not okay** to have loud/long conversations
+
+
+## Class Conduct (iClicker)
+
+Talking during class can disrupt the learning experience of your classmates.
+
+* True
+* False
+
+## Energy Transfer
+
+![](images/Lecture14/3_1.png)
+
+
+
+## Laminar vs. Turbulent Flow
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+**Laminar flow**: parallel streamlines
+
+* Mixing is inefficient, only occurs by diffusion
+
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+**Turbulent flow**: irregular streamlines
+
+* Mixing is very efficient and occurs mainly by convection
+
+
+
+:::
+
+::::
+
+
+![](images/Lecture12/WindTunnle.gif){.absolute bottom=0 left=225 width="500"}
+
+
+
+## Turbulence
+
+Turbulence is a feature of flows, not fluids. 
+
+* Turbulent flows are very efficient in equalizing temperature and concentration gradients: 
+
+  + In the Atmosphere, turbulent flows are 10<sup>5</sup> times more efficient than molecular diffusion
+
+
+## Eddies
+
+Coherent parts within the flow which have the same properties. 
+
+* Eddies exist in a wide range of different sizes
+
+  + “Big whorls have little whorls which feed on their velocity, and little whorls have lesser whorls, and so on to viscosity.” 
+    - Richardson, 1922
+
+## Eddies
+
+Coherent parts within the flow which have the same properties. 
+
+* Eddies exist in a wide range of different sizes
+
+* The smallest eddies dissipate to heat
+
+![](images/Lecture14/7_2.jpg)
+
+
+## Forced (Mechanical) Convection
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+Wind moving past obstacles (trees, buildings, etc.) creates eddies mechanically by disturbing flow.
+
+* Eddy size related to the size of the obstacle and flow velocity
+
+
+
+:::
+
+::: {.column width="50%"}
+
+
+![](images/Lecture14/Buildings.gif)
+
+
+:::
+
+::::
+
+
+## Forced (Mechanical) Convection
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+Air moving at different speeds, or in different directions, creates shear stress.
+
+* Causes turbulence and eddies
+* Explains the turbulence you feel in an airplane
+
+:::
+
+::: {.column width="50%"}
+
+
+![Photo (c) Bring Wong](images/Lecture14/Sheer.png)
+
+
+:::
+
+::::
+
+
+
+## Forced (Mechanical) Convection
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+Wind moving over a natural surface experiences skin friction as it drags along 
+  
+* Greater over rough surfaces
+
+:::
+
+::: {.column width="50%"}
+
+
+![](images/Lecture14/Grass_blowing_in_the_wind.gif){width="125%"}
+
+
+:::
+
+::::
+
+
+## Forced (Mechanical) Convection
+
+Requires a continual supply of kinetic energy from the flow. It comes from the mean wind speed.
+
+* Wind is driven by pressure/temperature gradients at larger scales (we'll discuss this later)
+
+![](images/Lecture14/ForcedConvection.png)
+
+
+
+## Forced (Mechanical) Convection
+
+
+We can have three different scenarios that create turbulence mechanically
+
+
+![](images/Lecture14/12_2.png)
+
+
+
+
+## Free (Thermal) Convection
+
+
+
+Surface heating differences → density differences → buoyancy differences → convection.
+
+
+![](images/Lecture1/18_3.png)
+
+
+
+## Free (Thermal) Convection
+
+
+Buoyant parcels are often semi-organized into ‘plumes’; rising thermals form convection cells.
+
+
+
+
+![T.R. Oke (1987)](images/Lecture14/13_2.png)
+
+
+
+
+
+## Free (Thermal) Convection
+
+
+![](images/Lecture14/Turbulence_small.gif)
+
+
+
+## Intense Convection > Thunderstorm
+
+
+![](images/Lecture14/Convection.gif)
+
+## Turbulence (iClicker)
+
+Which of the following characteristics is **not** applicable to a turbulent flow? 
+
+* A Mixing is very efficient
+* B Flow is highly irregular with 3D curved streamlines
+* C Exchange only occurs by molecular diffusion
+* D A range of eddies of different scale exist
+* E Produced by mechanical and/or thermal processes
+
+
+
+
+
+## Eddy Size and Source of Convection
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+* **Day**: wide range of eddy sizes 
+
+  + Free convection (heating)
+  + Forced convection (wind)
+
+* **Night**: Eddies are small
+
+  + Forced (wind)
+
+
+
+:::
+
+::: {.column width="50%"}
+
+
+![Traces of vertical wind near the same surface with same wind speed with and without surface heating.](images/Lecture14/18_2.png)
+
+
+:::
+
+::::
+
+
+## Turbulence & Air Temperatures
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* Nearest the ground with both small and large eddies
+* At greater heights only the buoyant plumes remain (large eddies). 
+  + The intermittent convection ‘plumes’ can be traced as they move upward
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+![](images/Lecture14/19_1.png)
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+See eddies expressed in the temperature record – warm air coming up from the surface and cold air coming from aloft
+
+Just the large eddies as we move up.
+
+Can measure heat flux
+
+:::
+
+
+
+
+## Reynolds Decomposition
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+
+Turbulent properties appear chaotic, but can be analyzed by deconstructing them into two parts: 
+
+* The time mean (e.g., $\bar{a}$)
+* The instantaneous deviation from the mean (e.g., $a^{\prime}$)
+
+
+
+
+
+:::
+
+::: {.column width="50%"}
+
+This is called Reynolds’ decomposition
+
+{{< include ..\_Equations\Reynolds-Decomposition.qmd >}}
+
+
+![](images/Lecture14/20_2.png)
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+See fluctuations as eddies move by.
+
+:::
+
+
+
+
+
+## Convective transport 
+
+Eddies in a turbulent flow fulfill the same role as molecules do in molecular diffusion. 
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* Convection transports heat, mass and momentum as the eddies ‘jump’ up and down.
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+![](images/Lecture14/3_3.png)
+
+
+:::
+
+::::
+
+
+## Flux Gradient Method
+
+For sensible heat flux we can write: 
+
+{{< include ..\_Equations\Flux-Gradient-Method-Sensible-Heat.qmd >}}
+
+* $K$ is the eddy diffusivity (m<sup>2</sup> s<sup>-1</sup>) and $C_a$ is the heat capacity of dry air
+
+* Note the similarity to Fouriers Law!
+
+## Eddy Diffusivity
+
+$K$ varies as a function of the intensity of the turbulence and therefore varies
+
+* Wind speed > $K$ will increase as a function of wind speed
+* Stability > $K$ is greater for unstable conditions
+* Surface roughness
+  + All else equal $K$ will be higher for a rougher surface
+    - $K_{forest} > K_{water}$
+
+
+## Flux Gradient Method
+
+Similar equations can be written for the fluxes of H<sub>2</sub>O, CO<sub>2</sub>, etc.
+
+{{< include ..\_Equations\Flux-Gradient-Method-Generic.qmd >}}
+
+* Here; $F$ is the flux of some property ($f$), and $C^*$ is a "unit conversion constant" 
+* **Note**: @eq-Flux-Gradient-Method-Generic is for example only, you won't be asked to evaluate it
+  * You *will* be asked to evaluate @eq-Flux-Gradient-Method-Sensible-Heat
+
+
+
+
+## Measuring Sensible Heat Flux
+
+![](images/Lecture14/5_2.png)
+
+
+
+## Test your knowledge
+
+What is the direction of the sensible heat flux density $H_s$? 
+
+:::: {.columns}
+
+::: {.column width="45%"}
+
+
+![](images/Lecture14/6_3.png)
+
+:::
+
+::: {.column width="55%"}
+
+
+![](images/Lecture14/6_4.png)
+
+
+:::
+
+::::
+
+
+
+## Example Calculation 
+
+Assume $K$ = 0.25 m<sup>2</sup> s<sup>-1</sup> and $C_a$ = 1200 J m<sup>-3</sup> K<sup>-1</sup>, what is H?
+
+```{R}
+T1 = 24 #C
+T2 = 22 #C
+z1 = 0.1 #C
+z2 = 2.1 #C
+K = 0.25 #m2 s-1
+C_a = 1200 #J m-3 K-1
+H = -K*C_a*(T2-T1)/(z2-z1)
+```
+
+:::: {.columns}
+
+::: {.column width="45%"}
+
+![](images/Lecture14/6_3.png)
+
+
+:::
+
+::: {.column width="55%"}
+
+$H_S = -K C_a \frac{T_2 - T_1}{z_2 - z_1}$
+
+* A `r H` W m<sup>-2</sup>
+* B `r -H` W m<sup>-2</sup>
+* C `r H*2` W m<sup>-2</sup>
+* D `r H/2` W m<sup>-2</sup>
+* E `r -H/2` W m<sup>-2</sup>
+
+:::
+
+::::
+
+
+## Example Calculation 
+
+Assume $K$ = 0.25 m<sup>2</sup> s<sup>-1</sup> and $C_a$ = 1200 J m<sup>-3</sup> K<sup>-1</sup>, what is $H_S$?
+
+:::: {.columns}
+
+::: {.column width="45%"}
+
+![](images/Lecture14/6_3.png)
+
+
+:::
+
+::: {.column width="55%"}
+
+$H_S = -K C_a \frac{T_2 - T_1}{z_2 - z_1}$
+
+```{R}
+#| echo: True
+T1 = 24 #C
+T2 = 22 #C
+z1 = 0.1 #C
+z2 = 2.1 #C
+K = 0.25 #m2 s-1
+C_a = 1200 #J m-3 K-1
+H = -K*C_a*(T2-T1)/(z2-z1)
+```
+
+* A `r H` W m<sup>-2</sup>
+
+:::
+
+::::
+
+
+
+## Stable vs Unstable
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+In which condition do you think K is generally higher? 
+
+
+* A Stable
+* B Unstable
+
+
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+![](images/Lecture14/18_2.png)
+
+
+:::
+
+::::
+
+
+
+## Effect of Surface Roughness
+
+
+Assume high wind speed and little heating. Which landscape do you think has the highest $K$ (at 20m above ground)? 
+
+
+![](images/Lecture14/10_2.png)
+
+
+
+
+
+## Convective Transport 
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* Transport is accomplished because each eddy has a vertical velocity ($w$) and a concentrations ($c$)
+
+  + $w$ wets the rate and direction of transport of various atmospheric properties ($T$, $\rho_v$, etc.)
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+![](images/Lecture14/11_2.png)
+
+
+:::
+
+::::
+
+
+
+## Convective Transport
+
+The instantaneous flux density is the product of $w^{\prime}$ and $c^{\prime}$. 
+
+* The average flux density is found by counting all the instantaneous products (w’ and c’) summing them, and averaging over the time period: 
+
+![](images/Lecture14/12_3.png)
+
+
+## Reynolds Notation {.smaller}
+
+
+A flux density is the average of all the instantaneous products of the vertical speeds of the eddies and the properties they carry:  
+
+
+{{< include ..\_Equations\Flux.qmd >}}
+
+* $w^{\prime}$ and $c^{\prime}$ are the instantaneous vertical wind velocity and concentration of an entity 
+  + The concentrations must be measured within about 30 cm of where w is measured
+
+* These multiplications must be made typically 20 times each second and averaged over larger time intervals (usually 30 minutes). 
+  + This means we must do 36,000 multiplications per 30 minutes!
+
+
+
+## Eddy Covariance Method
+
+This is called the eddy covariance method because the expression on the right @eq-Flux is called the covariance of $w^{\prime}$ and $c^{\prime}$
+
+
+* For the case of sensible heat flux density we write:
+
+{{< include ..\_Equations\Flux-Sensible-Heat.qmd >}}
+
+* Where $C_a$ is the heat capacity of air (1200 J m<sup>-3</sup> K<sup>-1</sup>)
+
+
+
+## Eddy Covariance Systems 
+
+
+![](images/Lecture14/18_1.png)
+
+
+
+## Example - Sensible heat flux density
+
+
+![](images/Lecture14/17_3.png){width="85%"}
+
+
+## Latent Heat Flux Density
+
+For many ecosystems, with a sufficient moisture supply latent heat flux $H_L$ will exceed sensible heat flux $H_S$.
+
+::::{.columns}
+:::{column width="50%"}
+
+* $H_L$ is equivalent evapotranspiration from the ecosystem (when $H_L > 0$ W m<sup>-2</sup>):
+  * Evaporation (from surfaces) + transpiration (from plants)
+
+:::
+
+:::{column width="50%"}
+
+![](../Assignments/images/EB_Plot.jpg){width="85%"}
+
+:::
+::::
+
+## Take home points {.smaller}
+
+
+* Measurement of convective exchange is more difficult compared to conduction / diffusion.
+* Fluid flow can be laminar or turbulent.
+* Eddies are coherent parts of the flow that show homogeneous properties.
+* Mechanical and thermal convection create eddies (turbulence).
+* We can use Reynold’s notation to separate a signal into a turbulent and a mean part.
+* Direct measurement using eddy covariance method is possible - but requires sophisticated and expensive instrumentation and more tedious data analysis.

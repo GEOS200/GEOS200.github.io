@@ -1,0 +1,670 @@
+---
+format:
+  revealjs:
+    theme: default
+title: Radiation Budget of Planet Earth
+subtitle: The balance of radiative inputs and outputs
+---
+
+{{< include _imports.qmd >}}
+
+
+
+---
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+![Photo from Galileo of the Earth-Moon system in 1992 (NASA)](images/Lecture7/2_2.png)
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+![Photo taken from Apollo 8 astronauts as they orbited the Moon. (Photo: NASA)](images/Lecture7/1_0.png)
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+
+
+:::
+
+
+
+
+## Learning Objectives
+
+* Because radiation is the only transfer mechanism between our planet and the Sun / Space we can calculate the theoretical radiation budget of Planet Earth.
+* Know how to estimate the expected ‘temperature’ of our planet based on our calculation.
+* Understand how the presence of the atmosphere affects the temperature on our planet.
+
+
+## Review ‘Short-wave’ vs. ‘Long-wave’
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+Short-wave: $\lambda <=3 \mu m$
+
+* At 5800 K: $\lambda$ max is 0.50 $\mu m$
+
+Long-wave: $\lambda >3 \mu m$
+
+* At 288 K: $\lambda$ max is 10.35 $\mu m$ 
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+![](../Assignments/images/Relative_Spectral_Curves.jpg)
+
+
+:::
+
+::::
+
+
+
+## What is the solar constant $I_0$? (iClicker)
+
+
+* A The average flux density leaving Sun’s surface
+* B The average flux density reaching the Earth’s surface
+* C The average flux density reaching the Earth’s orbit perpendicular to the beam
+* D The average flux density reaching the Earth’s orbit averaged over the sphere of the planet
+
+
+::: {.notes}
+
+Answer is C
+
+:::
+
+## Partitioning the Solar Constant 
+
+
+$I_0 \approx$ 1361 W m<sup>-2</sup>.
+
+![](images/Lecture7/Partition.png)
+
+## Equilibrium
+
+Earth absorbs incoming $SW$ from the Sun
+
+Earth emits $LW$ to Space
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+* These two fluxes can be considered in equilibrium. Why?
+  * $F_{in}$ = Short-wave
+  * $F_{out}$ = Long-wave
+
+
+:::
+
+::: {.column width="40%"}
+
+![](images/Lecture7/5_2.png)
+
+
+:::
+
+::::
+
+
+
+## Planetary Albedo
+
+Not all $SW$ that reaches a planet from sun is absorbed, a fraction is reflected back to Space. 
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+* Planetary albedo $\alpha$: the % of $SW$ reflected back to Space
+  + $\alpha$ is mainly controlled by:
+    - Cloud type/cove
+    - Extent of ice and snow
+  + Earth’s $\alpha$ = 31%
+
+
+:::
+
+::: {.column width="40%"}
+
+
+
+
+![](images/Lecture7/6_3.png)
+
+
+:::
+
+::::
+
+
+
+## Planetary Absorption
+
+Transmission through Earth is impossible; $a = 1 - \alpha$ 
+
+:::: {.columns}
+
+::: {.column width="65%"}
+
+* Earth's Albedo: $\alpha \approx 31\%$
+  + Atmosphere: 22%
+    - Clouds, droplets, aerosols
+  + Surface: 9%
+* $a = 100\% - 31\% = 69\%$ 
+  + Atmosphere: 20% 
+  + Surface: 49%
+
+
+:::
+
+::: {.column width="35%"}
+
+
+
+
+![](images/Lecture7/8_2.png)
+
+
+:::
+
+::::
+
+
+
+## Planetary Absorption
+
+Recall the solar constant $I_0$: the radiant flux density at the top of the atmosphere perpendicular to the solar beam.
+
+
+:::: {.columns}
+
+::: {.column width="65%"}
+
+* $SW$ Flux into the Earth ($F_{in}$) in W is:
+
+{{< include ..\_Equations\Planetary-Absorption.qmd >}}
+
+* $I_0$ (W m<sup>-2</sup>) projected over Earth's silhouette area ($A^* = \pi r^{2}$) in m<sup>2</sup>
+  + Adjusted for $\alpha$
+
+
+
+
+:::
+
+::: {.column width="35%"}
+
+
+![](images/Lecture7/9_12.png)
+
+
+:::
+
+::::
+
+
+
+
+## Planetary Emission
+
+Planetary $LW$ emission ($F_{out}$) in W can be approximated as a function of temperature using Stefan-Boltzmann.
+
+
+:::: {.columns}
+
+::: {.column width="65%"}
+
+{{< include ..\_Equations\Planetary-Emission.qmd >}}
+
+* Average flux density ($I_{out}$) in W m<sup>-2</sup> times Earth’s surface area
+  + $\epsilon_{surface} \approx 0.95$
+  + $T \approx 288 K$
+
+
+:::
+
+::: {.column width="35%"}
+
+
+![](images/Lecture7/10_17.png)
+
+
+:::
+
+::::
+
+
+## Surface Emissivity
+
+![](images/Lecture7/Emissivity.jpg){width="80%"}
+
+![](images/Lecture7/ASTER-GED-Death-Valley-Color-Bar.png){width="50%"}
+
+
+## Simplified Energy Balance:
+
+Let us assume an equilibrium state, i.e. $F_{in} = F_{out}$
+
+{{< include ..\_Equations\Planetary-Energy-Balance.qmd >}}
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+* Outgoing $LW$ will balance out incoming $SW$
+
+
+:::
+
+::: {.column width="40%"}
+
+
+![](images/Lecture7/11_18.png)
+
+
+:::
+
+::::
+
+
+
+## Geometric Considerations
+
+Earth receives $SW$ only from ‘one side’; but emits $LW$ in all directions to space.
+
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+* $F_{in}$ is distributed over the silhouette area $A^*$ of Earth  
+
+* $F_{out}$ is from the whole surface area $A$ of Earth 
+  - *Note* $F_{out}$ is not constant across space
+
+
+
+
+
+
+:::
+
+::: {.column width="40%"}
+
+
+![](images/Lecture7/12_8.png)
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+average flux density 
+
+:::
+
+
+
+
+## Earth's Surface Temperature (iClicker)
+
+The area terms ($\pi R^2$) in @eq-Planetary-Energy-Balance cancel on both sides; leaving us with
+
+$(1-\alpha)I_0 = 4\epsilon\sigma_b T^4$
+
+
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+Rearranging to solve for T:
+
+$T = \sqrt[4]{\frac{(1-\alpha)I_0}{4\epsilon\sigma_b}}$
+
+
+```{R}
+#| echo: True
+
+I0 <- 1361 # W m-2
+alpha <- 0.31
+epsilon <- 0.95
+sigma <- 5.67e-8 # W m-2 K-4
+
+T = ((1-alpha)*I0/(4*epsilon*sigma))**.25
+
+```
+
+$T \approx$  `r round(T,digits=1)` K
+
+:::
+
+::: {.column width="40%"}
+
+Is this value realistic?
+
+* A - Yes
+
+* B - No (underestimate)
+
+* C - No (overestimate)
+
+:::
+
+::::
+
+
+::: {.notes}
+
+
+:::
+
+
+
+
+## Effect of an atmosphere
+
+```{R}
+
+T_s <- 15+273.15
+
+T_no_at <- T
+
+```
+
+Earth’s known average surface temperature is `r round(T_s-273.15,digits=1)` &deg; C. 
+
+* The previous calculation underestimates surface temperature because we have not incorporated the atmosphere i.e. the effects of greenhouse gases. 
+
+* Without an atmosphere it  would be  $T \approx$  `r round(T-273.15,digits=1)` &deg; C on Earth on average. 
+  + The effect of the atmosphere (natural greenhouse effect) must be worth $\approx$ `r round(T_s-T,digits=1)` K!
+
+
+## The ‘Greenhouse Effect’
+
+The atmosphere has an insulating effect on planet earth.  
+
+* The greenhouse gas effect limits the $\tau_{LW}$ through the atmosphere
+  - This effectively reduces Earth's $\epsilon_{LW}$
+  - But how?  Kirchhoff’s law states that $\epsilon_{\lambda} = a_{\lambda}$?
+* The $a_{LW}$ is re-emitted **in all directions**
+  - i.e., it is recycled 
+  - Loss of energy from the surface slowed
+
+
+## The ‘Greenhouse Effect’
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+The atmosphere is a selective absorber (and emitter) of radiation.
+
+* The transmission window allows some $LW$ through
+* Outside of that window, little $LW$ escapes!
+
+
+:::
+
+::: {.column width="50%"}
+
+![](images/Lecture3/13_0.png)
+
+
+:::
+
+::::
+
+
+
+## The Effective Emissivity
+
+Since we know the mean surface temperature of the earth, we can instead rearrange @eq-Planetary-Energy-Balance to solve for $\epsilon$:
+
+
+
+$\epsilon= \frac{(1-\alpha)I_0}{4\sigma_bT^4}$
+
+
+```{R}
+#| echo: True
+
+I0 <- 1361 # W m-2
+alpha <- 0.31
+T_s <- 15 # C
+sigma <- 5.67e-8 # W m-2 K-4
+
+T = T_s + 273.15
+
+epsilon = (1-alpha)*I0/(4*sigma*T**4)
+
+```
+
+The atmosphere reduces the global value of $\epsilon$ to $\approx$ `r round(epsilon,3)`
+
+
+## Radiative Output
+
+Since we now have a reasonable estimate of $\epsilon$, we estimate planetary emissions following @eq-Planetary-Emission.
+
+$F_{out} = AI_{out} = 4\pi R^{2}\epsilon\sigma_b T^4$
+
+
+```{R}
+#| echo: True
+
+I_out = epsilon*sigma*T**4
+
+R = 6378.1 # km
+R = R * 1000
+
+F_out = 4*pi*R**2*I_out
+
+```
+
+The average flux density of $LW$ at the top of Earth's atmosphere $I_{out} \approx$ `r round(I_out,1)` W m<sup>-2</sup>
+
+The average flux of $LW$ from Earth $F_{out} \approx$ `r round(F_out)` W
+
+
+## Radiative Output (iClicker)
+
+Our estimated value of $I_{out}$ (`r round(I_out,1)` W m<sup>-2</sup>) $\neq I_0$ (`r round(I0)` W m<sup>-2</sup>).  
+
+What accounts for the discrepancy?
+
+
+A - $I_0$ is distributed across Earth's silhouette area $A^*$; we need distribute $I_0$ across Earth's total surface area $A$
+
+B - A portion of $I_0$ is never absorbed by the Earth due to the planetary Albedo ($\alpha \approx 0.31$)
+
+C - Both A & B
+
+
+## Radiative Output
+
+If we account for both, we'll get the average flux density at the top of Earth's Atmosphere across the **Full** electromagnetic spectrum.
+
+* $\bar{I_0} = \frac{I_0}{4}$ = `r I0/4` W m<sup>-2</sup> 
+
+* $\bar{I_0}= \bar{I_0} \alpha + I_{out}$ = `r I0/4*alpha` W m<sup>-2</sup> + `r I_out`  W m<sup>-2</sup>
+
+
+## Important greenhouse gases {.smaller}
+
+
+```{r}
+#| label: tbl-18_2
+#| tbl-cap: Includes other trace gases (halocarbons, not shown)
+
+Data <- read.csv(file = 'Data/Lecture7/18_2_Table.csv',sep=',')
+
+kable(Data, col.names = gsub("[.]", " ", names(Data)))
+
+```
+
+
+
+## Test your knowledge (iClicker)
+
+What is the most important greenhouse gas contributing to the natural greenhouse effect on our planet?
+
+
+* A Ozone
+* B Carbon dioxide
+* C Methane
+* D Oxygen
+* E Water vapour
+
+
+
+
+## Test your knowledge
+
+What is the most important greenhouse gas contributing to the natural greenhouse effect on our planet?
+
+![](images/Lecture7/20_3.jpg)
+
+## A more Realistic Energy Balance
+
+![Magnitudes from Kiehl and Trenberth (1997, Bull. Am. Met. Soc.) in IPCC 2001.](images/Lecture7/MeanEnergyBalance.png)
+
+
+
+## There is no net gain or loss for Earth
+
+
+:::: {.columns}
+:::{.column width=50%}
+
+$SW$ input (100%) = $SW$ loss (31%) + $LW$ (69%):
+
+* $I_{0} = \bar{I_0} \alpha + I_{out}$
+
+:::
+::: {.column}
+
+![Magnitudes from Kiehl and Trenberth (1997, Bull. Am. Met. Soc.) in IPCC 2001.](images/Lecture7/MeanEnergyBalance.png)
+
+:::
+::::
+
+## Energy Balance of the Atmosphere
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* The Atmosphere appears to be in radiative deficit 
+  + Should be cooling
+  
+* The surface in radiative surplus 
+  + Should be warming
+
+* Why is this not happening?
+
+:::
+
+::: {.column width="50%"}
+
+![Magnitudes from Kiehl and Trenberth (1997, Bull. Am. Met. Soc.) in IPCC 2001.](images/Lecture7/MeanEnergyBalance.png)
+
+
+:::
+
+::::
+
+## Energy Balance of the Atmosphere
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* Earth’s surplus is convected by sensible and latent heat flux into the Atmosphere
+  + Offsets the radiative imbalance, 
+  + i.e. the **whole** energy balance is involved not *just* radiation
+
+:::
+
+::: {.column width="50%"}
+
+![Magnitudes from Kiehl and Trenberth (1997, Bull. Am. Met. Soc.) in IPCC 2001.](images/Lecture7/MeanEnergyBalance.png)
+
+
+:::
+
+::::
+
+
+
+## Latent Heat Flux (iClicker)
+
+
+How is a latent heat flux into the Atmosphere realized?
+
+* A - Water is vaporized  by radiation at the surface and condenses in clouds - there it warms up air.
+* B - Radiation absorption at surface warms up air near surface - warm air rises and transports extra heat to higher layers of atmosphere.
+* C - Rain releases its geopotential energy as raindrops splash at the surface - they warm up the surface more than the atmosphere.
+
+
+::: {.notes}
+
+Answer is A
+
+:::
+
+
+
+
+## Take home points
+
+
+:::: {.columns}
+
+::: {.column width="100%"}
+
+* The planet is using (absorbing) only 69% of the solar radiation received. The planetary albedo is 31%.
+* Without atmosphere it would be  `r T_no_at-273.5`$&deg; C on Earth on average. The natural greenhouse effect is worth `r round(T_no_at-T,digits=1)` K.
+* The atmosphere is in a radiative deficit and the Planet’s surface shows a radiative surplus. Sensible and latent heat fluxes offset the radiative imbalance, i.e. transport energy from the surface into the atmosphere.
+
+
+:::
+
+::: {.column width="0%"}
+
+
+
+:::
+
+::::

@@ -1,0 +1,775 @@
+---
+format:
+  revealjs:
+    theme: default
+title: Winds and global circulation
+---
+
+{{< include _imports.qmd >}}
+
+
+
+## Winds and global circulation
+
+
+![A snapshot of METEOSAT shows regions of the Earth with substantial cloud cover and other regions with clear skies (Photo: ESA)](images/Lecture16/1_0.png)
+
+
+## Learning Objectives
+
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+* Explain what causes wind
+* Describe the forces that initiate and modify winds
+* Explain what causes certain regions of our planet to be dry and cloudless while others are wet and cloudy
+
+
+:::
+
+::: {.column width="40%"}
+
+
+
+
+![](images/Lecture16/2_4.jpg)
+
+
+:::
+
+::::
+
+
+
+## Why does the wind blow?
+
+![](images/Lecture16/Windmill.gif)
+
+## Why does the wind blow?
+
+Three main factors affect the horizontal motion of the air:
+
+1.  Pressure gradient force: drives flow
+2.  Coriolis effect: "deflects" flow
+3.  Friction: slows flow
+
+The velocity (speed and direction) of the wind at any time is the result of these three vector forces.
+
+
+## Atmospheric Pressure $P_a$
+
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+* Recall: $P_a$ decreases exponentially with height
+  + $P_a \approx$ Weight of the air
+* Following the ideal gas law, $P_a$ is a function of temperature and density
+
+{{< include ../_Equations/Ideal-Gas-Law.qmd >}}
+
+
+:::
+
+::: {.column width="40%"}
+
+
+
+
+![](images/Lecture16/PA_Height.png)
+
+
+:::
+
+::::
+
+
+## Atmospheric Pressure (iClicker)
+
+What happens if we warm up a column of air?  Assume there is **no** horizontal flow.
+
+:::: {.columns}
+
+::: {.column width="70%"}
+
+* A The air contracts, the column shrinks
+* B The air expands, the column stretches
+* C The column does not change
+
+
+:::
+
+::: {.column width="30%"}
+
+
+
+![](images/Lecture16/7_2.png)
+
+
+:::
+
+::::
+
+
+## Atmospheric Pressure (iClicker)
+
+
+:::: {.columns}
+
+::: {.column width="70%"}
+
+
+In this scenario the column expands:
+
+* $rho$ decreases
+* $P_a$ (at the surface) remains the same 
+  + Mass of air above surface does not change
+
+
+:::
+
+::: {.column width="30%"}
+
+
+
+![](images/Lecture16/8_7.png)
+
+
+:::
+
+::::
+
+
+## Atmospheric Pressure $P_a$
+
+
+$P_a$ is not uniform across the Earth's surface.
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* High (H): areas with relatively high $P_a$ at sea level
+* Low (L): areas with relatively low $P_a$ at sea level
+* Lines of equal pressure on a map are called isobars.
+
+:::
+
+::: {.column width="50%"}
+
+
+![Surface pressure map: USA](images/Lecture16/AirPressure_USA.gif)
+
+
+:::
+
+::::
+
+
+## Atmospheric Pressure $P_a$
+
+
+$P_a$ is not uniform across the Earth's surface.
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* High (H): areas with relatively high $P_a$ at sea level
+* Low (L): areas with relatively low $P_a$ at sea level
+* Lines of equal pressure on a map are called isobars.
+
+:::
+
+::: {.column width="50%"}
+
+
+![Surface pressure map: CA](images/Lecture16/AirPressure_CA.gif)
+
+
+:::
+
+::::
+
+
+## Pressure Gradient Force
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+
+Air flows from higher to lower pressure.  This is the main driving force for winds.
+
+* Speed set by spacing of the isobars 
+  + i.e. the pressure gradient 
+  + Acts at right angles to the isobars.
+  
+:::
+
+::: {.column width="40%"}
+
+
+![](images/Lecture16/9_3.png)
+
+
+:::
+
+::::
+
+
+
+## Creating a Pressure Gradient
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+What happens if we warm up the middle column of air?
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+![](images/Lecture16/10_2.png)
+
+
+:::
+
+::::
+
+
+
+## Creating a Pressure Gradient
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+What happens if we warm up the middle column of air?
+
+* The warmed column expands creating a pressure gradient **aloft**
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+![](images/Lecture16/11_2.png)
+
+
+:::
+
+::::
+
+
+## Creating a Pressure Gradient
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+Winds redistribute mass to equalize the gradient
+
+* **Divergence** of mass aloft will *reduce* $P_a$ at surface
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+![](images/Lecture16/12_2.png)
+
+
+:::
+
+::::
+
+
+
+## Creating a Pressure Gradient (iClicker)
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+Which air column experiences the lower pressure at sea level? 
+
+:::
+
+::: {.column width="50%"}
+
+
+![](images/Lecture16/13_2.png)
+
+
+:::
+
+::::
+
+
+## Thermal Lows
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* Heating causes expansion
+* Divergence aloft reduces surface pressure
+* This is a **thermal low**
+* Creates a pressure gradient at the surface
+
+:::
+
+::: {.column width="50%"}
+
+
+![](images/Lecture16/15_1.png)
+
+
+:::
+
+::::
+
+
+## Thermal Lows
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* Common in equatorial regions and over large continents during summer
+  + Responsible for trade winds and monsoons
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+![](images/Lecture16/16_3.jpg)
+
+
+:::
+
+::::
+
+
+
+
+
+## Creating a Pressure Gradient
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+What happens if we cool down the middle column of air?
+
+:::
+
+::: {.column width="50%"}
+
+
+![](images/Lecture16/20_3.png)
+
+
+:::
+
+::::
+
+
+
+## Creating a Pressure Gradient
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+What happens if we cool down the middle column of air?
+
+* The cooled column compresses creating a pressure gradient **aloft**
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+
+![](images/Lecture16/21_3.png)
+
+
+:::
+
+::::
+
+
+
+## Creating a Pressure Gradient (iClicker)
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+Which air column experiences the higher pressure at sea level? 
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+![](images/Lecture16/22_3.png)
+
+
+:::
+
+::::
+
+
+
+## Thermal Highs
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* Cooling causes compression
+* Convergence aloft increases surface pressure
+* This is a **thermal high**
+* Creates a pressure gradient at the surface
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+![](images/Lecture16/24_1.png)
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+
+
+:::
+
+
+
+
+## Thermal Highs
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* Common in polar regions and over large continents during winter
+  + Typically located over Siberia and Canada in winter
+  + Responsible for persistent windy conditions in the prairies
+
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+![](images/Lecture16/25_3.jpg)
+
+
+:::
+
+::::
+
+
+## Semi-Permanent Highs and Lows
+
+Semi-permanent High and Low pressure systems occur in preferred locations (e.g. Hawaiian, Bermuda, Siberian Highs; Aleutian, Icelandic Lows)
+
+* Patterns are clearer in the Southern Hemisphere because the distribution of land-sea is simple
+* Pay-to-day these systems tend to move continuously (in the mid-latitudes typically from west to east)
+
+
+## Coriolis Effect
+
+An *apparent force* due to the rotation of Earth.
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* Rotation of the Earth's around its axis "deflects" winds
+  + Primary reason flow is **not** parallel to isobars
+
+
+:::
+
+::: {.column width="50%"}
+
+
+![Not an actual example of the Coriolis effect, this is just a funny .gif](images/Lecture16/centrifuge.gif)
+
+
+:::
+
+::::
+
+
+## Coriolis Effect
+
+An *apparent force* due to the rotation and curvature of Earth.
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+![To an observer **on** platform B, the ball appears to be deflected.  To an observer **not on** platform B, the ball goes straight while the platform rotates.](images/Lecture16/26_0.png)
+
+:::
+
+::: {.column width="40%"}
+
+
+![](images/Coriolis.gif)
+
+
+:::
+
+::::
+
+
+
+## Coriolis Effect
+
+
+A function of wind speed ($V$), Earth's rotational velocity ($\Omega$), and latitude ($\phi$):
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+{{< include ../_Equations/Coriolis-Effect.qmd >}}
+
+* Deflects flow to the right (left) in the N (S) Hemisphere
+* Strongest at the poles, zero at the equator
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+![](images/Lecture16/27_1.png)
+
+
+
+
+:::
+
+::::
+
+## Coriolis Effect (iClicker)
+
+All else equal, at which Latitude would the Coriolis effect be the strongest?
+
+* A 10 $^\circ$ N
+* B 20 $^\circ$ S
+* C 50 $^\circ$ N
+* D 65 $^\circ$ S
+
+
+## Heating on a global scale
+
+Lower latitudes show a radiative surplus, the higher latitudes show a radiative deficit. Global wind system is driven by unequal heating of the Earth by the Sun.
+
+
+
+![](images/Lecture16/28_3.gif)
+
+
+## The Three-Cell Model
+
+Poleward transport of energy aims to "correct" the imbalance. Winds are deflected by Coriolis force, resulting in trade winds, westerlies, and polar easterlies.
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+![Circulation with no rotation](images/Lecture16/29_3.png){width="80%"}
+
+
+:::
+
+::: {.column width="50%"}
+
+
+![Circulation with rotation](images/Lecture16/29_2.png){width="80%"}
+
+
+:::
+
+::::
+
+
+
+## The Three-Cell Model
+
+
+The three cells form bands of uplift (cloudy, stormy, wet) around Equator (ITCZ = Inter Tropical Convergence Zone) and Polar front and subsidence (cloud-free, dry) in Sub-tropical desert belt and Poles. 
+
+
+
+
+![](images/Lecture16/30_7.jpg)
+
+
+## The Three-Cell Model
+
+The three-cell model describes "average" global circulation patterns, but in reality there are seasonal and longitudinal variations due to the change in the Sun’s position and the ocean-land distribution.
+
+
+![](images/Lecture16/30_7.jpg)
+
+
+
+## Coriolis Effect
+
+
+As winds move across a pressure gradient, they are deflected by the Coriolis effect, causing them to flow parallel to the pressure gradient.
+
+![](images/Lecture16/Geostrophic.gif)
+
+
+
+## Frictional force
+
+
+* Friction (aka drag) of air over the Earth’s surface slows the wind.
+  + Effect is greatest near the surface
+* Since the Coriolis is a function of wind speed:
+  + Coriolis force is weaker near the surface
+  + Deflection due to Coriolis force is greater aloft
+
+
+
+
+## Effects of Friction on Wind
+
+
+![An idealized example showing the effects of pressure gradient (Fp), Coriolis (Fc) and friction (Ff) forces in the "free atmosphere" and near the surface.](images/Lecture16/38_1.png)
+
+
+
+
+
+## Winds in Pressure Systems
+
+![Shown here for the the Northern hemisphere. In the Southern hemisphere, rotation is opposite.](images/Lecture16/39_4.png)
+
+
+
+## Cyclones
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+
+* A cyclone is a large area which experiences rotating winds, which circle around the lowest pressure 
+* Winds circle in anti-clockwise direction on the northern hemisphere, and in clockwise direction on the Southern hemisphere
+
+
+
+:::
+
+::: {.column width="50%"}
+
+![Typhoon over Pacific Ocean](images/Typhoon.jpg)
+
+:::
+
+::::
+
+
+
+## Anticyclones
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* An anticyclone is a large area which experiences rotating winds, circling around the region with high pressure. 
+* Winds circle in clockwise direction on the northern hemisphere, and in anti-clockwise direction on the southern hemisphere.
+
+
+:::
+
+::: {.column width="50%"}
+
+
+![An high pressure south of Australia](images/Lecture16/36_4.jpg)
+
+
+:::
+
+::::
+
+
+## Explore for Yourself
+
+
+::: {#fig-map}
+
+![](images/Lecture16/Windy.png)
+
+[Windy.com](https://www.windy.com/-Show---add-more-layers/overlays?49.822,-122.432,5,i:pressure) is a fun tool you can use to explore for yourself.
+
+:::
+
+
+## Take home points
+
+* Winds are caused by the pressure gradient force which is equalizing horizontal pressure differences.
+* Once in motion, the Coriolis force and friction act, causing deflection and slowing of the wind. 
+* On a global scale the energy transport is deflected, creating three distinct cells (Hadley, Ferrel and Polar cell) in each hemisphere.
+* On a smaller scale it creates thermal lows and highs (cyclones and anticyclones).
+
+

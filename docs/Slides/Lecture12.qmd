@@ -1,0 +1,970 @@
+---
+format:
+  revealjs:
+    theme: default
+title: Profile of the Atmosphere, Lapse rates, and Stability
+subtitle: How is the atmosphere organized and how do key properties of the atmosphere vary through out it
+---
+
+{{< include _imports.qmd >}}
+
+
+
+
+## Learning Objectives
+
+* Describe how temperature changed over time in the atmosphere.
+* Explain how temperature changes with height in the atmosphere.
+* Be able to compare the difference between the ELR and the process lapse rate to distinguish between unstable, neutral or stable atmospheric stratifications 
+* Give examples of how the stratification (stability) of the atmosphere controls mixing and dispersion.
+
+## Structure of the Atmosphere
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+Earth's atmosphere is thousands of kilometers thick.
+
+* But almost all of it's mass (>75%) is in the troposphere
+  + Narrow zone closest to the surface
+* Exosphere is a broad transition zone to the vacuum of space
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+![](images/Layers.png)
+
+:::
+
+::::
+
+
+## Structure of the Atmosphere
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+* Thermosphere: absorbs high energy X-rays & UV rays
+* Mesosphere: dense enough to burn up meteors
+* Stratosphere: contains O<sub>3</sub> and protects us from UV rays
+* Troposphere: where life occurs
+
+
+:::
+
+::: {.column width="50%"}
+
+![](images/Atmosphere-Temperature-Vertical.png)
+
+:::
+
+::::
+
+
+## Structure of the Atmosphere
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* We are primarily concerned with processes that occur in the troposphere
+* The top of the troposphere is demarcated by a temperature inversion
+  + Known as the tropopause
+
+
+:::
+
+::: {.column width="50%"}
+
+![](images/Atmosphere-Temperature-Vertical.png)
+
+:::
+
+::::
+
+## Mass of the Atmosphere
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+`r SLP <- 101.3`
+
+`r options(scipen=999)`
+
+`r kg_cm <- round(SLP*0.0101972,digits=0)`
+
+There are $\approx$ `r kg_cm` kg of air above **every** cm<sup>2</sup> of Earth's surface
+
+* This mass exerts pressure on the Earth's surface, and everything on it
+  + We are adapted to it, so we don't feel it
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+![](images/Layers.png)
+
+:::
+
+::::
+
+## Mass of the Atmosphere (*Corrected*)
+
+If there are $\approx$ `r kg_cm` kg of air above every cm<sup>2</sup> of Earth's surface, what is the mass of air above 1 m<sup>-2</sup>?
+
+* A `r kg_cm*1e2`
+* B `r kg_cm*1e4`
+* C `r kg_cm*4`
+* D `r kg_cm*2`
+
+
+## Air Pressure, Density & Temperature
+
+Air pressure, density, & temperature effected by the the mass of the atmosphere.
+
+![](../Slides/images/Profile.png)
+
+
+## Ideal Gas Law
+
+Describes the state of a gas as a function of pressure ($P$), volume ($V$), temperature ($T$) in Kelvin, the amount of the gas ($n$) in moles, and the ideal gas constant ($R$).  
+
+{{< include ../_Equations/Ideal-Gas-Law.qmd >}}
+
+* E.g., with observations of pressure and temperature, you can calculate the density of the atmosphere.
+
+
+
+## Atmospheric Temperatures
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+Temperature (generally) decreases with height in the troposphere due to the decrease in air pressure. 
+
+* Explained by the ideal gas law
+
+{{< include ../_Equations/Ideal-Gas-Law-Temperature.qmd >}}
+
+
+:::
+
+::: {.column width="50%"}
+
+![](images/Atmosphere-Temperature-Vertical.png)
+
+:::
+
+::::
+
+
+
+## Surface Temperatures (iClicker)
+
+On a sunny day (without clouds) what when do we usually observe the highest (maximum) temperature?
+
+* A Sunrise
+* B Mid-afternoon
+* C At sunset
+* D Midnight
+
+
+::: {.notes}
+
+E
+
+:::
+
+
+
+
+
+
+## Surface Temperatures
+
+
+
+```{R}
+#| label: fig-Temperature
+#| fig-cap: "Temperature and net radiation from the Burns Bog Flux Station over October 2023."
+
+
+BBData <- read.csv(file = '../Assignments/data/BB_Data_For_GEOS200.csv',sep=',')
+
+BBData[['TimeStamp']] <- as.POSIXct(BBData[['TIMESTAMP']],format = "%Y-%m-%d %H%M")
+BBData[['NetRadiation']] <- BBData[['SW_IN_1_1_1']]+BBData[['LW_IN_1_1_1']]-(BBData[['SW_OUT_1_1_1']]+BBData[['LW_OUT_1_1_1']])
+
+Day <- drop_na(BBData[BBData$TimeStamp >='2023-10-01' & BBData$TimeStamp <='2023-10-31',])
+
+
+fig <- plot_ly(data = Day)
+Yl <- list(-100, 800)
+
+
+fig <- fig %>% add_trace(x = ~TimeStamp, y = ~TA_1_1_1,  name = "T<sub>a</sub>",
+        mode = "lines", type = "scatter",line = list(color = '', width = 1.5))
+
+fig <- fig %>% add_trace(x = ~TimeStamp, y = ~TS_1,  name = "T<sub>s</sub>", 
+        mode = "lines", type = "scatter",line = list(color = '#cc9425', width = 1.5, dash="dashdot"))
+
+fig <- fig %>% add_trace(x = ~TimeStamp, y = ~NetRadiation,  name = "R<sub>n</sub>", yaxis = "y2",
+        mode = "lines", type = "scatter",line = list(color = 'black', width = 1.5, dash="dashdot"))
+
+fig <- fig %>% layout(
+  yaxis = list(
+    title = "deg C"
+  ),
+  yaxis2 = list(
+    title = "W m<sup>-2<sup>",
+    overlaying = "y",
+    side = "right"
+  ),
+  xaxis = list(
+    title = "Date"
+  ),
+  margin = Margin_m,
+  legend = list(x = 0.05, y = 1, orientation='h')
+)
+
+fig
+
+```
+
+
+## Atmospheric Temperatures
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+Daily temperature variability in the upper atmosphere is much lower than at the surface.
+
+* Changes at the surface can alter temperature gradients relative to upper levels of the atmosphere
+  + Can lead to convection (mixing)
+
+:::
+
+::: {.column width="50%"}
+
+![](images/UpperAirTemps.png)
+
+:::
+
+::::
+
+## Environmental Laps Rate (ELR)
+
+The observed rate of change of $T$ with height:
+
+{{< include ../_Equations/Environmental-Lapse-Rate.qmd >}}  
+
+
+
+## Environmental Laps Rate (ELR) {.smaller}
+
+::::{.columns}
+
+:::{.column width="60%"}
+
+![Atmospheric temperature (T) profile measured at Port Hardy, BC 12:00 UTC October 29th, 2023](../Assignments/images/Port_Hardy_Radiosonde_Data_Temp.png){#fig-Temperature}
+
+:::
+
+
+:::{.column width="40%"}
+
+
+```{R}
+#| label: tbl-ELR
+#| tbl-cap: The Environmental Lapse Rate (ELR) corresponding to @fig-Temperature
+Table <- read.csv(file = "../Assignments/www/ELR_ex.csv",sep=',',check.names = FALSE)
+
+kable(Table, col.names = names(Table))
+
+```
+
+:::
+
+::::
+
+
+## Environmental Lapse Rates (ELR)
+
+The ELR can vary drastically by location, time of day, and season.
+
+![](images/T_Profiles.png)
+
+
+
+## Convection
+
+![Cumulus clouds form when warm air is from the surface is convected upwards and cools to its $T_d$](images/Convection.gif){width="80%"}
+
+
+## Convection (iClicker)
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+What time of day are cumulus clouds most likely to form?
+
+* A Sunrise
+* B Mid-afternoon
+* C At sunset
+* D Midnight
+
+:::
+
+::: {.column width="50%"}
+
+![Cumulus clouds form when warm air is from the surface is convected upwards and cools to its $T_d$](images/Convection.gif){width="80%"}
+
+:::
+
+::::
+
+## Positive Buoyancy
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+Hot air balloons rise, by heating the air inside the balloon 
+
+* The becomes less dense than its surroundings, giving it positive buoyancy
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+![](images/Lecture12/HotAirBalloon.png)
+
+
+:::
+
+::::
+
+
+## Negative Buoyancy
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+When air cools relative to it's surroundings, it will sink.
+
+* Negative buoyancy causes cold air to flow downhill over mountains like water
+
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+![Photo: A. Christen](images/Lecture12/13_2.jpg)
+
+
+:::
+
+::::
+
+
+
+## Anabatic vs. Katabatic
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+**Anabatic**: upward flow along a slope due to warming of air at the surface
+
+
+**Katabatic**: downward flow along a slope due to cooling of air at the surface
+
+* Responsible for "Arctic Outflow" events.  Locally known as a squamish
+
+
+
+:::
+
+::: {.column width="50%"}
+
+![](images/Lecture12/MountainWinds.jpg)
+
+
+:::
+
+::::
+
+
+
+
+## Atmospheric Stability
+
+Buoyancy is mainly due to $T$ differences, but $\rho_v$ differences can also affect buoyancy.
+
+**Stability** is relative tendency for parcels to move vertically due to the environmental $T$ profile (layering and the rate at which T changes with height, i.e. lapse rate).
+
+*   Stable -  vertical motion is suppressed
+*   Neutral -  there is no relative vertical motion tendency
+*   Unstable -  vertical motion is promoted or enhanced
+
+
+## Adiabatic Processes
+
+Even though the heat content of the parcel is conserved, $T$ changes because the air pressure ($P$) decreases with height and the volume $V$ of the parcel changes.  
+
+:::: {.columns}
+
+::: {.column width="80%"}
+
+* On ascent, $P$ decreases, the parcel expands and the work done causes the parcel $T$ to drop. 
+  + The reverse is true if the parcel sinks
+    - It compresses and warms. 
+  + See @eq-Ideal-Gas-Law-Temperature  
+
+
+:::
+
+::: {.column width="20%"}
+
+
+![](images/Lecture12/18_2.png){width="80%"}
+
+
+:::
+
+::::
+
+## Adiabatic Processes – key points
+
+
+* Temperature changes are internal to the rising and descending air parcel
+* Occurs without heat being added or withdrawn from the surrounding environment
+* Changes in pressure cause a change in temperature
+* Parcels moving vertically through the Atmosphere do not mix with the surrounding air very effectively 
+  - The properties of the parcel are conserved during ascent/descent 
+
+
+
+
+## Test your knowledge (iClicker)
+
+As an air parcel rises it ______________ and its temperature _____________ adiabatically
+
+
+* Expands, warms
+* Expands, cools
+* Compresses, warms
+* Compresses, cools
+
+
+## Dry Adiabatic Lapse Rate
+
+
+The **dry adiabatic lapse rate (DALR)** is the rate of cooling/warming for a dry parcel of air that is rises/descends through the atmosphere.
+
+* Has a constant with a value of $\pm$ 0.01 K m<sup>-1</sup>.  
+  + Will be negative (cooling) if a parcel is being lifted upwards and be positive (warming) for a parcel that is descending
+
+
+## Saturated Adiabatic Lapse Rate
+
+The **saturated adiabatic lapse rate (SALR)** applies once a parcel of air reaches saturation. 
+
+* A saturated parcel cools as it rises but condensation occurs which releases latent heat and counteracts some of the cooling.  
+  + **Only** applies to cooling air, when air warms it will always do so at the DALR, because as soon as the air begins to warm, it will no longer be saturated.  
+
+
+## Saturated Adiabatic Lapse Rate
+
+::::{.columns}
+
+:::{.column width="50%"}
+
+The SALR is non-linear function of $T$ and $P$
+
++ $T$ varies as a function of $P$
++ The latent heat released by condensation varies with $T$
++ The amount of water that must condense also varies with $T$
+
+
+:::
+:::{.column width="50%"}
+
+![](../Assignments/images/SALR.png)
+
+:::
+::::
+
+## Lifting Condensation Level
+
+The **lifting condensation level (LCL)** is the height to which a parcel must be lifted for condensation to occur.
+
+::::{.columns}
+
+:::{.column width="60%"}
+
+ 
+* The transition between the DALR and the SALR
+* Corresponds to bottom of a cloud layer 
+
+:::
+:::{.column width="40%"}
+
+![](images/Lecture12/24_0.png)
+
+:::
+::::
+
+
+## Lifting Condensation Level
+
+You can identify the LCL using this equation:
+
+::::{.columns}
+
+:::{.column width="60%"}
+
+{{< include ../_Equations/Lifting-Condensation-Level.qmd >}}
+
+ 
+:::
+:::{.column width="40%"}
+
+![](images/Lecture12/24_0.png)
+
+:::
+::::
+
+
+
+
+
+## Air Parcel Stability
+
+
+:::: {.columns}
+
+::: {.column width="65%"}
+
+* Stable: if the parcel is displaced vertically, it will return to its original position
+* Unstable: if the parcel is displaced vertically, it will accelerate away from its original position in the direction of the initial displacement
+
+
+:::
+
+::: {.column width="35%"}
+
+
+
+
+![](images/Lecture12/29_2.jpg)
+
+
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+-How can we determine if an air parcel will move up or down and since this has implications for cloud formation & precipitation
+-But first let’s discuss stability
+
+:::
+
+
+
+
+## Assessing Stability
+
+
+:::: {.columns}
+
+::: {.column width="100%"}
+
+* To determine stability we compare the temperature of the air parcel to the temperature of the surrounding environment.
+* If an air parcel is warmer than its environment it will rise
+* If an air parcel is colder than its environment it will sink
+* You should also compare the process lapse rate to the environmental lapse rate (ELR) 
+
+
+:::
+
+
+
+::::
+
+
+::: {.notes}
+
+
+
+
+
+
+:::
+
+
+
+
+## Classifying Stability {.smaller}
+
+Stability is determined by comparing the Environmental Lapse Rate (ELR) to the Dry Adiabatic Lapse Rate (DALR = -0.01 K m<sup>-1</sup>) and the Saturated Adiabatic Lapse Rate (SALR; not constant but often assumed to be -0.005 K m<sup>-1</sup>).
+
+* The ELR is not constant.  It will vary by time of day, location, and height.
+
+```{R}
+#| label: tbl-Stability
+#| tbl-cap: Example of stability classifications.
+Table <- read.csv(file = "Data/Lecture12/Stability.csv",sep=',',check.names = FALSE)
+
+kable(Table, col.names = names(Table))
+
+```
+
+
+
+## Classifying Stability
+
+![](../Assignments/images/Stability.png)
+
+
+## Classifying Stability
+
+![](images/Lecture12/StabilityConditions.jpg)
+
+
+## Unstable
+
+The plume shape is because convection cause eddies, which look like ‘loops’.  These eddies cause mixing in the atmosphere..
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+![Typically found near the ground by day if strong heating, or if there is advection of a colder airmass aloft. Very good for dispersion and mixing, development of thermals and convective cloud (cumulus)](images/Lecture12/38_4.png)
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+![A looping plume in strongly unstable conditions (Photo: CSIRO)](images/Lecture12/38_1.jpg)
+
+
+
+:::
+
+::::
+
+
+## Unstable
+
+These conditions promote convection, which in certain cases can lead to the formation of thunderstorms
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+![](images/Convection.gif)
+
+
+:::
+
+::: {.column width="50%"}
+
+
+![](images/Lecture12/Thunderstorms.gif)
+
+
+:::
+
+::::
+
+
+
+## Stable
+
+
+Found near the ground at night if $R_n$ << 0 and little wind, when warm air moves over colder surfaces, or sinking of warm air aloft. Poor for dispersion and mixing.
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+![At night with weak winds there is little production of turbulence and the plume stays intact and undiluted for great distances ](images/Lecture12/43_5.png)
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+![Air pollution in stable conditions](images/Lecture12/44_7.jpg)
+
+:::
+::::
+
+
+## Stable
+
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+Stable conditions promote clear cloudless skies and suppress precipitation.
+
+* Common in coastal BC during the summer
+  + Pacific high pressure systems produce temperature inversions
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+![](images/Lecture12/Stable.jpg)
+
+
+
+
+:::
+
+::::
+
+
+
+## Neutral
+
+Typically found when there is little surface heating or cooling (overcast) or when strong winds thoroughly mix the air. Does not aid or restrict dispersion and mixing, plumes are conic and steadily occupy larger air volume.
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+
+![](images/Lecture12/47_3.png)
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+![](images/Lecture12/47_5.jpg)
+
+
+:::
+
+::::
+
+
+## Neutral
+
+Typically found when there is little surface heating or cooling (overcast) or when strong winds thoroughly mix the air. Does not aid or restrict dispersion and mixing.
+
+
+![](images/Lecture12/WindTunnle.gif)
+
+
+## Conditionally Unstable
+
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+When the ELR is between the DLAR and the SALR
+
+* Dry air that is lifted **will not** continue to rise under it's own power
+* Saturated air that is lifted **will** continue to rise under it's own power
+
+
+:::
+
+::: {.column width="50%"}
+
+
+![SALR aka the Moist Adiabatic Lapse Rate](images/Lecture12/48_2.jpg)
+
+
+:::
+
+::::
+
+
+## Conditionally Unstable
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+When the ELR is between the DLAR and the SALR
+
+* Dry air that is lifted **will not** continue to rise under it's own power
+* Saturated air that is lifted **will** continue to rise under it's own power
+
+
+:::
+
+::: {.column width="50%"}
+
+
+![SALR aka the Moist Adiabatic Lapse Rate](images/Lecture12/48_2.jpg)
+
+
+:::
+
+::::
+
+
+## Conditionally Unstable
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+These conditions can also produce thunderstorms
+
+* If a trigger is present to initiate lift
+  + e.g., a cold front can produce a squall line
+
+:::
+
+::: {.column width="50%"}
+
+![SALR aka the Moist Adiabatic Lapse Rate](images/Lecture12/squall_line.gif)
+
+:::
+
+::::
+
+
+
+## Summary: Comparing lapse rates
+
+
+* Unstable: ELR < DALR (-0.01 K m<sup>-1</sup>)
+* Stable: ELR > SALR ($\approx$ -0.005 K m <sup>-1</sup>)
+* Neutral: ELR = DALR (-0.01 K m)
+* Conditionally unstable = DALR (-0.01 K m<sup>-1</sup>) < ELR < SALR ($\approx$ -0.005 K m <sup>-1</sup>)
+  + By definition, Neutral is also conditionally unstable
+
+
+## Test your knowledge (iClicker)
+
+
+Which is an unstable situation?
+
+
+![](images/Lecture12/49_2.png)
+
+
+
+
+
+## Potential temperature
+
+To ‘remove’ the effects of pressure change with height we can remove the dry adiabatic lapse rate and calculate the potential temperature θ as: 
+
+{{< include ../_Equations/Potential-Temperature.qmd >}}
+
+
+
+* θ is the temperature the air would have it were brought to a reference air pressure (typically a 100 kPa, 1000 mb). This standardization of the temperature is the same as rotating all T profiles to the right by the slope of DALR.
+
+
+## Potential temperature profiles
+
+
+:::: {.columns}
+
+
+
+::: {.column width="100%"}
+
+
+
+
+![](images/Lecture12/53_1.png)
+
+
+:::
+
+::::
+
+
+## Take home points
+
+
+:::: {.columns}
+
+::: {.column width="100%"}
+
+* Times of maximum and minimum temperature at the surface occur when rates of energy input and output cross.
+  + Temperature changes in the upper atmosphere are muted and time-lagged
+* Temperature changes with height in the atmosphere - environmental lapse rate (ELR)
+* Parcels moving up or down change their temperature adiabatically - the process lapse rate (i.e., DALR or SALR)
+
+
+
+:::
+
+
+
+::::

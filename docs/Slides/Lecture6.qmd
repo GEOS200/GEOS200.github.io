@@ -1,0 +1,771 @@
+---
+format:
+  revealjs:
+    theme: default
+title: Long-wave Radiation
+subtitle: Shortwave radiation is absorbed by the Earth and it's atmosphere.  It remitted as Long-wave radiation.
+---
+
+{{< include _imports.qmd >}}
+
+
+
+## Long-wave radiation
+
+
+![Trees recorded in thermal infrared using a thermal scanner shown in false color](images/Lecture6/2_2.jpg)
+
+
+
+
+## Learning Objectives
+
+
+* Explain the role of Long-wave radiation in the climate system.
+* Described how absorption and emission are linked & understand Kirchhoff’s law of thermal radiation.
+* Explain how we can measure Long-wave radiation.
+
+
+## What is ‘Long-wave’ radiation?
+
+Objects emit radiation proportional to their temperature; adjusting for emittance as per the Stefan-Boltzmann equation for grey-bodies.
+
+:::: {.columns}
+
+::: {.column width="55%"}
+
+
+* Wavelength ($\lambda$) > 3 $\mu m$
+* Long-wave radiation $\approx$ thermal infrared radiation (TIR)
+* Exchanged between sky, surface and all surrounding objects
+
+
+:::
+
+::: {.column width="45%"}
+
+
+{{< include ../_Equations/Stefan-Boltzman-Law-Grey-Body.qmd >}}
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+
+
+:::
+
+## Review Short-wave vs. Long-wave
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+![Peak spectral output of the Sun and Earth compared on a log scale](../Assignments/images/Spectral_Curves.jpg)
+
+
+:::
+
+::: {.column width="50%"}
+
+![Peak spectral output of the Sun and Earth compared in natural units](../Assignments/images/Spectral_Curves_TrueScale.jpg)
+
+:::
+
+::::
+
+
+## Radiation Laws & Terminology
+
+
+* Planck’s Law: describes the full spectral output (spectra)
+* Wiens Law: gives the peak of the spectra
+* Stefan Boltzmann Law: gives the integral of the spectra
+* Beer’s Law: describes attenuation of radiation
+* Photosyntheically Active Radiation (PAR): $\lambda$ 0.4-0.7 $\mu$ m
+* Kirchhoff’s Law: relates emissivity to absorptivity
+
+
+## Short-wave vs Long-wave Imagery
+
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+![Urban environment with buildings and trees recorded in the visible part of the electromagnetic spectrum.](images/Lecture6/6_11.png){width="90%"}
+
+
+:::
+
+::: {.column width="50%"}
+
+
+![Same location, recorded using a thermal infrared (TIR) camera.  Dark colors = low TIR flux densities, light colors = high TIR flux densities.](images/Lecture6/6_12.png){width="90%"}
+
+
+:::
+
+::::
+
+
+
+## Kirchhoff’s Law
+
+
+Assuming no transmission the absorptivity of a body ($a_\lambda$) equals its emissivity ($\epsilon_{\lambda}$).
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+{{< include ../_Equations/Kirchhoffs-Law.qmd >}}  
+
+
+* A good absorber is a good emitter 
+* A poor absorber is a poor emitter
+* Wavelength specific relationship 
+
+
+:::
+
+::: {.column width="40%"}
+
+
+
+
+![](images/Lecture6/7_4.png)
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+Another Law to remember! It tells us that a particular wavelength, objects that absorb radiation well at that wavelength, are equally good emitters of radiation at that wavelength. 
+
+:::
+
+
+
+
+## Kirchhoff’s Law
+
+* Only applies if the wavelength considered is the same 
+  - Do not mix them together
+
+* Only relevant to long-wave exchange in climatology
+  - Earth-Atmosphere system is not hot enough to emit short-wave radiation
+
+* $a_{\lambda}$ and $\epsilon_{\lambda}$ are **ratios** (portions of a whole)
+
+{{< include ..\_Equations\Radiation-Balance.qmd >}}
+
+
+
+
+## Kirchhoff’s Law {.smaller}
+
+
+:::: {.columns}
+
+::: {.column width="67%"}
+
+The atmosphere is a selective absorber (and emitter) of long-wave radiation.
+
+* Aerosols and clouds are dominant when present
+* Most significant absorbing gases:
+  + H<sub>2</sub>O
+  + CO<sub>2</sub>
+  + O<sub>3</sub>
+  + O<sub>2</sub>
+  + N<sub>2</sub>O
+  + CH<sub>4</sub>
+
+
+:::
+
+::: {.column width="33%"}
+
+![](images/Lecture6/9_4.png)
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+We have seen this graph before but it is worth reviewing especially with respective to the important “Greenhouse” gases. Notice that there is very little absorption in the wavelength band known as the “atmospheric window”
+
+:::
+
+
+
+## Atmospheric absorption and emission
+
+Kirchhoff’s Law tells us that since atmospheric absorption is concentrated at these wavelengths so is atmospheric emission.
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* Equally, at wavelengths where the atmosphere is poor at absorbing it is poor at emitting. 
+
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+![](images/Lecture6/10_4.png)
+
+
+:::
+
+::::
+
+
+
+## Atmospheric absorption and emission
+
+
+![](images/Lecture6/11_0.png)
+
+
+
+## Net Long-wave Flux Density
+
+The net long-wave radiation flux density ($LW^*$) at the surface is the difference between the input from the atmosphere above ($LW\downarrow$) and the output surface ($LW\uparrow$).
+
+{{< include ..\_Equations\Long-wave-Flux-Density.qmd >}}
+
+::: {.fragment}
+
+* Surface output includes **both** emissions from surface **and** reflected $LW\downarrow$
+  - Differs from $SW*= SW\downarrow - SW\uparrow$ 
+  - $SW\uparrow$ is **only** reflected $SW$, earth doesn't emit $SW$!
+
+:::
+
+## Net Long-wave Flux Density
+
+We can re-formulate the previous equation in terms of the Stefan-Boltzmann Law:
+
+{{< include ..\_Equations\Long-wave-Flux-Density-Stefan-Boltzman.qmd >}}
+
+
+
+* How is this equivalent?
+
+::: {.fragment}
+
+* Stefan-Boltzman gives us emissions from a surface temperature $T_s$ with a long-wave emissivity of $\epsilon_{LW}$
+
+::: {.fragment}
+
+* $(1-\epsilon_{LW})$ gives us reflectivity 
+
+:::
+
+:::
+
+
+
+## Net Long-wave Flux Density (iClicker)
+
+
+The equation on the previous slide works for long-wave radiation, because for an opaque object like the Earth's Surface:
+
+$$
+\alpha_{LW} = (1-a_{LW}) = (1-\epsilon_{LW}) 
+$$
+
+A - True
+
+B - False
+
+## Long-wave exchange
+
+
+![](images/Lecture6/14_3.png)
+
+
+
+## Test your knowledge (iClicker)
+
+Is long-wave radiation emitted by the surface generally greater than that emitted by the atmosphere?
+
+* Hint: is the surface usually warmer than the atmosphere?
+
+A - Yes
+
+B - No
+
+
+
+## Clear Skies {.smaller}
+
+:::: {.columns}
+
+::: {.column width="55%"}
+
+
+```{R}
+#| label: fig-Net-LW-1
+#| fig-cap: "Incoming and Outgoing Long-wave Radiation at Burns Bog July 21st, 2023."
+#| fig-width: 5
+#| fig-height: 4.75
+
+D1 <- '2023-07-21'
+D2 <- '2023-07-22'
+
+BBData <- read.csv(file = '../Assignments/data/BB_Data_For_GEOS200.csv',sep=',')
+
+BBData[['TimeStamp']] <- as.POSIXct(BBData[['TIMESTAMP']],format = "%Y-%m-%d %H%M")
+BBData[['NetRadiation']] <- BBData[['SW_IN_1_1_1']]+BBData[['LW_IN_1_1_1']]-(BBData[['SW_OUT_1_1_1']]+BBData[['LW_OUT_1_1_1']])
+
+Data <- drop_na(BBData[BBData$TimeStamp >= D1 & BBData$TimeStamp <= D2,])
+
+
+fig <- plot_ly(data = Data)
+Yl <- list(0, 600)
+
+fig <- fig %>% add_trace(x = ~TimeStamp, y = ~LW_IN_1_1_1,  name = "LW &#x2193;",
+        mode = "lines", type = "scatter",line = list(color = '#ad0c07', width = 2.5))
+
+fig <- fig %>% add_trace(x = ~TimeStamp, y = ~LW_OUT_1_1_1,  name = "LW &#x2191;",
+        mode = "lines", type = "scatter",line = list(color = '#ad0c07', width = 1.5, dash="dot"))
+
+
+fig <- fig %>% layout(
+  yaxis = list(
+    title = "W m<sup>-2</sup>",
+    range = Yl
+  ),
+  xaxis = list(
+    title = "Date"
+  ),
+  legend = list(x = 0.25, y =.1, orientation='h')
+)
+
+LW_in <- round(mean(Data$LW_IN_1_1_1))
+LW_out <- round(mean(Data$LW_OUT_1_1_1))
+Net_LW <- LW_in-LW_out
+
+fig
+
+```
+
+:::
+
+::: {.column width="45%"}
+
+
+![](images/Lecture6/ClearDay.jpg){width="80%"}
+
+::: {.fragment}
+
+$LW\downarrow$ = `r LW_in` w m<sup>-2</sup>
+
+
+$LW\uparrow$ = `r LW_out` w m<sup>-2</sup>
+
+:::
+
+::: {.fragment}
+
+$LW^* = LW\downarrow - LW\uparrow$ = `r Net_LW` w m<sup>-2</sup>
+
+:::
+
+
+
+:::
+
+::::
+
+
+
+## Cloudy Skies (iClicker) {.smaller}
+
+:::: {.columns}
+
+::: {.column width="55%"}
+
+
+```{R}
+#| label: fig-Net-LW-2
+#| fig-cap: "Incoming and Outgoing Long-wave Radiation at Burns Bog December 27th, 2022."
+#| fig-width: 5
+#| fig-height: 4.75
+
+D1 <- '2022-12-27'
+D2 <- '2022-12-28'
+
+BBData <- read.csv(file = '../Assignments/data/BB_Data_For_GEOS200.csv',sep=',')
+
+BBData[['TimeStamp']] <- as.POSIXct(BBData[['TIMESTAMP']],format = "%Y-%m-%d %H%M")
+BBData[['NetRadiation']] <- BBData[['SW_IN_1_1_1']]+BBData[['LW_IN_1_1_1']]-(BBData[['SW_OUT_1_1_1']]+BBData[['LW_OUT_1_1_1']])
+
+Data <- drop_na(BBData[BBData$TimeStamp >= D1 & BBData$TimeStamp <= D2,])
+
+
+fig <- plot_ly(data = Data)
+Yl <- list(0, 600)
+
+fig <- fig %>% add_trace(x = ~TimeStamp, y = ~LW_IN_1_1_1,  name = "LW &#x2193;",
+        mode = "lines", type = "scatter",line = list(color = '#ad0c07', width = 2.5))
+
+fig <- fig %>% add_trace(x = ~TimeStamp, y = ~LW_OUT_1_1_1,  name = "LW &#x2191;",
+        mode = "lines", type = "scatter",line = list(color = '#ad0c07', width = 1.5, dash="dot"))
+
+
+fig <- fig %>% layout(
+  yaxis = list(
+    title = "W m<sup>-2</sup>",
+    range = Yl
+  ),
+  xaxis = list(
+    title = "Date"
+  ),
+  legend = list(x = 0.25, y = .10, orientation='h')
+)
+
+LW_in <- round(mean(Data$LW_IN_1_1_1))
+LW_out <- round(mean(Data$LW_OUT_1_1_1))
+Net_LW <- LW_in-LW_out
+
+fig
+
+```
+
+:::
+
+::: {.column width="45%"}
+
+
+![](../Assignments/images/BB_20221227_1230.JPG)
+
+
+
+::: {.fragment}
+
+$LW\downarrow$ = `r LW_in` w m<sup>-2</sup>
+
+
+$LW\uparrow$ = `r LW_out` w m<sup>-2</sup>
+
+:::
+
+::: {.fragment}
+
+$LW^*$ = ?
+
+:::
+
+
+:::
+
+::::
+
+
+
+## Which day was warmer? (iClicker)
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+```{R}
+#| label: fig-Net-LW-3
+#| fig-cap: "A"
+#| fig-width: 4.5
+#| fig-height: 4.75
+
+D1 <- '2023-08-27'
+D2 <- '2023-08-28'
+
+BBData <- read.csv(file = '../Assignments/data/BB_Data_For_GEOS200.csv',sep=',')
+
+BBData[['TimeStamp']] <- as.POSIXct(BBData[['TIMESTAMP']],format = "%Y-%m-%d %H%M")
+BBData[['NetRadiation']] <- BBData[['SW_IN_1_1_1']]+BBData[['LW_IN_1_1_1']]-(BBData[['SW_OUT_1_1_1']]+BBData[['LW_OUT_1_1_1']])
+
+Data <- drop_na(BBData[BBData$TimeStamp >= D1 & BBData$TimeStamp <= D2,])
+
+
+fig <- plot_ly(data = Data)
+Yl <- list(0, 600)
+
+fig <- fig %>% add_trace(x = ~TimeStamp, y = ~LW_IN_1_1_1,  name = "LW &#x2193;",
+        mode = "lines", type = "scatter",line = list(color = '#ad0c07', width = 2.5))
+
+fig <- fig %>% add_trace(x = ~TimeStamp, y = ~LW_OUT_1_1_1,  name = "LW &#x2191;",
+        mode = "lines", type = "scatter",line = list(color = '#ad0c07', width = 1.5, dash="dot"))
+
+
+fig <- fig %>% layout(
+  yaxis = list(
+    title = "W m<sup>-2</sup>",
+    range = Yl
+  ),
+  xaxis = list(
+    title = "Date"
+  ),
+  legend = list(x = 0.25, y =.1, orientation='h')
+)
+
+LW_in <- round(mean(Data$LW_IN_1_1_1))
+LW_out <- round(mean(Data$LW_OUT_1_1_1))
+Net_LW <- LW_in-LW_out
+
+fig
+
+```
+
+:::
+::: {.column width="50%"}
+
+
+```{R}
+#| label: fig-Net-LW-4
+#| fig-cap: "B"
+#| fig-width: 4.5
+#| fig-height: 4.75
+
+D1 <- '2022-12-22'
+D2 <- '2022-12-23'
+
+BBData <- read.csv(file = '../Assignments/data/BB_Data_For_GEOS200.csv',sep=',')
+
+BBData[['TimeStamp']] <- as.POSIXct(BBData[['TIMESTAMP']],format = "%Y-%m-%d %H%M")
+BBData[['NetRadiation']] <- BBData[['SW_IN_1_1_1']]+BBData[['LW_IN_1_1_1']]-(BBData[['SW_OUT_1_1_1']]+BBData[['LW_OUT_1_1_1']])
+
+Data <- drop_na(BBData[BBData$TimeStamp >= D1 & BBData$TimeStamp <= D2,])
+
+
+fig <- plot_ly(data = Data)
+Yl <- list(0, 600)
+
+fig <- fig %>% add_trace(x = ~TimeStamp, y = ~LW_IN_1_1_1,  name = "LW &#x2193;",
+        mode = "lines", type = "scatter",line = list(color = '#ad0c07', width = 2.5))
+
+fig <- fig %>% add_trace(x = ~TimeStamp, y = ~LW_OUT_1_1_1,  name = "LW &#x2191;",
+        mode = "lines", type = "scatter",line = list(color = '#ad0c07', width = 1.5, dash="dot"))
+
+
+fig <- fig %>% layout(
+  yaxis = list(
+    title = "W m<sup>-2</sup>",
+    range = Yl
+  ),
+  xaxis = list(
+    title = "Date"
+  ),
+  legend = list(x = 0.25, y = .10, orientation='h')
+)
+
+LW_in <- round(mean(Data$LW_IN_1_1_1))
+LW_out <- round(mean(Data$LW_OUT_1_1_1))
+Net_LW <- LW_in-LW_out
+
+fig
+
+```
+
+:::
+
+::::
+
+
+## The Greenhouse Gas Effect
+
+
+![](images/Lecture6/21_3.jpg)
+
+
+::: {.notes}
+
+
+:::
+
+
+## The Greenhouse Gas Effect
+
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+* Not a great analogy: 
+  + Warming mostly due to reduction of convective heat transfer
+  + Much less due to $LW\downarrow$ from the glass
+* In the Atmosphere convection is not constrained
+
+
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+![](images/Lecture6/22_2.jpg)
+
+
+:::
+
+::::
+
+
+
+## The Greenhouse Gas Effect
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+* Perhaps it would be better called the sweater effect?
+  + A sweater works by trapping and recycling $LW$ emitted from your body
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+![Yarrow wears a sweater to reduce her $LW$ flux density and stay warm](images/Lecture6/Sweater.jpg)
+
+
+:::
+
+::::
+
+## The Greenhouse Gas Effect {.smaller}
+
+
+:::: {.columns}
+
+::: {.column width="67%"}
+
+The atmosphere is a selective absorber (and emitter) of long-wave radiation.
+
+* Aerosols and clouds are dominant when present
+* Most significant absorbing gases:
+  + H<sub>2</sub>O
+  + CO<sub>2</sub>
+  + O<sub>3</sub>
+  + O<sub>2</sub>
+  + N<sub>2</sub>O
+  + CH<sub>4</sub>
+
+
+:::
+
+::: {.column width="33%"}
+
+![](images/Lecture6/9_4.png)
+
+
+:::
+
+::::
+
+
+
+
+## View factors
+
+
+The view of the sky from an object (sky view factor; $\psi_{sky}$) is significant in quantifying Long-wave exchange at night. 
++ The sky is usually ‘cold’ and an effective heat sink
+
+
+![](images/Lecture6/24_3.png)
+
+
+
+::: {.notes}
+
+The more open a site is (the more of the sky hemisphere is visible from a point at the surface) has an impact on the amount of Long-wave radiation that can be emitted to atmosphere (and hence cool the surface)
+
+:::
+
+
+
+
+## Implications of $\psi_{sky}$
+
+
+:::: {.columns}
+
+::: {.column width="33%"}
+
+
+![A stand of trees can keep livestock warm at night by reducing the animals’ $\psi_{sky}$](images/Lecture6/25_7.jpg)
+
+:::
+
+::: {.column width="33%"}
+
+
+![A tent reduces the  $\psi_{sky}$ to zero for the occupants!](images/Lecture6/25_6.jpg)
+
+:::
+
+::: {.column width="33%"}
+
+![These enclosures provide a source of longwave radiation to the young grape plants at night](images/Lecture6/25_10.jpg)
+
+
+:::
+
+::::
+
+
+
+
+## Measuring $LW$
+
+
+
+![This is a pyrgeometer](images/Lecture6/27_0.png)
+
+
+
+
+## Measuring $LW\downarrow$ and $LW\uparrow$
+
+
+![](images/Lecture6/28_2.png)
+
+
+## Take home points
+
+
+* Long-wave radiation is emitted from Atmosphere (gases, aerosols, droplets) and surface at ambient temperatures.
+* Kirchhoff’s Law states that for a certain wavelength the absorptivity $a_{\lambda$} equals emissivity $\epsilon_{\lambda}$. 
+* Absorptivities and emissivities of most natural surface materials are high in the Long-wave, but not for gases.
+  * The ‘atmospheric window’ is a region in the Long-wave where few gases interfere - often transparent.

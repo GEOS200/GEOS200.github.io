@@ -1,0 +1,744 @@
+---
+format:
+  revealjs:
+    theme: default
+title: Heat and temperature
+subtitle: Distinct but related quantities that are easy to mix up
+---
+
+{{< include _imports.qmd >}}
+
+## Learning Objectives
+
+* Understand the linkage between temperature and life.
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+* Describe what determines the temperature response to an energy input.
+* Explain why soils warm and cool differently and how this is related to the role of water content.
+
+
+:::
+
+::: {.column width="50%"}
+
+![Photo: A. Christen](images/Lecture9/2_2.jpg)
+
+:::
+
+::::
+
+## Temperature and life-forms
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* Temperature has a major effect on various life forms.
+* Temperature limits growth, reproduction and survival of a species.
+
+
+:::
+
+::: {.column width="50%"}
+
+
+![Optimal temperature ranges for various lifforms](images/Lecture9/9_1.png)
+
+
+:::
+
+::::
+
+
+
+## Temperature and plant growth
+
+Surface and soil temperatures can be a risk for plants, hence there are several practices aimed to reduce heat or frost stress.
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* Here we look at the processes controlling soil temperatures to understand soil climates and design better practices for plant growth.
+
+
+:::
+
+::: {.column width="50%"}
+
+
+![Spruce seedlings in controlled temperature experiment](images/Lecture9/10_3.gif)
+
+
+:::
+
+::::
+
+## Temperature and plant growth rate
+
+
+![](images/Lecture9/11_2.jpg)
+
+
+
+
+## Soil climates
+
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+```{R}
+Data <- read.csv(file = 'Data/Lecture9/15_4_Scatter_Lines.csv',sep=',', check.names = FALSE)
+```
+
+
+Soil temperatures are controlled by available energy 
+
+* Varies with latitude and proximity to the coast in BC
+
+* Also influenced by topography, soil type, and moisture
+
+  * Abbotsford `r round(mean(Data$Abbotsford),digits=1)` °C  
+  * Prince George `r round(mean(Data$PrinceGeorge),digits=1)` °C
+
+
+:::
+
+::: {.column width="50%"}
+
+
+```{r}
+#| label: fig-14_3
+#| fig-cap: Average soil temperature by month.
+#| fig-width: 5
+#| fig-height: 4
+
+
+fig <- plot_ly(data=Data)
+
+fig <- fig %>% add_trace(x = ~X, y = ~Abbotsford, name = 'Abbotsford',type = "scatter", mode = "lines+markers")
+
+fig <- fig %>% add_trace(x = ~X, y = ~PrinceGeorge, name = 'Prince George',type = "scatter", mode = "lines+markers")
+
+
+fig <- fig %>% layout(
+  yaxis = list(
+    title = "<sup>&deg;</sup>C"
+  ),
+  xaxis = list(
+    title = "Month"
+  ),
+  margin = Margin_m,
+  legend = list(x = 0.05, y = 1)
+)
+
+fig
+
+```
+
+
+
+:::
+
+::::
+
+## Heat vs. Temperature
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+**Heat**: is thermal energy. 
+
+* Travels from hotter to colder objects
+* **Can do work**
+* Often expressed in Joules (J)
+  - J = 1 N x 1 m
+  - Newton (N) = 1 kg m s<sup>-2</sup>
+
+:::
+
+::: {.column width="50%"}
+
+**Temperature** a (relative) measure of thermal energy.
+
+* Increases/decreases when heat is added/removed
+* **Cannot do work**
+* Expressed in Kelvin (K) 
+  - Or Celsius (C)
+
+:::
+
+::::
+
+
+## Heat vs. Temperature
+
+![During phase changes, heat is added to a substance, but the temperature does not change.](images/Lecture9/Heat_v_Temp.png)
+
+## Recall - Fluxes and flux densities {.smaller}
+
+
+:::: {.columns}
+
+
+::: {.column width="30%"}
+
+### Heat
+
+* Aka. Energy
+  - J (Joules)
+
+<br>
+&nbsp;
+
+![](images/Lecture1/19_7.png)
+
+:::
+
+::: {.column width="30%"}
+
+### Heat Flux
+
+* Flow rate of energy
+  - Aka. Power
+  - W = J s<sup>-1</sup>
+  
+
+![](images/Lecture1/19_8.png)
+
+
+
+
+:::
+
+::: {.column width="40%"}
+
+### Heat Flux Density
+
+* Net transfer of energy
+  - Flow rate of energy per unit area
+  - W m-2 = J s<sup>-1</sup> m<sup>-2</sup>
+
+![](images/Lecture1/19_9.png)
+
+
+:::
+
+::::
+
+
+
+## Heat Capacity {.smaller}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+Heat capacity ($C$) is the quantity of heat required to raise the temperature of a **unit volume** (e.g., 1 m<sup>-3</sup>) of a material 1 K.
+
+![Heat capacity is measured in J m<sup>-3</sup> K<sup>-1</sup>](images/Lecture9/16_2.png)
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+```{r}
+#| label: tbl-16_4
+#| tbl-cap: Heat capacity of various substances
+#| tbl-colwidths: [60,40]
+
+HeatCapacity <- read.csv(file = 'Data/Lecture9/16_4_Table.csv',sep=',',check.names = FALSE)
+
+kable(HeatCapacity, col.names = c('Material','Heat capacity MJ m<sup>-3</sup> K'))
+
+```
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+:::
+
+
+## Test your knowledge (iClicker) {.smaller}
+
+You run an experiment using a camping stove with a 1 liter pan to heat up four different substances.  You run the stover for the same amount of time (1 minute) and use the same volume of each substance (exactly 1 liter).  All substances start at the same temperature (15 $^{\circ} C$); which substance will have the highest temperature at the end of the 1 minute period?
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+* A Water
+* B Air (empty pan with lid)
+* C Dry Soil 
+* D Food in water (e.g. rice)
+
+:::
+
+::: {.column width="50%"}
+
+![](images/Lecture9/17_3.jpg)
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+Answer is B
+
+:::
+
+
+## Specific Heat {.smaller}
+
+
+Specific heat $c$ is the quantity of heat required to raise the temperature of a **unit mass** (e.g., 1 Kg) of a material 1 K.
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+
+![Specific heat is measured in J Kg<sup>-1</sup> K<sup>-1</sup> ](images/Lecture9/18_3.png)
+
+
+
+
+
+:::
+
+::: {.column width="50%"}
+
+
+```{r}
+#| label: tbl-18_2
+#| tbl-cap: Specific heat of various substances
+#| tbl-colwidths: [60,40]
+
+SpecificHeat <- read.csv(file = 'Data/Lecture9/18_2_Table.csv',sep=',',check.names = FALSE)
+Density <- read.csv(file = 'Data/Lecture9/19_6_Table.csv',sep=',',check.names = FALSE)
+
+kable(SpecificHeat, col.names = c('Material','Specific heat kJ kg<sup>-1</sup> K<sup>-1</sup>'))
+
+```
+
+
+
+:::
+
+::::
+
+## What is the relationship between $C$ and $c$ ? {.smaller}
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+Density ($\rho$) of the material:
+
+{{< include ../_Equations/Heat-Capacity.qmd >}}
+
+
+Example of water:
+
+```{R}
+rho = Density$Density[Density$Material=='Water (liquid)']
+c = SpecificHeat$Specificheat[SpecificHeat$Material=='Water (liquid)']
+```
+
+$C =$ `r rho` Mg m<sup>-3</sup>  $x$  `r c` J kg<sup>-1</sup> K<sup>-1</sup> = <br>
+`r rho*c` J<sup>6</sup> m<sup>-3</sup> K<sup>-1</sup> = `r rho*c` MJ m<sup>-3</sup> K<sup>-1</sup>
+
+:::
+
+::: {.column width="50%"}
+
+```{r}
+#| label: tbl-19_6
+#| tbl-cap: Density heat of various substances
+#| tbl-colwidths: [60,40]
+
+
+kable(Density, col.names = gsub("[.]", " ", c('Material','Density Mg m<sup>-3</sup>')))
+
+
+```
+
+
+:::
+
+::::
+
+## Why is this important?
+
+
+![Porosity & volume fractions $\theta$ will dictate heat capacity of soil](images/Lecture9/20_1.gif)
+
+
+## Compound Substances 
+
+The heat capacity of a mixture of substances can be calculated from the heat capacity and volume fraction of each component. For soil:
+
+{{< include ../_Equations/Heat-Capacity-Soil.qmd >}}
+
+
+* $\theta$ is the volume fraction of mineral (m), organic matter (o), water (w) and air (a)
+  * *Note*: $C_a$ is very small relative to the other values of C
+
+
+## The role of soil moisture {.smaller}
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+![](images/Lecture9/22_2.gif)
+
+:::
+
+::: {.column width="50%"}
+
+
+
+```{r}
+#| label: tbl-16_4_2
+#| tbl-cap: Heat capacity of various substances
+#| tbl-colwidths: [60,40]
+
+HeatCapacity <- read.csv(file = 'Data/Lecture9/16_4_Table.csv',sep=',',check.names = FALSE)
+
+kable(HeatCapacity, col.names = c('Material','Heat capacity MJ m<sup>-3</sup> K'))
+
+```
+
+
+
+:::
+
+::::
+
+## Heat capacity Soils {.smaller}
+
+We have a soil that is 45% minerals and 0% organic matter by volume.  The rest is pore space (for air or water).
+
+::: {.fragment}
+
+**Dry Mineral Soil**
+
+```{R}
+#| echo: True
+
+C_w = 4.18
+C_m = 2.1
+C_o = 2.5
+C_a = 0.0012
+theta_m = .45
+theta_o = 0
+theta_w = 0
+theta_a = 1-(theta_w+theta_o+theta_m)
+C_dry_mineral = C_m*theta_m+C_o*theta_o+C_w*theta_w+C_a*theta_a
+
+```
+
+$C =$ `r C_dry_mineral` MJ m<sup>-3</sup> K<sup>-1</sup>
+
+:::
+::: {.fragment}
+
+**Saturate Soil**
+
+```{R}
+#| echo: True
+theta_a = 0
+theta_w = 1-(theta_a+theta_o+theta_m)
+C_saturated_mineral = C_m*theta_m+C_o*theta_o+C_w*theta_w+C_a*theta_a
+
+```
+
+$C =$ `r C_saturated_mineral` MJ m<sup>-3</sup> K<sup>-1</sup>
+
+:::
+
+::: {.notes}
+
+θ is the volume fraction
+
+:::
+
+
+
+## Heat capacity Soils (iClicker) {.smaller}
+
+We have a soil that is 0% minerals and 45% organic matter by volume and 25% water by volume.  What would it's heat capacity be in MJ m<sup>-3</sup> K<sup>-1</sup>?
+
+
+**Wet (not saturated) Organic Soil**
+
+```{R}
+#| echo: True
+
+C_w = 4.18
+C_m = 2.1
+C_o = 2.5
+C_a = 0.0012
+theta_m = 0
+theta_o = .45
+theta_w = .25
+theta_a = 1-(theta_w+theta_o+theta_m)
+C_wet_organic = C_m*theta_m+C_o*theta_o+C_w*theta_w+C_a*theta_a
+
+```
+
+* A `r C_wet_organic` MJ m<sup>-3</sup> K<sup>-1</sup>
+* B `r C_dry_mineral` MJ m<sup>-3</sup> K<sup>-1</sup>
+* C `r C_saturated_mineral` MJ m<sup>-3</sup> K<sup>-1</sup>
+
+::: {.fragment}
+
+$C =$ `r C_wet_organic` MJ m<sup>-3</sup> K<sup>-1</sup>
+
+:::
+
+::: {.notes}
+
+θ is the volume fraction
+
+:::
+
+
+## Heat Capacity {.smaller}
+
+Organic soils usually have high porosity, so they can hold more water so more heat is required to warm them compared to mineral soils.
+
+```{r}
+#| label: tbl-25_2
+#| tbl-cap: Heat capacity of natural materials 
+
+Data <- read.csv(file = 'Data/Lecture9/25_2_Table.csv',sep=',',check.names = FALSE)
+
+kable(Data, col.names = gsub("[.]", " ", names(Data)))
+
+```
+
+
+## Heat Capacity of Soils
+
+
+![Porosity & saturation are the a dominant controls, mineral vs. organic is secondary](images/Lecture9/HeatCapacityOfSoil.png)
+
+
+
+## Soil Heat Flux ($H_g$)
+
+
+Describes the transfer of heat through a volume of soil.
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+* The heat flux ($H_g$) through a soil layer of depth $z$, is proportional to the rate of soil temperature change ($\Delta T_s$) of time $t$ and the heat capacity ($C$) of the soil.
+
+
+:::
+
+::: {.column width="50%"}
+
+
+{{< include ../_Equations/Soil-Heat-Flux.qmd >}}
+
+
+:::
+
+::::
+
+
+## Heat Fluxes and Thermal Effects
+
+Positive indicates a surplus of energy at the surface being transferred downwards through the soil via conduction.  Negative indicates a surplus at depth being transferred upwards through the soil via conduction.  
+
+![a. During day, positive heat flux warms the soil b. At night, negative heat flux cools the soil](images/Lecture9/27_2.png){width="80%"}
+
+## Heat Fluxes and Net Radiation
+
+
+$H_g$ will be correlated with $R_n$, though its not a direct relationship, and the strength of the relationship will vary by site conditions.
+
+![Net radiation ($R_n$) and soil heat flux ($H_g$) at the Burns Bog EC station, 2022](images/Lecture9/Rn_vs_Hg.png){width="65%"}
+
+
+## Warming / cooling rates
+
+
+![](images/Lecture9/29_1.jpg)
+
+
+
+## Warming / cooling rates
+
+
+
+The higher C, the smaller the rate of temperature change.
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+![A wet soil (high $C$) heats/cools slowly.](images/Lecture9/30_2.jpg)
+
+:::
+
+
+::: {.column width="50%"}
+
+
+
+![A dry soil (low $C$) is heats/cools rapidly.](images/Lecture9/30_1.jpg)
+
+
+:::
+
+::::
+
+## Test your knowledge (iClicker)
+
+
+Given same amount of energy input by radiation (e.g. same day), which soil will warm up more rapidly? The photos show the same location:
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+
+![A](images/Lecture9/31_2.jpg){width="85%"}
+
+
+:::
+
+::: {.column width="50%"}
+
+
+![B](images/Lecture9/31_3.jpg){width="85%"}
+
+
+:::
+
+::::
+
+## How fast does a moist soil warm up? 
+
+We have a mineral soil with $\approx$ 30% water content by volume, giving it C = 2 MJ m<sup>-3</sup> K<sup>-1</sup>.  With a soil heat flux (H) of 100 W m<sup>-2</sup> going into the soil surface layer of depth z = 0.1 m.  Rearranging @eq-Soil-Heat-Flux we can solve for $\Delta T$:
+
+
+$\frac{\Delta T}{t} = \frac{1}{C}\frac{H_g}{z}$
+
+$\frac{\Delta T}{t} = \frac{1}{2 MJ m^{-3} K^{-1}}\frac{100 J m^{-2} s^{-1}}{0.1 m}$
+
+::: {.fragment}
+
+```{R}
+
+C = 2e6
+z = .1
+H = 100
+
+delta_T = H/(C*z)
+
+```
+
+`r format(delta_T, scientific=F)` K s<sup>-1</sup> = `r delta_T*3600` K H<sup>-1</sup>
+
+:::
+
+
+
+## Test your knowledge (iClicker) {.smaller}
+
+You run an experiment using camping stove with a 1 liter pan to heat up four different substances.  You run the stover for the same amount of time (1 minute) and use the same volume of each substance (exactly 1 liter).  All substances start at the same temperature (15 $^{\circ} C$); which substance will have the lowest temperature at the end of the 1 minute period?
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+* A Water
+* B Air (empty pan with lid)
+* C Dry Soil 
+* D Food in water (e.g. rice)
+
+:::
+
+::: {.column width="50%"}
+
+![](images/Lecture9/17_3.jpg)
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+Answer is A
+
+:::
+
+
+## Take home points
+
+
+:::: {.columns}
+
+::: {.column width="100%"}
+
+* Plant growth is determined by surface and near-surface soil temperatures.
+  + In Agriculture and forestry, there is potential to manage soil temperatures.
+* Heat capacity $C$ and specific heat $c$ are linked by density. 
+* Temperature change in the soil controlled by soil heat capacity.
+* Important role of soil volumetric water content for temperature changes - quick dry soils vs. slow wet soils.
+
+
+:::
+
+::: {.column width="0%"}
+
+:::
+
+::::
+
+
+
+
+

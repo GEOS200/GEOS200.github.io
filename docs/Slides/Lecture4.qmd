@@ -1,0 +1,764 @@
+---
+format:
+  revealjs:
+    theme: default
+title: Surface Geometry and Albedo
+subtitle: How incoming radiation interacts with surfaces
+---
+
+{{< include _imports.qmd >}}
+
+## Learning Objectives
+
+
+:::: {.columns}
+
+::: {.column width="70%"}
+
+* Describe how is solar radiation distributed globally.
+* Understand what happens when solar radiation reaches the ground or objects.
+* Describe the process of reflection 
+  + Reflectivity and surface albedo
+* Examples of controls on surface albedo.
+
+
+:::
+
+::: {.column width="30%"}
+
+![Measuring reflectance with a pyranometer](images/Lecture4/2_3.jpg)
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+
+
+:::
+
+
+
+## Surface geometry and albedo
+
+
+![The reflectivity of water greatly changes depending on the sun’s positing](images/Lecture4/1_0.jpg)
+
+
+## Temporal and spatial variation
+
+
+:::: {.columns}
+
+::: {.column width="100%"}
+
+Each of these factors effects incoming short-wave radiation:
+
+* The Earth is a sphere (latitude)
+* The Earth is tilted on its axis (seasons)
+* The Earth rotates (time of day)
+* The Earth has an atmosphere (absorption & scattering)
+* The Earth's surface is not flat
+
+
+:::
+
+::: {.column width="0%"}
+
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+This is a really fundamental lecture that helps us understand the distribution of solar radiation on Earth and how ultimately this affects climate and the circulation (winds) on earth. 
+
+
+:::
+
+
+## Defining the Solar Zenith {.smaller}
+
+The local solar zenith ($\theta$) is the inverse of the local sun angle ($\theta = 90 - sun\:angle$).  It varies globally as a function of season (solar declination) and locally as a function of latitude and time of day.  
+
+:::: {.columns}
+
+::: {.column width="70%"}
+
+
+* **At solar noon**: the $\theta$ reaches its daily minimum
+
+{{< include ../_Equations/Solar-Zenith-at-Noon.qmd >}}  
+
+* At sunrise/sunset the $\theta = 90 ^{\circ}$
+* At other times of **day** it will fall between these values
+* You can use this [solar calculator](https://gml.noaa.gov/grad/solcalc/azel.html) time/date & location
+
+:::
+
+::: {.column width="30%"}
+
+
+
+
+![](images/Lecture4/7_5.gif)
+
+
+:::
+
+::::
+
+
+
+## Latitude {.smaller}
+
+The effect of latitude is most obvious at the equinoxes, when Sun is overhead at the Equator.
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+Irradiance (at top of atmosphere) follows the Cosine law law of illumination:
+
+{{< include ../_Equations/Cosine-Law-of-Illumination.qmd >}}  
+
+
+![](images/Lecture4/4_4.png){width="85%"}
+
+
+:::
+
+::: {.column width="50%"}
+
+```{r}
+#| label: tbl-4_3
+#| tbl-cap: Decrease of R<sub>s</sub> with solar declination.
+
+Data <- read.csv(file = 'Data/Lecture4/4_3_Table.csv',sep=',',check.names = FALSE)
+
+kable(Data, col.names = gsub("[.]", " ", names(Data)))
+
+```
+
+:::
+
+::::
+
+
+::: {.notes}
+
+Think back to our discussion of the Cosine Law of Illumination. Again you try this with a flashlight and a globe or ball. Note that on the lower left globe S0 is the solar constant. 
+By “extra-terrestrial” in this case we mean at the outer edge of the atmosphere (not aliens!)
+
+:::
+
+## Seasons
+
+
+![Effect of seasons  - Earth’s tilt and orbit](images/Lecture4/5_2.png)
+
+
+::: {.notes}
+
+This is the diagram that explains our seasons. Our rotating (once per day) planet is tilted at 23.5 degrees, and importantly, that tilt and its orientation is maintained as the earth follows it’s elliptical orbit (once per year). 
+That tilt is what defines the Arctic and Antarctic circles (66.5o = 90o-23.5o), and is the reason that at winter solstice, areas north of the artic circle in the Northern hemisphere have 24 hours of darkness (likewise in the southern hemisphere 6 months later) 
+
+:::
+
+## Season: Average daily input
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+* The tropics have high input (on average) 
+  + Less seasonal variation
+* Higher latitudes have high input (on average) 
+  + Highest summer values
+
+
+
+:::
+
+::: {.column width="50%"}
+
+![](images/Lecture4/6_3.png)
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+This is what the impact of the earth’s tilt has on radiation received at different latitudes. 
+
+:::
+
+## Time of Day
+
+The local solar zenith ($\theta$) varies through the day as the earth rotates.
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+![](images/Lecture4/7_4.png)
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+![](images/Lecture4/7_5.gif)
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+This is the SUN PATH diagram and shows where the sun appears in the sky by time for different times of year.
+Go outside now and see where the sun is. 
+https://gml.noaa.gov/grad/solcalc/azel.html
+
+:::
+
+## Diurnal Variation
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+With no clouds this gives a simple daily symmetry, like a sine curve.
+
+
+![Burns Bog Station, Delta, BC](images/Lecture4/8_5.jpg)
+
+
+:::
+
+::: {.column width="50%"}
+
+
+```{R}
+#| label: fig-Radiation
+#| fig-cap: "Radiation data from the Burns Bog Flux Station June 29th, 2021."
+#| fig-width: 4.35
+#| fig-height: 5.15
+
+BBData <- read.csv(file = '../Assignments/data/BB_Data_For_GEOS200.csv',sep=',')
+
+BBData[['TimeStamp']] <- as.POSIXct(BBData[['TIMESTAMP']],format = "%Y-%m-%d %H%M")
+BBData[['NetRadiation']] <- BBData[['SW_IN_1_1_1']]+BBData[['LW_IN_1_1_1']]-(BBData[['SW_OUT_1_1_1']]+BBData[['LW_OUT_1_1_1']])
+
+Data <- drop_na(BBData[BBData$TimeStamp >='2021-06-29' & BBData$TimeStamp <='2021-06-30',])
+
+
+fig <- plot_ly(data = Data)
+Yl <- list(-100, 1500)
+
+fig <- fig %>% add_trace(x = ~TimeStamp, y = ~SW_IN_1_1_1,  name = "&#x2193; SW",
+        mode = "lines", type = "scatter",line = list(color = '#cc9425', width = 2.5))
+
+fig <- fig %>% add_trace(x = ~TimeStamp, y = ~NetRadiation*0+1361,  name = "Solar Constant I<sub>0</sub>",
+        mode = "lines", type = "scatter",line = list(color = 'black', width = 2))
+
+
+fig <- fig %>% layout(
+  yaxis = list(
+    title = "W m<sup>-2</sup>",
+    range = Yl
+  ),
+  xaxis = list(
+    title = "Date"
+  ),
+  legend = list(x = 0.25, y = 0.85, orientation='h')
+)
+
+fig
+
+
+```
+
+:::
+
+::::
+
+
+::: {.notes}
+
+This is the classic diurnal (sine wave like) variation in solar radiation as seen here south of Vancouver. The peak radiation flux density occurs around mid day (what we call solar noon) – remember the position of a place with respect to time zones may mean that solar noon is NOT at midday/noon. 
+
+:::
+
+## Irradiance at Burns Bog (iClicker)
+
+Which of these answers explains (in part) why observed incoming short-wave radiation at the Burns Bog station on June 29th, 2021 shown on the previous slide was less than the solar constant ($I_0$)?
+
+* A Reflection of solar radiation by clouds
+* B Spreading of the solar beam (cosine law of illumination)
+* C Both A & B
+
+
+
+## Recall
+
+**Radiation Balance:** radiation (of wavelength $\lambda$) can interact with an object in three ways:
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* Absorption $a_{\lambda}$
+* Transmission $\tau_{\lambda}$
+* Reflection $\alpha_{\lambda}$
+  * For short-wave radiation, we use the term **Albedo**
+
+:::
+
+::: {.column width="50%"}
+
+
+{{< include ../_Equations/Radiation-Balance.qmd >}}  
+
+![](images/Lecture4/13_3.png)
+
+
+:::
+::::
+
+## Key Terms
+
+
+**Irradiance**: flux density of incoming shortwave radiation on receiving horizontal surface (W m<sup>-2</sup>)
+
+**Reflectance**: flux density of reflected shortwave radiation the surface (W m<sup>-2</sup>)
+
+**Albedo**: proportion of irradiance that is reflected (unitless)
+
+
+## Measuring Albedo (iClicker)
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+Which instrument in this photo (A or B) would you use to measure reflectance?
+
+
+:::
+
+::: {.column width="50%"}
+
+
+![](images/Lecture4/11_3.png)
+
+:::
+::::
+
+
+## Observations from Burns Bog
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+
+```{R}
+#| label: fig-Reflectance
+#| fig-cap: "Irradiance and Reflectance at Burns Bog June 29th, 2021."
+#| fig-width: 4.35
+#| fig-height: 5
+
+fig <- plot_ly(data = Data)
+Yl <- list(-100, 1000)
+
+fig <- fig %>% add_trace(x = ~TimeStamp, y = ~SW_IN_1_1_1,  name = "&#x2193; SW",
+        mode = "lines", type = "scatter",line = list(color = '#cc9425', width = 2.5))
+
+fig <- fig %>% add_trace(x = ~TimeStamp, y = ~SW_OUT_1_1_1,  name = "&#x2191; SW",
+        mode = "lines", type = "scatter",line = list(color = '#cc9425', width = 1.5, dash="dot"))
+
+
+fig <- fig %>% layout(
+  yaxis = list(
+    title = "W m<sup>-2</sup>",
+    range = Yl
+  ),
+  xaxis = list(
+    title = "Date"
+  ),
+  legend = list(x = 0.25, y = 1.0, orientation='h')
+)
+
+fig
+
+
+```
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+```{R}
+#| label: fig-Reflectance2
+#| fig-cap: "Irradiance and Reflectance at Burns Bog December 31st, 2021."
+#| fig-width: 4.35
+#| fig-height: 5
+
+
+Data <- drop_na(BBData[BBData$TimeStamp >='2021-12-31' & BBData$TimeStamp <='2022-1-1',])
+
+fig <- plot_ly(data = Data)
+Yl <- list(-100, 1000)
+
+fig <- fig %>% add_trace(x = ~TimeStamp, y = ~SW_IN_1_1_1,  name = "&#x2193; SW",
+        mode = "lines", type = "scatter",line = list(color = '#cc9425', width = 2.5))
+
+fig <- fig %>% add_trace(x = ~TimeStamp, y = ~SW_OUT_1_1_1,  name = "&#x2191; SW",
+        mode = "lines", type = "scatter",line = list(color = '#cc9425', width = 1.5, dash="dot"))
+
+
+fig <- fig %>% layout(
+  yaxis = list(
+    title = "W m<sup>-2</sup>",
+    range = Yl
+  ),
+  xaxis = list(
+    title = "Date"
+  ),
+  legend = list(x = 0.25, y = 1.0, orientation='h')
+)
+
+fig
+
+
+```
+
+
+:::
+
+::::
+
+
+
+## Spectral Reflectivity $\alpha_{\lambda}$ 
+
+
+Leaves, soils, and rocks all have distinctive features.
+
+* For opaque objects (e.g., rocks and soils) the spectral absorptivity is:
+
+
+{{< include ../_Equations/Absorption-Opaque.qmd >}}  
+
+* For transparent objects (e.g., leaves and water) the spectral absorptivity is:
+
+{{< include ../_Equations/Absorption-Transparent.qmd >}}  
+
+
+
+## Spectral Reflectivity $\alpha_{\lambda}$ of Soil
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+Reflectivity of soil will vary by $\lambda$ and depend upon its specific composition
+
+* Sand, silt, vs. clay
+* Organic content
+* Water content
+
+
+:::
+
+::: {.column width="50%"}
+
+![](images/Lecture4/14_4.png)
+
+
+:::
+
+::::
+
+
+
+## Spectral Reflectivity $\alpha_{\lambda}$ a Leaf
+
+
+:::: {.columns}
+
+::: {.column width="0%"}
+
+
+
+:::
+
+::: {.column width="100%"}
+
+![](images/Lecture4/15_1.png)
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+This is an important diagram that requires some time. Notice the double ended arrow that I have added. It shows a peak in reflection at 0.55 micrometers as well as a peak in transmission at the same wavelength. 0.55 micrometers is the wavelength of GREEN light and explains why leaves appear GREEN to us. 
+
+:::
+
+## Spectral Reflectivity $\alpha_{\lambda}$ a Leaf
+
+In the PAR region, $\alpha_{\lambda}$ and $\tau_{\lambda}$ are small making $a_{\lambda}$ large.
+
+:::: {.columns}
+
+::: {.column width="50%"}
+* In the NIR region, the opposite is the case
+  + The leaf gets rid of radiation that might cause it to get too warm
+* The small peaks in $a_{\lambda}$ and $\tau_{\lambda}$ at 0.55 $\mu m$ account for the green color
+
+
+:::
+
+::: {.column width="50%"}
+
+![](images/Lecture4/15_1.png)
+
+
+:::
+
+::::
+
+
+
+## In the fall leaves change color – WHY? 
+
+![](images/Lecture4/17_3.jpg){width="85%"}
+
+
+## Test your knowledge (iClicker)
+
+Which leaf has the highest spectral reflectivity at λ = 0.55 $\mu m$?
+
+::: {layout-ncol=3}
+
+![  A](images/Lecture4/18_6.jpg)
+
+
+
+![  B](images/Lecture4/18_7.jpg)
+
+
+
+![  C](images/Lecture4/18_8.jpg)
+
+:::
+
+## Spectral reflectivity of leaves
+
+
+:::: {.columns}
+
+::: {.column width="0%"}
+
+
+
+:::
+
+::: {.column width="100%"}
+
+![](images/Lecture4/19_1.png)
+
+
+:::
+
+::::
+
+
+
+## Albedo
+
+The albedo ($\alpha_{SW}$) is calculated as the fraction of incident solar radiation reflected by a surface.  Albedo is affected by:
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* Angle of incidence
+* Plant species
+* Leaf development 
+* Surface wetness
+* Surface roughness
+
+
+:::
+
+::: {.column width="50%"}
+
+![](images/BB_Albedo.jpg)
+
+
+:::
+
+::::
+
+
+
+## Albedo of natural surfaces {.smaller}
+
+
+:::: {.columns}
+
+::: {.column width="75%"}
+
+* Lowest $\alpha_{SW}$ (best absorbers) 
+  + Open water, organic soils, coniferous forest 
+    - $\alpha_{SW} \approx$ 0.03 to 0.15
+* Intermediate $\alpha_{SW}$  
+  + Deciduous forest 
+    - $\alpha_{SW} \approx$ 0.15 to 0.2
+  + Agricultural crops
+    - $\alpha_{SW} \approx$ 0.2 to 0.25
+* Highest $\alpha_{SW}$ (poor absorption) 
+  + Snow, ice, dry light soils, desert sand
+    - $\alpha_{SW} \approx$ 0.35 to 0.95
+
+
+:::
+
+::: {.column width="25%"}
+
+![](images/Lecture4/21_5.png)
+
+
+:::
+
+::::
+
+
+
+## Test your knowledge (iClicker)
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+Which system (A or B) has the higher albedo?
+
+
+
+:::
+
+::: {.column width="50%"}
+
+![](images/Lecture4/Albedo_comp.png)
+
+
+:::
+
+::::
+
+
+
+## Albedo of snow-covered surfaces
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+Even snow-covered boreal forests have relatively low albedo due to their sides being bare.
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+![](images/Lecture4/Albedo_comp.png)
+
+:::
+
+::::
+
+
+
+## Albedo of crops and forests {.smaller}
+
+
+:::: {.columns}
+
+::: {.column width="45%"}
+
+
+![T.R. Oke (1987): 'Boundary Layer Climates' 2nd Edition.](images/Lecture4/25_2.png){width="70%"}
+
+:::
+
+::: {.column width="55%"}
+
+![Increased “trapping” of light with increased height. Individual leaves generally have higher reflectivity than a canopy of the same leaves](images/Lecture4/24_1.gif){width="65%"}
+
+
+:::
+
+::::
+
+
+
+
+
+## Take home points
+
+
+:::: {.columns}
+
+::: {.column width="100%"}
+
+* How does Earth’s geometry, rotation and planetary motion affect the distribution of short-wave irradiance in time and space? 
+* The reflectivity of soils and vegetation depends greatly on the wavelength of the radiation - giving objects distinct colors and spectral ‘signatures’ useful for remote sensing.
+* Albedo = Outgoing reflectance / Incoming irradiance. Key control in the climate system.
+
+
+:::
+
+::: {.column width="0%"}
+
+
+
+:::
+
+::::

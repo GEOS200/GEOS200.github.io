@@ -1,0 +1,645 @@
+---
+format:
+  revealjs:
+    theme: default
+
+title: Weather Systems
+---
+
+{{< include _imports.qmd >}}
+
+
+---
+
+
+![A low pressure system over Iceland (Photo: NASA)](images/Lecture17/1_0.png)
+
+## Learning objectives
+
+
+* Describe the differences between continental / maritime and polar / tropical air masses.
+* Explain the difference between warm fronts, cold fronts and occluded front.
+* Explain what causes weather systems to develop and decay.
+
+## Air masses
+
+An air mass is a large body of air (1000's km across) with roughly uniform properties.
+
+* **Continental** air tends to be drier with more extreme temperatures
+* **Maritime** air tends to be wetter with more moderate temperatures
+* **Tropical** air is warmer than **Polar** air
+
+
+## Air Mass Types {.smaller}
+
+Air masses are classified according to their source region
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+* Maritime Tropical (mT): Warm & moist
+* Continental Tropical (cT): Hot & dry
+* Maritime Polar (mP): Cool & moist
+* Continental Polar (cP): Cold & dry
+* Continental Arctic (cA): Frigid & dry
+
+:::
+
+::: {.column width="50%"}
+![](images/Lecture17/4_1.gif)
+
+
+:::
+
+::::
+
+
+
+## Test your knowledge (iClicker)
+
+Which of the air masses listed below would be #1 and #2 respectively in the figure below?
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+* A: cP and mT
+* B: mP and cT 
+
+
+:::
+
+::: {.column width="50%"}
+![](images/Lecture17/5_2.png)
+
+
+:::
+
+::::
+
+
+## Test your knowledge
+
+
+Which air mass is most relevant to us in Vancouver during the winter?
+
+* A: Maritime Polar
+* B: Maritime Tropical
+* C: Continental Arctic
+* D: Continental Polar
+
+
+## Fronts
+
+A front is the transition zone between two contrasting air masses. There are 3 important characteristics of fronts:  
+
+* Vertical ascent of warm air mass, producing clouds.
+* Horizontal motion of fronts, sometimes at more than 50 km/h, resulting in rapid change in weather conditions.
+* Discontinuity of temperature, humidity and wind direction.
+
+Two key types of fronts: **Cold** and **Warm**
+
+## Cold Fronts
+
+Cold, dense air "undercuts" warm air forcing it aloft along the front.  Commonly associated with:
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+* Cumulonimbus clouds & heavy rain
+* Strong wind & severe weather
+* Followed by clear skies
+* Typical slope 1:40 – 1:50
+:::
+
+::: {.column width="50%"}
+![](images/Lecture17/10_0.png)
+
+
+:::
+
+::::
+
+## Cold Fronts
+
+How would you know if a cold front occurred? 
+
+* Heavy rain followed by a temperature drop and cold clear high pressure air
+
+
+![](images/Lecture17/11_0.png)
+
+
+## Severe Weather
+
+Rapid upward displacement of warm air >> intense storms
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* High winds
+* Heavy rain
+* Hail
+* Lightning
+* Tornadoes possible
+
+:::
+
+::: {.column width="50%"}
+![](images/Lecture12/squall_line.gif)
+
+
+:::
+
+::::
+
+
+
+## Warm Fronts
+
+Warm air gradually rides up over colder air ahead of it.  Commonly associated with: 
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* Stratus clouds and moderate rainfall or snow
+* Less intense but more widespread
+* Followed by warmer conditions
+* Typical slope 1:100 - 1:150
+
+:::
+
+::: {.column width="50%"}
+
+![](images/Lecture17/14_0.gif)
+
+
+:::
+
+::::
+
+
+## Cloud Sequence of a Warm Front
+
+![Cirrus clouds are the first to appear](images/Lecture17/15_2.jpg)
+
+
+## Cloud Sequence of a Warm Front
+
+![Followed by cirrostratus as the cloud deck lowers](images/Lecture17/15_1.jpg)
+
+## Cloud Sequence of a Warm Front
+
+![Then a transition to altostratus as the cloud deck continues to lower](images/Lecture17/15_4.png)
+
+## Cloud Sequence of a Warm Front
+
+![Finally nimbostratus clouds and precipitation once the frontal boundary is close enough](images/Lecture17/15_3.jpg)
+
+## Movement of Fronts
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+Cold fronts and warm fronts are continuously chasing each other around the mid-latitudes
+
+* Cold fronts travel faster than warm fronts, so they eventually catch up
+
+:::
+
+::: {.column width="50%"}
+
+![](images/Lecture17/16_2.jpg)
+
+
+:::
+
+::::
+
+
+## Occluded Front
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+![](images/Lecture17/16_3.jpg)
+
+:::
+
+::: {.column width="50%"}
+
+![](images/Lecture17/16_4.jpg)
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+The classical and usual view of an occluded front is that it initiates when a cold front overtakes a warm front near a cyclone, such that the warm air is separated (occluded) from the cyclone center at the surface
+
+:::
+
+## Jet Streams
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+Ribbons of high speed winds (160-400 km h-1) encircling the globe aloft (10-15 km). 
+
+* Snake around the globe from W to E and steer weather disturbances (mid-latitude Lows)
+* Generally aligned with air mass boundaries at the surface
+
+
+
+:::
+
+::: {.column width="50%"}
+
+![Source: NASA](images/Lecture17/17_4.gif)
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+
+:::
+
+## Jet Streams
+
+Flow dynamics in jet streams promotes the formation of high and low pressure systems.
+
+![](images/Lecture17/19_2.jpg)
+
+
+## High and Low Pressure Systems
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+![Convergence aloft](images/Lecture17/20_5.png){width="80%"}
+
+:::
+
+::: {.column width="50%"}
+
+![Divergence aloft](images/Lecture17/20_6.png){width="80%"}
+
+:::
+
+::::
+
+
+## Link Between Jet Stream and Ground
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+To form cyclones, it is important to consider the form of divergence in the jet stream. 
+
+* Cyclones cannot persist if they do not have upper-level support.
+
+
+
+
+
+
+:::
+
+::: {.column width="50%"}
+
+![](images/Lecture17/19_2.jpg)
+
+
+:::
+
+::::
+
+
+
+## Life Cycle of Cyclones – Early
+
+Stage starts with a relatively stationary front separating polar (cold) and subtropical (warm) air masses. 
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* A slight dynamic low created by the divergent jet stream aloft pulls air in, so cold air penetrates into the warm air,  and warm air moves towards the cold air. 
+* The center of the disturbance starts to rotate.
+
+
+
+
+:::
+
+::: {.column width="50%"}
+
+![](images/Lecture17/23_1.png)
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+
+
+:::
+
+## Life Cycle of Cyclones – Open
+
+Two fronts (one cold, one warm) are evident.
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* The denser cold air undercuts the warm air, and the warm air overrides the cold air ahead of it
+* The uplift is enhanced by the release of latent heat, as ascending air rises above the lifting condensation level & cloud develops.
+
+
+
+
+
+:::
+
+::: {.column width="50%"}
+
+![](images/Lecture17/24_1.png)
+
+
+:::
+
+::::
+
+## Life Cycle of Cyclones – Occlusion
+
+The occluded stage begins when the cold front catches up with the warm front near the low pressure center. 
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* The cold air at ground level undercuts the warm air pushing it further aloft. 
+* The ‘warm sector’ is systematically eliminated, as more cold air comes in.  
+* This influx destroys the system.
+
+:::
+
+::: {.column width="50%"}
+
+![](images/Lecture17/25_1.png)
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+
+
+:::
+
+## Life Cycle of Cyclones - Dissolving
+
+The dissolving stage is the end of the cyclone’s life.
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* Warm air aloft is separated from its source and gradually mix with the surrounding cold air.
+
+:::
+
+::: {.column width="50%"}
+
+![A dissolving Pacific cyclone as seen from Apollo 9](images/Lecture17/26_0.jpg)
+
+
+:::
+
+::::
+
+## On a Weather Map
+
+![](images/Lecture17/27_2.png)
+
+
+
+## Forecasting
+
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+Environment Canada is responsible for weather forecasting and research.
+
+* They have [multiple office](https://www.canada.ca/en/environment-climate-change/services/science-technology/centres/british-columbia.html) located in Vancouver and Victoria
+
+* Specialize in prediction of coastal and mountain weather
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+![Douglas Jung Building, Vancouver BC](images/Lecture18/13_2.jpg)
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+35 forecasters work in the PSPC
+
+:::
+
+
+
+
+## Forecasting 101
+
+1. Analysis: examine to determine what is happening
+
+2. Diagnosis: why is it happening?
+
+3. Prognosis: forecast the likely outcomes 
+
+
+
+## Scales of Forecasting
+
+
+
+* Global: Largest patterns over longest time-scales (e.g., climate change)
+
+* Synoptic: Continental scale, multi-day weather patterns
+
+* Mesoscale: Smaller spatial scale, daily to hourly patterns
+
+* Microscale: Ecosystem-scale, short time-scale (hours to minutes)
+
+
+## Forecasting Challenges in British Columbia
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* Mountains and complex terrain
+* Sources of moisture
+* Pacific data void
+  + Lack of observational data upstream of BC
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+![](images/Lecture18/20_2.png)
+
+
+:::
+
+::::
+
+## Extreme Weather: Heat Domes
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+Intense high pressure systems that set up over an area and persist for days or weeks.
+
+* Subsidence causes intense adiabatic heating and suppresses cloud formation
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+![Record breaking heat dome, June 2021](images/Lecture18/22_2.png)
+
+
+
+:::
+
+::::
+
+
+
+## Extreme Weather: Heat Domes
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+Intense high pressure systems that set up over an area and persist for days or weeks.
+
+* Subsidence causes intense adiabatic heating and suppresses cloud formation
+* Exacerbates fire risk
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+![Lytton BC, after the heat dome](images/Lecture18/22_3.jpg)
+
+
+
+:::
+
+::::
+
+
+## Extreme Weather: Atmospheric Rivers
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+
+![](images/Lecture18/24_2.jpg)
+
+:::
+
+::: {.column width="50%"}
+
+
+
+![Satellite image of water vapor](images/Lecture18/24_4.jpg)
+
+
+![Washout on the Coquihalla Highway](images/Lecture18/24_3.jpg)
+
+
+:::
+
+::::
+
+
+
+
+
+## Take home points {.smaller}
+
+
+
+* Air masses is a large body of air with roughly uniform humidity and temperature depending on their origin 
+* Fronts are the transition zone between two contrasting air masses
+* We distinguish between cold fronts (cold air undercuts warm air) and warm fronts (where warm air rides up over colder air ahead of it)
+* The life-cycle of cyclones is a dynamic process starting with initially two separate fronts (cold / warm) that will combine to a occlusion and eventually dissolve the energy.
+* Weather forecasting is difficult and especially difficult in BC
+* Climate change has changed the timing and intensity of many weather events 
+* There is increasing focus on forecasting of severe events including wildfires, heat (and cold) extremes as well as precipitation events such as Atmospheric Rivers
+
+

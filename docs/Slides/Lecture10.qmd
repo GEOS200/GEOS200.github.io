@@ -1,0 +1,895 @@
+---
+format:
+  revealjs:
+    theme: default
+title: Heat Conduction
+subtitle: How is heat transmitted through a substance or between substances
+---
+
+{{< include _imports.qmd >}}
+
+
+
+## Heat Conduction
+
+![Thawing of permafrost is a slow process; involves conduction of heat into the subsurface from the surface](images/Lecture10/1_0.jpg)
+
+
+## Learning Objectives
+
+* Describe the process of heat conduction & explain how we can predict soil warming
+* Understand how soil temperatures react to solar heating and how they change over time
+* Define the term thermal admittance and its relationship with soil surface temperature
+* Understand the concept of heat sharing (between soil and the atmosphere) 
+
+
+## Recall: Heat Capacity of Compound Substances 
+
+
+The heat capacity of a mixture of substances can be calculated from the heat capacity and volume fraction of each component. For soil:
+
+{{< include ../_Equations/Heat-Capacity-Soil.qmd >}}
+
+
+* $\theta$ is the volume fraction of mineral (m), organic matter (o), water (w) and air (a)
+  * *Note*: $C_a$ is very small relative to the other values of C
+
+
+## Test your knowledge (iClicker)
+
+How does the heat capacity of the soil change as a function of soil moisture?
+
+* A Linearly
+* B Exponentially
+* C It doesn’t vary with soil moisture
+
+
+## Heat Capacity of Soils
+
+
+![Porosity & saturation are the a dominant controls, mineral vs. organic is secondary](images/Lecture9/HeatCapacityOfSoil.png)
+
+
+## Heat conduction
+
+The process of heat transfer in a material medium in which molecular kinetic energy is passed from molecule to molecule. 
+
+* Heat conduction is most effective in solids, but still occurs in liquids and gases
+* Mass motion (convection) is not involved
+
+![](images/Lecture10/Conduction.png){width=75%}
+
+
+
+
+
+## Fourier’s Law
+
+* Heat flux density ($H_G$) is proportional to the temperature gradient and the thermal conductivity $k$:
+
+{{< include ../_Equations/Fouriers-Law.qmd >}}
+
+* where $\frac{T_2 – T_1}{z_2 – z_1}$ is the temperature gradient 
+* We use z for distance because we are interested in vertical heat flow in the soil
+
+
+
+
+## Soil Heat Flux
+
+
+![Thermcouples are used to measure temperature changes with depth in the soil](images/Lecture10/10_0.png)
+
+
+## A Positive Temperature Gradient
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* This is typical of clear nights night
+  + Soil surface cools due to long-wave radiation loss ($LW^* = R_n < 0$) from the ground
+* Why is there a negative sign in Fourier’s Law? 
+
+:::
+
+::: {.column width="50%"}
+
+
+![A positive temperature gradient](images/Lecture10/Gradient.png)
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+Again- the sign helps us with the directionality of the flux (i.e. a convention) – toward the surface is positive for non-radiational fluxes……
+
+Go over sign convention
+
+:::
+
+
+
+
+## A Negative Temperature Gradient (iClicker)
+
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+This is typical of sunny days.  Which position will have warmer soil temperatures?
+
+* A $z_1$
+
+* B $z_2$
+
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+![](images/Lecture10/Gradient2.png)
+
+
+:::
+
+::::
+
+
+
+## Thermal Conductivity $k$ {.smaller}
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* The thermal conductivity $k$ is a measure of a materials ability to conduct heat
+* For a mixture, it depends on the conductivity and proportion of the components of the mixture
+  + But there is no simple formula for calculating k of a mixture like there was for $C$
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+```{r}
+#| label: tbl-14_2
+#| tbl-cap: Thermal conductivity of selected substances
+#| tbl-colwidths: [55,45]
+
+
+Data <- read.csv(file = 'Data/Lecture10/14_2_Table.csv',sep=',')
+
+kable(Data, col.names = c('Material','k W m<sup>-1</sup> K<sup>-1</sup>'))
+
+```
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+You will be aware of some of theses materials and how good they are as conductors .e.g copper pipe…..
+
+:::
+
+
+
+
+## Thermal Conductivity $k$ {.smaller}
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+
+
+* Wet soils > dry soils
+* Mineral soils > organic soils
+* Fresh snow is a good insulator for the soil
+* The high proportion of air volume explains why fleece is such a good insulator
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+```{r}
+#| label: tbl-15_2
+#| tbl-cap: Thermal conductivity of selected substances.  *Porosity <sup>1</sup> 0.55, <sup>2</sup> 0.85, <sup>3</sup> 0.30 
+#| tbl-colwidths: [55,45]
+
+Data <- read.csv(file = 'Data/Lecture10/15_2_Table.csv',sep=',')
+
+kable(Data, col.names = c('Material','k W m<sup>-1</sup> K<sup>-1</sup>'))
+
+```
+
+
+:::
+
+::::
+
+
+
+## Soil Water and Thermal Conductivity
+
+Non-linear relationship between k and soil water content ($θ_w$) 
+
+:::: {.columns}
+
+::: {.column width="70%"}
+
+* Adding water to dry soil (a) initially causes $k$ to increase rapidly
+  + Rapid increase in area of contacts between soil particles resulting from water film
+* Rate of change decreases for soils closer to saturation (b)
+
+
+:::
+
+::: {.column width="30%"}
+
+![](images/Lecture10/16_2.png)
+
+:::
+
+::::
+
+
+::: {.notes}
+
+Here, the presence of air and water in soil spaces is critical
+
+:::
+
+
+
+
+## Mineral vs. Organic Soil
+
+
+
+```{r}
+#| label: fig-17_5
+#| fig-cap: Soil Water Content and Thermal Conductivity
+
+Data <- read.csv(file = 'Data/Lecture10/17_5_Scatter_Lines.csv',sep=',', check.names = FALSE)
+
+fig <- plot_ly(data=Data)
+
+fig <- fig %>% add_trace(x = ~X, y = ~OrganicSoil, name = 'Organic Soil',type = "scatter", mode = "lines+markers")
+
+fig <- fig %>% add_trace(x = ~X, y = ~MineralSoil, name = 'Mineral Soil',type = "scatter", mode = "lines+markers")
+
+
+
+fig <- fig %>% layout(
+  xaxis = list(
+    title = "Soil Water Content θ<sub>w</sub> m<sup>3</sup> m<sup>-3</sup>"
+  ),
+  yaxis = list(
+    title = "Thermal Conductivity W m<sup>-1</sup> K<sup>-1</sup>"
+  ),
+  margin = Margin_m,
+  legend = list(x = 0.05, y = 1)
+)
+
+fig
+
+```
+
+
+
+
+
+
+## Thermal Diffusivity (K)
+
+
+$K$ indicates how quickly soil at depth will warm or cool in response to heating or cooling at the surface.
+
+{{< include ../_Equations/Thermal-Diffusivity.qmd >}}
+
+* How fast will a temperature wave diffuse downward into soil.  Proportional to rate of heat conduction ($k$) to and inversely proportional to the heat capacity ($C$).
+  + Units: m<sup>2</sup> s<sup>-1</sup>
+
+
+
+::: {.notes}
+
+This is another concept related to heat transfer
+
+:::
+
+
+
+
+## Mineral vs. Organic Soil
+
+
+
+```{r}
+#| label: fig-Diffusivity
+#| fig-cap: Thermal diffusivity has an interesting relationship with $\theta_w$
+
+Data <- read.csv(file = 'Data/Lecture10/Diffusivity.csv',sep=',', check.names = FALSE)
+
+fig <- plot_ly(data=Data)
+
+fig <- fig %>% add_trace(x = ~X, y = ~OrganicSoil, name = 'Organic Soil',type = "scatter", mode = "lines+markers")
+
+fig <- fig %>% add_trace(x = ~X, y = ~MineralSoilFirm, name = 'Mineral Soil (Firm)',type = "scatter", mode = "lines+markers")
+
+fig <- fig %>% add_trace(x = ~X, y = ~MineralSoilLoose, name = 'Mineral Soil (Loose)',type = "scatter", mode = "lines+markers")
+
+
+
+fig <- fig %>% layout(
+  xaxis = list(
+    title = "Soil Water Content θ<sub>w</sub> m<sup>3</sup> m<sup>-3</sup>"
+  ),
+  yaxis = list(
+    title = "Thermal Diffusivity mm<sup>-2</sup> s<sup>-1</sup>"
+  ),
+  margin = Margin_m,
+  legend = list(x = 0.05, y = 1)
+)
+
+fig
+
+```
+
+
+
+
+## Why the Curious Shape?
+
+$k$ increases rapidly with initial increase in water content ($\theta_w$) causing $K$ to also increase rapidly. 
+
++ At higher $\theta_w$ the slow increase in k together with the steady rise of $C$ (in the denominator) causes $K$ to decline. 
+
+
+## Practical Implications
+
+There is an optimum water content for warming, referred to as “field capacity”.
+
+:::: {.columns}
+
+::: {.column width="70%"}
+
+
+* Organic soils are difficult to manage from a soil temperature perspective. 
+* Sand is sometimes added to organic soils to increase $K$ in agriculture. 
+* In forestry organic material around seedlings is removed or mixed with the subsurface mineral soil
+
+
+:::
+
+::: {.column width="30%"}
+
+
+
+
+![](images/Lecture10/23_2.png)
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+
+
+:::
+
+
+
+
+## Soil temperature waves
+
+
+The variation of temperature with depth can be thought of as waves moving down through the soil in response to radiation “forcing” at the surface.
+
+* There are annual waves, diurnal waves, and waves with shorter periods due to clouds
+* In typical mineral soils: 
+  + Annual waves penetrate to ~ 10 m
+  + Diurnal waves to ~ 50 cm
+  + Cloud waves to ~ 5 cm
+
+
+
+
+
+## Annual Waves
+
+```{r}
+#| label: Monthly
+#| fig-cap: Mean soil temperatures by month in Burns Bog
+
+Data <- read.csv(file = 'Data/Lecture10/MonthlyTS.csv',sep=',', check.names = FALSE)
+
+Data[['TimeStamp']] <- as.POSIXct(Data[['TIMESTAMP']],format = "%Y-%m-%d")
+
+fig <- plot_ly(data=Data)
+
+fig <- fig %>% add_trace(x = ~TimeStamp, y = ~TS_1, name = '5 cm',type = "scatter", mode = "lines+markers")
+
+fig <- fig %>% add_trace(x = ~TimeStamp, y = ~TS_2, name = '10 cm',type = "scatter", mode = "lines+markers")
+
+fig <- fig %>% add_trace(x = ~TimeStamp, y = ~TS_3, name = '50 cm',type = "scatter", mode = "lines+markers")
+
+
+fig <- fig %>% layout(
+  xaxis = list(
+    title = "Date"
+  ),
+  yaxis = list(
+    title = "Soil Temperature &deg; C"
+  ),
+  margin = Margin_m,
+  legend = list(x = 0.05, y = 1, orientation = 'h')
+)
+
+fig
+
+```
+
+
+
+## Shorter Timescale Waves
+
+```{r}
+#| label: Daily
+#| fig-cap: Soil temperatures in Burns Bog, June 2023
+
+Data <- read.csv(file = 'Data/Lecture10/DiurnalTS.csv',sep=',', check.names = FALSE)
+
+Data[['TimeStamp']] <- as.POSIXct(Data[['TIMESTAMP']],format = "%Y-%m-%d %H:%M:%S")
+
+fig <- plot_ly(data=Data)
+
+fig <- fig %>% add_trace(x = ~TimeStamp, y = ~TS_1, name = '5 cm',type = "scatter", mode = "lines+markers")
+
+fig <- fig %>% add_trace(x = ~TimeStamp, y = ~TS_2, name = '10 cm',type = "scatter", mode = "lines+markers")
+
+fig <- fig %>% add_trace(x = ~TimeStamp, y = ~TS_3, name = '50 cm',type = "scatter", mode = "lines+markers")
+
+
+fig <- fig %>% layout(
+  xaxis = list(
+    title = "Date"
+  ),
+  yaxis = list(
+    title = "Soil Temperature &deg; C"
+  ),
+  margin = Margin_m,
+  legend = list(x = 0.05, y = 1, orientation = 'h')
+)
+
+fig
+
+```
+
+
+
+
+## Soil Thermal Admittance $\mu$
+
+The ability of the soil surface to accept or release heat following a change in soil heat flux ($H_G$). How well it can “soak it up” without changing temperature much. It is given by:
+
+{{< include ../_Equations/Thermal-Admittance.qmd >}}
+
+* $\mu$ is the soil thermal admittance; $k$ is the thermal conductivity and $C$ is the heat capacity
+  + Note the similarities to thermal diffusivity @eq-Thermal-Diffusivity
+  + Units: J m<sup>-2</sup> K<sup>-1</sup> s<sup>-1/2</sup>
+
+
+## Thermal Admittance and Surface Temperature 
+
+For a change in soil heat flux (i.e., $\Delta H_G$), the change in surface temperature ($\Delta T_s$) is inversely proportional to $\mu$ 
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* For the same energy added:
+  + Soil with a low $\mu$ warms and cools more rapidly
+  + Soil with a high $\mu$ warms and cools more slowly
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+{{< include ../_Equations/Thermal-Admittance-v-Temperature.qmd >}}
+
+
+:::
+
+::::
+
+
+
+
+
+## Soil Thermal Admittance $\mu$
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* The highest value of $\mu$ occurs at saturation 
+* Organic soils have lower values of $\mu$ than mineral soils
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+![Relationship between $\mu$ and volumetric water content ($\theta_w$)](images/Lecture10/8_2.png)
+
+
+:::
+
+::::
+
+
+
+## Test your knowledge (iClicker)
+
+For the same input of energy, which of the two soils likely will warm up more rapidly (at the surface)?
+
+![](images/Lecture10/7_2.png)
+
+
+::: {.notes}
+
+B
+
+:::
+
+
+
+## Test your knowledge (iClicker)
+
+
+Which of the two surface conditions (same location) experiences a higher $\mu$? 
+
+![](images/Lecture10/9_2.png)
+
+::: {.notes}
+
+B
+
+:::
+
+
+
+
+## Surface Thermal Climates
+
+Thermal climate of soil is tied to $\mu$:
+
+:::: {.columns}
+
+::: {.column width="55%"}
+
+
+* High $\mu$: small daily surface temperature range
+  + Wet areas, bare mineral soil, bare rock
+* Low $\mu$: large daily surface temperature range
+  + Dry mineral, organic soils, vegetative cover
+
+
+:::
+
+::: {.column width="45%"}
+
+
+
+
+![Soil saturation during snow melt results in high $\mu$  and hence slow warming at the surface.](images/Lecture10/10_2.jpg)
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+High u: quickly takes up heat from your hand (~35°C) because of it’s high k and C
+Low u: conducts little heat to its interior (low k), therefore what heat goes into the surface few millimeters causes a large temp increase (quickly approaching 35 °C) because of its lower C
+
+:::
+
+
+
+
+## High Surface Temperatures 
+
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+Excessively soil surface temperatures can cause damage to young plants.
+
+* This creates issues in forestry and agriculture.
+ 
+
+
+:::
+
+::: {.column width="40%"}
+
+
+
+
+![UBC Research Forest](images/Lecture10/11_0.png){width="80%"}
+
+
+:::
+
+::::
+
+
+
+
+## Low Surface Temperatures 
+
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+The worst frost damage occurs on vegetated organic soils.
+
+* Insulating effect of vegetation and organic layer prevents soil heat from flowing to surface at night
+  + i.e. these surfaces have low $\mu$ 
+
+
+:::
+
+::: {.column width="40%"}
+
+
+![](images/Lecture10/15_2.png)
+
+
+:::
+
+::::
+
+
+
+## Low Surface Temperatures 
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* Surface temperatures can drop > 20 K overnight for soils with low $\mu$ 
+  + Organic and dry mineral soils 
+
+
+:::
+
+::: {.column width="50%"}
+
+
+![Nighttime drop in surface temp vs $\mu$](images/Lecture10/T_v_mu.png)
+
+
+
+:::
+
+::::
+
+
+
+## Mulch
+
+
+:::: {.columns}
+
+::: {.column width="65%"}
+
+
+* Mulch is a natural or artificial covering of soil that can alter soil temperature or moisture regime.
+* Mulches can moderate extreme soil temperature variation (heat, frost), increase warming of soils, conserve water, and control weeds. 
+
+
+:::
+
+::: {.column width="35%"}
+
+![](images/Lecture10/17_4.jpg)
+
+
+
+![](images/Lecture10/17_5.jpg)
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+Natural opaque mulches: wood chips, straw, corn stover
+
+
+:::
+
+
+
+
+## Opaque mulches 
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* Black mulches will usually raise soil temperature
+  + Especially black plastic
+* Non-black mulches usually reduce soil temperatures 
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+![Different colors of wood mulch](images/Lecture10/Mulch.jpg)
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+Natural opaque mulches: wood chips, straw, corn stover
+
+
+:::
+
+
+
+
+## Transparent Mulches  
+
+Transparent plastic “traps” energy beneath it (like a greenhouse) allowing it to be conducted into the soil. 
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+Transparent plastics raise soil temperatures more than black plastics. 
+
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+![](images/Lecture10/19_2.png)
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+Natural opaque mulches: wood chips, straw, corn stover
+
+
+:::
+
+## Energy Balance of Ecosystems
+
+
+![Soil heat flux is a component of the total energy balance](images/Energy_Balance.png){width="65%"}
+
+## Energy Balance of Ecosystems
+
+Net radiation ($R_n$) is partitioned between latent heat fluxes ($H_L$), sensible heat fluxes ($H_S$), ground heat fluxes ($H_G$), and residual storage component ($\Delta S$).
+
+* $\Delta S$ includes photosynthesis and other minor outlets
+
+{{< include ../_Equations/Energy-Balance.qmd >}}
+
+## Heat sharing
+
+
+The partitioning of total 'sensible' heat flux between the soil ($H_G$) and the atmosphere ($H_S$). 
+ 
+
+{{< include ../_Equations/Heat-Sharing.qmd >}} 
+
+* Soil ($H_G$) and atmosphere ($H_S$) share in accepting heat during daytime and releasing heat at night
+* $\mu_g$ and $\mu_a$ are the soil and atmospheric thermal admittance respectively
+  + $\mu_a$ increases with wind speed and convection (mixing)
+
+
+
+
+
+
+
+## Summary on Soil Climates
+
+
+* $K$ depends on soil type (largely due to porosity but also organic matter content) and soil water content $\theta_w$.
+* Mineral soil has deeper temperature wave penetration (warms faster) than organic soil, and wetter soil has deeper temperature wave penetration than dry soil. 
+* Presence of surface organic layer has a strong effect on depth of T waves, the average T at depth, and the range of surface T.
+
+
+
+::: {.notes}
+
+
+
+:::
+
+
+
+
+## Take home points {.smaller}
+
+
+* Fourier’s law of heat conduction - A change in soil temperature with depth (i.e. a temperature gradient) is proportional to a heat flux density. 
+* Thermal conductivity $k$ relates the temperature gradient to the heat flux density. 
+* k is increasing with soil water content - but not linearly. 
+* Thermal diffusivity $K$ = k / C combines the effect of thermal conductivity and heat capacity and indicates how quickly soil at depth will warm or cool in response to heating or cooling at the surface 
+* Thermal admittance $\mu \sqrt{k C}$ is the ability of a surface to accept or release heat
+* Thermal admittance increases with water content of the soil. 
+* Low thermal admittance explains why some soil surfaces (dry surface organic layer) get very hot and cold (frost damage to young plants) 
+* Heat sharing refers to partitioning of energy between soil and atmosphere. Mulches change soil temp by altering heat sharing 
+

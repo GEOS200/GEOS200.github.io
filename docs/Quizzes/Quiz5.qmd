@@ -1,0 +1,233 @@
+---
+title: Lecture Quiz 4
+format: html
+---
+
+## 1
+
+Winds at the earth's surface always flow:
+
+* A. From areas of high pressure to areas of low pressure
+* B. From areas of low pressure to areas of high pressure
+* C. From  areas of hot temperatures to  areas of cold temperatures
+* D. From  areas of hot temperatures to  areas of cold temperatures
+* E. Parallel to isobars
+
+::: {.content-hidden when-format="html""}
+
+**Answer:**  
+
+* A. From areas of high pressure to areas of low pressure
+
+:::
+
+
+
+## 2
+
+Precipitation in midlatitudes usually forms via:
+
+* A. The Collision-Coalescence Process
+* B. The Three-phase Process
+* C. Convection
+* D. Orographic Lift
+* E. All of the above
+
+::: {.content-hidden when-format="html""}
+
+**Answer:**  
+
+* B. The Three-phase Process
+
+:::
+
+
+
+## 3
+
+Which of the following clouds typically produce precipitation
+
+* A. Altostratus
+* B. Cirrus
+* C. Stratus
+* D. Nimbostratus
+* E. All of the above
+
+
+::: {.content-hidden when-format="html""}
+
+**Answer:**  
+
+* D. Nimbostratus
+
+:::
+
+
+## 4
+
+Depending on the latitude, this phenomena deflects winds as a function of wind speed speed.
+
+* A. Friction
+* B. Pressure Gradient Force
+* C. Coriolis Effect
+* D. Centrifugal Force
+* E. Rotational Force
+
+
+::: {.content-hidden when-format="html""}
+
+**Answer:**  
+
+* C. Coriolis Effect
+
+:::
+
+
+
+## 5
+
+Anti-cyclones are associated with
+
+* A. Cloudy skies and high pressure
+* B. Cloud-free skies and high pressure
+* C. Cloud-free skies and low pressure
+* D. Cloudy skies and low pressure
+* E. Severe weather (e.g, tornadoes)
+
+
+::: {.content-hidden when-format="html""}
+
+**Answer:**  
+
+* B. Cloud-free skies and high pressure
+
+:::
+
+
+
+
+## 6
+
+This feature is common over continents in the summer and near the equator
+
+* A. Thermal Highs
+* B. Adiabatic Winds
+* C. Thermal Lows
+* D. Warm Fronts
+* E. Cold Fronts
+
+
+::: {.content-hidden when-format="html""}
+
+**Answer:**  
+
+* C. Thermal Lows
+
+:::
+
+
+
+
+## 7
+
+When a cold front "catches" up to a warm front, a low-pressure system begins the process of :
+
+* A. Anti-Cyclogenesis
+* B. Frontal Destruction
+* C. Acceleration
+* D. Cyclogenesis
+* E. Occlusion
+
+
+::: {.content-hidden when-format="html""}
+
+**Answer:**  
+
+* E. Occlusion
+
+:::
+
+
+
+
+## 8
+
+Continental polar air masses tend to be
+
+* A. Colder than Maritime polar air masses
+* B. Warmer than Maritime polar air masses
+* C. Drier than Maritime tropical air masses
+* D. A & C
+* E. B & C
+
+::: {.content-hidden when-format="html""}
+
+**Answer:**  
+
+* D. A & C
+
+:::
+
+
+
+## 9
+
+Which cloud forms highest in the sky?
+
+* A. Cirrostratus 
+* B. Altostratus
+* C. Altocumulus
+* D. Cumulus
+* E. Fog
+
+::: {.content-hidden when-format="html""}
+
+**Answer:**  
+
+* A. Cirrostratus 
+
+:::
+
+
+
+## 10
+
+Clouds form via:
+
+* A. Convection
+* B. Fronts and Convergence
+* C. Orographic Lift
+* D. Radiative Cooling (Fog)
+* E. All of the above
+
+
+::: {.content-hidden when-format="html""}
+
+**Answer:** 
+
+* A. Convection
+
+:::
+
+
+
+## 11
+
+**Extra credit:** What is my dog's name?  *Hint*: You can find her name & picture showing how she wears a sweater to reduce her LW flux density and stay warm during the winter.
+
+* A. Yarrow
+* B. Fido
+* C. Bean
+* D. Doggy
+* E. Max
+
+::: {.content-hidden when-format="html""}
+
+**Answer:**  
+
+* A. Yarrow
+
+:::
+
+
+

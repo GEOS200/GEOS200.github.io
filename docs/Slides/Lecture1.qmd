@@ -1,0 +1,789 @@
+---
+format:
+  revealjs:
+    theme: default
+title: Energy
+subtitle: The ability to do work.
+---
+
+{{< include _imports.qmd >}}
+
+
+## Learning Objectives
+
+* Understand which forms of energy are important for driving the climate system.
+* Explain the difference between heat and temperature.
+* Describe the mechanisms by which energy is transported.
+* Understand how we account for energy and mass conversions in the atmosphere.
+
+## iClicker
+
+We'll try using I clicker today:
+
+* Use the join code: **PXPZ**
+* Or follow this link: https://join.iclicker.com/PXPZ
+
+If these options don't work, go to:  
+
+* student.iclicker.com
+* Then search for Atmospheric Environments
+## iClicker
+
+We'll try using I clicker today:
+
+* Use the join code: **PXPZ**
+* Or follow this link: https://join.iclicker.com/PXPZ
+
+If these options don't work, go to:  
+
+* student.iclicker.com
+* Then search for Atmospheric Environments
+
+
+## Which forms of energy are important in the atmosphere?
+
+![](images/Typhoon.jpg)
+
+## Test Poll
+
+I am able to join and answer:
+
+* A - Yes
+
+* B - No
+
+## Test Poll
+
+I am able to join and answer:
+
+* A - Yes
+
+* B - No
+
+
+## Forms of energy in the atmosphere
+
+
+* **Radiation**: electromagnetic waves (e.g., sunlight)
+* **Sensible heat**: thermal energy we can feel (e.g., warm air, cold ice)
+* **Latent heat**: phase changes of a water (e.g., evaporation, condensation)
+* **Chemical** energy: bonds of atoms (e.g., photosynthesis)
+* **Kinetic**: from motion (e.g., winds)
+* **Geopotential**: position in gravitational field
+
+
+::: {.notes}
+
+This is an important slide and worth  memorizing. Remember “sensible heat” is heat  that can be “sensed” or felt. We can measure  sensible heat with a thermometer. Latent means “hidden” and therefore is associated with the energy used to change phases of water. 
+
+:::
+
+
+
+
+## Heat vs. Temperature
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+**Heat** is the thermal energy 
+
+* Sum of kinetic and potential energy
+
+
+:::
+
+::: {.column width="50%"}
+
+**Temperature** a (relative) measure of thermal energy.
+
+
+* Average random kinetic energy 
+  - The ability of a body to transfer thermal energy
+
+:::
+
+::::
+
+
+::: {.notes}
+
+The difference between HEAT and TEMPERATURE is important and a little subtle. To illustrate this, can you think of a situation where heat is added but temperature does not change?? Perhaps the one you know best is when water reaches boiling point in a pot on the stove - its temperature stays at 100oC but heat continues to be added. Note the K in the slide stands for temperature in Kelvins.
+
+:::
+
+
+
+
+## Heat vs. Temperature
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+**Heat** is thermal energy 
+
+* Travels from hotter to colder objects
+* **Can do work**
+* Often expressed in Joules (J)
+  - J = 1 N x 1 m
+  - Newton (N) = 1 kg m s<sup>-2</sup>
+
+:::
+
+::: {.column width="50%"}
+
+**Temperature** a (relative) measure of thermal energy.
+
+* Increases/decreases when heat is added/removed
+* **Cannot do work**
+
+:::
+
+::::
+
+
+## Temperature scales compared {.smaller}
+
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+
+Several scales have been invented: 
+
++ Fahrenheit, Celsius, Kelvin...
+
+* According to [the SI system](../Resources.qmd#the-si-system)
+
+  - We should use Kelvin (K)
+  - or Celsius (°C) 
+    + *For absolute temperatures only*
+
+* Conversion:
+
+{{< include ../_Equations/Kelvin.qmd >}}
+
+
+:::
+
+::: {.column width="40%"}
+
+
+
+
+![](images/Lecture1/6_3.png){width="90%"}
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+Temperature scales have changed over time and really only developed in response to the ability to blow glass tubes (in Italy) in which some kind of thermally responsive liquid could be contained (e.g. mercury, alcohol). We will use the absolute temperature scale (K) a lot in this course. For example a sunny 20 C day in Vancouver would be 293.15 K
+
+:::
+
+
+
+
+## Three States of Water
+
+
+
+![](images/PhaseChange.jpg){width="90%"}
+
+
+::: {.notes}
+
+Here is an example of the three states of water: LIQUID, ICE, GAS (Vapour). 
+
+:::
+
+
+## States of Water (iClicker)
+
+Which of the following are **not** states of water? 
+## States of Water (iClicker)
+
+Which of the following are **not** states of water? 
+
+- A: Ice
+- B: Liquid
+- C: Vapor (gas)
+- D: Air
+- A: Ice
+- B: Liquid
+- C: Vapor (gas)
+- D: Air
+
+## State changes of water
+
+
+&nbsp;<br>&nbsp;<br>
+
+
+&nbsp;<br>&nbsp;<br>
+
+
+:::: {.columns}
+
+::: {.column width="0%"}
+
+
+
+:::
+
+::: {.column width="100%"}
+
+
+
+
+![](images/Lecture1/8_2.png)
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+The next 4 slides will show the changes of phase of water and the SIX processes that are possible. Also shown are the amounts of energy per kilogram of water associated with each phase change. 
+The next 4 slides will show the changes of phase of water and the SIX processes that are possible. Also shown are the amounts of energy per kilogram of water associated with each phase change. 
+
+:::
+
+
+
+
+## State changes of water
+
+
+&nbsp;<br>&nbsp;<br>
+
+&nbsp;<br>&nbsp;<br>
+
+:::: {.columns}
+
+::: {.column width="0%"}
+
+
+
+:::
+
+::: {.column width="100%"}
+
+
+
+
+![](images/Lecture1/9_2.png)
+
+
+:::
+
+::::
+
+
+
+## Latent Heat
+
+
+
+&nbsp;<br>&nbsp;<br>
+
+:::: {.columns}
+
+::: {.column width="0%"}
+
+
+
+:::
+
+::: {.column width="100%"}
+
+
+
+
+![](images/Lecture1/11_2.png)
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+The main point here is that because energy is required to change phase we talk about this type of energy use as LATENT HEAT.NOTICE the large amounts of energy associated with Evaporation and Condensation, compared to melting and freezing. In evaporation larges amounts of heat are required and are the reason you feel cold (heat taken from your body) when water evaporates from your body after coming out of a swimming pool. Similarly, when water vapour condenses into a liquid, large amounts of heat are released into the atmosphere. 
+This is of course a way for energy to be from the tropics to mid latitudes. 
+The main point here is that because energy is required to change phase we talk about this type of energy use as LATENT HEAT.NOTICE the large amounts of energy associated with Evaporation and Condensation, compared to melting and freezing. In evaporation larges amounts of heat are required and are the reason you feel cold (heat taken from your body) when water evaporates from your body after coming out of a swimming pool. Similarly, when water vapour condenses into a liquid, large amounts of heat are released into the atmosphere. 
+This is of course a way for energy to be from the tropics to mid latitudes. 
+
+:::
+
+
+
+
+## Latent Heat
+
+
+:::: {.columns}
+
+::: {.column width="0%"}
+
+
+
+:::
+
+::: {.column width="100%"}
+
+
+
+
+![](images/Lecture1/12_2.png)
+
+
+:::
+
+::::
+
+
+
+## Latent Heat {.smaller}
+
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+The energy ($kJ\: kg^{-1}$) required for water to change states varies with temperature.
+
+```{r}
+#| label: tbl-13_2
+#| tbl-cap: Energy associated with phase changes of water at 0$^{\circ}C$
+
+Data <- read.csv(file = '../_Data/LatentHeatWater0C.csv',sep=',')
+
+kable(Data, col.names = gsub("[.]", " ", names(Data)))
+
+```
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+
+
+```{r}
+#| label: fig-13_3
+#| fig-cap: Latent heat of evaporation / condensation at different temperatures
+#| fig-width: 4.25
+
+Data <- read.csv(file = '../_Data/LatentHeatVaporization.csv',sep=',')#, check.names = FALSE)
+
+fig <- plot_ly(data=Data)
+
+fig <- fig %>% add_trace(x = ~Temperature.C, y = ~Heat.of.vaporization.kJ.kg.1,type = "scatter", mode = "lines+markers")
+
+
+fig <- fig %>% layout(
+  title = 'Latent Heat of Vaporization',
+  xaxis = list(
+    title = "<sup>&deg;</sup>C"
+  ),
+  yaxis = list(
+    title = "kJ kg<sup>-1</sup>"
+  )
+)
+
+
+
+fig
+
+```
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+The amount of heat involved in these processes is given the term “latent heat of.....” as we see in the above table. 
+Notice that the amounts of energy required are dependent on temperature. 
+
+:::
+
+
+
+
+## Latent heat of vaporization
+
+Conversion from latent to sensible heat in a storm cloud is equivalent to the energy released from a small nuclear bomb.
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+
+* Based on the amount of latent heat picked up at the surface through evaporation 
+  - Released as water vapor condenses back into liquid water or freezes into ice. 
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+![](images/Lecture1/14_3.jpg)
+
+
+
+:::
+
+::::
+
+
+## Why spray liquid water on a tree?
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+Its seems counter-intuitive, but fine mist irrigation by sprinklers is used to reduce frost damage.
+
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+![](images/Lecture1/15_2.png)
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+This example is the first of many that we will look at where farmers/orchardists etc. take advantage of atmospheric processes in order to prevent damage to crops/animals etc.. 
+
+:::
+
+
+
+
+## Why spray liquid water on a tree?
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+Latent heat of fusion:
+
+* Sprayed liquid water releases latent heat of fusion as it becomes ice 
+  - Prevents a damaging drop in temperature of almonds
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+![](images/Lecture1/15_2.png)
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+This example is the first of many that we will look at where farmers/orchardists etc. take advantage of atmospheric processes in order to prevent damage to crops/animals etc.. 
+
+:::
+
+
+
+
+## Energy transfer in the atmosphere
+
+
+![](images/Lecture1/17_3.png)
+
+
+::: {.notes}
+
+Here we continue with the definition of basic  physical processes that you are hopefully very familiar with. Examples would be: Radiation: light coming from the sun Conduction: heat transferred from molecule to molecule as you would see in the soil or a rod  that is heated in a campfire Convection: heat transferred by a moving fluid such as in a boiling pot, milk poured into a cup of coffee or cumulus clouds in the atmosphere. 
+
+:::
+
+
+
+
+## Convection
+
+There are free and forced types of convection. 
+
+:::: {.columns}
+
+::: {.column width="35%"}
+
+* Forced convection would be air movement caused by a fan or the wind. 
+
+:::
+
+
+
+::: {.column width="65%"}
+
+
+![Free convection of heat from hot ground](images/Lecture1/18_3.png)
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+NOTE: CONVECTION is associated with vertical motion in the atmosphere while ADVECTION refers to horizontal motion. Free convection is when air rises of its own accord because it is warmer and less dense than the surrounding air. Forced convection is when air is forced up and over a barrier such as a hill. 
+NOTE: CONVECTION is associated with vertical motion in the atmosphere while ADVECTION refers to horizontal motion. Free convection is when air rises of its own accord because it is warmer and less dense than the surrounding air. Forced convection is when air is forced up and over a barrier such as a hill. 
+
+:::
+
+
+
+
+## Fluxes and flux densities {.smaller}
+
+
+:::: {.columns}
+
+
+::: {.column width="30%"}
+
+### Heat
+
+* Aka. Energy
+  - J (Joules)
+
+<br>
+&nbsp;
+
+![](images/Lecture1/19_7.png)
+
+:::
+
+::: {.column width="30%"}
+
+### Heat Flux
+
+* Flow rate of energy
+  - Aka. Power
+  - W = J s<sup>-1</sup>
+  
+
+![](images/Lecture1/19_8.png)
+
+
+
+
+:::
+
+::: {.column width="40%"}
+
+### Heat Flux Density
+
+* Net transfer of energy
+  - Flow rate of energy per unit area
+  - W m-2 = J s<sup>-1</sup> m<sup>-2</sup>
+
+![](images/Lecture1/19_9.png)
+
+
+:::
+
+::::
+
+
+
+## Heat Flux (iClicker)
+
+Heat always travels from:
+
+- A: Hotter to colder
+- B: Colder to hotter
+- C: Either A or B
+
+
+
+## Fluxes and flux densities 
+
+Generally speaking: flux densities can be positive or negative.
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* Sum of positive and negative fluxes
+* The sign will depend on your reference point.
+  + Heat will always go from hotter to colder object 
+  + But many fluxes are bi-directional.
+
+
+
+::: 
+
+
+::: {.column width="50%"}
+
+
+![](images/Lecture1/21_3.png)
+
+:::
+::::
+
+## Net Radiation
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+
+* Incoming radiation (sunlight) 
+* Minus reflected & emitted radiation
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+![](images/Lecture1/20_5.jpg)
+
+:::
+
+::::
+
+
+
+
+## Net Ecosystem Exchange (of CO<sub>2</sub>)
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+
+* Carbon uptake (photosynthesis)
+* Minus carbon emission (respiration)
+
+
+:::
+
+::: {.column width="50%"}
+
+![](images/Lecture1/22_2.jpg)
+
+:::
+
+::::
+
+## Conservation of energy and mass
+
+One of the most powerful laws used in analyzing organism-environment interaction is this **Law of Conservation**.
+
+* Neither mass nor energy can be created or destroyed by any ordinary means. 
+* The application is similar to reconciling your checking account i.e. you can construct a budget or balance to account for all inflows and outflows of heat and mass.
+
+
+
+## Conservation of energy and mass
+
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+Energy is continually being converted from one form to another
+
+* None is lost.
+
+
+:::
+
+::: {.column width="60%"}
+
+![A typhoon transports energy away from the equator](images/Typhoon.jpg)
+
+
+:::
+
+::::
+
+
+
+## Energy conservation
+
+![](images/Lecture1/26_2.png)
+
+
+## Energy balance of a vegetated surface
+
+
+![](images/Energy_Balance.png){width="85%"}
+
+
+
+## Summary
+
+* Difference between heat and temperature 
+  - Heat does work - temperature does not
+* What is latent heat?
+  - Energy associated with phase change (of water)
+* Flux vs. flux density 
+  - Flux density is energy transport per unit area per unit time (W m-2)
+
+
+## Summary
+
+* Energy and mass transfer mechanisms 
+  - Radiation, conduction, and convection
+* Understand the concept of energy and mass balances and their connectivity 
+  - Neither mass nor energy can be created or destroyed by any ordinary means, just converted from one form to another.

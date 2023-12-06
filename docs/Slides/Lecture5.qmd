@@ -1,0 +1,750 @@
+---
+format:
+  revealjs:
+    theme: default
+title: Radiation transfer in plant canopies
+subtitle: How does light interact with plants?
+---
+
+{{< include _imports.qmd >}}
+
+
+
+## Radiation transfer in plant canopies
+
+
+
+![Transmission of solar radiation in a foggy West Coast Forest](images/Lecture5/1_0.jpg)
+
+::: {.notes}
+
+One of our applications in forest and agricultural climatology is themodelling and measurement of short-wave irradiance at the ground after passing through Earth’s atmosphere.
+
+:::
+
+
+## Lecture Review Quiz (iClicker)
+
+We have a lecture review quiz this Friday (September 29th).
+
+
+A - True
+
+B - False
+
+
+## Learning Objectives
+
+
+:::: {.columns}
+
+::: {.column width="65%"}
+
+* Describe how is short-wave radiation is distributed within a plant canopy.
+* Explain how different wavelengths behave differently within the canopy.
+* Understand how radiation distribution affect photosynthesis in a plant canopy.
+
+
+:::
+
+::: {.column width="35%"}
+
+![](images/Lecture5/2_0.jpg)
+
+
+:::
+
+::::
+
+
+## Beer’s Law {.smaller}
+
+Beer’s Law describes the attenuation (reduction in flux density) of a beam of radiation through a homogeneous medium.
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+{{< include ../_Equations/Beers-Law.qmd >}}
+
+* $\mu$ is the attenuation coefficient
+  * Combination of absorptance and reflectance 
+  * Will vary with $\lambda$
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+```{R}
+#| label: fig-Beers-Law
+#| fig-cap: Beam attenuation as a function of distance
+#| fig-width: 4.35
+#| fig-height: 5
+
+Beers_Law <- function(R_0,X,mu){
+  R_x <- R_0*exp(-mu*X)
+  return(R_x)
+} 
+
+X <- c(0:100/10)
+
+R_0 = 1
+
+mu_1 <- 0.5
+mu_2 <- 0.75
+mu_3 <- 1
+
+R_x1 <- Beers_Law(R_0,X,mu_1)
+R_x2 <- Beers_Law(R_0,X,mu_2)
+R_x3 <- Beers_Law(R_0,X,mu_3)
+
+data <- data.frame(R_x1,R_x2,R_x3,X)
+
+
+fig <- plot_ly(data, x = ~X, y = ~R_x1, type = 'scatter', mode = 'lines',  name = sprintf("&mu; = %s",mu_1))
+fig <- fig %>% add_trace(data, x = ~X, y = ~R_x2, type = 'scatter', mode = 'lines',  name = sprintf("&mu; = %s",mu_2))
+fig <- fig %>% add_trace(data, x = ~X, y = ~R_x3, type = 'scatter', mode = 'lines',  name = sprintf("&mu; = %s",mu_3))
+
+
+fig <- fig %>% layout(
+  yaxis = list(
+    title = "R<sub>x</sub>/R<sub>0</sub>"
+  ),
+  xaxis = list(
+    title = "Distance (X)"
+  ),
+  legend = list(x = 0.85, y = 0.8)
+)
+
+fig
+
+```
+
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+ALERT: a new “law” to be added to your growing list of radiation laws! Note: dz simply refers to a thickness or depth of some material it could be air, water, glass, plastic or in our case the depth of plant canopy.
+
+:::
+
+## Beer’s Law
+
+Strictly speaking - the law only applies to **homogenous** media.
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* Attenuation will vary with because composition & density vary
+
+:::
+
+::: {.column width="50%"}
+
+
+![Plant canopies are **not** homogenous](images/Lecture5/5_3.jpg)
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+Here you can see how light changes as you go deeper into the canopy (i.e. as X gets bigger)
+
+
+:::
+
+## Beer’s Law
+
+Strictly speaking - the law only applies to **homogenous** media.
+
+
+:::: {.columns}
+
+::: {.column width="65%"}
+
+* However, it measurements show it roughly applies in uniform canopies 
+  + e.g., grass
+
+* We can develop empirical (observation based) relationships for different plant canopies
+
+:::
+
+::: {.column width="35%"}
+
+![](images/Lecture5/6_4.png)
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+Measured vertical profiles of K↓ in a native grass stand. 
+
+:::
+
+## Vertical distribution of folliage
+
+
+![](images/Lecture5/7_0.jpg)
+
+
+## Modifying Beer’s Law to apply to 
+
+:::: {.columns}
+
+::: {.column width="100%"}
+
+* The main modification to overcome the non-uniformity of leaves is to replace distance (x) with the cumulative leaf area index (LAI).
+* What is LAI?
+  + The leaf area index is the one-sided leaf (and stem) area per unit ground area.
+
+
+:::
+
+::: {.column width="0%"}
+
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+Here we modify Beer’s Law to use Leaf area with depth, something that can be done for different canopies
+
+It is defined as the one-sided green leaf (and stem) area per unit ground surface area (LAI = leaf area / ground area, m2 / m2) in broadleaf canopies.
+
+:::
+
+## Leaf Area Index
+
+
+![](images/Lecture5/9_1.png)
+
+
+
+::: {.notes}
+
+https://www.metergroup.com/en/meter-environment/education-guides/researchers-complete-guide-leaf-area-index-lai
+
+:::
+
+## Leaf Area Index
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+![A single spruce branch](images/Lecture5/10_1.jpg)
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+![The same branch broken into its respective components](images/Lecture5/10_2.jpg)
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+In conifers, three definitions for LAI have been used:
+Half of the total needle surface area per unit ground surface area [2]
+Projected (or one-sided, in accordance the definition for broadleaf canopies) needle area per unit ground area
+Total needle surface area per unit ground area [3]
+
+
+:::
+
+## Modifying Beer’s Law 
+
+Cumulative LAI (L) = sum of LAI
+
+
+* Integration of LAI through canopy starting at top of canopy
+
+![](images/Lecture5/11_2.png)
+
+
+::: {.notes}
+
+You can see how this might work and notice how we make the switch to a cumulative index as we go down into the canopy.
+In the next slide you will see how we can use this to modify the Beer’s Law equation with one that has L rather than distance x
+
+
+:::
+
+
+## Orientation of canopy leaf area
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+![Pickleweed evolved to minimize LAI to help survive hostile conditions on exposed rocky coasts](images/Lecture5/13_1.jpg)
+
+:::
+
+::: {.column width="50%"}
+
+![Squash evolved to maximize LAI to help maximize energy capture and produce large fruits with many seeds](images/Lecture5/13_2.jpg)
+
+:::
+
+::::
+
+
+::: {.notes}
+
+These two slides illustrate how the orientation of leaves is not really taken into account well
+
+:::
+
+## Leaf Orientation
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+The canopy attenuation coefficient is related to the orientation of the leaves in relation to the sun angle:
+
+* Erectophile vs. planophile 
+
+
+:::
+
+::: {.column width="50%"}
+
+![](images/Lecture5/14_2.png)
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+In fact we take account of leaf orientation in the canopy extinction coefficient.
+
+:::
+
+
+## Spatial Heterogeneity
+
+Consider the similarity/dissimilarity across space.
+
+* A **homogenous** canopy will have a more even distribution across
+  + The attenuation coefficient will be less variable
+
+* A **heterogeneous** canopy will have a less even distribution across
+  + The attenuation coefficient will be more variable
+
+
+## Spatial Heterogeneity
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+![Homogenous, dense, evenly spaced corn limits canopy transmittance](images/Lecture5/Homgenous.jpg)
+
+:::
+:::{.column width="50%"}
+
+![Heterogenous, clumpy vegetation in Burns Bog allows more light to reach the surface](images/Lecture5/Clumpy.jpg)
+
+:::
+
+::::
+
+## Modifying Beer’s Law {.smaller}
+
+We rewrite Beer’s Law for solar radiation under a canopy as:
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+{{< include ../_Equations/Beers-Law-for-Plant-Canopies.qmd >}}
+
+* $R_0$ is irradiance above the canopy
+* $R_u$ is irradiance under the canopy
+* $L$ is the cumulative LAI
+* $G$ is the plant canopy attenuation coefficient
+* $\Omega$ is a clumping scale factor
+* $cos\theta$ accounts for the zenith angle
+
+:::
+
+::: {.column width="40%"}
+
+![](images/Lecture5/12_0.jpg)
+
+:::
+
+::::
+
+
+## Canopy Transmission
+
+Transmitted radiation will be a proportion of total incoming radiation.
+
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+
+{{< include ../_Equations/Canopy-Transmission.qmd >}}
+
+:::
+
+::: {.column width="60%"}
+
+![](images/Lecture5/17_1.png)
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+I do not need you to learn these equations. I just you to need to understand that these effects can be taken into account.
+Can invert to estimate LAI
+
+:::
+
+
+## Canopy Transmission (iClicker)
+
+Can you have a negative value for transmitted radiation?
+
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+
+A - Yes
+
+B - No
+
+:::
+
+::: {.column width="60%"}
+
+![](images/Lecture5/17_1.png)
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+I do not need you to learn these equations. I just you to need to understand that these effects can be taken into account.
+Can invert to estimate LAI
+
+:::
+
+
+## Radiation beneath plant canopies
+
+* Diffuse (d) radiation penetrates the canopy more effectively than direct (s) radiation
+  + Ratio $\frac{SW_d\downarrow}{SW_s\downarrow}$ increases with depth into canopy.
+  + Scattering of direct radiation helps increase proportion of diffuse PAR in the canopy.
+* $\frac{NIR\downarrow}{PAR\downarrow}$ increases with depth into canopy.
+  + The high PAR absorptivity of leaves in the upper canopy results in depleted PAR in the lower canopy.
+
+
+## Changes with seasons
+
+![](images/Lecture5/20_0.jpg)
+
+
+## Changes with seasons
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+![](images/Lecture5/21_2.jpg)
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+![Radiation above & below boreal aspen canopy](images/Lecture5/22_0.png)
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+Can you see in the two plots when the aspen forest comes into leaf?
+
+:::
+
+
+## Changes with seasons (iClicker) {.smaller}
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+Which bar on the graph (A or B) would represent the proportion of radiation reaching the floor of a deciduous forest in late winter?
+
+
+![](images/Lecture5/23_0.jpg)
+
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+```{r}
+#| label: fig-23_3
+#| fig-cap: Proportion of radiation reaching the forest floor
+#| fig-width: 4.15
+#| fig-height: 5
+
+Data <- read.csv(file = 'Data/Lecture5/23_3_Bar.csv',sep=',', check.names = FALSE)
+
+fig <- plot_ly(data=Data)
+
+fig <- fig %>% add_trace(x = ~X, y = ~Beforeemergence,  name = 'A', type = "bar")
+
+fig <- fig %>% add_trace(x = ~X, y = ~Afteremergence,  name = 'B', type = "bar")
+
+
+fig <- fig %>% layout(
+  yaxis = list(
+    title = "Radiation in understory relative to above canopy",
+    range = range(0,1)
+  ),
+  xaxis = list(
+    title = " "
+  ),
+  legend = list(x = 0.85, y = 0.8)
+)
+
+fig
+
+```
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+Emergence here means when the leaves come out. Note: the middle refers to PAR (Photosynthetically Active Radiation)
+
+:::
+
+## Radiation and understory
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+![Dense hemlock stand little or no understory](images/Lecture5/24_3.png){width="70%"}
+
+
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+![Open alder forest with lush understory](images/Lecture5/24_4.png){width="70%"}
+
+
+:::
+
+::::
+
+
+
+## ‘Sunflecks’
+
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+* Sunflecks move with position of sun
+  + Rapid change from sunlit to shadowed
+
+![](images/Lecture5/25_4.png)
+
+:::
+
+::: {.column width="40%"}
+
+![](images/Lecture5/25_1.jpg)
+
+
+
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+If you take walks in the forest you will be familiar with “sunflecks” where direct light can penetrate right to the ground through openings in the canopy.
+
+:::
+
+
+
+## Temporally Variability
+
+
+<div style="overflow: hidden;
+  padding-top: 55%;
+  position: relative">
+<iframe src="images/Lecture5/SunFlecks.mp4" title="Processes" scrolling="no" frameborder="0"
+style="border: 0;
+height: 100%;
+left: 0;
+position: absolute;
+top: 0;
+width: 75%;">
+</iframe>
+</div>
+
+
+
+
+
+## Canopy Position & Photosynthesis
+
+
+
+```{r}
+#| label: fig-30_2
+#| fig-cap: Rates of CO<sub>2</sub> uptake (photosynthesis) at different light levels for different species in a forest
+
+
+Data <- read.csv(file = 'Data/Lecture5/31_2_Scatter.csv',sep=',', check.names = FALSE)
+
+
+fig <- plot_ly(data=Data)
+
+
+fig <- fig %>% add_trace(x = ~PAR_U, y = ~CO2_U, type = 'scatter',
+
+  mode = 'markers', symbol = ~Species_U, symbols = c('circle','circle-dot','circle-open','circle-open-dot'),
+
+  color = I('red'), marker = list(size = 10))
+
+  
+fig <- fig %>% add_trace(x = ~PAR_C, y = ~CO2_C, type = 'scatter',
+
+  mode = 'markers', symbol = ~Species_C, symbols = c('diamond','diamond-dot','diamond-open','diamond-open-dot'),
+
+  color = I('green'), marker = list(size = 10))
+
+
+fig <- fig %>% layout(
+  yaxis = list(
+    title = "CO<sub>2</sub> Flux µmol m<sup>-2</sup> s<sup>-1</sup>",
+    range = list(0,7)
+  ),
+  xaxis = list(
+    title = "PAR µmol m<sup>-2</sup> s<sup>-1</sup>"
+  ),
+  legend = list(x = 0.10, y = 0.95)
+)
+
+fig
+
+# Data$Species_U
+
+# R.Version()
+
+```
+
+
+
+::: {.notes}
+
+This graph really just illustrates that understory plants (the red symbols that include ferns and salal) are more efficient photosynthesisers at low amounts of PAR (the left side of the graph). Alternatively the trees (Green – Maples) do better with high amounts of PAR such as you find high up in the canopy.
+
+:::
+
+## Take home points
+
+
+:::: {.columns}
+
+::: {.column width="100%"}
+
+* Radiative transfer through plant canopies can be approximated using Beer’s Law using the cumulative Leaf Area Index (L) instead of the distance, plus path length and a clumping factor.
+* Radiation within plant canopies is not uniformly distributed in space, time (‘sunflecks’) and with regard to spectral characteristics.
+* We can use radiative transfer theory to infer the LAI of a stand if we measure short-wave radiation transmission.
+
+
+:::
+
+::: {.column width="0%"}
+
+
+
+:::
+
+::::

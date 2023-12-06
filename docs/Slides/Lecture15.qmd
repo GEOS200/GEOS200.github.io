@@ -1,0 +1,758 @@
+---
+format:
+  revealjs:
+    theme: default
+title: Clouds and Precipitation
+---
+
+{{< include _imports.qmd >}}
+
+
+![A range of different clouds is represented on this picture - ice clouds (cirrus) and liquid water colds (cumulus) Photo: A. Christen](images/Lecture15/1_0.jpg)
+
+
+
+## Learning Objectives
+
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+* Describe cloud formation in the atmosphere
+  + Why:?
+  + When?
+  + Where?
+* Explain what causes precipitation
+
+
+:::
+
+::: {.column width="40%"}
+
+
+
+
+![](images/Lecture15/2_4.jpg)
+
+
+:::
+
+::::
+
+
+
+## Cloud formation
+
+Most cloud forms as a result of air being lifted. 
+
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+* When it rises, due to the drop of air pressure, it expands and cools.  
+  + **Adiabatic Process** $\Gamma$
+* Dry air will cool at the dry adiabatic lapse rate 
+  + (10K per 1000 m) 
+
+
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+![](images/Lecture15/3_2.png)
+
+
+:::
+
+::::
+
+
+
+## Cloud formation
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+If $T$ to drops to the dew-point $T_d$ of the air:
+
+* Condensation may occur on small particles in the air
+  + Forming droplets and creating clouds
+* This is the lifting condensation level or LCL (~ cloud base).
+
+
+
+:::
+
+::: {.column width="50%"}
+
+![](images/Lecture15/5_2.png)
+
+
+:::
+
+::::
+
+
+
+## Lifting Condensation Level
+
+![](images/Lecture15/LCL.jpg)
+
+
+
+## State changes of water
+
+![](images/Lecture15/7_1.png)
+
+
+## Saturated adiabatic lapse rate (SALR)
+
+After saturation, the rate of cooling is reduced due to release of latent heat.
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+* SALR is not constant, it depends on:
+  + The amount of moisture condensed
+  + The laten heat release of condensation
+
+
+
+:::
+
+::: {.column width="50%"}
+
+
+![](images/Lecture15/8_4.png)
+
+
+:::
+
+::::
+
+
+## Saturated adiabatic lapse rate (SALR)
+
+After saturation, the rate of cooling is reduced due to release of latent heat.
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+* SALR is not constant, it depends on:
+  + The amount of moisture condensed
+  + The laten heat release of condensation
+
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+![](../Assignments/images/SALR.png)
+
+
+:::
+
+::::
+
+
+## Cloud Formation 
+
+The common processes that lead to cloud formation in the troposphere:
+
+1. Convection
+
+2. Fronts and Convergence
+
+3. Orographic Lift
+
+4. Radiative Cooling (Fog)
+
+## Convection
+
+
+![Cumulus clouds form as a result of convection](images/Lecture15/9_3.jpg)
+
+## Convection
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+
+Some parts of the surface absorb more solar radiation than others, creating thermals
+
+* If the thermal cools to saturation, moisture condenses to form water droplets, and it becomes visible as a cumulus cloud
+
+
+:::
+
+::: {.column width="40%"}
+
+
+![](images/Lecture15/9_2.gif)
+
+
+
+:::
+
+::::
+
+
+## Convergence and Fronts
+
+![Low pressure systems result in large-scale cloud formation](images/Lecture15/LowPressure.jpg)
+
+
+## Convergence and Fronts
+
+
+A low pressure system causes air to converge (moving towards the center of the system) and rise on a large scale (100's of kilometers). 
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+
+
+* This causes widespread ascent of air, cooling and large areas of cloud.
+* Multiple cloud types associated with low pressure systems
+
+:::
+
+::: {.column width="40%"}
+
+
+
+
+![](images/Lecture15/16_4.gif)
+
+
+
+:::
+
+::::
+
+
+## Convergence and Fronts
+
+A front is a moving boundary between air mass that tends associate with low pressure systems.  
+
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+
+
+* **Cold front**: advancing cold air mass
+* **Warm front**: advancing warm air mass. 
+* Both force warm air to rise in bands along the fronts
+
+
+
+:::
+
+::: {.column width="40%"}
+
+
+![](images/Lecture15/16_5.gif)
+
+
+:::
+
+::::
+
+
+## Orographic Lift
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+![An orographic cloud forming on Mt. Katahdin, Maine](images/Lecture15/Orographic1.jpg)
+
+:::
+
+::: {.column width="50%"}
+
+
+![Same location looking down the slope](images/Lecture15/Orographic2.jpg)
+
+
+:::
+
+::::
+
+
+## Orographic Lift
+
+![Clouds form on the up slope and dissipate on the down slope](images/Lecture15/Orographic3.jpg)
+
+
+## Orographic Lift
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+Large masses of air rise when they are pushed over a mountain range. 
+
+* Forced lifting along a topographic barrier is called **orographic uplift**. 
+* Clouds produced in this way are called orographic clouds. 
+
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+![](images/Lecture15/10_2.gif)
+
+
+
+:::
+
+::::
+
+
+
+
+
+
+## Rain shadows in the lee of major relief
+
+
+![](images/Lecture15/11_3.png)
+
+
+
+
+
+## iClicker
+
+
+In British Columbia, where do you expect highest annual precipitation?
+
+
+![](images/Lecture15/14_3.png)
+
+
+
+
+
+## iClicker
+
+
+Heavy precipitation on westerly slopes, warmer drier on easterly side (Gulf Islands, Sunshine coast, Okanagan).
+
+![](images/Lecture15/15_4.png)
+
+
+---
+
+
+![Annual Precipitation in BC (mm)](images/Lecture15/13_1.png)
+
+## Radiative Cooling
+
+::: {layout-ncol=2}
+
+
+![](images/Lecture15/Radiative_2.jpg)
+
+![](images/Lecture15/Radiative_1.jpg)
+
+:::
+
+Fog forms on calm-clear nights when radiative cooling causes surface air to cool below the dewpoint
+
+## Cloud types
+
+![We categorize clouds by height, composition, and form](images/Lecture15/17_3.png)
+
+
+
+::: {.notes}
+
+Although there are an infinite variety of cloud shapes, all clouds can be organized into four major categories. 
+The international cloud classification scheme recognizes three categories of clouds based on their form
+
+
+In 1803, Luke Howard, an English naturalist, developed the cloud classification scheme still used today. The World Meteorological Organization published the International Cloud Atlas in 1956, based on Howard’s classification scheme.
+
+Cirrus clouds are high clouds with a feathery appearance that are composed of ice crystals. Cumulus clouds are dome-shaped, bunched clouds, with a flat base and billowy upper portions that often rise high in the troposphere; that is, they show strong vertical development. Stratus clouds are low, flat sheets of clouds.
+
+:::
+
+
+
+
+## Cirrus (Ci)
+
+![High altitude ice clouds, appear as wisps. Photo: A. Christen](images/Lecture15/18_2.jpg)
+
+
+
+## Cumulus (Cu)
+
+
+![Low, liquid water clouds common in fair weather. Photo: A. Christen](images/Lecture15/19_2.jpg)
+
+
+
+## Altocumulus (Ac)
+
+
+
+![Middle level cumulus. Photo: A. Christen](images/Lecture15/20_2.jpg)
+
+
+## Cirrocumulus (Cc) 
+
+
+![Ice clouds as lots of puff balls, or in rolls (aircraft contrails). Photo: A. Christen](images/Lecture15/21_2.jpg)
+
+
+## Cumulonimbus (Cb)
+
+
+![Large vertical extent; water droplets at low level, but upper levels are made of ice. Often lead to thunder storms and heavy showers.  Photo: A. Christen](images/Lecture15/22_0.jpg)
+
+
+## Stratus (St)
+
+
+![Layer clouds with base below 2 km (liquid water). Spatially continuous sheets over large areas. Stratus on the ground is fog.](images/Lecture15/Radiative_2.jpg)
+
+
+
+
+## Altostratus (As)
+
+![Middle altitude clouds with uniform structure. Often due to an approaching frontal system.  Photo: A. Christen](images/Lecture15/24_2.jpg)
+
+
+
+
+## Cirrostratus (Cs)
+
+
+
+![Fibrous outline gives halo around Sun or Moon due to the refraction of light by thin layer of ice crystals, here above UBC Totem Field. Photo: A. Christen](images/Lecture15/25_0.jpg)
+
+
+
+
+## Nimbostratus (Ns)
+
+
+![Thicker layer clouds associated with fronts and light or drizzly rain.](images/Lecture15/28_4.jpg)
+
+
+
+## Stratocumulus (Sc)
+
+![Low clouds, wider than tall – look like pancakes. Less clear space between than cumulus. Photo: A. Christen](images/Lecture15/27_2.jpg)
+
+
+## Cloud-quiz (iClicker)
+
+Which clouds are made entirely of ice-crystals? 
+
+
+:::: {.columns}
+
+::: {.column width="33%"}
+
+![A](images/Lecture15/28_4.jpg)
+
+:::
+
+::: {.column width="33%"}
+
+
+![B](images/Lecture15/28_7.jpg)
+
+:::
+
+::: {.column width="30%"}
+
+
+![C](images/Lecture15/28_6.jpg)
+
+
+:::
+
+::::
+
+
+## Cloud-quiz (iClicker)
+
+
+Which clouds are cumulus clouds, often found on a sunny summer day?
+
+
+
+:::: {.columns}
+
+::: {.column width="33%"}
+
+![A](images/Lecture15/28_4.jpg)
+
+:::
+
+::: {.column width="33%"}
+
+
+![B](images/Lecture15/9_3.jpg)
+
+:::
+
+::: {.column width="30%"}
+
+
+![C](images/Lecture15/29_7.jpg)
+
+
+:::
+
+::::
+
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+B
+
+:::
+
+
+## Fog
+
+
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+Fog is a cloud that forms near at surface.
+
+* Cooling of the air
+  + Radiation, advection, and upslope fog
+* Addition of moisture
+  + Steam and frontal fog
+
+:::
+
+::: {.column width="40%"}
+
+
+![Thick radiation fog in Vancouver.](images/Lecture15/Fog.jpg)
+
+
+:::
+
+::::
+
+
+
+
+## Precipitation
+
+Many clouds never produce significant precipitation. 
+
+* Cloud droplets likely to form when the air mass reaches the lifting condensation level
+  * No condensation if there without no condensation nuclei
+
+  * Sources of nuclei are dust, smoke, salt, etc. 
+  
+* Most cloud droplets are tiny (~20 μm radius) and float on air currents 
+  + Too small to overcome evaporation on their way to surface
+
+
+
+
+## Precipitation
+
+Droplets must be larger than 100 μm to have any chance to get to the surface.  
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+* Typical rain drops are 2000 μm (2 mm) and have a terminal velocity of 8.8 m/s
+* To reach this size, must be processes to let droplets grow in clouds
+
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+![](images/Lecture15/33_2.jpg)
+
+
+:::
+
+::::
+
+
+
+## Nuclei
+
+Required for water to condense or freeze in the atmosphere.
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+![](images/Lecture15/Nucleation.png){width="65%"}
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+![](images/Lecture15/Nucleation_ice.png){width="70%"}
+
+
+:::
+
+::::
+
+
+
+## Collision-Coalescence Process
+
+Larger droplets fall faster than smaller ones and collide and combine with them.  After many collisions, large droplets are big enough to overcome updrafts and survive evaporation on the way down.
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* Need a spectrum of droplet sizes to work – many very small, a few large ones
+* Mainly occurs in the tropics
+
+:::
+
+::: {.column width="50%"}
+
+
+
+![](images/Lecture15/Collision-Coalescence.jpg)
+
+
+:::
+
+::::
+
+
+
+## Three-phase Process
+
+Requires a mixture of ice crystals, water droplets, and water vapor co-existing at temperatures below freezing
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* Depends on the fact that saturation vapor pressure over surface of ice is slightly lower than over liquid water 
+  + Small gradient exists, from liquid to ice 
+
+:::
+
+::: {.column width="50%"}
+
+
+
+
+![](images/Lecture15/Bergeron.jpg)
+
+
+:::
+
+::::
+
+
+
+## Three-phase process
+
+Saturation vapor pressure is slightly lower around ice crystals than water droplets; ice has tighter bonds than liquid water.
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+
+* The ice crystals collide and stick and hook together, forming snowflakes and growing large enough to fall
+
+* Most of the rain falling in middle latitudes (even in summer) begins as snow
+
+
+:::
+
+::: {.column width="40%"}
+
+
+
+
+![](images/Lecture15/36_5.png)
+
+
+:::
+
+::::
+
+
+::: {.notes}
+
+Making snow through deposition. (A) Snowflakes grow when water vapor, evaporated from supercooled cloud droplets, is deposited directly on an ice crystal, causing it to grow. (B) All snowflakes are hexagons, reflecting the six-sided structure of the hydrogen bonds between water molecules (see Figure 1.5). 
+
+:::
+
+
+
+
+## Take home points
+
+
+* Clouds form when an air mass is cools to the dew point and condenses (the Lifting Condensation Level).
+* Lifting of an air mass can be due to convection, orography, convergence and /or frontal systems.
+* Important cloud types are: cumulus, cirrus and stratus - high ones are made up of ice, low ones of liquid water.
+* Precipitation forms when cloud droplets grow - due to collision (warm process) or due to differential saturation vapor pressure of ice and liquid water (three-phase process).
+
